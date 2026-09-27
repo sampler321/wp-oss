@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Retailer list (ruled)",
+	"slug": "retailers",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|medium"
+		},
+		"css": "&{list-style:none;padding-left:0!important;border-top:2px solid var(--wp--preset--color--line)}& li{padding:.7rem 0;border-bottom:1px solid var(--wp--preset--color--line)}& li:first-child{font-weight:700}& li a{text-decoration-thickness:2px}"
+	}
+}

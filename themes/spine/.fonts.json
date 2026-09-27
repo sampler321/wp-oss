@@ -1,0 +1,56 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Cabin\", sans-serif",
+      "name": "Cabin",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Cabin",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/cabin-italic-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "Cabin",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/cabin-normal-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Literata\", sans-serif",
+      "name": "Literata",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Literata",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/literata-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Literata",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/literata-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Cabin (Google Fonts), https://github.com/google/fonts/tree/main/ofl/cabin",
+    "Literata (Google Fonts), https://github.com/google/fonts/tree/main/ofl/literata"
+  ]
+}

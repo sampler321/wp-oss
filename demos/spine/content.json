@@ -1,0 +1,177 @@
+{
+ "site": {
+  "title": "Tamsin Rourke",
+  "tagline": "Novels, Fenland crime and one memoir, from King’s Lynn"
+ },
+ "categories": [
+  {
+   "slug": "fiction",
+   "name": "Fiction",
+   "description": "The stand-alone novels. Orange, as fiction always was."
+  },
+  {
+   "slug": "crime",
+   "name": "Crime",
+   "description": "The Fenland novels, with DS Ruth Ambler. Read them in order."
+  },
+  {
+   "slug": "memoir",
+   "name": "Memoir",
+   "description": "My Father’s Boats, about my dad and the seven boats he lost."
+  },
+  {
+   "slug": "travel",
+   "name": "Travel",
+   "description": "Seven Trams in Lisbon, essays from one winter."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "books",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "books",
+   "title": "Books",
+   "content": ""
+  },
+  {
+   "slug": "buy",
+   "title": "Buy the books",
+   "pattern": "spine/buy-page"
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "pattern": "spine/events-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "book-groups",
+   "title": "For book groups",
+   "pattern": "spine/book-groups-page"
+  },
+  {
+   "slug": "newsletter",
+   "title": "Newsletter",
+   "pattern": "spine/newsletter-page"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "spine/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "spine/contact-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The Wash in Winter",
+   "slug": "the-wash-in-winter",
+   "category": "crime",
+   "image": "wash.jpg",
+   "excerpt": "The third Fenland novel. A body in a pumping station, three days before the sluice gates are opened.",
+   "date": "2026-10-08",
+   "template": "single-book-crime",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><strong>Fenland 3.</strong> The Fenland novels: <a href=\"/low-country/\">Low Country</a>, <a href=\"/a-drowned-parish/\">A Drowned Parish</a>, <a href=\"/the-wash-in-winter/\">The Wash in Winter</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">The third Fenland novel. A body in a pumping station, three days before the sluice gates are opened.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>Rourke writes the Fens like other people write the sea: flat, cold and full of things that don’t stay buried.</p>\n<!-- /wp:paragraph --><cite>Hannah Okoro, Fenland Quarterly, August 2026</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Hardback</td><td>378 pages</td><td>ISBN 978-1-9160-4412-8</td><td>£18.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2026</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "My Father’s Boats",
+   "slug": "my-fathers-boats",
+   "category": "memoir",
+   "image": "boats.jpg",
+   "excerpt": "A memoir of a fisherman’s daughter, told through the seven boats her father owned and lost.",
+   "date": "2023-05-14",
+   "template": "single-book-memoir",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A memoir of a fisherman’s daughter, told through the seven boats her father owned and lost.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>A book about a man who never said much, written by a daughter who finally does.</p>\n<!-- /wp:paragraph --><cite>Alice Brandt, The Northern Review, 2023</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>369 pages</td><td>ISBN 978-1-9160-4409-8</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2023</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Harbour Lights",
+   "slug": "harbour-lights",
+   "category": "fiction",
+   "image": "harbour.jpg",
+   "excerpt": "Two sisters, one pub on the quay, and the summer the harbour was sold.",
+   "date": "2022-05-14",
+   "template": "single-book-fiction",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Two sisters, one pub on the quay, and the summer the harbour was sold.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>Quietly furious and very funny about money.</p>\n<!-- /wp:paragraph --><cite>The Northern Review, 2022</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>366 pages</td><td>ISBN 978-1-9160-4406-7</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2022</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A Drowned Parish",
+   "slug": "a-drowned-parish",
+   "category": "crime",
+   "image": "parish.jpg",
+   "excerpt": "The second Fenland novel. A church reappears in a drought, and so does a missing girl’s bicycle.",
+   "date": "2020-05-14",
+   "template": "single-book-crime",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><strong>Fenland 2.</strong> The Fenland novels: <a href=\"/low-country/\">Low Country</a>, <a href=\"/a-drowned-parish/\">A Drowned Parish</a>, <a href=\"/the-wash-in-winter/\">The Wash in Winter</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">The second Fenland novel. A church reappears in a drought, and so does a missing girl’s bicycle.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>The drought chapter is as frightening as anything in the genre this year.</p>\n<!-- /wp:paragraph --><cite>Crime Time Quarterly, 2020</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>360 pages</td><td>ISBN 978-1-9160-4403-6</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2020</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Seven Trams in Lisbon",
+   "slug": "seven-trams-in-lisbon",
+   "category": "travel",
+   "image": "lisbon.jpg",
+   "excerpt": "Essays from a winter spent riding every tram line in Lisbon with a notebook and bad Portuguese.",
+   "date": "2019-05-14",
+   "template": "single-book-travel",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Essays from a winter spent riding every tram line in Lisbon with a notebook and bad Portuguese.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>The number 28 has never been this interesting, or this crowded.</p>\n<!-- /wp:paragraph --><cite>Sam Ferreira, Slow Travel Letters, 2019</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>357 pages</td><td>ISBN 978-1-9160-4401-2</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2019</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Low Country",
+   "slug": "low-country",
+   "category": "crime",
+   "image": "fens.jpg",
+   "excerpt": "The first Fenland novel. DS Ruth Ambler comes home to Wisbech and a case her father never closed.",
+   "date": "2018-05-14",
+   "template": "single-book-crime",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><strong>Fenland 1.</strong> The Fenland novels: <a href=\"/low-country/\">Low Country</a>, <a href=\"/a-drowned-parish/\">A Drowned Parish</a>, <a href=\"/the-wash-in-winter/\">The Wash in Winter</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">The first Fenland novel. DS Ruth Ambler comes home to Wisbech and a case her father never closed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>The best sense of place in British crime writing since the early Ruth Rendell.</p>\n<!-- /wp:paragraph --><cite>Fenland Quarterly, 2018</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>354 pages</td><td>ISBN 978-1-9160-4398-5</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2018</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The Salt Road",
+   "slug": "the-salt-road",
+   "category": "fiction",
+   "image": "saltroad.jpg",
+   "excerpt": "A debut about a salt marsh, a family farm and the year the sea wall failed.",
+   "date": "2016-05-14",
+   "template": "single-book-fiction",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A debut about a salt marsh, a family farm and the year the sea wall failed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>A first novel that smells of the marsh.</p>\n<!-- /wp:paragraph --><cite>Norfolk Book Club, 2016</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Buy</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-retailers\"} -->\n<ul class=\"wp-block-list is-style-retailers\"><!-- wp:list-item -->\n<li><a href=\"https://example.com/old-custom-house-books\">Old Custom House Books, King’s Lynn</a>: signed and dedicated copies, posted anywhere in the UK</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://uk.bookshop.org/\">Bookshop.org</a>: pays a share to an independent shop you choose</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.waterstones.com/\">Waterstones</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.amazon.co.uk/\">Amazon</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://books.apple.com/\">Apple Books</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.kobo.com/\">Kobo</a> (ebook)</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://libro.fm/\">Libro.fm</a> (audiobook, read by Joanne Pell)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Details</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Paperback</td><td>348 pages</td><td>ISBN 978-1-9160-4395-4</td><td>£9.99</td></tr><tr><td>Publisher</td><td>Harrow &amp; Lane</td><td>First published</td><td>2016</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><a href=\"/book-groups/\">Book-group questions</a> and <a href=\"/buy/\">all editions</a>.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Books",
+   "url": "/books/"
+  },
+  {
+   "label": "Buy",
+   "url": "/buy/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Book groups",
+   "url": "/book-groups/"
+  },
+  {
+   "label": "Newsletter",
+   "url": "/newsletter/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

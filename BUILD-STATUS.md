@@ -30,7 +30,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | todo | |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | todo | |
-| 25 | spine | 051 Novelist / author | Penguin aesthetics | todo | |
+| 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
 | 27 | local | 053 Hyperlocal news | more scientific looking | todo | |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |

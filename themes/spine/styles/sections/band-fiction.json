@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Band: fiction",
+	"slug": "band-fiction",
+	"blockTypes": [
+		"core/group",
+		"core/column",
+		"core/columns"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|on-accent"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "currentColor"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "currentColor"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|on-accent",
+					"text": "var:preset|color|accent"
+				},
+				"border": {
+					"color": "var:preset|color|on-accent"
+				}
+			}
+		},
+		"css": "& a{text-decoration-color:currentColor}"
+	}
+}

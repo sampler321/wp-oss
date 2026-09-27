@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Crime at night",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#121412",
+					"name": "Page"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F0EEE8",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#F08A3E",
+					"name": "Fiction orange"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#2FA46B",
+					"name": "Crime green"
+				},
+				{
+					"slug": "memoir",
+					"color": "#5C84D6",
+					"name": "Memoir blue"
+				},
+				{
+					"slug": "travel",
+					"color": "#E4538A",
+					"name": "Travel cerise"
+				},
+				{
+					"slug": "surface",
+					"color": "#1E211E",
+					"name": "Cover panel"
+				},
+				{
+					"slug": "line",
+					"color": "#F0EEE8",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#B4B1A8",
+					"name": "Grey"
+				},
+				{
+					"slug": "on-accent",
+					"color": "#121412",
+					"name": "Text on orange"
+				}
+			]
+		}
+	}
+}

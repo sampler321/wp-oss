@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Shelf",
+	"slug": "shelf",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{row-gap:var(--wp--preset--spacing--50)!important}"
+	}
+}
