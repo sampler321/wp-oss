@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Square artwork",
+	"slug": "square",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:1;object-fit:cover;width:100%;border-radius:14px}"
+	}
+}

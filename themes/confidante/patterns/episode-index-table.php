@@ -18,5 +18,5 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Episodes 1 to 55 are in every podcast app and in the <a href="/episodes/">episode list</a>. The first ten were recorded on a phone in Ama’s kitchen. We have left them as they are.</p>
+<p class="">Episodes 1 to 55 are in every podcast app and in the <a href="/episodes/">episode list</a>. The first ten were recorded on a phone in Ama’s kitchen. We have left them as they are.</p>
 <!-- /wp:paragraph -->

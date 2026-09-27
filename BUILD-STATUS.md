@@ -27,11 +27,11 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | deployed (HTTP 404) | https://wposs-wavelength.b-j-kapica.workers.dev |
-| 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
+| 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
-| 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
+| 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
 | 27 | local | 053 Hyperlocal news | more scientific looking | deployed (HTTP 404) | https://wposs-local.b-j-kapica.workers.dev |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
@@ -55,7 +55,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
-| 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |
+| 50 | taproom | 088 Craft brewery | as researched | tested |  |
 
 ## Pipeline
 1. Reference theme `ink` + tools (fonts, images, demo builder, test harness, static export, deploy).

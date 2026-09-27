@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Small round portrait",
+	"slug": "avatar-small",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "&{flex:0 0 auto;margin:0!important}& img{width:56px;height:56px;aspect-ratio:1;object-fit:cover;border-radius:50%}"
+	}
+}

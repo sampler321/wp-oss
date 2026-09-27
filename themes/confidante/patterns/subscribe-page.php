@@ -20,7 +20,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Supporters get a private feed with no ads. Patreon sends you a link that works in Apple Podcasts, Pocket Casts and Overcast. Spotify can’t play private feeds yet.</p>
+<p class="">Supporters get a private feed with no ads. Patreon sends you a link that works in Apple Podcasts, Pocket Casts and Overcast. Spotify can’t play private feeds yet.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

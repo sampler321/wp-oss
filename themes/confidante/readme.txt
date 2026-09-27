@@ -51,3 +51,6 @@ Confidante is distributed under the terms of the GNU GPL v2 or later.
 * Image ep-kitchen.jpg: "Pitcher of tea (Unsplash).jpg" by bady qb bady, CC0, https://commons.wikimedia.org/wiki/File:Pitcher_of_tea_(Unsplash).jpg
 * Image ep-kids.jpg: "Sleeping baby (Unsplash).jpg" by Dakota Corbin thedakotacorbin, CC0, https://commons.wikimedia.org/wiki/File:Sleeping_baby_(Unsplash).jpg
 * Image ep-money2.jpg: "Generic sterling banknote.png" by Calorus, Public domain, https://commons.wikimedia.org/wiki/File:Generic_sterling_banknote.png
+* Image guest-1.jpg: "Monochrome woman face glitter (Unsplash).jpg" by Matheus Ferrero matheusferrero, CC0, https://commons.wikimedia.org/wiki/File:Monochrome_woman_face_glitter_(Unsplash).jpg
+* Image guest-2.jpg: "Happy daughter (Unsplash).jpg" by Michael Dam michaeldam, CC0, https://commons.wikimedia.org/wiki/File:Happy_daughter_(Unsplash).jpg
+* Image guest-3.jpg: "Woman lying on concrete (Unsplash).jpg" by Eli DeFaria elidefaria, CC0, https://commons.wikimedia.org/wiki/File:Woman_lying_on_concrete_(Unsplash).jpg

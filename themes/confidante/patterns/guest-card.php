@@ -6,8 +6,8 @@
  */
 ?>
 <!-- wp:group {"tagName":"section","className":"is-style-deep-blush","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group is-style-deep-blush" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"className":"has-x-small-font-size","style":{"typography":{"fontWeight":"700"}},"fontSize":"x-small"} -->
-<p class="has-x-small-font-size" style="font-weight:700">This week’s guest</p>
+<section class="wp-block-group is-style-deep-blush" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-x-small-font-size">This week’s guest</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -15,7 +15,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Payroll auditor and union rep in Salford. Has negotiated around 400 pay reviews, most of them for other people. Runs a Tuesday-night drop-in at the library on Chapel Street.</p>
+<p class="">Payroll auditor and union rep in Salford. Has negotiated around 400 pay reviews, most of them for other people. Runs a Tuesday-night drop-in at the library on Chapel Street.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

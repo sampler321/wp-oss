@@ -16,6 +16,15 @@ def group(inner, tag='div', layout='constrained', **attrs):
     return _b.group(inner, tag=tag, layout=layout, **attrs)
 S = THEME['slug']
 D = THEME['dir']
+import re as _re
+def split_css(css):
+    """Block and section 'css' only scopes the first selector of a comma list, so write one rule per selector."""
+    out = []
+    for sel, body in _re.findall(r'([^{}]+)\{([^{}]*)\}', css):
+        parts = [p.strip() for p in _re.split(r',(?![^()]*\))', sel)]
+        out += ['%s{%s}' % (p, body) for p in parts if p]
+    return ''.join(out)
+
 
 # ---------------------------------------------------------------- tokens
 PALETTE = [
@@ -57,6 +66,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
         'custom': {'radius': {'image': '22px', 'button': '999px', 'box': '14px'}},
     },
     'styles': {
@@ -120,6 +130,12 @@ theme = {
     'customTemplates': [{'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']},
                         {'name': 'single-letter', 'title': 'Listener letter episode', 'postTypes': ['post']}],
 }
+_t = theme['styles']['blocks'].get('core/table', {}).pop('css', None)
+if _t:
+    theme['styles']['css'] += _t.replace('& ', '.wp-block-table ').replace('&.', '.wp-block-table.')
+for _b_ in theme['styles']['blocks'].values():
+    if 'css' in _b_:
+        _b_['css'] = split_css(_b_['css'])
 write('theme.json', json.dumps(theme, indent='\t', ensure_ascii=False))
 
 # ---------------------------------------------------------------- style variations
@@ -144,6 +160,8 @@ write('styles/talk.json', variation('Talk', [
 
 # ---------------------------------------------------------------- section styles
 def section(slug, title, types, styles):
+    if 'css' in styles:
+        styles = dict(styles, css=split_css(styles['css']))
     write('styles/sections/%s.json' % slug, json.dumps({'$schema': 'https://schemas.wp.org/trunk/theme.json', 'version': 3,
                                                         'title': title, 'slug': slug, 'blockTypes': types, 'styles': styles}, indent='\t'))
 
@@ -165,6 +183,12 @@ section('paper-box', 'Paper box', ['core/group'],
          'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
 section('arch', 'Arch', ['core/image', 'core/post-featured-image'],
         {'css': '& img{border-radius:999px 999px 22px 22px;aspect-ratio:4/5;object-fit:cover;width:100%}'})
+section('square', 'Square artwork', ['core/image', 'core/post-featured-image'],
+        {'css': '& img{aspect-ratio:1;object-fit:cover;width:100%;border-radius:14px}'})
+section('avatar-small', 'Small round portrait', ['core/image'],
+        {'css': '&{flex:0 0 auto;margin:0!important}& img{width:56px;height:56px;aspect-ratio:1;object-fit:cover;border-radius:50%}'})
+section('avatar', 'Round portrait', ['core/image'],
+        {'css': '& img{aspect-ratio:1;object-fit:cover;border-radius:50%;width:100%}'})
 section('speaker-a', 'Speaker: Ama', ['core/paragraph'],
         {'border': {'left': {'color': 'var:preset|color|accent', 'width': '3px', 'style': 'solid'}},
          'spacing': {'padding': {'left': 'var:preset|spacing|30'}}, 'css': '& strong{color:var(--wp--preset--color--accent)}'})
@@ -379,7 +403,7 @@ pattern('hosts-page', 'Page: hosts and the show', 'about', J(
         para('We talk about work, bodies, money and friendship, because those are the things we text each other about. Neither of us is an expert. When a question needs one, we ask one in.'),
         para('We don’t give medical, legal or financial advice. If you need that, the show notes have somewhere to start.')),
         style={'spacing': {'padding': {'top': 'var:preset|spacing|60'}}}),
-    pattern_ref('live-taping')), block_types='core/post-content')
+    pattern_ref('season-intro'), pattern_ref('recommendations'), pattern_ref('live-dates'), pattern_ref('live-taping')), block_types='core/post-content')
 
 pattern('subscribe-page', 'Page: subscribe', 'call-to-action', J(
     para('New episodes come out every Tuesday at 6am UK time. Pick the app you already use.', fontSize='large'),
@@ -398,7 +422,7 @@ pattern('subscribe-page', 'Page: subscribe', 'call-to-action', J(
 pattern('support-page', 'Page: support and sponsors', 'call-to-action', J(
     pattern_ref('support-tiers'), pattern_ref('sponsor-us'), pattern_ref('sponsor-read')), block_types='core/post-content')
 
-pattern('write-to-us-page', 'Page: write to us', 'contact', J(
+pattern('write-to-us-page', 'Page: write to us', 'contact', J(pattern_ref('voice-notes'),
     para('We read every letter out loud to each other on a Sunday. About one in ten ends up on the show.', fontSize='large'),
     heading('How to send one', 3),
     lst(['Email <a href="mailto:dear@saymore.example">dear@saymore.example</a>. A paragraph is plenty.',
@@ -446,8 +470,94 @@ pattern('episode-full', 'Episode: full layout (player, chapters, notes, transcri
     pattern_ref('guest-card'), pattern_ref('phrase-of-the-week'), pattern_ref('sponsor-read'), pattern_ref('transcript')),
     block_types='core/post-content', description='Everything an episode page needs, in the order people use it.')
 
-pattern('front-page-layout', 'Home: overheard quote, latest episode, list, hosts', 'featured', J(
-    pattern_ref('overheard-hero'), pattern_ref('latest-episode'), pattern_ref('episode-list'), pattern_ref('dear-say-more'),
+# ---------------------------------------------------------------- round 2: images, a smaller quote, more of the kit
+def avatar(img, alt, small=False, **kw):
+    return image(img, alt, className='is-style-avatar-small' if small else 'is-style-avatar', **kw)
+
+pattern('latest-hero', 'Latest episode first: artwork, title, player', 'featured,audio', columns(
+    ('44%', image('ep-money.jpg', 'Ceramic piggy banks shaped like a cow, an elephant and two pigs on a supermarket shelf, with price tags', caption='Episode 63 artwork', className='is-style-square')),
+    ('56%', J(
+        para('New this Tuesday, episode 63, 52 minutes', fontSize='small', style={'typography': {'fontWeight': '700'}}),
+        heading('<a href="/asking-for-more-money/">Asking for more money</a>', 1, fontSize='xx-large'),
+        para('Ama asked for a pay rise in March and got a “let’s revisit in the autumn”. It is now the autumn. Folake Adeyemi, who has sat on the other side of that table for 15 years, goes through Ama’s notes line by line.', fontSize='large'),
+        para('Content note: frank talk about debt and one bereavement (from 31:40).', className='is-style-content-note'),
+        audio(A1, A1_CAP), listen_row(), pattern_ref('host-avatars'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}, 'blockGap': {'left': 'var:preset|spacing|60'}}}),
+    description='The home page opens on the newest episode: square artwork, title, player and who is on it.')
+
+pattern('host-avatars', 'Who is on this episode (portraits)', 'team', row(J(
+    avatar('host-1.jpg', 'Ama Boateng, smiling, in a pink top', lightbox=False, small=True),
+    avatar('host-2.jpg', 'Roisin Keane, laughing, in a black t-shirt', lightbox=False, small=True),
+    avatar('guest-2.jpg', 'Folake Adeyemi, smiling, in a red jumper', lightbox=False, small=True),
+    para('Ama, Roisin and guest <strong>Folake Adeyemi</strong>', fontSize='small')), style={'spacing': {'blockGap': 'var:preset|spacing|20'}}))
+
+pattern('overheard-photo', 'Overheard: a line from this week, with the speaker', 'featured,testimonials', group(columns(
+    ('26%', image('host-1.jpg', 'Ama Boateng laughing on a porch, in a pink top', className='is-style-arch', lightbox=False)),
+    ('74%', J(para('Overheard in episode 63', fontSize='small', style={'typography': {'fontWeight': '700'}}),
+              para('“I earn more than my dad ever did, and I still check my balance before I buy a coffee.”', fontSize='x-large', fontFamily='display', style={'typography': {'lineHeight': '1.1'}}),
+              para('Ama Boateng, 23 minutes in', fontSize='small'),
+              buttons(('Play from 23:10', A1 + '#t=1390'), ('All episodes', '/episodes/', {'className': 'is-style-outline'})))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
+    align='full', className='is-style-tomato',
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}, 'margin': {'top': '0'}}}),
+    description='One line from the week, at a readable size, next to the person who said it.')
+
+ep_card = group(J(
+    dyn('post-featured-image', isLink=True, aspectRatio='1', className='is-style-square'),
+    row(J(dyn('post-terms', term='category', separator=', '), dyn('post-date', format='j M Y')), style={'spacing': {'blockGap': 'var:preset|spacing|20'}}),
+    dyn('post-title', isLink=True, level=3, fontSize='large')), layout={'type': 'default'}, style={'spacing': {'blockGap': 'var:preset|spacing|20'}})
+
+pattern('episode-cards', 'Recent episodes with artwork', 'posts,query', group(J(
+    row(J(heading('Recent episodes', 2), para('<a href="/episode-index/">Every episode on one page</a>', fontSize='small')), justify='space-between'),
+    query(ep_card, per_page=8, query_id=5, layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '9.5rem'})),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('episode-cards-archive', 'Episodes with artwork (inherits the page query)', 'posts,query',
+        inherit_query(ep_card, layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '9.5rem'}, align='wide'), inserter=False)
+
+GUESTS = [('guest-2.jpg', 'Folake Adeyemi smiling in a red jumper', 'Folake Adeyemi', 'Payroll auditor and union rep, Salford', 'asking-for-more-money', 'Asking for more money'),
+          ('guest-3.jpg', 'Dr Nadia Rahman lying on a concrete step in a patterned coat, looking at the camera', 'Dr Nadia Rahman', 'GP in Longsight', 'swimming-through-the-menopause', 'Swimming through the menopause'),
+          ('guest-1.jpg', 'Black and white portrait of Hannah with glitter stars on one cheek', 'Hannah, Stockport', 'Wrote in about her sister', 'my-sister-owes-me-4000', 'My sister owes me £4,000')]
+
+pattern('guest-strip', 'Guests, with portraits', 'team', group(J(
+    heading('Recent guests', 2),
+    columns(*[(None, J(image(i, a, className='is-style-arch'), heading(n, 4), para(w, fontSize='small'), para('<a href="/%s/">%s</a>' % (s, t), fontSize='small'))) for i, a, n, w, s, t in GUESTS],
+            style={'spacing': {'blockGap': {'left': 'var:preset|spacing|50'}}})),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('guest-quote', 'Guest quote with portrait', 'testimonials', columns(
+    ('22%', avatar('guest-3.jpg', 'Dr Nadia Rahman lying on a concrete step in a patterned coat', lightbox=False)),
+    ('78%', J(para('“The first thing people tell me is that they thought they were going mad. They weren’t.”', fontSize='large', fontFamily='display'),
+              para('Dr Nadia Rahman, GP, in episode 61', fontSize='small'))),
+    verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|40'}}}))
+
+pattern('season-intro', 'Season introduction', 'text', group(columns(
+    ('40%', heading('Season 3', 2, fontSize='xx-large')),
+    ('60%', J(para('Twelve episodes, September to December. More guests this time, one live taping in November, and an episode where our mums take over the microphones.', fontSize='large'),
+              para('<a href="/episode-index/">The full episode list</a>', fontSize='small')))),
+    className='is-style-deep-blush', style={'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50', 'left': 'var:preset|spacing|50', 'right': 'var:preset|spacing|50'}}}))
+
+pattern('recommendations', 'What we’re into this week', 'text', J(
+    heading('What we’re into', 3),
+    lst(['Ama: <em>Big Friendship</em> by Aminatou Sow and Ann Friedman, for the third time.', 'Roisin: the 7am women-only swim at Arcadia, Wednesdays.',
+         'Both of us: the bakery on Beech Road that sponsors us, and we’d say so anyway.'])))
+
+pattern('voice-notes', 'Listener voice notes', 'audio,testimonials', J(
+    heading('Voice notes from you', 3),
+    para('Played on air with permission. Send yours to dear@saymore.example, two minutes at most.', fontSize='small'),
+    columns((None, J(audio(A2, 'Megan in Cardiff, on episode 58. Stand-in audio.'))), (None, J(audio(A1, 'Priya in Bolton, on the pay-rise episode. Stand-in audio.'))))))
+
+pattern('live-dates', 'Live dates', 'text', J(
+    heading('Live dates', 3),
+    lst(['<strong>Thursday 26 November</strong>, Klondyke Club, Levenshulme. Recording episode 72. £8.', '<strong>Saturday 23 January</strong>, Leeds Library, as part of the book festival. Free, book ahead.']),
+    buttons(('Get a ticket', 'https://www.ticketsource.co.uk/'))))
+
+pattern('guests-page', 'Page: guests', 'team', J(
+    para('One guest a month, usually someone who does the thing we are confused about. These are the most recent.', fontSize='large'),
+    pattern_ref('guest-strip'), pattern_ref('guest-quote'), pattern_ref('guest-pitch')), block_types='core/post-content')
+
+pattern('front-page-layout', 'Home: latest episode, overheard, episodes, guests, hosts', 'featured', J(
+    pattern_ref('latest-hero'), pattern_ref('overheard-photo'), pattern_ref('episode-cards'), pattern_ref('guest-strip'), pattern_ref('dear-say-more'),
     columns(('30%', J(heading('Who’s talking', 2, fontSize='xx-large'),
                       para('Two friends at a kitchen table in Levenshulme. One keeps spreadsheets, one sends voice notes. We record on Sunday afternoons and it goes out on Tuesday at 6am.'),
                       para('<a href="/hosts/">How the show started</a>', fontSize='small'))),
@@ -492,7 +602,7 @@ write('templates/home.html', page_template(J(
     heading('Episodes', 1, fontSize='display', align='wide'),
     row(J(para('Newest first. Pick a topic, or see <a href="/episode-index/">every episode on one page</a>.'),
           dyn('categories', className='is-style-topic-list')), justify='space-between', align='wide'),
-    pattern_ref('episode-list-archive')), style=PAD))
+    pattern_ref('episode-cards-archive')), style=PAD))
 write('templates/index.html', page_template(J(dyn('query-title', type='archive', align='wide'), pattern_ref('episode-list-archive')), style=PAD))
 write('templates/archive.html', page_template(J(
     dyn('query-title', type='archive', showPrefix=False, align='wide', fontSize='display'),
@@ -637,13 +747,14 @@ demo = {
     'front_page': 'home', 'posts_page': 'episodes',
     'pages': [{'slug': 'home', 'title': 'Home', 'content': ''}, {'slug': 'episodes', 'title': 'Episodes', 'content': ''},
               {'slug': 'hosts', 'title': 'Hosts', 'pattern': 'confidante/hosts-page'},
+              {'slug': 'guests', 'title': 'Guests', 'pattern': 'confidante/guests-page'},
               {'slug': 'write-to-us', 'title': 'Write to us', 'pattern': 'confidante/write-to-us-page'},
               {'slug': 'support', 'title': 'Support the show', 'pattern': 'confidante/support-page'},
               {'slug': 'subscribe', 'title': 'Subscribe', 'pattern': 'confidante/subscribe-page'},
               {'slug': 'episode-index', 'title': 'Episode index', 'pattern': 'confidante/episode-index-page'},
               {'slug': 'transcripts', 'title': 'Transcripts', 'pattern': 'confidante/transcripts-page'}],
     'posts': posts,
-    'nav': [{'label': 'Episodes', 'url': '/episodes/'}, {'label': 'Hosts', 'url': '/hosts/'}, {'label': 'Write to us', 'url': '/write-to-us/'},
+    'nav': [{'label': 'Episodes', 'url': '/episodes/'}, {'label': 'Hosts', 'url': '/hosts/'}, {'label': 'Guests', 'url': '/guests/'}, {'label': 'Write to us', 'url': '/write-to-us/'},
             {'label': 'Support', 'url': '/support/'}, {'label': 'Subscribe', 'url': '/subscribe/'}],
 }
 os.makedirs('demos/confidante', exist_ok=True)

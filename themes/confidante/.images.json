@@ -9,7 +9,7 @@
   },
   "mic": {
     "title": "Microphone (Unsplash).jpg",
-    "creator": "Kai Oberhäuser memoryonsounds",
+    "creator": "Kai Oberh\u00e4user memoryonsounds",
     "license": "CC0",
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Microphone_(Unsplash).jpg",
@@ -94,5 +94,29 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Generic_sterling_banknote.png",
     "query": "banknotes pound sterling"
+  },
+  "guest-1": {
+    "title": "Monochrome woman face glitter (Unsplash).jpg",
+    "creator": "Matheus Ferrero matheusferrero",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Monochrome_woman_face_glitter_(Unsplash).jpg",
+    "query": "woman portrait Unsplash"
+  },
+  "guest-2": {
+    "title": "Happy daughter (Unsplash).jpg",
+    "creator": "Michael Dam michaeldam",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Happy_daughter_(Unsplash).jpg",
+    "query": "woman smiling portrait Unsplash"
+  },
+  "guest-3": {
+    "title": "Woman lying on concrete (Unsplash).jpg",
+    "creator": "Eli DeFaria elidefaria",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Woman_lying_on_concrete_(Unsplash).jpg",
+    "query": "older woman portrait Unsplash"
   }
 }
