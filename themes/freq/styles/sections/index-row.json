@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Index row",
+	"slug": "index-row",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "& p,& h3,& .wp-block-post-title{margin:0}"
+	}
+}

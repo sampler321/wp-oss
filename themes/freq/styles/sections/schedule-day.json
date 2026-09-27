@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Schedule day",
+	"slug": "schedule-day",
+	"blockTypes": [
+		"core/column"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20"
+			}
+		},
+		"css": "& h3,& h4{font-size:var(--wp--preset--font-size--large)}& p{margin:0;padding:.35em 0;border-top:1px solid color-mix(in srgb,var(--wp--preset--color--line) 25%,transparent);font-size:var(--wp--preset--font-size--small)}& .is-style-live-dot{color:inherit}"
+	}
+}

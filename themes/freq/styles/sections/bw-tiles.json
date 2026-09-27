@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Black and white tiles",
+	"slug": "bw-tiles",
+	"blockTypes": [
+		"core/post-template",
+		"core/gallery",
+		"core/columns",
+		"core/group"
+	],
+	"styles": {
+		"css": "& img{filter:grayscale(1)}& img:hover,& a:focus img{filter:none}"
+	}
+}

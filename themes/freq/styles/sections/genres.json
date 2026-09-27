@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Genre list",
+	"slug": "genres",
+	"blockTypes": [
+		"core/tag-cloud"
+	],
+	"styles": {
+		"css": "& a{margin:0 .8em .3em 0!important;color:var(--wp--preset--color--contrast)}& a:hover{color:var(--wp--preset--color--accent)}"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "FM",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F5F0E4",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1A1A1A",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#1C4DFF",
+					"name": "Signal blue"
+				},
+				{
+					"slug": "live",
+					"color": "#E03A12",
+					"name": "Live red"
+				},
+				{
+					"slug": "surface",
+					"color": "#EAE3D2",
+					"name": "Grey card"
+				},
+				{
+					"slug": "line",
+					"color": "#1A1A1A",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#57524A",
+					"name": "Pencil"
+				}
+			]
+		}
+	}
+}

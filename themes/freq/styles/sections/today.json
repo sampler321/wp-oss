@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Today column",
+	"slug": "today",
+	"blockTypes": [
+		"core/column"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			}
+		}
+	}
+}

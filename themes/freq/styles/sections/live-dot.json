@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Live marker",
+	"slug": "live-dot",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "700"
+		},
+		"css": "&::before{content:\"\";display:inline-block;width:.7em;height:.7em;background:var(--wp--preset--color--live);margin-right:.45em;vertical-align:-.02em}"
+	}
+}

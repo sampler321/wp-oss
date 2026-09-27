@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Grey card",
+	"slug": "grey",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		}
+	}
+}

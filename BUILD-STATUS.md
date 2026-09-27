@@ -25,7 +25,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
-| 20 | freq | 046 Community / online radio station | yes, that radio station | tested |  |
+| 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | todo | |

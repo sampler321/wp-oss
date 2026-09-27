@@ -1,0 +1,32 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Radio Canada\", sans-serif",
+      "name": "Radio Canada",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Radio Canada",
+          "fontStyle": "italic",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/radio-canada-italic-300_700.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "Radio Canada",
+          "fontStyle": "normal",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/radio-canada-normal-300_700.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Radio Canada (Google Fonts), https://github.com/google/fonts/tree/main/ofl/radiocanada"
+  ]
+}
