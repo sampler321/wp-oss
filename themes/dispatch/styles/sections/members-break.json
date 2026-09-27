@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Members-only break",
+	"slug": "members-break",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|line",
+				"width": "3px",
+				"style": "solid"
+			},
+			"bottom": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40"
+			}
+		}
+	}
+}

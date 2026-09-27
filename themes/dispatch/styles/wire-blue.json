@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wire blue",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0E1116",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#0A5C8A",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FFE14D",
+					"name": "Acid"
+				},
+				{
+					"slug": "surface",
+					"color": "#EEF1F4",
+					"name": "Grey paper"
+				},
+				{
+					"slug": "line",
+					"color": "#0E1116",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4F5661",
+					"name": "Grey"
+				},
+				{
+					"slug": "hairline",
+					"color": "#C7CDD5",
+					"name": "Hairline"
+				},
+				{
+					"slug": "on-acid",
+					"color": "#0B0B0B",
+					"name": "Text on acid"
+				}
+			]
+		}
+	}
+}

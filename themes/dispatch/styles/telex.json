@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Telex",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F3E6A6",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#161308",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#9B1D12",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FFFFFF",
+					"name": "Acid"
+				},
+				{
+					"slug": "surface",
+					"color": "#EADB90",
+					"name": "Grey paper"
+				},
+				{
+					"slug": "line",
+					"color": "#161308",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4E4518",
+					"name": "Grey"
+				},
+				{
+					"slug": "hairline",
+					"color": "#BFAE5E",
+					"name": "Hairline"
+				},
+				{
+					"slug": "on-acid",
+					"color": "#0B0B0B",
+					"name": "Text on acid"
+				}
+			]
+		}
+	}
+}

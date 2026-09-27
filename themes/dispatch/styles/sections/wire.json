@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wire list",
+	"slug": "wire",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "& > li{border-bottom:1px solid var(--wp--preset--color--hairline);padding:.7rem 0;margin:0!important}"
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Inverse",
+	"slug": "inverse",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|accent-2"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|accent-2",
+					"text": "var:preset|color|on-acid"
+				},
+				"border": {
+					"color": "var:preset|color|accent-2"
+				}
+			}
+		},
+		"css": "& .wp-block-post-title a{color:inherit}& table td{border-bottom-color:currentColor}& table th{border-bottom-color:currentColor}"
+	}
+}

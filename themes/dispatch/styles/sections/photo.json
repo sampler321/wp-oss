@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "News photo (ruled, 3:2)",
+	"slug": "photo",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image",
+		"core/gallery"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:3/2;object-fit:cover;width:100%;border-bottom:1px solid var(--wp--preset--color--line)}"
+	}
+}

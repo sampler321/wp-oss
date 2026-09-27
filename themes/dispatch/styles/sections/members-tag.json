@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Members tag",
+	"slug": "members-tag",
+	"blockTypes": [
+		"core/post-terms",
+		"core/paragraph"
+	],
+	"styles": {
+		"css": "& a{background:var(--wp--preset--color--accent-2);color:var(--wp--preset--color--on-acid)!important;text-decoration:none;padding:.05em .35em;font-family:var(--wp--preset--font-family--display);font-weight:800}&:not(.wp-block-post-terms){background:var(--wp--preset--color--accent-2);color:var(--wp--preset--color--on-acid)!important;text-decoration:none;padding:.05em .35em;font-family:var(--wp--preset--font-family--display);font-weight:800}"
+	}
+}

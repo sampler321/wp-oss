@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Acid rule above",
+	"slug": "acid-top",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|accent-2",
+				"width": "8px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30"
+			}
+		}
+	}
+}

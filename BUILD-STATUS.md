@@ -22,7 +22,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |
 | 16 | amp | 038 Band / solo musician | duotone | deployed (HTTP 404) | https://wposs-amp.b-j-kapica.workers.dev |
-| 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
+| 17 | catalog | 039 Independent record label | inspired by a cassette label | tested |  |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
@@ -31,11 +31,11 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
-| 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
+| 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | deployed | https://wposs-dispatch.b-j-kapica.workers.dev |
 | 27 | local | 053 Hyperlocal news | more scientific looking | deployed | https://wposs-local.b-j-kapica.workers.dev |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed | https://wposs-larder.b-j-kapica.workers.dev |
-| 30 | roast | 059 Specialty coffee roaster | as researched | deployed (HTTP 404) | https://wposs-roast.b-j-kapica.workers.dev |
+| 30 | roast | 059 Specialty coffee roaster | as researched | tested |  |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | deployed | https://wposs-shelf.b-j-kapica.workers.dev |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed | https://wposs-crate.b-j-kapica.workers.dev |
 | 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
@@ -52,10 +52,10 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | deployed | https://wposs-tick.b-j-kapica.workers.dev |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | deployed (HTTP 404) | https://wposs-key.b-j-kapica.workers.dev |
 | 46 | grain | new: Independent furniture maker | workshop maker, commissions | deployed (HTTP 404) | https://wposs-grain.b-j-kapica.workers.dev |
-| 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
+| 47 | bind | 262 Bookbinder (introligator) | as researched | tested |  |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
-| 50 | taproom | 088 Craft brewery | as researched | tested |  |
+| 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |
 
 ## Pipeline
 1. Reference theme `ink` + tools (fonts, images, demo builder, test harness, static export, deploy).

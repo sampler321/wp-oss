@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Rule below (heavy)",
+	"slug": "rule-bottom",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|line",
+				"width": "3px",
+				"style": "solid"
+			}
+		}
+	}
+}

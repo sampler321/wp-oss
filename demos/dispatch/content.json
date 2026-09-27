@@ -1,0 +1,220 @@
+{
+ "site": {
+  "title": "Readout",
+  "tagline": "Independent reporting on data brokers, ad tech and the people they track"
+ },
+ "categories": [
+  {
+   "slug": "investigations",
+   "name": "Investigations",
+   "description": "Long stories built on documents. Two or three a month, mostly for members."
+  },
+  {
+   "slug": "briefings",
+   "name": "Briefings",
+   "description": "Short reads on what regulators and companies did this week. Free."
+  },
+  {
+   "slug": "explainers",
+   "name": "Explainers",
+   "description": "How a system works and what you can do about it. Free."
+  },
+  {
+   "slug": "notes",
+   "name": "Notes",
+   "description": "Numbers, corrections and news about Readout itself."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "latest",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "latest",
+   "title": "Latest",
+   "content": ""
+  },
+  {
+   "slug": "membership",
+   "title": "Membership",
+   "pattern": "dispatch/membership-page"
+  },
+  {
+   "slug": "signup",
+   "title": "Sign up",
+   "pattern": "dispatch/signup-page"
+  },
+  {
+   "slug": "goals",
+   "title": "Subscriber goals",
+   "pattern": "dispatch/goals-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "dispatch/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "tips",
+   "title": "Send a tip",
+   "pattern": "dispatch/tips-page"
+  },
+  {
+   "slug": "corrections",
+   "title": "Corrections",
+   "pattern": "dispatch/corrections-page"
+  },
+  {
+   "slug": "live",
+   "title": "Live notes from the data broker vote",
+   "pattern": "dispatch/live-page"
+  },
+  {
+   "slug": "how-we-report",
+   "title": "How we report",
+   "pattern": "dispatch/methods-page"
+  },
+  {
+   "slug": "masthead",
+   "title": "Masthead",
+   "pattern": "dispatch/masthead-page"
+  },
+  {
+   "slug": "documents",
+   "title": "Document archive",
+   "pattern": "dispatch/documents-page"
+  },
+  {
+   "slug": "podcast",
+   "title": "Podcast",
+   "pattern": "dispatch/podcast-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "An ad exchange sold location data from 41 hospitals",
+   "slug": "ad-exchange-hospital-location-data",
+   "category": "investigations",
+   "tags": [
+    "Members"
+   ],
+   "image": "phones.jpg",
+   "date": "2026-09-24",
+   "excerpt": "Bid requests from a Dutch exchange carried the precise location of phones inside cancer wards and fertility clinics. Three data brokers bought the stream.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"dispatch/editors-note\"} /-->\n\n<!-- wp:pattern {\"slug\":\"dispatch/key-findings\"} /-->\n\n<!-- wp:paragraph -->\n<p>For six weeks this summer, a phone on my desk ran eleven free apps and logged every ad request they made. Of the 212,000 requests, 1,904 carried a latitude and longitude precise to about four metres.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>When I matched those coordinates against hospital footprints in the Netherlands and Belgium, 41 hospitals came up. Eleven of the requests came from inside a single oncology ward in Leuven.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>We treat location as location. What is at that location is not our concern.</p>\n<!-- /wp:paragraph --><cite>Head of partnerships at one of the brokers, on a recorded call, 9 September 2026</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:pattern {\"slug\":\"dispatch/members-break\"} /-->\n\n<!-- wp:paragraph -->\n<p>The exchange, which I am not naming until its lawyers reply to a second set of questions, says it “does not knowingly process health data”.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Two of the three brokers that bought the stream sell audience segments to insurers. Both declined to say whether hospital visits were among them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"dispatch/methodology\"} /-->\n\n<!-- wp:pattern {\"slug\":\"dispatch/document\"} /-->\n\n<!-- wp:pattern {\"slug\":\"dispatch/series-nav\"} /-->\n\n<!-- wp:group {\"className\":\"is-style-hairline-top\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-hairline-top\"><!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><strong>Correction, 25 September 2026, 16:40.</strong> An earlier version said the Dutch data protection authority fined the exchange €1.2m in 2023. The fine was €525,000.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->",
+   "template": "single-members"
+  },
+  {
+   "title": "Parliament’s lobby register, read line by line",
+   "slug": "parliament-lobby-register",
+   "category": "briefings",
+   "tags": [],
+   "image": "parliament.jpg",
+   "date": "2026-09-22",
+   "excerpt": "I read all 1,380 meetings logged on the AI Act since January. Four companies account for a third of them.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The European Parliament’s transparency register lists 1,380 meetings about the AI Act between 1 January and 31 August. I put all of them into a spreadsheet, which members can download.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Four companies account for 471 of the meetings. Civil society groups, all of them together, account for 212.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The spreadsheet has one row per meeting, with the MEP, the date, the organisation and the stated topic.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A drone contractor won €12m in border contracts. Its director sat on the tender panel.",
+   "slug": "drone-contractor-border-contracts",
+   "category": "investigations",
+   "tags": [
+    "Members"
+   ],
+   "image": "lead.jpg",
+   "date": "2026-09-18",
+   "excerpt": "Procurement files show the director of a surveillance drone supplier scored his own company’s bid in 2024.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The contract, for aerial surveillance along the Union’s eastern border, was awarded in March 2024. The tender documents, released to me under the access-to-documents rules, list five evaluators.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>One of them was, at the time, a non-executive director of the company that won.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"dispatch/members-break\"} /-->\n\n<!-- wp:paragraph -->\n<p>The agency says the evaluator declared the conflict. The declaration is not in the file it sent me.</p>\n<!-- /wp:paragraph -->",
+   "template": "single-members"
+  },
+  {
+   "title": "Your transit card is a location history. Here is who can ask for it.",
+   "slug": "transit-cards-location-history",
+   "category": "explainers",
+   "tags": [],
+   "image": "crowd.jpg",
+   "date": "2026-09-15",
+   "excerpt": "Brussels, Amsterdam and Warsaw keep card tap records for between 6 and 24 months. Police can get them without a judge in two of the three.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Every time you tap in, the operator logs the card number, the station and the time. If the card is registered, that log has your name on it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>I asked the three operators how long they keep the logs and who has asked for them. Two answered in full.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you want to see your own record, the GDPR lets you ask. The template letter is at the end of this story.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-hairline-top\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-hairline-top\"><!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\"><strong>Correction, 2 July 2026.</strong> An earlier version said STIB keeps tap records for 18 months. It is 12.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "What the Commission’s data broker consultation actually asks",
+   "slug": "commission-data-broker-consultation",
+   "category": "briefings",
+   "tags": [],
+   "image": "berlaymont.jpg",
+   "date": "2026-09-11",
+   "excerpt": "Twenty-three questions, closing 30 October. Seven of them are about definitions, and the definitions matter most.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The consultation runs until 30 October. It has 23 questions, and anyone can answer.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The questions that will decide what the rules cover are numbers 4 to 10, which ask what a “data broker” is.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Undersea cable maps are public. The repair schedules are not.",
+   "slug": "undersea-cable-repair-schedules",
+   "category": "investigations",
+   "tags": [
+    "Members"
+   ],
+   "image": "cables.jpg",
+   "date": "2026-09-04",
+   "excerpt": "Four companies repair most of the cables under the North Sea. One of them shares its schedule with a defence contractor.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Brussels</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The routes of undersea data cables are on public maps. When and where they are being repaired is not, and for good reason.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A leaked planning document shows one repair company sends its schedule to a private intelligence firm every week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"dispatch/members-break\"} /-->",
+   "template": "single-members"
+  },
+  {
+   "title": "Phone masts, planning law and one very annoyed council",
+   "slug": "phone-masts-planning-council",
+   "category": "briefings",
+   "tags": [],
+   "image": "mast.jpg",
+   "date": "2026-08-28",
+   "excerpt": "A council in Flanders refused a mast. The operator put a “temporary” one up anyway, eighteen months ago.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Mechelen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The mast is 25 metres tall and stands on a car park behind a supermarket. It has been “temporary” since February 2025.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The council has written to the operator eleven times. I have all eleven letters.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Readout’s numbers, September 2026",
+   "slug": "readout-numbers-september-2026",
+   "category": "notes",
+   "tags": [],
+   "image": "laptop.jpg",
+   "date": "2026-08-25",
+   "excerpt": "2,412 paying members, €19,140 a month, and what happens at 3,000.",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dateline\"} -->\n<p class=\"is-style-dateline\">By Lena Varga, Saint-Gilles</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Every quarter I publish what Readout earns and spends. This quarter: 2,412 paying members, up from 2,080 in June.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>At 3,000 I can hire Daan, a researcher I have worked with for three years, for three days a week.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Latest",
+   "url": "/latest/"
+  },
+  {
+   "label": "Investigations",
+   "url": "/category/investigations/"
+  },
+  {
+   "label": "Live",
+   "url": "/live/"
+  },
+  {
+   "label": "Podcast",
+   "url": "/podcast/"
+  },
+  {
+   "label": "Membership",
+   "url": "/membership/"
+  },
+  {
+   "label": "Goals",
+   "url": "/goals/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}
