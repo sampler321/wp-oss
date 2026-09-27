@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Limone",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FBFAF1",
+					"name": "Fior di latte"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E1D14",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#5E5410",
+					"name": "Amarena"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#4E6B3A",
+					"name": "Pistachio"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1EFD6",
+					"name": "Pistachio mist"
+				},
+				{
+					"slug": "line",
+					"color": "#1E1D14",
+					"name": "Hairline"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A5846",
+					"name": "Grey note"
+				},
+				{
+					"slug": "rule",
+					"color": "#D8D5B8",
+					"name": "Light rule"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cabinet pan",
+	"slug": "pan",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"blockGap": "var:preset|spacing|10"
+		},
+		"css": "& p{margin:0}& p:first-child{font-size:var(--wp--preset--font-size--x-small);color:var(--wp--preset--color--muted)}& p:nth-child(2){font-family:var(--wp--preset--font-family--display);font-size:1.15rem;line-height:1.15}"
+	}
+}

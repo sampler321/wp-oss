@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Spec line",
+	"slug": "spec",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small"
+		},
+		"color": {
+			"text": "var:preset|color|muted"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cabinet pan, special",
+	"slug": "pan-special",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"spacing": {
+			"blockGap": "var:preset|spacing|10"
+		},
+		"css": "&{box-shadow:inset 0 3px 0 var(--wp--preset--color--accent)}& p{margin:0}& p:first-child{font-size:var(--wp--preset--font-size--x-small);color:var(--wp--preset--color--accent)}& p:nth-child(2){font-family:var(--wp--preset--font-family--display);font-size:1.15rem;line-height:1.15}"
+	}
+}

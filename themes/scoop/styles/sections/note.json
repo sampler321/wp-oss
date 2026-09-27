@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Italic note",
+	"slug": "note",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontStyle": "italic",
+			"fontWeight": "300",
+			"fontSize": "var:preset|font-size|medium"
+		}
+	}
+}

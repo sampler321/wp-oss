@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Flavour line",
+	"slug": "flavour",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|rule",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30"
+			},
+			"blockGap": "var:preset|spacing|10"
+		},
+		"css": "& h4{margin:0}& .is-note{font-family:var(--wp--preset--font-family--display);font-style:italic;font-weight:300;font-size:var(--wp--preset--font-size--medium);margin:0}& .is-spec{font-size:var(--wp--preset--font-size--x-small);color:var(--wp--preset--color--muted);margin:0}"
+	}
+}

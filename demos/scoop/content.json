@@ -1,0 +1,142 @@
+{
+ "site": {
+  "title": "Latteria Nord",
+  "tagline": "Gelato, churned every morning in Stockbridge"
+ },
+ "categories": [
+  {
+   "slug": "menus",
+   "name": "Monthly menus",
+   "description": "Every month's specials since we opened."
+  },
+  {
+   "slug": "notes",
+   "name": "Kitchen notes",
+   "description": "Recipes, numbers and how the machines work."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "past-menus",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "past-menus",
+   "title": "Past menus",
+   "content": ""
+  },
+  {
+   "slug": "menu",
+   "title": "Menu",
+   "pattern": "scoop/menu-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "tubs",
+   "title": "Tubs",
+   "pattern": "scoop/tubs-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "pattern": "scoop/events-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "allergens",
+   "title": "Allergens",
+   "pattern": "scoop/allergens-page",
+   "template": "page-sheet"
+  },
+  {
+   "slug": "story",
+   "title": "Story",
+   "pattern": "scoop/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "find-us",
+   "title": "Find us",
+   "pattern": "scoop/find-us-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "September menu",
+   "category": "menus",
+   "image": "hero.jpg",
+   "excerpt": "Plum and almond, sweetcorn, the last raspberries. Sweetcorn outsold pistachio for one week, which nobody expected.",
+   "content": "<!-- wp:paragraph -->\n<p>Plum and almond, sweetcorn, the last raspberries. Sweetcorn outsold pistachio for one week, which nobody expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Plum and almond</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sweetcorn and brown butter</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Raspberry sorbet</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Honey and thyme</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Blackberry and bay (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Earl Grey</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Toasted rice</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Peach sorbet (vg)</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>What we learned: sweetcorn works. It will be back next August.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "August menu",
+   "category": "menus",
+   "image": "cone.jpg",
+   "excerpt": "Peach, apricot kernel, basil. The busiest month on record, 31 days over 20 °C in total.",
+   "content": "<!-- wp:paragraph -->\n<p>Peach, apricot kernel, basil. The busiest month on record, 31 days over 20 °C in total.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>White peach sorbet (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Apricot kernel</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Basil and lemon</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Strawberry and black pepper</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Watermelon sorbet (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Ricotta and fig</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Malted milk</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Cherry and almond</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>What we learned: we need a second batch freezer in August. It is on order.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "July menu",
+   "category": "menus",
+   "image": "tubs.jpg",
+   "excerpt": "Strawberry and black pepper, gooseberry, elderflower. The elderflower was picked on the Water of Leith walkway.",
+   "content": "<!-- wp:paragraph -->\n<p>Strawberry and black pepper, gooseberry, elderflower. The elderflower was picked on the Water of Leith walkway.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Strawberry and black pepper</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Gooseberry sorbet (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Elderflower</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Blackcurrant ripple</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Cherry sorbet (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sheep's milk yoghurt</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Olive oil and sea salt</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Toasted oat</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>What we learned: olive oil and sea salt has the most votes to come back.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "June menu",
+   "category": "menus",
+   "image": "lemons.jpg",
+   "excerpt": "Rhubarb and custard, lemon verbena, the first strawberries from Fife.",
+   "content": "<!-- wp:paragraph -->\n<p>Rhubarb and custard, lemon verbena, the first strawberries from Fife.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Rhubarb and custard</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Lemon verbena</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Strawberry (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Buttermilk</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Pea and mint (we tried)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sour cherry sorbet (vg)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Hazelnut praline</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Honeycomb</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>What we learned: pea and mint was a mistake. We made it once.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why the pistachio is brownish green",
+   "category": "notes",
+   "image": "pistachios.jpg",
+   "excerpt": "Our pistachio is brownish green because it is 12% Bronte pistachio paste and nothing else. Here is the recipe.",
+   "content": "<!-- wp:paragraph -->\n<p>Our pistachio is brownish green because it is 12% Bronte pistachio paste and nothing else. Here is the recipe.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Whole milk, 62%</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bronte pistachio paste, 12%</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sugar and dextrose, 17%</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Cream, 6%</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Skimmed milk powder, 3%</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Bright green pistachio gelato is coloured. Ours goes slightly darker as the week goes on, which is how you know.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The batch freezer, explained",
+   "category": "notes",
+   "image": "affogato.jpg",
+   "excerpt": "We churn in a horizontal batch freezer that makes 6 litres in 10 minutes. This is what that means for texture.",
+   "content": "<!-- wp:paragraph -->\n<p>We churn in a horizontal batch freezer that makes 6 litres in 10 minutes. This is what that means for texture.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Base goes in at 4 °C</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>It comes out at −8 °C, soft</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Hardened at −25 °C for 40 minutes</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Served at −12 °C</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The faster a base freezes, the smaller the ice crystals. That is most of what makes gelato smooth.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Menu",
+   "url": "/menu/"
+  },
+  {
+   "label": "Tubs",
+   "url": "/tubs/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Allergens",
+   "url": "/allergens/"
+  },
+  {
+   "label": "Past menus",
+   "url": "/past-menus/"
+  },
+  {
+   "label": "Story",
+   "url": "/story/"
+  },
+  {
+   "label": "Find us",
+   "url": "/find-us/"
+  }
+ ]
+}

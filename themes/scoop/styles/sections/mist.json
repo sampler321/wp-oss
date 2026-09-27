@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pistachio mist",
+	"slug": "mist",
+	"blockTypes": [
+		"core/group",
+		"core/columns",
+		"core/column"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60"
+			}
+		}
+	}
+}

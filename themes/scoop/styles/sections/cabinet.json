@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cabinet plan",
+	"slug": "cabinet",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(7.5rem,1fr));gap:0!important;outline:1px solid var(--wp--preset--color--line);outline-offset:-1px;border-top:1px solid var(--wp--preset--color--rule);border-left:1px solid var(--wp--preset--color--rule)}& > *{margin:0!important;border-right:1px solid var(--wp--preset--color--rule);border-bottom:1px solid var(--wp--preset--color--rule);padding:.75rem .8rem 1rem;min-height:7rem}"
+	}
+}

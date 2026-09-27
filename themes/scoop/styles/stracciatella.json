@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stracciatella",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Fior di latte"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#1C2521",
+					"name": "Amarena"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1C2521",
+					"name": "Pistachio"
+				},
+				{
+					"slug": "surface",
+					"color": "#F2F2F2",
+					"name": "Pistachio mist"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Hairline"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A5A5A",
+					"name": "Grey note"
+				},
+				{
+					"slug": "rule",
+					"color": "#D0D0D0",
+					"name": "Light rule"
+				}
+			]
+		}
+	}
+}

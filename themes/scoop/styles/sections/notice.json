@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Notice line",
+	"slug": "notice",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small"
+		}
+	}
+}
