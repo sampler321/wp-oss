@@ -1,0 +1,38 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Reenie Beanie\", sans-serif",
+      "name": "Reenie Beanie",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Reenie Beanie",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/reenie-beanie-normal-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Cutive\", sans-serif",
+      "name": "Cutive",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Cutive",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/cutive-normal-400.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Reenie Beanie (Google Fonts), https://github.com/google/fonts/tree/main/ofl/reeniebeanie",
+    "Cutive (Google Fonts), https://github.com/google/fonts/tree/main/ofl/cutive"
+  ]
+}

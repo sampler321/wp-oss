@@ -1,0 +1,219 @@
+{
+ "site": {
+  "title": "Wet Static",
+  "tagline": "Merch table, open when a drop is on"
+ },
+ "categories": [
+  {
+   "slug": "drops",
+   "name": "Past drops",
+   "description": "Everything we have made, in order. Sold out stays up."
+  },
+  {
+   "slug": "notes",
+   "name": "Notes from the back bedroom",
+   "description": "How things get printed, dubbed and posted."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "past-drops",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Current drop",
+   "content": ""
+  },
+  {
+   "slug": "past-drops",
+   "title": "Past drops",
+   "content": ""
+  },
+  {
+   "slug": "in-production",
+   "title": "In production",
+   "pattern": "drop/in-production-page"
+  },
+  {
+   "slug": "size-guide",
+   "title": "Size guide",
+   "pattern": "drop/size-guide-page"
+  },
+  {
+   "slug": "shipping",
+   "title": "Shipping and returns",
+   "pattern": "drop/shipping-page"
+  },
+  {
+   "slug": "faq",
+   "title": "Questions",
+   "pattern": "drop/faq-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "band",
+   "title": "The band",
+   "pattern": "drop/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "drop/contact"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Drop six: flood tee",
+   "category": "drops",
+   "image": "guitar.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>White tee, one-colour black print of the crowd at the Wharf Chambers flood show, when the ceiling leaked on the drum riser. 150 made. Sold out in nine days.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "White tee, 150 made, sold out in nine days."
+  },
+  {
+   "title": "Drop five: tour tote",
+   "category": "drops",
+   "image": "hero.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Heavy canvas tote with every date of the spring tour handwritten by Mags on the back, including the two that got cancelled. 80 made. The last one went at the Glasgow show.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "80 made, gone by Glasgow."
+  },
+  {
+   "title": "Drop four: lighthouse longsleeve",
+   "category": "drops",
+   "image": "bass.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Our first longsleeve, printed on both arms, which is why we have never made another. 60 made. Sold out.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "60 made. The sleeves nearly finished Priya."
+  },
+  {
+   "title": "Drop three: demo tape",
+   "category": "drops",
+   "image": "tape.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Four songs on a C30, dubbed on a borrowed Tascam and wrapped in a photocopied J-card. 50 made. Mostly bought by our mums, who then bought more.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "50 tapes, mostly to our mums."
+  },
+  {
+   "title": "Drop two: amp tee",
+   "category": "drops",
+   "image": "amp.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>A photo of Tom's practice amp, photocopied until the knobs looked like eyes. 100 made, sold out in a month.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "The amp photo that looks like a face."
+  },
+  {
+   "title": "Drop one: the holdall tees",
+   "category": "drops",
+   "image": "live.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Forty tees sold out of a holdall at our first six shows, in 2021. No website, cash only. We still have one, framed, in the practice room.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Forty tees, cash only, 2021."
+  },
+  {
+   "title": "Printing the car park tee",
+   "category": "notes",
+   "image": "print.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Priya printed all 200 car park tees over two Thursday nights at Hyde Park Print Club. The screen tore on shirt 188, so the last twelve have a small extra line on the bumper. We think it is an improvement.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Two Thursdays, 200 tees, one torn screen."
+  },
+  {
+   "title": "Why the tape costs £8",
+   "category": "notes",
+   "image": "vinyl.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>A chrome C40 blank costs us £2.10, the J-card print 40p, the case 60p, and the postage bag 35p. The rest pays for Mags's time dubbing in real time, which is twenty minutes a tape.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Where the £8 goes, line by line."
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "In production",
+   "url": "/in-production/"
+  },
+  {
+   "label": "Past drops",
+   "url": "/past-drops/"
+  },
+  {
+   "label": "Size guide",
+   "url": "/size-guide/"
+  },
+  {
+   "label": "Shipping",
+   "url": "/shipping/"
+  },
+  {
+   "label": "Questions",
+   "url": "/faq/"
+  },
+  {
+   "label": "The band",
+   "url": "/band/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Car park tee, black",
+   "price": "22",
+   "image": "tee.jpg",
+   "category": "Drop seven",
+   "sku": "WS-D7-TEE",
+   "stock": 38,
+   "short": "Heavy cotton, one-colour screen print, S to XXL. 200 printed, this is the number left."
+  },
+  {
+   "name": "Static bloom longsleeve",
+   "price": "30",
+   "image": "hero.jpg",
+   "category": "Drop seven",
+   "sku": "WS-D7-LS",
+   "stock": 6,
+   "short": "Two colours, printed on both sleeves, S to XL. We will not print this again."
+  },
+  {
+   "name": "Heavy hoodie, washed black (pre-order)",
+   "price": "45",
+   "image": "live.jpg",
+   "category": "In production",
+   "sku": "WS-D7-HOOD",
+   "stock": 120,
+   "short": "In production. Pre-order until 2 November. First batch ships 24 to 29 November, on its own."
+  },
+  {
+   "name": "Songs for the car park, tape",
+   "price": "8",
+   "image": "tape.jpg",
+   "category": "Drop seven",
+   "sku": "WS-D7-TAPE",
+   "stock": 0,
+   "short": "Sold out. Missed it? Email us: if 50 people ask, we dub a second batch in December."
+  },
+  {
+   "name": "Soft engine, 12 inch LP",
+   "price": "24",
+   "image": "vinyl.jpg",
+   "category": "Records",
+   "sku": "WS-LP1",
+   "stock": 64,
+   "short": "Black vinyl, printed inner sleeve. UK and Europe only."
+  },
+  {
+   "name": "Zine, issue three",
+   "price": "5",
+   "image": "zine.jpg",
+   "category": "Drop seven",
+   "sku": "WS-Z3",
+   "stock": 22,
+   "short": "40 pages, photocopied and stapled by hand. Tour photos, lyrics, one recipe."
+  },
+  {
+   "name": "Tee and LP bundle",
+   "price": "46",
+   "sale_price": "40",
+   "image": "bass.jpg",
+   "category": "Records",
+   "sku": "WS-BUNDLE",
+   "stock": 20,
+   "short": "Car park tee and the Soft engine LP. Pick your size at checkout."
+  }
+ ]
+}

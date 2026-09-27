@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pink flyer",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E7B9C4",
+					"name": "Photocopy grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Toner"
+				},
+				{
+					"slug": "accent",
+					"color": "#1F2A80",
+					"name": "Ballpoint"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#A3211B",
+					"name": "Stamp red"
+				},
+				{
+					"slug": "surface",
+					"color": "#FBF3F4",
+					"name": "Paper scrap"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Toner line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F2A30",
+					"name": "Faded toner"
+				},
+				{
+					"slug": "tape",
+					"color": "#F3E4C8",
+					"name": "Masking tape"
+				}
+			]
+		}
+	}
+}

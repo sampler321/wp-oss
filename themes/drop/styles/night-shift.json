@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night shift",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#161616",
+					"name": "Photocopy grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#ECEAE2",
+					"name": "Toner"
+				},
+				{
+					"slug": "accent",
+					"color": "#9DB2FF",
+					"name": "Ballpoint"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF7B6B",
+					"name": "Stamp red"
+				},
+				{
+					"slug": "surface",
+					"color": "#262624",
+					"name": "Paper scrap"
+				},
+				{
+					"slug": "line",
+					"color": "#ECEAE2",
+					"name": "Toner line"
+				},
+				{
+					"slug": "muted",
+					"color": "#B9B7AF",
+					"name": "Faded toner"
+				},
+				{
+					"slug": "tape",
+					"color": "#5A5648",
+					"name": "Masking tape"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/image": {
+				"css": "& img{filter:var(--wp--custom--xerox);mix-blend-mode:screen}"
+			}
+		}
+	}
+}

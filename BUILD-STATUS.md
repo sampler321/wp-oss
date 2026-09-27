@@ -8,7 +8,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 |---|---|---|---|---|---|
 | 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
 | 2 | oil | 002 Painter, studio and available works | as researched | todo | |
-| 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | todo | |
+| 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | failed test |  |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
@@ -18,7 +18,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | todo | |
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
-| 13 | karat | 032 Jewelry maker | as researched | todo | |
+| 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | todo | |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | todo | |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
@@ -37,17 +37,17 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | todo | |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
-| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | todo | |
+| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | tested |  |
 | 33 | thrift | 062 Vintage clothing | as researched | todo | |
 | 34 | paper | 067 Stationery and paper goods | as researched | todo | |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
-| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | tested |  |
+| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | todo | |
-| 42 | coat | 101 Painter and decorator | more colours and fun | todo | |
+| 42 | coat | 101 Painter and decorator | more colours and fun | deploy failed |  |
 | 43 | lingua | 132 Translator / interpreter | as researched | todo | |
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | todo | |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | todo | |

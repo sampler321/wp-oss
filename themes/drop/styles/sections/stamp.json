@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stamp (sold out)",
+	"slug": "stamp",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|x-large",
+			"lineHeight": "1",
+			"textTransform": "lowercase"
+		},
+		"color": {
+			"text": "var:preset|color|accent-2"
+		},
+		"border": {
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|accent-2"
+		},
+		"css": "&{display:inline-block;padding:.05em .35em .15em;transform:rotate(-6deg)}"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ransom note heading",
+	"slug": "ransom",
+	"blockTypes": [
+		"core/heading"
+	],
+	"styles": {
+		"css": "&{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--surface)!important;display:inline-block;padding:.05em .2em .15em;transform:rotate(-1.5deg)}"
+	}
+}

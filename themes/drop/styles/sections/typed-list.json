@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Typed stock sheet",
+	"slug": "typed-list",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:last-child{font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);color:var(--wp--preset--color--accent);line-height:1;white-space:nowrap}"
+	}
+}

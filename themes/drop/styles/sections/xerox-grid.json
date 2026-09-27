@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Xerox contact sheet",
+	"slug": "xerox-grid",
+	"blockTypes": [
+		"core/post-template",
+		"core/gallery"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:4/5;object-fit:cover}& > li:nth-child(odd){transform:rotate(-0.8deg)}& > li:nth-child(even){transform:rotate(0.9deg)}"
+	}
+}

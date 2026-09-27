@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Kraft",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#C9A97E",
+					"name": "Photocopy grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1A140C",
+					"name": "Toner"
+				},
+				{
+					"slug": "accent",
+					"color": "#1F2E7A",
+					"name": "Ballpoint"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#A3211B",
+					"name": "Stamp red"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1E7D2",
+					"name": "Paper scrap"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Toner line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3E3223",
+					"name": "Faded toner"
+				},
+				{
+					"slug": "tape",
+					"color": "#EDE3C5",
+					"name": "Masking tape"
+				}
+			]
+		}
+	}
+}
