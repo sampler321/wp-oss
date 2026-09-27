@@ -1,17 +1,17 @@
 <?php
 /**
- * Title: Newsletter
+ * Title: Newsletter (box)
  * Slug: ink/newsletter
  * Categories: call-to-action
  */
 ?>
-<!-- wp:group {"className":"is-style-sketchbook","layout":{"type":"constrained"},"anchor":"newsletter"} -->
-<div id="newsletter" class="wp-block-group is-style-sketchbook"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">A newsletter four times a year</h3>
+<!-- wp:group {"className":"is-style-sketchbook","layout":{"type":"default"},"anchor":"newsletter"} -->
+<div id="newsletter" class="wp-block-group is-style-sketchbook"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">A newsletter four times a year</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>New prints, which originals are left, and when commissions open. No more than four emails a year, one of them about birds I saw on holiday.</p>
+<p>New prints, which originals are left, and when commissions open. Four emails a year, one of them about birds I saw on holiday.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

@@ -1,12 +1,12 @@
 <?php
 /**
- * Title: Commission terms (short)
+ * Title: Commission terms (plain words)
  * Slug: ink/commission-terms
- * Categories: text
+ * Categories: commissions,text
  */
 ?>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Terms, in plain words</h3>
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">Terms, in plain words</h3>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -19,7 +19,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>I keep the copyright and may show the work in my portfolio unless you ask me not to.</li>
+<li>I keep the copyright and may show the work here unless you ask me not to.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

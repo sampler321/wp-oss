@@ -62,5 +62,117 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:%E3%80%8C%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E5%87%B1%E9%A2%A8%E5%BF%AB%E6%99%B4%E3%80%8D-South_Wind,_Clear_Sky_(Gaif%C5%AB_kaisei),_also_known_as_Red_Fuji,_from_the_series_Thirty-six_Views_of_Mount_Fuji_(Fugaku_sanj%C5%ABrokkei)_MET_DP141062.jpg",
     "query": "Hokusai print"
+  },
+  "work-7": {
+    "title": "Barred Owl (Audubon).jpg",
+    "creator": "John James Audubon",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Barred_Owl_(Audubon).jpg",
+    "query": "Audubon Birds of America owl plate"
+  },
+  "work-8": {
+    "title": "Haeckel Discomedusae 8.jpg",
+    "creator": "Original: Ernst Haeckel. Scan: Ragesoss. Cleanup: Ilmari Karonen.",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Haeckel_Discomedusae_8.jpg",
+    "query": "Haeckel Kunstformen der Natur Discomedusae"
+  },
+  "work-9": {
+    "title": "Crow and blossom by Ohara Koson.jpg",
+    "creator": "Ohara Koson",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Crow_and_blossom_by_Ohara_Koson.jpg",
+    "query": "Ohara Koson bird woodblock print"
+  },
+  "work-11": {
+    "title": "Robert Havell after John James Audubon, Puffin, 1834, NGA 32387.jpg",
+    "creator": "Robert Havell after John James Audubon",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Robert_Havell_after_John_James_Audubon,_Puffin,_1834,_NGA_32387.jpg",
+    "query": "Audubon puffin plate"
+  },
+  "work-12": {
+    "title": "Haeckel Trochilidae.jpg",
+    "creator": "Ernst Haeckel",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Haeckel_Trochilidae.jpg",
+    "query": "Haeckel Trochilidae hummingbirds"
+  },
+  "work-13": {
+    "title": "梅に三光鳥-Bird on a Plum Branch MET DP123573.jpg",
+    "creator": "Utagawa Hiroshige",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:%E6%A2%85%E3%81%AB%E4%B8%89%E5%85%89%E9%B3%A5-Bird_on_a_Plum_Branch_MET_DP123573.jpg",
+    "query": "Hiroshige birds flowers woodblock"
+  },
+  "work-14": {
+    "title": "Hokusai 1760-1849 Ocean waves.jpg",
+    "creator": "Katsushika Hokusai",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Hokusai_1760-1849_Ocean_waves.jpg",
+    "query": "Hokusai fishing boats woodblock"
+  },
+  "sketch-1": {
+    "title": "Hokusai sketches - hokusai manga vol6.jpg",
+    "creator": "Katsushika Hokusai",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Hokusai_sketches_-_hokusai_manga_vol6.jpg",
+    "query": "Hokusai Manga sketches page"
+  },
+  "map-1": {
+    "title": "1871 Harpers Weekly View or Map of New York City from a Balloon - Geographicus - NewYork-harpers-1871.jpg",
+    "creator": "http://www.geographicus.com/mm5/cartographers/harpers.txt",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:1871_Harpers_Weekly_View_or_Map_of_New_York_City_from_a_Balloon_-_Geographicus_-_NewYork-harpers-1871.jpg",
+    "query": "pictorial map illustrated antique town"
+  },
+  "work-10": {
+    "title": "Pierre-Joseph Redouté - Eucomis Punctata, Plate 208 from Les Liliacées, volume 4, Paris, 1802-1816 - B2012.33.4 - Yale Center for British Art.jpg",
+    "creator": "Pierre-Joseph Redouté",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Eucomis_Punctata,_Plate_208_from_Les_Liliac%C3%A9es,_volume_4,_Paris,_1802-1816_-_B2012.33.4_-_Yale_Center_for_British_Art.jpg",
+    "query": "Redoute Les Liliacees plate"
+  },
+  "sketch-2": {
+    "title": "Leonardo da Vinci, Study of a Madonna (verso), probably 1470-1480, NGA 74164.jpg",
+    "creator": "Leonardo da Vinci",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci,_Study_of_a_Madonna_(verso),_probably_1470-1480,_NGA_74164.jpg",
+    "query": "Leonardo da Vinci study drawing"
+  },
+  "studio": {
+    "title": "Sculptor's Studio MET ap67.70.jpg",
+    "creator": "Louis Moeller",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sculptor%27s_Studio_MET_ap67.70.jpg",
+    "query": "artist studio interior painting"
+  },
+  "work-15": {
+    "title": "Robert Havell after John James Audubon, Blue Jay, 1831, NGA 32243.jpg",
+    "creator": "Robert Havell after John James Audubon",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Robert_Havell_after_John_James_Audubon,_Blue_Jay,_1831,_NGA_32243.jpg",
+    "query": "Audubon Blue Jay"
+  },
+  "work-16": {
+    "title": "Orchideae. - Denusblumen - A. Giltsch, gem. LCCN2015648955.jpg",
+    "creator": "Giltsch, Adolf, 1852-1911, lithographer; Haeckel, Ernst, 1834-1919, artist",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Orchideae._-_Denusblumen_-_A._Giltsch,_gem._LCCN2015648955.jpg",
+    "query": "Haeckel Kunstformen Orchideae"
   }
 }

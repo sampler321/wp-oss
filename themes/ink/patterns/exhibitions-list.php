@@ -2,13 +2,51 @@
 /**
  * Title: Exhibitions
  * Slug: ink/exhibitions-list
- * Categories: about
+ * Categories: about,events
  */
 ?>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Shown at</h3>
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">Shown at</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>2025</td><td>Paper Birds, group show</td><td>Spike Island, Bristol</td></tr><tr><td>2024</td><td>Small Maps, solo</td><td>The Letterpress Room, Bath</td></tr><tr><td>2022</td><td>Illustrators' Fair</td><td>Old Truman Brewery, London</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-hairline","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-hairline"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2025</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Paper Birds, group show</strong>, Spike Island, Bristol</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-hairline","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-hairline"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2024</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Small Maps, solo</strong>, The Letterpress Room, Bath</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-hairline","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-hairline"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2023</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Night Walk drawings</strong>, Little Toller shop, Beaminster</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-hairline","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-hairline"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2022</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Illustrators' Fair</strong>, Old Truman Brewery, London</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

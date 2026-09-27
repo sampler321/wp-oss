@@ -2,12 +2,12 @@
 /**
  * Title: How to buy an original
  * Slug: ink/how-to-buy-original
- * Categories: text
+ * Categories: shop,text
  */
 ?>
-<!-- wp:group {"className":"is-style-sketchbook","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-sketchbook"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">How to buy an original</h3>
+<!-- wp:group {"className":"is-style-sketchbook","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sketchbook"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">How to buy an original</h3>
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
@@ -24,7 +24,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>It arrives within 21 days. Outside the UK, add the postage shown below.</li>
+<li>It arrives within 21 days. Outside the UK, add the postage below.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
 <!-- /wp:group -->

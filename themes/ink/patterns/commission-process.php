@@ -1,28 +1,28 @@
 <?php
 /**
- * Title: Commission process
+ * Title: Commission process (short list)
  * Slug: ink/commission-process
- * Categories: services
+ * Categories: commissions,text
  */
 ?>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">How a commission works</h3>
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">The short version</h3>
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Fill in the form or email me. Tell me what, how big, and when you need it.</li>
+<li>Fill in the form or email me.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>I send a short contract. A 40% deposit books your slot.</li>
+<li>Sign the contract and pay a 40% deposit.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>You get a pencil sketch and a colour study. Two rounds of changes are included.</li>
+<li>Approve a sketch and a colour study.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>I paint the final. You pay the balance, then it ships or I send the files.</li>
+<li>Pay the balance when the final is done.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->

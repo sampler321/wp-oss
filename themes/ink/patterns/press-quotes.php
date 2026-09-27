@@ -17,8 +17,8 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>The map is on our kitchen wall and we still find new things in it.</p>
-<!-- /wp:paragraph --><cite>Priya and Sam, commissioned a map of Totterdown, 2025</cite></blockquote>
+<p>The best cover we have printed in years, and the only one people asked to buy.</p>
+<!-- /wp:paragraph --><cite>Ellie Gray, Little Toller Books, 2025</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

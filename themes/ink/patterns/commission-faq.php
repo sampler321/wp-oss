@@ -2,11 +2,11 @@
 /**
  * Title: Commission FAQ
  * Slug: ink/commission-faq
- * Categories: text
+ * Categories: commissions,text
  */
 ?>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Questions people ask</h3>
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">Questions people ask</h3>
 <!-- /wp:heading -->
 
 <!-- wp:details -->

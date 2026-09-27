@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Work archive (masonry, inherits the page query)
+ * Title: Work archive (masonry, follows the page query)
  * Slug: ink/work-grid-archive
  * Categories: portfolio,query
  * Inserter: no
@@ -12,7 +12,7 @@
 
 <!-- wp:post-title {"level":3,"isLink":true,"fontSize":"medium"} /-->
 
-<!-- wp:post-terms {"term":"post_tag","separator":" / "} /-->
+<!-- wp:post-terms {"term":"category"} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-pagination -->

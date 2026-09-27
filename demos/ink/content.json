@@ -6,19 +6,33 @@
  "categories": [
   {
    "slug": "editorial",
-   "name": "Editorial"
-  },
-  {
-   "slug": "posters",
-   "name": "Posters"
+   "name": "Editorial",
+   "description": "Magazines and newspapers, mostly birds."
   },
   {
    "slug": "books",
-   "name": "Books"
+   "name": "Books",
+   "description": "Covers, picture books and one book of my own."
+  },
+  {
+   "slug": "posters",
+   "name": "Posters and murals",
+   "description": "Screenprints, festival posters and a few walls."
   },
   {
    "slug": "packaging",
-   "name": "Packaging"
+   "name": "Packaging and pattern",
+   "description": "Tins, seed packets, wallpaper."
+  },
+  {
+   "slug": "maps",
+   "name": "Maps",
+   "description": "Streets, towns and wedding walks, drawn from above."
+  },
+  {
+   "slug": "diary",
+   "name": "Studio diary",
+   "description": "News from the desk: open studios, reprints and sketchbook pages."
   }
  ],
  "front_page": "home",
@@ -35,83 +49,231 @@
    "content": ""
   },
   {
+   "slug": "selected",
+   "title": "Selected work",
+   "pattern": "ink/page-selected",
+   "template": "page-wide"
+  },
+  {
+   "slug": "sketchbook",
+   "title": "Sketchbook",
+   "pattern": "ink/page-sketchbook",
+   "template": "page-wide"
+  },
+  {
    "slug": "art-for-sale",
    "title": "Art for sale",
-   "pattern": "ink/art-for-sale-page",
+   "pattern": "ink/page-art-for-sale",
+   "template": "page-wide"
+  },
+  {
+   "slug": "prints",
+   "title": "Prints",
+   "pattern": "ink/page-shop-front",
    "template": "page-wide"
   },
   {
    "slug": "commissions",
    "title": "Commissions",
-   "pattern": "ink/commissions-page"
+   "pattern": "ink/page-commissions",
+   "template": "page-wide"
+  },
+  {
+   "slug": "events",
+   "title": "Events and workshops",
+   "pattern": "ink/page-events",
+   "template": "page-wide"
+  },
+  {
+   "slug": "press",
+   "title": "Press",
+   "pattern": "ink/page-press",
+   "template": "page-wide"
   },
   {
    "slug": "about",
    "title": "About",
-   "pattern": "ink/about-page",
+   "pattern": "ink/page-about",
    "template": "page-wide"
   },
   {
    "slug": "contact",
    "title": "Contact",
-   "pattern": "ink/contact-page"
+   "pattern": "ink/page-contact",
+   "template": "page-wide"
   }
  ],
  "posts": [
   {
    "title": "Bluebirds for Garden Letters",
+   "slug": "bluebirds-for-garden-letters",
    "category": "editorial",
    "tags": [
-    "Editorial",
-    "Birds"
+    "Birds",
+    "Cover"
    ],
    "image": "hero.jpg",
    "template": "single-work",
-   "pattern": "ink/work-caption"
+   "excerpt": "Spring issue cover, 2025",
+   "date": "2026-09-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Garden Letters wanted a spring cover that felt like the first warm Saturday. Two birds, lots of air, room for the masthead at the top.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Garden Letters magazine</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Spring issue cover</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache, finished digitally</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"wide\",\"className\":\"is-style-rule-top\"} -->\n<div class=\"wp-block-columns alignwide is-style-rule-top\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">The brief</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Garden Letters wanted a spring cover that felt like the first warm Saturday. Two birds, lots of air, room for the masthead at the top.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What I did</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four pencil roughs, one colour study in blue and rust, then the final in gouache at A3. The magazine chose the second rough; I still prefer the fourth.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">From rough to final</h3>\n<!-- /wp:heading -->\n\n<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\",\"align\":\"wide\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-3 alignwide\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/sketch-2.jpg\" alt=\"Faint pencil lines of a figure study on old paper\"/><figcaption class=\"wp-element-caption\">Pencil rough, the size of a stamp</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-15.jpg\" alt=\"Three blue jays on a flowering branch\"/><figcaption class=\"wp-element-caption\">Colour study with too many birds</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/hero.jpg\" alt=\"Two blue birds on a thin branch, painted in blue and rust on cream paper\"/><figcaption class=\"wp-element-caption\">Final, two birds</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:columns {\"align\":\"wide\",\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|60\"}}}} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"55%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:55%\"><!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">The cover sold out in the shops in nine days. People wrote in asking for the birds as a print, so we let Joon sell one.</p>\n<!-- /wp:paragraph --><cite>Tomasz Nowak, art editor, Garden Letters</cite></blockquote>\n<!-- /wp:quote --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What happened next</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The magazine printed 400 extra copies. The print is now the best seller in the shop, which I did not see coming.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Art direction</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Tomasz Nowak</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Print edition</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">A3, 150 copies</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
-   "title": "Snowy street, poster for Harbourside Market",
+   "title": "Barred owl, cover for The Night Walk",
+   "slug": "barred-owl-the-night-walk",
+   "category": "books",
+   "tags": [
+    "Birds",
+    "Book cover"
+   ],
+   "image": "work-7.jpg",
+   "template": "single-work",
+   "excerpt": "Hardback cover and endpapers, 2025",
+   "date": "2026-09-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Little Toller wanted a cover that worked at thumbnail size on a phone and full size on a table in a bookshop. The book is about walking at night, so: dark, but not gloomy.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Little Toller Books</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Hardback cover and endpapers</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache and pencil</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"wide\",\"className\":\"is-style-rule-top\"} -->\n<div class=\"wp-block-columns alignwide is-style-rule-top\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">The brief</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Little Toller wanted a cover that worked at thumbnail size on a phone and full size on a table in a bookshop. The book is about walking at night, so: dark, but not gloomy.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What I did</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Eleven roughs of the owl, one of the squirrel. The final is gouache on a mid-grey ground so the pale feathers do the work. The endpapers are the same branch, empty.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">From rough to final</h3>\n<!-- /wp:heading -->\n\n<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\",\"align\":\"wide\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-3 alignwide\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/sketch-1.jpg\" alt=\"A page of ink sketches of men climbing a rope and wrestling\"/><figcaption class=\"wp-element-caption\">Roughs, mostly wrong</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-7.jpg\" alt=\"A barred owl with spread wings on a branch, a grey squirrel below it\"/><figcaption class=\"wp-element-caption\">Final cover painting</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-3.jpg\" alt=\"A white heron standing in reeds at the edge of a marsh\"/><figcaption class=\"wp-element-caption\">Endpaper study, later dropped</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:columns {\"align\":\"wide\",\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|60\"}}}} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"55%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:55%\"><!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">The best cover we have printed in years, and the only one people asked to buy.</p>\n<!-- /wp:paragraph --><cite>Ellie Gray, Little Toller Books</cite></blockquote>\n<!-- /wp:quote --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What happened next</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It went to a second printing in the first month. The owl is now an A3 print.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Designer</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Ellie Gray</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Format</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Hardback, 216 pages</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Jellyfish, poster for Aquarium Lates",
+   "slug": "jellyfish-aquarium-lates",
    "category": "posters",
    "tags": [
-    "Poster"
+    "Poster",
+    "Sea"
    ],
-   "image": "prints.jpg",
+   "image": "work-8.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>A winter poster for the Christmas market, printed as a two-colour screenprint in an edition of 60.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Poster series for late openings, 2025",
+   "date": "2026-09-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Four posters for the aquarium's late openings, one sea creature each. The jellyfish was the first and the one that went on the buses.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Bristol Aquarium</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Poster series for late openings</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Ink and gouache, printed in four spot colours</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"align\":\"wide\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large alignwide\"><img src=\"/wp-content/themes/ink/assets/images/work-4.jpg\" alt=\"A yellow radiolarian drawn as a spiky star with fine hatching\"/><figcaption class=\"wp-element-caption\">The next poster in the series, a radiolarian.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Crow and blossom, tea tins for Kinoko",
+   "slug": "crow-and-blossom-kinoko-tea",
+   "category": "packaging",
+   "tags": [
+    "Birds",
+    "Packaging"
+   ],
+   "image": "work-9.jpg",
+   "template": "single-work",
+   "excerpt": "Tin wrap for a spring green tea, 2025",
+   "date": "2026-08-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Kinoko Tea in Stokes Croft needed a tin wrap for a spring green tea. The tin is small and round, so the drawing had to work in a strip 7 cm tall.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Kinoko Tea, Stokes Croft</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Tin wrap for a spring green tea</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache on toned paper</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"wide\",\"className\":\"is-style-rule-top\"} -->\n<div class=\"wp-block-columns alignwide is-style-rule-top\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">The brief</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Kinoko Tea in Stokes Croft needed a tin wrap for a spring green tea. The tin is small and round, so the drawing had to work in a strip 7 cm tall.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What I did</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">One crow, one branch, painted on toned paper so the blossom could be pure white gouache. The branch wraps all the way round so the tin has no front.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">From rough to final</h3>\n<!-- /wp:heading -->\n\n<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\",\"align\":\"wide\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-3 alignwide\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-13.jpg\" alt=\"A long-tailed bird on a plum branch against a pale pink sky\"/><figcaption class=\"wp-element-caption\">First idea, a long-tailed bird, too tall</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-9.jpg\" alt=\"A black crow on a branch of white blossom against a dark olive ground\"/><figcaption class=\"wp-element-caption\">Final painting</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-10.jpg\" alt=\"A tall white flower spike rising from long green leaves\"/><figcaption class=\"wp-element-caption\">Leaf study for the lid</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:columns {\"align\":\"wide\",\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|60\"}}}} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"55%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:55%\"><!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">People buy the tin for the tin. We have started selling it empty.</p>\n<!-- /wp:paragraph --><cite>Hana Mori, Kinoko Tea</cite></blockquote>\n<!-- /wp:quote --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What happened next</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The second tin, for a roasted tea, is on my desk now.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Printed by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">A tin maker in Leicester</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Run</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2,000 tins</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Hummingbirds, a series of six plates",
+   "slug": "hummingbirds-six-plates",
+   "category": "editorial",
+   "tags": [
+    "Birds",
+    "Series"
+   ],
+   "image": "work-12.jpg",
+   "template": "single-work",
+   "excerpt": "Six plates for a nature supplement, 2024",
+   "date": "2026-08-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Six plates for a Saturday nature supplement, one bird a week through May and June. Each one had to sit in a column 9 cm wide and still read from across a kitchen.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">The Guardian Saturday</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Six plates for a nature supplement</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache, scanned at 600dpi</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"fontSize\":\"x-large\"} -->\n<h2 class=\"wp-block-heading has-x-large-font-size\">The six plates</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Click any plate to see it large.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\",\"align\":\"wide\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-3 alignwide\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-12.jpg\" alt=\"Hummingbirds in green, red and blue feeding around a nest among leaves\"/><figcaption class=\"wp-element-caption\">Plate 1, the nest</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-15.jpg\" alt=\"Three blue jays on a flowering branch\"/><figcaption class=\"wp-element-caption\">Plate 2, blue jays for scale</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/hero.jpg\" alt=\"Two blue birds on a thin branch, painted in blue and rust on cream paper\"/><figcaption class=\"wp-element-caption\">Plate 3, bluebirds</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-13.jpg\" alt=\"A long-tailed bird on a plum branch against a pale pink sky\"/><figcaption class=\"wp-element-caption\">Plate 4, long tail</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-11.jpg\" alt=\"A puffin with an orange beak standing beside a burrow on a grassy cliff\"/><figcaption class=\"wp-element-caption\">Plate 5, the odd one out</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-7.jpg\" alt=\"A barred owl with spread wings on a branch, a grey squirrel below it\"/><figcaption class=\"wp-element-caption\">Plate 6, night</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"62%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:62%\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-12.jpg\" alt=\"Hummingbirds in green, red and blue feeding around a nest among leaves\"/><figcaption class=\"wp-element-caption\">Plate 1, whole</figcaption></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"aspectRatio\":\"1\",\"scale\":\"cover\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img style=\"aspect-ratio:1;object-fit:cover\" src=\"/wp-content/themes/ink/assets/images/work-15.jpg\" alt=\"Three blue jays on a flowering branch\"/><figcaption class=\"wp-element-caption\">Plate 2, detail</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"aspectRatio\":\"1\",\"scale\":\"cover\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img style=\"aspect-ratio:1;object-fit:cover\" src=\"/wp-content/themes/ink/assets/images/work-11.jpg\" alt=\"A puffin with an orange beak standing beside a burrow on a grassy cliff\"/><figcaption class=\"wp-element-caption\">Plate 5, detail</figcaption></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Totterdown from the air, a house map",
+   "slug": "totterdown-from-the-air",
+   "category": "maps",
+   "tags": [
+    "Map",
+    "Commission"
+   ],
+   "image": "map-1.jpg",
+   "template": "single-work",
+   "excerpt": "A map of their street and the view from it, 2025",
+   "date": "2026-08-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Priya and Sam were leaving Totterdown after eleven years and wanted their street, the view from their bedroom window and the walk to the pub on one sheet.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Priya and Sam, private commission</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">A map of their street and the view from it</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Pen, ink and watercolour, 50 x 70 cm</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"wide\",\"className\":\"is-style-rule-top\"} -->\n<div class=\"wp-block-columns alignwide is-style-rule-top\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">The brief</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Priya and Sam were leaving Totterdown after eleven years and wanted their street, the view from their bedroom window and the walk to the pub on one sheet.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What I did</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I walked it twice with a sketchbook, drew the plan in pencil at A2, then inked and painted it. Their cat is in the window of number 14. I didn't tell them.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">From rough to final</h3>\n<!-- /wp:heading -->\n\n<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\",\"align\":\"wide\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-3 alignwide\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/sketch-2.jpg\" alt=\"Faint pencil lines of a figure study on old paper\"/><figcaption class=\"wp-element-caption\">Walking sketch, very rough</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/map-1.jpg\" alt=\"A bird's-eye view of a city and its harbour, drawn in green and grey\"/><figcaption class=\"wp-element-caption\">The finished map</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/work-14.jpg\" alt=\"Blue waves curling over long wooden boats\"/><figcaption class=\"wp-element-caption\">Colour reference for the river</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:columns {\"align\":\"wide\",\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|60\"}}}} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"55%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:55%\"><!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">The map is on our kitchen wall and we still find new things in it.</p>\n<!-- /wp:paragraph --><cite>Priya and Sam</cite></blockquote>\n<!-- /wp:quote --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"fontSize\":\"large\"} -->\n<h3 class=\"wp-block-heading has-large-font-size\">What happened next</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">They ordered two more prints for their parents. A neighbour on the same street asked for one of hers.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Size</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">50 x 70 cm</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Time</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Five weeks, with one round of changes</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Heron at low tide",
+   "slug": "heron-at-low-tide",
+   "category": "editorial",
+   "tags": [
+    "Birds",
+    "Editorial"
+   ],
+   "image": "work-3.jpg",
+   "template": "single-work",
+   "excerpt": "Feature on the Severn estuary, 2024",
+   "date": "2026-07-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">For a feature on the Severn estuary. Drawn on location over two cold mornings, then painted at the desk from the pencil drawings.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Garden Letters magazine</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Feature on the Severn estuary</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache, drawn on location</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"align\":\"wide\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large alignwide\"><img src=\"/wp-content/themes/ink/assets/images/sketch-2.jpg\" alt=\"Faint pencil lines of a figure study on old paper\"/><figcaption class=\"wp-element-caption\">Pencil drawing from the second morning.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
    "title": "Red mountain, book cover",
+   "slug": "red-mountain-book-cover",
    "category": "books",
    "tags": [
     "Book cover"
    ],
    "image": "work-6.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>Cover for a travel memoir. The publisher wanted \"a mountain that looks warm\", so it is red.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Cover for a travel memoir, 2024",
+   "date": "2026-07-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Cover for a travel memoir. The publisher wanted \"a mountain that looks warm\", so it is red.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Harbour Press</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Cover for a travel memoir</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache and coloured pencil</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
-   "title": "Heron at low tide",
+   "title": "Puffin for the Wild Bird Trust",
+   "slug": "puffin-wild-bird-trust",
    "category": "editorial",
    "tags": [
-    "Editorial",
+    "Birds",
+    "Charity"
+   ],
+   "image": "work-11.jpg",
+   "template": "single-work",
+   "excerpt": "Members magazine and a fundraising print, 2024",
+   "date": "2026-07-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">A puffin for the Wild Bird Trust members magazine. The trust sold 300 prints of it at £25 and kept the money for a seabird survey.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Wild Bird Trust</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Members magazine and a fundraising print</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Plum branch, poster for Harbourside Market",
+   "slug": "plum-branch-harbourside-market",
+   "category": "posters",
+   "tags": [
+    "Poster",
     "Birds"
    ],
-   "image": "work-3.jpg",
+   "image": "work-13.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>For a feature on the Severn estuary. Drawn on location over two cold mornings.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Spring market poster, 2024",
+   "date": "2026-06-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Spring poster for Harbourside Market, printed as a three-colour screenprint in an edition of 80. The pink is one ink, overprinted to get the sky.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Harbourside Market</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Spring market poster</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Screenprint in three colours, edition of 80</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Orchid wallpaper for Ostra, Clifton",
+   "slug": "orchid-wallpaper-ostra",
+   "category": "packaging",
+   "tags": [
+    "Pattern",
+    "Interiors"
+   ],
+   "image": "work-16.jpg",
+   "template": "single-work",
+   "excerpt": "Wallpaper for the back room and the menus, 2023",
+   "date": "2026-06-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">A wallpaper for the back room at Ostra in Clifton, repeated as a half-drop so the orchids never line up. The menus use the same drawing, cropped.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Ostra restaurant</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Wallpaper for the back room and the menus</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache, repeated as a half-drop pattern</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"align\":\"wide\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large alignwide\"><img src=\"/wp-content/themes/ink/assets/images/work-10.jpg\" alt=\"A tall white flower spike rising from long green leaves\"/><figcaption class=\"wp-element-caption\">A leaf study for the pattern repeat.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
    "title": "Medicinal plants chart",
+   "slug": "medicinal-plants-chart",
    "category": "packaging",
    "tags": [
-    "Packaging"
+    "Packaging",
+    "Plants"
    ],
    "image": "work-1.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>Tea box wrap for a herbalist in Stokes Croft. 42 plants, each labelled by hand.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Tea box wrap, 2023",
+   "date": "2026-06-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Tea box wrap for Hedgerow Apothecary. 42 plants, each labelled by hand, which took longer than the drawing.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Hedgerow Apothecary</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Tea box wrap</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Pen and gouache, 42 plants</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
    "title": "Radiolarian, science festival poster",
+   "slug": "radiolarian-science-festival",
    "category": "posters",
    "tags": [
     "Poster",
@@ -119,20 +281,54 @@
    ],
    "image": "work-4.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>Poster for the Bristol science festival. Printed in yellow and black on uncoated stock.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Festival poster, 2023",
+   "date": "2026-05-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Poster for the Bristol Science Festival. A single-celled sea creature drawn 4,000 times its real size, printed in yellow and black on uncoated stock.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Bristol Science Festival</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Festival poster</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Pencil and gouache, printed in yellow and black</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
    "title": "Two ducks, spread for a picture book",
+   "slug": "two-ducks-picture-book",
    "category": "books",
    "tags": [
-    "Picture book"
+    "Picture book",
+    "Birds"
    ],
    "image": "work-5.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>One spread from a picture book about a pond in winter. Gouache, painted at 120% of print size.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Picture book, The Pond in Winter, 2023",
+   "date": "2026-05-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">One spread from <em>The Pond in Winter</em>, words by Mari Evans. Gouache, painted at 120% of print size so the texture survives the printer.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Puddle Books</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Picture book, The Pond in Winter</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache, painted at 120% of print size</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Ocean waves, mural for a surf shop",
+   "slug": "ocean-waves-surf-shop-mural",
+   "category": "posters",
+   "tags": [
+    "Mural"
+   ],
+   "image": "work-14.jpg",
+   "template": "single-work",
+   "excerpt": "A 6 metre wall behind the till, 2022",
+   "date": "2026-05-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">A 6 metre wall behind the till at Saltwater Surf in Weston. Projected from a pencil drawing, painted over four evenings after closing.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Saltwater Surf, Weston</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">A 6 metre wall behind the till</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2022</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Exterior paint over a projected pencil drawing</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Eucomis, seed packet",
+   "slug": "eucomis-seed-packet",
+   "category": "packaging",
+   "tags": [
+    "Packaging",
+    "Plants"
+   ],
+   "image": "work-10.jpg",
+   "template": "single-work",
+   "excerpt": "Seed packet front, one of twelve, 2022",
+   "date": "2026-04-25",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">One of twelve seed packets for Bramble Seeds. The eucomis is the one that sold out first, which the grower says has nothing to do with the drawing.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Bramble Seeds</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Seed packet front, one of twelve</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2022</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Gouache</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
   },
   {
    "title": "Animal parade, mural study",
+   "slug": "animal-parade-mural-study",
    "category": "posters",
    "tags": [
     "Mural",
@@ -140,7 +336,46 @@
    ],
    "image": "work-2.jpg",
    "template": "single-work",
-   "content": "<!-- wp:paragraph -->\n<p>Study for a school hall mural. The final wall is 11 metres long and has a camel that the children named Steve.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Study for a school hall mural, 2022",
+   "date": "2026-04-18",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">Study for a school hall mural. The final wall is 11 metres long and has a camel that the children named Steve.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">St Werburgh's Primary</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Study for a school hall mural</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2022</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Pencil on layout paper</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Snowy street, winter poster",
+   "slug": "snowy-street-winter-poster",
+   "category": "posters",
+   "tags": [
+    "Poster"
+   ],
+   "image": "prints.jpg",
+   "template": "single-work",
+   "excerpt": "Christmas market poster, 2021",
+   "date": "2026-04-11",
+   "content": "<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"width\":\"60%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:60%\"><!-- wp:paragraph -->\n<p class=\"\">A winter poster for the Christmas market, printed as a two-colour screenprint in an edition of 60.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"0\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Client</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Harbourside Market</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Used for</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Christmas market poster</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">2021</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-hairline\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-hairline\"><!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"small\"} -->\n<p class=\"has-muted-color has-text-color has-small-font-size\">Medium</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Two-colour screenprint, edition of 60</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:pattern {\"slug\":\"ink/commissions-status\"} /-->"
+  },
+  {
+   "title": "Open studio dates for the year",
+   "slug": "open-studio-dates",
+   "category": "diary",
+   "image": "studio.jpg",
+   "date": "2026-03-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The studio is open on the first Saturday of every month. The big one is Saturday 1 November, 11am to 4pm. I'll have the plan chest open, so you can look through roughs that never made it, and a box of seconds at £10 each.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Unit 4, Jamaica Street Studios. Two flights of stairs, no lift. If the stairs are a problem, email me and I'll bring things down to the courtyard.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"ink/open-studio\"} /-->"
+  },
+  {
+   "title": "A page from the sketchbook",
+   "slug": "a-page-from-the-sketchbook",
+   "category": "diary",
+   "image": "sketch-1.jpg",
+   "date": "2026-03-06",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">I keep one sketchbook for work and one for nothing in particular. This page is from the second one, drawn on a train to Cardiff while someone slept on my shoulder.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\",\"imageCrop\":false} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/sketch-1.jpg\" alt=\"A page of ink sketches of men climbing a rope and wrestling\"/><figcaption class=\"wp-element-caption\">Train page</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/wp-content/themes/ink/assets/images/sketch-2.jpg\" alt=\"Faint pencil lines of a figure study on old paper\"/><figcaption class=\"wp-element-caption\">The page after, abandoned</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Neither page will ever be a print. That is what the second sketchbook is for.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The owl is back in stock",
+   "slug": "prints-back-in-stock",
+   "category": "diary",
+   "image": "work-7.jpg",
+   "date": "2026-02-24",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The barred owl A3 print sold out in a week in January. The reprint arrived on Tuesday: 100 copies on the same Hahnemuhle paper, checked one by one against the painting.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"ink/shop-highlights\"} /-->"
   }
  ],
  "nav": [
@@ -159,6 +394,10 @@
   {
    "label": "Commissions",
    "url": "/commissions/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
   },
   {
    "label": "About",
@@ -181,13 +420,40 @@
    "short": "A3 on 300gsm cotton rag. Ships rolled in a tube."
   },
   {
+   "name": "Barred owl, A3 print",
+   "price": "38",
+   "image": "work-7.jpg",
+   "category": "Prints",
+   "sku": "INK-P05",
+   "stock": 3,
+   "short": "A3 on 300gsm cotton rag. Three left."
+  },
+  {
+   "name": "Bluebirds, A4 print",
+   "price": "28",
+   "image": "hero.jpg",
+   "category": "Prints",
+   "sku": "INK-P06",
+   "stock": 40,
+   "short": "A4 on 300gsm cotton rag. Ships flat between boards."
+  },
+  {
    "name": "Red mountain, A3 print",
    "price": "38",
    "image": "work-6.jpg",
    "category": "Prints",
    "sku": "INK-P02",
-   "stock": 3,
-   "short": "A3 on 300gsm cotton rag. Three left."
+   "stock": 12,
+   "short": "A3 on 300gsm cotton rag."
+  },
+  {
+   "name": "Jellyfish, A3 print",
+   "price": "38",
+   "image": "work-8.jpg",
+   "category": "Prints",
+   "sku": "INK-P07",
+   "stock": 18,
+   "short": "A3 on 300gsm cotton rag. From the Aquarium Lates poster."
   },
   {
    "name": "Heron, A4 print",
@@ -210,7 +476,7 @@
   {
    "name": "Small Maps (zine)",
    "price": "8",
-   "image": "work-2.jpg",
+   "image": "map-1.jpg",
    "category": "Publications",
    "sku": "INK-Z01",
    "stock": 60,
@@ -219,7 +485,7 @@
   {
    "name": "Birds of the Avon (hardback)",
    "price": "22",
-   "image": "hero.jpg",
+   "image": "work-15.jpg",
    "category": "Publications",
    "sku": "INK-B01",
    "stock": 15,

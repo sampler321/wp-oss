@@ -20,7 +20,7 @@
 		},
 		"typography": {
 			"fontFamily": "var:preset|font-family|body",
-			"fontSize": "var:preset|font-size|x-small"
+			"fontSize": "var:preset|font-size|small"
 		}
 	}
 }

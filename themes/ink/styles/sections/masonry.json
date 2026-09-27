@@ -5,9 +5,10 @@
 	"slug": "masonry",
 	"blockTypes": [
 		"core/post-template",
-		"core/gallery"
+		"core/gallery",
+		"core/group"
 	],
 	"styles": {
-		"css": "&{display:block!important;columns:3 280px;column-gap:var(--wp--preset--spacing--40)}& > *{break-inside:avoid;margin:0 0 var(--wp--preset--spacing--50)!important}"
+		"css": "&{display:block!important;columns:3 18rem;column-gap:var(--wp--preset--spacing--40)}&>*{break-inside:avoid;margin:0 0 var(--wp--preset--spacing--50)!important;width:100%!important;display:block}&>*>figcaption{margin-top:.5rem}"
 	}
 }

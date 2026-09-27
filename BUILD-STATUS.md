@@ -6,7 +6,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 
 | # | Slug | Idea | Brief from the owner | Status | Demo |
 |---|---|---|---|---|---|
-| 1 | ink | 001 Illustrator portfolio + shop | as researched | tested |  |
+| 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
 | 2 | oil | 002 Painter, studio and available works | as researched | deployed | https://wposs-oil.b-j-kapica.workers.dev |
 | 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | deployed (HTTP 404) | https://wposs-kiln.b-j-kapica.workers.dev |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
@@ -17,7 +17,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | failed test |  |
-| 12 | studio | 025 Small branding studio | as researched | deployed | https://wposs-studio.b-j-kapica.workers.dev |
+| 12 | studio | 025 Small branding studio | as researched | tested |  |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |

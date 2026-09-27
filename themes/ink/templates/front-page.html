@@ -1,13 +1,23 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:pattern {"slug":"ink/hero-recent-commission"} /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-bottom:0"><!-- wp:pattern {"slug":"ink/home-intro"} /-->
 
-<!-- wp:pattern {"slug":"ink/work-grid"} /-->
+<!-- wp:pattern {"slug":"ink/portfolio-masonry"} /-->
 
-<!-- wp:pattern {"slug":"ink/shop-categories"} /-->
+<!-- wp:pattern {"slug":"ink/recent-work"} /-->
+
+<!-- wp:pattern {"slug":"ink/shop-entry-points"} /-->
+
+<!-- wp:pattern {"slug":"ink/sketchbook-strip"} /-->
+
+<!-- wp:pattern {"slug":"ink/testimonial"} /-->
+
+<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
+<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:pattern {"slug":"ink/commissions-status"} /--></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer-newsletter","tagName":"footer"} /-->

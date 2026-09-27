@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Label (sold, reserved)",
+	"slug": "tag",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "600"
+		},
+		"border": {
+			"width": "1.5px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"css": "&{display:inline-block;padding:.1em .55em;line-height:1.5}"
+	}
+}

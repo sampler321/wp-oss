@@ -7,8 +7,8 @@
 ?>
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading">Say hello</h2>
+<div class="wp-block-column"><!-- wp:heading {"fontSize":"x-large"} -->
+<h2 class="wp-block-heading has-x-large-font-size">Say hello</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -21,8 +21,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Studio visits</h3>
+<div class="wp-block-column"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">Studio visits</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

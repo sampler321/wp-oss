@@ -1,12 +1,12 @@
 <?php
 /**
- * Title: Postage by region
+ * Title: Postage by region (table)
  * Slug: ink/postage-by-region
  * Categories: shop
  */
 ?>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Postage</h3>
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size">Postage</h3>
 <!-- /wp:heading -->
 
 <!-- wp:table -->
@@ -14,5 +14,5 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Prints ship rolled in a tube. Originals and A4 prints ship flat between boards.</p>
+<p class="has-small-font-size">Prints ship rolled in a tube. Originals and A4 prints ship flat between boards. Import duties outside the UK are yours to pay, sorry.</p>
 <!-- /wp:paragraph -->

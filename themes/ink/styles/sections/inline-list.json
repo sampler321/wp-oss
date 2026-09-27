@@ -3,9 +3,14 @@
 	"version": 3,
 	"title": "Inline list",
 	"slug": "inline-list",
-	"blockTypes": ["core/categories"],
+	"blockTypes": [
+		"core/categories"
+	],
 	"styles": {
-		"typography": { "fontFamily": "var:preset|font-family|body", "fontSize": "var:preset|font-size|x-small" },
-		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:0.5rem 1.25rem}"
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}"
 	}
 }

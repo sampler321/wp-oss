@@ -1,20 +1,20 @@
 <?php
 /**
- * Title: About: bio
+ * Title: About: bio with picture
  * Slug: ink/about-bio
  * Categories: about
  */
 ?>
-<!-- wp:columns {"align":"wide"} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/work-5.jpg' ) ); ?>" alt="Two ducks swimming, painted in soft grey and green washes"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/studio.jpg' ) ); ?>" alt="A cluttered studio with a stove, plaster casts and a workbench"/><figcaption class="wp-element-caption">Not my studio. Mine has fewer statues and more tea.</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading">About</h2>
+<div class="wp-block-column"><!-- wp:heading {"fontSize":"x-large"} -->
+<h2 class="wp-block-heading has-x-large-font-size">Hello, I'm Joon</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
