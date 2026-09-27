@@ -14,7 +14,7 @@ function extract(file) {
   const jobs = [];
   let idea = null, inRefs = false, k = 0;
   for (const line of fs.readFileSync(file, 'utf8').split('\n')) {
-    const h = line.match(/^#### (\d{3}) ·/);
+    const h = line.match(/^#### (\d{3})[ ,.:\u00b7]/);
     if (h) { idea = h[1]; inRefs = false; k = 0; continue; }
     if (/^\*\*Refs:\*\*/.test(line)) { inRefs = true; continue; }
     if (inRefs) {

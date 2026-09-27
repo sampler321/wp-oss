@@ -1,6 +1,6 @@
 # Build workflow (one theme)
 
-Read first: `THEME-CONTRACT.md` (the rules), `BUILD-STATUS.md` (your theme's row: idea number and **the owner's brief**, which overrides the research), and `research/THEME-IDEAS.md` (search for `#### NNN ·` to find the entry). Read `research/ANTI-VIBE.md` §3 (sniff test) and `research/ANTI-AI-WRITING.md` §2–5 (em dashes, tells, voice briefs, demo-content rules).
+Read first: `THEME-CONTRACT.md` (the rules), `BUILD-STATUS.md` (your theme's row: idea number and **the owner's brief**, which overrides the research), and `research/THEME-IDEAS.md` (search for `#### NNN ` to find the entry). Read `research/ANTI-VIBE.md` §3 (sniff test) and `research/ANTI-AI-WRITING.md` §2–5 (em dashes, tells, voice briefs, demo-content rules).
 
 The reference theme is **`ink`**. Build script: `build/ink.py`, theme: `themes/ink/`, demo: `demos/ink/content.json`. Copy its structure, not its look.
 
@@ -13,7 +13,7 @@ All commands run from the repo root `/Users/borys/Desktop/wp-oss`.
 
 ## 2. Fonts
 - Use the display face from `research/FONT-REGISTRY.md` for your idea unless the owner's brief changes the direction. If it does, pick an unused free family (Google Fonts or Fontshare). Check `grep -i "<family>" research/FONT-REGISTRY.md` returns nothing, and record the choice in `demos/<slug>/fonts-claim.txt` (one line: `display: Family Name`). Don't edit the registry yourself.
-- `node tools/fetch-fonts.mjs <slug> "display=<Google family spec>" "body=<spec>" "mono=<spec>"`. Fontshare: `"display=fontshare:<slug>@400,700"`. It writes `themes/<slug>/.fonts.json`, which you load in the build script (see `build/ink.py` pattern in `theme.json` generation). Avoid banned faces (Inter, Geist, Space Grotesk, Instrument Serif, Poppins, Montserrat, Fraunces, Playfair Display, Cormorant).
+- `node tools/fetch-fonts.mjs <slug> "display=<Google family spec>" "body=<spec>" "mono=<spec>"`. Fontshare: `"display=fontshare:<slug>@400,700"`. It writes `themes/<slug>/.fonts.json`, which you load in the build script (see `build/ink.py` pattern in `theme.json` generation). Avoid banned faces (Inter, Geist, Space Grotesk, Instrument Serif, Poppins, Montserrat, Fraunces, Playfair Display, Cormorant) and **all monospace fonts**. Two families maximum (display + body).
 
 ## 3. Images
 - `node tools/fetch-images.mjs <slug> "hero=<query>|orient=landscape" "name=<query>|pick=2" ...` fetches CC0/public-domain images from Wikimedia Commons. Aim for 8–14 images that fit the trade. Use specific queries ("espresso machine cafe", "welding workshop", "vinyl records shop crates").
@@ -26,7 +26,7 @@ All commands run from the repo root `/Users/borys/Desktop/wp-oss`.
 - Only core blocks. No hex colours, custom font sizes or raw spacing in markup: use presets (`textColor`, `backgroundColor`, `fontSize`, `var:preset|spacing|NN`). Put borders, radii, shadows and special CSS in `theme.json` or section styles.
 - Content model: use **posts in categories** for the repeating things (works, projects, episodes, releases, shows, menu items stay in patterns). Query Loop can't filter by a category slug at build time, so give each theme one main post type of content and use category archives (`category-<slug>.html`) for the rest.
 - WooCommerce: only if the idea sells products. Add `products` to the demo; don't write Woo block templates unless you need them (the Woo defaults inherit your theme.json).
-- Copy: in the owner's voice, following `research/ANTI-AI-WRITING.md`: real-feeling names, places, prices, hours, one opinion, one limit. Zero em dashes. Sentence case. No "Welcome to", no "elevate", no emphasis by negation.
+- Copy: in the owner's voice, following `research/ANTI-AI-WRITING.md`: real-feeling names, places, prices, hours, one opinion, one limit. Zero em dashes. No middle dot `·` separators. No zero-padded `01`/`02` labels. Sentence case. No "Welcome to", no "elevate", no emphasis by negation.
 - Run it: `python3 build/<slug>.py`
 
 ## 5. Demo content `demos/<slug>/content.json`

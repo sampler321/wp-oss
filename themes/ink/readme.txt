@@ -30,7 +30,6 @@ Ink is distributed under the terms of the GNU GPL v2 or later.
 == Resources ==
 
 * Font: Bricolage Grotesque (Google Fonts), https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque
-* Font: Sometype Mono (Google Fonts), https://github.com/google/fonts/tree/main/ofl/sometypemono
 * Image hero.jpg: "The Birds of America from Drawings Made in the United States MET DP245255.jpg" by John James Audubon / John James Audubon, CC0, https://commons.wikimedia.org/wiki/File:The_Birds_of_America_from_Drawings_Made_in_the_United_States_MET_DP245255.jpg
 * Image work-1.jpg: "Plantes médicinales planche 2: Medicinal plants, medical herbs, botanical illustrations, plate 2: Public domain illustration from Larousse du XXème siècle 1932.jpg" by EN NOIR &amp; BLANC, CC0, https://commons.wikimedia.org/wiki/File:Plantes_m%C3%A9dicinales_planche_2_-_Medicinal_plants,_medical_herbs,_botanical_illustrations,_plate_2_-_Public_domain_illustration_from_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg
 * Image work-2.jpg: "Speculum Romanae Magnificentiae- Wild Animals, from antique wall paintings, plate 3 MET DP870555.jpg" by Antonio Lafreri, CC0, https://commons.wikimedia.org/wiki/File:Speculum_Romanae_Magnificentiae-_Wild_Animals,_from_antique_wall_paintings,_plate_3_MET_DP870555.jpg

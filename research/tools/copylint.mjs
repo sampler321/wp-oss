@@ -58,6 +58,8 @@ for (const file of files) {
   for (const re of CHATBOT) find(5, 'chatbot phrase', new RegExp(re.source, 'gi'));
   for (const re of PARALLEL) find(research ? 3 : 5, 'emphasis by negation', new RegExp(re.source, 'gi'));
   find(5, 'placeholder bracket', PLACEHOLDER);
+  find(5, 'middle dot separator', /\u00B7|\s\u2022\s/g);
+  find(5, 'zero-padded index label', /(?<![\d:/.,])\b0[1-9]\b(?=\s*[.)|\u00B7\u2013\u2014/-]\s|\s+[A-Z])/g);
   find(research ? 3 : 5, 'emoji', EMOJI);
   for (const w of TIER_C) find(2, 'GOV.UK word to avoid', wordRe(w));
   if (!research) {

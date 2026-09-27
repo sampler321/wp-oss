@@ -112,88 +112,88 @@ This is the full list to pick from. The 100 ideas in Part 4 are selected from it
 32. Poster & print-on-demand shop
 
 ### 3.2 Visual art
-Illustrator · painter · fine-art photographer · documentary photographer · wedding/portrait photographer · sculptor · installation artist · performance artist · ceramicist · glass artist · textile/fiber artist · printmaker · muralist/street artist · tattoo artist · comic artist/webcomic · children's-book illustrator · generative/digital artist · video artist · collage artist · art collective · artist-run space · commercial gallery · project space · degree show · art school unit · residency · curator · art writer/critic · art-book fair.
+Illustrator, painter, fine-art photographer, documentary photographer, wedding/portrait photographer, sculptor, installation artist, performance artist, ceramicist, glass artist, textile/fiber artist, printmaker, muralist/street artist, tattoo artist, comic artist/webcomic, children's-book illustrator, generative/digital artist, video artist, collage artist, art collective, artist-run space, commercial gallery, project space, degree show, art school unit, residency, curator, art writer/critic, art-book fair.
 
 ### 3.3 Architecture & spatial
-Architecture studio · solo practice · competition/research practice · landscape architect · urbanist/planner · interior designer · exhibition/scenographer · furniture designer · lighting designer · architectural photographer · architecture school unit · architecture magazine.
+Architecture studio, solo practice, competition/research practice, landscape architect, urbanist/planner, interior designer, exhibition/scenographer, furniture designer, lighting designer, architectural photographer, architecture school unit, architecture magazine.
 
 ### 3.4 Design & digital
-UX/product designer · graphic designer · typographer · type foundry · branding studio · motion designer · 3D/CGI artist · creative developer · web dev co-op · game studio · UI kit/asset seller · illustration agency (artist reps) · fashion designer · jewelry designer · industrial designer · design conference.
+UX/product designer, graphic designer, typographer, type foundry, branding studio, motion designer, 3D/CGI artist, creative developer, web dev co-op, game studio, UI kit/asset seller, illustration agency (artist reps), fashion designer, jewelry designer, industrial designer, design conference.
 
 ### 3.5 Film & moving image
-Filmmaker · documentary project site · cinematographer · editor · colourist · animation studio · micro film festival · micro-cinema · VJ/visual artist.
+Filmmaker, documentary project site, cinematographer, editor, colourist, animation studio, micro film festival, micro-cinema, VJ/visual artist.
 
 ### 3.6 Music & sound
-Band · solo artist · singer-songwriter · independent label · DJ/producer · composer (film/game) · classical ensemble · jazz combo · choir · music teacher · recording studio · mastering engineer · DIY venue · club night/promoter · community radio · online radio · podcast · festival · sound artist · instrument builder (luthier, synth maker).
+Band, solo artist, singer-songwriter, independent label, DJ/producer, composer (film/game), classical ensemble, jazz combo, choir, music teacher, recording studio, mastering engineer, DIY venue, club night/promoter, community radio, online radio, podcast, festival, sound artist, instrument builder (luthier, synth maker).
 
 ### 3.7 Performance
-Theatre company · dancer/choreographer · stand-up comedian · drag/cabaret performer · circus/acrobatics · magician · spoken word/poet performer · puppetry company.
+Theatre company, dancer/choreographer, stand-up comedian, drag/cabaret performer, circus/acrobatics, magician, spoken word/poet performer, puppetry company.
 
 ### 3.8 Writing & publishing
-Novelist · poet · literary magazine · zine · small press · paid newsletter · freelance journalist · translator · academic · research lab · digital garden · illustrated-book author · cookbook author · essayist.
+Novelist, poet, literary magazine, zine, small press, paid newsletter, freelance journalist, translator, academic, research lab, digital garden, illustrated-book author, cookbook author, essayist.
 
 ### 3.9 Food & hospitality
-Restaurant · café · natural wine bar · supper club / pop-up · food truck · bakery · guesthouse/B&B · cabin rental · campsite · cooking school.
+Restaurant, café, natural wine bar, supper club / pop-up, food truck, bakery, guesthouse/B&B, cabin rental, campsite, cooking school.
 
 ### 3.10 Trades & home services
-Plumber/heating · electrician · solar/heat-pump installer · carpenter/joiner · kitchen fitter · builder/renovation · loft conversion · painter & decorator · plasterer · tiler · roofer · landscaper · gardener · arborist · fencing · locksmith · glazier · window cleaner · cleaning company · removals · handyman · chimney sweep · stove installer · upholsterer · furniture restorer · pest control · pool maintenance · damp proofing · stonemason · blacksmith · thatcher.
+Plumber/heating, electrician, solar/heat-pump installer, carpenter/joiner, kitchen fitter, builder/renovation, loft conversion, painter & decorator, plasterer, tiler, roofer, landscaper, gardener, arborist, fencing, locksmith, glazier, window cleaner, cleaning company, removals, handyman, chimney sweep, stove installer, upholsterer, furniture restorer, pest control, pool maintenance, damp proofing, stonemason, blacksmith, thatcher.
 
 ### 3.11 Health, wellbeing & beauty
-Therapist/counsellor · psychologist · physio · osteopath · chiropractor · dentist · orthodontist · GP practice · optician · pharmacy · audiologist · podiatrist · midwife · doula · lactation consultant · sleep consultant · dietitian · speech & language therapist · occupational therapist · vet · yoga · pilates · barre · massage · acupuncture · float/sauna/bathhouse · barber · hair salon · nail studio · brow/lash studio · tattoo removal · home care agency · hospice.
+Therapist/counsellor, psychologist, physio, osteopath, chiropractor, dentist, orthodontist, GP practice, optician, pharmacy, audiologist, podiatrist, midwife, doula, lactation consultant, sleep consultant, dietitian, speech & language therapist, occupational therapist, vet, yoga, pilates, barre, massage, acupuncture, float/sauna/bathhouse, barber, hair salon, nail studio, brow/lash studio, tattoo removal, home care agency, hospice.
 
 ### 3.12 Professional services
-Bookkeeper · accountant · tax adviser · solicitor/lawyer (tenant, immigration, family, employment) · notary · mediator · financial planner · insurance broker · mortgage broker · estate agent · letting agent · surveyor · architect-technologist · planning consultant · business coach · life coach · career coach · virtual assistant · recruiter · translator · interpreter · sustainability consultant · HR consultant · funeral director · celebrant · private investigator.
+Bookkeeper, accountant, tax adviser, solicitor/lawyer (tenant, immigration, family, employment), notary, mediator, financial planner, insurance broker, mortgage broker, estate agent, letting agent, surveyor, architect-technologist, planning consultant, business coach, life coach, career coach, virtual assistant, recruiter, translator, interpreter, sustainability consultant, HR consultant, funeral director, celebrant, private investigator.
 
 ### 3.13 Mobility & transport
-Independent garage · MOT centre · classic car restorer · motorbike workshop · driving school · motorcycle training · cycle courier · bike repair · e-bike rental · car club · taxi co-op · boat charter · boatyard · marina · flying school · gliding club.
+Independent garage, MOT centre, classic car restorer, motorbike workshop, driving school, motorcycle training, cycle courier, bike repair, e-bike rental, car club, taxi co-op, boat charter, boatyard, marina, flying school, gliding club.
 
 ### 3.14 Education & childcare
-Forest school · independent/free school · Montessori/Steiner · nursery · childminder · after-school club · tutor · exam coach · language school · coding club · online course creator · homeschool co-op · adult education · art school/atelier · music school · dance school · swim school · driving school · university society · summer camp · holiday club.
+Forest school, independent/free school, Montessori/Steiner, nursery, childminder, after-school club, tutor, exam coach, language school, coding club, online course creator, homeschool co-op, adult education, art school/atelier, music school, dance school, swim school, driving school, university society, summer camp, holiday club.
 
 ### 3.15 Tech & indie software
-Indie SaaS · mobile app · WordPress plugin business · browser extension · developer tool/API docs · open-source project · hardware kits · build-in-public founder · freelance developer · product changelog/roadmap · status page · game mod community · Discord/community bot.
+Indie SaaS, mobile app, WordPress plugin business, browser extension, developer tool/API docs, open-source project, hardware kits, build-in-public founder, freelance developer, product changelog/roadmap, status page, game mod community, Discord/community bot.
 
 ### 3.16 Civic, political & nonprofit
-Election candidate · councillor · local party branch · tenants' union · trade union branch · mutual aid · community land trust · housing co-op · energy co-op · food bank · community fridge · repair café · library of things · tool library · animal rescue · environmental group · residents' association · neighbourhood plan · petition/single-issue campaign · refugee support · youth club · community centre · village hall · parish council · allotment society · credit union · time bank.
+Election candidate, councillor, local party branch, tenants' union, trade union branch, mutual aid, community land trust, housing co-op, energy co-op, food bank, community fridge, repair café, library of things, tool library, animal rescue, environmental group, residents' association, neighbourhood plan, petition/single-issue campaign, refugee support, youth club, community centre, village hall, parish council, allotment society, credit union, time bank.
 
 ### 3.17 Sport & fitness
-Amateur football/rugby/cricket club · running club · cycling club · triathlon club · climbing gym · martial arts dojo · boxing gym · CrossFit box · swim school · rowing/sailing club · surf school · ski school · roller derby · skate park · tennis club · padel club · bowls club · personal trainer · esports team · athlete personal site · local league · tournament.
+Amateur football/rugby/cricket club, running club, cycling club, triathlon club, climbing gym, martial arts dojo, boxing gym, CrossFit box, swim school, rowing/sailing club, surf school, ski school, roller derby, skate park, tennis club, padel club, bowls club, personal trainer, esports team, athlete personal site, local league, tournament.
 
 ### 3.18 Faith & spirituality
-Church/chapel · mosque · synagogue · temple/gurdwara · Quaker meeting · meditation centre · retreat centre · interfaith group · tarot/astrology practitioner · celebrant.
+Church/chapel, mosque, synagogue, temple/gurdwara, Quaker meeting, meditation centre, retreat centre, interfaith group, tarot/astrology practitioner, celebrant.
 
 ### 3.19 Travel, tourism & outdoors
-Walking tour guide · adventure operator · town/village tourism · heritage trail · overland/bikepacking blog · hiking routes · wild swimming · sauna community · campsite · hostel · B&B · cabin · houseboat · lighthouse stay · vineyard stay.
+Walking tour guide, adventure operator, town/village tourism, heritage trail, overland/bikepacking blog, hiking routes, wild swimming, sauna community, campsite, hostel, B&B, cabin, houseboat, lighthouse stay, vineyard stay.
 
 ### 3.20 Hobbies, clubs & fandom
-Chess club · TTRPG campaign · board-game group · fan site/wiki · collectors' catalogue · naturalists/birding · model railway · astronomy · beekeeping · ham radio · cosplay · knitting circle · book club · film club · allotment · fishing club · photography club · quiz league · crossword/puzzle site.
+Chess club, TTRPG campaign, board-game group, fan site/wiki, collectors' catalogue, naturalists/birding, model railway, astronomy, beekeeping, ham radio, cosplay, knitting circle, book club, film club, allotment, fishing club, photography club, quiz league, crossword/puzzle site.
 
 ### 3.21 Events & occasions
-Wedding (couple) · wedding planner · small conference · meetup · hackathon · fundraiser/charity run · reunion · private party · birthday · baby shower · memorial service · village fête · open studios trail · street party.
+Wedding (couple), wedding planner, small conference, meetup, hackathon, fundraiser/charity run, reunion, private party, birthday, baby shower, memorial service, village fête, open studios trail, street party.
 
 ### 3.22 Personal
-Link-in-bio · CV · IndieWeb homepage · memorial · family recipes · genealogy · reading log · photo-a-day · travel journal · baby book · pet site · "now" page · uses page · personal wiki.
+Link-in-bio, CV, IndieWeb homepage, memorial, family recipes, genealogy, reading log, photo-a-day, travel journal, baby book, pet site, "now" page, uses page, personal wiki.
 
 ### 3.23 Heritage, museums & archives
-Small museum · historical society · oral history · heritage railway · "Friends of" group · community archive · listed building/trust · shipwreck/maritime society · industrial heritage site.
+Small museum, historical society, oral history, heritage railway, "Friends of" group, community archive, listed building/trust, shipwreck/maritime society, industrial heritage site.
 
 ### 3.24 Making, manufacturing & small B2B
-Laser/CNC cutting · 3D printing · sign maker · print shop · contract workshop · packaging · garment CMT · architectural salvage · foundry · pottery supply · timber yard · picture framer.
+Laser/CNC cutting, 3D printing, sign maker, print shop, contract workshop, packaging, garment CMT, architectural salvage, foundry, pottery supply, timber yard, picture framer.
 
 ### 3.25 Directories, boards & marketplaces
-Niche job board · local business directory · classifieds/swap · freelancer directory · what's-on aggregator · city/food guide · makers' market listing · open-studios map · volunteering board.
+Niche job board, local business directory, classifieds/swap, freelancer directory, what's-on aggregator, city/food guide, makers' market listing, open-studios map, volunteering board.
 
 ### 3.26 Farms & land
-Vineyard · orchard/PYO · honey · sheep/alpaca wool · market garden · riding stables · dairy/creamery · flower farm · Christmas tree farm · care farm · city farm.
+Vineyard, orchard/PYO, honey, sheep/alpaca wool, market garden, riding stables, dairy/creamery, flower farm, Christmas tree farm, care farm, city farm.
 
 ### 3.27 Pets & animals
-Dog walker · groomer · trainer · cattery/boarding · pet sitter · breeder (ethical) · equine vet · farrier.
+Dog walker, groomer, trainer, cattery/boarding, pet sitter, breeder (ethical), equine vet, farrier.
 
 ### 3.28 Spaces, hire & unusual services
-Makerspace · coworking · escape room · games bar · camera rental · tool hire · party/marquee hire · photo booth · kids' entertainer · magician · wedding band/DJ · piano tuner · watch repair · bookbinder · luthier · synth/pedal maker.
+Makerspace, coworking, escape room, games bar, camera rental, tool hire, party/marquee hire, photo booth, kids' entertainer, magician, wedding band/DJ, piano tuner, watch repair, bookbinder, luthier, synth/pedal maker.
 
 ### 3.29 Land, food craft & self-sufficiency
-Tiny house builder · van conversion · homestead · permaculture · foraging · mushroom grower · cheesemaker · butcher · fermenter · cidery/meadery · seed library · darkroom co-op · dark-sky site · citizen science · death doula.
+Tiny house builder, van conversion, homestead, permaculture, foraging, mushroom grower, cheesemaker, butcher, fermenter, cidery/meadery, seed library, darkroom co-op, dark-sky site, citizen science, death doula.
 
 ### 3.30 Odd formats & single-purpose sites
-Documentary impact campaign · crowdfunded pre-order · one-product store · pop-up shop · online exhibition · net-art · manifesto page · activist toolkit · countdown/launch microsite · community cookbook · dialect archive · time bank · community shares offer · street-tree map.
+Documentary impact campaign, crowdfunded pre-order, one-product store, pop-up shop, online exhibition, net-art, manifesto page, activist toolkit, countdown/launch microsite, community cookbook, dialect archive, time bank, community shares offer, street-tree map.

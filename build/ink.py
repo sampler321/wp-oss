@@ -31,15 +31,15 @@ pattern('art-for-sale-page', 'Page: art for sale', 'portfolio', J(
 pattern('for-sale-grid', 'Originals for sale (grid with prices)', 'portfolio,shop', grid(J(
   stack(J(image('hero.jpg', 'Two blue birds on a thin branch, painted in blue and rust on cream paper'),
           heading('Bluebirds on a thin branch', 3, fontSize='large'),
-          para('Gouache on Arches, 21 × 28 cm on a 30 × 40 cm sheet', fontSize='x-small', fontFamily='mono'),
+          para('Gouache on Arches, 21 × 28 cm on a 30 × 40 cm sheet', fontSize='x-small'),
           para('£420', className='is-style-price-tag'))),
   stack(J(image('work-2.jpg', 'Engraving of camels, elephants and other animals gathered in a rocky landscape'),
           heading('Hackney Marshes, redrawn', 3, fontSize='large'),
-          para('Pen and correction fluid, 30 × 40 cm', fontSize='x-small', fontFamily='mono'),
+          para('Pen and correction fluid, 30 × 40 cm', fontSize='x-small'),
           para('Reserved', className='is-style-price-tag'))),
   stack(J(image('work-3.jpg', 'A white heron standing in reeds at the edge of a marsh'),
           heading('Heron, low tide', 3, fontSize='large'),
-          para('Gouache, 24 × 32 cm on a 30 × 40 cm sheet', fontSize='x-small', fontFamily='mono'),
+          para('Gouache, 24 × 32 cm on a 30 × 40 cm sheet', fontSize='x-small'),
           para('£380', className='is-style-price-tag'))),
 ), min_width='18rem', align='wide'))
 
@@ -122,7 +122,7 @@ pattern('work-grid-archive', 'Work archive (masonry, inherits the page query)', 
   align='wide', template_class='is-style-masonry'), inserter=False)
 
 pattern('post-list', 'Post list', 'posts,query', inherit_query(
-  J(row(J(dyn('post-date', fontFamily='mono'), dyn('post-title', isLink=True, level=2, fontSize='large')), justify='space-between', wrap=True)),
+  J(row(J(dyn('post-date'), dyn('post-title', isLink=True, level=2, fontSize='large')), justify='space-between', wrap=True)),
   align='wide'), inserter=False)
 
 pattern('work-caption', 'Work caption (client, publication, year)', 'portfolio', table(
@@ -181,7 +181,7 @@ pattern('newsletter', 'Newsletter', 'call-to-action', group(J(
 
 pattern('studio-diary', 'Studio diary strip', 'posts', J(
   heading('Studio diary', 3),
-  query(J(dyn('post-date', fontFamily='mono'), dyn('post-title', isLink=True, level=4)), per_page=3, layout={'type': 'grid', 'columnCount': 3}, align='wide')))
+  query(J(dyn('post-date'), dyn('post-title', isLink=True, level=4)), per_page=3, layout={'type': 'grid', 'columnCount': 3}, align='wide')))
 
 pattern('shipping-note', 'Shipping and returns, one paragraph', 'shop', group(para(
   'Prints ship within three working days in a tube or between boards, tracked. If a print arrives damaged, send me a photo within 14 days and I\'ll send another. Originals can\'t be returned, so ask me for more photos before you buy.', fontSize='small'),

@@ -36,6 +36,8 @@ Companion document: `ANTI-AI-WRITING.md` covers AI writing tells in depth. Secti
 
 > **Field study update (Sept 2026, see `ANTI-VIBE-FIELD-STUDY.md`).** Measured on 65 live AI-built pages: purple has faded (3/65 use an indigo or violet accent). The current AI default is a **warm off-white background with a serif heading face** (22/65: Fraunces, Playfair Display, Cormorant Garamond, Instrument Serif), often with a gold button, Tailwind (61/65), shadcn tokens (55/65), Lucide icons (45/65), Inter body text (31/65), H1 tracking of exactly -0.025em (18/65) and content hidden until scroll (40/65). Em dashes appear at 6.56 per 1,000 words (17.6 on Bolt) against 0 on the 12 hand-built control pages. A hex blacklist alone catches little; the combination is the tell.
 
+> **Owner rule (Sept 2026): three banned details, always.** (1) Monospace fonts used as design type (captions, labels, prices, dates, "spec" lines). (2) The middle dot `,` as a separator. (3) Zero-padded index labels (`01`, `02 ,`, `03 /`). Together they make the "01, Section name" eyebrow that marks AI-generated layouts. `copylint` and `test-theme` fail on all three.
+
 ### 2.1 Colour
 
 **C1. Indigo/violet as the primary accent (Tailwind `indigo-500` #6366F1, `violet-500` #8B5CF6, shadcn violet).** `S5`
@@ -216,7 +218,7 @@ Companion document: `ANTI-AI-WRITING.md` covers AI writing tells in depth. Secti
 → Anthropic's skill: numbered markers are "only appropriate if the content actually is a sequence." Developers Digest #13, Impeccable "Tiny numbered section labels."
 → Number only real procedures, such as "How a commission works." Otherwise use no numbers.
 
-**L5. Stat banner: "10k+ customers · 99.9% uptime · 24/7 support · 5★".** `S5`
+**L5. Stat banner: "10k+ customers, 99.9% uptime, 24/7 support, 5★".** `S5`
 → Developers Digest #14, Impeccable "Hero metric layout." For small businesses these numbers are usually invented.
 → No stat-row pattern ships in the library. If a real figure matters ("Since 1987", "412 weddings"), set it inside a sentence.
 
@@ -544,9 +546,9 @@ Companion document: `ANTI-AI-WRITING.md` covers AI writing tells in depth. Secti
 → Emoji plus the generator's voice.
 → Banned.
 
-**P8. Nav that reads "Features · Pricing · About · Contact" on a non-software business.** `S4`
+**P8. Nav that reads "Features, Pricing, About, Contact" on a non-software business.** `S4`
 → These are SaaS nav defaults.
-→ Nav demo uses the trade's words: "Work · Commissions · Studio · Visit".
+→ Nav demo uses the trade's words: "Work, Commissions, Studio, Visit".
 
 **P9. Blank or broken image slots.** `S4`
 → Impeccable "Broken or placeholder image."

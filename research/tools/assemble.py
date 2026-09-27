@@ -36,10 +36,10 @@ for name in ORDER:
     lines = open(os.path.join(PARTS, name), encoding='utf-8').read().split('\n')
     idea, refs, in_refs = None, [], False
     for i, line in enumerate(lines):
-        h = re.match(r'^#### (\d{3}) · (.*)', line)
+        h = re.match(r'^#### (\d{3})[ ,.:\u00b7]+(.*)', line)
         if h:
             idea = h.group(1)
-            toc.append(f'- [{idea} · {h.group(2)}](#{idea})')
+            toc.append(f'- [{idea} {h.group(2)}](#{idea})')
             out.append(f'<a id="{idea}"></a>')
         s = re.match(r'^### ([IVXL]+\. .*)', line)
         if s:

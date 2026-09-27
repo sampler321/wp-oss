@@ -15,8 +15,8 @@
 <h3 class="wp-block-heading has-large-font-size">Bluebirds on a thin branch</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","fontFamily":"mono"} -->
-<p class="has-mono-font-family has-x-small-font-size">Gouache on Arches, 21 × 28 cm on a 30 × 40 cm sheet</p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">Gouache on Arches, 21 × 28 cm on a 30 × 40 cm sheet</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-price-tag"} -->
@@ -33,8 +33,8 @@
 <h3 class="wp-block-heading has-large-font-size">Hackney Marshes, redrawn</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","fontFamily":"mono"} -->
-<p class="has-mono-font-family has-x-small-font-size">Pen and correction fluid, 30 × 40 cm</p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">Pen and correction fluid, 30 × 40 cm</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-price-tag"} -->
@@ -51,8 +51,8 @@
 <h3 class="wp-block-heading has-large-font-size">Heron, low tide</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","fontFamily":"mono"} -->
-<p class="has-mono-font-family has-x-small-font-size">Gouache, 24 × 32 cm on a 30 × 40 cm sheet</p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">Gouache, 24 × 32 cm on a 30 × 40 cm sheet</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-price-tag"} -->

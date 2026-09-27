@@ -11,7 +11,7 @@ Every theme in `themes/<slug>/` follows this. `tools/test-theme.mjs` enforces it
 
 ## 2. Everything tokenised in theme.json (editable in Site Editor > Styles)
 - `settings.color.palette`: all colours, with semantic slugs: `base`, `contrast`, `accent`, `accent-2` (optional), `surface`, `line`, plus any theme-specific colours. Set `defaultPalette`, `defaultGradients` and `defaultDuotone` to false. Custom colour pickers stay available.
-- `settings.typography.fontFamilies`: every font is **self-hosted** in `assets/fonts/*.woff2` via `fontFace` (no Google Fonts calls). Slugs are `display`, `body` and `mono` (optional).
+- `settings.typography.fontFamilies`: every font is **self-hosted** in `assets/fonts/*.woff2` via `fontFace` (no Google Fonts calls). Slugs are `display` and `body` (an optional third `accent` face is allowed). **No monospace fonts** anywhere: not as captions, labels, prices, dates or "technical" details. Small monospace labels are a recognised AI-design tell. Use the body face at a small size, tabular figures (`font-variant-numeric`) for prices and times.
 - `settings.typography.fontSizes`: presets `x-small, small, medium, large, x-large, xx-large, display` (fluid where useful). `defaultFontSizes: false`. **No custom font sizes in block markup.** Use the `fontSize` attribute with a preset slug.
 - `settings.spacing.spacingSizes`: slugs `10…80`, with `defaultSpacingSizes: false`. Block spacing in markup must be `var:preset|spacing|NN` or `0`.
 - `settings.shadow.presets` (or `defaultPresets: false` if the theme has no shadows).
@@ -47,6 +47,7 @@ themes/<slug>/
 - Strings in patterns are translatable (`esc_html_e( '…', '<slug>' )`) where practical.
 
 ## 5. Design
+- **Banned AI-template details:** monospace fonts; the middle dot `·` as a separator (use a comma, slash, line break or real list); zero-padded index labels such as `01`, `02 /`, `03 ·` above headings or on cards; tracked-out all-caps eyebrow labels; "Est. 2014" badges. Lists and steps use a real ordered list or plain numbers in text.
 - Follow the idea's **Style** block in `research/THEME-IDEAS.md`, as amended by the owner's brief in `BUILD-STATUS.md`. The owner's brief wins.
 - The display font must match `research/FONT-REGISTRY.md` unless the owner's brief changes the direction. If it changes, claim a new unused family in the registry.
 - Run the sniff test in `research/ANTI-VIBE.md` §3. No purple gradients, no shadcn-style cards, no pill badge above the H1, no icon-in-circle feature grids, no stat rows, no fade-in on scroll, no warm off-white + serif default look.

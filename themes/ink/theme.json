@@ -81,21 +81,6 @@
 					"fontFamily": "\"Bricolage Grotesque\", sans-serif",
 					"name": "Bricolage Grotesque (text)",
 					"slug": "body"
-				},
-				{
-					"fontFamily": "\"Sometype Mono\", monospace",
-					"name": "Sometype Mono",
-					"slug": "mono",
-					"fontFace": [
-						{
-							"fontFamily": "Sometype Mono",
-							"fontStyle": "normal",
-							"fontWeight": "400 500",
-							"src": [
-								"file:./assets/fonts/sometype-mono-normal-400_500.woff2"
-							]
-						}
-					]
 				}
 			],
 			"fontSizes": [
@@ -302,7 +287,7 @@
 			"h6": {
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
-					"fontFamily": "var:preset|font-family|mono",
+					"fontFamily": "var:preset|font-family|body",
 					"fontWeight": "500",
 					"lineHeight": "1.4"
 				}
@@ -351,7 +336,7 @@
 			},
 			"caption": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|mono",
+					"fontFamily": "var:preset|font-family|body",
 					"fontSize": "var:preset|font-size|x-small",
 					"lineHeight": "1.45"
 				},
@@ -411,7 +396,7 @@
 			},
 			"core/post-date": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|mono",
+					"fontFamily": "var:preset|font-family|body",
 					"fontSize": "var:preset|font-size|x-small"
 				},
 				"color": {
@@ -420,7 +405,7 @@
 			},
 			"core/post-terms": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|mono",
+					"fontFamily": "var:preset|font-family|body",
 					"fontSize": "var:preset|font-size|x-small"
 				}
 			},
@@ -478,12 +463,12 @@
 			},
 			"core/code": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|mono"
+					"fontFamily": "var:preset|font-family|body"
 				}
 			},
 			"core/query-pagination": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|mono",
+					"fontFamily": "var:preset|font-family|body",
 					"fontSize": "var:preset|font-size|small"
 				}
 			},
@@ -496,7 +481,7 @@
 				}
 			}
 		},
-		"css": ":where(h1,h2,h3){text-wrap:balance}:where(p){text-wrap:pretty}@media (prefers-reduced-motion:no-preference){a{transition:text-decoration-thickness .15s}a:hover{text-decoration-thickness:2px}}"
+		"css": ":where(h1,h2,h3){text-wrap:balance}:where(p){text-wrap:pretty}@media (prefers-reduced-motion:no-preference){a{transition:text-decoration-thickness .15s}a:hover{text-decoration-thickness:2px}}:where(table,.wp-block-post-date,.is-style-price-tag){font-variant-numeric:tabular-nums}"
 	},
 	"templateParts": [
 		{

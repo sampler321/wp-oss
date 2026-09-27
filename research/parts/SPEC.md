@@ -11,9 +11,9 @@ Read these first for context and exact format:
 ## Entry format (copy exactly)
 
 ```
-#### NNN · Name (`slug`)
+#### NNN, Name (`slug`)
 **For:** who exactly uses it (one line, specific).
-**Templates:** front-page · archive-x · single-x · page-y · ... (list 5–10; include Woo templates if commerce)
+**Templates:** front-page, archive-x, single-x, page-y, ... (list 5–10; include Woo templates if commerce)
 **Patterns (~NN):** 6–12 concrete pattern names, comma-separated
 **Content model:** CPTs/taxonomies/meta (from the `wp-oss-companion` plugin, shown via Block Bindings), or "posts + pages only"
 **Plugins:** only what's essential. Prefer the Part 2 toolkit. Write "none" if core is enough

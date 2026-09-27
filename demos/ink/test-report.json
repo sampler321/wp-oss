@@ -1,6 +1,6 @@
 {
   "slug": "ink",
-  "date": "2026-09-27T12:50:23.282Z",
+  "date": "2026-09-27T13:27:54.809Z",
   "passed": true,
   "results": [
     {
@@ -34,9 +34,14 @@
       "detail": ""
     },
     {
+      "name": "no monospace fonts (AI tell)",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "font families display + body",
       "ok": true,
-      "detail": "display,body,mono"
+      "detail": "display,body"
     },
     {
       "name": "fonts self-hosted and present",

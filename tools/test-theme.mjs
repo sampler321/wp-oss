@@ -54,6 +54,10 @@ const palMissing = ['base', 'contrast', 'accent', 'surface', 'line'].filter(s =>
 check('palette has semantic slugs', !palMissing.length, palMissing.join(', '));
 check('default palette/gradients/duotone off', tj.settings?.color?.defaultPalette === false && tj.settings?.color?.defaultGradients === false && tj.settings?.color?.defaultDuotone === false);
 const fam = tj.settings?.typography?.fontFamilies || [];
+const monoFams = Object.entries(jsonData).flatMap(([f, d]) => (d.settings?.typography?.fontFamilies || []).filter(x => /monospace|mono\b|\bcode\b|courier|typewriter/i.test(`${x.fontFamily} ${x.name} ${x.slug}`)).map(x => `${f}: ${x.name || x.slug}`));
+const monoMarkup = themeFiles(dir).filter(f => /has-mono-font-family|font-family\|mono|"fontFamily":"mono"|monospace/.test(read(f))).map(f => path.relative(dir, f));
+const monoCss = JSON.stringify(jsonData).match(/monospace|font-family\|mono/g);
+check('no monospace fonts (AI tell)', !monoFams.length && !monoMarkup.length && !monoCss, [...monoFams, ...monoMarkup.slice(0, 4), monoCss ? 'theme.json styles reference mono' : ''].filter(Boolean).join(' | '));
 check('font families display + body', ['display', 'body'].every(s => fam.some(f => f.slug === s)), fam.map(f => f.slug).join(','));
 const fontSrcMissing = fam.flatMap(f => (f.fontFace || []).flatMap(ff => ff.src)).map(s => s.replace('file:./', '')).filter(s => !fs.existsSync(path.join(dir, s)));
 const remoteFonts = fam.flatMap(f => (f.fontFace || []).flatMap(ff => ff.src)).filter(s => /^https?:/.test(s));

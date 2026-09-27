@@ -19,7 +19,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|mono",
+			"fontFamily": "var:preset|font-family|body",
 			"fontSize": "var:preset|font-size|x-small"
 		}
 	}

@@ -39,7 +39,7 @@ try {
   const origin = site.url.replace(/\/$/, '');
   const esc = origin.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');
   const playground = `https://playground.wordpress.net/?blueprint-url=${encodeURIComponent(`https://raw.githubusercontent.com/${REPO}/main/demos/${slug}/blueprint.json`)}`;
-  const bar = `<div style="position:relative;z-index:99999;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 16px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between"><span>Static demo of the <strong>${slug}</strong> block theme. Forms, cart and search need the live version.</span><span><a style="color:#fff" href="${playground}">Open live in WordPress Playground</a> &middot; <a style="color:#fff" href="https://github.com/${REPO}/tree/main/themes/${slug}">Download the theme</a></span></div>`;
+  const bar = `<div style="position:relative;z-index:99999;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 16px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between"><span>Static demo of the <strong>${slug}</strong> block theme. Forms, cart and search need the live version.</span><span style="display:flex;gap:16px;flex-wrap:wrap"><a style="color:#fff" href="${playground}">Open live in WordPress Playground</a><a style="color:#fff" href="https://github.com/${REPO}/tree/main/themes/${slug}">Download the theme</a></span></div>`;
   let n = 0;
   const walk = d => { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); if (fs.statSync(p).isDirectory()) walk(p); else if (/\.(html|css|js|json|xml)$/.test(f)) {
     let s = fs.readFileSync(p, 'utf8');

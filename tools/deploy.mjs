@@ -8,7 +8,7 @@ const slug = process.argv[2];
 const ROOT = path.resolve(import.meta.dirname, '..');
 const dist = path.join(ROOT, 'dist', slug);
 if (!fs.existsSync(path.join(dist, 'index.html'))) { console.error(`no dist/${slug}; run export-static first`); process.exit(1); }
-const name = `wposs-${slug}`.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+const name = slug === '_gallery' ? 'wposs-themes' : `wposs-${slug}`.toLowerCase().replace(/[^a-z0-9-]/g, '-');
 const cfgDir = path.join(ROOT, '.cache', 'deploy', slug);
 fs.mkdirSync(cfgDir, { recursive: true });
 fs.writeFileSync(path.join(cfgDir, 'wrangler.jsonc'), JSON.stringify({
@@ -20,6 +20,7 @@ const r = spawnSync('npx', ['--yes', 'wrangler@latest', 'deploy', '--config', pa
 const out = (r.stdout || '') + (r.stderr || '');
 const url = (out.match(/https:\/\/[a-z0-9.-]+\.workers\.dev/) || [])[0];
 if (r.status !== 0 || !url) { console.error(out.slice(-2000)); process.exit(1); }
+fs.mkdirSync(path.join(ROOT, 'demos', slug), { recursive: true });
 const statusPath = path.join(ROOT, 'demos', slug, 'deploy.json');
 fs.writeFileSync(statusPath, JSON.stringify({ slug, url, worker: name, date: new Date().toISOString() }, null, 2) + '\n');
 console.log(url);
