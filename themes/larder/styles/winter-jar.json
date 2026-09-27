@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Winter jar",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#1C2320",
+					"name": "Cellar"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F1EEE2",
+					"name": "Candle"
+				},
+				{
+					"slug": "accent",
+					"color": "#F2A93B",
+					"name": "Apricot"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#9CC49A",
+					"name": "Pickle"
+				},
+				{
+					"slug": "surface",
+					"color": "#26312C",
+					"name": "Shelf"
+				},
+				{
+					"slug": "line",
+					"color": "#3D4A43",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#C3C8BD",
+					"name": "Frost"
+				},
+				{
+					"slug": "highlight",
+					"color": "#F2A93B",
+					"name": "Apricot"
+				},
+				{
+					"slug": "white",
+					"color": "#2A332F",
+					"name": "Jar"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			}
+		}
+	}
+}

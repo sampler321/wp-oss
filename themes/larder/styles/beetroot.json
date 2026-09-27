@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Beetroot",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F7EEF1",
+					"name": "Pink paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3A0D1E",
+					"name": "Beet black"
+				},
+				{
+					"slug": "accent",
+					"color": "#A0144B",
+					"name": "Beet"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#2F6B3A",
+					"name": "Dill"
+				},
+				{
+					"slug": "surface",
+					"color": "#F2D7E1",
+					"name": "Pink wash"
+				},
+				{
+					"slug": "line",
+					"color": "#DDBFCA",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#6B3A4B",
+					"name": "Muted beet"
+				},
+				{
+					"slug": "highlight",
+					"color": "#E0A526",
+					"name": "Mustard"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "White"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,191 @@
+{
+ "site": {
+  "title": "Spiżarnia",
+  "tagline": "Ola Wróbel's plant-based kitchen in Łódź"
+ },
+ "categories": [
+  {
+   "slug": "soups",
+   "name": "Soups"
+  },
+  {
+   "slug": "mains",
+   "name": "Mains"
+  },
+  {
+   "slug": "sides",
+   "name": "Sides"
+  },
+  {
+   "slug": "cakes",
+   "name": "Cakes"
+  },
+  {
+   "slug": "preserves",
+   "name": "Preserves and pickles"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "recipes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "recipes",
+   "title": "Recipes",
+   "content": ""
+  },
+  {
+   "slug": "seasons",
+   "title": "What's in season",
+   "pattern": "larder/season-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "pantry-staples",
+   "title": "What's in my larder",
+   "pattern": "larder/pantry-staples-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "workshops",
+   "title": "Cooking workshops",
+   "pattern": "larder/workshops-page"
+  },
+  {
+   "slug": "book",
+   "title": "The book",
+   "pattern": "larder/book-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "Hello, I'm Ola",
+   "pattern": "larder/about-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Plum cake that uses a whole kilo",
+   "slug": "plum-cake-whole-kilo",
+   "category": "cakes",
+   "tags": [
+    "Plums",
+    "Baking"
+   ],
+   "image": "plums.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every September my neighbour Pani Halina leaves a bag of węgierki on my door handle. Every September I make this.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It's the simplest cake I know: oil, oat milk, flour, a lot of plums. The plums sink a little and go jammy at the bottom. That's correct.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">For a 24 × 30 cm tin</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>1kg plums, halved and stoned</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>200g plain flour</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>100g sugar, plus 2 tbsp</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>120ml sunflower oil</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>200ml oat milk</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 tsp baking powder</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>A pinch of cinnamon</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Heat the oven to 180°C and line the tin.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Whisk the dry things, then stir in the oil and oat milk until smooth and thick.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Spread it out, push the plums in skin side down and sprinkle with sugar. Bake for 50 minutes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">better the next day, if it lasts</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Grandma Zosia's barszcz, with one change",
+   "slug": "barszcz-one-change",
+   "category": "soups",
+   "tags": [
+    "Beetroot",
+    "Soup",
+    "Wigilia"
+   ],
+   "image": "soup.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Babcia Zosia made barszcz with a sour starter she kept going for weeks. I don't have the patience, so I use the brine from a jar of sauerkraut. She would say that's cheating. It is.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Serve it clear in a cup, or with the cashew cream swirled in, like in the photo.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">Makes about 2 litres</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>1kg beetroot, peeled and sliced</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 carrot, 1 parsley root</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>4 dried porcini</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 bay leaves, 4 allspice berries</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>200ml sauerkraut brine</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 garlic cloves</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Salt, sugar, marjoram</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Soak the porcini in a cup of hot water for 20 minutes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Simmer the beetroot, roots, bay and allspice in 2 litres of water for 40 minutes. Don't let it boil hard or it goes brown.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Strain, add the mushroom water, brine and crushed garlic. Season until it's sour, sweet and salty all at once.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">keeps a week in the fridge, and it's better on day three</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Pierogi with buckwheat and mushrooms",
+   "slug": "pierogi-buckwheat-mushrooms",
+   "category": "mains",
+   "tags": [
+    "Pierogi",
+    "Mushrooms",
+    "Buckwheat"
+   ],
+   "image": "pierogi.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The dough has no egg and nobody at my workshops has ever noticed. The trick is hot water and a rest.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The filling is kasza, fried onion and whatever mushrooms you found. Dried porcini make it taste like Christmas.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">Makes about 50</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>500g plain flour</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>250ml just-boiled water</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>3 tbsp oil</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>150g roasted buckwheat</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>300g mushrooms</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 onions</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Salt, pepper, marjoram</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Mix the flour, hot water, oil and a pinch of salt. Knead for 5 minutes and rest it under a bowl for 30.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Cook the buckwheat. Fry the onions and mushrooms until dark, then chop everything together and season hard.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Roll thin, cut circles, fill, pinch shut. Boil in batches until they float, then 1 minute more.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">they freeze well, on a tray first so they don't stick</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Dill pickles in a 3-litre jar",
+   "slug": "dill-pickles",
+   "category": "preserves",
+   "tags": [
+    "Pickles",
+    "Dill",
+    "Fermenting"
+   ],
+   "image": "pickles.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Ogórki kiszone, the salt-brine kind. No vinegar. They're sour because of time and nothing else.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Use small, firm cucumbers from the market in August, the ones with bumps. Big smooth ones go hollow.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">Fills one 3-litre jar</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>2kg small pickling cucumbers</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 litres water</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>60g salt (not iodised)</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 big bunch of dill with flowers</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>6 garlic cloves</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 horseradish leaves or a piece of root</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Wash the cucumbers in cold water. Pack them upright into the jar with the dill, garlic and horseradish.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Dissolve the salt in the water and pour over until everything is covered. Weigh down with a small plate.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Leave on the counter for 3 days, then somewhere cool. They're ready in a week and last until spring.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">the cloudy brine is normal, drink it</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Chanterelles on toast, the only way I like them",
+   "slug": "chanterelles-on-toast",
+   "category": "mains",
+   "tags": [
+    "Mushrooms",
+    "Quick"
+   ],
+   "image": "mushrooms.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Cleaned with a brush, not washed. Fried hot and dry first so they squeak, and only then the oil and onion.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">This is breakfast after a morning in the woods near Spała.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">For 2</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>300g chanterelles, brushed clean</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 small onion</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 tbsp oil</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>4 slices rye bread</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Dill, salt, pepper</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Fry the mushrooms in a dry hot pan until their water cooks off.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Add the oil and chopped onion and fry until golden.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Pile onto toasted rye and cover with dill.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">if you're not sure it's a chanterelle, don't eat it</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Braised cabbage with smoked tofu and apple",
+   "slug": "braised-cabbage-tofu",
+   "category": "mains",
+   "tags": [
+    "Cabbage",
+    "Apples"
+   ],
+   "image": "cabbage.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A winter pan of food that tastes of bigos without the three days.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Savoy or white cabbage, both fine. The apple goes soft and disappears, which is the point.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">For 4</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>1 small cabbage, shredded</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>200g smoked tofu, cubed</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 apples, grated</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 onion</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 tbsp tomato paste</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 tsp caraway, 2 bay leaves</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Fry the onion and tofu until brown.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Add the cabbage, apple, paste, caraway, bay and a cup of water. Cover.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Cook gently for 40 minutes, stirring now and then. Season with salt and a lot of pepper.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">eat it with potatoes and a pickle</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Rhubarb compote for May",
+   "slug": "rhubarb-compote",
+   "category": "preserves",
+   "tags": [
+    "Rhubarb",
+    "Drinks"
+   ],
+   "image": "rhubarb.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Kompot is the drink of every Polish summer lunch: fruit, water, sugar, cooled. Rhubarb is the first one of the year.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Make a big pot, it goes fast.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">Makes 3 litres</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>600g rhubarb, chopped</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>3 litres water</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>120g sugar</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>1 strip of lemon peel</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bring the water to the boil with the sugar and peel.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Add the rhubarb and simmer for 5 minutes, no longer.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Cool completely and serve cold with the fruit in.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">strawberries go in from June</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Broad beans with dill butter",
+   "slug": "broad-beans-dill",
+   "category": "sides",
+   "tags": [
+    "Broad beans",
+    "Dill",
+    "Quick"
+   ],
+   "image": "beans.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Bób from a paper cone at the market in July, eaten warm, squeezed out of their skins. This is the same thing on a plate.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Plant butter works fine here. So does good oil.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-needs\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-needs\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\",\"textColor\":\"muted\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\">For 2 as a snack</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>500g broad beans in their skins</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>2 tbsp plant butter</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>A big handful of dill</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Flaky salt</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">How I do it</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Boil the beans in salted water for 4 minutes and drain.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Toss with the butter, chopped dill and salt.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Eat with your hands. Pop them out of the skins as you go.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-note\"} -->\n<p class=\"is-style-note\">only in July, don't bother with frozen</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Recipes",
+   "url": "/recipes/"
+  },
+  {
+   "label": "Seasons",
+   "url": "/seasons/"
+  },
+  {
+   "label": "My larder",
+   "url": "/pantry-staples/"
+  },
+  {
+   "label": "Workshops",
+   "url": "/workshops/"
+  },
+  {
+   "label": "The book",
+   "url": "/book/"
+  },
+  {
+   "label": "About me",
+   "url": "/about/"
+  }
+ ]
+}

@@ -34,7 +34,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
 | 27 | local | 053 Hyperlocal news | more scientific looking | todo | |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
-| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | todo | |
+| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | todo | |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | todo | |
@@ -43,7 +43,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
-| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | todo | |
+| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | tested |  |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | todo | |

@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dill",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EEF3EA",
+					"name": "Pale dill"
+				},
+				{
+					"slug": "contrast",
+					"color": "#11301B",
+					"name": "Pine"
+				},
+				{
+					"slug": "accent",
+					"color": "#3B6E1F",
+					"name": "Dill"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#274E14",
+					"name": "Deep dill"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFF4C8",
+					"name": "Butter"
+				},
+				{
+					"slug": "line",
+					"color": "#C5D2BD",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#445441",
+					"name": "Moss"
+				},
+				{
+					"slug": "highlight",
+					"color": "#E0A526",
+					"name": "Mustard"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "White"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,8 @@
+# Larder (Spiżarnia)
+
+- Direction: the owner asked for "an independent one too, like jadlonomia.com". It's one person's plant-based blog from Łódź, written in the first person: a "Tastes best right now" produce strip under the header (Jadłonomia's "Teraz najlepiej smakują"), a dense photo mosaic with titles on pale bands, and recipes told as a short story, then a "What you need" box, then "How I do it" in paragraphs. It's deliberately unlike pantry: no recipe card, no pills, serif type, cool grey paper.
+- Fonts: Vollkorn (display, claimed in demos/larder/fonts-claim.txt) and Work Sans (body), plus Caveat as the optional accent face, used only for short handwritten asides (is-style-note). Captions and the tagline use Vollkorn italic. The fetched Caveat subset is Latin only, so asides avoid Polish letters such as ł and ę.
+- Palette: paper grey #F3F4F1, forest #143A22, beet #9C1848, dill #2F6B3A, sky #E3ECF7 for the strip and the letter panel, mustard #E0A526. Variations: Beetroot, Dill, Winter jar (dark).
+- Signature: the seasonal calendar (months by produce table with dots) on the front page and the Seasons page, and the produce strip, which is a template part so it can be swapped each month.
+- Mosaic: a Query Loop with Cover blocks using the featured image. Every sixth tile spans two columns and two rows on desktop. The span rules sit in theme.json global CSS, because @media inside a section style's css gets flattened by WordPress (the rule lost its media query and applied everywhere).
+- Core-block limits: no ingredient scaling or print view; this is a blog, and the "What you need" box is a styled group.

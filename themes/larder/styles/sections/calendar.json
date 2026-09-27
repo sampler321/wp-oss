@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Seasonal calendar table",
+	"slug": "calendar",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& table{table-layout:auto!important}& td:first-child{min-width:11em}& td:not(:first-child),& th:not(:first-child){text-align:center!important;color:var(--wp--preset--color--accent-2)}& td:first-child{font-weight:600}& th{font-size:var(--wp--preset--font-size--x-small)}"
+	}
+}

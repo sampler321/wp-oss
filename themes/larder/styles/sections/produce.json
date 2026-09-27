@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Produce links",
+	"slug": "produce",
+	"blockTypes": [
+		"core/list",
+		"core/tag-cloud"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.2rem 1.2rem}& li{margin:0}& a{text-decoration:none;font-weight:600;color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)!important}& a:hover{color:var(--wp--preset--color--accent);text-decoration:underline wavy}"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mosaic",
+	"slug": "mosaic",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "&{grid-auto-flow:dense;gap:12px!important}& .wp-block-cover{height:100%;padding:0!important;border-radius:4px;overflow:hidden}& .wp-block-cover__inner-container{width:100%!important}& .wp-block-cover .wp-block-post-title{background:color-mix(in srgb,var(--wp--preset--color--white) 88%,transparent);margin:0;padding:.6em .8em;font-size:var(--wp--preset--font-size--medium)}& .wp-block-cover .wp-block-post-title a{color:var(--wp--preset--color--contrast)}"
+	}
+}

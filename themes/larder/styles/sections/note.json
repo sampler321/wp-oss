@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Handwritten aside",
+	"slug": "note",
+	"blockTypes": [
+		"core/paragraph",
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|accent",
+			"fontSize": "var:preset|font-size|large",
+			"lineHeight": "1.2"
+		},
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"css": "&{transform:rotate(-1.5deg)}"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wavy rule above",
+	"slug": "wavy-top",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{background-image:radial-gradient(circle at 10px -4px,transparent 12px,var(--wp--preset--color--line) 13px,transparent 14px);background-size:20px 12px;background-repeat:repeat-x;padding-top:var(--wp--preset--spacing--50)}"
+	}
+}

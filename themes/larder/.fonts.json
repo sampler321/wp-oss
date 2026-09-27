@@ -1,0 +1,70 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Vollkorn\", sans-serif",
+      "name": "Vollkorn",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Vollkorn",
+          "fontStyle": "italic",
+          "fontWeight": "400 900",
+          "src": [
+            "file:./assets/fonts/vollkorn-italic-400_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Vollkorn",
+          "fontStyle": "normal",
+          "fontWeight": "400 900",
+          "src": [
+            "file:./assets/fonts/vollkorn-normal-400_900.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Work Sans\", sans-serif",
+      "name": "Work Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Work Sans",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/work-sans-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Work Sans",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/work-sans-normal-300_800.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Caveat\", sans-serif",
+      "name": "Caveat",
+      "slug": "accent",
+      "fontFace": [
+        {
+          "fontFamily": "Caveat",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/caveat-normal-400_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Vollkorn (Google Fonts), https://github.com/google/fonts/tree/main/ofl/vollkorn",
+    "Work Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/worksans",
+    "Caveat (Google Fonts), https://github.com/google/fonts/tree/main/ofl/caveat"
+  ]
+}
