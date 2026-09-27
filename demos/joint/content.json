@@ -1,0 +1,211 @@
+{
+ "site": {
+  "title": "Brook & Lathe",
+  "tagline": "Furniture made to order in Hebden Bridge"
+ },
+ "categories": [
+  {
+   "slug": "commissions",
+   "name": "Commissions"
+  },
+  {
+   "slug": "collaborations",
+   "name": "Collaborations"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "projects",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "projects",
+   "title": "Projects",
+   "content": ""
+  },
+  {
+   "slug": "in-stock",
+   "title": "In stock",
+   "pattern": "joint/in-stock-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "materials",
+   "title": "Materials",
+   "pattern": "joint/materials-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "commission",
+   "title": "Commission",
+   "pattern": "joint/commission-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "workshop",
+   "title": "Workshop",
+   "pattern": "joint/workshop-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "aftercare",
+   "title": "Aftercare",
+   "pattern": "joint/aftercare-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Reading tables for Todmorden library",
+   "category": "commissions",
+   "image": "table.jpg",
+   "date": "2024-05-20",
+   "excerpt": "Eight cherry tables for the reference room, built to outlast the schoolchildren.",
+   "pattern": "joint/project-sheet"
+  },
+  {
+   "title": "Twelve Calder chairs for a learning studio",
+   "category": "collaborations",
+   "image": "chair-2.jpg",
+   "date": "2025-03-14",
+   "excerpt": "A run of twelve chairs in oak, for a gallery education room in Wakefield.",
+   "content": "<!-- wp:paragraph -->\n<p>The learning team wanted chairs that children and adults could both use, and that could be stacked two high on a trolley. We lowered the Calder seat to 430 mm and added a back rail you can grip.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A writing desk for a flat in Leeds",
+   "category": "commissions",
+   "image": "desk.jpg",
+   "date": "2025-06-02",
+   "excerpt": "The Aire desk, made 150 mm narrower to fit between two windows.",
+   "content": "<!-- wp:paragraph -->\n<p>The client measured the gap between the windows three times before she wrote to us. The desk is 850 mm wide, in cherry, with one drawer lined in undyed felt.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The Crag bench, a run of thirty",
+   "category": "collaborations",
+   "image": "bench.jpg",
+   "date": "2023-09-10",
+   "excerpt": "Larch benches for footpaths on the moor above Heptonstall.",
+   "content": "<!-- wp:paragraph -->\n<p>Thirty benches in Kielder larch for Pennine Prospects, left unfinished so they weather silver. Each one has the grid reference of where it sits cut into the end.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A court cupboard in fumed oak",
+   "category": "commissions",
+   "image": "cabinet.jpg",
+   "date": "2024-11-18",
+   "excerpt": "A cupboard for a farmhouse kitchen, darkened with ammonia to match the beams.",
+   "content": "<!-- wp:paragraph -->\n<p>Fuming takes two days in a sealed tent in the yard. The oak goes from honey to a deep brown and the carving shows up more than it did when pale.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Rush-seated stools with Felicity Irons",
+   "category": "collaborations",
+   "image": "stool.jpg",
+   "date": "2022-07-01",
+   "excerpt": "We made the frames, Felicity wove the seats from Somerset rush.",
+   "content": "<!-- wp:paragraph -->\n<p>Forty stools over one summer. Felicity cut the rush on the River Ouse and wove the seats in her barn. The frames are ash with sycamore rails.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "In stock",
+   "url": "/in-stock/"
+  },
+  {
+   "label": "Materials",
+   "url": "/materials/"
+  },
+  {
+   "label": "Commission",
+   "url": "/commission/"
+  },
+  {
+   "label": "Workshop",
+   "url": "/workshop/"
+  },
+  {
+   "label": "Projects",
+   "url": "/projects/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Calder chair, English oak",
+   "price": "1450",
+   "image": "chair-2.jpg",
+   "category": "Seating",
+   "sku": "BL-C01-OAK",
+   "stock": 4,
+   "short": "Spindle-back dining chair. W 480, D 520, H 800 mm; seat 450 mm (18.9 x 20.5 x 31.5 in). In stock, ships in 1 to 5 days.",
+   "description": "Seven ash spindles, a carved oak saddle seat and a steam-bent back rail. No screws or metal. Hardwax oil finish. Guaranteed for ten years."
+  },
+  {
+   "name": "Calder chair, elm",
+   "price": "1720",
+   "image": "chair.jpg",
+   "category": "Seating",
+   "sku": "BL-C01-ELM",
+   "stock": 2,
+   "short": "The Calder chair in salvaged Yorkshire elm, soap finish. Two in stock."
+  },
+  {
+   "name": "Pecket stool",
+   "price": "280",
+   "image": "stool.jpg",
+   "category": "Seating",
+   "sku": "BL-S02",
+   "stock": 6,
+   "short": "Three-legged stool in ash with a sycamore seat. H 460 mm (18.1 in)."
+  },
+  {
+   "name": "Heptonstall side table, cherry",
+   "price": "890",
+   "image": "table.jpg",
+   "category": "Tables and desks",
+   "sku": "BL-T03",
+   "stock": 1,
+   "short": "W 450, D 450, H 560 mm (17.7 x 17.7 x 22 in). One drawer. One in stock."
+  },
+  {
+   "name": "Aire writing desk",
+   "price": "2950",
+   "image": "desk.jpg",
+   "category": "Tables and desks",
+   "sku": "BL-D01",
+   "stock": 0,
+   "short": "Made to order in oak or cherry, 8 to 10 weeks. W 1000, D 550, H 760 mm."
+  },
+  {
+   "name": "Mytholm cupboard, fumed oak",
+   "price": "4800",
+   "image": "cabinet.jpg",
+   "category": "Cabinets",
+   "sku": "BL-K01",
+   "stock": 0,
+   "short": "Made to order, 12 weeks. W 1200, D 480, H 1350 mm."
+  },
+  {
+   "name": "Crag bench, 1.8 m",
+   "price": "1100",
+   "image": "bench.jpg",
+   "category": "Seating",
+   "sku": "BL-B01",
+   "stock": 1,
+   "short": "Kielder larch, left unfinished to weather. W 1800, D 380, H 450 mm."
+  },
+  {
+   "name": "Stool-making course, two days",
+   "price": "340",
+   "image": "workshop.jpg",
+   "category": "Courses",
+   "sku": "BL-COURSE",
+   "stock": 8,
+   "short": "Saturday and Sunday, 9.30am to 5pm. You go home with your own ash stool. Four places per course."
+  }
+ ]
+}

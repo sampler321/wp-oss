@@ -1,0 +1,54 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Familjen Grotesk\", sans-serif",
+      "name": "Familjen Grotesk",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Familjen Grotesk",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/familjen-grotesk-italic-400_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Familjen Grotesk",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/familjen-grotesk-normal-400_700.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Newsreader\", sans-serif",
+      "name": "Newsreader",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Newsreader",
+          "fontStyle": "italic",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/newsreader-italic-300_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Newsreader",
+          "fontStyle": "normal",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/newsreader-normal-300_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Familjen Grotesk (Google Fonts), https://github.com/google/fonts/tree/main/ofl/familjengrotesk",
+    "Newsreader (Google Fonts), https://github.com/google/fonts/tree/main/ofl/newsreader"
+  ]
+}

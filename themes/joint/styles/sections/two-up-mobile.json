@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Two columns on phones",
+	"slug": "two-up-mobile",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "@media (max-width:600px){&{grid-template-columns:1fr 1fr!important}}"
+	}
+}

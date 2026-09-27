@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Drawing plate",
+	"slug": "plate",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image"
+	],
+	"styles": {
+		"css": "&{border:1px solid var(--wp--preset--color--contrast);background:var(--wp--preset--color--white);padding:clamp(.5rem,1.5vw,1rem)}& img{display:block;width:100%}& figcaption{margin-bottom:0}"
+	}
+}

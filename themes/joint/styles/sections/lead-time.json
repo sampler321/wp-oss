@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Lead time note",
+	"slug": "lead-time",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|accent",
+				"width": "3px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30",
+				"top": "var:preset|spacing|10",
+				"bottom": "var:preset|spacing|10"
+			}
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		}
+	}
+}

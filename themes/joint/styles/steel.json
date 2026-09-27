@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Steel",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E6E8EA",
+					"name": "Planed ash"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A2E33",
+					"name": "Pencil"
+				},
+				{
+					"slug": "accent",
+					"color": "#2F4A66",
+					"name": "Oiled green"
+				},
+				{
+					"slug": "surface",
+					"color": "#D8DCE0",
+					"name": "Shaving"
+				},
+				{
+					"slug": "line",
+					"color": "#AEB5BC",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4F565E",
+					"name": "Graphite"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				}
+			]
+		}
+	}
+}

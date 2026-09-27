@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Oak",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EFE7DA",
+					"name": "Planed ash"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A2016",
+					"name": "Pencil"
+				},
+				{
+					"slug": "accent",
+					"color": "#5A3E1B",
+					"name": "Oiled green"
+				},
+				{
+					"slug": "surface",
+					"color": "#E2D7C4",
+					"name": "Shaving"
+				},
+				{
+					"slug": "line",
+					"color": "#BCA98C",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5C4F3F",
+					"name": "Graphite"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				}
+			]
+		}
+	}
+}

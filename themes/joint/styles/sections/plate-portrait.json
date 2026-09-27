@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Drawing plate, portrait",
+	"slug": "plate-portrait",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "&{border:1px solid var(--wp--preset--color--contrast);background:var(--wp--preset--color--white);padding:clamp(.5rem,1.5vw,1rem)}& img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain}"
+	}
+}

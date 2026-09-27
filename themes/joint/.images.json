@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "title": "Carpintero armando una silla en San Juan Bautista.jpg",
+    "creator": "Wilfredor",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Carpintero_armando_una_silla_en_San_Juan_Bautista.jpg",
+    "query": "wooden chair workshop"
+  },
+  "chair": {
+    "title": "Florence Truelson, Wooden Chair, c. 1937, NGA 16664.jpg",
+    "creator": "Florence Truelson",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Florence_Truelson,_Wooden_Chair,_c._1937,_NGA_16664.jpg",
+    "query": "wooden chair design"
+  },
+  "chair-2": {
+    "title": "Ralph Russell, Windsor Chair, c. 1941, NGA 16367.jpg",
+    "creator": "Ralph Russell",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Ralph_Russell,_Windsor_Chair,_c._1941,_NGA_16367.jpg",
+    "query": "Windsor chair"
+  },
+  "table": {
+    "title": "American 20th Century, Table, 1935-1942, NGA 22440.jpg",
+    "creator": "American 20th Century",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:American_20th_Century,_Table,_1935-1942,_NGA_22440.jpg",
+    "query": "table NGA Index of American Design"
+  },
+  "desk": {
+    "title": "American 20th Century, Desk, 1935-1942, NGA 22499.jpg",
+    "creator": "American 20th Century",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:American_20th_Century,_Desk,_1935-1942,_NGA_22499.jpg",
+    "query": "desk NGA Index of American Design"
+  },
+  "cabinet": {
+    "title": "Louis Annino, Court Cupboard, c. 1936, NGA 17125.jpg",
+    "creator": "Louis Annino",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Louis_Annino,_Court_Cupboard,_c._1936,_NGA_17125.jpg",
+    "query": "cupboard NGA Index of American Design"
+  },
+  "bench": {
+    "title": "Amos C. Brinton, Moravian Church Bench, 1935-1942, NGA 16209.jpg",
+    "creator": "Amos C. Brinton",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Amos_C._Brinton,_Moravian_Church_Bench,_1935-1942,_NGA_16209.jpg",
+    "query": "bench NGA Index of American Design"
+  },
+  "workshop": {
+    "title": "Woodworking workshop (Unsplash).jpg",
+    "creator": "s w wengenroad",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Woodworking_workshop_(Unsplash).jpg",
+    "query": "woodworking workshop"
+  },
+  "oak": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "ash": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "cherry": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "elm": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "sycamore": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "larch": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "beech": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "chestnut": {
+    "title": "16 wood samples.jpg",
+    "creator": "Anonimski",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg",
+    "query": "oak wood grain texture"
+  },
+  "stool": {
+    "title": "Harold Ballerd, Stool, 1939, NGA 17811.jpg",
+    "creator": "Harold Ballerd",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Harold_Ballerd,_Stool,_1939,_NGA_17811.jpg",
+    "query": "stool NGA Index of American Design"
+  },
+  "sawmill": {
+    "title": "Timber stacked in sawmill yard (21313837969).jpg",
+    "creator": "National Library NZ on The Commons",
+    "license": "No restrictions",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Timber_stacked_in_sawmill_yard_(21313837969).jpg",
+    "query": "timber planks stacked sawmill"
+  }
+}

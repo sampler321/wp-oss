@@ -8,13 +8,13 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 |---|---|---|---|---|---|
 | 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
 | 2 | oil | 002 Painter, studio and available works | as researched | todo | |
-| 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | failed test |  |
+| 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | deployed (HTTP 404) | https://wposs-kiln.b-j-kapica.workers.dev |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
 | 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | deployed (HTTP 404) | https://wposs-commons.b-j-kapica.workers.dev |
 | 8 | room | 019 Interior designer + shop | as researched | deployed | https://wposs-room.b-j-kapica.workers.dev |
-| 9 | joint | 021 Furniture and object designer | as researched | tested |  |
+| 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
