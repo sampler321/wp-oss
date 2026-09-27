@@ -10,6 +10,10 @@
 
 <!-- wp:pattern {"slug":"studio/how-we-work"} /-->
 
+<!-- wp:pattern {"slug":"studio/what-to-send"} /-->
+
+<!-- wp:pattern {"slug":"studio/client-faq"} /-->
+
 <!-- wp:pattern {"slug":"studio/industries-index"} /-->
 
 <!-- wp:pattern {"slug":"studio/pdf-request"} /-->

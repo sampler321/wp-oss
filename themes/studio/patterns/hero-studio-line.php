@@ -2,12 +2,12 @@
 /**
  * Title: Hero: what the studio does, in one wide line
  * Slug: studio/hero-studio-line
- * Categories: featured
+ * Categories: hero
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":1,"align":"wide"} -->
-<h1 class="wp-block-heading alignwide">We design names, packs, signs and printed things for food, culture and public places.</h1>
+<h1 class="wp-block-heading alignwide">Names, packs, signs and printed things for food, culture and public places</h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide"} -->

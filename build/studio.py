@@ -56,6 +56,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -107,6 +108,9 @@ theme = {
                 'a{text-decoration-color:var(--wp--preset--color--accent);text-decoration-thickness:2px;text-underline-offset:.18em}'
                 '.wp-block-navigation .current-menu-item>a{text-decoration:underline}'
                 'html{font-synthesis:none}'
+                '.is-style-person-row{border-top:1px solid var(--wp--preset--color--line);padding:.6rem 0;gap:.2rem 1.5rem!important}.is-style-person-row:last-child{border-bottom:1px solid var(--wp--preset--color--line)}'
+                '.is-style-person-row>p{margin:0;flex:1 1 14rem}'
+                '.is-style-type-sample{font-stretch:125%;line-height:.95;letter-spacing:-.02em;overflow-wrap:anywhere}'
                 '.is-style-ruled-table table{border-collapse:collapse;width:100%}.wp-block-table.is-style-ruled-table td,.wp-block-table.is-style-ruled-table th{border:0;border-bottom:1px solid var(--wp--preset--color--line);padding:.6rem .75rem .6rem 0;text-align:left;vertical-align:top}'
                 '.wp-block-table.is-style-ruled-table thead th{border-bottom:1px solid var(--wp--preset--color--contrast);font-stretch:75%;font-weight:500}.is-style-ruled-table td:first-child{font-weight:600}'
                 '.wp-block-quote cite,.wp-block-pullquote cite{display:block;margin-top:.8rem;font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--small);font-style:normal;font-weight:400;font-stretch:100%;letter-spacing:0}'
@@ -191,12 +195,24 @@ section('orange-bar', 'Orange bar', ['core/group'], {
 section('proof', 'Proof sheet', ['core/group', 'core/columns'], {
     'color': {'background': 'var:preset|color|surface', 'text': 'var:preset|color|contrast'},
     'spacing': {'padding': {'top': P(50), 'bottom': P(50), 'left': P(40), 'right': P(40)}, 'margin': {'top': P(60)}}})
+section('person-row', 'Person row', ['core/group'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
+section('type-sample', 'Type sample', ['core/paragraph'], {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|display', 'fontWeight': '800'}})
 section('ruled-table', 'Ruled table', ['core/table'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 
 # ---------------------------------------------------------------- patterns
 
-pattern('hero-studio-line', 'Hero: what the studio does, in one wide line', 'featured', group(J(
-    heading('We design names, packs, signs and printed things for food, culture and public places.', 1, align='wide'),
+pattern('hero-name-fact', 'Hero: studio name, one fact and what is on the desk', 'hero', group(J(
+    heading('Sandvik Ogunleye', 1, align='wide'),
+    columns(
+        ('58%', para('Seven designers in a former print works on Mabgate, Leeds. Identities, packaging and signs for people who sell things you can hold or visit, since 2014.', fontSize='large')),
+        ('42%', J(heading('On the desk this month', 6),
+                  lst(['Six beer labels for a brewery in Kirkstall', 'Wayfinding for a library in Pudsey', 'The 2026 Leeds Print Fair poster']),
+                  para('New work: <a href="mailto:work@example.com">work@example.com</a> or 0113 496 0721', fontSize='small'))),
+        align='wide', style={'spacing': {'blockGap': {'left': P(60)}}})), tag='section', align='full', style=pad(60, 40), layout={'type': 'constrained'}),
+    description='Opens with the name and one fact, then the current jobs. The work sheet follows directly below.')
+
+pattern('hero-studio-line', 'Hero: what the studio does, in one wide line', 'hero', group(J(
+    heading('Names, packs, signs and printed things for food, culture and public places', 1, align='wide'),
     columns(
         ('66.66%', ''),
         ('33.33%', J(para('Sandvik Ogunleye is seven people in a former print works on Mabgate, Leeds. We started in 2014 and still set most of our own type.'),
@@ -241,10 +257,13 @@ pattern('case-facts', 'Case study facts (year, services, industry)', 'portfolio'
     facts_row('Industry', dyn('post-terms', term='post_tag', separator=', '))),
     className='is-style-facts', layout={'type': 'default'}), inserter=False)
 
-pattern('case-credits', 'Case study credits', 'portfolio', group(J(
+def fact_rows(rows, **kw):
+    return group(J(*[row(J(para(k), para(v)), wrap=False) for k, v in rows]), className='is-style-facts', layout={'type': 'default'}, **kw)
+
+pattern('case-credits', 'Case study credits', 'case-study', group(J(
     heading('Credits', 6),
-    table([['Photography', 'Ade Okafor'], ['Sign painting', 'Beth Wray, Wray Letters'], ['Print', 'Footprint Workers Co-op, Leeds'], ['Studio team', 'Tunde Ogunleye, Maud Kessler, Rahim Chowdhury']], className='is-style-ruled-table')),
-    layout={'type': 'constrained'}), description='Photographer, stylist, printer and partners on each project.')
+    fact_rows([('Photography', 'Ade Okafor'), ('Sign painting', 'Beth Wray, Wray Letters'), ('Print', 'Footprint Workers Co-op, Leeds'), ('Studio team', 'Tunde Ogunleye, Maud Kessler, Rahim Chowdhury')])),
+    layout={'type': 'constrained'}), description='Photographer, stylist, printer and partners on each project, as ruled rows.')
 
 pattern('next-project', 'Next project link', 'portfolio', group(
     row(J(dyn('post-navigation-link', type='previous', label='Next project', showTitle=True, linkLabel=True, fontSize='x-large'),
@@ -304,9 +323,10 @@ people = [('Ingrid Sandvik', 'Co-founder, new business', 'ingrid@example.com'), 
           ('Maud Kessler', 'Designer, lettering and type', 'maud@example.com'), ('Rahim Chowdhury', 'Designer, packaging and print', 'rahim@example.com'),
           ('Joss Adeyemi', 'Motion designer', 'joss@example.com'), ('Ellie Brannigan', 'Studio manager, invoices and jobs', 'ellie@example.com'),
           ('Nika Horvat', 'Junior designer, Thursdays and Fridays', 'nika@example.com')]
-pattern('people-list', 'People: named team with roles and emails', 'team', group(J(
+pattern('people-list', 'People: named team with roles and emails', 'about', group(J(
     heading('People', 2, fontSize='x-large'),
-    table([[n, r, '<a href="mailto:%s">%s</a>' % (e, e)] for n, r, e in people], className='is-style-ruled-table')),
+    group(J(*[row(J(para(n, style={'typography': {'fontWeight': '700'}}), para(r), para('<a href="mailto:%s">%s</a>' % (e, e))), className='is-style-person-row') for n, r, e in people]),
+          layout={'type': 'default'}, style={'spacing': {'blockGap': '0'}})),
     layout={'type': 'default'}), description='A named team list with roles, used on the studio and contact pages instead of a generic form.')
 
 pattern('clients-list', 'Clients (text list)', 'about', columns(
@@ -378,9 +398,103 @@ pattern('process-proofs', 'Process: proofs next to the finished thing', 'portfol
 
 pattern('pullquote-opinion', 'Studio opinion (pull quote)', 'text', pullquote('Print one good menu before you write a single brand value.', 'Tunde Ogunleye', align='wide'))
 
+
+# ---------------------------------------------------------------- case study kit (round 2)
+pattern('case-intro', 'Case study: the brief and our answer, side by side', 'case-study', columns(
+    ('50%', J(heading('The brief', 5), para('Leeds Print Fair wanted one image that could be the poster, the programme cover, the tote bag and the screen by the door, on a budget that covered two print colours.'))),
+    ('50%', J(heading('What we made', 5), para('One drawn figure, set against a single red. It prints in two colours, it cuts down to a square for Instagram, and it moves for the foyer screen.'))),
+    align='wide', className='is-style-rule-top', style={'spacing': {'blockGap': {'left': P(60)}}}))
+
+pattern('case-image-full', 'Case study: one image, full width, with a caption', 'case-study', image('tote-1.jpg', 'Red lithograph poster titled The Poster, with two women in long robes drawn in black line', 'The poster, A1, two colours on Munken Pure 150gsm', align='full'))
+
+pattern('case-image-pair', 'Case study: two images side by side', 'case-study', gallery([
+    ('print-1.jpg', 'Four matchbox labels on an orange ground, with a ship, a woman with a fan and a flower', 'Label set, four per box'),
+    ('pack-2.jpg', 'Orange tin box with a hinged lid and a black printed label', 'The tin, kept from 1931, with the new stamp')], columns=2, align='wide'))
+
+pattern('case-before-after', 'Case study: before and after', 'case-study', columns(
+    (None, J(image('shop-1.jpg', 'Blue enamel sign with yellow capitals about paying cash, fixed to a stone wall'), para('After: fired enamel, blue and yellow', fontSize='small'))),
+    (None, J(image('hero.jpg', 'Hand-painted awning and window lettering on a small lunch bar'), para('Before: hand lettering, repainted every few years', fontSize='small'))),
+    align='wide'), description='Two images with short captions. Put the old version on the right so the new one is read first.')
+
+pattern('case-quote', 'Case study: the client, quoted', 'case-study', group(
+    quote('The tins sold out in a fortnight and people keep the price list in their kitchen drawers.', 'Margaret Ardsley, Ardsley Tea Merchants, October 2025'),
+    align='wide', layout={'type': 'constrained'}, style=pad(50)))
+
+pattern('case-type-sample', 'Case study: the typeface or lettering, set big', 'case-study', group(J(
+    heading('The lettering', 6),
+    para('Pecco Souchong 1931', className='is-style-type-sample'),
+    para('Maud redrew the old tin lettering as a full alphabet so the counter staff can stamp any tea name. It has capitals, figures and a pound sign.', fontSize='small')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('case-deliverables', 'Case study: what we made (list)', 'case-study', columns(
+    ('33%', heading('What we made', 5)),
+    ('67%', lst(['A new stamp and ink pad for the counter', 'Forty tea labels, filled in by hand', 'A folded price list, reprinted when prices change', 'Shop window lettering, gold leaf on glass', 'Paper bags in two sizes'])),
+    align='wide', className='is-style-rule-top'))
+
+pattern('case-process', 'Case study: how it went, step by step', 'case-study', columns(
+    ('33%', heading('How it went', 5)),
+    ('67%', lst(['Two mornings behind the counter, watching what people asked for.', 'A week of lettering sketches from the old tins.', 'Proofs on the shop\'s own paper bags, printed in the studio.', 'A stamp made by a rubber-stamp maker in Dewsbury.', 'Launch on a Saturday, with the old tins in the window.'], ordered=True)),
+    align='wide', className='is-style-rule-top'))
+
+pattern('case-outcome', 'Case study: what changed afterwards', 'case-study', group(J(
+    heading('What changed', 5),
+    para('The counter staff stopped writing labels in biro. The tins went back on sale for the first time since 2008. Margaret says the price list is the thing customers comment on, which we did not expect.')),
+    className='is-style-proof', layout={'type': 'default'}), description='Operational outcomes in the client\'s words. No invented statistics.')
+
+pattern('case-video', 'Case study: moving version (still linking out)', 'case-study', columns(
+    ('58%', image('sign-1.jpg', 'Neon signs on tall buildings at night', href='https://vimeo.com/')),
+    ('42%', J(heading('The foyer loop', 5), para('Twelve seconds, no sound, on a loop by the door. <a href="https://vimeo.com/">Watch it on Vimeo</a>.'))),
+    align='wide', verticalAlignment='center'))
+
+pattern('case-study-print-fair', 'Case study layout: Leeds Print Fair', 'case-study', J(
+    pattern_ref('case-intro'), pattern_ref('case-image-full'), pattern_ref('case-video'), pattern_ref('case-deliverables'), pattern_ref('case-credits')),
+    block_types='core/post-content', description='A complete case study assembled from the case-study patterns.')
+
+pattern('case-study-ardsley', 'Case study layout: Ardsley Tea Merchants', 'case-study', J(
+    pattern_ref('case-image-pair'), pattern_ref('case-process'), pattern_ref('case-type-sample'), pattern_ref('case-quote'), pattern_ref('case-outcome'), pattern_ref('case-credits')),
+    block_types='core/post-content')
+
+pattern('case-study-roubaix', 'Case study layout: Marché Couvert', 'case-study', J(
+    para('Roubaix\'s covered market wanted rules on the wall that nobody could peel off. We set them in one condensed capital, in French and Flemish, and had twelve signs fired in enamel in Lyon.', fontSize='large'),
+    pattern_ref('case-before-after'), pattern_ref('case-deliverables'), pattern_ref('case-credits')), block_types='core/post-content')
+
+# ---------------------------------------------------------------- more studio patterns (round 2)
+pattern('studio-photos', 'The studio, in pictures', 'about', gallery([
+    ('print-2.jpg', 'Engraved nineteenth-century business card with flourished script lettering', 'On the wall by the door'),
+    ('poster-1.jpg', 'Printed catalogue sheet of 36 black and white tile designs', 'Proofs pinned up for a week'),
+    ('book-1.jpg', 'Rows of red bound law reports on a shelf', 'The reference shelf')], columns=3, align='wide'))
+
+pattern('recognition', 'Press and awards (text list)', 'about', columns(
+    ('33%', heading('Written about', 5)),
+    ('67%', lst(['Eye on Design, "Leeds studios to watch", March 2026', 'Creative Review Annual, packaging, for Ardsley Tea Merchants, 2025', 'Yorkshire Design Awards, signage, Marché Couvert, 2024'])),
+    align='wide', className='is-style-rule-top'))
+
+pattern('client-faq', 'Questions new clients ask', 'services', group(J(
+    heading('Questions new clients ask', 3),
+    details('Do you only work in Leeds?', para('No. About two thirds of our clients are elsewhere. We visit at the start and at the printer, and use video calls in between.')),
+    details('Can you just design a logo?', para('We don\'t. The smallest job is a name, a mark and one printed thing, from £6,500.')),
+    details('Who owns the work?', para('You do, once the final invoice is paid. We keep the right to show it here.')),
+    details('Do you pitch?', para('Not for free. A paid first stage, usually £1,200, gets you two directions and a printed proof of each.'))),
+    layout={'type': 'constrained'}))
+
+pattern('what-to-send', 'What to send us before a first meeting', 'services', group(J(
+    heading('Before we meet, send us', 4),
+    lst(['What you sell and where', 'Three things you have printed before, good or bad', 'A date something needs to be in people\'s hands', 'A rough budget, even if it is a range'])),
+    className='is-style-proof', layout={'type': 'default'}))
+
+pattern('selected-work-list', 'Selected work, as a year list', 'portfolio', group(J(
+    heading('Selected work by year', 3),
+    group(J(*[row(J(para(y, style={'typography': {'fontWeight': '700'}}), para('<a href="%s">%s</a>' % (u, t)), para(d)), className='is-style-person-row') for y, t, u, d in [
+        ('2025', 'Leeds Print Fair', '/leeds-print-fair-2025/', 'Poster, programme, foyer loop'),
+        ('2025', 'Ardsley Tea Merchants', '/ardsley-tea-merchants/', 'Tins, stamp, price list'),
+        ('2025', 'Kirkgate Law Library', '/kirkgate-law-library/', 'Spine system'),
+        ('2025', 'Casa Ribeiro', '/casa-ribeiro/', 'Painted signs and menus'),
+        ('2025', 'Marché Couvert, Roubaix', '/marche-couvert-roubaix/', 'Enamel signs')]]), layout={'type': 'default'}, style={'spacing': {'blockGap': '0'}})),
+    align='wide', layout={'type': 'default'}))
+
 # page layouts
-pattern('page-studio', 'Page: studio', 'about', J(pattern_ref('studio-intro'), pattern_ref('now-on-desk'), pattern_ref('people-list'), pattern_ref('clients-list'), pattern_ref('client-quotes'), pattern_ref('shop-link')), block_types='core/post-content')
-pattern('page-services', 'Page: services and prices', 'services', J(pattern_ref('services-index'), pattern_ref('how-we-work'), pattern_ref('industries-index'), pattern_ref('pdf-request')), block_types='core/post-content')
+pattern('page-studio', 'Page: studio', 'about', J(pattern_ref('studio-intro'), pattern_ref('studio-photos'), pattern_ref('now-on-desk'), pattern_ref('recognition'), pattern_ref('people-list'), pattern_ref('clients-list'), pattern_ref('client-quotes'), pattern_ref('shop-link')), block_types='core/post-content')
+pattern('page-services', 'Page: services and prices', 'services', J(pattern_ref('services-index'), pattern_ref('how-we-work'), pattern_ref('what-to-send'), pattern_ref('client-faq'), pattern_ref('industries-index'), pattern_ref('pdf-request')), block_types='core/post-content')
 pattern('page-contact', 'Page: contact', 'contact', J(
     para('Email the person you need. There is no form, and a phone call is fine.', fontSize='large'),
     pattern_ref('people-list'), pattern_ref('pdf-request'), pattern_ref('find-us'),
@@ -407,8 +521,9 @@ def tpl(name, inner, top=60, bottom=70, **kw):
     write('templates/%s.html' % name, page_template(inner, style=pad(top, bottom), **kw))
 
 write('templates/front-page.html', page_template(J(
-    pattern_ref('hero-studio-line'),
-    group(J(heading('Recent work', 2, fontSize='x-large'), pattern_ref('work-sheet')), align='wide', layout={'type': 'default'}),
+    pattern_ref('hero-name-fact'),
+    group(pattern_ref('work-sheet'), align='wide', layout={'type': 'default'}),
+    group(pattern_ref('selected-work-list'), align='wide', className='is-style-rule-top', layout={'type': 'default'}),
     pattern_ref('new-business')), style={'spacing': {'padding': {'bottom': '0'}}}))
 
 tpl('home', J(heading('Work', 1, align='wide'), pattern_ref('filter-bar-all'), pattern_ref('work-sheet-archive')))
@@ -436,13 +551,13 @@ works = [
     ('Casa Ribeiro', 'Hand-painted signs and a paper menu for a lunch bar on Harrogate Road.', ['identity', 'signage', 'selected'], ['Food and drink'], 'hero.jpg', {'pattern': 'studio/case-image-led'}),
     ('Kirkgate Law Library', 'A spine system for 140 volumes of court reports, readable from across the room.', ['editorial', 'selected'], ['Public sector'], 'book-1.jpg', {'pattern': 'studio/case-text-first'}),
     ('Leeds Print Fair 2025', 'Poster, programme and a looping foyer screen, printed in two colours on Munken.', ['identity', 'editorial', 'motion', 'selected'], ['Arts and culture'], 'tote-1.jpg',
-     case('The fair wanted one poster that could also be the programme cover, the tote bag and the screen by the door. We drew one figure and let it move for the screen: 12 seconds, no sound.', 'Printed by Footprint Workers Co-op in red and black. The run was 400 posters and 2,000 programmes.', 'Animation: Joss Adeyemi. Print: Footprint Workers Co-op. Photography: Ade Okafor.')),
+     {'pattern': 'studio/case-study-print-fair'}),
     ('Ardsley Tea Merchants', 'A tin, a rubber stamp and a price list for a tea shop open since 1931.', ['packaging', 'identity', 'selected'], ['Food and drink', 'Retail'], 'pack-2.jpg',
-     case('Ardsley had 40 teas and 40 labels, all different. We kept the old orange tin and gave every tea the same stamped label, filled in by hand at the counter.', 'The price list is a single folded sheet, reprinted when prices change. It costs £38 per 500.', 'Tins: Hainsworth Tinware. Photography: Ade Okafor.')),
+     {'pattern': 'studio/case-study-ardsley'}),
     ('Esperanto Society of Leeds', 'Carrier bags and a membership card for a society that meets above the Victoria pub.', ['identity'], ['Non-profit'], 'pack-1.jpg',
      case('The society has 63 members and a budget of £900. We set their motto in a script Maud drew from a 1920s congress badge and printed it on paper bags they hand out at the Leeds Library book sale.', 'The membership card is the same design, one colour, on grey board.', 'Lettering: Maud Kessler. Bags: Bagfactory Bradford.')),
     ('Marché Couvert, Roubaix', 'Twelve enamel signs for a covered market, in French and Flemish.', ['signage', 'selected'], ['Public sector', 'Retail'], 'shop-1.jpg',
-     case('The market managers wanted rules on the wall that nobody could peel off. We set them in one condensed capital and had them fired in enamel in Lyon.', 'Blue and yellow are the town colours. The signs will outlive all of us.', 'Enamel: Émaillerie Rhône. Photography: Claire Vasseur.')),
+     {'pattern': 'studio/case-study-roubaix'}),
     ('Northern Tile Company', 'A catalogue that shows 36 tile designs at real size, and the online version of it.', ['editorial', 'web'], ['Retail'], 'poster-1.jpg',
      case('The old catalogue printed tiles at 40 percent. Customers ordered the wrong ones. The new one prints every design at 1:1, two sheets per spread, and the website uses the same codes.', 'We built the site in WordPress and the shop staff update stock themselves.', 'Photography: Ade Okafor. Print: Pureprint.')),
     ('Lindqvist Matches', 'Labels for a Swedish match reissue, four designs per box.', ['packaging'], ['Retail'], 'print-1.jpg',

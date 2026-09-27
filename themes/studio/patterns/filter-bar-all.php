@@ -6,7 +6,7 @@
  * Description: Selected / All switch plus Services and Industry filter rows. Services are categories, industries are tags.
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0","margin":{"bottom":"var:preset|spacing|50"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0","margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"className":"is-style-filter-bar","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group is-style-filter-bar"><!-- wp:paragraph -->
 <p>Show</p>

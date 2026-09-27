@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Person row",
+	"slug": "person-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		}
+	}
+}

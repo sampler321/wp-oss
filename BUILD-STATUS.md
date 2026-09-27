@@ -17,7 +17,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | failed test |  |
-| 12 | studio | 025 Small branding studio | as researched | tested |  |
+| 12 | studio | 025 Small branding studio | as researched | deployed | https://wposs-studio.b-j-kapica.workers.dev |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |

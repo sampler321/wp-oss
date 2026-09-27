@@ -8,7 +8,11 @@
 ?>
 <!-- wp:pattern {"slug":"studio/studio-intro"} /-->
 
+<!-- wp:pattern {"slug":"studio/studio-photos"} /-->
+
 <!-- wp:pattern {"slug":"studio/now-on-desk"} /-->
+
+<!-- wp:pattern {"slug":"studio/recognition"} /-->
 
 <!-- wp:pattern {"slug":"studio/people-list"} /-->
 
