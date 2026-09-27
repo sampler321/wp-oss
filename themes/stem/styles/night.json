@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#15110F",
+					"name": "Night"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F6EEDC",
+					"name": "Ivory"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF6B5B",
+					"name": "Coral"
+				},
+				{
+					"slug": "surface",
+					"color": "#2A211C",
+					"name": "Candlelit"
+				},
+				{
+					"slug": "line",
+					"color": "#F6EEDC",
+					"name": "Ivory line"
+				},
+				{
+					"slug": "muted",
+					"color": "#C9BBA5",
+					"name": "Faded ivory"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#6E8BFF",
+					"name": "Night blue"
+				},
+				{
+					"slug": "mint",
+					"color": "#1F2B26",
+					"name": "Dark sage"
+				},
+				{
+					"slug": "leaf",
+					"color": "#2F4A36",
+					"name": "Dark leaf"
+				},
+				{
+					"slug": "cream",
+					"color": "#15110F",
+					"name": "Night"
+				}
+			]
+		}
+	}
+}

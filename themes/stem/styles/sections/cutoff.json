@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cut-off line",
+	"slug": "cutoff",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "600"
+		},
+		"css": "&{border-top:2px solid currentColor;padding-top:.5em!important}"
+	}
+}

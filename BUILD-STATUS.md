@@ -16,7 +16,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 8 | room | 019 Interior designer + shop | as researched | deployed | https://wposs-room.b-j-kapica.workers.dev |
 | 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
-| 11 | glyph | 024 Independent type foundry | as researched | todo | |
+| 11 | glyph | 024 Independent type foundry | as researched | failed test |  |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
@@ -41,7 +41,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
-| 36 | stem | 077 Florist | more style and colour heavy | tested |  |
+| 36 | stem | 077 Florist | more style and colour heavy | deployed (HTTP 404) | https://wposs-stem.b-j-kapica.workers.dev |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
 | 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | deployed | https://wposs-platter.b-j-kapica.workers.dev |

@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dried",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EADCC3",
+					"name": "Sand"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3A2414",
+					"name": "Brown ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#9A4A16",
+					"name": "Rust"
+				},
+				{
+					"slug": "surface",
+					"color": "#D9B77A",
+					"name": "Wheat"
+				},
+				{
+					"slug": "line",
+					"color": "#3A2414",
+					"name": "Brown line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5E4330",
+					"name": "Dried stem"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#5C3A21",
+					"name": "Bark"
+				},
+				{
+					"slug": "mint",
+					"color": "#C9C3A2",
+					"name": "Sage"
+				},
+				{
+					"slug": "leaf",
+					"color": "#5B5A2E",
+					"name": "Olive"
+				},
+				{
+					"slug": "cream",
+					"color": "#F7EEDD",
+					"name": "Linen"
+				}
+			]
+		}
+	}
+}

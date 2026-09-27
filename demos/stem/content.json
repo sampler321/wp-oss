@@ -1,0 +1,231 @@
+{
+ "site": {
+  "title": "Hollyhock",
+  "tagline": "Flowers from Chatsworth Road, delivered by bike"
+ },
+ "categories": [
+  {
+   "slug": "weddings",
+   "name": "Real weddings"
+  },
+  {
+   "slug": "shop",
+   "name": "From the shop"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "weddings",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "weddings",
+   "title": "Weddings",
+   "content": ""
+  },
+  {
+   "slug": "delivery",
+   "title": "Delivery",
+   "pattern": "stem/page-delivery",
+   "template": "page-wide"
+  },
+  {
+   "slug": "subscriptions",
+   "title": "Subscriptions",
+   "pattern": "stem/page-subscriptions",
+   "template": "page-wide"
+  },
+  {
+   "slug": "workshops",
+   "title": "Workshops",
+   "pattern": "stem/page-workshops",
+   "template": "page-wide"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "stem/page-visit",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Nkechi and Tom, Round Chapel, June",
+   "category": "weddings",
+   "image": "wedding.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A pink and silver bouquet with garden roses, freesias and brunia, and jam jars of sweet peas down two long tables. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-flowers-used\"} /-->"
+  },
+  {
+   "title": "Priya and Joe, a pub garden in Walthamstow",
+   "category": "weddings",
+   "image": "bridal.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty guests, one very old apple tree and a bouquet of lisianthus, astrantia and roses. Photographs by Marek Zielinski.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Carnations are back and we are not sorry",
+   "category": "shop",
+   "image": "peonies.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">They last two weeks, they come in colours nobody else sells, and they cost less than a coffee a stem. We have 300 in the shop this week.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Ellie and Sam, Clapton, September",
+   "category": "weddings",
+   "image": "roses-held.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Orange and cream roses with rosehips and dahlias from Rosa's allotment. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why we stopped using floral foam",
+   "category": "shop",
+   "image": "gerbera-mint.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Foam is a plastic that breaks into dust and never goes away. Everything we make now sits in water, moss or scrunched chicken wire. It takes longer. It is worth it.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Dahlias from the allotment, August to October",
+   "category": "shop",
+   "image": "dahlia.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rosa grows about 60 dahlia plants on a plot in Walthamstow. They go into bouquets from August until the first frost.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Delivery",
+   "url": "/delivery/"
+  },
+  {
+   "label": "Subscriptions",
+   "url": "/subscriptions/"
+  },
+  {
+   "label": "Weddings",
+   "url": "/weddings/"
+  },
+  {
+   "label": "Workshops",
+   "url": "/workshops/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Florist's choice, small",
+   "price": "40",
+   "image": "posy.jpg",
+   "category": "Bouquets",
+   "sku": "HLH-300",
+   "stock": 50,
+   "short": "Around 15 stems, hand-tied. For a bedside or a kitchen table.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Whatever is best that morning. In autumn that means dahlias, rosehips and the last garden roses.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Florist's choice, medium",
+   "price": "60",
+   "image": "roses-held.jpg",
+   "category": "Bouquets",
+   "sku": "HLH-301",
+   "stock": 50,
+   "short": "Around 25 stems. The one most people send.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Hand-tied, in water, wrapped in paper with a ribbon. Enough for a big jug.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Florist's choice, large",
+   "price": "85",
+   "image": "gerbera-mint.jpg",
+   "category": "Bouquets",
+   "sku": "HLH-302",
+   "stock": 50,
+   "short": "Around 35 stems, with branches and foliage. Needs a tall vase.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Built for a hallway or a birthday that matters. We add branches from the market when there are good ones.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Florist's choice, showy",
+   "price": "120",
+   "image": "bridal.jpg",
+   "category": "Bouquets",
+   "sku": "HLH-303",
+   "stock": 20,
+   "short": "Two armfuls. Delivered in a water box so it can stay wrapped.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">The biggest thing we will put on a bike. Tell us the colour you want and we will lean that way.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Pink peonies, 10 stems",
+   "price": "48",
+   "image": "peony-vase.jpg",
+   "category": "Seasonal",
+   "sku": "HLH-304",
+   "stock": 0,
+   "short": "May and June only. Sold out until next spring.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Sarah Bernhardt peonies from a grower in Lincolnshire. Sent in tight bud; they open in two days.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Red tulips, 20 stems",
+   "price": "32",
+   "image": "tulips.jpg",
+   "category": "Seasonal",
+   "sku": "HLH-305",
+   "stock": 30,
+   "short": "Dutch tulips, straight from the Tuesday market.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Tulips keep growing in the vase. Cut them shorter than you think.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Pink carnations, 25 stems",
+   "price": "30",
+   "image": "peonies.jpg",
+   "category": "Seasonal",
+   "sku": "HLH-306",
+   "stock": 25,
+   "short": "Frilly, long-lasting, unfashionable, and we love them.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Carnations last two weeks with clean water. Colombian-grown, bought at New Covent Garden.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "White dahlias, 7 stems",
+   "price": "36",
+   "image": "dahlia.jpg",
+   "category": "Seasonal",
+   "sku": "HLH-307",
+   "stock": 12,
+   "short": "August to October. From Rosa's allotment in Walthamstow.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Dahlias do not last long, about five days, but no one complains.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Dried sea lavender bunch",
+   "price": "28",
+   "image": "dried.jpg",
+   "category": "Dried",
+   "sku": "HLH-308",
+   "stock": 20,
+   "short": "Lasts a year or more. Keep it out of direct sun.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Grown and dried in Norfolk. Sheds a little when you first unwrap it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Weekly bouquet, 4 weeks prepaid",
+   "price": "216",
+   "image": "bouquet-sandals.jpg",
+   "category": "Subscriptions",
+   "sku": "HLH-309",
+   "stock": 100,
+   "short": "Four medium bouquets, one a week. Saves £24 against paying each time.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Pick your delivery day at checkout. Pause any week by emailing us before Monday.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Workshop gift voucher",
+   "price": "95",
+   "image": "market.jpg",
+   "category": "Workshops",
+   "sku": "HLH-310",
+   "stock": 100,
+   "short": "A place on any evening workshop. Valid for a year.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Posted in a card, or emailed straight away.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>\n<!-- /wp:paragraph -->"
+  }
+ ]
+}
