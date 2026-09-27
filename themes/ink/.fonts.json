@@ -1,0 +1,39 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Bricolage Grotesque\", sans-serif",
+      "name": "Bricolage Grotesque",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Bricolage Grotesque",
+          "fontStyle": "normal",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/bricolage-grotesque-normal-200_800.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Sometype Mono\", monospace",
+      "name": "Sometype Mono",
+      "slug": "mono",
+      "fontFace": [
+        {
+          "fontFamily": "Sometype Mono",
+          "fontStyle": "normal",
+          "fontWeight": "400 500",
+          "src": [
+            "file:./assets/fonts/sometype-mono-normal-400_500.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Bricolage Grotesque (Google Fonts), https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque",
+    "Sometype Mono (Google Fonts), https://github.com/google/fonts/tree/main/ofl/sometypemono"
+  ]
+}

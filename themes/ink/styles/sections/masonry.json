@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Masonry",
+	"slug": "masonry",
+	"blockTypes": [
+		"core/post-template",
+		"core/gallery"
+	],
+	"styles": {
+		"css": "&{display:block!important;columns:3 280px;column-gap:var(--wp--preset--spacing--40)}& > *{break-inside:avoid;margin:0 0 var(--wp--preset--spacing--50)!important}"
+	}
+}

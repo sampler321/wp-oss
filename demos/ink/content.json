@@ -1,0 +1,229 @@
+{
+ "site": {
+  "title": "Joon Park",
+  "tagline": "Illustration, prints and commissions from Bristol"
+ },
+ "categories": [
+  {
+   "slug": "editorial",
+   "name": "Editorial"
+  },
+  {
+   "slug": "posters",
+   "name": "Posters"
+  },
+  {
+   "slug": "books",
+   "name": "Books"
+  },
+  {
+   "slug": "packaging",
+   "name": "Packaging"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "work",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "work",
+   "title": "Work",
+   "content": ""
+  },
+  {
+   "slug": "art-for-sale",
+   "title": "Art for sale",
+   "pattern": "ink/art-for-sale-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "commissions",
+   "title": "Commissions",
+   "pattern": "ink/commissions-page"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "ink/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "ink/contact-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Bluebirds for Garden Letters",
+   "category": "editorial",
+   "tags": [
+    "Editorial",
+    "Birds"
+   ],
+   "image": "hero.jpg",
+   "template": "single-work",
+   "pattern": "ink/work-caption"
+  },
+  {
+   "title": "Snowy street, poster for Harbourside Market",
+   "category": "posters",
+   "tags": [
+    "Poster"
+   ],
+   "image": "prints.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>A winter poster for the Christmas market, printed as a two-colour screenprint in an edition of 60.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Red mountain, book cover",
+   "category": "books",
+   "tags": [
+    "Book cover"
+   ],
+   "image": "work-6.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>Cover for a travel memoir. The publisher wanted \"a mountain that looks warm\", so it is red.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Heron at low tide",
+   "category": "editorial",
+   "tags": [
+    "Editorial",
+    "Birds"
+   ],
+   "image": "work-3.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>For a feature on the Severn estuary. Drawn on location over two cold mornings.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Medicinal plants chart",
+   "category": "packaging",
+   "tags": [
+    "Packaging"
+   ],
+   "image": "work-1.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>Tea box wrap for a herbalist in Stokes Croft. 42 plants, each labelled by hand.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Radiolarian, science festival poster",
+   "category": "posters",
+   "tags": [
+    "Poster",
+    "Science"
+   ],
+   "image": "work-4.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>Poster for the Bristol science festival. Printed in yellow and black on uncoated stock.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Two ducks, spread for a picture book",
+   "category": "books",
+   "tags": [
+    "Picture book"
+   ],
+   "image": "work-5.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>One spread from a picture book about a pond in winter. Gouache, painted at 120% of print size.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Animal parade, mural study",
+   "category": "posters",
+   "tags": [
+    "Mural",
+    "Study"
+   ],
+   "image": "work-2.jpg",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph -->\n<p>Study for a school hall mural. The final wall is 11 metres long and has a camel that the children named Steve.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Work",
+   "url": "/work/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Art for sale",
+   "url": "/art-for-sale/"
+  },
+  {
+   "label": "Commissions",
+   "url": "/commissions/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Snowy street, A3 print",
+   "price": "38",
+   "image": "prints.jpg",
+   "category": "Prints",
+   "sku": "INK-P01",
+   "stock": 24,
+   "short": "A3 on 300gsm cotton rag. Ships rolled in a tube."
+  },
+  {
+   "name": "Red mountain, A3 print",
+   "price": "38",
+   "image": "work-6.jpg",
+   "category": "Prints",
+   "sku": "INK-P02",
+   "stock": 3,
+   "short": "A3 on 300gsm cotton rag. Three left."
+  },
+  {
+   "name": "Heron, A4 print",
+   "price": "28",
+   "image": "work-3.jpg",
+   "category": "Prints",
+   "sku": "INK-P03",
+   "stock": 40,
+   "short": "A4 on 300gsm cotton rag. Ships flat between boards."
+  },
+  {
+   "name": "Medicinal plants, A3 print",
+   "price": "38",
+   "image": "work-1.jpg",
+   "category": "Prints",
+   "sku": "INK-P04",
+   "stock": 0,
+   "short": "Sold out. A reprint is planned for spring."
+  },
+  {
+   "name": "Small Maps (zine)",
+   "price": "8",
+   "image": "work-2.jpg",
+   "category": "Publications",
+   "sku": "INK-Z01",
+   "stock": 60,
+   "short": "24 pages, risograph printed in two colours."
+  },
+  {
+   "name": "Birds of the Avon (hardback)",
+   "price": "22",
+   "image": "hero.jpg",
+   "category": "Publications",
+   "sku": "INK-B01",
+   "stock": 15,
+   "short": "Signed on request. 96 pages."
+  }
+ ]
+}

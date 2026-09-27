@@ -1,0 +1,11 @@
+node_modules/
+research/screenshots/
+research/tools/node_modules/
+tools/node_modules/
+dist/
+.cache/
+*.log
+.DS_Store
+.claude/
+demos/*/screens/
+dist/

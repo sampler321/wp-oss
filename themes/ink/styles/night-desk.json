@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night desk",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#141414",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F2EFE8",
+					"name": "Ballpen"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF7A63",
+					"name": "Correction red"
+				},
+				{
+					"slug": "surface",
+					"color": "#1F1E1C",
+					"name": "Sketchbook"
+				},
+				{
+					"slug": "line",
+					"color": "#3A3834",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#B5B0A6",
+					"name": "Graphite"
+				}
+			]
+		}
+	}
+}
