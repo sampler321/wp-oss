@@ -1,0 +1,224 @@
+{
+ "site": {
+  "title": "Wren Lamont Studio",
+  "tagline": "Interiors and a small shop, Edinburgh"
+ },
+ "categories": [
+  {
+   "slug": "flats",
+   "name": "Flats"
+  },
+  {
+   "slug": "houses",
+   "name": "Town houses"
+  },
+  {
+   "slug": "country-houses",
+   "name": "Country houses"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "interiors",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "interiors",
+   "title": "Interiors",
+   "content": ""
+  },
+  {
+   "slug": "fabric",
+   "title": "Fabric",
+   "pattern": "room/fabric-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "how-we-work",
+   "title": "How we work",
+   "pattern": "room/how-we-work-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "trade",
+   "title": "Trade",
+   "pattern": "room/trade-page"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "room/contact-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "A Georgian flat in Stockbridge",
+   "slug": "a-georgian-flat-in-stockbridge",
+   "category": "flats",
+   "image": "living.jpg",
+   "date": "2025-12-12",
+   "excerpt": "Four rooms on Dean Terrace for a family of four and a large dog, finished in fourteen weeks.",
+   "pattern": "room/project-rooms",
+   "template": "single-project"
+  },
+  {
+   "title": "A townhouse hall in the New Town",
+   "category": "houses",
+   "image": "hall.jpg",
+   "date": "2025-09-20",
+   "excerpt": "We kept the marble floor and changed almost everything else.",
+   "template": "single-project",
+   "content": "<!-- wp:paragraph -->\n<p>The owners of this Heriot Row house had lived with a grey hall for eleven years. We painted it in Setting plaster, took up the runner and had the old marble table repolished in the hall itself because it would not fit through the door.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"room/project-credits\"} /-->"
+  },
+  {
+   "title": "A dining room for twelve in the Borders",
+   "category": "country-houses",
+   "image": "dining.jpg",
+   "date": "2025-06-14",
+   "excerpt": "Panelling painted Lichen green, a long table kept, new curtains in Irish linen.",
+   "template": "single-project",
+   "content": "<!-- wp:paragraph -->\n<p>The family eat in here every Sunday with whoever turns up. The table stayed, the chairs were reglued and recovered in our Selkirk wool, and the panelling went from brown varnish to green eggshell over two weeks.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"room/project-credits\"} /-->"
+  },
+  {
+   "title": "A farmhouse kitchen near Peebles",
+   "category": "country-houses",
+   "image": "kitchen.jpg",
+   "date": "2025-03-08",
+   "excerpt": "Red wallpaper, the old dresser and a table for eight.",
+   "template": "single-project",
+   "content": "<!-- wp:paragraph -->\n<p>The clients asked for a kitchen that looked as if it had not been designed. We found them a dresser at a farm sale in Lauder, papered the walls in a small red print and moved the table under the window.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"room/project-credits\"} /-->"
+  },
+  {
+   "title": "The four-poster room at Craigmore",
+   "category": "country-houses",
+   "image": "bedroom.jpg",
+   "date": "2024-11-02",
+   "excerpt": "The bed stayed where it was. Everything around it changed.",
+   "template": "single-project",
+   "content": "<!-- wp:paragraph -->\n<p>A 17th century bed in a room with two draughty windows. We lined the hangings with wool, hung interlined curtains and rewired a lamp that had not worked since 1994.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"room/project-credits\"} /-->"
+  },
+  {
+   "title": "A 1910 bathroom, kept",
+   "category": "flats",
+   "image": "bath.jpg",
+   "date": "2024-08-17",
+   "excerpt": "We talked the owners out of a new bathroom and restored the old one.",
+   "template": "single-project",
+   "content": "<!-- wp:paragraph -->\n<p>Everything in this Marchmont bathroom was original and most of it worked. We re-enamelled the bath, replaced two taps with reclaimed ones and repaired the leaded window. It cost about a third of a new bathroom.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"room/project-credits\"} /-->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Interiors",
+   "url": "/interiors/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Fabric",
+   "url": "/fabric/"
+  },
+  {
+   "label": "How we work",
+   "url": "/how-we-work/"
+  },
+  {
+   "label": "Trade",
+   "url": "/trade/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Ormond table lamp",
+   "price": "340",
+   "image": "lamp.jpg",
+   "category": "Lighting",
+   "sku": "WL-L01",
+   "stock": 6,
+   "short": "Lacquered and hand-painted base, pleated silk shade in claret. 68 cm tall. Rewired in the studio with a braided flex."
+  },
+  {
+   "name": "Tay needlepoint armchair, antique",
+   "price": "2400",
+   "image": "chair.jpg",
+   "category": "Furniture",
+   "sku": "WL-A11",
+   "stock": 1,
+   "short": "Carved walnut, late 17th century style, with its old needlepoint cover. Seat height 44 cm. One only."
+  },
+  {
+   "name": "Carved oak corner chair with cushion",
+   "price": "1650",
+   "image": "cushion.jpg",
+   "category": "Furniture",
+   "sku": "WL-A12",
+   "stock": 1,
+   "short": "Swedish, about 1900, with the original embroidered cushion. One only, collection from Stockbridge or van delivery."
+  },
+  {
+   "name": "Ash stool",
+   "price": "390",
+   "image": "stool.jpg",
+   "category": "Furniture",
+   "sku": "WL-F02",
+   "stock": 4,
+   "short": "Made for us in Fife in steam-bent ash with a waxed finish. 46 cm tall. Made to order in 6 weeks when these go."
+  },
+  {
+   "name": "Oxblood vase",
+   "price": "165",
+   "image": "vase.jpg",
+   "category": "Objects",
+   "sku": "WL-O04",
+   "stock": 8,
+   "short": "Stoneware with a copper red glaze, 31 cm tall. Each one runs a little differently in the kiln."
+  },
+  {
+   "name": "Brass pricket candlestick, antique",
+   "price": "220",
+   "image": "candle.jpg",
+   "category": "Objects",
+   "sku": "WL-A07",
+   "stock": 2,
+   "short": "Pierced base, 36 cm tall. Two available, sold singly. Takes a church candle."
+  },
+  {
+   "name": "Kelim runner, antique",
+   "price": "780",
+   "image": "rug.jpg",
+   "category": "Objects",
+   "sku": "WL-A03",
+   "stock": 1,
+   "short": "Flat-woven, 320 by 95 cm, washed and repaired. One only."
+  },
+  {
+   "name": "Lion and pomegranate linen, per metre",
+   "price": "96",
+   "image": "fabric.jpg",
+   "category": "Fabric",
+   "sku": "WL-T01",
+   "stock": 120,
+   "short": "Heavy linen, 137 cm wide, 64 cm repeat. Printed in Lancashire. Order up to five free cuttings first."
+  },
+  {
+   "name": "Temple wallpaper, per roll",
+   "price": "145",
+   "image": "wallpaper.jpg",
+   "category": "Wallpaper",
+   "sku": "WL-W01",
+   "stock": 40,
+   "short": "Block printed on 52 cm by 10 m rolls, 53 cm straight repeat. Half-metre sample £6."
+  }
+ ]
+}

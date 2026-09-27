@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Paint chip",
+	"slug": "chip",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|line"
+		},
+		"css": "&{width:4.5rem;height:4.5rem;flex:none;padding:0!important}"
+	}
+}

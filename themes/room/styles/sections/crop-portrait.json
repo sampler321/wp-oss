@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Portrait crop",
+	"slug": "crop-portrait",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:4/5;object-fit:cover;width:100%}"
+	}
+}

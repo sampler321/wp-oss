@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Text link button",
+	"slug": "text-link",
+	"blockTypes": [
+		"core/button"
+	],
+	"styles": {
+		"color": {
+			"background": "transparent",
+			"text": "var:preset|color|accent"
+		},
+		"border": {
+			"width": "0",
+			"style": "none"
+		},
+		"css": "& .wp-block-button__link{padding:0;background:transparent;color:var(--wp--preset--color--accent);text-decoration:underline;text-underline-offset:.3em}"
+	}
+}

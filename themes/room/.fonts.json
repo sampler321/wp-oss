@@ -1,0 +1,54 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Radio Canada Big\", sans-serif",
+      "name": "Radio Canada Big",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Radio Canada Big",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/radio-canada-big-italic-400_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Radio Canada Big",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/radio-canada-big-normal-400_700.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Karla\", sans-serif",
+      "name": "Karla",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Karla",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/karla-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Karla",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/karla-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Radio Canada Big (Google Fonts), https://github.com/google/fonts/tree/main/ofl/radiocanadabig",
+    "Karla (Google Fonts), https://github.com/google/fonts/tree/main/ofl/karla"
+  ]
+}

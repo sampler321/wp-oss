@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Terrazzo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2F0EC",
+					"name": "Plaster"
+				},
+				{
+					"slug": "contrast",
+					"color": "#23282A",
+					"name": "Umber ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#2E5E4E",
+					"name": "Claret"
+				},
+				{
+					"slug": "surface",
+					"color": "#E3E2DB",
+					"name": "Putty"
+				},
+				{
+					"slug": "line",
+					"color": "#C4C4BA",
+					"name": "Linen line"
+				},
+				{
+					"slug": "muted",
+					"color": "#575C58",
+					"name": "Taupe"
+				},
+				{
+					"slug": "chip-green",
+					"color": "#6B7556",
+					"name": "Chip: Lichen"
+				},
+				{
+					"slug": "chip-ochre",
+					"color": "#C99A45",
+					"name": "Chip: Mustard seed"
+				},
+				{
+					"slug": "chip-pink",
+					"color": "#D9A79A",
+					"name": "Chip: Setting plaster"
+				},
+				{
+					"slug": "chip-blue",
+					"color": "#8196A6",
+					"name": "Chip: Slate sky"
+				}
+			]
+		}
+	}
+}

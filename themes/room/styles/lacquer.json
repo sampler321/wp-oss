@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Lacquer",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#1D1B1A",
+					"name": "Plaster"
+				},
+				{
+					"slug": "contrast",
+					"color": "#E4C9A8",
+					"name": "Umber ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#E89A7E",
+					"name": "Claret"
+				},
+				{
+					"slug": "surface",
+					"color": "#2A2624",
+					"name": "Putty"
+				},
+				{
+					"slug": "line",
+					"color": "#4A423C",
+					"name": "Linen line"
+				},
+				{
+					"slug": "muted",
+					"color": "#BFAF9C",
+					"name": "Taupe"
+				},
+				{
+					"slug": "chip-green",
+					"color": "#6B7556",
+					"name": "Chip: Lichen"
+				},
+				{
+					"slug": "chip-ochre",
+					"color": "#C99A45",
+					"name": "Chip: Mustard seed"
+				},
+				{
+					"slug": "chip-pink",
+					"color": "#D9A79A",
+					"name": "Chip: Setting plaster"
+				},
+				{
+					"slug": "chip-blue",
+					"color": "#8196A6",
+					"name": "Chip: Slate sky"
+				}
+			]
+		}
+	}
+}
