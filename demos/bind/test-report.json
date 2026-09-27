@@ -1,0 +1,167 @@
+{
+  "slug": "bind",
+  "date": "2026-09-27T15:38:32.350Z",
+  "passed": true,
+  "results": [
+    {
+      "name": "required files",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "style.css header",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "style.css has no rules (styles live in theme.json)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "theme.json + styles/*.json valid against schema",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "palette has semantic slugs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "default palette/gradients/duotone off",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no monospace fonts (AI tell)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "font families display + body",
+      "ok": true,
+      "detail": "display,body"
+    },
+    {
+      "name": "fonts self-hosted and present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "font size presets",
+      "ok": true,
+      "detail": "x-small,small,medium,large,x-large,xx-large,display"
+    },
+    {
+      "name": "spacing presets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "palette contrast (text 4.5:1, accent 3:1) in all variations",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "3+ style variations",
+      "ok": true,
+      "detail": "3"
+    },
+    {
+      "name": "section styles",
+      "ok": true,
+      "detail": "12"
+    },
+    {
+      "name": "PHP lint",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "functions.php has no enqueues or CPTs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "25+ patterns",
+      "ok": true,
+      "detail": "40"
+    },
+    {
+      "name": "pattern headers (Title, Slug prefix)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "only core blocks (woocommerce only in Woo templates)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tokenised markup (no hex, custom font sizes or raw spacing)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "zero em dashes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "copylint: no S5 AI-writing tells",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "images under 600KB",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "every image credited in readme.txt",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "referenced images exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "demo content.json present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "front end: 17 pages 200, no PHP notices",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "editor: zero invalid/unknown blocks in templates, parts, patterns",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "editor: demo pages readable",
+      "ok": true,
+      "detail": "8"
+    },
+    {
+      "name": "editor: demo page content valid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile 390px: no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "screenshot.png 1200x900",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

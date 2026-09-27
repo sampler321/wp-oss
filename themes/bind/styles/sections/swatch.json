@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cloth swatch",
+	"slug": "swatch",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|line",
+			"radius": "0"
+		},
+		"css": "&{aspect-ratio:1/1;min-height:0;width:100%;align-self:stretch}"
+	}
+}

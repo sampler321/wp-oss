@@ -1,0 +1,46 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Goudy Bookletter 1911\", sans-serif",
+      "name": "Goudy Bookletter 1911",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Goudy Bookletter 1911",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/goudy-bookletter-1911-normal-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"EB Garamond\", serif",
+      "name": "EB Garamond",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "EB Garamond",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/eb-garamond-italic-400_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "EB Garamond",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/eb-garamond-normal-400_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Goudy Bookletter 1911 (Google Fonts), https://github.com/google/fonts/tree/main/ofl/goudybookletter1911",
+    "EB Garamond (Google Fonts), https://github.com/google/fonts/tree/main/ofl/ebgaramond"
+  ]
+}

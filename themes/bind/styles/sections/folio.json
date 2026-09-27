@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Folio",
+	"slug": "folio",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontStyle": "italic",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"color": {
+			"text": "var:preset|color|muted"
+		}
+	}
+}

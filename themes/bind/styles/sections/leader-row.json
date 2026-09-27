@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dot leader row",
+	"slug": "leader-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{display:flex;align-items:baseline;gap:.5em;flex-wrap:nowrap}&::after{content:\"\";flex:1 1 2em;order:1;border-bottom:1px dotted currentColor;transform:translateY(-.3em)}&>:first-child{order:0}&>:last-child{order:2;white-space:nowrap}"
+	}
+}

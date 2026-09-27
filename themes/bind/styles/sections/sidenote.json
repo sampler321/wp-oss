@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Side-note (outer margin)",
+	"slug": "sidenote",
+	"blockTypes": [
+		"core/column",
+		"core/group",
+		"core/paragraph",
+		"core/categories"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|small",
+			"lineHeight": "1.5"
+		},
+		"color": {
+			"text": "var:preset|color|muted"
+		},
+		"border": {
+			"left": {
+				"color": "var:preset|color|accent-2",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30"
+			}
+		},
+		"css": "&.wp-block-categories{list-style:none;margin:0}"
+	}
+}

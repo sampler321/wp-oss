@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Running head",
+	"slug": "running-head",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontStyle": "italic",
+			"fontSize": "var:preset|font-size|x-small"
+		},
+		"color": {
+			"text": "var:preset|color|muted"
+		},
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|accent-2",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "var:preset|spacing|20"
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Front board (buckram with gold frame)",
+	"slug": "board",
+	"blockTypes": [
+		"core/group",
+		"core/cover"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|board",
+			"text": "var:preset|color|foil"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|foil"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|foil"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|foil",
+					"text": "var:preset|color|board"
+				},
+				"border": {
+					"color": "var:preset|color|foil"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|80",
+				"bottom": "var:preset|spacing|80",
+				"left": "var:preset|spacing|50",
+				"right": "var:preset|spacing|50"
+			}
+		},
+		"css": "& .is-style-folio{color:var(--wp--preset--color--foil)}&{position:relative;outline:1px solid var(--wp--preset--color--foil);outline-offset:calc(-1 * var(--wp--preset--spacing--30));box-shadow:inset 0 0 0 calc(var(--wp--preset--spacing--30) + 5px) var(--wp--preset--color--board),inset 0 0 0 calc(var(--wp--preset--spacing--30) + 6px) var(--wp--preset--color--foil)}"
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Vellum",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FBF8F1",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3A3122",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#6B5A3A",
+					"name": "Buckram"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#9C8454",
+					"name": "Gold rule"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1EBDD",
+					"name": "Board"
+				},
+				{
+					"slug": "line",
+					"color": "#DDD2BC",
+					"name": "Line"
+				},
+				{
+					"slug": "muted",
+					"color": "#6A5E4A",
+					"name": "Pencil"
+				},
+				{
+					"slug": "board",
+					"color": "#6B5A3A",
+					"name": "Front board"
+				},
+				{
+					"slug": "foil",
+					"color": "#F1E2B8",
+					"name": "Gold foil"
+				},
+				{
+					"slug": "sw-bottle",
+					"color": "#1F4D3A",
+					"name": "Cloth: bottle green"
+				},
+				{
+					"slug": "sw-oxblood",
+					"color": "#6B1E22",
+					"name": "Cloth: oxblood"
+				},
+				{
+					"slug": "sw-navy",
+					"color": "#1C2A48",
+					"name": "Cloth: navy"
+				},
+				{
+					"slug": "sw-ochre",
+					"color": "#B7862E",
+					"name": "Cloth: ochre"
+				},
+				{
+					"slug": "sw-dove",
+					"color": "#96948C",
+					"name": "Cloth: dove grey"
+				},
+				{
+					"slug": "sw-black",
+					"color": "#1A1A1A",
+					"name": "Cloth: black"
+				},
+				{
+					"slug": "sw-linen",
+					"color": "#D9CEB4",
+					"name": "Cloth: natural linen"
+				},
+				{
+					"slug": "sw-tan",
+					"color": "#8A5A34",
+					"name": "Leather: tan goatskin"
+				}
+			]
+		}
+	}
+}

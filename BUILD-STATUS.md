@@ -12,7 +12,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
-| 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | todo | |
+| 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | tested |  |
 | 8 | room | 019 Interior designer + shop | as researched | todo | |
 | 9 | joint | 021 Furniture and object designer | as researched | todo | |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | todo | |
@@ -52,7 +52,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | todo | |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | deployed (HTTP 404) | https://wposs-key.b-j-kapica.workers.dev |
 | 46 | grain | new: Independent furniture maker | workshop maker, commissions | deployed (HTTP 404) | https://wposs-grain.b-j-kapica.workers.dev |
-| 47 | bind | 262 Bookbinder (introligator) | as researched | tested |  |
+| 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | todo | |
 | 50 | taproom | 088 Craft brewery | as researched | todo | |

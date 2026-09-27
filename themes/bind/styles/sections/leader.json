@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dot leader line",
+	"slug": "leader",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"css": "&{display:flex;align-items:baseline;gap:.5em;margin-block:0;padding-block:.3em}& .leader{flex:1 1 2em;border-bottom:1px dotted currentColor;transform:translateY(-.3em);min-width:1.5em}& .folio{font-variant-numeric:lining-nums tabular-nums;font-size:var(--wp--preset--font-size--small);white-space:nowrap}"
+	}
+}
