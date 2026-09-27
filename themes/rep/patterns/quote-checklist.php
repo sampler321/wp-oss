@@ -1,0 +1,25 @@
+<?php
+/**
+ * Title: What we need to quote
+ * Slug: rep/quote-checklist
+ * Categories: services
+ * Description: The five things an agent needs before quoting a commission.
+ */
+?>
+<!-- wp:columns {"align":"wide","className":"is-style-rule-top"} -->
+<div class="wp-block-columns alignwide is-style-rule-top"><!-- wp:column {"width":"33%"} -->
+<div class="wp-block-column" style="flex-basis:33%"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What we need to quote</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Send these five things and we can come back with a price and availability within a day.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"67%"} -->
+<div class="wp-block-column" style="flex-basis:67%"><!-- wp:table {"className":"is-style-stack"} -->
+<figure class="wp-block-table is-style-stack"><table class="has-fixed-layout"><tbody><tr><td>Usage</td><td>Where it will appear: cover, packaging, social, outdoor, film</td></tr><tr><td>Territory</td><td>UK only, Europe, worldwide</td></tr><tr><td>Duration</td><td>How long you want to use it: one year, five years, in perpetuity</td></tr><tr><td>Deadline</td><td>When you need roughs and when you need finals</td></tr><tr><td>Budget</td><td>A range is fine. It tells us which artists to suggest</td></tr></tbody></table></figure>
+<!-- /wp:table --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->

@@ -19,7 +19,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
-| 14 | rep | 033 Illustration / artist representation agency | as researched | tested |  |
+| 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | todo | |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
@@ -39,7 +39,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
 | 33 | thrift | 062 Vintage clothing | as researched | failed test |  |
-| 34 | paper | 067 Stationery and paper goods | as researched | failed test |  |
+| 34 | paper | 067 Stationery and paper goods | as researched | tested |  |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |

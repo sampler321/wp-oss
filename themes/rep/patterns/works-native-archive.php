@@ -1,0 +1,33 @@
+<?php
+/**
+ * Title: Artist works at their own ratio (inherits the page query)
+ * Slug: rep/works-native-archive
+ * Categories: portfolio,query
+ * Inserter: no
+ */
+?>
+<!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"align":"wide"} -->
+<div class="wp-block-query"><!-- wp:post-template {"className":"is-style-native-grid"} -->
+<!-- wp:post-featured-image {"isLink":true,"sizeSlug":"large"} /-->
+
+<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"small","style":{"typography":{"fontWeight":"500","letterSpacing":"0"}}} /-->
+
+<!-- wp:post-terms {"term":"category","separator":", ","fontSize":"x-small"} /-->
+
+<!-- wp:post-excerpt {"excerptLength":8,"moreText":""} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p class="">Nothing matches that yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->

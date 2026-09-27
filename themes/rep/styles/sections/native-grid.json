@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Native-ratio grid",
+	"slug": "native-grid",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		}
+	}
+}

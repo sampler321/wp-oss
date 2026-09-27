@@ -1,0 +1,323 @@
+{
+ "site": {
+  "title": "Holloway Pask",
+  "tagline": "Illustration, animation and photography agents, London"
+ },
+ "categories": [
+  {
+   "slug": "ines-carvalho",
+   "name": "Ines Carvalho",
+   "description": "Maps and bird's-eye views of towns, in ink with a flat second colour. Lisbon. Agent: Priya Raman."
+  },
+  {
+   "slug": "tomasz-wrona",
+   "name": "Tomasz Wrona",
+   "description": "Buildings, drawn from the street in etching-style line. Kraków. Agent: Priya Raman."
+  },
+  {
+   "slug": "hattie-blume",
+   "name": "Hattie Blume",
+   "description": "Plants, seeds and ornament in watercolour. Glasgow. Agent: Jonah Feld."
+  },
+  {
+   "slug": "kenji-arai",
+   "name": "Kenji Arai",
+   "description": "Characters and landscapes in flat colour, for packaging and posters. Manchester. Agent: Jonah Feld."
+  },
+  {
+   "slug": "odile-marchetti",
+   "name": "Odile Marchetti",
+   "description": "Crowds, cats and nightlife in loose lithographic line. Marseille. Agent: Marta Kowalczyk."
+  },
+  {
+   "slug": "sade-olatunji",
+   "name": "Sade Olatunji",
+   "description": "Black and white linocut, pattern-heavy portraits. London. Agent: Priya Raman."
+  },
+  {
+   "slug": "pim-de-groot",
+   "name": "Pim de Groot",
+   "description": "Painted city streets at night. Rotterdam. Agent: Marta Kowalczyk."
+  },
+  {
+   "slug": "leo-hartigan",
+   "name": "Leo Hartigan",
+   "description": "Frame-by-frame motion studies and title sequences. Bristol. Agent: Jonah Feld."
+  },
+  {
+   "slug": "maeve-doherty",
+   "name": "Maeve Doherty",
+   "description": "Documentary photography of work and weather, in black and white. Belfast. Agent: Jonah Feld."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "work",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "work",
+   "title": "Work",
+   "content": ""
+  },
+  {
+   "slug": "artists",
+   "title": "Artists",
+   "pattern": "rep/page-artists"
+  },
+  {
+   "slug": "styles",
+   "title": "Styles",
+   "pattern": "rep/page-styles"
+  },
+  {
+   "slug": "animation",
+   "title": "Animation",
+   "pattern": "rep/page-animation"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "rep/page-about"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "rep/page-contact"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Baltic ports, endpaper map",
+   "category": [
+    "ines-carvalho"
+   ],
+   "tags": [
+    "Illustration",
+    "Maps"
+   ],
+   "image": "map-1.jpg",
+   "excerpt": "Faber, 2026",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Endpaper for a novel that moves between nine Baltic ports. Each port is drawn from its harbour side.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-09-20"
+  },
+  {
+   "title": "Venice from above",
+   "category": [
+    "ines-carvalho"
+   ],
+   "tags": [
+    "Illustration",
+    "Maps",
+    "Architecture"
+   ],
+   "image": "map-2.jpg",
+   "excerpt": "Monocle, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A fold-out for the Venice city guide, drawn at 1:2,500 and printed on uncoated stock.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Obelisk, Piazza del Popolo",
+   "category": [
+    "tomasz-wrona"
+   ],
+   "tags": [
+    "Illustration",
+    "Architecture",
+    "Black and white"
+   ],
+   "image": "arch-1.jpg",
+   "excerpt": "The Guardian Weekend, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Cover for a travel feature. Drawn on site over three mornings.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-09-12"
+  },
+  {
+   "title": "Chapel and hospital, plan and section",
+   "category": [
+    "tomasz-wrona"
+   ],
+   "tags": [
+    "Illustration",
+    "Architecture"
+   ],
+   "image": "arch-2.jpg",
+   "excerpt": "RIBA Journal, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Plan, section and elevation on one sheet, for a feature on hospital chapels.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-09-08"
+  },
+  {
+   "title": "Loosestrife, seed packet",
+   "category": [
+    "hattie-blume"
+   ],
+   "tags": [
+    "Illustration",
+    "Botanical"
+   ],
+   "image": "bot-1.jpg",
+   "excerpt": "Kew Gardens shop, 2026",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">One of twelve seed packets. Painted at twice size, printed at 85 mm wide.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-08-20"
+  },
+  {
+   "title": "Catalogue cover frame",
+   "category": [
+    "hattie-blume"
+   ],
+   "tags": [
+    "Illustration",
+    "Botanical",
+    "Black and white"
+   ],
+   "image": "book-1.jpg",
+   "excerpt": "Hirsch Books, 2024",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">An ornamental frame for an antiquarian bookseller's catalogue, left empty for the title.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-08-16"
+  },
+  {
+   "title": "Sunrise at the bay, window triptych",
+   "category": [
+    "kenji-arai"
+   ],
+   "tags": [
+    "Illustration",
+    "Characters"
+   ],
+   "image": "char-1.jpg",
+   "excerpt": "Muji Europe, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Three window panels for the Christmas display, 2.4 metres wide in total.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-08-12"
+  },
+  {
+   "title": "Sea cliffs, rail poster",
+   "category": [
+    "kenji-arai"
+   ],
+   "tags": [
+    "Illustration",
+    "Posters",
+    "Characters"
+   ],
+   "image": "poster-1.jpg",
+   "excerpt": "Osaka Railway Heritage Trust, 2024",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A poster for a reopened coastal line. Four colours, screenprinted.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-08-08"
+  },
+  {
+   "title": "Dance hall, festival poster",
+   "category": [
+    "odile-marchetti"
+   ],
+   "tags": [
+    "Illustration",
+    "Posters",
+    "Characters"
+   ],
+   "image": "poster-2.jpg",
+   "excerpt": "Fiesta des Suds, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Main poster for the festival. The crowd is drawn from photos of the 2024 edition.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-07-20"
+  },
+  {
+   "title": "The cat on the sofa, exhibition poster",
+   "category": [
+    "odile-marchetti"
+   ],
+   "tags": [
+    "Illustration",
+    "Posters",
+    "Characters"
+   ],
+   "image": "char-2.jpg",
+   "excerpt": "Cercle des Arts, 2024",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Poster for an exhibition of animal artists. The cat belongs to the curator.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-07-16"
+  },
+  {
+   "title": "Pattern portrait",
+   "category": [
+    "sade-olatunji"
+   ],
+   "tags": [
+    "Illustration",
+    "Black and white",
+    "Characters"
+   ],
+   "image": "bw-2.jpg",
+   "excerpt": "Penguin Modern Classics, 2026",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Cover linocut, cut at 1:1 and scanned at 1,200 dpi.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-07-12"
+  },
+  {
+   "title": "Night street, full moon",
+   "category": [
+    "pim-de-groot"
+   ],
+   "tags": [
+    "Illustration",
+    "Architecture"
+   ],
+   "image": "photo-1.jpg",
+   "excerpt": "Het Parool, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Painted illustration for a long read about the city after midnight.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-07-08"
+  },
+  {
+   "title": "Galloping, sixteen frames",
+   "category": [
+    "leo-hartigan"
+   ],
+   "tags": [
+    "Animation",
+    "Black and white"
+   ],
+   "image": "anim-1.jpg",
+   "excerpt": "BBC Four, 2025",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Title sequence for a history series. Twelve seconds, sixteen frames on a loop.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-06-20"
+  },
+  {
+   "title": "Pea picker's camp",
+   "category": [
+    "maeve-doherty"
+   ],
+   "tags": [
+    "Photography",
+    "Black and white"
+   ],
+   "image": "photo-2.jpg",
+   "excerpt": "Harvest Aid, 2024",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Annual report cover for a farmworkers' charity. Shot on film.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-06-16"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Artists",
+   "url": "/artists/"
+  },
+  {
+   "label": "Work",
+   "url": "/work/"
+  },
+  {
+   "label": "Styles",
+   "url": "/styles/"
+  },
+  {
+   "label": "Animation",
+   "url": "/animation/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

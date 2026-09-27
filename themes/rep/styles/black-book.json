@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Black book",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#111111",
+					"name": "Black book"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F2F2F0",
+					"name": "Paper"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF6A3D",
+					"name": "Vermilion"
+				},
+				{
+					"slug": "surface",
+					"color": "#1C1C1B",
+					"name": "Proof"
+				},
+				{
+					"slug": "line",
+					"color": "#F2F2F0",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#B3B3AE",
+					"name": "Caption grey"
+				}
+			]
+		}
+	}
+}

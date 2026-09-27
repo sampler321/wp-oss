@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Style index",
+	"slug": "style-index",
+	"blockTypes": [
+		"core/tag-cloud"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "500"
+		}
+	}
+}

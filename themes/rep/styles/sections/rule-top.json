@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Rule above",
+	"slug": "rule-top",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20"
+			},
+			"margin": {
+				"top": "var:preset|spacing|60"
+			}
+		}
+	}
+}

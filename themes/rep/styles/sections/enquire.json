@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Enquiry band",
+	"slug": "enquire",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|contrast"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|contrast",
+					"text": "var:preset|color|base"
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|base",
+						"text": "var:preset|color|contrast"
+					}
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60"
+			}
+		}
+	}
+}

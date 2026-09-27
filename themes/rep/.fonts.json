@@ -1,0 +1,18 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Clash Grotesk\", sans-serif",
+      "name": "Clash Grotesk",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Clash Grotesk",
+          "fontStyle": "normal",
+          "fontWeight": "200 700",
+          "src": ["file:./assets/fonts/clash-grotesk-normal-200_700.woff2"]
+        }
+      ]
+    }
+  ],
+  "credits": ["Clash Grotesk (Fontshare), https://www.fontshare.com/licenses/itf-ffl"]
+}
