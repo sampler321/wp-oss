@@ -2,10 +2,10 @@
 /**
  * Title: Past drops (latest four)
  * Slug: drop/past-drops-latest
- * Categories: drop,query
+ * Categories: drops
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading -->
 <h2 class="wp-block-heading">the past drops pile</h2>
 <!-- /wp:heading -->

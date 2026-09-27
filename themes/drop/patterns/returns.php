@@ -2,7 +2,7 @@
 /**
  * Title: Returns
  * Slug: drop/returns
- * Categories: drop,text
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

@@ -2,7 +2,7 @@
 /**
  * Title: Post list
  * Slug: drop/post-list
- * Categories: drop,query
+ * Categories: drops
  * Inserter: no
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Title: Region-only edition note
  * Slug: drop/region-edition
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap-flat","layout":{"type":"constrained"}} -->

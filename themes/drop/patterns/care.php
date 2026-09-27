@@ -2,7 +2,7 @@
 /**
  * Title: Washing
  * Slug: drop/care
- * Categories: drop,text
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

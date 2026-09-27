@@ -43,7 +43,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
 | 36 | stem | 077 Florist | more style and colour heavy | deployed (HTTP 404) | https://wposs-stem.b-j-kapica.workers.dev |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
-| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | tested |  |
+| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed | https://wposs-drop.b-j-kapica.workers.dev |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | deployed | https://wposs-platter.b-j-kapica.workers.dev |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | deployed (HTTP 404) | https://wposs-scoop.b-j-kapica.workers.dev |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | deployed | https://wposs-pipe.b-j-kapica.workers.dev |
@@ -55,7 +55,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
-| 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |
+| 50 | taproom | 088 Craft brewery | as researched | tested |  |
 
 ## Pipeline
 1. Reference theme `ink` + tools (fonts, images, demo builder, test harness, static export, deploy).

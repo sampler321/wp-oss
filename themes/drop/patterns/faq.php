@@ -2,7 +2,7 @@
 /**
  * Title: Questions
  * Slug: drop/faq
- * Categories: drop,text
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

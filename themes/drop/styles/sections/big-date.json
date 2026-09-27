@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Big scrawled date",
+	"slug": "big-date",
+	"blockTypes": [
+		"core/paragraph",
+		"core/heading"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|xx-large",
+			"lineHeight": "0.85",
+			"textTransform": "lowercase"
+		},
+		"color": {
+			"text": "var:preset|color|accent"
+		}
+	}
+}

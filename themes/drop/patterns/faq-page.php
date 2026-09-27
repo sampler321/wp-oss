@@ -2,7 +2,7 @@
 /**
  * Title: Page: questions
  * Slug: drop/faq-page
- * Categories: drop
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

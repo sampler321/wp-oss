@@ -11,6 +11,15 @@ import sys, json, os; sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('drop')
 S = THEME['slug']
+
+# Round 2: map inserter categories so the pattern library groups well (first category = library page).
+CATMAP = {'featured': 'hero', 'shop': 'merch', 'query': 'drops', 'text': 'info', 'call-to-action': 'signup', 'banner': 'notices',
+          'about': 'about', 'contact': 'contact', 'drop': 'pages'}
+_pattern = pattern
+def pattern(slug, title, categories, body, **kw):
+    cats = [c.strip() for c in categories.split(',') if c.strip()]
+    cats = [CATMAP.get(c, c) for c in cats if c != 'drop'] or ['pages']
+    return _pattern(slug, title, ','.join(dict.fromkeys(cats)), body, **kw)
 D = THEME['dir']
 
 
@@ -68,6 +77,7 @@ theme = {
         'shadow': {'defaultPresets': False, 'presets': [
             {'slug': 'paper', 'name': 'Paper lift', 'shadow': '2px 3px 0 0 var(--wp--preset--color--muted)'}]},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
         'custom': {'xerox': XEROX},
     },
     'styles': {
@@ -258,7 +268,7 @@ SEC = {'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:pr
 pattern('drop-hero', 'Current drop: the wall', 'drop,featured', group(J(
     heading('drop seven: the car park session', 1, align='wide'),
     columns(
-        ('58%', img('hero.jpg', 'A guitarist with pale hair playing under a single stage light, photographed in black and white', 'Leeds Brudenell, back room, September', lightbox=False)),
+        ('58%', img('hero.jpg', 'A guitarist with pale hair playing under a single stage light, photographed in black and white', 'Leeds Brudenell, back room, September')),
         (None, group(J(
             para('Six things, printed and dubbed by us, on sale until Sunday 2 November. Tees and tapes are limited and the numbers below are real. The hoodie is a pre-order: we print it once the drop closes, so you get it in the last week of November.'),
             para('When a number hits zero, it is gone. We might do a second batch of the tape. We will not do a second batch of the longsleeve, because Priya hated screen-printing the sleeves.', fontSize='small'),
@@ -281,7 +291,7 @@ pattern('drop-sheet', 'Drop stock sheet (typed list with counts)', 'drop,shop', 
     description='The signature: a typed list of this drop with real counts, a batch window for pre-orders, and sold-out items kept visible.')
 
 pattern('drop-feature', 'One item, one screen', 'drop,shop', group(columns(
-    ('55%', img('tee.jpg', 'A rail of cotton t-shirts on wooden hangers in a shop, in black, grey, green and orange', lightbox=False)),
+    ('55%', img('tee.jpg', 'A rail of cotton t-shirts on wooden hangers in a shop, in black, grey, green and orange')),
     (None, J(heading('car park tee', 2),
              para('Heavy cotton, black, one-colour screen print on the front: a photo of our van in the Brudenell car park at 2am, photocopied three times until it went strange. Sizes S to XXL. Printed by Priya at Hyde Park Print Club.'),
              para('£22', fontSize='xx-large', className='is-style-scrawl'),
@@ -396,7 +406,7 @@ pattern('faq', 'Questions', 'drop,text', group(J(
 pattern('faq-page', 'Page: questions', 'drop', J(pattern_ref('faq'), pattern_ref('who-packs')), block_types='core/post-content')
 
 pattern('who-packs', 'Who packs your order', 'drop,about', group(columns(
-    ('40%', img('live.jpg', 'A drummer playing a full kit under two bright stage lights, black and white', 'Tom, drums and parcels', lightbox=False)),
+    ('40%', img('live.jpg', 'A drummer playing a full kit under two bright stage lights, black and white', 'Tom, drums and parcels')),
     (None, J(heading('who packs your order', 3),
              para('Wet Static is Mags Obi (guitar, voice), Priya Rana (bass, the screen) and Tom Keane (drums, the parcel tape). We started selling tees out of a holdall at shows in 2021 and never stopped.'),
              para('We pack every order ourselves and write the address by hand, so if your parcel says "LS7" in huge letters, that was Tom.'),
@@ -410,7 +420,7 @@ pattern('restock-signup', 'Drop alerts sign-up', 'drop,call-to-action', group(J(
     className='is-style-scrap', align='wide', layout={'type': 'constrained'}, anchor='list', style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}))
 
 pattern('bundle', 'Bundle: tee and record', 'drop,shop', group(columns(
-    (None, img('vinyl.jpg', 'A person sliding a record out of its sleeve next to a turntable', lightbox=False)),
+    (None, img('vinyl.jpg', 'A person sliding a record out of its sleeve next to a turntable')),
     (None, J(heading('tee and LP', 3), para('The car park tee and the Soft engine LP for £40 instead of £46. Pick your size at checkout. The record is UK and Europe only, see below.'),
              para('£40', className='is-style-scrawl', fontSize='xx-large'), buttons(('Buy the bundle', '/shop/')))), align='wide', verticalAlignment='center'),
     align='wide', className='is-style-scrap-right', layout={'type': 'constrained'}))
@@ -423,13 +433,13 @@ pattern('shows', 'Merch at shows', 'drop,text', group(J(
     layout={'type': 'constrained'}))
 
 pattern('print-process', 'How we print', 'drop,about', group(columns(
-    (None, img('print.jpg', 'Two pairs of hands pulling a squeegee across a screen-printing frame with red ink', 'Hyde Park Print Club, Thursday night', lightbox=False)),
+    (None, img('print.jpg', 'Two pairs of hands pulling a squeegee across a screen-printing frame with red ink', 'Hyde Park Print Club, Thursday night')),
     (None, J(heading('printed on a Thursday', 3),
              para('Priya prints every tee on the club\'s four-colour press, 30 an hour on a good night. One colour costs us about £6 a shirt including the blank. The price on the sheet pays for that, the postage bags and the van\'s MOT.'))),
     align='wide', verticalAlignment='center'), align='wide', layout={'type': 'default'}, style=SEC))
 
 pattern('tape-feature', 'Tape feature', 'drop,shop', group(J(
-    img('tape.jpg', 'Two cassette tapes side by side on a dark table', lightbox=False),
+    img('tape.jpg', 'Two cassette tapes side by side on a dark table'),
     para('dubbed in real time on a Tascam, one side at a time, 100 copies. Each one took 20 minutes. Please play it.', className='is-style-scrawl')),
     className='is-style-scrap', layout={'type': 'constrained'}))
 
@@ -443,5 +453,310 @@ pattern('about-page', 'Page: the band', 'drop', J(pattern_ref('who-packs'), patt
 pattern('contact', 'Contact', 'drop,contact', group(J(
     para('Email <a href="mailto:merch@example.com">merch@example.com</a> with your order number. Mags answers on Mondays and Thursdays. Please don\'t DM the band account about orders: nobody checks it sober.'),
     para('Post: Wet Static merch, PO Box 4471, Leeds LS7 9ZX.')), layout={'type': 'constrained'}))
+
+
+
+# =====================================================================================
+# Round 2: more usage areas. Tables replaced by typed rows; drop calendar, lookbook, tour merch,
+# sold-out archive, restock list, zine diary, collabs, stockists. The demo content is written here too.
+# =====================================================================================
+section('sheet-row', 'Typed row (stock sheet, tour date)', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|contrast', 'width': '1px', 'style': 'dashed'}},
+         'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+         'css': '&{display:flex!important;flex-wrap:wrap;gap:.25rem 1rem!important;align-items:baseline}& > *{margin:0!important}& > *:nth-child(1){flex:2 1 12rem}& > *:nth-child(2){flex:2 1 12rem;font-size:var(--wp--preset--font-size--small)}& > *:nth-child(3){flex:0 0 4rem}'
+                '& > *:last-child{flex:1 0 8rem;font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1;color:var(--wp--preset--color--accent)}'
+                '&.is-sold > *:not(:last-child){text-decoration:line-through;color:var(--wp--preset--color--muted)}&.is-sold > *:last-child{color:var(--wp--preset--color--accent-2)}'
+                '&.is-head > *{text-decoration:underline;font-family:var(--wp--preset--font-family--body)!important;font-size:var(--wp--preset--font-size--small)!important;color:var(--wp--preset--color--contrast)!important}'})
+section('polaroid', 'Photo on a scrap (lookbook)', ['core/group'],
+        {'color': {'background': 'var:preset|color|surface', 'text': 'var:preset|color|contrast'}, 'shadow': 'var:preset|shadow|paper',
+         'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30', 'left': 'var:preset|spacing|30', 'right': 'var:preset|spacing|30'}},
+         'css': '& figure{margin:0}& img{aspect-ratio:4/5;object-fit:cover;width:100%}& p{margin:.5rem 0 0}&:nth-child(3n+1){transform:rotate(-1.2deg)}&:nth-child(3n+2){transform:rotate(.9deg)}&:nth-child(3n){transform:rotate(-.4deg)}'})
+section('big-date', 'Big scrawled date', ['core/paragraph', 'core/heading'],
+        {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|xx-large', 'lineHeight': '0.85', 'textTransform': 'lowercase'},
+         'color': {'text': 'var:preset|color|accent'}})
+
+def trow(cells, sold=False, head=False):
+    cls = 'is-style-sheet-row' + (' is-sold' if sold else '') + (' is-head' if head else '')
+    return group(J(*[para(c) for c in cells]), className=cls, layout={'type': 'default'})
+
+def sheet(rows, head):
+    return J(trow(head, head=True), *[trow(r[:4], sold=(len(r) > 4 and r[4])) for r in rows])
+
+# Stock sheet, now typed rows instead of a table.
+SHEET2 = [['Car park tee, black', 'Screen print, one colour, S to XXL', '£22', '38 left'],
+          ['Static bloom longsleeve', 'Two colours, printed sleeves, S to XL', '£30', '6 left'],
+          ['Heavy hoodie, washed black', 'Pre-order, in production', '£45', 'ships 24 to 29 nov'],
+          ['Songs for the car park, tape', 'C40, chrome, 100 dubbed', '£8', 'sold out', True],
+          ['Soft engine, 12 inch LP', 'Black vinyl, printed inner sleeve', '£24', 'in stock'],
+          ['Zine, issue three', '40 pages, photocopied, stapled', '£5', '22 left']]
+pattern('drop-sheet', 'Drop stock sheet (typed rows with counts)', 'merch', group(J(
+    heading('stock sheet, typed on 12 october', 2, anchor='sheet'),
+    sheet(SHEET2, ['What', 'Details', 'Price', 'Left']),
+    para('We update these numbers by hand when we pack, so they can be a day behind. If the shop lets you buy it, it exists. <a href="/shop/">Go to the shop</a>', fontSize='small')),
+    className='is-style-scrap-right', align='wide', layout={'type': 'constrained', 'contentSize': '980px'}),
+    description='The signature: this drop typed out with real counts, a batch window for pre-orders, and sold-out items kept on the sheet.')
+
+pattern('in-production-list', 'In production list', 'merch', group(J(
+    sheet([['Heavy hoodie, washed black', 'Pre-order until 2 Nov', '£45', 'ships 24 to 29 nov'],
+           ['Car park tape, batch two', 'Waiting list, 31 of 50 names', '£8', 'december, maybe'],
+           ['Soft engine LP, second press', 'In the pressing plant queue', '£24', 'late january']], ['What', 'Where it is', 'Price', 'When'])),
+    className='is-style-scrap-flat', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+pattern('in-production-page', 'Page: in production', 'pages', J(
+    para('Some things we only make once we know how many to make. Those are listed here with the week they will ship. If a batch slips, we email everyone who ordered with a new date the same day we find out.'),
+    pattern_ref('in-production-list'), pattern_ref('ships-separately'), pattern_ref('second-batch')), block_types='core/post-content')
+
+pattern('sold-out-record', 'Sold out, kept on the wall', 'drops', group(J(
+    heading('what already went', 3),
+    sheet([['Drop six: flood tee', '150 made, white', '£20', 'gone in 9 days', True],
+           ['Drop five: tour tote', '80 made, canvas', '£12', 'gone at glasgow', True],
+           ['Drop four: lighthouse longsleeve', '60 made', '£28', 'gone', True],
+           ['Drop three: demo tape', '50 made, C30', '£6', 'gone, mostly to mums', True]], ['Drop', 'Made', 'Price', 'What happened'])),
+    className='is-style-scrap-flat', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+pattern('shipping', 'Shipping by region', 'info', group(J(
+    heading('where it goes and how long', 3),
+    sheet([['UK', 'Tracked, 2 to 4 days after we post', '£3.50', 'free over £40'], ['Europe', 'We pay the VAT at the border', '£8', '5 to 10 days'],
+           ['USA and Canada', 'Tracked', '£12', '8 to 15 days'], ['Australia and NZ', 'Tracked', '£14', '10 to 20 days'], ['Everywhere else', 'Tracked', '£14', '10 to 25 days']],
+          ['Where', 'How', 'Postage', 'Takes']),
+    para('We post on Tuesdays and Saturdays from the Chapeltown post office. You get a tracking number when it leaves.', fontSize='small')),
+    layout={'type': 'constrained'}))
+
+TOUR = [['Thu 30 Oct', 'Hyde Park Book Club, Leeds', 'Full table, collection point', 'on sale'],
+        ['Sat 8 Nov', 'The Hug and Pint, Glasgow', 'Tees, tapes, zine', 'on sale'],
+        ['Fri 14 Nov', 'Moth Club, London', 'Card only, tour tee debut', 'few tickets'],
+        ['Sat 22 Nov', 'Gullivers, Manchester', 'Last show of the year', 'sold out', True]]
+pattern('shows', 'Tour dates with the merch table', 'tour', group(J(
+    heading('merch table dates', 3),
+    sheet(TOUR, ['Date', 'Where', 'On the table', 'Tickets']),
+    para('Order online, pick "collect at a show" and your bag waits at the table with your name on it. <a href="/tour/">Tour merch</a>', fontSize='small')),
+    className='is-style-scrap', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+# ---- drop calendar ----
+def cal(date, title, body, note):
+    return group(J(para(date, className='is-style-big-date'), heading(title, 4), para(body, fontSize='small'), para(note, className='is-style-scrawl')),
+                 className='is-style-scrap-flat', layout={'type': 'default'})
+
+pattern('drop-calendar', 'Drop calendar (next four drops)', 'drops', group(J(
+    heading('drop calendar', 2),
+    para('Drops open at 7pm UK time on the date below and close two Sundays later. We only put a date here when the blanks are in the flat.'),
+    grid(J(cal('now', 'drop seven: the car park session', 'Tees, a longsleeve, the hoodie pre-order, tape, LP, zine.', 'closes sun 2 nov'),
+           cal('14 nov', 'tour tee', 'One tee, printed for the Moth Club show, sold at the table first and online the next morning.', 'about 120 made'),
+           cal('5 dec', 'the winter tape', 'Batch two of the car park tape, if 50 people sign up, plus a new cover.', '31 of 50 so far'),
+           cal('feb', 'drop eight', 'New songs, new shirt. That is everything we know right now.', 'no date yet')), min_width='15rem')),
+    align='wide', layout={'type': 'default'}, style=SEC))
+
+pattern('drop-calendar-page', 'Page: drop calendar', 'pages', J(pattern_ref('drop-calendar'), pattern_ref('restock-list'), pattern_ref('restock-signup')), block_types='core/post-content')
+
+# ---- lookbook ----
+def look(f, alt, cap):
+    return group(J(image(f, alt), para(cap, className='is-style-scrawl')), className='is-style-polaroid', layout={'type': 'default'})
+
+LOOKS = [('look-1.jpg', 'A man in a plain white t-shirt laughing at the camera, black and white', 'car park tee in white, size L on Callum, who is 6 foot'),
+         ('tee.jpg', 'A rail of printed t-shirts on wooden hangers', 'the whole run on the rail before packing'),
+         ('look-2.jpg', 'A woman floating on her back in dark water, seen from above', 'the zine cover shoot, Roundhay Park lake'),
+         ('tote.jpg', 'A hand holding up a plain canvas tote bag', 'tour tote, holds 12 records or one hoodie'),
+         ('hero.jpg', 'A guitarist playing under a single stage light', 'static bloom longsleeve, on stage, as intended'),
+         ('bass.jpg', 'Two guitarists playing in a small bar with a painted wall behind them', 'the old amp tee at a friend\'s show')]
+pattern('lookbook', 'Lookbook (photos on paper scraps)', 'lookbook', group(J(
+    heading('lookbook', 2),
+    para('Friends, family and one long-suffering drummer wearing the merch. Click any photo to see it large. Sizes are in the captions.'),
+    grid(J(*[look(*l) for l in LOOKS]), min_width='16rem')),
+    align='wide', layout={'type': 'default'}, style=SEC))
+
+pattern('lookbook-strip', 'Lookbook strip (three photos)', 'lookbook', group(J(
+    heading('worn in', 3), grid(J(*[look(*l) for l in LOOKS[:3]]), min_width='14rem'), para('<a href="/lookbook/">The whole lookbook</a>')),
+    align='wide', layout={'type': 'default'}, style=SEC))
+
+pattern('lookbook-page', 'Page: lookbook', 'pages', J(pattern_ref('lookbook'), pattern_ref('size-compare'), pattern_ref('fit-notes')), block_types='core/post-content')
+
+pattern('fit-notes', 'Fit notes', 'lookbook', group(J(
+    heading('fit notes', 4),
+    lst(['The car park tee is boxy. Callum is 6 foot, 80 kg, and wears an L.', 'The longsleeve runs long in the arm. Priya rolls the cuffs once.',
+         'The hoodie is heavy, 480 gsm, and roomy. Size down if you like it close.', 'Everything is pre-washed, so shrinkage is about 3% at 30°C.'])),
+    className='is-style-scrap-right', layout={'type': 'constrained'}))
+
+# ---- tour merch ----
+pattern('tour-merch', 'Tour merch (what is on the table)', 'tour', group(columns(
+    ('45%', image('live.jpg', 'A drummer playing under two bright stage lights, black and white', 'Moth Club soundcheck, last year')),
+    (None, J(heading('tour tee, november', 3),
+             para('Black tee with the four dates on the back in Mags\'s handwriting. Printed once, about 120, sold at the table first. Anything left goes online the morning after the London show.'),
+             para('£18 at the table, £20 online', className='is-style-scrawl'),
+             para('The table takes cards and phones. Tom has a float for cash but will look sad about it.', fontSize='small'),
+             buttons(('See the dates', '/tour/')))), align='wide', verticalAlignment='center'),
+    align='full', className='is-style-toner', layout={'type': 'constrained'}))
+
+pattern('tour-page', 'Page: tour merch', 'pages', J(pattern_ref('tour-merch'), pattern_ref('shows'), pattern_ref('collect-at-show')), block_types='core/post-content')
+
+pattern('collect-at-show', 'Collect at a show', 'tour', group(J(
+    heading('collect at a show', 4),
+    lst(['Order online and pick the show at checkout.', 'We pack it the night before and write your name on the bag.', 'Ask at the table before or after our set. Not during. Tom is drumming.'], ordered=True),
+    para('Not picked up? We post it the Tuesday after, free.', fontSize='small')),
+    className='is-style-scrap-flat', layout={'type': 'constrained'}))
+
+# ---- sold-out archive ----
+def gone(f, alt, name, note):
+    return group(J(image(f, alt), para('sold out', className='is-style-stamp'), para(name, fontSize='large', fontFamily='display'), para(note, fontSize='small')),
+                 className='is-style-polaroid', layout={'type': 'default'})
+
+pattern('sold-out-archive', 'Sold-out archive (every past item)', 'drops', group(J(
+    heading('the sold-out pile', 2),
+    para('Everything we have made and sold out of, kept up as a record. Some of it comes back as a second batch if enough people ask.'),
+    grid(J(gone('crowd.jpg', 'A crowd under blue stage lights', 'flood tee', 'drop six, 150 made, 9 days'),
+           gone('tote.jpg', 'A canvas tote bag held up by one handle', 'tour tote', 'drop five, 80 made, gone at the glasgow show'),
+           gone('bass.jpg', 'Two guitarists in a small bar', 'lighthouse longsleeve', 'drop four, 60 made'),
+           gone('tape.jpg', 'Two cassette tapes on a dark table', 'demo tape', 'drop three, 50 made'),
+           gone('amp.jpg', 'The front of a guitar amplifier with its knobs', 'amp tee', 'drop two, 100 made, a month'),
+           gone('live.jpg', 'A drummer under stage lights', 'holdall tees', 'drop one, 40 made, cash only')), min_width='14rem'),
+    para('<a href="/past-drops/">The story of each drop</a>')),
+    align='wide', layout={'type': 'default'}, style=SEC))
+
+pattern('sold-out-page', 'Page: sold-out archive', 'pages', J(pattern_ref('sold-out-archive'), pattern_ref('sold-out-record'), pattern_ref('second-batch')), block_types='core/post-content')
+
+# ---- restock list ----
+pattern('restock-list', 'Restock list (names so far)', 'signup', group(J(
+    heading('restock list', 3),
+    para('If enough names go down, a sold-out thing gets a second batch. These are the counts this morning.'),
+    sheet([['Car park tape', 'Batch two of 100', '31', 'needs 50'], ['Flood tee', 'White, same print', '64', 'needs 80'],
+           ['Lighthouse longsleeve', 'Never again, sorry', '22', 'no'], ['Tour tote', 'New colour, same size', '12', 'needs 40']], ['Item', 'What it would be', 'Names', 'Needed']),
+    buttons(('Add your name by email', 'mailto:merch@example.com?subject=Restock%20list'))),
+    className='is-style-scrap', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+# ---- zine and diary ----
+def diary_card(date, title, href, text):
+    return group(J(para(date, className='is-style-scrawl'), heading('<a href="%s">%s</a>' % (href, title), 3, fontSize='large'), para(text, fontSize='small')), layout={'type': 'default'})
+
+pattern('diary-latest', 'Zine diary (latest entries)', 'diary', group(J(
+    heading('from the back bedroom', 2),
+    para('The diary: packing days, print nights, tour notes. Same people, worse handwriting.'),
+    grid(J(diary_card('tue 14 oct', 'Packing day', '/packing-day/', 'Two hundred and eleven parcels and one cat on the large bags.'),
+           diary_card('sat 11 oct', 'Glasgow, the Hug and Pint', '/glasgow-the-hug-and-pint/', 'The last tour tote went at 11:40pm to someone from Dundee.'),
+           diary_card('thu 9 oct', 'Print night at Hyde Park', '/print-night-at-hyde-park/', 'The screen tore on shirt 188. Twelve variants exist.')), min_width='15rem'),
+    para('<a href="/category/diary/">The whole diary</a>')),
+    align='wide', className='is-style-scrap-flat', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}))
+
+pattern('zine-issue', 'Zine issue (cover and contents)', 'diary', group(columns(
+    ('40%', image('zine.jpg', 'Folded photocopied zines stacked on a wooden table', 'issue three, photocopied at the library')),
+    (None, J(heading('zine, issue three', 3),
+             lst(['Tour photos from Glasgow and Hull, photocopied until they went strange', 'Lyrics for Soft engine, handwritten', 'Tom\'s van breakdown diary, three pages',
+                  'A recipe for the soup Priya makes on tour', 'A colouring-in page nobody asked for'], ordered=True),
+             para('40 pages, A5, stapled. £5, or free with any order over £30 while they last.', fontSize='small'),
+             buttons(('Buy the zine', '/shop/')))), align='wide', verticalAlignment='center'),
+    align='wide', className='is-style-scrap', layout={'type': 'constrained'}))
+
+def diary_entry(date, title, text, img_f, alt, cap, note):
+    return J(para(date, className='is-style-big-date'), para(text), image(img_f, alt, cap), para(note, className='is-style-scrawl'))
+
+DIARY = [
+    ('diary-packing-day', 'Diary: packing day', 'tue 14 oct', 'Packing day', 'Two hundred and eleven parcels. The spare room floor is now a postal sorting office and the cat has claimed the stack of large bags. Tom does addresses because his handwriting is the only readable one. Mags does the zine inserts. Priya counts twice.', 'tee.jpg', 'A rail of printed t-shirts on hangers', 'the rail before we started folding', 'post office queue record: 41 minutes'),
+    ('diary-print-night', 'Diary: print night', 'thu 9 oct', 'Print night at Hyde Park', 'Priya pulled 200 car park tees in two sessions. The screen tore on shirt 188 so the last twelve have a small extra line over the bumper. We are calling those the variant edition and not charging extra.', 'print.jpg', 'Hands pulling a squeegee across a screen-printing frame', 'squeegee, hands, the club\'s good screen', 'twelve variants, first come first served'),
+    ('diary-glasgow', 'Diary: Glasgow', 'sat 11 oct', 'Glasgow, the Hug and Pint', 'Sold the last tour tote at 11:40pm to someone who had driven from Dundee. Van made it home on the second attempt. Twenty-two zines gone, four tapes, one very damp tenner.', 'crowd.jpg', 'A crowd under blue stage lights in a small venue', 'from the stage, before the tote ran out', 'totes: 0 left'),
+    ('diary-mastering', 'Diary: tape dubbing', 'sun 5 oct', 'Dubbing the tape', 'One hundred tapes, real time, one side at a time, on a borrowed Tascam. Twenty minutes each. That is 33 hours of Mags sitting next to a cassette deck with a podcast on. If your copy has a click at the start of side B, that is the deck, and that is part of it now.', 'tape.jpg', 'Two cassette tapes on a dark table', 'blanks, before', 'hours spent: 33, podcasts finished: 9'),
+]
+for slug, title, date, heading_, text, f, alt, cap, note in DIARY:
+    pattern(slug, title, 'diary', diary_entry(date, heading_, text, f, alt, cap, note), block_types='core/post-content')
+
+# ---- collabs and stockists ----
+def collab(f, alt, who, what, where):
+    return group(J(image(f, alt), heading(who, 4), para(what, fontSize='small'), para(where, className='is-style-scrawl')), className='is-style-polaroid', layout={'type': 'default'})
+
+pattern('collabs', 'Collabs', 'collabs', group(J(
+    heading('made with friends', 2),
+    para('Things we made with other people, split down the middle.'),
+    grid(J(collab('print.jpg', 'Screen printing with red ink', 'Hyde Park Print Club', 'The car park tee, printed at the club. Two percent of every tee goes to their new press fund.', 'drop seven'),
+           collab('vinyl.jpg', 'A record coming out of its sleeve', 'Dead Letter Office, Portland', 'Our US label. They sell the LP in North America so it doesn\'t cost £30 to post.', 'soft engine LP'),
+           collab('zine.jpg', 'Stacks of folded zines', 'Leeds Zine Library', 'Issue three was photocopied on their machine, with their photocopier card, in exchange for five copies.', 'zine, issue three')), min_width='16rem')),
+    align='wide', layout={'type': 'default'}, style=SEC))
+
+pattern('collabs-page', 'Page: collabs and stockists', 'pages', J(pattern_ref('collabs'), pattern_ref('stockists'), pattern_ref('collab-ask')), block_types='core/post-content')
+
+pattern('stockists', 'Stockists', 'collabs', group(J(
+    heading('in real shops', 3),
+    sheet([['Jumbo Records', 'Leeds, St Johns Centre', 'LP, tape', 'in stock'], ['Monorail Music', 'Glasgow, King\'s Court', 'LP', 'in stock'],
+           ['Rough Trade East', 'London, Brick Lane', 'LP', 'ask at the counter'], ['Piccadilly Records', 'Manchester, Oldham Street', 'LP, zine', 'zine gone']],
+          ['Shop', 'Where', 'Has', 'Status']),
+    para('Record shop? We do trade prices on LPs and tapes. Email with the shop name.', fontSize='small')),
+    className='is-style-scrap-flat', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+pattern('collab-ask', 'Ask us to collab', 'collabs', group(J(
+    para('want to make something together?', className='is-style-scrawl'),
+    para('Bands, zines, print clubs and record shops: email a sentence and a photo of something you made. We say yes about twice a year, so please don\'t be offended by a no.'),
+    buttons(('Email the band', 'mailto:merch@example.com?subject=Collab'))),
+    className='is-style-scrap-right', layout={'type': 'constrained'}))
+
+# ---- merch grid and product details ----
+def item(f, alt, name, price, left, sold=False):
+    return group(J(image(f, alt, aspectRatio='4/5', scale='cover'), para(name, fontSize='large', fontFamily='display'),
+                   para(price + (', ' if left else '') + left, fontSize='small'), para('sold out', className='is-style-stamp') if sold else ''),
+                 layout={'type': 'default'})
+
+pattern('merch-grid', 'Merch grid (this drop)', 'merch', group(J(
+    row(J(heading('on the table', 2), para('<a href="/shop/">Everything in the shop</a>')), justify='space-between', align='wide'),
+    grid(J(item('tee.jpg', 'A rail of printed t-shirts on hangers', 'car park tee', '£22', '38 left'),
+           item('look-1.jpg', 'A man in a white t-shirt laughing', 'static bloom longsleeve', '£30', '6 left'),
+           item('tape.jpg', 'Two cassette tapes', 'songs for the car park', '£8', '', True),
+           item('zine.jpg', 'Stacks of photocopied zines', 'zine, issue three', '£5', '22 left')), min_width='13rem')),
+    align='wide', className='is-style-xerox-grid', layout={'type': 'default'}, style=SEC))
+
+pattern('product-notes', 'Product notes (materials, print, care)', 'merch', group(columns(
+    (None, J(heading('what it is', 5), para('Organic cotton, 200 gsm, pre-washed. Blanks from a supplier in Leicester.', fontSize='small'))),
+    (None, J(heading('how it is printed', 5), para('Hand-pulled screen print, water-based ink, one colour, at Hyde Park Print Club.', fontSize='small'))),
+    (None, J(heading('how to wash it', 5), para('Inside out, 30°C, no tumble dryer. It will crack a little. That is the look.', fontSize='small')))),
+    className='is-style-scrap-flat', layout={'type': 'constrained', 'contentSize': '980px'}))
+
+pattern('next-drop-teaser', 'Next drop teaser', 'hero', group(columns(
+    (None, J(para('next', className='is-style-big-date'), heading('tour tee, 14 november', 2), para('One shirt, about 120, printed for the London show. Online the morning after.'),
+             buttons(('Join the drop list', 'mailto:merch@example.com?subject=Drop%20list')))),
+    (None, image('look-2.jpg', 'A woman floating on her back in dark water, seen from above', 'the back print, in progress')), align='wide', verticalAlignment='center'),
+    align='wide', className='is-style-scrap', layout={'type': 'constrained'}))
+
+pattern('video-session', 'Video: the car park session', 'hero', group(J(
+    image('hero.jpg', 'A guitarist playing under a single stage light', 'still from the car park session, filmed on a camcorder'),
+    para('the car park session: four songs, filmed at 2am behind the Brudenell on a camcorder from 1998. It goes up on the drop page when the drop opens.', className='is-style-scrawl')),
+    align='wide', className='is-style-toner', layout={'type': 'constrained'}))
+
+# ---- functions.php with the new categories ----
+CATS = [('hero', 'Drop: openers'), ('merch', 'Drop: merch'), ('drops', 'Drop: drops and archive'), ('lookbook', 'Drop: lookbook'), ('tour', 'Drop: tour'),
+        ('diary', 'Drop: zine and diary'), ('collabs', 'Drop: collabs and stockists'), ('info', 'Drop: sizing and shipping'), ('signup', 'Drop: sign-ups'),
+        ('notices', 'Drop: notices'), ('about', 'Drop: the band'), ('contact', 'Drop: contact'), ('pages', 'Drop: page layouts')]
+write('functions.php', """<?php
+/**
+ * Drop: pattern categories only.
+ *
+ * @package drop
+ */
+
+add_action(
+	'init',
+	function () {
+%s
+	}
+);""" % '\n'.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'drop' ) ) );" % c for c in CATS))
+
+# ---- front page composition ----
+write('templates/front-page.html', page_template(J(
+    pattern_ref('drop-hero'), pattern_ref('merch-grid'), pattern_ref('drop-sheet'), pattern_ref('drop-feature'), pattern_ref('drop-calendar'),
+    pattern_ref('in-production-strip'), pattern_ref('lookbook-strip'), pattern_ref('past-drops-latest'), pattern_ref('diary-latest'), pattern_ref('restock-signup'))))
+
+# ---- demo content ----
+CJ = 'demos/drop/content.json'
+C = json.load(open(CJ))
+C['categories'] = [c for c in C['categories'] if c['slug'] != 'notes'] + [{'slug': 'diary', 'name': 'Diary', 'description': 'Packing days, print nights and tour notes from the back bedroom.'}]
+posts = [p for p in C['posts'] if p['category'] == 'drops']
+for p in C['posts']:
+    if p['category'] == 'notes':
+        p['category'] = 'diary'; posts.append(p)
+for slug, title, date, heading_, text, f, alt, cap, note in DIARY:
+    posts.append({'title': heading_, 'category': 'diary', 'image': f, 'pattern': 'drop/' + slug, 'excerpt': text.split('. ')[0] + '.'})
+C['posts'] = posts
+pages = {p['slug']: p for p in C['pages']}
+for slug, title, pat in [('drop-calendar', 'Drop calendar', 'drop-calendar-page'), ('lookbook', 'Lookbook', 'lookbook-page'), ('tour', 'Tour merch', 'tour-page'),
+                         ('sold-out', 'Sold-out archive', 'sold-out-page'), ('collabs', 'Collabs and stockists', 'collabs-page')]:
+    pages[slug] = {'slug': slug, 'title': title, 'pattern': 'drop/' + pat, 'template': 'page-wide'}
+pages['in-production']['template'] = 'page-wide'
+C['pages'] = list(pages.values())
+C['nav'] = [{'label': l, 'url': u} for l, u in [('Shop', '/shop/'), ('Drop calendar', '/drop-calendar/'), ('Lookbook', '/lookbook/'), ('Tour', '/tour/'),
+            ('In production', '/in-production/'), ('Sold out', '/sold-out/'), ('Diary', '/category/diary/'), ('Size guide', '/size-guide/'), ('Collabs', '/collabs/'), ('The band', '/band/')]]
+json.dump(C, open(CJ, 'w'), indent=1, ensure_ascii=False)
 
 print('drop: build done')

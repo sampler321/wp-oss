@@ -2,7 +2,7 @@
 /**
  * Title: Shipping by region
  * Slug: drop/shipping
- * Categories: drop,shop
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -10,9 +10,113 @@
 <h3 class="wp-block-heading">where it goes and how long</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-typed-list"} -->
-<figure class="wp-block-table is-style-typed-list"><table class="has-fixed-layout"><thead><tr><th>Where</th><th>Postage</th><th>Usually takes</th></tr></thead><tbody><tr><td>UK</td><td>£3.50, free over £40</td><td>2 to 4 days after we post</td></tr><tr><td>Europe</td><td>£8</td><td>5 to 10 days, we pay the VAT</td></tr><tr><td>USA and Canada</td><td>£12</td><td>8 to 15 days</td></tr><tr><td>Australia and NZ</td><td>£14</td><td>10 to 20 days</td></tr><tr><td>Everywhere else</td><td>£14</td><td>10 to 25 days</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
+<p>Where</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>How</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Postage</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Takes</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
+<p>UK</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tracked, 2 to 4 days after we post</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£3.50</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>free over £40</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
+<p>Europe</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We pay the VAT at the border</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£8</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>5 to 10 days</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
+<p>USA and Canada</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tracked</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£12</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>8 to 15 days</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
+<p>Australia and NZ</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tracked</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£14</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>10 to 20 days</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
+<p>Everywhere else</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tracked</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£14</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>10 to 25 days</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">We post on Tuesdays and Saturdays from the Chapeltown post office. You get a tracking number when it leaves.</p>

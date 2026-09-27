@@ -2,18 +2,18 @@
 /**
  * Title: Current drop: the wall
  * Slug: drop/drop-hero
- * Categories: drop,featured
+ * Categories: hero
  * Description: Front page opener for the current drop: title, a photocopied photo and a taped note with the close date.
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":1,"align":"wide"} -->
 <h1 class="wp-block-heading alignwide">drop seven: the car park session</h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"58%"} -->
-<div class="wp-block-column" style="flex-basis:58%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:58%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A guitarist with pale hair playing under a single stage light, photographed in black and white"/><figcaption class="wp-element-caption">Leeds Brudenell, back room, September</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

@@ -2,13 +2,13 @@
 /**
  * Title: One item, one screen
  * Slug: drop/drop-feature
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-toner","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
+<!-- wp:group {"align":"full","className":"is-style-toner","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-toner" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"55%"} -->
-<div class="wp-block-column" style="flex-basis:55%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:55%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tee.jpg' ) ); ?>" alt="A rail of cotton t-shirts on wooden hangers in a shop, in black, grey, green and orange"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

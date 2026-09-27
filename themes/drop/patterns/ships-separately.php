@@ -2,7 +2,7 @@
 /**
  * Title: Pre-orders ship separately
  * Slug: drop/ships-separately
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap-flat","layout":{"type":"constrained"}} -->

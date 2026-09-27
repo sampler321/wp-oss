@@ -2,7 +2,7 @@
 /**
  * Title: Contact
  * Slug: drop/contact
- * Categories: drop,contact
+ * Categories: contact
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

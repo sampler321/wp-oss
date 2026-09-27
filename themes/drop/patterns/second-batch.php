@@ -2,7 +2,7 @@
 /**
  * Title: Missed out: second batch note
  * Slug: drop/second-batch
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap-right","layout":{"type":"constrained"}} -->

@@ -2,7 +2,7 @@
 /**
  * Title: Sold out, kept on the wall
  * Slug: drop/sold-out-record
- * Categories: drop,shop
+ * Categories: drops
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap-flat","layout":{"type":"constrained","contentSize":"980px"}} -->
@@ -10,7 +10,93 @@
 <h3 class="wp-block-heading">what already went</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-typed-list"} -->
-<figure class="wp-block-table is-style-typed-list"><table class="has-fixed-layout"><thead><tr><th>Drop</th><th>What</th><th>Made</th><th>What happened</th></tr></thead><tbody><tr><td>Drop six</td><td>Flood tee, white</td><td><s>150</s></td><td>sold out in 9 days</td></tr><tr><td>Drop five</td><td>Tour tote</td><td><s>80</s></td><td>sold out at the Glasgow show</td></tr><tr><td>Drop four</td><td>Lighthouse longsleeve</td><td><s>60</s></td><td>sold out</td></tr><tr><td>Drop three</td><td>Demo tape, C30</td><td><s>50</s></td><td>sold out, mostly to our mums</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
+<p>Drop</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Made</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Price</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>What happened</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
+<p>Drop six: flood tee</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>150 made, white</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£20</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>gone in 9 days</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
+<p>Drop five: tour tote</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>80 made, canvas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£12</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>gone at glasgow</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
+<p>Drop four: lighthouse longsleeve</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>60 made</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£28</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>gone</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
+<p>Drop three: demo tape</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>50 made, C30</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>£6</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>gone, mostly to mums</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

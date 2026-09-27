@@ -32,12 +32,12 @@
     "query": "vinyl record sleeve"
   },
   "tote": {
-    "title": "Wikipedia20 tote.png",
-    "creator": "symbols illustrated by Jasmina El Bouamraoui and Karabo Poppy Moletsane",
+    "title": "Baghashtag-Kanvas-Bez-Canta.jpg",
+    "creator": "Efkanakbiyik",
     "license": "CC0",
     "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:Wikipedia20_tote.png",
-    "query": "tote bag"
+    "url": "https://commons.wikimedia.org/wiki/File:Baghashtag-Kanvas-Bez-Canta.jpg",
+    "query": "canvas tote bag"
   },
   "flyer": {
     "title": "Black Flag and Meat Puppets Flyer.jpg",
@@ -174,5 +174,37 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:C188a616_01.jpg",
     "query": "black shirt folded"
+  },
+  "look-1": {
+    "title": "Jim Braddock.jpg",
+    "creator": "Alan Fisher, World Telegram staff photographer",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Jim_Braddock.jpg",
+    "query": "young man t-shirt portrait black and white"
+  },
+  "look-2": {
+    "title": "Ripples and floating woman (Unsplash).jpg",
+    "creator": "Marco De Waal marco_de_waal",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Ripples_and_floating_woman_(Unsplash).jpg",
+    "query": "woman portrait street black and white"
+  },
+  "shop": {
+    "title": "2024 Estakada nad doliną Nysy Kłodzkiej (1).jpg",
+    "creator": "Jacek Halicki",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:2024_Estakada_nad_dolin%C4%85_Nysy_K%C5%82odzkiej_(1).jpg",
+    "query": "record shop interior"
+  },
+  "gig": {
+    "title": "The rose and the ring; or, The history of Prince Giglio and Prince Bulbo; a fireside pantomime for great and small children (1901) (14798101963).jpg",
+    "creator": "Internet Archive Book Images",
+    "license": "No restrictions",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:The_rose_and_the_ring;_or,_The_history_of_Prince_Giglio_and_Prince_Bulbo;_a_fireside_pantomime_for_great_and_small_children_(1901)_(14798101963).jpg",
+    "query": "small gig audience"
   }
 }

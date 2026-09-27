@@ -2,7 +2,7 @@
 /**
  * Title: Drops archive (inherits the page query)
  * Slug: drop/drop-archive
- * Categories: drop,query
+ * Categories: drops
  * Inserter: no
  */
 ?>

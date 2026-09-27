@@ -2,7 +2,7 @@
 /**
  * Title: Size guide (flat measurements)
  * Slug: drop/size-guide
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

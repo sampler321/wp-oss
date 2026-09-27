@@ -2,13 +2,13 @@
 /**
  * Title: Who packs your order
  * Slug: drop/who-packs
- * Categories: drop,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"align":"wide","className":"is-style-scrap-flat","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide is-style-scrap-flat"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/live.jpg' ) ); ?>" alt="A drummer playing a full kit under two bright stage lights, black and white"/><figcaption class="wp-element-caption">Tom, drums and parcels</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

@@ -227,6 +227,14 @@
 			"style": true,
 			"width": true
 		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
+		},
 		"custom": {
 			"xerox": "grayscale(1) contrast(1.9) brightness(1.08)"
 		}
@@ -489,7 +497,7 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|small"
 				},
-				"css": "& table{border-collapse:collapse}& th{text-align:left;font-weight:400;text-decoration:underline;border:0;border-bottom:2px solid var(--wp--preset--color--contrast)}& td{border:0;border-bottom:1px dashed var(--wp--preset--color--contrast);vertical-align:top;font-variant-numeric:tabular-nums}& td,& th{padding:.55em .7em .55em 0}& s{color:var(--wp--preset--color--muted)}"
+				"css": "& table{border-collapse:collapse}& th{text-align:left;font-weight:400;text-decoration:underline;border:0!important;border-bottom:2px solid var(--wp--preset--color--contrast)!important}& td{border:0!important;border-bottom:1px dashed var(--wp--preset--color--contrast)!important;vertical-align:top;font-variant-numeric:tabular-nums}& td,& th{padding:.55em .7em .55em 0}& s{color:var(--wp--preset--color--muted)}"
 			},
 			"core/details": {
 				"border": {

@@ -2,7 +2,7 @@
 /**
  * Title: Page: the band
  * Slug: drop/about-page
- * Categories: drop
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

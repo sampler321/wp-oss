@@ -2,7 +2,7 @@
 /**
  * Title: Page: shipping and returns
  * Slug: drop/shipping-page
- * Categories: drop
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

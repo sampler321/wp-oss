@@ -2,7 +2,7 @@
 /**
  * Title: Page: size guide
  * Slug: drop/size-guide-page
- * Categories: drop
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Title: Notice: last posting dates
  * Slug: drop/notice-post-dates
- * Categories: drop,banner
+ * Categories: notices
  * Description: Swap into the Drop notice template part in December and remove it after.
  */
 ?>

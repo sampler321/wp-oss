@@ -2,13 +2,13 @@
 /**
  * Title: How we print
  * Slug: drop/print-process
- * Categories: drop,about
+ * Categories: about
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/print.jpg' ) ); ?>" alt="Two pairs of hands pulling a squeegee across a screen-printing frame with red ink"/><figcaption class="wp-element-caption">Hyde Park Print Club, Thursday night</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

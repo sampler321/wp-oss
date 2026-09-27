@@ -2,7 +2,7 @@
 /**
  * Title: Compare with a tee you own
  * Slug: drop/size-compare
- * Categories: drop,shop
+ * Categories: merch
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap","layout":{"type":"constrained"}} -->

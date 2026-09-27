@@ -2,7 +2,7 @@
 /**
  * Title: Drop alerts sign-up
  * Slug: drop/restock-signup
- * Categories: drop,call-to-action
+ * Categories: signup
  */
 ?>
 <!-- wp:group {"align":"wide","className":"is-style-scrap","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"},"anchor":"list"} -->
