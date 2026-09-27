@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Headline collage",
+	"slug": "collage",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{position:relative}& > h1,& > h2{position:relative;z-index:2;margin:0}& > figure{position:relative;z-index:1;margin:var(--wp--preset--spacing--30) 0 0}& > figure img{width:100%;aspect-ratio:4/5;object-fit:cover}"
+	}
+}

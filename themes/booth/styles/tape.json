@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tape",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F1E9D6",
+					"name": "Concrete"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1D1A15",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#A8391A",
+					"name": "Record light, dark"
+				},
+				{
+					"slug": "signal",
+					"color": "#E9B949",
+					"name": "Record light"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6DBC2",
+					"name": "Foam"
+				},
+				{
+					"slug": "line",
+					"color": "#1D1A15",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5C554A",
+					"name": "Cable grey"
+				}
+			]
+		}
+	}
+}

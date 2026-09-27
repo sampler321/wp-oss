@@ -1,0 +1,144 @@
+{
+ "site": {
+  "title": "Dźwig",
+  "tagline": "Recording studio in the old Gdańsk shipyard"
+ },
+ "categories": [
+  {
+   "slug": "sessions",
+   "name": "Sessions"
+  },
+  {
+   "slug": "news",
+   "name": "News"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "sessions",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "rooms",
+   "title": "Rooms",
+   "pattern": "booth/page-rooms",
+   "template": "page-wide"
+  },
+  {
+   "slug": "studio-a",
+   "title": "Studio A",
+   "parent": "rooms",
+   "pattern": "booth/studio-a-page",
+   "template": "page-room"
+  },
+  {
+   "slug": "studio-b",
+   "title": "Studio B",
+   "parent": "rooms",
+   "pattern": "booth/studio-b-page",
+   "template": "page-room"
+  },
+  {
+   "slug": "gear",
+   "title": "Gear",
+   "pattern": "booth/page-gear",
+   "template": "page-wide"
+  },
+  {
+   "slug": "rates",
+   "title": "Rates",
+   "pattern": "booth/page-rates",
+   "template": "page-wide"
+  },
+  {
+   "slug": "engineers",
+   "title": "Engineers",
+   "pattern": "booth/page-engineers",
+   "template": "page-wide"
+  },
+  {
+   "slug": "sessions",
+   "title": "Sessions",
+   "content": ""
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "booth/page-visit",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Rzeka, four days live in Studio A",
+   "category": "sessions",
+   "image": "drums.jpg",
+   "excerpt": "Six players in the room, no click, three Coles ribbons on the kit. The album is out in spring.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rzeka tracked their third album live, all six of them in the room at once, with the singer in booth 2. Bartek miked the kit with a pair of Coles 4038s and a Tonsil MD 263 on the kick, which nobody believed would work.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>4 tracking, 3 mixing in Studio B</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr><tr><td>Tape</td><td>Two reels on the Studer, then Pro Tools</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Gdańsk Chamber Choir, Christmas record",
+   "category": "sessions",
+   "image": "vocal.jpg",
+   "excerpt": "Thirty-two singers, one pair of U 87s and the plate reverb next door.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thirty-two singers stood in a horseshoe in the live room. We used a spaced pair of U 87s and almost nothing else, and sent a little to the EMT plate in the old paint store.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>2</td></tr><tr><td>Engineer</td><td>Bartek Szulc</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Mixing Doki for Mała Orkiestra Portowa",
+   "category": "sessions",
+   "image": "band.jpg",
+   "excerpt": "Eleven songs mixed in Studio B through the X-Desk, with a half-inch copy for the vinyl cut.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The band recorded at home and brought us 11 songs to mix. Iga ran everything through the X-Desk and printed a half-inch copy on the Otari for the vinyl master.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio B</td></tr><tr><td>Days</td><td>6</td></tr><tr><td>Engineer</td><td>Iga Dąbrowska</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Burza, stage music for Teatr Wybrzeże",
+   "category": "sessions",
+   "image": "piano.jpg",
+   "excerpt": "Prepared piano, a string quartet and a lot of thunder sheet.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Music for a new production of The Tempest. Prepared piano on the C7, a string quartet, and a thunder sheet borrowed from the theatre that was louder than anything else we have recorded.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>3</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "New tape machine, same old tape",
+   "category": "news",
+   "image": "tape.jpg",
+   "excerpt": "The Studer is back from service with new heads. Tape prices went up again.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Studer A827 is back from two months at the service shop in Łódź, with new heads and a lot of cleaning. A reel of 2 inch tape now costs 1,150 zł, so most bands record to tape for the basic tracks and then move to Pro Tools. You are welcome to bring your own reels.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Turnaround</td><td>We need a week to align it for a new tape formula</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Rehearsal room open on Sundays",
+   "category": "news",
+   "image": "amp.jpg",
+   "excerpt": "From October the rehearsal room opens Sundays 12:00 to 22:00.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">From October the rehearsal room is open on Sundays too, 12:00 to 22:00. Book by text with Iga. Three hours minimum at weekends.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Price</td><td>60 zł an hour</td></tr><tr><td>Book</td><td>+48 600 555 219, by text</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Rooms",
+   "url": "/rooms/"
+  },
+  {
+   "label": "Gear",
+   "url": "/gear/"
+  },
+  {
+   "label": "Rates",
+   "url": "/rates/"
+  },
+  {
+   "label": "Engineers",
+   "url": "/engineers/"
+  },
+  {
+   "label": "Sessions",
+   "url": "/sessions/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  }
+ ]
+}

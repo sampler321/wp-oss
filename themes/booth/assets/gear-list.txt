@@ -1,0 +1,36 @@
+DZWIG STUDIO, GEAR LIST (text only)
+Updated September 2026. A = Studio A, B = Studio B.
+
+CONSOLES AND MONITORING
+Polish Radio console, Neve-style  [A]  32 channels, 1084-style EQ, rebuilt by Tonmeister Szczecin in 2021
+SSL XLogic X-Desk  [B]  16-channel summing mixer with SuperAnalogue preamps
+ATC SCM45A  [A]  Main monitors in Studio A
+ATC SCM25A, Yamaha NS-10M  [B]  Mix monitors in Studio B
+Hear Back PRO  [Shared]  Six headphone mixes, 12 pairs of Beyerdynamic DT 770
+
+MICROPHONES
+Neumann U 87 Ai (x2)  [Shared]  Large-diaphragm condenser
+AKG C414 XLS (x2)  [Shared]  Multi-pattern condenser
+Coles 4038 (pair)  [A]  Ribbon, our favourite on drum overheads
+Royer R-121 (x2)  [Shared]  Ribbon, guitar cabs
+Tonsil MD 263  [Shared]  Polish dynamic from the 70s. Sounds like a telephone, in a good way
+Shure SM57 (x8), SM7B (x2), Beta 52A  [Shared]  Dynamics
+
+RECORDERS
+Studer A827  [A]  24-track, 2 inch. Tape is 1,150 zł a reel, bring your own if you like
+Pro Tools HDX  [Shared]  64 inputs through Avid HD I/O and Burl B2 converters
+Otari MX-5050  [B]  1/4 inch half-track for mixdown
+
+OUTBOARD
+Universal Audio 1176LN (x2)  [Shared]  Compressor
+Teletronix LA-2A  [A]  Compressor
+Chandler TG1  [B]  Limiter
+EMT 140  [Shared]  Plate reverb, in the old paint store next door
+Roland RE-201 Space Echo  [Shared]  Tape echo. Works most days
+
+INSTRUMENTS AND AMPS
+Yamaha C7 grand  [A]  Tuned before every booking, included in the rate
+Hammond A-100 with Leslie 147  [A]  
+Ludwig Classic Maple kit  [A]  22, 13, 16, with a Supraphonic snare
+Fender Twin Reverb, Vox AC30, Ampeg B-15  [Shared]  Amps
+Fender Champion II 50  [Rehearsal]  Small practice combo, lives in the rehearsal room

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Gear table",
+	"slug": "gear-table",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{font-weight:700;width:34%}& td:last-child{width:6.5em;white-space:nowrap}& td:last-child em{font-style:normal;background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base);border-radius:6px;padding:.1em .5em;font-size:.85em;font-weight:700}& td:last-child strong{font-weight:700;background:var(--wp--preset--color--signal);border-radius:6px;padding:.1em .5em;font-size:.85em}"
+	}
+}

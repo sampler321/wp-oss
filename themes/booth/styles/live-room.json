@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Live room",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EFE7DD",
+					"name": "Concrete"
+				},
+				{
+					"slug": "contrast",
+					"color": "#231A14",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#8A4B24",
+					"name": "Record light, dark"
+				},
+				{
+					"slug": "signal",
+					"color": "#C98B5B",
+					"name": "Record light"
+				},
+				{
+					"slug": "surface",
+					"color": "#E2D5C6",
+					"name": "Foam"
+				},
+				{
+					"slug": "line",
+					"color": "#231A14",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#62544A",
+					"name": "Cable grey"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "700",
+					"letterSpacing": "-0.02em"
+				}
+			}
+		}
+	}
+}

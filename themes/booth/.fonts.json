@@ -1,0 +1,30 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Figtree\", sans-serif",
+      "name": "Figtree",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "italic",
+          "fontWeight": "300 900",
+          "src": [
+            "file:./assets/fonts/figtree-italic-300_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "normal",
+          "fontWeight": "300 900",
+          "src": [
+            "file:./assets/fonts/figtree-normal-300_900.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Figtree (Google Fonts), https://github.com/google/fonts/tree/main/ofl/figtree"
+  ]
+}
