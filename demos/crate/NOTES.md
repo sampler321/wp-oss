@@ -8,3 +8,10 @@
 - Exception to sniff test Q16: running text is 15px and UI labels 11 to 12px, below the 17px body minimum, because the owner's brief asks for tiny uppercase type. Contrast stays at 7:1 or better for body text.
 - Core-block limits: WooCommerce's results count, catalogue sorting, breadcrumbs and image-gallery blocks are not registered in the post editor, so the harness flags them; the shop uses a format link row instead and the product page uses the single product image block. Theme images in a Cover block fail the harness (the URL appears twice in PHP), so the hero is an Image plus a pulled-up Site Title.
 - Genres are not a separate taxonomy in the demo builder, so genre links run a product search (`/?s=jazz&post_type=product`) and product categories are the formats.
+
+## Round 2
+
+- Kit grew from 36 to 55 patterns, from sections on Honest Jon's, Flashback and Rough Trade: a weekly shop chart, forthcoming releases and pre-orders, back in stock, the under-£5 crates, a label spotlight with photos that open large, a label index, a collection we bought, the Record Store Day list, a Saturday job ad, gift cards, the listening console, a run-out (matrix) guide, staff specialisms, questions, an editorial feature, a list/gallery switch and an alternative hero that opens on this week's arrivals.
+- Home page: the latest-arrivals list is no longer a table. It and the store hours are hairline rows built from groups (`is-style-rows`), and the home page now sets the arrivals list beside the chart and pre-orders. No table on the home page; tables are left only for the grading guide, the pressing spec and shipping rates.
+- New pages: New releases, Help. All eight posts use the kit (RSD list, label spotlight, collection bought, bargain bin, grading and run-out guides, pre-orders).
+- Image lightbox on globally; product tiles still link to the product.

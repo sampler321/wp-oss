@@ -1,20 +1,22 @@
 <?php
 /**
- * Title: Latest arrivals (dense list)
- * Slug: crate/latest-arrivals-list
- * Categories: shop,text
- * Description: The digger's list: artist, title, label, cat no, format, grade pair and price in one line per record.
+ * Title: Hero: this week's arrivals as a list beside a photo
+ * Slug: crate/hero-list
+ * Categories: featured,banner
+ * Description: An alternative opening: a photo and this week's arrivals as a list.
  */
 ?>
-<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading">Latest 100</h2>
-<!-- /wp:heading -->
+<!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sleeve-hands.jpg' ) ); ?>" alt="Hands lifting an LP sleeve above a turntable on a white counter" style="aspect-ratio:4/5;object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
 
-<!-- wp:paragraph {"className":"is-style-label","textColor":"muted"} -->
-<p class="is-style-label has-muted-color has-text-color">Updated Tuesday and Friday at 10am</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":1,"fontSize":"x-large"} -->
+<h1 class="wp-block-heading has-x-large-font-size">In the racks this Friday</h1>
+<!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","className":"is-style-rows","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
@@ -159,113 +161,11 @@
 <!-- wp:paragraph -->
 <p>£14</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>Various</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Studio One Rockers, Soul Jazz SJR LP48</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>2LP, New</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£26</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>Linton Kwesi Johnson</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Forces of Victory, Island ILPS 9566</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>LP, VG+ / VG+</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£28</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>Pharoah Sanders</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Thembi, Impulse! AS-9206</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>LP, VG / VG</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£35</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>Cocteau Twins</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Treasure, 4AD CAD 412</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>LP, VG+ / VG</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£38</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>Joni Mitchell</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Hejira, Asylum K 53053</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>LP, VG+ / VG+</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£18</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p>The Specials</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ghost Town, 2 Tone CHS TT 17</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>7", VG / VG</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£5</p>
-<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"is-style-label"} -->
+<p class="is-style-label"><a href="/latest-arrivals/">All 100</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->

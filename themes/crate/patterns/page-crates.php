@@ -15,3 +15,5 @@
 <!-- wp:pattern {"slug":"crate/format-index"} /-->
 
 <!-- wp:pattern {"slug":"crate/crate-divider"} /-->
+
+<!-- wp:pattern {"slug":"crate/bargain-bin"} /-->

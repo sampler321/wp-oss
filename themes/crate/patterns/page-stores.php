@@ -10,4 +10,10 @@
 
 <!-- wp:pattern {"slug":"crate/find-us-line"} /-->
 
+<!-- wp:pattern {"slug":"crate/listening-console"} /-->
+
 <!-- wp:pattern {"slug":"crate/about-shop"} /-->
+
+<!-- wp:pattern {"slug":"crate/staff-list"} /-->
+
+<!-- wp:pattern {"slug":"crate/jobs"} /-->

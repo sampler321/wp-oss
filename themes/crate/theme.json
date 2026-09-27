@@ -218,6 +218,14 @@
 				}
 			]
 		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
+		},
 		"custom": {
 			"measure": "62ch"
 		}

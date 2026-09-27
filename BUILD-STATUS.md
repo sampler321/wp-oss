@@ -21,7 +21,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |
-| 16 | amp | 038 Band / solo musician | duotone | todo | |
+| 16 | amp | 038 Band / solo musician | duotone | tested |  |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
@@ -37,7 +37,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | deployed (HTTP 404) | https://wposs-roast.b-j-kapica.workers.dev |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | deployed | https://wposs-shelf.b-j-kapica.workers.dev |
-| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | tested |  |
+| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed | https://wposs-crate.b-j-kapica.workers.dev |
 | 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
@@ -55,7 +55,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
-| 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |
+| 50 | taproom | 088 Craft brewery | as researched | tested |  |
 
 ## Pipeline
 1. Reference theme `ink` + tools (fonts, images, demo builder, test harness, static export, deploy).

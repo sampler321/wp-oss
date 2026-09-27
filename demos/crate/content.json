@@ -60,6 +60,17 @@
    "title": "Shipping and returns",
    "pattern": "crate/page-shipping",
    "template": "page-wide"
+  },
+  {
+   "slug": "new-releases",
+   "title": "New releases",
+   "pattern": "crate/page-new-releases",
+   "template": "page-wide"
+  },
+  {
+   "slug": "help",
+   "title": "Help",
+   "pattern": "crate/page-help"
   }
  ],
  "posts": [
@@ -67,37 +78,49 @@
    "title": "Record Store Day: queue from 8am on Call Lane",
    "category": "events",
    "image": "shop-floor.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Doors open at 8am on Saturday 18 April. One copy of each title per person, and nothing from the day goes online until Monday at 10am.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bring a flask. We will have tea from 7.30 for the front of the queue.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Doors open at 8am on Saturday 18 April. One copy of each title per person, and nothing from the day goes online until Monday at 10am.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bring a flask. We will have tea from 7.30 for the front of the queue.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/rsd-list\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/notice-record-store-day\"} /-->"
   },
   {
    "title": "Listening night: Impulse! gatefolds, side two only",
    "category": "events",
    "image": "spinning.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thursday 2 October, 7pm to 9pm at Call Lane. Ines plays the second sides of eight Impulse! records on the shop console. Free, 30 places, first come.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thursday 2 October, 7pm to 9pm at Call Lane. Ines plays the second sides of eight Impulse! records on the shop console. Free, 30 places, first come.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/label-spotlight\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/staff-note\"} /-->"
   },
   {
    "title": "Buying trip to Otley: 1,400 soul and funk 45s",
    "category": "shop-news",
    "image": "singles-case.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">We bought a collection of singles from a former DJ in Otley. They go out in boxes of 50 and on the singles wall from next Tuesday.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We bought a collection of singles from a former DJ in Otley. They go out in boxes of 50 and on the singles wall from next Tuesday.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/collection-bought\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/copy-photos\"} /-->"
   },
   {
    "title": "Folk crate moves to Hebden Bridge",
    "category": "shop-news",
    "image": "digging.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">From October the folk section lives at Market Street. Call Lane keeps a small crate of new folk pressings by the counter.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">From October the folk section lives at Market Street. Call Lane keeps a small crate of new folk pressings by the counter.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/stores-list\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/staff-list\"} /-->"
   },
   {
    "title": "Cassette table, every Sunday in October",
    "category": "events",
    "image": "cassette.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">A table of used tapes at £2 each by the door on Sundays. Inlays included, no cases for the ones that arrived without.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A table of used tapes at £2 each by the door on Sundays. Inlays included, no cases for the ones that arrived without.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/bargain-bin\"} /-->"
   },
   {
    "title": "Why we play every used record before it is priced",
    "category": "shop-news",
    "image": "hero.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Grading by eye misses pressing faults, warps you can only hear, and the long scratch that looks like a hairline. So every used record goes on the shop deck for at least a minute a side.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It is slower. It is also why our returns pile is small.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Grading by eye misses pressing faults, warps you can only hear, and the long scratch that looks like a hairline. So every used record goes on the shop deck for at least a minute a side.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It is slower. It is also why our returns pile is small.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/grading-guide\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/run-out-guide\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/listening-console\"} /-->"
+  },
+  {
+   "title": "Ten records Ines would not sell for less",
+   "category": "shop-news",
+   "image": "spinning.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every shop has a few copies it prices high on purpose. These are ours, and why.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/shop-chart\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/staff-picks-grid\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/editorial-feature\"} /-->"
+  },
+  {
+   "title": "Pre-orders for the autumn reissues are open",
+   "category": "shop-news",
+   "image": "stack.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four reissues we are excited about, due between now and mid-November. Pre-order and we will hold your copy for two weeks after it lands.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"crate/pre-orders\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/back-in-stock\"} /-->\n\n<!-- wp:pattern {\"slug\":\"crate/label-index\"} /-->"
   }
  ],
  "nav": [
@@ -108,6 +131,10 @@
   {
    "label": "Latest 100",
    "url": "/latest-arrivals/"
+  },
+  {
+   "label": "New releases",
+   "url": "/new-releases/"
   },
   {
    "label": "Crates",

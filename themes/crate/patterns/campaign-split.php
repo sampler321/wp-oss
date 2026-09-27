@@ -5,7 +5,7 @@
  * Categories: featured,gallery
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|10"}}}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|10"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--10)"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|10","top":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-columns alignfull"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->

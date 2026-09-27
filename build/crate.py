@@ -74,6 +74,7 @@ theme = {
   'shadow': {'defaultPresets': False, 'presets': []},
   'border': {'color': True, 'radius': True, 'style': True, 'width': True,
              'radiusSizes': [{'slug': 'none', 'size': '0', 'name': 'Square'}]},
+  'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
   'custom': {'measure': '62ch'},
  },
  'styles': {
@@ -250,6 +251,20 @@ section('outline-button', 'Outline', ['core/button'],
         {'color': {'background': 'transparent', 'text': C('contrast')},
          'css': '& .wp-block-button__link{background:transparent;color:inherit;border:1px solid currentColor}'})
 
+section('rows', 'Hairline rows (instead of a table)', ['core/group'],
+        {'typography': {'fontSize': FS('small'), **caps},
+         'css': ('& > .wp-block-group{border-bottom:1px solid var(--wp--preset--color--line);padding:.55em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.1rem!important}'
+                 '& > .wp-block-group:first-child{border-top:1px solid var(--wp--preset--color--line)}& > .wp-block-group > p{margin:0!important}'
+                 '& > .wp-block-group > p:first-child{font-weight:700}& > .wp-block-group > p:last-child:not(:first-child){text-align:right}'
+                 '& > .wp-block-group:hover{background:var(--wp--preset--color--surface)}')})
+
+
+def rows(items, min_w='7rem', cls='is-style-rows', **kw):
+    n = max(len(r) for r in items)
+    return group(J(*[group(J(*[para(c) for c in r]), layout={'type': 'grid', 'columnCount': n, 'minimumColumnWidth': min_w}) for r in items]),
+                 className=cls, layout={'type': 'default'}, **kw)
+
+
 # ---------------------------------------------------------------- copy data
 SHOP = {'addr': '41 Call Lane, Leeds LS1 7BT', 'addr2': '12 Market Street, Hebden Bridge HX7 6AA',
         'email': 'shop@example.com', 'phone': '0113 496 0418'}
@@ -364,8 +379,7 @@ ARRIVALS = [
 ]
 
 def arrivals_table(n=14):
-    rows = [[a, t, l, c, f, g, p] for a, t, l, c, f, g, p in ARRIVALS[:n]]
-    return table(rows, head=['Artist', 'Title', 'Label', 'Cat no', 'Format', 'Media / sleeve', 'Price'], className='is-style-arrivals-list', align='wide')
+    return rows([[a, '%s, %s %s' % (t, l, c), '%s, %s' % (f, g), p] for a, t, l, c, f, g, p in ARRIVALS[:n]], min_w='8rem', align='wide')
 
 pattern('latest-arrivals-list', 'Latest arrivals (dense list)', 'shop,text', J(
   row(J(heading('Latest 100', 2), para('Updated Tuesday and Friday at 10am', className='is-style-label', textColor='muted')), justify='space-between', align='wide'),
@@ -464,11 +478,11 @@ pattern('stores-list', 'Two shops, addresses and hours', 'contact', columns(
   (None, J(image('shop-floor.jpg', ALTS['shop-floor.jpg'], aspectRatio='4/5', scale='cover'),
      heading('Call Lane, Leeds', 3),
      para('%s. Five minutes from the station, next to the tile shop. One step at the door, we have a ramp.' % SHOP['addr']),
-     table([['Mon', 'Closed'], ['Tue to Sat', '11am to 7pm'], ['Sun', '12pm to 5pm']], className='is-style-spec-table'))),
+     rows([['Mon', 'Closed'], ['Tue to Sat', '11am to 7pm'], ['Sun', '12pm to 5pm']]))),
   (None, J(image('digging.jpg', ALTS['digging.jpg'], aspectRatio='4/5', scale='cover'),
      heading('Market Street, Hebden Bridge', 3),
      para('%s. Smaller, mostly used LPs and all the folk. Card only, no buying at this shop.' % SHOP['addr2']),
-     table([['Mon to Thu', 'Closed'], ['Fri and Sat', '10am to 6pm'], ['Sun', '11am to 4pm']], className='is-style-spec-table'))),
+     rows([['Mon to Thu', 'Closed'], ['Fri and Sat', '10am to 6pm'], ['Sun', '11am to 4pm']]))),
   align='wide', style={'spacing': {'blockGap': {'left': SP('10')}}}))
 
 pattern('find-us-line', 'Contact line (phone and email)', 'contact', para(
@@ -534,14 +548,107 @@ pattern('about-shop', 'About the shop', 'about', columns(
      para('We sell used records, mostly, with a wall of new pressings from labels we like. Every used copy is played before it is priced. We think grading by eye is how people end up with a VG+ that sounds like frying bacon.'),
      para('We do not do online auctions, and we do not hold records without payment.'))), align='wide'))
 
+
+# ---------------------------------------------------------------- round 2
+pattern('hero-list', 'Hero: this week\'s arrivals as a list beside a photo', 'featured,banner', columns(
+  ('50%', image('sleeve-hands.jpg', ALTS['sleeve-hands.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, J(heading('In the racks this Friday', 1, fontSize='x-large'), arrivals_table(8), para('<a href="/latest-arrivals/">All 100</a>', className='is-style-label'))),
+  align='full', style={'spacing': {'blockGap': {'left': SP('50')}}}), description='An alternative opening: a photo and this week\'s arrivals as a list.')
+
+CHART = [('Arthur Russell', 'World of Echo', 'New LP'), ('Alice Coltrane', 'Journey in Satchidananda', 'Used LP'), ('Various', 'Studio One Rockers', 'New 2LP'),
+         ('Cocteau Twins', 'Treasure', 'Used LP'), ('Sade', 'Diamond Life', 'Used LP'), ('Linton Kwesi Johnson', 'Forces of Victory', 'Used LP'),
+         ('Pharoah Sanders', 'Thembi', 'Used LP'), ('Joni Mitchell', 'Hejira', 'Used LP'), ('Grace Jones', 'Nightclubbing', 'Used LP'), ('The Specials', 'Ghost Town', 'Used 7-inch')]
+pattern('shop-chart', 'Shop chart: the ten we sold most this week', 'shop', group(J(
+  heading('Sold most this week', 2),
+  lst(['<strong>%s</strong>, %s. %s' % c for c in CHART], ordered=True, className='is-style-label')),
+  layout={'type': 'default'}), description='The week\'s top ten at the till, as a plain numbered list.')
+
+PRE = [('Basic Channel', 'BCD-2 (repress)', 'Basic Channel', 'Due 17 October', '£24'), ('Mulatu Astatke', 'Mulatu of Ethiopia', 'Strut', 'Due 24 October', '£27'),
+       ('Beverley Glenn-Copeland', 'Keyboard Fantasies', 'Transgressive', 'Due 7 November', '£26'), ('Various', 'Studio One Women', 'Soul Jazz', 'Due 14 November', '£28')]
+pattern('pre-orders', 'Pre-orders and forthcoming', 'shop', group(J(
+  heading('Forthcoming', 2),
+  rows([['%s' % a, '%s, %s' % (t, l), d, pr] for a, t, l, d, pr in PRE], min_w='8rem'),
+  para('Pre-order online or at the till. We charge when it arrives and hold it for two weeks.', className='is-style-label', textColor='muted')),
+  layout={'type': 'default'}), description='Releases due in, with dates and prices. We charge on arrival.')
+pattern('back-in-stock', 'Back in stock', 'shop', group(J(
+  heading('Back in stock', 2),
+  rows([['Arthur Russell', 'World of Echo, LP', '£27'], ['Various', 'Studio One Rockers, 2LP', '£26'], ['Beverley Glenn-Copeland', 'Keyboard Fantasies, LP', '£26']])),
+  layout={'type': 'default'}))
+pattern('bargain-bin', 'Bargain bin (under £5)', 'shop', group(J(
+  row(J(heading('Under £5', 2), para('<a href="/product-category/used-7-inch/">All the singles</a>', className='is-style-label')), justify='space-between', align='full', style={'spacing': {'padding': {'left': SP('30'), 'right': SP('30')}}}),
+  group(J(*[group(J(image(img, alt, aspectRatio='4/5', scale='cover'), para(t), para(pr, textColor='muted')), className='is-style-tile', layout={'type': 'default'}) for img, alt, t, pr in [
+     ('singles-case.jpg', ALTS['singles-case.jpg'], 'Soul 45s, loose', '£3 each'), ('cassette.jpg', ALTS['cassette.jpg'], 'Tapes with inlays', '£2 each'),
+     ('crates.jpg', ALTS['crates.jpg'], 'The £4 LP crate', '£4 each'), ('stack.jpg', ALTS['stack.jpg'], '12-inch singles', '£3 each')]]),
+        className='is-style-tile-grid', align='full', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '10rem'})),
+  align='full', layout={'type': 'default'}), description='The cheap crates by the door, as tiles.')
+pattern('label-spotlight', 'Label spotlight', 'shop,featured', columns(
+  ('40%', J(heading('Label: Impulse!', 2), para('Orange and black spines, Van Gelder in the run-out, gatefolds that open like a book. We keep a whole divider for them and price the originals on condition, not hype.'),
+     para('<a href="/?s=impulse&amp;post_type=product">Every Impulse! record in stock</a>', className='is-style-label'))),
+  (None, gallery([('spinning.jpg', ALTS['spinning.jpg'], 'Alice Coltrane'), ('stack.jpg', ALTS['stack.jpg'], 'The Impulse! divider')], columns=2)),
+  align='wide', style={'spacing': {'blockGap': {'left': SP('50')}}}), description='One label, a paragraph about it, and photos you can open large.')
+LABELS = ['4AD', '2 Tone', 'Blue Note', 'Impulse!', 'Island', 'Motown', 'Soul Jazz', 'Studio One', 'Topic', 'Trojan', 'Warp', 'Strut']
+pattern('label-index', 'Label index', 'shop', group(J(
+  heading('By label', 2),
+  para(', '.join('<a href="/?s=%s&amp;post_type=product">%s</a>' % (slugify(l) or 'impulse', l) for l in LABELS), fontSize='large')),
+  layout={'type': 'default'}, className='is-style-rule-top'), description='Labels we keep a divider for, each a search link.')
+pattern('collection-bought', 'A collection we bought', 'shop,featured', columns(
+  (None, image('singles-case.jpg', ALTS['singles-case.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, J(heading('Bought this month: a DJ\'s singles, Otley', 2),
+     para('1,400 northern soul and funk 45s from a man who played the Wigan all-nighters and never threw a record away. Most are VG or better. They go out in boxes of fifty and on the singles wall from Tuesday.'),
+     para('Delroy drove the van. Ines graded every one on the shop deck, which took three weeks.'),
+     buttons(('See the box sets', '/product-category/used-7-inch/')))), align='wide', style={'spacing': {'blockGap': {'left': SP('50')}}}),
+  description='The story of one collection that came in, with a photo.')
+pattern('rsd-list', 'Record Store Day list', 'shop,events', group(J(
+  heading('Record Store Day titles we ordered', 2),
+  rows([['Alice Coltrane', 'Live at the Carnegie, 2LP', 'Ordered 10'], ['Various', 'Studio One Dancehall, 12-inch', 'Ordered 6'], ['Talking Heads', 'Live 1980, LP', 'Ordered 8'], ['Portishead', 'Roseland demos, 12-inch', 'Ordered 4']]),
+  para('We do not know what will arrive until the boxes open. One copy of each per person, nothing online until Monday.', className='is-style-label', textColor='muted')),
+  layout={'type': 'default'}), description='What the shop ordered for Record Store Day, with the rules.')
+pattern('jobs', 'Job: Saturday person', 'about', group(J(
+  heading('We need a Saturday person', 2),
+  para('Saturdays 10.30 to 7 at Call Lane, £13.50 an hour. You will run the till, grade and price used stock, and play records all day. You need to know at least one genre well and be patient with people selling their dad\'s collection.'),
+  buttons(('Email Delroy about the job', 'mailto:%s?subject=Saturday%%20job' % SHOP['email']))),
+  className='is-style-grey', layout={'type': 'constrained', 'justifyContent': 'left'}))
+pattern('gift-card', 'Gift cards', 'shop', columns(
+  ('40%', image('mailer.jpg', ALTS['mailer.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, J(heading('Gift cards', 2), para('£25, £50 or any amount. Spend online or in either shop. Posted in a record mailer, or emailed.'),
+     buttons(('Buy a gift card', purl(RECORDS[11]))))), align='wide', style={'spacing': {'blockGap': {'left': SP('50')}}}))
+pattern('listening-console', 'Listening console note', 'shop', columns(
+  (None, image('console.jpg', ALTS['console.jpg'], aspectRatio='1', scale='cover')),
+  (None, J(heading('Ask to hear it', 2), para('Any used record in the shop can go on the console before you buy it. Side one, side two, the bit you are worried about. Nobody will rush you.'))),
+  align='wide', className='is-style-grey', verticalAlignment='center'))
+pattern('run-out-guide', 'How to read a run-out', 'text', group(J(
+  heading('Reading the run-out', 2),
+  para('The run-out groove is the smooth band between the last track and the label. The letters scratched or stamped there tell you who cut it and which pressing you have.'),
+  lst(['<strong>Matrix number:</strong> the catalogue number plus a side letter, for example ILPS 9624 A.', '<strong>Stamper code:</strong> small numbers after the matrix; lower usually means earlier.',
+       '<strong>Cutting engineer:</strong> initials or a name. "Bilbo" and "Porky" are famous UK ones.', '<strong>Plant marks:</strong> a symbol for the pressing plant, handy for telling UK from EU copies.'], className='is-style-label')),
+  layout={'type': 'constrained', 'justifyContent': 'left'}), description='A short guide to matrix numbers and cutter marks.')
+STAFF = [('Delroy Mensah', 'Owner. Reggae, dub, soul. Buys the collections.'), ('Ines Barros', 'Jazz and soul. Grades every used record.'),
+         ('Kofi Addo', 'Saturdays. Electronic and 12-inches.'), ('Maeve Cullen', 'Hebden Bridge. Folk, and the cassette table.')]
+pattern('staff-list', 'Who works here', 'about', group(J(
+  heading('Behind the counter', 2),
+  rows([[n, d] for n, d in STAFF], min_w='10rem')), layout={'type': 'default'}))
+pattern('faq', 'Questions people ask', 'text', group(J(
+  heading('Questions', 2),
+  details('Do you post records abroad?', para('Yes, to the EU and the rest of the world. Costs are on the shipping page.')),
+  details('Can I reserve a record?', para('For 48 hours if you call. After that it goes back in the rack.')),
+  details('Do you price by Discogs?', para('We look, then price on the copy in front of us. Condition first.')),
+  details('Will you buy my CDs?', para('Not right now. We ran out of room.'))),
+  layout={'type': 'constrained', 'justifyContent': 'left'}))
+pattern('editorial-feature', 'Editorial feature (big photo, short text)', 'featured,gallery', columns(
+  ('66.66%', image('digging.jpg', ALTS['digging.jpg'], aspectRatio='3/2', scale='cover')),
+  (None, J(heading('Saturday, 11am', 2), para('The first hour on a Saturday is the diggers\' hour: new used stock goes out at 11, and the regulars know it.'), para('<a href="/latest-arrivals/">What went out this week</a>', className='is-style-label'))),
+  align='full', verticalAlignment='bottom', style={'spacing': {'blockGap': {'left': SP('30')}}}))
+pattern('list-or-gallery', 'List or gallery switch', 'shop', row(J(para('View as', className='is-style-label', textColor='muted'), para('<a href="/latest-arrivals/">List</a>', className='is-style-label'), para('<a href="/shop/">Gallery</a>', className='is-style-label')),
+  style={'spacing': {'blockGap': SP('30')}}))
+
 # Page layouts
 pattern('page-latest-arrivals', 'Page: latest arrivals', 'shop', J(
   para('The last 100 records to go on the shelves, newest first. Used copies are one-offs, so if you want it, buy it or come in.'),
-  arrivals_table(), pattern_ref('arrivals-grid')), block_types='core/post-content', description='The list-first arrivals page.')
+  pattern_ref('list-or-gallery'), arrivals_table(), pattern_ref('arrivals-grid'), pattern_ref('back-in-stock')), block_types='core/post-content', description='The list-first arrivals page.')
 
 pattern('page-crates', 'Page: genre crates', 'shop', J(
   para('Every genre is split the way the racks are: new LPs, used LPs, used singles. Tap a format to see what is in that crate today.'),
-  pattern_ref('genre-crates'), pattern_ref('format-index'), pattern_ref('crate-divider')), block_types='core/post-content')
+  pattern_ref('genre-crates'), pattern_ref('format-index'), pattern_ref('crate-divider'), pattern_ref('bargain-bin')), block_types='core/post-content')
 
 pattern('page-sell-to-us', 'Page: sell to us', 'text', J(
   para('We buy records every week, from single LPs to whole houses. Cash or shop credit, paid on the spot.', fontSize='large'),
@@ -549,7 +656,11 @@ pattern('page-sell-to-us', 'Page: sell to us', 'text', J(
 
 pattern('page-grading', 'Page: grading guide', 'text', J(pattern_ref('grading-guide'), pattern_ref('used-record-spec'), pattern_ref('staff-note')), block_types='core/post-content')
 
-pattern('page-stores', 'Page: shops and hours', 'contact', J(pattern_ref('stores-list'), pattern_ref('find-us-line'), pattern_ref('about-shop')), block_types='core/post-content')
+pattern('page-stores', 'Page: shops and hours', 'contact', J(pattern_ref('stores-list'), pattern_ref('find-us-line'), pattern_ref('listening-console'), pattern_ref('about-shop'), pattern_ref('staff-list'), pattern_ref('jobs')), block_types='core/post-content')
+pattern('page-new-releases', 'Page: new releases and pre-orders', 'shop', J(
+  para('New pressings from labels we trust, and what is due in. Reissues are listed with the label that did them.'),
+  pattern_ref('pre-orders'), pattern_ref('staff-picks-grid'), pattern_ref('shop-chart'), pattern_ref('label-spotlight'), pattern_ref('label-index'), pattern_ref('rsd-list')), block_types='core/post-content')
+pattern('page-help', 'Page: help and questions', 'text', J(pattern_ref('faq'), pattern_ref('run-out-guide'), pattern_ref('gift-card')), block_types='core/post-content')
 
 pattern('page-shipping', 'Page: shipping and returns', 'shop', J(pattern_ref('shipping-rates'), pattern_ref('returns-policy'), pattern_ref('mail-order-note')), block_types='core/post-content')
 
@@ -571,7 +682,7 @@ write('parts/footer.html', group(J(
   group(J(
     group(J(heading('Call Lane', 2), para('%s<br>Tue to Sat 11 to 7, Sun 12 to 5<br><a href="tel:01134960418">%s</a>' % (SHOP['addr'], SHOP['phone']), className='is-style-label')), layout={'type': 'default'}),
     group(J(heading('Hebden Bridge', 2), para('%s<br>Fri and Sat 10 to 6, Sun 11 to 4<br>Card only' % SHOP['addr2'], className='is-style-label')), layout={'type': 'default'}),
-    group(J(heading('Help', 2), para('<a href="/shipping/">Shipping and returns</a><br><a href="/grading/">Grading</a><br><a href="/sell-to-us/">Sell to us</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email']), className='is-style-label')), layout={'type': 'default'}),
+    group(J(heading('Help', 2), para('<a href="/shipping/">Shipping and returns</a><br><a href="/grading/">Grading</a><br><a href="/sell-to-us/">Sell to us</a><br><a href="/help/">Questions</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email']), className='is-style-label')), layout={'type': 'default'}),
     group(J(heading('Friday list', 2), para('The week\'s used arrivals by email, before they go online. <a href="mailto:%s?subject=Friday%%20list">Sign up</a>' % SHOP['email'], className='is-style-label')), layout={'type': 'default'})),
     align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '10rem'}),
   row(J(dyn('site-title', level=0), para('Demo photographs are CC0 and public domain images from Wikimedia Commons and Unsplash, used as stand-ins for real copies.', className='is-style-label', textColor='muted')),
@@ -586,7 +697,9 @@ def tpl(name, inner, header='header'):
     write('templates/%s.html' % name, J(template_part(header, 'header'), inner, template_part('footer', 'footer')))
 
 tpl('front-page', group(J(pattern_ref('hero-wordmark'), pattern_ref('arrivals-grid'), pattern_ref('campaign-split'),
-    pattern_ref('genre-crates'), pattern_ref('latest-arrivals-list'), pattern_ref('lookbook-full'), pattern_ref('newsletter')),
+    group(columns((None, pattern_ref('latest-arrivals-list')), ('33%', J(pattern_ref('shop-chart'), pattern_ref('pre-orders'))), style={'spacing': {'blockGap': {'left': SP('60')}}}),
+          align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': SP('70')}}}),
+    pattern_ref('genre-crates'), pattern_ref('editorial-feature'), pattern_ref('collection-bought'), pattern_ref('lookbook-full'), pattern_ref('newsletter')),
     tag='main', layout={'type': 'constrained'}, style={'spacing': {'blockGap': '0'}}), header='header-home')
 
 tpl('page', main(J(dyn('post-title', level=1, align='wide'), dyn('post-content', layout={'type': 'constrained'}, align='wide')), layout={'type': 'constrained'}))
@@ -666,25 +779,31 @@ demo = {
   {'slug': 'grading', 'title': 'Grading', 'pattern': 'crate/page-grading'},
   {'slug': 'stores', 'title': 'Shops', 'pattern': 'crate/page-stores', 'template': 'page-wide'},
   {'slug': 'shipping', 'title': 'Shipping and returns', 'pattern': 'crate/page-shipping', 'template': 'page-wide'},
+  {'slug': 'new-releases', 'title': 'New releases', 'pattern': 'crate/page-new-releases', 'template': 'page-wide'},
+  {'slug': 'help', 'title': 'Help', 'pattern': 'crate/page-help'},
  ],
  'posts': [
   {'title': 'Record Store Day: queue from 8am on Call Lane', 'category': 'events', 'image': 'shop-floor.jpg', 'content': J(
      para('Doors open at 8am on Saturday 18 April. One copy of each title per person, and nothing from the day goes online until Monday at 10am.'),
-     para('Bring a flask. We will have tea from 7.30 for the front of the queue.'))},
+     para('Bring a flask. We will have tea from 7.30 for the front of the queue.'), pattern_ref('rsd-list'), pattern_ref('notice-record-store-day'))},
   {'title': 'Listening night: Impulse! gatefolds, side two only', 'category': 'events', 'image': 'spinning.jpg', 'content': J(
-     para('Thursday 2 October, 7pm to 9pm at Call Lane. Ines plays the second sides of eight Impulse! records on the shop console. Free, 30 places, first come.'))},
+     para('Thursday 2 October, 7pm to 9pm at Call Lane. Ines plays the second sides of eight Impulse! records on the shop console. Free, 30 places, first come.'), pattern_ref('label-spotlight'), pattern_ref('staff-note'))},
   {'title': 'Buying trip to Otley: 1,400 soul and funk 45s', 'category': 'shop-news', 'image': 'singles-case.jpg', 'content': J(
-     para('We bought a collection of singles from a former DJ in Otley. They go out in boxes of 50 and on the singles wall from next Tuesday.'))},
+     para('We bought a collection of singles from a former DJ in Otley. They go out in boxes of 50 and on the singles wall from next Tuesday.'), pattern_ref('collection-bought'), pattern_ref('copy-photos'))},
   {'title': 'Folk crate moves to Hebden Bridge', 'category': 'shop-news', 'image': 'digging.jpg', 'content': J(
-     para('From October the folk section lives at Market Street. Call Lane keeps a small crate of new folk pressings by the counter.'))},
+     para('From October the folk section lives at Market Street. Call Lane keeps a small crate of new folk pressings by the counter.'), pattern_ref('stores-list'), pattern_ref('staff-list'))},
   {'title': 'Cassette table, every Sunday in October', 'category': 'events', 'image': 'cassette.jpg', 'content': J(
-     para('A table of used tapes at £2 each by the door on Sundays. Inlays included, no cases for the ones that arrived without.'))},
+     para('A table of used tapes at £2 each by the door on Sundays. Inlays included, no cases for the ones that arrived without.'), pattern_ref('bargain-bin'))},
   {'title': 'Why we play every used record before it is priced', 'category': 'shop-news', 'image': 'hero.jpg', 'content': J(
      para('Grading by eye misses pressing faults, warps you can only hear, and the long scratch that looks like a hairline. So every used record goes on the shop deck for at least a minute a side.'),
-     para('It is slower. It is also why our returns pile is small.'))},
+     para('It is slower. It is also why our returns pile is small.'), pattern_ref('grading-guide'), pattern_ref('run-out-guide'), pattern_ref('listening-console'))},
+  {'title': 'Ten records Ines would not sell for less', 'category': 'shop-news', 'image': 'spinning.jpg', 'content': J(
+     para('Every shop has a few copies it prices high on purpose. These are ours, and why.'), pattern_ref('shop-chart'), pattern_ref('staff-picks-grid'), pattern_ref('editorial-feature'))},
+  {'title': 'Pre-orders for the autumn reissues are open', 'category': 'shop-news', 'image': 'stack.jpg', 'content': J(
+     para('Four reissues we are excited about, due between now and mid-November. Pre-order and we will hold your copy for two weeks after it lands.'), pattern_ref('pre-orders'), pattern_ref('back-in-stock'), pattern_ref('label-index'))},
  ],
  'nav': [
-  {'label': 'Shop', 'url': '/shop/'}, {'label': 'Latest 100', 'url': '/latest-arrivals/'}, {'label': 'Crates', 'url': '/crates/'},
+  {'label': 'Shop', 'url': '/shop/'}, {'label': 'Latest 100', 'url': '/latest-arrivals/'}, {'label': 'New releases', 'url': '/new-releases/'}, {'label': 'Crates', 'url': '/crates/'},
   {'label': 'Sell to us', 'url': '/sell-to-us/'}, {'label': 'Grading', 'url': '/grading/'}, {'label': 'Events', 'url': '/events/'}, {'label': 'Shops', 'url': '/stores/'},
  ],
  'currency': 'GBP',
