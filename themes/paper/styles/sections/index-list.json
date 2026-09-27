@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Category index list",
+	"slug": "index-list",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|large",
+			"fontWeight": "500"
+		},
+		"css": "&{list-style:none;padding:0!important;columns:2 14rem;column-gap:10mm}& li{border-bottom:1px solid var(--wp--preset--color--line);padding:2.5mm 0;break-inside:avoid;display:flex;justify-content:space-between;gap:5mm}& li a{text-decoration:none;color:inherit}& li a:hover{color:var(--wp--preset--color--accent)}"
+	}
+}

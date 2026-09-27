@@ -13,7 +13,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
 | 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | deployed (HTTP 404) | https://wposs-commons.b-j-kapica.workers.dev |
-| 8 | room | 019 Interior designer + shop | as researched | todo | |
+| 8 | room | 019 Interior designer + shop | as researched | tested |  |
 | 9 | joint | 021 Furniture and object designer | as researched | todo | |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | todo | |
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
@@ -39,7 +39,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
 | 33 | thrift | 062 Vintage clothing | as researched | failed test |  |
-| 34 | paper | 067 Stationery and paper goods | as researched | tested |  |
+| 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |

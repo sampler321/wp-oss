@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Notebook margin rule",
+	"slug": "margin-rule",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|accent-2",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|50"
+			}
+		}
+	}
+}

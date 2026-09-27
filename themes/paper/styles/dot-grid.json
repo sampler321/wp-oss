@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dot grid",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2F3F3",
+					"name": "Pale grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1F2426",
+					"name": "Graphite"
+				},
+				{
+					"slug": "accent",
+					"color": "#0F6F8A",
+					"name": "Cyan dot"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "White field"
+				},
+				{
+					"slug": "line",
+					"color": "#9ED0DE",
+					"name": "Cyan dots"
+				},
+				{
+					"slug": "muted",
+					"color": "#4E5A5F",
+					"name": "Pencil grey"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#C0392B",
+					"name": "Correction red"
+				}
+			]
+		}
+	}
+}

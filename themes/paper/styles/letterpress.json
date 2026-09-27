@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Letterpress",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FAF6EE",
+					"name": "Warm white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A1F1A",
+					"name": "Press black"
+				},
+				{
+					"slug": "accent",
+					"color": "#9B1B30",
+					"name": "Impression red"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1EADC",
+					"name": "Cotton card"
+				},
+				{
+					"slug": "line",
+					"color": "#D8C8B0",
+					"name": "Deckle"
+				},
+				{
+					"slug": "muted",
+					"color": "#62544A",
+					"name": "Faded ink"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#9B1B30",
+					"name": "Impression red"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/site-title": {
+				"color": {
+					"text": "var:preset|color|accent"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|accent"
+						}
+					}
+				}
+			}
+		}
+	}
+}

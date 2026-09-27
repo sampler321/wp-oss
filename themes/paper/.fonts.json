@@ -1,0 +1,70 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Zen Old Mincho\", sans-serif",
+      "name": "Zen Old Mincho",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Zen Old Mincho",
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/zen-old-mincho-normal-500.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Zen Old Mincho",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/zen-old-mincho-normal-700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Zen Old Mincho",
+          "fontStyle": "normal",
+          "fontWeight": "900",
+          "src": [
+            "file:./assets/fonts/zen-old-mincho-normal-900.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Zen Kaku Gothic New\", sans-serif",
+      "name": "Zen Kaku Gothic New",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Zen Kaku Gothic New",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/zen-kaku-gothic-new-normal-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Zen Kaku Gothic New",
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/zen-kaku-gothic-new-normal-500.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Zen Kaku Gothic New",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/zen-kaku-gothic-new-normal-700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Zen Old Mincho (Google Fonts), https://github.com/google/fonts/tree/main/ofl/zenoldmincho",
+    "Zen Kaku Gothic New (Google Fonts), https://github.com/google/fonts/tree/main/ofl/zenkakugothicnew"
+  ]
+}

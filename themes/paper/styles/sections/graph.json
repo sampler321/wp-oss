@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Graph paper (5mm)",
+	"slug": "graph",
+	"blockTypes": [
+		"core/group",
+		"core/columns",
+		"core/cover"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"css": "&{background-image:linear-gradient(var(--wp--preset--color--line) 1px,transparent 1px),linear-gradient(90deg,var(--wp--preset--color--line) 1px,transparent 1px);background-size:5mm 5mm;background-position:-1px -1px}"
+	}
+}

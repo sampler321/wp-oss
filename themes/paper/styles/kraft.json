@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Kraft",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#D8C3A0",
+					"name": "Kraft"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1A1A1A",
+					"name": "Black label"
+				},
+				{
+					"slug": "accent",
+					"color": "#1A1A1A",
+					"name": "Black"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6D6BA",
+					"name": "Light kraft"
+				},
+				{
+					"slug": "line",
+					"color": "#9C8663",
+					"name": "Kraft fold"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A3F30",
+					"name": "Brown pencil"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8E2A1E",
+					"name": "Stamp red"
+				}
+			]
+		}
+	}
+}

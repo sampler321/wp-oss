@@ -1,0 +1,260 @@
+{
+ "site": {
+  "title": "Margin",
+  "tagline": "Paper, pens and desk things, Bruntsfield"
+ },
+ "categories": [
+  {
+   "slug": "paper-tests",
+   "name": "Paper tests"
+  },
+  {
+   "slug": "shop-notes",
+   "name": "Shop notes"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "notes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "notes",
+   "title": "Notes",
+   "content": ""
+  },
+  {
+   "slug": "new-arrivals",
+   "title": "New arrivals",
+   "pattern": "paper/page-new-arrivals",
+   "template": "page-wide"
+  },
+  {
+   "slug": "diaries",
+   "title": "Diaries",
+   "pattern": "paper/page-diaries",
+   "template": "page-wide"
+  },
+  {
+   "slug": "ruling-samples",
+   "title": "Rulings",
+   "pattern": "paper/page-ruling-samples",
+   "template": "page-wide"
+  },
+  {
+   "slug": "wholesale",
+   "title": "Wholesale",
+   "pattern": "paper/page-wholesale"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "paper/page-visit",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Nine inks on our 100gsm cream, side by side",
+   "category": "paper-tests",
+   "image": "ink.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We wrote the same sentence in nine inks with a medium steel nib and left the page for a day. Two showed through, none bled. The gall ink darkened most.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why the dot grid is 5mm and not 4mm",
+   "category": "paper-tests",
+   "image": "dot-grid.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">At 4mm most people write two dots per line and the page looks crowded. At 5mm it lines up with a relaxed hand and still works for small drawings.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The 2026 diaries are in",
+   "category": "shop-notes",
+   "image": "journal-pen.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Week to view, day to a page and month to view, all starting 29 December. We printed the same number as last year, which ran out in November.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Sewing a batch of 200 notebooks",
+   "category": "shop-notes",
+   "image": "black-notebook.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Callum sews on Mondays when the shop is closed. A batch of 200 takes three Mondays, and the thread colour depends on what the supplier has that month.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Exercise books and why we still sell them",
+   "category": "shop-notes",
+   "image": "graph-books.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">They feather under a fountain pen and the paper is thin. They are also £3.50 each and perfect for maths homework, so they stay.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Testing envelopes in the rain",
+   "category": "paper-tests",
+   "image": "envelopes.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We posted ten laid envelopes to ourselves during a wet week. The addresses in gall ink arrived sharp; the ones in a dye ink had run on two.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "New arrivals",
+   "url": "/new-arrivals/"
+  },
+  {
+   "label": "Rulings",
+   "url": "/ruling-samples/"
+  },
+  {
+   "label": "Diaries",
+   "url": "/diaries/"
+  },
+  {
+   "label": "Wholesale",
+   "url": "/wholesale/"
+  },
+  {
+   "label": "Notes",
+   "url": "/notes/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "A5 notebook, dot grid 5mm",
+   "price": "16",
+   "image": "dot-grid.jpg",
+   "category": "Notebooks",
+   "sku": "MGN-100",
+   "stock": 30,
+   "short": "Dot grid 5mm, 100gsm cream, 192 pages. Fountain pen friendly.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Our own A5 notebook, sewn in Leith in batches of 200. The dots are pale enough to disappear under ink and firm enough to rule against.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>148 × 210 mm</td></tr><tr><td>Ruling</td><td>Dot grid, 5mm</td></tr><tr><td>Paper</td><td>100gsm cream, acid-free</td></tr><tr><td>Pages</td><td>192 (96 sheets)</td></tr><tr><td>Binding</td><td>Thread-sewn, lies flat</td></tr><tr><td>Fountain pen friendly</td><td>Yes, no bleed with a medium nib</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "A5 notebook, ruled 7mm",
+   "price": "16",
+   "image": "ruled-page.jpg",
+   "category": "Notebooks",
+   "sku": "MGN-101",
+   "stock": 24,
+   "short": "Ruled 7mm, 100gsm cream, 192 pages. Fountain pen friendly.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">The same notebook with 7mm lines, which suits most handwriting at a normal pace. If you write small, the dot grid is kinder.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>148 × 210 mm</td></tr><tr><td>Ruling</td><td>Ruled, 7mm</td></tr><tr><td>Paper</td><td>100gsm cream, acid-free</td></tr><tr><td>Pages</td><td>192 (96 sheets)</td></tr><tr><td>Binding</td><td>Thread-sewn, lies flat</td></tr><tr><td>Fountain pen friendly</td><td>Yes</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Pocket notebook, blank, tan leather",
+   "price": "28",
+   "image": "pocket-notebook.jpg",
+   "category": "Notebooks",
+   "sku": "MGN-102",
+   "stock": 8,
+   "short": "Blank, 90 × 140 mm, refillable leather cover.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">A leather cover that takes our pocket refills. The leather darkens where your hand holds it. Each cover is cut by hand, so the grain and edges vary.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>90 × 140 mm</td></tr><tr><td>Ruling</td><td>Blank</td></tr><tr><td>Paper</td><td>80gsm white</td></tr><tr><td>Pages</td><td>128</td></tr><tr><td>Cover</td><td>Vegetable-tanned leather, refillable</td></tr><tr><td>Fountain pen friendly</td><td>Fine nibs only</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Graph exercise books, pack of 2",
+   "price": "7",
+   "image": "graph-books.jpg",
+   "category": "Notebooks",
+   "sku": "MGN-103",
+   "stock": 40,
+   "short": "Squared 5mm school exercise books, two covers.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Thin school exercise books with a printed times table on the back. Cheap, good for pencil, and bad for fountain pens. We sell them anyway because people keep asking.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>170 × 205 mm</td></tr><tr><td>Ruling</td><td>Squared, 5mm</td></tr><tr><td>Paper</td><td>60gsm white</td></tr><tr><td>Pages</td><td>24 each</td></tr><tr><td>Binding</td><td>Two staples</td></tr><tr><td>Fountain pen friendly</td><td>No, it will feather</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "A5 notebook, black cloth, blank",
+   "price": "22",
+   "image": "black-notebook.jpg",
+   "category": "Notebooks",
+   "sku": "MGN-104",
+   "stock": 12,
+   "short": "Blank, 120gsm, cloth-bound.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Heavier paper for drawing and wet ink. The cloth cover scuffs slowly and looks better for it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>148 × 210 mm</td></tr><tr><td>Ruling</td><td>Blank</td></tr><tr><td>Paper</td><td>120gsm white, acid-free</td></tr><tr><td>Pages</td><td>160</td></tr><tr><td>Binding</td><td>Case-bound, cloth cover</td></tr><tr><td>Fountain pen friendly</td><td>Yes</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Brass dip pen with a medium nib",
+   "price": "14",
+   "image": "nib-brass.jpg",
+   "category": "Pens and ink",
+   "sku": "MGN-105",
+   "stock": 15,
+   "short": "Brass holder, medium steel nib and a spare.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">A plain brass holder that warms up in the hand. Dip it, write four or five words, dip again.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Holder</td><td>Brass</td></tr><tr><td>Nib</td><td>Medium steel, spare included</td></tr><tr><td>Length</td><td>165 mm</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Steel fountain pen, fine nib",
+   "price": "38",
+   "image": "nib-steel.jpg",
+   "category": "Pens and ink",
+   "sku": "MGN-106",
+   "stock": 9,
+   "short": "Fine steel nib, cartridge or converter.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">The pen we write every till receipt with. Smooth enough for long letters, cheap enough to lose.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Nib</td><td>Fine, steel</td></tr><tr><td>Filling</td><td>Cartridge or converter, both included</td></tr><tr><td>Weight</td><td>21 g</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Blue-black gall ink, 50ml",
+   "price": "12",
+   "image": "ink.jpg",
+   "category": "Pens and ink",
+   "sku": "MGN-107",
+   "stock": 20,
+   "short": "Writes blue, dries blue-black. 50ml.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Iron gall ink that goes on blue and darkens on the page over a day. Waterproof once dry. Flush your pen once a month.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Volume</td><td>50 ml</td></tr><tr><td>Colour</td><td>Writes blue, dries darker</td></tr><tr><td>Use</td><td>Dip and fountain pens, flush pens monthly</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Coloured pencils, tin of 12",
+   "price": "18",
+   "image": "pencils.jpg",
+   "category": "Pencils and erasers",
+   "sku": "MGN-108",
+   "stock": 14,
+   "short": "Twelve soft cedar pencils in a tin.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Soft cores that layer well on smooth paper. The tin keeps the points intact in a bag.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Count</td><td>12</td></tr><tr><td>Core</td><td>3.8 mm, soft</td></tr><tr><td>Barrel</td><td>Round cedar</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Two-hole pencil sharpener, pink",
+   "price": "4.50",
+   "image": "sharpener.jpg",
+   "category": "Pencils and erasers",
+   "sku": "MGN-109",
+   "stock": 30,
+   "short": "Two holes, catches its shavings.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Sharpens standard and jumbo pencils, keeps the shavings off your desk.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Holes</td><td>Standard and jumbo</td></tr><tr><td>Body</td><td>Plastic, with shavings pot</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Pencil-top eraser",
+   "price": "3",
+   "image": "eraser.jpg",
+   "category": "Pencils and erasers",
+   "sku": "MGN-110",
+   "stock": 60,
+   "short": "Grey latex-free eraser that fits on a pencil.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Clean erasing on graphite without tearing thin paper.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Fits</td><td>Standard round and hex pencils</td></tr><tr><td>Rubber</td><td>Grey, latex-free</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Laid envelopes, C6, pack of 20",
+   "price": "6",
+   "image": "envelopes.jpg",
+   "category": "Mail",
+   "sku": "MGN-111",
+   "stock": 45,
+   "short": "C6, 100gsm laid, gummed.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Fits an A6 card or an A4 sheet folded twice. The laid texture takes fountain pen without feathering.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>C6, 114 × 162 mm</td></tr><tr><td>Paper</td><td>100gsm white laid</td></tr><tr><td>Seal</td><td>Gummed, lick to close</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "2026 diary, A5, week to view",
+   "price": "24",
+   "image": "journal-pen.jpg",
+   "category": "Diaries",
+   "sku": "MGN-112",
+   "stock": 50,
+   "short": "Week to view, starts 29 December 2025.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Printed in Glasgow with UK bank holidays and moon phases. A ribbon, a back pocket, and nothing else.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec\"} -->\n<figure class=\"wp-block-table is-style-spec\"><table class=\"has-fixed-layout\"><tbody><tr><td>Size</td><td>148 × 210 mm</td></tr><tr><td>Layout</td><td>Week on the left, ruled 6mm notes on the right</td></tr><tr><td>Dates</td><td>29 December 2025 to 3 January 2027</td></tr><tr><td>Paper</td><td>80gsm cream</td></tr><tr><td>Fountain pen friendly</td><td>Yes</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ]
+}
