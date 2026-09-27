@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalogue table",
+	"slug": "catalogue",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{color:var(--wp--preset--color--accent);font-weight:800;white-space:nowrap}& td:nth-child(3) em{font-style:normal;font-weight:800}& strong{font-family:var(--wp--preset--font-family--body);font-weight:500;color:var(--wp--preset--color--accent);font-size:.85em}"
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dub",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#0F1A14",
+					"name": "J-card stock"
+				},
+				{
+					"slug": "contrast",
+					"color": "#E8E3D3",
+					"name": "Shell black"
+				},
+				{
+					"slug": "accent",
+					"color": "#F07A52",
+					"name": "Label red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#D9B44A",
+					"name": "Stripe yellow"
+				},
+				{
+					"slug": "accent-3",
+					"color": "#7FA36B",
+					"name": "Stripe orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#18261E",
+					"name": "Inlay"
+				},
+				{
+					"slug": "line",
+					"color": "#E8E3D3",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#B3AE9E",
+					"name": "Pencil"
+				},
+				{
+					"slug": "shell",
+					"color": "#08100B",
+					"name": "Smoked shell"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Formats table",
+	"slug": "formats",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{width:60%}& em{font-style:normal;font-weight:800;color:var(--wp--preset--color--accent)}"
+	}
+}

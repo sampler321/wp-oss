@@ -1,0 +1,238 @@
+{
+ "site": {
+  "title": "Hiss Tapes",
+  "tagline": "Cassettes and the odd record, dubbed in real time in Leith"
+ },
+ "categories": [
+  {
+   "slug": "releases",
+   "name": "Releases"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "catalogue",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "catalogue",
+   "title": "Catalogue",
+   "content": ""
+  },
+  {
+   "slug": "artists",
+   "title": "Artists",
+   "pattern": "catalog/page-artists",
+   "template": "page-wide"
+  },
+  {
+   "slug": "mira-oduya",
+   "title": "Mira Oduya",
+   "parent": "artists",
+   "pattern": "catalog/artist-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "press-kit",
+   "title": "Mira Oduya, press kit",
+   "parent": "mira-oduya",
+   "pattern": "catalog/artist-epk"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "catalog/page-about",
+   "template": "page-wide"
+  },
+  {
+   "slug": "demos",
+   "title": "Demos",
+   "pattern": "catalog/demo-policy"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "catalog/page-contact",
+   "template": "page-wide"
+  },
+  {
+   "slug": "shipping",
+   "title": "Shipping",
+   "content": "<!-- wp:pattern {\"slug\":\"catalog/postage-table\"} /-->\n\n<!-- wp:pattern {\"slug\":\"catalog/eu-shop-note\"} /-->\n\n<!-- wp:pattern {\"slug\":\"catalog/tape-care\"} /-->"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Salt rooms",
+   "category": "releases",
+   "tags": [
+    "HISS 041"
+   ],
+   "image": "cover-7.jpg",
+   "template": "single-release",
+   "excerpt": "Mira Oduya. C46 on chrome, clear shell, edition of 100.",
+   "pattern": "catalog/page-release"
+  },
+  {
+   "title": "Pylons at dusk",
+   "category": "releases",
+   "tags": [
+    "HISS 040"
+   ],
+   "image": "cover-3.jpg",
+   "template": "single-release",
+   "excerpt": "Low Fold. C60 in a grey shell, edition of 150. Also on 12\" LP, 300 copies.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Pylons at dusk 7:20</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Kirkcaldy 5:02</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sub-station 9:40</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Grid 12:11</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Dusk again 6:30</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Paper boat radio",
+   "category": "releases",
+   "tags": [
+    "HISS 039"
+   ],
+   "image": "cover-1.jpg",
+   "template": "single-release",
+   "excerpt": "Kasia Wren. C46, white shell, edition of 100. Sold out.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Paper boat radio 8:01</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Shipping forecast, slowed 6:44</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Lighthouse keeper 7:10</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Long wave 11:32</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Static, with piano 9:00</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Organ for an empty church",
+   "category": "releases",
+   "tags": [
+    "HISS 038"
+   ],
+   "image": "cover-5.jpg",
+   "template": "single-release",
+   "excerpt": "Tam Boyd. C60, smoke shell, edition of 100.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Voluntary in C 9:15</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Empty pews 12:40</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bellows 6:00</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Hymn 441 14:20</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Vestry 13:02</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Twelve songs for the night bus",
+   "category": "releases",
+   "tags": [
+    "HISS 037"
+   ],
+   "image": "cover-4.jpg",
+   "template": "single-release",
+   "excerpt": "Bonnie Rigg. C46, edition of 100, sold out. 12\" LP still in stock.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Night bus 3:10</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Waverley 2:48</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>The 22 to Ocean Terminal 4:01</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Chips 2:30</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Seafield 3:44</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Last orders 3:20</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Walking home 5:12</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Leith Walk tapes, volume two",
+   "category": "releases",
+   "tags": [
+    "HISS 036"
+   ],
+   "image": "cover-6.jpg",
+   "template": "single-release",
+   "excerpt": "Various artists. C90 compilation, 18 tracks, edition of 150. Sold out.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Nine artists from Leith Walk, 45 minutes</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Nine more, 45 minutes</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Hymns for the ferry",
+   "category": "releases",
+   "tags": [
+    "HISS 035"
+   ],
+   "image": "cover-8.jpg",
+   "template": "single-release",
+   "excerpt": "Harbour Choir. C46, edition of 100. Sold out.",
+   "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side A</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Abide with me 5:40</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Crimond 3:55</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Ferry hymn 7:30</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4,\"className\":\"is-style-side-label\"} -->\n<h4 class=\"wp-block-heading is-style-side-label\">Side B</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Eternal father 4:40</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Harbour 8:00</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy the tape</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://bandcamp.com/\">Listen on Bandcamp</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Catalogue",
+   "url": "/catalogue/"
+  },
+  {
+   "label": "Artists",
+   "url": "/artists/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Demos",
+   "url": "/demos/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "HISS 041 Mira Oduya, Salt rooms (C46)",
+   "price": "8",
+   "image": "cover-7.jpg",
+   "category": "Tapes",
+   "sku": "HISS041-C",
+   "stock": 38,
+   "short": "Chrome tape, clear shell, riso J-card. Edition of 100."
+  },
+  {
+   "name": "HISS 040 Low Fold, Pylons at dusk (C60)",
+   "price": "9",
+   "image": "cover-3.jpg",
+   "category": "Tapes",
+   "sku": "HISS040-C",
+   "stock": 12,
+   "short": "Grey shell. Edition of 150, twelve left."
+  },
+  {
+   "name": "HISS 040 Low Fold, Pylons at dusk (12\" LP)",
+   "price": "22",
+   "image": "cover-3.jpg",
+   "category": "Vinyl",
+   "sku": "HISS040-LP",
+   "stock": 140,
+   "short": "Black vinyl, printed inner sleeve. 300 copies."
+  },
+  {
+   "name": "HISS 039 Kasia Wren, Paper boat radio (C46)",
+   "price": "8",
+   "image": "cover-1.jpg",
+   "category": "Tapes",
+   "sku": "HISS039-C",
+   "stock": 0,
+   "short": "Sold out. A second run of 50 is planned for March."
+  },
+  {
+   "name": "HISS 038 Tam Boyd, Organ for an empty church (C60)",
+   "price": "9",
+   "image": "cover-5.jpg",
+   "category": "Tapes",
+   "sku": "HISS038-C",
+   "stock": 44,
+   "short": "Smoke shell. Edition of 100."
+  },
+  {
+   "name": "HISS 037 Bonnie Rigg, Twelve songs for the night bus (12\" LP)",
+   "price": "22",
+   "image": "cover-4.jpg",
+   "category": "Vinyl",
+   "sku": "HISS037-LP",
+   "stock": 61,
+   "short": "The tape is gone. The LP is not. 250 copies."
+  },
+  {
+   "name": "HISS 042 Low Fold, Night ferry (C46, pre-order)",
+   "price": "8",
+   "image": "hero.jpg",
+   "category": "Tapes",
+   "sku": "HISS042-C",
+   "stock": 100,
+   "short": "Posts on 14 November. Edition of 100."
+  }
+ ]
+}

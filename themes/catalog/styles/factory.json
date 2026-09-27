@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Factory",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "J-card stock"
+				},
+				{
+					"slug": "contrast",
+					"color": "#000000",
+					"name": "Shell black"
+				},
+				{
+					"slug": "accent",
+					"color": "#D42A14",
+					"name": "Label red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#000000",
+					"name": "Stripe yellow"
+				},
+				{
+					"slug": "accent-3",
+					"color": "#D42A14",
+					"name": "Stripe orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#EDEDED",
+					"name": "Inlay"
+				},
+				{
+					"slug": "line",
+					"color": "#000000",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4D4D4D",
+					"name": "Pencil"
+				},
+				{
+					"slug": "shell",
+					"color": "#000000",
+					"name": "Smoked shell"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "800",
+					"letterSpacing": "-0.035em"
+				}
+			}
+		}
+	}
+}

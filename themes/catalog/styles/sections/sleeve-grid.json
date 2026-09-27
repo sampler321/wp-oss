@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sleeve grid",
+	"slug": "sleeve-grid",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "& > li{border-top:2px solid var(--wp--preset--color--contrast);padding-top:var(--wp--preset--spacing--20)}"
+	}
+}

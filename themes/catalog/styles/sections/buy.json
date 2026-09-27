@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Buy link",
+	"slug": "buy",
+	"blockTypes": [
+		"core/read-more"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|base"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|small",
+			"fontWeight": "500",
+			"textDecoration": "none"
+		},
+		"border": {
+			"radius": "2px"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"css": "&{display:inline-block}&:hover{background:var(--wp--preset--color--contrast)}"
+	}
+}

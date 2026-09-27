@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tape stripes",
+	"slug": "tape-stripes",
+	"blockTypes": [
+		"core/separator"
+	],
+	"styles": {
+		"border": {
+			"width": "0"
+		},
+		"css": "&{height:30px;opacity:1;border:0!important;margin:0!important;max-width:none!important;background:linear-gradient(to bottom,var(--wp--preset--color--accent) 0 33.4%,var(--wp--preset--color--accent-3) 33.4% 66.7%,var(--wp--preset--color--accent-2) 66.7% 100%)}"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalogue number",
+	"slug": "catno",
+	"blockTypes": [
+		"core/paragraph",
+		"core/post-terms",
+		"core/heading"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontWeight": "800",
+			"letterSpacing": "0.04em"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|accent"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		}
+	}
+}

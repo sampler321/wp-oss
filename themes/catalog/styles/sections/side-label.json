@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Side label",
+	"slug": "side-label",
+	"blockTypes": [
+		"core/heading"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|small",
+			"fontWeight": "500",
+			"letterSpacing": "0"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|10",
+				"bottom": "var:preset|spacing|10",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{display:inline-block}"
+	}
+}

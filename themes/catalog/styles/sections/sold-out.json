@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sold out stamp",
+	"slug": "sold-out",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"border": {
+			"color": "var:preset|color|accent",
+			"width": "2px",
+			"style": "solid",
+			"radius": "2px"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "500",
+			"textTransform": "uppercase"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"bottom": "0",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{display:inline-block;transform:rotate(-2deg)}"
+	}
+}

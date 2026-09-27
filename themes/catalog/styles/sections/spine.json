@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Spine",
+	"slug": "spine",
+	"blockTypes": [
+		"core/column",
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "500"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{background-image:linear-gradient(var(--wp--preset--color--accent) 0 0),linear-gradient(var(--wp--preset--color--accent-3) 0 0),linear-gradient(var(--wp--preset--color--accent-2) 0 0);background-size:100% 10px;background-repeat:no-repeat;background-position:0 0,0 10px,0 20px;padding-top:calc(30px + var(--wp--preset--spacing--30))!important}& .wp-block-post-title,& h2,& h3{font-size:var(--wp--preset--font-size--large)!important;letter-spacing:0;line-height:1.1;margin:0}& > .wp-block-group{gap:var(--wp--preset--spacing--30)}"
+	}
+}
