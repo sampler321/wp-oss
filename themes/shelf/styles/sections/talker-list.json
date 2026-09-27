@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Shelf-talker list",
+	"slug": "talker-list",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "&{gap:var(--wp--preset--spacing--50)!important}&>li{background:var(--wp--preset--color--accent-2);border:3px solid var(--wp--preset--color--contrast);box-shadow:6px 6px 0 0 var(--wp--preset--color--contrast);padding:var(--wp--preset--spacing--40);transform:rotate(-1.2deg)}&>li:nth-child(even){transform:rotate(1.3deg)}&>li:nth-child(3n){background:var(--wp--preset--color--base)}"
+	}
+}

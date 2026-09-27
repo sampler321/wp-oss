@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Children's corner",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFF5CC",
+					"name": "Custard"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#C2185B",
+					"name": "Bubblegum"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8BD3F7",
+					"name": "Sky"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFE27A",
+					"name": "Yolk"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A4A4A",
+					"name": "Pencil"
+				}
+			]
+		}
+	}
+}

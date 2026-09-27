@@ -1,0 +1,258 @@
+{
+ "site": {
+  "title": "De Inktvis",
+  "tagline": "Independent bookshop, Nieuwe Binnenweg, Rotterdam"
+ },
+ "categories": [
+  {
+   "slug": "picks",
+   "name": "Staff picks"
+  },
+  {
+   "slug": "events",
+   "name": "Events"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "picks",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "picks",
+   "title": "Staff picks",
+   "content": ""
+  },
+  {
+   "slug": "subscriptions",
+   "title": "Book a month",
+   "pattern": "shelf/subscriptions-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "pattern": "shelf/events-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "sell-us-your-books",
+   "title": "Sell us your books",
+   "pattern": "shelf/sell-page"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "shelf/visit-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About the shop",
+   "pattern": "shelf/about-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The Long Beard of Doctor Visser",
+   "slug": "long-beard-doctor-visser",
+   "category": "picks",
+   "tags": [
+    "Fiction",
+    "Rotterdam"
+   ],
+   "image": "portrait.jpg",
+   "excerpt": "A retired doctor in Delfshaven decides to grow the longest beard in the country, and his whole street gets involved.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Anna Kruit, €24.95, hardback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A retired doctor in Delfshaven decides to grow the longest beard in the country, and his whole street gets involved. It is very funny for two hundred pages and then it isn't. I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "The Squid Who Couldn't Swim",
+   "slug": "squid-who-couldnt-swim",
+   "category": "picks",
+   "tags": [
+    "Kids",
+    "Picture books"
+   ],
+   "image": "kraken.jpg",
+   "excerpt": "I read this to my nephew four times in one weekend.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Lotte van Dijk, €16.95, ages 4 to 8</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I read this to my nephew four times in one weekend. The jellyfish choir spread is the best page I've seen this year. Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "The Owl Year",
+   "slug": "the-owl-year",
+   "category": "picks",
+   "tags": [
+    "Nature",
+    "Non-fiction"
+   ],
+   "image": "owl.jpg",
+   "excerpt": "Twelve months watching one pair of owls in a Norfolk barn.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Freya Marsh, €19.99, paperback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Twelve months watching one pair of owls in a Norfolk barn. I cried at April. It's that kind of book, but it earns it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">It's that kind of book, but it earns it.</p>\n<!-- /wp:paragraph --><cite>Noor, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Fox Weather",
+   "slug": "fox-weather",
+   "category": "picks",
+   "tags": [
+    "Fiction",
+    "Short stories"
+   ],
+   "image": "fox.jpg",
+   "excerpt": "Short stories, all set on the same rainy night in one town.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Tomás Reyes, €18.50, paperback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Short stories, all set on the same rainy night in one town. The fox is only in one of them. That annoyed me and then it didn't.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">That annoyed me and then it didn't.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Paper Harbour",
+   "slug": "paper-harbour",
+   "category": "picks",
+   "tags": [
+    "Fiction",
+    "Rotterdam",
+    "Signed"
+   ],
+   "image": "rotterdam.jpg",
+   "excerpt": "The Rotterdam docks in 1940, told by a crane operator.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Joris Pieters, €22.50, hardback, signed</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The Rotterdam docks in 1940, told by a crane operator. Slow for fifty pages, then you won't put it down. This is the reading group book for November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">This is the reading group book for November.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "The Crocodile in the Cellar",
+   "slug": "crocodile-in-the-cellar",
+   "category": "picks",
+   "tags": [
+    "Crime"
+   ],
+   "image": "crocodile.jpg",
+   "excerpt": "A crime novel set in a Leiden museum after closing time.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Mei Tanaka, €14.99, paperback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A crime novel set in a Leiden museum after closing time. The crocodile is stuffed. The detective is not as clever as she thinks. Neither was I.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Neither was I.</p>\n<!-- /wp:paragraph --><cite>Wessel, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Pim Reads: A Cat's Guide to Bookshops",
+   "slug": "pim-reads",
+   "category": "picks",
+   "tags": [
+    "Kids",
+    "Zines"
+   ],
+   "image": "cat.jpg",
+   "excerpt": "Our own zine, about our own cat.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Written by Samira, drawn by Kees Bos, €12.50</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Our own zine, about our own cat. Sixteen pages, risograph printed in red. All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Anna Kruit in conversation, 16 October",
+   "slug": "anna-kruit-event",
+   "category": "events",
+   "tags": [
+    "Events"
+   ],
+   "image": "portrait.jpg",
+   "excerpt": "Anna talks to Bram about beards, Delfshaven and writing a funny book about grief.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Thursday 16 October, 20:00, €7.50 or free with the book</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Anna talks to Bram about beards, Delfshaven and writing a funny book about grief. Signing after. Chairs for 40. Book at the till or by email.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Book at the till or by email.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+   "template": "single-event"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Picks",
+   "url": "/picks/"
+  },
+  {
+   "label": "Book a month",
+   "url": "/subscriptions/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ],
+ "currency": "EUR",
+ "products": [
+  {
+   "name": "The Long Beard of Doctor Visser, Anna Kruit (signed hardback)",
+   "price": "24.95",
+   "image": "portrait.jpg",
+   "category": "Fiction",
+   "sku": "INK-9789000001",
+   "stock": 11,
+   "short": "Signed at the shop. Hardback, 312 pages."
+  },
+  {
+   "name": "Paper Harbour, Joris Pieters (hardback)",
+   "price": "22.50",
+   "image": "rotterdam.jpg",
+   "category": "Fiction",
+   "sku": "INK-9789000002",
+   "stock": 6,
+   "short": "Novel of the Rotterdam docks, 1940. November's reading group book."
+  },
+  {
+   "name": "The Squid Who Couldn't Swim, Lotte van Dijk",
+   "price": "16.95",
+   "image": "kraken.jpg",
+   "category": "Kids",
+   "sku": "INK-9789000003",
+   "stock": 14,
+   "short": "Picture book, ages 4 to 8. Hardback, 32 pages."
+  },
+  {
+   "name": "The Owl Year, Freya Marsh (paperback)",
+   "price": "19.99",
+   "image": "owl.jpg",
+   "category": "Non-fiction",
+   "sku": "INK-9789000004",
+   "stock": 9,
+   "short": "A year watching one pair of barn owls."
+  },
+  {
+   "name": "Fox Weather, Tomás Reyes (paperback)",
+   "price": "18.50",
+   "image": "fox.jpg",
+   "category": "Fiction",
+   "sku": "INK-9789000005",
+   "stock": 0,
+   "short": "Out of stock. We can order it by tomorrow."
+  },
+  {
+   "name": "Book a month, 3 months (paperback)",
+   "price": "60.00",
+   "image": "bookstack.jpg",
+   "category": "Subscriptions",
+   "sku": "INK-SUB-3P",
+   "stock": 50,
+   "short": "Three hand-picked books, one a month, posted in the Netherlands."
+  },
+  {
+   "name": "Pim Reads (zine)",
+   "price": "12.50",
+   "image": "cat.jpg",
+   "category": "Kids",
+   "sku": "INK-ZINE-01",
+   "stock": 30,
+   "short": "Our own risograph zine about the shop cat."
+  },
+  {
+   "name": "Gift voucher, €25",
+   "price": "25.00",
+   "image": "tulips.jpg",
+   "category": "Vouchers",
+   "sku": "INK-GV-25",
+   "stock": 100,
+   "short": "Printed on a card, or sent by email. Never expires."
+  }
+ ]
+}

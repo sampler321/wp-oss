@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Shelf-talker card",
+	"slug": "talker",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent-2",
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"shadow": "var:preset|shadow|print",
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"css": "&{transform:rotate(-1.2deg)}&:nth-child(even){transform:rotate(1.4deg)}"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stacks",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#7A1E2C",
+					"name": "Bookcloth maroon"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F4E3B5",
+					"name": "Bookplate"
+				},
+				{
+					"slug": "surface",
+					"color": "#F5F1EA",
+					"name": "Endpaper"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A4A4A",
+					"name": "Pencil"
+				}
+			]
+		}
+	}
+}

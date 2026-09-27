@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Logo badge",
+	"slug": "logo-badge",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"border": {
+			"radius": "50%"
+		},
+		"css": "&{aspect-ratio:1;width:6.2rem;display:flex!important;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-8deg);gap:0!important}& p{margin:0}"
+	}
+}

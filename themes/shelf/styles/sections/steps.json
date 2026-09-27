@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Big steps",
+	"slug": "steps",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:var(--wp--preset--spacing--50)}&>li{counter-increment:s;border-top:3px solid currentColor;padding-top:.8rem}&>li::before{content:counter(s);display:block;font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1;color:var(--wp--preset--color--accent)}"
+	}
+}
