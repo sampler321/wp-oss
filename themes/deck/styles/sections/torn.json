@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Torn edge (bottom)",
+	"slug": "torn",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"css": "&{clip-path:polygon(0 0,100% 0,100.00% calc(100% - 9.7px),97.50% calc(100% - 2.2px),95.00% calc(100% - 1.4px),92.50% calc(100% - 1.0px),90.00% calc(100% - 8.8px),87.50% calc(100% - 9.4px),85.00% calc(100% - 4.4px),82.50% calc(100% - 8.0px),80.00% calc(100% - 3.9px),77.50% calc(100% - 9.2px),75.00% calc(100% - 7.1px),72.50% calc(100% - 8.8px),70.00% calc(100% - 7.2px),67.50% calc(100% - 4.7px),65.00% calc(100% - 8.7px),62.50% calc(100% - 0.3px),60.00% calc(100% - 3.0px),57.50% calc(100% - 5.9px),55.00% calc(100% - 7.6px),52.50% calc(100% - 0.6px),50.00% calc(100% - 6.7px),47.50% calc(100% - 7.4px),45.00% calc(100% - 5.2px),42.50% calc(100% - 8.7px),40.00% calc(100% - 6.3px),37.50% calc(100% - 1.5px),35.00% calc(100% - 6.4px),32.50% calc(100% - 4.8px),30.00% calc(100% - 8.4px),27.50% calc(100% - 4.7px),25.00% calc(100% - 10.0px),22.50% calc(100% - 2.3px),20.00% calc(100% - 2.6px),17.50% calc(100% - 8.4px),15.00% calc(100% - 0.1px),12.50% calc(100% - 0.7px),10.00% calc(100% - 6.3px),7.50% calc(100% - 6.0px),5.00% calc(100% - 3.7px),2.50% calc(100% - 5.4px),0.00% calc(100% - 2.4px));padding-bottom:calc(var(--wp--preset--spacing--70) + 12px)!important}"
+	}
+}

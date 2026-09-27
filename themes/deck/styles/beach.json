@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Beach",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EFE3C6",
+					"name": "Sand"
+				},
+				{
+					"slug": "contrast",
+					"color": "#12302E",
+					"name": "Deep sea"
+				},
+				{
+					"slug": "accent",
+					"color": "#0B7A66",
+					"name": "Sea green"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFF8E8",
+					"name": "Foam"
+				},
+				{
+					"slug": "line",
+					"color": "#12302E",
+					"name": "Deep sea line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F5652",
+					"name": "Wet sand"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF8A3D",
+					"name": "Sunset orange"
+				}
+			]
+		}
+	}
+}

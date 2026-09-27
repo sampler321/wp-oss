@@ -1,0 +1,235 @@
+{
+ "site": {
+  "title": "Coping",
+  "tagline": "Skate and surf, Gloucester Road, Brighton"
+ },
+ "categories": [
+  {
+   "slug": "videos",
+   "name": "Videos"
+  },
+  {
+   "slug": "shop-news",
+   "name": "Shop news"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "videos",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "videos",
+   "title": "Videos",
+   "content": ""
+  },
+  {
+   "slug": "truck-size-guide",
+   "title": "Truck size guide",
+   "pattern": "deck/page-truck-guide",
+   "template": "page-wide"
+  },
+  {
+   "slug": "team",
+   "title": "Team",
+   "pattern": "deck/page-team",
+   "template": "page-wide"
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "pattern": "deck/page-events",
+   "template": "page-wide"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "deck/page-visit",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Nia Campbell, Brighton part",
+   "category": "videos",
+   "image": "kickflip.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four minutes, filmed over one summer between the Level and the seafront. Filmed and edited by Jonny Kerr. Premiere night at the shop on 23 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><a href=\"https://www.youtube.com/\">Watch it on YouTube</a></p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Jonny Kerr at Hove Lagoon, raw files",
+   "category": "videos",
+   "image": "venice-grind.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Couch session with Aisha",
+   "category": "videos",
+   "image": "couch-ollie.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aisha filmed a whole part in her flat during the rain in March. The couch did not survive.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Our own decks are back from the press",
+   "category": "shop-news",
+   "image": "deck-wall.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Two widths, 8.0 and 8.5, pressed in Portugal from seven-ply maple. Free grip, fitted at the counter.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Pushing to Shoreham and back",
+   "category": "videos",
+   "image": "road.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Winter surf days, what we rent and when",
+   "category": "shop-news",
+   "image": "surf.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Board rental from the seafront hut runs until the end of October, then by appointment. Winter wetsuits are 5/4, and we have eight to lend.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Decks",
+   "url": "/product-category/decks/"
+  },
+  {
+   "label": "Truck guide",
+   "url": "/truck-size-guide/"
+  },
+  {
+   "label": "Team",
+   "url": "/team/"
+  },
+  {
+   "label": "Videos",
+   "url": "/videos/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Coping shop deck, 8.0in, free grip",
+   "price": "55",
+   "image": "deck-wall.jpg",
+   "category": "Decks",
+   "sku": "CPG-200",
+   "stock": 12,
+   "short": "Our own deck. 8.0in wide, 31.6in long, 14.25in wheelbase. Free black grip, fitted if you ask.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Our own deck. 8.0in wide, 31.6in long, 14.25in wheelbase. Free black grip, fitted if you ask.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Width</td><td>8.0in</td></tr><tr><td>Length</td><td>31.6in</td></tr><tr><td>Wheelbase</td><td>14.25in</td></tr><tr><td>Concave</td><td>Medium</td></tr><tr><td>Grip</td><td>Free, fitted in store</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Coping shop deck, 8.5in, free grip",
+   "price": "55",
+   "image": "kickflip.jpg",
+   "category": "Decks",
+   "sku": "CPG-201",
+   "stock": 8,
+   "short": "8.5in, for bowls and bigger feet. Free grip.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">8.5in, for bowls and bigger feet. Free grip.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Width</td><td>8.5in</td></tr><tr><td>Length</td><td>32.1in</td></tr><tr><td>Wheelbase</td><td>14.5in</td></tr><tr><td>Concave</td><td>Medium</td></tr><tr><td>Grip</td><td>Free, fitted in store</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Beginner complete, 7.75in, green",
+   "price": "85",
+   "image": "complete-green.jpg",
+   "category": "Completes",
+   "sku": "CPG-202",
+   "stock": 6,
+   "short": "Set up and ready. Good for riders from about age 10 and UK shoe size 4 up.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Set up and ready. Good for riders from about age 10 and UK shoe size 4 up.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Deck</td><td>7.75in maple</td></tr><tr><td>Trucks</td><td>129mm</td></tr><tr><td>Wheels</td><td>52mm, 99a</td></tr><tr><td>Bearings</td><td>Standard, pre-greased</td></tr><tr><td>Suits</td><td>Age 10 and up</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Street complete, 8.0in, black",
+   "price": "110",
+   "image": "complete-black.jpg",
+   "category": "Completes",
+   "sku": "CPG-203",
+   "stock": 5,
+   "short": "A proper street setup, assembled by us before it leaves the shop.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">A proper street setup, assembled by us before it leaves the shop.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Deck</td><td>8.0in shop deck</td></tr><tr><td>Trucks</td><td>139mm</td></tr><tr><td>Wheels</td><td>53mm, 101a</td></tr><tr><td>Bearings</td><td>Swiss-style</td></tr><tr><td>Hardware</td><td>7/8in</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Kids complete, 7.25in",
+   "price": "65",
+   "image": "complete-green.jpg",
+   "category": "Completes",
+   "sku": "CPG-204",
+   "stock": 4,
+   "short": "Shorter and narrower for small feet. Ages 5 to 9.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Shorter and narrower for small feet. Ages 5 to 9.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Deck</td><td>7.25in, 28in long</td></tr><tr><td>Trucks</td><td>114mm</td></tr><tr><td>Wheels</td><td>50mm, 95a</td></tr><tr><td>Suits</td><td>Ages 5 to 9</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Undercarriage kit, 139 trucks and 53mm wheels",
+   "price": "95",
+   "image": "rail.jpg",
+   "category": "Undercarriage",
+   "sku": "CPG-205",
+   "stock": 10,
+   "short": "Everything under an 8.0 to 8.25in deck: trucks, wheels, bearings, bolts. We fit it free.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Everything under an 8.0 to 8.25in deck: trucks, wheels, bearings, bolts. We fit it free.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Trucks</td><td>139mm, fits 8.0 to 8.25in</td></tr><tr><td>Wheels</td><td>53mm, 99a</td></tr><tr><td>Bearings</td><td>8 plus spacers</td></tr><tr><td>Bolts</td><td>7/8in Allen</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Undercarriage kit, 149 trucks and 56mm wheels",
+   "price": "105",
+   "image": "bowl.jpg",
+   "category": "Undercarriage",
+   "sku": "CPG-206",
+   "stock": 7,
+   "short": "For 8.5in decks and transition. Softer, bigger wheels for rough concrete.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">For 8.5in decks and transition. Softer, bigger wheels for rough concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Trucks</td><td>149mm, fits 8.4 to 8.6in</td></tr><tr><td>Wheels</td><td>56mm, 95a</td></tr><tr><td>Bearings</td><td>8 plus spacers</td></tr><tr><td>Bolts</td><td>1in Allen</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Cruiser longboard, 36in",
+   "price": "120",
+   "image": "carry.jpg",
+   "category": "Completes",
+   "sku": "CPG-207",
+   "stock": 3,
+   "short": "For getting along the seafront. Soft wheels, loose trucks.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">For getting along the seafront. Soft wheels, loose trucks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Length</td><td>36in</td></tr><tr><td>Wheels</td><td>65mm, 78a</td></tr><tr><td>Trucks</td><td>180mm reverse kingpin</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Mid-length surfboard, 7ft 2in",
+   "price": "420",
+   "image": "surfboards.jpg",
+   "category": "Surf",
+   "sku": "CPG-208",
+   "stock": 2,
+   "short": "Easy paddling for Brighton's small days. Fins and leash included.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Easy paddling for Brighton's small days. Fins and leash included.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Length</td><td>7ft 2in</td></tr><tr><td>Volume</td><td>48 litres</td></tr><tr><td>Fins</td><td>2+1 set included</td></tr><tr><td>Leash</td><td>Included</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Surf wax, pack of 3",
+   "price": "7.50",
+   "image": "surf.jpg",
+   "category": "Surf",
+   "sku": "CPG-209",
+   "stock": 40,
+   "short": "Cool water wax for the Channel, April to November.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Cool water wax for the Channel, April to November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Temperature</td><td>Cool, 14 to 19C</td></tr><tr><td>Count</td><td>3 bars</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Coping flame tee",
+   "price": "25",
+   "image": "couch-ollie.jpg",
+   "category": "Clothing",
+   "sku": "CPG-210",
+   "stock": 30,
+   "short": "Heavy black cotton, red flame print front and back, printed in Hove.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Heavy black cotton, red flame print front and back, printed in Hove.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Fabric</td><td>240gsm cotton</td></tr><tr><td>Fit</td><td>Boxy, size down if between</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ]
+}

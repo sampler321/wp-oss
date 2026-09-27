@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Halftone photocopy",
+	"slug": "halftone",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image"
+	],
+	"styles": {
+		"css": "&{position:relative;overflow:hidden}& img{filter:grayscale(1) contrast(1.6) brightness(1.05)}&::after{content:\"\";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,rgba(10,10,10,.42) 32%,transparent 36%) 0 0/5px 5px;mix-blend-mode:multiply}"
+	}
+}

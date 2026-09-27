@@ -1,0 +1,65 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "git:directory",
+        "url": "https://github.com/sampler321/wp-oss",
+        "ref": "main",
+        "path": "themes/deck"
+      },
+      "options": {
+        "activate": true,
+        "targetFolderName": "deck"
+      }
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/demo-data"
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/demo-lib"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/demo-data/content.json",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/sampler321/wp-oss/main/demos/deck/content.json"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/demo-lib/demo-builder.php",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/sampler321/wp-oss/main/tools/lib/demo-builder.php"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/wp-content/demo-lib/demo-builder.php'; wposs_build_demo('/wordpress/wp-content/demo-data/content.json');"
+    }
+  ],
+  "login": true
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Masthead",
+	"slug": "masthead",
+	"blockTypes": [
+		"core/site-title",
+		"core/heading"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"textTransform": "uppercase",
+			"fontSize": "var:preset|font-size|display",
+			"lineHeight": "0.78",
+			"letterSpacing": "-0.01em"
+		},
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"css": "&{margin:0!important}& a{color:var(--wp--preset--color--accent)!important;-webkit-text-stroke:3px var(--wp--preset--color--contrast);paint-order:stroke fill}"
+	}
+}

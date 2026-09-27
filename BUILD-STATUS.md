@@ -38,9 +38,9 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
-| 33 | thrift | 062 Vintage clothing | as researched | failed test |  |
+| 33 | thrift | 062 Vintage clothing | as researched | tested |  |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
-| 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | tested |  |
+| 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
 | 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |

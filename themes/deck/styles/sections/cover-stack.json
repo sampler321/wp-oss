@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Magazine cover stack",
+	"slug": "cover-stack",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|surface"
+		},
+		"css": "&{display:grid!important;grid-template:1fr/1fr;overflow:hidden}& > *{grid-area:1/1;margin:0!important;max-width:none!important}& > .wp-block-image img{width:100%;height:min(92vh,62rem);min-height:36rem;object-fit:cover;object-position:50% 40%}& > .wp-block-group{z-index:1;display:flex;flex-direction:column;justify-content:space-between;padding:var(--wp--preset--spacing--40)}& p a{color:var(--wp--preset--color--accent-2);background:var(--wp--preset--color--contrast);padding:0 .25em;text-decoration:none;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:1.5}"
+	}
+}

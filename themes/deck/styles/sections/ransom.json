@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ransom note",
+	"slug": "ransom",
+	"blockTypes": [
+		"core/heading",
+		"core/paragraph",
+		"core/site-title"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"textTransform": "uppercase",
+			"lineHeight": "1.12"
+		},
+		"css": "& mark,& strong,& em{display:inline-block;padding:.02em .12em;margin:0 .02em;font-style:normal;line-height:1}& mark{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base);font-family:var(--wp--preset--font-family--body);font-weight:900;font-style:italic;text-transform:lowercase;transform:rotate(-2.5deg)}& strong{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--surface);font-weight:400;transform:rotate(1.8deg)}& em{background:var(--wp--preset--color--surface);color:var(--wp--preset--color--contrast);border:3px solid var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--body);font-weight:400;transform:rotate(-1deg)}& mark:nth-of-type(2n){background:var(--wp--preset--color--accent-2);color:var(--wp--preset--color--contrast);transform:rotate(3deg);text-transform:uppercase;font-style:normal}& strong:nth-of-type(2n){background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--accent-2);transform:rotate(-3deg)}"
+	}
+}

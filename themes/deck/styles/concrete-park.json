@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Concrete park",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#C9C8C3",
+					"name": "Concrete"
+				},
+				{
+					"slug": "contrast",
+					"color": "#121212",
+					"name": "Tarmac"
+				},
+				{
+					"slug": "accent",
+					"color": "#B23B00",
+					"name": "Cone orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6E5E1",
+					"name": "Fresh concrete"
+				},
+				{
+					"slug": "line",
+					"color": "#121212",
+					"name": "Coping black"
+				},
+				{
+					"slug": "muted",
+					"color": "#3A3A38",
+					"name": "Wet concrete"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF6A00",
+					"name": "Cone"
+				}
+			]
+		}
+	}
+}

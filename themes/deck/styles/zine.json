@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Zine",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E4E2DC",
+					"name": "Photocopy grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0A0A0A",
+					"name": "Black ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#0A0A0A",
+					"name": "Black ink"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "White"
+				},
+				{
+					"slug": "line",
+					"color": "#0A0A0A",
+					"name": "Black line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3E3E3E",
+					"name": "Toner grey"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FFFFFF",
+					"name": "White"
+				}
+			]
+		}
+	}
+}

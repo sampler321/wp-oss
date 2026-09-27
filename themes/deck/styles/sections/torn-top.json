@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Torn edge (top)",
+	"slug": "torn-top",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"css": "&{clip-path:polygon(100.00% 6.2px,97.50% 7.4px,95.00% 8.0px,92.50% 9.4px,90.00% 7.4px,87.50% 9.2px,85.00% 0.3px,82.50% 4.7px,80.00% 9.4px,77.50% 6.5px,75.00% 9.0px,72.50% 1.1px,70.00% 4.7px,67.50% 2.5px,65.00% 5.4px,62.50% 5.7px,60.00% 0.1px,57.50% 2.2px,55.00% 2.8px,52.50% 9.2px,50.00% 7.7px,47.50% 1.6px,45.00% 8.0px,42.50% 1.4px,40.00% 6.2px,37.50% 1.3px,35.00% 0.0px,32.50% 8.7px,30.00% 2.1px,27.50% 2.2px,25.00% 9.8px,22.50% 8.7px,20.00% 2.9px,17.50% 9.6px,15.00% 5.4px,12.50% 6.8px,10.00% 2.0px,7.50% 9.4px,5.00% 6.9px,2.50% 9.7px,0.00% 8.9px,0 100%,100% 100%);padding-top:calc(var(--wp--preset--spacing--70) + 12px)!important}"
+	}
+}
