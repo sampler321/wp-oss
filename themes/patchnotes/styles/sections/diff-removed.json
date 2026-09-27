@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Changelog: removed",
+	"slug": "diff-removed",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding-left:0!important}& li{position:relative;padding:.35rem 0 .35rem 1.6rem;border-bottom:1px solid var(--wp--preset--color--line)}& li::before{content:\"\\2212\";position:absolute;left:.2rem;top:.3rem;font-weight:800;color:var(--wp--preset--color--accent-2)}"
+	}
+}

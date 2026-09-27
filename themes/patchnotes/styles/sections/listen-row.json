@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Listen links",
+	"slug": "listen-row",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"fontWeight": "600"
+		},
+		"css": "&{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem}"
+	}
+}

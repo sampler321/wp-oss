@@ -1,0 +1,43 @@
+<?php
+/**
+ * Title: Release log (inherits the page query)
+ * Slug: patchnotes/release-log-archive
+ * Categories: posts,query
+ * Inserter: no
+ */
+?>
+<!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template -->
+<!-- wp:group {"className":"is-style-release-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-release-row"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"26%"} -->
+<div class="wp-block-column" style="flex-basis:26%"><!-- wp:post-terms {"term":"post_tag","style":{"typography":{"fontWeight":"800"}}} /-->
+
+<!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-date {"format":"j M Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"74%"} -->
+<div class="wp-block-column" style="flex-basis:74%"><!-- wp:post-title {"level":3,"isLink":true,"fontSize":"x-large"} /-->
+
+<!-- wp:post-excerpt {"moreText":"","excerptLength":30} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Nothing matches that yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->

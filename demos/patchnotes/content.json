@@ -1,0 +1,241 @@
+{
+ "site": {
+  "title": "Minor Version",
+  "tagline": "A weekly podcast about software and the people who keep it running"
+ },
+ "categories": [
+  {
+   "slug": "on-call",
+   "name": "On-call"
+  },
+  {
+   "slug": "incidents",
+   "name": "Incidents"
+  },
+  {
+   "slug": "open-source",
+   "name": "Open source"
+  },
+  {
+   "slug": "maintenance",
+   "name": "Maintenance"
+  },
+  {
+   "slug": "accessibility",
+   "name": "Accessibility"
+  },
+  {
+   "slug": "infrastructure",
+   "name": "Infrastructure"
+  },
+  {
+   "slug": "hardware",
+   "name": "Hardware"
+  },
+  {
+   "slug": "drivers",
+   "name": "Drivers"
+  },
+  {
+   "slug": "history",
+   "name": "History"
+  },
+  {
+   "slug": "special",
+   "name": "Special"
+  },
+  {
+   "slug": "frontend",
+   "name": "Frontend"
+  },
+  {
+   "slug": "ux",
+   "name": "UX"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "episodes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "episodes",
+   "title": "Episodes",
+   "content": ""
+  },
+  {
+   "slug": "guests",
+   "title": "Guests",
+   "pattern": "patchnotes/guests-page"
+  },
+  {
+   "slug": "changelog",
+   "title": "Show changelog",
+   "pattern": "patchnotes/changelog-page"
+  },
+  {
+   "slug": "support",
+   "title": "Support and sponsors",
+   "pattern": "patchnotes/support-page"
+  },
+  {
+   "slug": "subscribe",
+   "title": "Subscribe",
+   "pattern": "patchnotes/subscribe-page"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "patchnotes/about-page"
+  },
+  {
+   "slug": "transcripts",
+   "title": "Transcripts",
+   "pattern": "patchnotes/transcripts-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The pager went off at 3am",
+   "slug": "the-pager-went-off-at-3am",
+   "category": [
+    "on-call",
+    "incidents"
+   ],
+   "tags": [
+    "Episode 88"
+   ],
+   "image": "racks.jpg",
+   "excerpt": "Sanne Vermeulen has been on call for eleven years. She explains the incident review template she wrote after a payment queue ate 40,000 transfers.",
+   "date": "2026-09-24",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “Grace Hopper”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=0\">0:00</a> Intro, and what broke this week</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=262\">4:22</a> Sanne’s first pager, 2014</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=905\">15:05</a> The 40,000 transfers</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=1690\">28:10</a> Writing the review template</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=2610\">43:30</a> Rotas that don’t burn people out</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=3240\">54:00</a> Picks</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Sanne Vermeulen on writing an incident review nobody dreads.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://sre.google/sre-book/postmortem-culture/\">The postmortem chapter of the Google SRE book</a>.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Changed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-changed\"} -->\n<ul class=\"wp-block-list is-style-diff-changed\"><!-- wp:list-item -->\n<li>Follow-up to episode 85: Jonas moved the last two services off the cloud. The bill went from €1,140 to €310 a month.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Fixed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-fixed\"} -->\n<ul class=\"wp-block-list is-style-diff-fixed\"><!-- wp:list-item -->\n<li>In episode 87 we said the PDF library had 14 maintainers. It has four. The other ten are bots.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Removed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-removed\"} -->\n<ul class=\"wp-block-list is-style-diff-removed\"><!-- wp:list-item -->\n<li>Twelve minutes of Lieke’s microphone falling off the desk.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Sanne Vermeulen</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Leads on-call for a payments company in Antwerp. Keeps a paper notebook for every incident since 2014.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Lieke</strong> Sanne, what did you have for dinner the night of the 40,000 transfers?</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Sanne</strong> Nothing. That’s the point. That’s why it’s the first question.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Machine transcript, corrected by Lieke.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Who maintains the PDF library?",
+   "slug": "who-maintains-the-pdf-library",
+   "category": [
+    "open-source",
+    "maintenance"
+   ],
+   "tags": [
+    "Episode 87"
+   ],
+   "image": "cables.jpg",
+   "excerpt": "Tomás Ferreira maintains a library on most phones in Europe. He is paid for about six hours a month of it. We talk money, burnout and saying no.",
+   "date": "2026-09-17",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “The ENIAC Programmers”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=340\">5:40</a> How Tomás became a maintainer by accident</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1320\">22:00</a> The six paid hours</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2280\">38:00</a> Saying no to a bank</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2900\">48:20</a> Picks</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Tomás on the week a security report arrived during his wedding.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://opencollective.com/\">Open Collective</a>, which pays his six hours.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Fixed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-fixed\"} -->\n<ul class=\"wp-block-list is-style-diff-fixed\"><!-- wp:list-item -->\n<li>Episode 86: the WCAG version is 2.2, not 2.1. Hana wrote in.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Tomás Ferreira</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Maintains an image-decoding library. Lives in Porto. Answers issues on Tuesdays only.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Accessibility audits that get fixed",
+   "slug": "accessibility-audits-that-get-fixed",
+   "category": [
+    "accessibility"
+   ],
+   "tags": [
+    "Episode 86"
+   ],
+   "image": "keyboard.jpg",
+   "excerpt": "Hana Novák has filed around 3,000 accessibility bugs. Most were never fixed. She explains how she writes the ones that are.",
+   "date": "2026-09-10",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “Ada Lovelace”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=410\">6:50</a> Hana’s first audit</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=1500\">25:00</a> The bug report template</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=2400\">40:00</a> Keyboard-only Thursdays</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Hana’s bug report template, with her permission.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Kwame’s rule: every pull request gets tested with the keyboard only.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Changed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-changed\"} -->\n<ul class=\"wp-block-list is-style-diff-changed\"><!-- wp:list-item -->\n<li>We now publish transcripts before the episode, not after.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Hana Novák</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Accessibility auditor in Brno. Screen reader user since 2009.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Leaving the cloud, a bit",
+   "slug": "leaving-the-cloud-a-bit",
+   "category": [
+    "infrastructure"
+   ],
+   "tags": [
+    "Episode 85"
+   ],
+   "image": "hero.jpg",
+   "excerpt": "Jonas Peeters moved a newspaper’s websites back onto its own servers. He is not evangelical about it. Here are the numbers.",
+   "date": "2026-09-03",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “Grace Hopper”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=280\">4:40</a> The €1,140 bill</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=1100\">18:20</a> What stayed in the cloud and why</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=2200\">36:40</a> The night the switch died</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Jonas’s cost spreadsheet, month by month.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Removed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-removed\"} -->\n<ul class=\"wp-block-list is-style-diff-removed\"><!-- wp:list-item -->\n<li>The part where Kwame explains Kubernetes. He was wrong and he knows it.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Jonas Peeters</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Runs infrastructure for a Ghent newspaper. Has a rack in a basement near Sint-Pieters.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Printers",
+   "slug": "printers",
+   "category": [
+    "hardware",
+    "drivers"
+   ],
+   "tags": [
+    "Episode 84"
+   ],
+   "image": "terminal.jpg",
+   "excerpt": "Nadia Haddad writes printer drivers. Everyone hates printers. Nadia explains why they are hard, and why that is mostly the paper’s fault.",
+   "date": "2026-08-27",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “The ENIAC Programmers”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=300\">5:00</a> What a driver actually does</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1400\">23:20</a> Paper is a physical object</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2500\">41:40</a> Picks</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Nadia’s list of printers she would buy with her own money. It has two entries.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Nadia Haddad</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Driver engineer in Liège. Has fixed a jam with a butter knife in front of a CEO.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "The ENIAC six",
+   "slug": "the-eniac-six",
+   "category": [
+    "history",
+    "special"
+   ],
+   "tags": [
+    "Episode 83"
+   ],
+   "image": "eniac.jpg",
+   "excerpt": "A history special. Six women programmed the first general-purpose electronic computer in 1945 and were left out of the photos for decades.",
+   "date": "2026-08-20",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “The ENIAC Programmers”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=200\">3:20</a> Philadelphia, 1945</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1200\">20:00</a> Programming by plugging cables</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2100\">35:00</a> The 1946 demonstration</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/15/The_ENIAC_Programmers_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2800\">46:40</a> What we got wrong in our first draft</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li><a href=\"https://en.wikipedia.org/wiki/ENIAC\">ENIAC on Wikipedia</a>, with the names: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas and Ruth Lichterman.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Fixed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-fixed\"} -->\n<ul class=\"wp-block-list is-style-diff-fixed\"><!-- wp:list-item -->\n<li>The first cut said ENIAC was the first computer. It was the first general-purpose electronic one. Kwame caught it.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Soldering for software people",
+   "slug": "soldering-for-software-people",
+   "category": [
+    "hardware"
+   ],
+   "tags": [
+    "Episode 82"
+   ],
+   "image": "solder.jpg",
+   "excerpt": "Ines Duarte teaches soldering to developers at a Lisbon hackerspace. She says the fear is the hardest part and the flux is the second.",
+   "date": "2026-08-13",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “Ada Lovelace”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=360\">6:00</a> The first joint</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=1500\">25:00</a> Kits that are worth it</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/Ada_Lovelace_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.mp3#t=2300\">38:20</a> Burns, briefly</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Added</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-added\"} -->\n<ul class=\"wp-block-list is-style-diff-added\"><!-- wp:list-item -->\n<li>Ines’s starter kit list, all under €60.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-panel\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-panel\"><!-- wp:paragraph {\"className\":\"has-muted-color has-text-color has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"600\"}},\"textColor\":\"muted\",\"fontSize\":\"x-small\"} -->\n<p class=\"has-muted-color has-text-color has-x-small-font-size\" style=\"font-weight:600\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Ines Duarte</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Hardware engineer. Runs a Thursday soldering night in Lisbon.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Pagination is a UX problem",
+   "slug": "pagination-is-a-ux-problem",
+   "category": [
+    "frontend",
+    "ux"
+   ],
+   "tags": [
+    "Episode 81"
+   ],
+   "image": "desk.jpg",
+   "excerpt": "Just the two of us, arguing about infinite scroll, cursor pagination and the “load more” button. Kwame wins, narrowly.",
+   "date": "2026-08-06",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: “Grace Hopper”, told by Megan Smith for the White House (public domain). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=0\">0:00</a> Intro</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=420\">7:00</a> Offsets and why they lie</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=1300\">21:40</a> Load more, the button</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/f/f0/Grace_Hopper_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.oggvorbis.ogg#t=2000\">33:20</a> The footer you can never reach</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Changed</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-diff-changed\"} -->\n<ul class=\"wp-block-list is-style-diff-changed\"><!-- wp:list-item -->\n<li>Lieke changed her mind about infinite scroll, on air, at 27:40.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Episodes",
+   "url": "/episodes/"
+  },
+  {
+   "label": "Guests",
+   "url": "/guests/"
+  },
+  {
+   "label": "Show changelog",
+   "url": "/changelog/"
+  },
+  {
+   "label": "Support",
+   "url": "/support/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

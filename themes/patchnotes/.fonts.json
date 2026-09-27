@@ -1,0 +1,22 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"SUSE\", sans-serif",
+      "name": "SUSE",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "SUSE",
+          "fontStyle": "normal",
+          "fontWeight": "100 800",
+          "src": [
+            "file:./assets/fonts/suse-normal-100_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "SUSE (Google Fonts), https://github.com/google/fonts/tree/main/ofl/suse"
+  ]
+}

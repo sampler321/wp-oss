@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Graphite",
+	"slug": "graphite",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "currentColor"
+				}
+			},
+			"h6": {
+				"color": {
+					"text": "currentColor"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|base",
+					"text": "var:preset|color|contrast"
+				}
+			}
+		}
+	}
+}

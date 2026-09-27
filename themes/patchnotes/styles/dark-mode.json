@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night build",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#15181B",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#E7EAE4",
+					"name": "Graphite"
+				},
+				{
+					"slug": "accent",
+					"color": "#5BD08F",
+					"name": "Commit green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF7B6E",
+					"name": "Removal red"
+				},
+				{
+					"slug": "surface",
+					"color": "#1F2327",
+					"name": "Panel"
+				},
+				{
+					"slug": "line",
+					"color": "#3A4046",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#A7ADA6",
+					"name": "Comment"
+				},
+				{
+					"slug": "hunk",
+					"color": "#3A3520",
+					"name": "Hunk yellow"
+				},
+				{
+					"slug": "changed",
+					"color": "#86B6FF",
+					"name": "Change blue"
+				}
+			]
+		}
+	}
+}

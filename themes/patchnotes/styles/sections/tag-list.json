@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tag list",
+	"slug": "tag-list",
+	"blockTypes": [
+		"core/tag-cloud",
+		"core/categories"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}& a{display:inline-block;padding:.2rem .6rem;border:1px solid var(--wp--preset--color--line);border-radius:3px;text-decoration:none;font-size:inherit!important}& a:hover{border-color:currentColor}"
+	}
+}

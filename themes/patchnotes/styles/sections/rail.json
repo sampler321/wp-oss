@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Fact rail",
+	"slug": "rail",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"border": {
+			"top": {
+				"color": "var:preset|color|contrast",
+				"width": "2px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20"
+			}
+		},
+		"css": "& p{margin-block:.15rem}"
+	}
+}
