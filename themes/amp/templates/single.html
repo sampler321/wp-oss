@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"bottom","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-bottom"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:post-featured-image {"aspectRatio":"1"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:post-terms {"term":"category","style":{"typography":{"fontWeight":"700"}}} /-->
+
+<!-- wp:post-title {"level":1,"fontSize":"xx-large"} /-->
+
+<!-- wp:post-excerpt {"moreText":"","fontSize":"large"} /-->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/shop/">Buy it in the shop</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/live/">Tour dates</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:post-content {"align":"wide","layout":{"type":"constrained"}} /-->
+
+<!-- wp:group {"align":"wide","className":"is-style-rule-top","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-rule-top"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","label":"Older record","showTitle":true} /-->
+
+<!-- wp:post-navigation-link {"label":"Newer record","showTitle":true} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

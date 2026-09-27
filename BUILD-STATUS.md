@@ -21,7 +21,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |
-| 16 | amp | 038 Band / solo musician | duotone | tested |  |
+| 16 | amp | 038 Band / solo musician | duotone | deployed (HTTP 404) | https://wposs-amp.b-j-kapica.workers.dev |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
@@ -29,7 +29,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | deployed (HTTP 404) | https://wposs-wavelength.b-j-kapica.workers.dev |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
-| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
+| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | tested |  |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
 | 27 | local | 053 Hyperlocal news | more scientific looking | deployed | https://wposs-local.b-j-kapica.workers.dev |

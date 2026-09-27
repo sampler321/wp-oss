@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Folk (brown and cream)",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F1E6CF",
+					"name": "Cream"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3B2412",
+					"name": "Peat"
+				},
+				{
+					"slug": "accent",
+					"color": "#3B2412",
+					"name": "Peat (accent)"
+				},
+				{
+					"slug": "surface",
+					"color": "#E8DABD",
+					"name": "Cream tint"
+				},
+				{
+					"slug": "line",
+					"color": "#3B2412",
+					"name": "Rule"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "band",
+					"colors": [
+						"#3B2412",
+						"#F1E6CF"
+					],
+					"name": "Peat on Cream"
+				},
+				{
+					"slug": "band-reverse",
+					"colors": [
+						"#F1E6CF",
+						"#3B2412"
+					],
+					"name": "Peat on Cream, reversed"
+				}
+			]
+		}
+	}
+}

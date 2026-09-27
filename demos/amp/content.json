@@ -1,0 +1,191 @@
+{
+ "site": {
+  "title": "Heysham Ferry",
+  "tagline": "Loud songs about the sea, from Morecambe"
+ },
+ "categories": [
+  {
+   "slug": "albums",
+   "name": "Albums"
+  },
+  {
+   "slug": "eps",
+   "name": "EPs"
+  },
+  {
+   "slug": "singles",
+   "name": "Singles"
+  },
+  {
+   "slug": "live",
+   "name": "Live"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "records",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "records",
+   "title": "Records",
+   "content": ""
+  },
+  {
+   "slug": "live",
+   "title": "Live",
+   "pattern": "amp/page-live"
+  },
+  {
+   "slug": "epk",
+   "title": "EPK",
+   "pattern": "amp/page-epk"
+  },
+  {
+   "slug": "workshops",
+   "title": "Workshops",
+   "pattern": "amp/page-workshops"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "amp/page-contact"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Slack Water",
+   "category": "albums",
+   "image": "sleeve-3.jpg",
+   "excerpt": "Second album. LP, CD, cassette. SALT014, 14 November 2026.",
+   "pattern": "amp/release-page",
+   "date": "2026-09-20"
+  },
+  {
+   "title": "Promenade Lights",
+   "category": "singles",
+   "image": "sleeve-4.jpg",
+   "excerpt": "Single, 7 inch and download. SALT012, June 2026.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Three minutes and eleven seconds about walking home along the front after the last train has gone. B-side: a cover of a brass band march, played badly on purpose.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Promenade Lights</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Hail Smiling Morn</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->",
+   "date": "2026-06-05"
+  },
+  {
+   "title": "Live at the Platform",
+   "category": "live",
+   "image": "venue-1.jpg",
+   "excerpt": "Live album, recorded on the last night of the 2025 tour. Download only.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Fourteen songs, one broken string, recorded straight to tape by the venue's sound engineer. Pay what you like on Bandcamp. All money goes to the Platform's roof fund.</p>\n<!-- /wp:paragraph -->",
+   "date": "2025-12-10"
+  },
+  {
+   "title": "Ferry Songs",
+   "category": "eps",
+   "image": "gear-2.jpg",
+   "excerpt": "EP, cassette and download. SALT009, 2024.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four songs recorded in Ollie's mum's garage on a borrowed eight-track. The cassettes sold out in a week and we are not making more.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Heysham Heads</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bare Arms</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Low Water</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>The Ferry Doesn't Wait (demo)</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->",
+   "date": "2024-04-19"
+  },
+  {
+   "title": "Winter Gardens",
+   "category": "singles",
+   "image": "sleeve-1.jpg",
+   "excerpt": "Single, download only. SALT013, September 2026.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The second song from Slack Water, about the theatre on the front that has been closing for as long as we have been alive and is still open. Recorded live in one take.</p>\n<!-- /wp:paragraph -->",
+   "date": "2026-09-05"
+  },
+  {
+   "title": "Promenade",
+   "category": "albums",
+   "image": "town-1.jpg",
+   "excerpt": "Debut album. LP and CD. SALT004, 2021.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The first record. Nine songs about the town, the pier that isn't there any more and the one that is. Second pressing on black vinyl, still available.</p>\n<!-- /wp:paragraph -->",
+   "date": "2021-10-01"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Live",
+   "url": "/live/"
+  },
+  {
+   "label": "Records",
+   "url": "/records/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "EPK",
+   "url": "/epk/"
+  },
+  {
+   "label": "Workshops",
+   "url": "/workshops/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Slack Water, LP",
+   "price": "24",
+   "image": "sleeve-3.jpg",
+   "category": "Records",
+   "sku": "SALT014-LP",
+   "stock": 300,
+   "short": "Sea-green vinyl, gatefold, lyric sheet. Ships 14 November."
+  },
+  {
+   "name": "Slack Water, CD",
+   "price": "12",
+   "image": "sleeve-3.jpg",
+   "category": "Records",
+   "sku": "SALT014-CD",
+   "stock": 200,
+   "short": "Card wallet. Ships 14 November."
+  },
+  {
+   "name": "Slack Water, cassette",
+   "price": "8",
+   "image": "gear-2.jpg",
+   "category": "Records",
+   "sku": "SALT014-MC",
+   "stock": 150,
+   "short": "Edition of 150, with a download code."
+  },
+  {
+   "name": "Promenade, LP (second pressing)",
+   "price": "20",
+   "image": "town-1.jpg",
+   "category": "Records",
+   "sku": "SALT004-LP",
+   "stock": 40,
+   "short": "Black vinyl."
+  },
+  {
+   "name": "Tour poster, A2 screenprint",
+   "price": "15",
+   "image": "sleeve-4.jpg",
+   "category": "Posters",
+   "sku": "HF-P01",
+   "stock": 60,
+   "short": "Two colours on 170gsm paper, signed by all three of us."
+  },
+  {
+   "name": "Pier tote bag",
+   "price": "12",
+   "image": "town-1.jpg",
+   "category": "Clothes and bags",
+   "sku": "HF-T01",
+   "stock": 80,
+   "short": "Heavy cotton, printed one colour in Lancaster."
+  }
+ ]
+}

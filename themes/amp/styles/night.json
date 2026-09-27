@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night (navy and yellow)",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F4DD4B",
+					"name": "Sodium yellow"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0E1C36",
+					"name": "Navy"
+				},
+				{
+					"slug": "accent",
+					"color": "#0E1C36",
+					"name": "Navy (accent)"
+				},
+				{
+					"slug": "surface",
+					"color": "#F6E46E",
+					"name": "Sodium yellow tint"
+				},
+				{
+					"slug": "line",
+					"color": "#0E1C36",
+					"name": "Rule"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "band",
+					"colors": [
+						"#0E1C36",
+						"#F4DD4B"
+					],
+					"name": "Navy on Sodium yellow"
+				},
+				{
+					"slug": "band-reverse",
+					"colors": [
+						"#F4DD4B",
+						"#0E1C36"
+					],
+					"name": "Navy on Sodium yellow, reversed"
+				}
+			]
+		}
+	}
+}

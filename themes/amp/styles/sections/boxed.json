@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Boxed",
+	"slug": "boxed",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"border": {
+			"color": "var:preset|color|line",
+			"width": "2px",
+			"style": "solid"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ruled row",
+	"slug": "ink-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|medium"
+		}
+	}
+}

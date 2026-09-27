@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Poster towns",
+	"slug": "poster-towns",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|xx-large"
+		}
+	}
+}

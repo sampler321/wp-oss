@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Reversed (ink ground)",
+	"slug": "reverse",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|base",
+					"text": "var:preset|color|contrast"
+				},
+				"border": {
+					"color": "var:preset|color|base"
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|contrast",
+						"text": "var:preset|color|base"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/image": {
+				"filter": {
+					"duotone": "var(--wp--preset--duotone--band-reverse)"
+				}
+			},
+			"core/table": {
+				"css": "& td{border-color:var(--wp--preset--color--base)!important}"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|60",
+				"bottom": "var:preset|spacing|60"
+			}
+		}
+	}
+}

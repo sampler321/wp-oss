@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Punk (black and yellow)",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFE600",
+					"name": "Hi-vis yellow"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#111111",
+					"name": "Black (accent)"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFEC40",
+					"name": "Hi-vis yellow tint"
+				},
+				{
+					"slug": "line",
+					"color": "#111111",
+					"name": "Rule"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "band",
+					"colors": [
+						"#111111",
+						"#FFE600"
+					],
+					"name": "Black on Hi-vis yellow"
+				},
+				{
+					"slug": "band-reverse",
+					"colors": [
+						"#FFE600",
+						"#111111"
+					],
+					"name": "Black on Hi-vis yellow, reversed"
+				}
+			]
+		}
+	}
+}

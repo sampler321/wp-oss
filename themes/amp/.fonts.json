@@ -1,0 +1,54 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Karrik\", sans-serif",
+      "name": "Karrik",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Karrik",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/karrik-normal-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Karrik",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/karrik-italic-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Figtree\", sans-serif",
+      "name": "Figtree",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/figtree-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/figtree-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Karrik by Jean-Baptiste Morizot and Lucas Le Bihan (Phantom Foundry, distributed by Velvetyne), SIL OFL 1.1, https://velvetyne.fr/fonts/karrik/",
+    "Figtree (Google Fonts), https://github.com/google/fonts/tree/main/ofl/figtree"
+  ]
+}
