@@ -17,7 +17,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | failed test |  |
-| 12 | studio | 025 Small branding studio | as researched | todo | |
+| 12 | studio | 025 Small branding studio | as researched | tested |  |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | todo | |
@@ -32,7 +32,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
-| 27 | local | 053 Hyperlocal news | more scientific looking | tested |  |
+| 27 | local | 053 Hyperlocal news | more scientific looking | deployed (HTTP 404) | https://wposs-local.b-j-kapica.workers.dev |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |

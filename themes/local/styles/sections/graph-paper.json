@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Graph paper",
+	"slug": "graph-paper",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|line"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|50",
+				"bottom": "var:preset|spacing|50",
+				"left": "var:preset|spacing|50",
+				"right": "var:preset|spacing|50"
+			}
+		},
+		"css": "&{background-color:var(--wp--preset--color--surface);background-image:linear-gradient(color-mix(in srgb,var(--wp--preset--color--line) 60%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--wp--preset--color--line) 60%,transparent) 1px,transparent 1px);background-size:20px 20px;background-position:-1px -1px}"
+	}
+}

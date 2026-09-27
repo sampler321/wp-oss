@@ -1,0 +1,54 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Newsreader\", sans-serif",
+      "name": "Newsreader",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Newsreader",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/newsreader-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Newsreader",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/newsreader-normal-300_800.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "name": "Public Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Public Sans",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/public-sans-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Public Sans",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/public-sans-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Newsreader (Google Fonts), https://github.com/google/fonts/tree/main/ofl/newsreader",
+    "Public Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/publicsans"
+  ]
+}

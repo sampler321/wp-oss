@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bar figure (table)",
+	"slug": "bars",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|x-small"
+		},
+		"css": "& td:nth-child(2){color:var(--wp--preset--color--accent-2);letter-spacing:-0.12em;white-space:nowrap;width:55%}& td:last-child{text-align:right}& td{border-bottom-style:dotted!important}"
+	}
+}

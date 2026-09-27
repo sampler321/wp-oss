@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Data list",
+	"slug": "data-list",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|x-small"
+		},
+		"css": "&{list-style:none;padding-left:0}&>li{border-bottom:1px dotted var(--wp--preset--color--line);padding:.35em 0}"
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Civic",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EEF3EF",
+					"name": "Pale green"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0E1A14",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#00704A",
+					"name": "Street-sign green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#00563A",
+					"name": "Deep green"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "Card"
+				},
+				{
+					"slug": "line",
+					"color": "#B8C9BE",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F5249",
+					"name": "Pencil"
+				},
+				{
+					"slug": "highlight",
+					"color": "#DDEFC4",
+					"name": "Marker"
+				}
+			]
+		}
+	}
+}

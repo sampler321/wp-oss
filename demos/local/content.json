@@ -1,0 +1,217 @@
+{
+ "site": {
+  "title": "Frome Survey",
+  "tagline": "Local news for Frome, with the numbers and the sources"
+ },
+ "categories": [
+  {
+   "slug": "council",
+   "name": "Council"
+  },
+  {
+   "slug": "housing",
+   "name": "Housing"
+  },
+  {
+   "slug": "transport",
+   "name": "Transport"
+  },
+  {
+   "slug": "schools",
+   "name": "Schools"
+  },
+  {
+   "slug": "environment",
+   "name": "Environment"
+  },
+  {
+   "slug": "business",
+   "name": "Business"
+  },
+  {
+   "slug": "explainers",
+   "name": "Explainers"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "news",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "news",
+   "title": "News",
+   "content": ""
+  },
+  {
+   "slug": "meetings",
+   "title": "Public meetings",
+   "pattern": "local/meetings-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "newsletters",
+   "title": "Newsletters",
+   "pattern": "local/newsletters-page"
+  },
+  {
+   "slug": "join",
+   "title": "Become a member",
+   "pattern": "local/join-page"
+  },
+  {
+   "slug": "funding",
+   "title": "Who funds us",
+   "pattern": "local/transparency-page"
+  },
+  {
+   "slug": "corrections",
+   "title": "Corrections and complaints",
+   "pattern": "local/corrections-page"
+  },
+  {
+   "slug": "tips",
+   "title": "Send us a tip",
+   "pattern": "local/tips-page"
+  },
+  {
+   "slug": "about",
+   "title": "About the newsroom",
+   "pattern": "local/about-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The Frome rose 2.1 metres in 30 hours. Here is what the gauge recorded",
+   "slug": "river-gauge-september",
+   "category": "environment",
+   "tags": [
+    "Flooding",
+    "Data"
+   ],
+   "image": "river.jpg",
+   "excerpt": "We set the Environment Agency's 15-minute readings at Welshmill against a volunteer rain gauge. The river peaked at 2.46 m at 04:15 on 14 September, 38 cm below the 2012 record.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We set the Environment Agency's 15-minute readings at Welshmill against a volunteer rain gauge on the Critchill allotments. The river peaked at 2.46 m at 04:15 on 14 September, 38 cm below the 2012 record, and rose faster than it did then.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>The river peaked at 2.46 m at 04:15 on 14 September.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>It rose 2.1 m in 30 hours. In 2012 the same rise took 41 hours.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>58 mm of rain fell at Critchill in the 24 hours to 09:00 on 13 September.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Four homes on Willow Vale reported water in cellars. None reported water above floor level.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>River level</th><th>Rain since last reading</th></tr></thead><tbody><tr><td>12 Sep, 22:00</td><td>0.36 m</td><td>4 mm</td></tr><tr><td>13 Sep, 09:00</td><td>0.92 m</td><td>58 mm</td></tr><tr><td>13 Sep, 18:00</td><td>1.71 m</td><td>11 mm</td></tr><tr><td>14 Sep, 04:15</td><td>2.46 m</td><td>2 mm</td></tr><tr><td>15 Sep, 09:00</td><td>1.08 m</td><td>0 mm</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Selected readings, Welshmill gauge and Critchill rain gauge.</figcaption></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We downloaded readings for station 52119 from the Environment Agency's open flood-monitoring service and checked two against the staff gauge by the bridge. The rain figures come from Gwen Harcourt's gauge, which she has read every morning since 2009. It is not a Met Office station and we say so.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Sources</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-refs\"} -->\n<ul class=\"wp-block-list is-style-refs\"><!-- wp:list-item -->\n<li>Environment Agency flood-monitoring API, station 52119, 10 to 16 September 2026.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Critchill allotments rain gauge, daily readings, G. Harcourt.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Somerset Council, Section 19 flood investigation, Frome, July 2012.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Half the homes approved in Frome since 2021 have not been started",
+   "slug": "homes-approved-not-built",
+   "category": "housing",
+   "tags": [
+    "Planning",
+    "Data"
+   ],
+   "image": "housing.jpg",
+   "excerpt": "Of 1,012 homes given planning permission in Frome between 2021 and 2025, 497 had not been started by August. We checked every application by hand.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Of 1,012 homes given planning permission in Frome between January 2021 and December 2025, 497 had not been started by the end of August 2026. Most of them are on three large sites.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>497 of 1,012 approved homes (49%) had no building control notice by 31 August.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Three sites account for 402 of the unstarted homes.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Permission lapses after three years if work hasn't started. 88 homes are due to lapse before March.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:table {\"className\":\"is-style-bars\"} -->\n<figure class=\"wp-block-table is-style-bars\"><table class=\"has-fixed-layout\"><thead><tr><th>Site</th><th>Unstarted homes</th><th>n</th></tr></thead><tbody><tr><td>Saxonvale</td><td>███████████████</td><td>125</td></tr><tr><td>Selwood Garden Community</td><td>█████████████████████</td><td>171</td></tr><tr><td>Land off Rodden Road</td><td>█████████████</td><td>106</td></tr><tr><td>Smaller sites (41)</td><td>████████████</td><td>95</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Unstarted homes by site, 31 August 2026. One block is about eight homes.</figcaption></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Tomasz read every decision notice for BA11 on the Somerset Council planning portal from 2021 to 2025, then matched each site against building control notices and council tax records. Two developers confirmed their start dates by email. One did not reply.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Sources</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-refs\"} -->\n<ul class=\"wp-block-list is-style-refs\"><!-- wp:list-item -->\n<li>Somerset Council planning portal, decision notices, 2021 to 2025.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Somerset Council building control register, extract of 31 August 2026.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "The 51 bus is timetabled every 40 minutes. We rode it for a week",
+   "slug": "the-51-bus-timed",
+   "category": "transport",
+   "tags": [
+    "Buses",
+    "Data"
+   ],
+   "image": "bus.jpg",
+   "excerpt": "Three volunteers logged 64 departures from the Market Place stop. 41 left within five minutes of the timetable; 9 did not come at all.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Three volunteers logged 64 scheduled departures of the 51 from the Market Place stop between 7 and 13 September. 41 left within five minutes of the timetable. Nine did not arrive.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>41 of 64 departures (64%) were within five minutes of the timetable.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>14 were between six and 25 minutes late.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>9 did not arrive. Seven of those were after 6pm.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Outcome</th><th>Departures</th><th>Share</th></tr></thead><tbody><tr><td>On time (0 to 5 min)</td><td>41</td><td>64%</td></tr><tr><td>Late (6 to 25 min)</td><td>14</td><td>22%</td></tr><tr><td>Did not arrive</td><td>9</td><td>14%</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Departures of the 51 from Market Place, 7 to 13 September, n = 64.</figcaption></figure>\n<!-- /wp:table -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">I stopped taking it after six in the evening. You just don't know if it's coming.</p>\n<!-- /wp:paragraph --><cite>Maureen Tilley, who takes the 51 to work at the Fromefield Co-op</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Volunteers stood at the stop and wrote down the time each bus pulled away, using a phone clock set to network time. We sent the log to the operator, which said two of the missed runs were driver sickness and did not comment on the rest.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Which Frome primary schools are full, by year group",
+   "slug": "primary-school-places",
+   "category": "schools",
+   "tags": [
+    "Schools",
+    "Data"
+   ],
+   "image": "school.jpg",
+   "excerpt": "Five of Frome's nine primary schools are at or over capacity in reception. We asked each school for its numbers and four answered.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Five of Frome's nine primary schools are at or over their published admission number in reception this September. Year 3 has the most spare places.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Five of nine schools are full in reception.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Across the town there are 31 spare reception places, mostly at two schools.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Year 3 has 58 spare places.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>School</th><th>Admission number</th><th>On roll</th><th>Status</th></tr></thead><tbody><tr><td>Oakfield Academy</td><td>60</td><td>60</td><td>Full</td></tr><tr><td>St John's CE</td><td>30</td><td>31</td><td>Over by 1</td></tr><tr><td>Hayesdown First</td><td>45</td><td>38</td><td>7 spare</td></tr><tr><td>Trinity CE</td><td>30</td><td>30</td><td>Full</td></tr><tr><td>Christchurch CE</td><td>30</td><td>22</td><td>8 spare</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Reception places, September 2026.</figcaption></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Admission numbers come from Somerset Council's 2026 admissions booklet. Pupil numbers come from the January census, published in June. Four schools also sent us their September figures, which we used where we had them.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "What the town council keeps £1.2 million in reserve for",
+   "slug": "town-council-reserves",
+   "category": "explainers",
+   "tags": [
+    "Council",
+    "Budget",
+    "Explainer"
+   ],
+   "image": "townhall.jpg",
+   "template": "single-explainer",
+   "excerpt": "Part 5 of our budget explainer. Frome Town Council holds £1.23m in reserves. About £880,000 is set aside for named projects.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Frome Town Council holds £1.23m in reserves, according to its audited accounts for 2025 to 2026. About £880,000 is earmarked for named projects; the rest is a general reserve.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>£880,000 is earmarked, the largest part (£310,000) for the Cattle Market car park resurfacing.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>£350,000 is general reserve, about five months of running costs.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Guidance for councils of this size suggests three to twelve months.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:table {\"className\":\"is-style-bars\"} -->\n<figure class=\"wp-block-table is-style-bars\"><table class=\"has-fixed-layout\"><thead><tr><th>Reserve</th><th>Amount</th><th>£</th></tr></thead><tbody><tr><td>Car park resurfacing</td><td>████████████████</td><td>£310k</td></tr><tr><td>Play areas</td><td>███████████</td><td>£205k</td></tr><tr><td>Building repairs</td><td>█████████</td><td>£170k</td></tr><tr><td>Other named projects</td><td>██████████</td><td>£195k</td></tr><tr><td>General reserve</td><td>██████████████████</td><td>£350k</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Reserves at 31 March 2026. One block is about £20,000.</figcaption></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We read the annual governance and accountability return and the reserves policy, and asked the town clerk two questions by email. Both were answered within a day.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Missed bin collections, street by street, June to August",
+   "slug": "missed-bins-by-street",
+   "category": "council",
+   "tags": [
+    "Waste",
+    "FOI",
+    "Data"
+   ],
+   "image": "bins.jpg",
+   "excerpt": "Somerset Council logged 212 missed collections in Frome over the summer. A fifth were on Vallis Road, and most of those on one Thursday round.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Somerset Council logged 212 missed collections in Frome from 1 June to 31 August, according to figures released to us under the Freedom of Information Act. 41 were on Vallis Road.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>212 missed collections were logged across Frome.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>41 were on Vallis Road, 33 of them on Thursdays.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>The council says a replacement lorry was used on that round for six weeks.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We asked for every missed-collection report with a BA11 postcode. The council sent a spreadsheet, which we cleaned by merging duplicate street names. Our cleaned file is on the data page.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Sources</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-refs\"} -->\n<ul class=\"wp-block-list is-style-refs\"><!-- wp:list-item -->\n<li>Somerset Council, FOI response 2026/1147, 11 September 2026.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "A361 resurfacing, the dates, the diversion and who pays",
+   "slug": "a361-resurfacing",
+   "category": "transport",
+   "tags": [
+    "Roads"
+   ],
+   "image": "roadworks.jpg",
+   "excerpt": "The A361 between the Garston roundabout and Beckington closes overnight for nine nights from 12 October. The diversion adds about 6 miles.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The A361 between the Garston roundabout and Beckington will close from 8pm to 6am for nine nights from Monday 12 October. The work is paid for from the national pothole fund.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Closed 8pm to 6am, 12 to 22 October, not on the weekend.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>The signed diversion runs via Rudge and adds about 6 miles.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Cost £640,000, from the Department for Transport's allocation to Somerset.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Dates are from the traffic regulation order published on 21 September. The cost is from Somerset Council's highways programme for 2026 to 2027.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Saturday market footfall, counted by hand for a month",
+   "slug": "market-footfall",
+   "category": "business",
+   "tags": [
+    "Market",
+    "Data"
+   ],
+   "image": "market.jpg",
+   "excerpt": "Volunteers with clickers counted people entering the Market Place on four Saturdays. The busiest hour was 11am to noon every time.",
+   "content": "<!-- wp:group {\"className\":\"is-style-abstract\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-abstract\"><!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Abstract</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Volunteers counted people entering the Market Place between 9am and 3pm on four Saturdays in August. The average was 3,140 a day, and the busiest hour was 11am to noon every time.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What we found</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Average 3,140 people a day, from 2,610 (rain) to 3,720.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>11am to noon was the busiest hour on all four days.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Traders say they sell most between 10am and 1pm, which fits.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How we reported this</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two volunteers stood at the Cork Street and Bath Street entrances with clickers. People who left and came back were counted twice, so these are entries, not people.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "News",
+   "url": "/news/"
+  },
+  {
+   "label": "Meetings",
+   "url": "/meetings/"
+  },
+  {
+   "label": "Newsletters",
+   "url": "/newsletters/"
+  },
+  {
+   "label": "Join",
+   "url": "/join/"
+  },
+  {
+   "label": "Funding",
+   "url": "/funding/"
+  },
+  {
+   "label": "Corrections",
+   "url": "/corrections/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

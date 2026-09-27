@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Topic index",
+	"slug": "topic-index",
+	"blockTypes": [
+		"core/categories"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:0 var(--wp--preset--spacing--40)}&>li{border-bottom:1px solid var(--wp--preset--color--line);padding:.5em 0}& a{text-decoration:none;color:var(--wp--preset--color--contrast)}& a:hover{color:var(--wp--preset--color--accent-2)}"
+	}
+}

@@ -1,0 +1,9 @@
+# Local (Frome Survey)
+
+- Direction: the owner asked for "more scientific looking", so the hyperlocal paper is set like a journal issue and a lab report. Each report opens with an abstract box, numbers its sections, and ends with a numbered source list. Tables and figures are captioned "Table 1", "Fig. 2" automatically by CSS counters in theme.json, so editors never number them by hand.
+- Fonts: Newsreader (display, journal-title serif, claimed in demos/local/fonts-claim.txt because the brief moved away from the researched Francois One) and Public Sans for everything else, with tabular figures in tables and dates. No monospace.
+- Palette: white paper, ink #111417, figure red #B8321A for figure and table labels, chart blue #1D5A85 for links and bars, graph-paper surface #F2F5F7 with a 20px grid drawn in CSS from the line colour.
+- Signature: the public meetings tracker (date, body, topic, in person / remote / both with ● ○ ◐ markers, agenda, our notes) and a "Public meetings this week" rail next to the lead report on the front page.
+- Also: "Figure of the week" bar chart built from a core Table with block characters (is-style-bars), funding and spending tables, corrections log, IMPRESS complaints procedure, newsletter chooser, membership amounts, tips, stockists, election results table, explainer series.
+- Core-block limits: no real charts (bars are block characters in a table cell), no live meeting filter (the tracker is a table; Query Filter would do it with a plugin), meetings are a pattern, not a post type.
+- Known tool issue: in the local Playground, pretty post permalinks (/post-slug/) redirect to the home page because the demo builder changes permalink_structure without re-initialising $wp_rewrite before flushing. Pages and category archives are fine. Singles render correctly via /index.php?name=slug.

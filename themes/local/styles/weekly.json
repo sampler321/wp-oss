@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Weekly",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E9E8E4",
+					"name": "Newsprint"
+				},
+				{
+					"slug": "contrast",
+					"color": "#161514",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#C4221A",
+					"name": "Section flag"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8A1A14",
+					"name": "Oxblood"
+				},
+				{
+					"slug": "surface",
+					"color": "#F6F5F2",
+					"name": "Page"
+				},
+				{
+					"slug": "line",
+					"color": "#B3B0A8",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A4843",
+					"name": "Pencil"
+				},
+				{
+					"slug": "highlight",
+					"color": "#FFE08A",
+					"name": "Marker"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			}
+		}
+	}
+}
