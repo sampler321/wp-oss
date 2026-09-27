@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Arrow notch",
+	"slug": "notch",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"bottom": "var:preset|spacing|50"
+			}
+		}
+	}
+}

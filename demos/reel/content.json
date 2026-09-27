@@ -1,0 +1,142 @@
+{
+ "site": {
+  "title": "Verbeek & Tahiri Films",
+  "tagline": "Documentaries and short fiction, Rotterdam"
+ },
+ "categories": [
+  {
+   "slug": "documentary",
+   "name": "Documentary"
+  },
+  {
+   "slug": "fiction",
+   "name": "Fiction"
+  },
+  {
+   "slug": "shorts",
+   "name": "Shorts"
+  },
+  {
+   "slug": "in-development",
+   "name": "In development"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "films",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "films",
+   "title": "Films",
+   "content": ""
+  },
+  {
+   "slug": "screenings",
+   "title": "Screenings",
+   "pattern": "reel/page-screenings"
+  },
+  {
+   "slug": "host-a-screening",
+   "title": "Host a screening",
+   "pattern": "reel/page-host"
+  },
+  {
+   "slug": "press",
+   "title": "Press",
+   "pattern": "reel/page-press"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "reel/page-about"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Glasland",
+   "category": "documentary",
+   "image": "still-8.jpg",
+   "excerpt": "Noor Verbeek | 94' | Netherlands, Belgium | 2026 | Dutch and Polish with English subtitles",
+   "date": "2026-09-20",
+   "pattern": "reel/film-page-glasland"
+  },
+  {
+   "title": "Wit woud",
+   "category": "in-development",
+   "image": "still-6.jpg",
+   "excerpt": "Noor Verbeek | feature, about 90' | Netherlands, Poland | shooting winter 2027",
+   "date": "2026-06-12",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A forest ranger in the Białowieża forest counts bison in the snow for the last season before she retires. In development with support from the Netherlands Film Fund.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We are looking for a Polish co-producer. Write to Youssef.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Nachttram",
+   "category": "fiction",
+   "image": "still-4.jpg",
+   "excerpt": "Noor Verbeek | 18' | Netherlands | 2024 | Dutch with English subtitles",
+   "date": "2024-11-02",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A tram driver on the last line of the night lets a boy ride to the depot and back, twice. Shot in black and white on the number 8.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Screened at 22 festivals. Available for community screenings.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Mist boven de Maas",
+   "category": "shorts",
+   "image": "still-2.jpg",
+   "excerpt": "Noor Verbeek | 22' | Netherlands | 2023 | no dialogue",
+   "date": "2023-10-08",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Five mornings of fog on the river, filmed from the same bridge at the same minute. A short about waiting for something to become visible.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Amazonehaven",
+   "category": "fiction",
+   "image": "still-1.jpg",
+   "excerpt": "Noor Verbeek | 101' | Netherlands, Belgium | 2022 | Dutch and Tagalog with English subtitles",
+   "date": "2022-09-15",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A Filipino cook on a container ship has 36 hours in Rotterdam and one address. Her first feature, produced with Youssef Tahiri.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Released in Dutch and Flemish cinemas. Streaming on a Dutch public platform until 2027.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "De oude visser",
+   "category": "documentary",
+   "image": "still-5.jpg",
+   "excerpt": "Noor Verbeek | 14' | Netherlands | 2021 | Dutch with English subtitles",
+   "date": "2021-05-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Arie Kooiman fished out of Scheveningen for 51 years. He smokes one pipe a day and tells one story per pipe.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Marker Wadden",
+   "category": "shorts",
+   "image": "still-7.jpg",
+   "excerpt": "Noor Verbeek | 11' | Netherlands | 2020 | no dialogue",
+   "date": "2020-08-01",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">An island built from mud in the Markermeer, three years after it was made. The birds found it before the people did.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Het doek",
+   "category": "documentary",
+   "image": "cinema-1.jpg",
+   "excerpt": "Youssef Tahiri | 52' | Netherlands | 2019 | Dutch with English subtitles",
+   "date": "2019-03-11",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The last projectionists of a Rotterdam cinema before it went digital. Directed by Youssef, produced by Noor, for once the other way round.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Films",
+   "url": "/films/"
+  },
+  {
+   "label": "Screenings",
+   "url": "/screenings/"
+  },
+  {
+   "label": "Press",
+   "url": "/press/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

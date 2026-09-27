@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Laurel (text)",
+	"slug": "laurel",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "700",
+			"fontSize": "var:preset|font-size|small",
+			"lineHeight": "1.25",
+			"textAlign": "center"
+		},
+		"border": {
+			"left": {
+				"color": "var:preset|color|contrast",
+				"width": "3px",
+				"style": "double"
+			},
+			"right": {
+				"color": "var:preset|color|contrast",
+				"width": "3px",
+				"style": "double"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|10",
+				"bottom": "var:preset|spacing|10",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		}
+	}
+}

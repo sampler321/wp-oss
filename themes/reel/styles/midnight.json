@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Midnight",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#121212",
+					"name": "Screen white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F5F3EF",
+					"name": "Projection black"
+				},
+				{
+					"slug": "accent",
+					"color": "#3FE0C8",
+					"name": "Deep teal"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#00C2A8",
+					"name": "Festival teal"
+				},
+				{
+					"slug": "surface",
+					"color": "#222222",
+					"name": "Programme grey"
+				},
+				{
+					"slug": "line",
+					"color": "#F5F3EF",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#BDBDBD",
+					"name": "Caption grey"
+				},
+				{
+					"slug": "chip-doc",
+					"color": "#5AB0EA",
+					"name": "Documentary blue"
+				},
+				{
+					"slug": "chip-fiction",
+					"color": "#F2648D",
+					"name": "Fiction pink"
+				},
+				{
+					"slug": "chip-short",
+					"color": "#B7E34A",
+					"name": "Shorts lime"
+				},
+				{
+					"slug": "chip-dev",
+					"color": "#FFD43B",
+					"name": "Development yellow"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Rethink Sans\", sans-serif",
+      "name": "Rethink Sans",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Rethink Sans",
+          "fontStyle": "italic",
+          "fontWeight": "400 800",
+          "src": [
+            "file:./assets/fonts/rethink-sans-italic-400_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Rethink Sans",
+          "fontStyle": "normal",
+          "fontWeight": "400 800",
+          "src": [
+            "file:./assets/fonts/rethink-sans-normal-400_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Rethink Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/rethinksans"
+  ]
+}
