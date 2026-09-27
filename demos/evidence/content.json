@@ -1,0 +1,164 @@
+{
+ "site": {
+  "title": "Low Water",
+  "tagline": "True crime from the Humber estuary, built on the paperwork"
+ },
+ "categories": [
+  {
+   "slug": "wagstaffs-yard",
+   "name": "Wagstaff’s Yard",
+   "description": "Season 2, 2026. A fire on the Hull docks in 1994, the night watchman who died, and the man who says he wasn’t there."
+  },
+  {
+   "slug": "the-ferry-inn",
+   "name": "The Ferry Inn",
+   "description": "Season 1, 2025. Carol Denby left a pub in Hessle on 2 November 1987 and was not seen again."
+  },
+  {
+   "slug": "updates",
+   "name": "Updates",
+   "description": "Corrections and news between parts."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "episodes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "episodes",
+   "title": "Episodes",
+   "content": ""
+  },
+  {
+   "slug": "cases",
+   "title": "Cases",
+   "pattern": "evidence/cases-page"
+  },
+  {
+   "slug": "sources-and-corrections",
+   "title": "Sources and corrections",
+   "pattern": "evidence/sources-page"
+  },
+  {
+   "slug": "about",
+   "title": "How we report",
+   "pattern": "evidence/about-page"
+  },
+  {
+   "slug": "support",
+   "title": "Support",
+   "pattern": "evidence/support-page"
+  },
+  {
+   "slug": "tips",
+   "title": "Tips",
+   "pattern": "evidence/tips-page"
+  },
+  {
+   "slug": "subscribe",
+   "title": "Subscribe",
+   "pattern": "evidence/subscribe-page"
+  },
+  {
+   "slug": "transcripts",
+   "title": "Transcripts",
+   "pattern": "evidence/transcripts-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The second fire report",
+   "slug": "the-second-fire-report",
+   "category": "wagstaffs-yard",
+   "image": "archive.jpg",
+   "excerpt": "Eight days after the fire, an investigator from Leeds wrote a report the jury never saw. Brian Oduya reads it with us.",
+   "date": "2026-09-24",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Wagstaff’s Yard</td></tr><tr><td>Part</td><td>4 of 6</td></tr><tr><td>Released</td><td>Thursday 24 September 2026</td></tr><tr><td>Length</td><td>48 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-warning\"} -->\n<p class=\"is-style-warning\"><strong>Content warning</strong> This episode describes how Arthur Kell died, without detail.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Previously</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=215\">03:35</a> Box 14</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=870\">14:30</a> Brian reads the report</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1640\">27:20</a> What “point of origin” means</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2310\">38:30</a> Why the jury never saw it</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2740\">45:40</a> Janet hears it for the first time</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"tagName\":\"section\",\"className\":\"is-style-board\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|30\",\"bottom\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<section class=\"wp-block-group is-style-board\" style=\"padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:paragraph {\"className\":\"has-large-font-size has-display-font-family\",\"style\":{\"typography\":{\"fontWeight\":\"700\",\"textTransform\":\"uppercase\"}},\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size has-display-font-family\" style=\"font-weight:700;text-transform:uppercase\">Non-disclosure</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>When the prosecution holds material that could help the defence and doesn’t hand it over.</p>\n<!-- /wp:paragraph --></section>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>West Yorkshire Fire Service, investigation report, 19 March 1994. Hull History Centre, ref. C DPF/4/14.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Interview with Brian Oduya, recorded in Leeds on 3 July 2026.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>R v Pryce trial transcript, day 3, pages 41 to 58.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Maren</strong> The box is labelled “Wagstaff’s, misc.” Nobody has signed it out since 1996.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Brian</strong> Misc. That’s where things go when nobody wants to decide about them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Brian</strong> “The seat of the fire is not consistent with the account given.” That’s a sentence you notice.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The witness on Hedon Road",
+   "slug": "the-witness-on-hedon-road",
+   "category": "wagstaffs-yard",
+   "image": "road.jpg",
+   "excerpt": "One man said he saw Lee Pryce walking away from the docks at ten past one. We read his statement, with the police redactions still in.",
+   "date": "2026-09-17",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Wagstaff’s Yard</td></tr><tr><td>Part</td><td>3 of 6</td></tr><tr><td>Released</td><td>Thursday 17 September 2026</td></tr><tr><td>Length</td><td>51 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Previously</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=300\">05:00</a> The statement</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1150\">19:10</a> Street lights on Hedon Road in 1994</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2000\">33:20</a> The witness today</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2700\">45:00</a> Lee listens back</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:quote {\"className\":\"is-style-redacted\"} -->\n<blockquote class=\"wp-block-quote is-style-redacted\"><!-- wp:paragraph -->\n<p>I saw a lad on Hedon Road at about ten past one. He had a <strong>green</strong> jacket on and he was walking fast towards <strong>Marfleet Lane</strong>.</p>\n<!-- /wp:paragraph --><cite>Witness statement, 2 June 1994, as released</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>Witness statement, 2 June 1994, released with redactions in 2024.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Hull City Council street lighting records, 1993 to 1995.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Maren</strong> He asked us not to use his name, and we won’t. He still lives about a mile from the dock.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Lee",
+   "slug": "lee",
+   "category": "wagstaffs-yard",
+   "image": "station.jpg",
+   "excerpt": "Lee Pryce was 22 when he was arrested. He is 54 now. He talks to us for the first time about the interview room.",
+   "date": "2026-09-10",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Wagstaff’s Yard</td></tr><tr><td>Part</td><td>2 of 6</td></tr><tr><td>Released</td><td>Thursday 10 September 2026</td></tr><tr><td>Length</td><td>57 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-warning\"} -->\n<p class=\"is-style-warning\"><strong>Content warning</strong> Discussion of a suicide attempt in prison (31:20 to 34:05).</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Previously</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=240\">04:00</a> Meeting Lee in Goole</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1100\">18:20</a> The interview, 2 June 1994</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1880\">31:20</a> Prison, briefly</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2600\">43:20</a> What he wants now</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>Police interview record, 2 June 1994, obtained by Lee’s solicitor.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Interviews with Lee Pryce, recorded April to June 2026.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Lee</strong> I said I was at my mam’s. My mam said I was at my mam’s. That was it, that was my alibi, and it wasn’t enough.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The night of 11 March 1994",
+   "slug": "the-night-of-11-march-1994",
+   "category": "wagstaffs-yard",
+   "image": "docks.jpg",
+   "excerpt": "Start here. Arthur Kell’s daughter Janet tells us about her dad, and about the night the yard burned.",
+   "date": "2026-09-03",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Wagstaff’s Yard</td></tr><tr><td>Part</td><td>1 of 6</td></tr><tr><td>Released</td><td>Thursday 3 September 2026</td></tr><tr><td>Length</td><td>45 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-warning\"} -->\n<p class=\"is-style-warning\"><strong>Content warning</strong> Discussion of a death in a fire.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Janet’s letter</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=420\">07:00</a> Arthur</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1300\">21:40</a> The yard</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2010\">33:30</a> The phone call at 3am</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2500\">41:40</a> Why now</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>Letter from Janet Kell to the show, May 2025.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Hull evening paper, 12 March 1994.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Janet</strong> He used to bring me the offcuts. I had a doll’s house made of Wagstaff’s timber.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A correction to part 3",
+   "slug": "a-correction-to-part-3",
+   "category": "updates",
+   "image": "newspaper.jpg",
+   "excerpt": "We got a date wrong in part 3. Here is what we said, what is right, and what we changed.",
+   "date": "2026-09-25",
+   "template": "single-update",
+   "content": "<!-- wp:paragraph -->\n<p>In part 3 we said the second fire report was dated 14 March 1994. It is dated 19 March. Maren read the date off a photocopy with a stamp over it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>It matters because on 14 March the police had not yet named anyone. By 19 March they had. The report was written after Lee Pryce became a suspect, and it still said the fire did not start where the police thought it did.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We have re-edited part 3 at 22:14 and corrected the transcript. The change is in the <a href=\"/sources-and-corrections/\">corrections log</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Thanks to Janet Kell, who checked the stamp with a magnifying glass.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Carol",
+   "slug": "carol",
+   "category": "the-ferry-inn",
+   "image": "phonebox.jpg",
+   "excerpt": "The last part of season 1. Carol’s brother Mark reads the letter he wrote to her in 2017.",
+   "date": "2026-01-12",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>The Ferry Inn</td></tr><tr><td>Part</td><td>5 of 5</td></tr><tr><td>Released</td><td>Monday 12 January 2026</td></tr><tr><td>Length</td><td>43 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-warning\"} -->\n<p class=\"is-style-warning\"><strong>Content warning</strong> Discussion of a missing person and of grief.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Previously</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=500\">08:20</a> What the police told Mark in 2024</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1500\">25:00</a> The letter</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2200\">36:40</a> What we still don’t know</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>Humberside Police, letter to the Denby family, March 2024.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Interview with Mark Denby, recorded in Hessle, October 2025.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Mark</strong> She’d be 67. I keep doing that sum.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The last bus to Hessle",
+   "slug": "the-last-bus-to-hessle",
+   "category": "the-ferry-inn",
+   "image": "bridge.jpg",
+   "excerpt": "Carol left the Ferry Inn at 10.40pm. Where did she go? A retired bus driver helps us check the timetable.",
+   "date": "2026-01-05",
+   "content": "<!-- wp:group {\"className\":\"is-style-file-card\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-file-card\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Case file</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>The Ferry Inn</td></tr><tr><td>Part</td><td>2 of 5</td></tr><tr><td>Released</td><td>Monday 5 January 2026</td></tr><tr><td>Length</td><td>49 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:group -->\n\n<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: a LibriVox reading from “An Account of the Proceedings on the Trial of Susan B. Anthony” (CC0, Wikimedia Commons). Replace with your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=0\">00:00</a> Previously</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=330\">05:30</a> The 350</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=1210\">20:10</a> The driver who called in</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg#t=2120\">35:20</a> The footpath by the bridge</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Sources</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true,\"className\":\"is-style-sources\"} -->\n<ol class=\"wp-block-list is-style-sources\"><!-- wp:list-item -->\n<li>East Yorkshire Motor Services timetable, winter 1987, Hull History Centre.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Interview with Ray Halliday, retired bus driver, recorded October 2025.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the transcript</summary><!-- wp:paragraph -->\n<p><strong>Ray</strong> The 350 went at 10.52 from the Square. If she was on it, I’d have seen her. I wasn’t driving it that night, though.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Typed by Dev and checked against the audio.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If this episode affected you</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Samaritans: 116 123, any time. Victim Support: 08 08 16 89 111.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Episodes",
+   "url": "/episodes/"
+  },
+  {
+   "label": "Cases",
+   "url": "/cases/"
+  },
+  {
+   "label": "Sources and corrections",
+   "url": "/sources-and-corrections/"
+  },
+  {
+   "label": "How we report",
+   "url": "/about/"
+  },
+  {
+   "label": "Support",
+   "url": "/support/"
+  },
+  {
+   "label": "Tips",
+   "url": "/tips/"
+  }
+ ]
+}

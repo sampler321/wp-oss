@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Daylight file",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EFE9DC",
+					"name": "Night"
+				},
+				{
+					"slug": "contrast",
+					"color": "#161514",
+					"name": "Bone"
+				},
+				{
+					"slug": "accent",
+					"color": "#A8321D",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#6B5A33",
+					"name": "Manila"
+				},
+				{
+					"slug": "surface",
+					"color": "#E4DCC9",
+					"name": "Case board"
+				},
+				{
+					"slug": "line",
+					"color": "#B9AF99",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A554C",
+					"name": "Ash"
+				},
+				{
+					"slug": "folder",
+					"color": "#D6C498",
+					"name": "Folder"
+				},
+				{
+					"slug": "ink",
+					"color": "#141311",
+					"name": "Ink"
+				}
+			]
+		}
+	}
+}

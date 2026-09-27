@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Case timeline",
+	"slug": "timeline",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{font-family:var(--wp--preset--font-family--display);font-weight:700;white-space:nowrap;width:9.5rem;color:var(--wp--preset--color--accent-2)}& td{padding-top:.85em;padding-bottom:.85em}"
+	}
+}

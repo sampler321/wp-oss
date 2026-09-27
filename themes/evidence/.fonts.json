@@ -1,0 +1,47 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Mozilla Headline\", sans-serif",
+      "name": "Mozilla Headline",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Mozilla Headline",
+          "fontStyle": "normal",
+          "fontWeight": "200 700",
+          "src": [
+            "file:./assets/fonts/mozilla-headline-normal-200_700.woff2"
+          ],
+          "fontStretch": "75% 100%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Source Serif 4\", serif",
+      "name": "Source Serif 4",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Source Serif 4",
+          "fontStyle": "italic",
+          "fontWeight": "200 900",
+          "src": [
+            "file:./assets/fonts/source-serif-4-italic-200_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Source Serif 4",
+          "fontStyle": "normal",
+          "fontWeight": "200 900",
+          "src": [
+            "file:./assets/fonts/source-serif-4-normal-200_900.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Mozilla Headline (Google Fonts), https://github.com/google/fonts/tree/main/ofl/mozillaheadline",
+    "Source Serif 4 (Google Fonts), https://github.com/google/fonts/tree/main/ofl/sourceserif4"
+  ]
+}

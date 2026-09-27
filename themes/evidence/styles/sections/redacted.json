@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Document with redactions",
+	"slug": "redacted",
+	"blockTypes": [
+		"core/paragraph",
+		"core/quote"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|folder",
+			"text": "var:preset|color|ink"
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"fontStyle": "normal"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"css": "& strong{background:var(--wp--preset--color--ink);color:var(--wp--preset--color--ink);padding:0 .2em;user-select:none}& cite{color:var(--wp--preset--color--ink);font-family:var(--wp--preset--font-family--display)}"
+	}
+}

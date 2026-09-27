@@ -28,7 +28,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
-| 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | todo | |
+| 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | todo | |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |

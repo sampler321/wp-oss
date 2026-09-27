@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Content warning",
+	"slug": "warning",
+	"blockTypes": [
+		"core/paragraph",
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"border": {
+			"left": {
+				"color": "var:preset|color|accent",
+				"width": "4px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30",
+				"top": "var:preset|spacing|10",
+				"bottom": "var:preset|spacing|10"
+			}
+		},
+		"css": "& strong{font-family:var(--wp--preset--font-family--display);text-transform:uppercase;color:var(--wp--preset--color--accent)}"
+	}
+}
