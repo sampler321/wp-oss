@@ -1,0 +1,146 @@
+{
+  "pedalboard": {
+    "title": "Telecaster Thinline type guitar with pedalboard (SecretPreamp,MXR10BandEQ,Supa-Trem,POG2,SP Comp,Tuner,BigSky,SeaMachine,GigaDelay,TimmyOverdrive,Broadcast,VolumPedal) - The Smith Center, Las Vegas (2017-04-29 10.28.27 piqsels.com en).jpg",
+    "creator": "Unknown authorUnknown author",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Telecaster_Thinline_type_guitar_with_pedalboard_(SecretPreamp,MXR10BandEQ,Supa-Trem,POG2,SP_Comp,Tuner,BigSky,SeaMachine,GigaDelay,TimmyOverdrive,Broadcast,VolumPedal)_-_The_Smith_Center,_Las_Vegas_(2017-04-29_10.28.27_piqsels.com_en).jpg",
+    "query": "pedalboard guitar effects"
+  },
+  "breadboard": {
+    "title": "Breadboard.png",
+    "creator": "Guhuru",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Breadboard.png",
+    "query": "breadboard electronics circuit"
+  },
+  "components": {
+    "title": "Componentes.JPG",
+    "creator": "Kae",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Componentes.JPG",
+    "query": "resistors capacitors electronic components"
+  },
+  "knobs": {
+    "title": "23mm knob with numbered dials with potentiometers 01(DXO).jpg",
+    "creator": "Retired electrician",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:23mm_knob_with_numbered_dials_with_potentiometers_01(DXO).jpg",
+    "query": "potentiometer knobs"
+  },
+  "amp": {
+    "title": "Fender Champion II 50 Amplifier.jpg",
+    "creator": "TheSaturnLover",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Fender_Champion_II_50_Amplifier.jpg",
+    "query": "guitar amplifier"
+  },
+  "solderjoint": {
+    "title": "SH72 soldering iron in shipping box.jpg",
+    "creator": "Retired electrician",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:SH72_soldering_iron_in_shipping_box.jpg",
+    "query": "soldering electronics"
+  },
+  "schematic": {
+    "title": "Current to Voltage Converter Schematic Diagram (CVC) by MDM.jpg",
+    "creator": "Marshallanzo D.Mouton",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Current_to_Voltage_Converter_Schematic_Diagram_(CVC)_by_MDM.jpg",
+    "query": "transistor amplifier circuit diagram"
+  },
+  "schematic2": {
+    "title": "Led circuit bb.jpg",
+    "creator": "Tbarovsk7950",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Led_circuit_bb.jpg",
+    "query": "electronic circuit diagram"
+  },
+  "guitarist": {
+    "title": "Psychomagic - guitarist playing Tokai Talbo on the floor with guitarist playing Fender MIM Telecaster double-cutaway - Bunk Bar (2015-06-04 22.20.58 by Jay Roc).jpg",
+    "creator": "Jay Roc",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Psychomagic_-_guitarist_playing_Tokai_Talbo_on_the_floor_with_guitarist_playing_Fender_MIM_Telecaster_double-cutaway_-_Bunk_Bar_(2015-06-04_22.20.58_by_Jay_Roc).jpg",
+    "query": "electric guitarist"
+  },
+  "kit": {
+    "title": "LCR-T4-ESR Mega328 tester from China, complete kit of parts",
+    "creator": "Retired electrician",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:LCR-T4-ESR_Mega328_tester_from_China._05._Complete_kit_of_parts.jpg",
+    "query": "electronics kit parts"
+  },
+  "rig": {
+    "title": "Guitar player gear looking (Unsplash).jpg",
+    "creator": "Michael Henry michaelhenry",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Guitar_player_gear_looking_(Unsplash).jpg",
+    "query": "guitar pedal board"
+  },
+  "valve": {
+    "title": "Electro-harmonix 12AX7EH.JPG",
+    "creator": "Olli Niemitalo",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Electro-harmonix_12AX7EH.JPG",
+    "query": "Electro-Harmonix"
+  },
+  "draw-coal-tit": {
+    "title": "Panel drawing: coal tit",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  },
+  "draw-ginnel": {
+    "title": "Panel drawing: ginnel",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  },
+  "draw-moor-echo": {
+    "title": "Panel drawing: moor echo",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  },
+  "draw-tram-stop": {
+    "title": "Panel drawing: tram stop",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  },
+  "draw-mill-boost": {
+    "title": "Panel drawing: mill boost",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  },
+  "draw-snicket": {
+    "title": "Panel drawing: snicket",
+    "creator": "WP-OSS, drawn for this theme with Pillow",
+    "license": "CC0",
+    "source": "generated",
+    "url": "https://github.com/sampler321/wp-oss/blob/main/build/patchbay_draw.py",
+    "query": ""
+  }
+}

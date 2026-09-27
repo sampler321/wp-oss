@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Panel legend (boxed specs)",
+	"slug": "legend",
+	"blockTypes": [
+		"core/group",
+		"core/table"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|contrast",
+			"radius": "6px"
+		},
+		"shadow": "var:preset|shadow|hard",
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		}
+	}
+}

@@ -1,0 +1,252 @@
+{
+ "site": {
+  "title": "Patchbay",
+  "tagline": "Guitar pedals, DIY kits and bare boards from Leeds"
+ },
+ "categories": [
+  {
+   "slug": "build-docs",
+   "name": "Build docs",
+   "description": "Step-by-step build docs for every kit."
+  },
+  {
+   "slug": "demos",
+   "name": "Demos",
+   "description": "Recorded straight into a small amp."
+  },
+  {
+   "slug": "news",
+   "name": "News",
+   "description": "Restocks, part changes and new colours."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "build-docs",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "build-docs",
+   "title": "Build docs",
+   "content": ""
+  },
+  {
+   "slug": "kits",
+   "title": "Kits",
+   "pattern": "patchbay/kits-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "manuals",
+   "title": "Manuals",
+   "pattern": "patchbay/manuals-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "repairs",
+   "title": "Repairs",
+   "pattern": "patchbay/repairs-page"
+  },
+  {
+   "slug": "dealers",
+   "title": "Dealers",
+   "pattern": "patchbay/dealers-page"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "patchbay/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "patchbay/contact-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Moor Echo build doc, version 2.1",
+   "category": "build-docs",
+   "image": "schematic.jpg",
+   "date": "2026-03-12",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The second batch of Moor Echo boards has a trimmer for the delay chip's clock, so you can set the maximum time yourself. Version 2.1 of the doc covers it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-tape\"} -->\n<p class=\"is-style-tape\">Difficulty: intermediate. 48 parts, one IC, six off-board wires. About 4 hours.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Parts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Ref</th><th>Value</th><th>Qty</th></tr></thead><tbody><tr><td>R1 to R12</td><td>various, see sheet</td><td>12</td></tr><tr><td>C1 to C14</td><td>film and electrolytic</td><td>14</td></tr><tr><td>IC1</td><td>PT2399</td><td>1</td></tr><tr><td>IC2</td><td>TL072</td><td>1</td></tr><tr><td>TRIM1</td><td>50k</td><td>1</td></tr><tr><td>Pots</td><td>B50k, B10k, B100k</td><td>3</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Build order</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Socket the ICs. Do not solder the PT2399 directly.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Resistors, then film caps, then electrolytics.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Set TRIM1 to the middle before first power.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>With Time fully right, turn TRIM1 until the repeats start to fizz, then back a quarter turn.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Coal Tit fuzz, a beginner build in two hours",
+   "category": "build-docs",
+   "image": "breadboard.jpg",
+   "date": "2026-02-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Coal Tit is our first kit for a reason: two transistors, 22 parts, and it sounds good even if you get the bias slightly wrong.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-tape\"} -->\n<p class=\"is-style-tape\">Difficulty: beginner. 22 parts. About 2 hours with a 25 W iron.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Parts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Ref</th><th>Value</th><th>Qty</th></tr></thead><tbody><tr><td>R1, R4</td><td>1k</td><td>2</td></tr><tr><td>R2</td><td>100k</td><td>1</td></tr><tr><td>R3</td><td>10k</td><td>1</td></tr><tr><td>C1</td><td>100 nF</td><td>1</td></tr><tr><td>C2</td><td>2.2 µF</td><td>1</td></tr><tr><td>Q1, Q2</td><td>BC549C</td><td>2</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Build order</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Resistors first.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Capacitors, long leg of C2 to the square pad.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Transistors, flat side to the line on the silkscreen.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Pots, jacks and switch after the board is in the box.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-tape\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-tape\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Parts substitution</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Kits shipped after 1 June use a BC549C in place of the 2N5088. Mind the pin order: it is printed on the board.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Demo: Moor Echo into a Champion, no other pedals",
+   "category": "demos",
+   "image": "amp.jpg",
+   "date": "2026-03-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rob recorded this one in the arch after six, when the trains slow down. Telecaster bridge pickup, amp at 3, delay straight in.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-enclosure-yellow\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-enclosure-yellow\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Watch the demo</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four minutes. Short slapback first, then long repeats, then the self-oscillation at the end that you will want to turn off.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.youtube.com/\">Play the demo on YouTube</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Recorded dry: guitar, pedal, amp and one microphone.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Ginnel overdrive build doc, version 3",
+   "category": "build-docs",
+   "image": "components.jpg",
+   "date": "2025-11-14",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Version 3 moves the tone control after the clipping diodes, which makes the Tone knob useful across its whole turn.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-tape\"} -->\n<p class=\"is-style-tape\">Difficulty: intermediate. 38 parts, one dual op-amp. About 3 hours.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Parts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Ref</th><th>Value</th><th>Qty</th></tr></thead><tbody><tr><td>R1 to R9</td><td>various</td><td>9</td></tr><tr><td>C1 to C8</td><td>film and electrolytic</td><td>8</td></tr><tr><td>D1, D2</td><td>1N914</td><td>2</td></tr><tr><td>IC1</td><td>JRC4558D</td><td>1</td></tr><tr><td>Pots</td><td>A500k, B25k, A10k</td><td>3</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Build order</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Resistors and diodes. Band on the diode to the line.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>IC socket, notch towards the jacks.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Capacitors.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Pots on after the board is mounted.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Your boards: a kitchen-floor rig from Hull",
+   "category": "demos",
+   "image": "rig.jpg",
+   "date": "2025-10-02",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Ana sent us this photo of her practice set-up with a Ginnel in the middle of the second row. She built it from a kit in April.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-enclosure-yellow\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-enclosure-yellow\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Watch the demo</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">She runs the Ginnel with Gain at nine o'clock as an always-on pedal. We asked her to record a short clip; this is it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.youtube.com/\">Play the demo on YouTube</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Recorded dry: guitar, pedal, amp and one microphone.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Why we swapped the 2N5088",
+   "category": "news",
+   "image": "knobs.jpg",
+   "date": "2025-06-01",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Our supplier stopped carrying the 2N5088 in May. We tested five replacements over an afternoon with the Coal Tit and the Snicket.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The BC549C won. It has a different pin order, so we changed the silkscreen on the new boards and added a note to every build doc.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Part</th><th>Result</th><th>Why</th></tr></thead><tbody><tr><td>BC549C</td><td>Chosen</td><td>Close gain, low noise</td></tr><tr><td>2N3904</td><td>Too thin</td><td>Lower gain, harsher top</td></tr><tr><td>MPSA18</td><td>Too hot</td><td>Noisy at full Fuzz</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Tram Stop: matching the LDR",
+   "category": "build-docs",
+   "image": "schematic2.jpg",
+   "date": "2025-04-18",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Tram Stop uses an LED and a light-dependent resistor to do the tremolo. The LDRs vary a lot, so the kit comes with three and a sheet to pick the right one.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-tape\"} -->\n<p class=\"is-style-tape\">Difficulty: involved. 54 parts and a matching step. A multimeter is not optional for this one.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Parts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Ref</th><th>Value</th><th>Qty</th></tr></thead><tbody><tr><td>LDR1 to LDR3</td><td>GL5528</td><td>3</td></tr><tr><td>LED2</td><td>Warm white, 5 mm</td><td>1</td></tr><tr><td>IC1</td><td>TL072</td><td>1</td></tr><tr><td>Pots</td><td>B1M, B50k, A10k</td><td>3</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Build order</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Build the board, leave LDR1 unsoldered.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Measure each LDR in the dark and in room light, write both values down.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Fit the one closest to 1M dark and 5k light.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Wrap LED and LDR together with the heat-shrink in the bag.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "New enclosure colours for autumn",
+   "category": "news",
+   "image": "pedalboard.jpg",
+   "date": "2025-09-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rob has mixed three new colours for the autumn batch: slate, mustard and the orange the Coal Tit wears.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Kits and assembled pedals come in the new colours from the October batch. Old colours stay until we run out of the paint.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Kits",
+   "url": "/kits/"
+  },
+  {
+   "label": "Build docs",
+   "url": "/build-docs/"
+  },
+  {
+   "label": "Manuals",
+   "url": "/manuals/"
+  },
+  {
+   "label": "Repairs",
+   "url": "/repairs/"
+  },
+  {
+   "label": "Dealers",
+   "url": "/dealers/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Coal Tit fuzz, assembled",
+   "price": "129",
+   "image": "draw-coal-tit.jpg",
+   "category": "Fuzz",
+   "sku": "PB-CT-A",
+   "stock": 7,
+   "short": "Two-knob silicon fuzz. Built and tested in Leeds. 9V centre negative, 6 mA.",
+   "description": "Level and Fuzz, nothing else. It cleans up when you roll back your guitar volume. Hammond 1590B, true bypass, 2 years warranty."
+  },
+  {
+   "name": "Coal Tit fuzz, DIY kit",
+   "price": "59",
+   "image": "kit.jpg",
+   "category": "Fuzz",
+   "sku": "PB-CT-K",
+   "stock": 23,
+   "short": "Beginner kit, 22 parts, about 2 hours. Drilled and painted enclosure included.",
+   "description": "Everything to build a Coal Tit: board, parts bagged by value, drilled and painted 1590B, jacks, switch, knobs and a printed build doc (v1.4)."
+  },
+  {
+   "name": "Ginnel overdrive, assembled",
+   "price": "149",
+   "image": "draw-ginnel.jpg",
+   "category": "Drive",
+   "sku": "PB-GN-A",
+   "stock": 4,
+   "short": "Op-amp overdrive with a Tone knob that works all the way round. 9V, 8 mA.",
+   "description": "Gain, Level and Tone. Symmetrical silicon clipping. Hammond 1590B, true bypass, 2 years warranty."
+  },
+  {
+   "name": "Ginnel overdrive, DIY kit",
+   "price": "69",
+   "image": "components.jpg",
+   "category": "Drive",
+   "sku": "PB-GN-K",
+   "stock": 11,
+   "short": "Intermediate kit, 38 parts, about 3 hours.",
+   "description": "Board, parts, drilled and painted enclosure, JRC4558D op-amp and socket, and the version 3 build doc."
+  },
+  {
+   "name": "Moor Echo delay, assembled",
+   "price": "169",
+   "image": "draw-moor-echo.jpg",
+   "category": "Delay",
+   "sku": "PB-ME-A",
+   "stock": 0,
+   "short": "PT2399 delay, 30 to 600 ms. Sold out; the next batch ships 10 October.",
+   "description": "Time, Repeats and Mix. Buffered bypass so the trails carry on. 9V centre negative, 18 mA."
+  },
+  {
+   "name": "Tram Stop tremolo, DIY kit",
+   "price": "75",
+   "image": "draw-tram-stop.jpg",
+   "category": "Modulation",
+   "sku": "PB-TS-K",
+   "stock": 6,
+   "short": "Optical tremolo kit with three LDRs to match. Involved build.",
+   "description": "Rate, Depth and Level. The kit includes an LDR matching sheet. You will need a multimeter."
+  },
+  {
+   "name": "Mill Boost PCB",
+   "price": "12",
+   "image": "draw-mill-boost.jpg",
+   "category": "PCBs and parts",
+   "sku": "PB-MB-P",
+   "stock": 40,
+   "short": "Bare board for a one-knob clean boost. Fits a 1590A. Parts list in the docs.",
+   "description": "Board only. The build doc and drill template are free on the manuals page."
+  },
+  {
+   "name": "Snicket octave fuzz PCB",
+   "price": "14",
+   "image": "draw-snicket.jpg",
+   "category": "PCBs and parts",
+   "sku": "PB-SN-P",
+   "stock": 18,
+   "short": "Bare board for an octave-up fuzz. Fits a 1590B.",
+   "description": "Board only. Needs two matched germanium diodes, which we do not supply."
+  },
+  {
+   "name": "Knob and pot set, three of each",
+   "price": "9",
+   "image": "knobs.jpg",
+   "category": "PCBs and parts",
+   "sku": "PB-KP-3",
+   "stock": 30,
+   "short": "Three 16 mm pots (A100k, B100k, B50k) and three numbered knobs.",
+   "description": "Spares for when you strip a shaft or want different values. PCB-mount pots."
+  }
+ ]
+}

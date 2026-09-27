@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pedal in the chain",
+	"slug": "pedal-link",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|contrast",
+			"radius": "14px"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"css": "&{min-width:9.5rem;text-align:center}"
+	}
+}

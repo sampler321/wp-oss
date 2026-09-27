@@ -1,0 +1,56 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Chubbo\", sans-serif",
+      "name": "Chubbo",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Chubbo",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/chubbo-normal-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Chubbo",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/chubbo-normal-700.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"IBM Plex Sans\", sans-serif",
+      "name": "IBM Plex Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "IBM Plex Sans",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/ibm-plex-sans-italic-400.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "IBM Plex Sans",
+          "fontStyle": "normal",
+          "fontWeight": "400 600",
+          "src": [
+            "file:./assets/fonts/ibm-plex-sans-normal-400_600.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Chubbo (Fontshare), https://www.fontshare.com/licenses/itf-ffl",
+    "IBM Plex Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/ibmplexsans"
+  ]
+}

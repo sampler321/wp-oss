@@ -1,0 +1,45 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-title {"level":1,"align":"wide","fontSize":"xx-large"} /-->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:post-content {"layout":{"type":"default"}} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:post-featured-image {"className":"is-style-framed"} /-->
+
+<!-- wp:group {"className":"is-style-tape","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-tape"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Stuck on a build?</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Send a clear photo of both sides of the board and a description of what happens. We answer build questions within two working days, free, even if you bought the kit second-hand.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="mailto:builds@example.com">builds@example.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"wide","className":"is-style-wire","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-wire"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","label":"Previous","showTitle":true} /-->
+
+<!-- wp:post-navigation-link {"label":"Next","showTitle":true} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

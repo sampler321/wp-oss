@@ -1,0 +1,3 @@
+Patchbay is for small guitar pedal makers who sell each circuit three ways: assembled, as a DIY kit and as a bare PCB. It expects WooCommerce for the shop. Build docs, demos and news are ordinary posts in three categories, and the pages for kits, manuals, repairs, dealers, about and contact are built from page-layout patterns.
+
+The signature pattern is the new-release block: a panel drawing, a boxed docs and power legend, assembled and kit prices side by side, and a versioned list of build files. The product drawings in assets/images were drawn for this theme with a script (build/patchbay_draw.py in the source repository) and are CC0.

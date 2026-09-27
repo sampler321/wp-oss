@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wire with solder joints",
+	"slug": "wire",
+	"blockTypes": [
+		"core/group",
+		"core/columns",
+		"core/heading"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"width": "3px",
+				"style": "solid",
+				"color": "var:preset|color|contrast"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40"
+			}
+		},
+		"css": "&{position:relative}&::before,&::after{content:\"\";position:absolute;top:-10px;width:17px;height:17px;border-radius:50%;background:var(--wp--preset--color--contrast)}&::before{left:0}&::after{right:0}"
+	}
+}

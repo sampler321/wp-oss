@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Signal chain (items on a wire)",
+	"slug": "signal-chain",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		}
+	}
+}

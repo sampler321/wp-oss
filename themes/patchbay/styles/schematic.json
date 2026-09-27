@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Schematic",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F7F7F2",
+					"name": "Panel white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1B3A6B",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#1B3A6B",
+					"name": "Fuzz red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#E9E2C0",
+					"name": "Enclosure yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6EAF2",
+					"name": "Bench"
+				},
+				{
+					"slug": "line",
+					"color": "#1B3A6B",
+					"name": "Wire"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A5875",
+					"name": "Graphite"
+				},
+				{
+					"slug": "teal",
+					"color": "#9FC3D6",
+					"name": "Enclosure teal"
+				},
+				{
+					"slug": "orange",
+					"color": "#F0B8A0",
+					"name": "Enclosure orange"
+				},
+				{
+					"slug": "pcb",
+					"color": "#1F6F4A",
+					"name": "PCB green"
+				},
+				{
+					"slug": "rule",
+					"color": "#1B3A6B",
+					"name": "Solder"
+				}
+			]
+		}
+	}
+}

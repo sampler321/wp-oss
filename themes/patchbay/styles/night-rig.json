@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night rig",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#141414",
+					"name": "Panel white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F4F2EC",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF6A55",
+					"name": "Fuzz red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F2B90F",
+					"name": "Enclosure yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#26241F",
+					"name": "Bench"
+				},
+				{
+					"slug": "line",
+					"color": "#F4F2EC",
+					"name": "Wire"
+				},
+				{
+					"slug": "muted",
+					"color": "#B8B2A6",
+					"name": "Graphite"
+				},
+				{
+					"slug": "teal",
+					"color": "#0E9C9A",
+					"name": "Enclosure teal"
+				},
+				{
+					"slug": "orange",
+					"color": "#E8622C",
+					"name": "Enclosure orange"
+				},
+				{
+					"slug": "pcb",
+					"color": "#1F6F4A",
+					"name": "PCB green"
+				},
+				{
+					"slug": "rule",
+					"color": "#F2B90F",
+					"name": "Solder"
+				}
+			]
+		}
+	}
+}

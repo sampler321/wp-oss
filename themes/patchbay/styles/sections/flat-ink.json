@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Flat ground: ink",
+	"slug": "flat-ink",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|base",
+					"text": "var:preset|color|contrast"
+				},
+				"border": {
+					"color": "var:preset|color|base"
+				}
+			}
+		}
+	}
+}
