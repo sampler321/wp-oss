@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalogue grid",
+	"slug": "catalogue",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"spacing": {
+			"blockGap": "var:preset|spacing|50"
+		}
+	}
+}

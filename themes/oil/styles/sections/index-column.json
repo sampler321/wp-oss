@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Index column (sticky on desktop)",
+	"slug": "index-column",
+	"blockTypes": [
+		"core/column"
+	],
+	"styles": {}
+}

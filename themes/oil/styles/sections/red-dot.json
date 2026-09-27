@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sold (red dot)",
+	"slug": "red-dot",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent"
+		}
+	}
+}

@@ -7,7 +7,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | # | Slug | Idea | Brief from the owner | Status | Demo |
 |---|---|---|---|---|---|
 | 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
-| 2 | oil | 002 Painter, studio and available works | as researched | tested |  |
+| 2 | oil | 002 Painter, studio and available works | as researched | deployed | https://wposs-oil.b-j-kapica.workers.dev |
 | 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | deployed (HTTP 404) | https://wposs-kiln.b-j-kapica.workers.dev |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
@@ -29,7 +29,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
-| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | todo | |
+| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
 | 27 | local | 053 Hyperlocal news | more scientific looking | todo | |

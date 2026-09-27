@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Salon",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#2D2A26",
+					"name": "Salon wall"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F2EEE6",
+					"name": "Chalk"
+				},
+				{
+					"slug": "accent",
+					"color": "#E3917A",
+					"name": "Red dot"
+				},
+				{
+					"slug": "surface",
+					"color": "#39352F",
+					"name": "Dark linen"
+				},
+				{
+					"slug": "line",
+					"color": "#5C564D",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#BDB5A8",
+					"name": "Warm grey"
+				}
+			]
+		}
+	}
+}

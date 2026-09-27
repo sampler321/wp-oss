@@ -1,0 +1,205 @@
+{
+ "site": {
+  "title": "Agnes Brekke",
+  "tagline": "Paintings from a top-floor studio in Leith"
+ },
+ "categories": [
+  {
+   "slug": "paintings",
+   "name": "Paintings",
+   "description": "Oil on linen, canvas and panel."
+  },
+  {
+   "slug": "drawings",
+   "name": "Drawings",
+   "description": "Pencil and charcoal, mostly drawn standing up outside."
+  },
+  {
+   "slug": "monotypes",
+   "name": "Monotypes",
+   "description": "One-off prints pulled from a painted plate on the etching press at Edinburgh Printmakers."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "work",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "work",
+   "title": "Work",
+   "content": ""
+  },
+  {
+   "slug": "exhibitions",
+   "title": "Exhibitions",
+   "pattern": "oil/exhibitions-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "journal",
+   "title": "Journal",
+   "pattern": "oil/journal-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "oil/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "oil/contact-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Sunlight on the floor, Couper Street",
+   "category": "paintings",
+   "tags": [
+    "Interiors",
+    "Available"
+   ],
+   "image": "hero.jpg",
+   "date": "2026-08-14",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">61 × 51 cm / 24 × 20 in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Available, £4,800</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Sunlight%20on%20the%20floor%2C%20Couper%20Street%20%282026%29\">Enquire about this work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">The front room at nine in the morning in August. Two tall windows on the left throw squares of light across bare boards towards a closed panelled door. The walls are a warm brown grey. There is nobody in the room.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "White door and yellow cupboard",
+   "category": "paintings",
+   "tags": [
+    "Interiors",
+    "Available"
+   ],
+   "image": "work-9.jpg",
+   "date": "2026-06-02",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on panel</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">40 × 38 cm / 15¾ × 15 in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Available, £2,600</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20White%20door%20and%20yellow%20cupboard%20%282026%29\">Enquire about this work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A small, loosely painted panel. A pale door stands half open on the left; on the right, a tall cupboard in ochre catches the light from the hall.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Music room, afternoon",
+   "category": "paintings",
+   "tags": [
+    "Interiors",
+    "Sold"
+   ],
+   "image": "work-1.jpg",
+   "date": "2026-03-20",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">90 × 80 cm / 35½ × 31½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-red-dot\"} -->\n<p class=\"is-style-red-dot\">Sold, 2026. Last price £7,200</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Music%20room%2C%20afternoon%20%282026%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A grey panelled room with a square piano under a framed print, a white chair pulled out and a cello leaning on the wall. Soft light from a door on the left.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Moonlight, Couper Street",
+   "category": "monotypes",
+   "tags": [
+    "Interiors",
+    "On loan"
+   ],
+   "image": "work-5.jpg",
+   "date": "2025-11-03",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil-based monotype on Somerset Satin 300gsm</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">50 × 62 cm / 19¾ × 24½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Unavailable. On loan to the Leith Civic Collection until March 2027.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Moonlight%2C%20Couper%20Street%20%282025%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">The same front room at night, printed in violet greys. Moonlight makes pale rectangles on the floor under the window. The door is shut.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Bookcase and Windsor chair",
+   "category": "paintings",
+   "tags": [
+    "Interiors",
+    "Sold"
+   ],
+   "image": "work-2.jpg",
+   "date": "2025-08-19",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">70 × 60 cm / 27½ × 23½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-red-dot\"} -->\n<p class=\"is-style-red-dot\">Sold, 2025. Last price £5,900</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Bookcase%20and%20Windsor%20chair%20%282025%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A narrow bookcase against a mottled grey wall with a small painting hung above it. A Windsor chair on the left and a dark table with a white bowl on the right.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Two sisters reading",
+   "category": "paintings",
+   "tags": [
+    "Portraits",
+    "Available"
+   ],
+   "image": "work-6.jpg",
+   "date": "2025-05-07",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on canvas</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">64 × 84 cm / 25¼ × 33 in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Available, £6,400</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Two%20sisters%20reading%20%282025%29\">Enquire about this work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">Two women at a table, one facing us and reading with her head bowed, the other seen from behind in shadow. Olive and brown, lit from the left.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "The old exchange from the Water of Leith",
+   "category": "paintings",
+   "tags": [
+    "The city",
+    "Sold"
+   ],
+   "image": "work-7.jpg",
+   "date": "2024-10-12",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">60 × 78 cm / 23½ × 30¾ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-red-dot\"} -->\n<p class=\"is-style-red-dot\">Sold, 2024. Last price £5,200</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20The%20old%20exchange%20from%20the%20Water%20of%20Leith%20%282024%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A long pale civic building across still green water, under a flat grey sky. A stone bridge on the right. Painted on site over four mornings in October.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Field above Gullane",
+   "category": "paintings",
+   "tags": [
+    "Landscape",
+    "Available"
+   ],
+   "image": "work-3.jpg",
+   "date": "2024-07-01",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on board</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">36 × 62 cm / 14¼ × 24½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Available, £2,900</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Field%20above%20Gullane%20%282024%29\">Enquire about this work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A wide sheep field rising to a low ridge with three dark clumps of trees, under a blue sky with small, even clouds.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Trees on Leith Links, study",
+   "category": "drawings",
+   "tags": [
+    "Landscape",
+    "Available"
+   ],
+   "image": "work-8.jpg",
+   "date": "2024-02-15",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Graphite on cartridge paper</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">30 × 40 cm / 11¾ × 15¾ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Available, £850</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Trees%20on%20Leith%20Links%2C%20study%20%282024%29\">Enquire about this work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">A quick pencil study of thin bare trees along a path, drawn standing up in February. Loose hatching, lots of white paper.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Prince Albert, Charlotte Square",
+   "category": "paintings",
+   "tags": [
+    "The city",
+    "Sold"
+   ],
+   "image": "work-4.jpg",
+   "date": "2023-09-28",
+   "template": "single-work",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">120 × 80 cm / 47¼ × 31½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-red-dot\"} -->\n<p class=\"is-style-red-dot\">Sold, 2023. Last price £9,500</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Prince%20Albert%2C%20Charlotte%20Square%20%282023%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">An equestrian statue on a high stone plinth, seen from below against the pale stone front of a Georgian terrace. Nearly monochrome, grey and cream.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Work",
+   "url": "/work/"
+  },
+  {
+   "label": "Exhibitions",
+   "url": "/exhibitions/"
+  },
+  {
+   "label": "Journal",
+   "url": "/journal/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

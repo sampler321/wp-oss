@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Linen",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EDE8DC",
+					"name": "Raw linen"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3D3A33",
+					"name": "Umber"
+				},
+				{
+					"slug": "accent",
+					"color": "#8C2F23",
+					"name": "Red dot"
+				},
+				{
+					"slug": "surface",
+					"color": "#E2DCCD",
+					"name": "Primed linen"
+				},
+				{
+					"slug": "line",
+					"color": "#C4BCA9",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5E5A52",
+					"name": "Grey umber"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|body"
+		}
+	}
+}
