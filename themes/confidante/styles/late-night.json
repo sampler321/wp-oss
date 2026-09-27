@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Late night",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#2B1215",
+					"name": "Blush"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FBE4DC",
+					"name": "Oxblood"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF8A73",
+					"name": "Tomato (Ama)"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#7FD3B0",
+					"name": "Bottle green (Roisin)"
+				},
+				{
+					"slug": "surface",
+					"color": "#3D1C1F",
+					"name": "Deep blush"
+				},
+				{
+					"slug": "line",
+					"color": "#FBE4DC",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#E2B7AC",
+					"name": "Cocoa"
+				},
+				{
+					"slug": "paper",
+					"color": "#361719",
+					"name": "Paper"
+				}
+			]
+		}
+	}
+}

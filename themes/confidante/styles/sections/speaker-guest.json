@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Speaker: guest",
+	"slug": "speaker-guest",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|muted",
+				"width": "3px",
+				"style": "dotted"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30"
+			}
+		}
+	}
+}

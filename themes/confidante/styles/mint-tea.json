@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mint tea",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#DDEFE4",
+					"name": "Blush"
+				},
+				{
+					"slug": "contrast",
+					"color": "#10261D",
+					"name": "Oxblood"
+				},
+				{
+					"slug": "accent",
+					"color": "#A12A1D",
+					"name": "Tomato (Ama)"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1D5A45",
+					"name": "Bottle green (Roisin)"
+				},
+				{
+					"slug": "surface",
+					"color": "#C4E3D1",
+					"name": "Deep blush"
+				},
+				{
+					"slug": "line",
+					"color": "#10261D",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#34574A",
+					"name": "Cocoa"
+				},
+				{
+					"slug": "paper",
+					"color": "#F1FAF4",
+					"name": "Paper"
+				}
+			]
+		}
+	}
+}

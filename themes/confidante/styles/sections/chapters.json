@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Chapter list",
+	"slug": "chapters",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding-left:0!important}& li{display:flex;gap:1rem;padding:.55rem 0;border-top:1.5px solid var(--wp--preset--color--line)}& li:last-child{border-bottom:1.5px solid var(--wp--preset--color--line)}& li a{min-width:3.6rem;font-weight:700;text-decoration:none}& li a:hover{text-decoration:underline}"
+	}
+}

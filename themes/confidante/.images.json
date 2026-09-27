@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Talking (Unsplash).jpg",
+    "creator": "Les Anderson lesanderson",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Talking_(Unsplash).jpg",
+    "query": "women talking Unsplash"
+  },
+  "mic": {
+    "title": "Microphone (Unsplash).jpg",
+    "creator": "Kai Oberhäuser memoryonsounds",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Microphone_(Unsplash).jpg",
+    "query": "microphone Unsplash"
+  },
+  "host-1": {
+    "title": "Smiling woman pink shirt.jpg",
+    "creator": "Joshua McKnight",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Smiling_woman_pink_shirt.jpg",
+    "query": "Smiling woman pink shirt"
+  },
+  "host-2": {
+    "title": "Laughing in Journey t-shirt (Unsplash).jpg",
+    "creator": "Brooke Cagle brookecagle",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Laughing_in_Journey_t-shirt_(Unsplash).jpg",
+    "query": "Laughing in Journey t-shirt"
+  },
+  "ep-work": {
+    "title": "Tattooed woman with laptop (Unsplash).jpg",
+    "creator": "Brooke Cagle brookecagle",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Tattooed_woman_with_laptop_(Unsplash).jpg",
+    "query": "laptop woman Unsplash"
+  },
+  "ep-money": {
+    "title": "20250828 ceramic piggy banks.jpg",
+    "creator": "Abraham",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:20250828_ceramic_piggy_banks.jpg",
+    "query": "piggy bank"
+  },
+  "ep-body": {
+    "title": "Red water swimming pool (Unsplash).jpg",
+    "creator": "Caroline Bertolini caroline_bertolini",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Red_water_swimming_pool_(Unsplash).jpg",
+    "query": "swimming Unsplash"
+  },
+  "ep-friends": {
+    "title": "Photographer Friends (Unsplash).jpg",
+    "creator": "Katie Treadway katietreadway",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Photographer_Friends_(Unsplash).jpg",
+    "query": "women friends laughing Unsplash"
+  },
+  "ep-letters": {
+    "title": "Precise drawing (Unsplash).jpg",
+    "creator": "Tamarcus Brown tamarcusbrown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Precise_drawing_(Unsplash).jpg",
+    "query": "notebook writing Unsplash"
+  },
+  "ep-kitchen": {
+    "title": "Pitcher of tea (Unsplash).jpg",
+    "creator": "bady qb bady",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Pitcher_of_tea_(Unsplash).jpg",
+    "query": "tea mugs table Unsplash"
+  },
+  "ep-kids": {
+    "title": "Sleeping baby (Unsplash).jpg",
+    "creator": "Dakota Corbin thedakotacorbin",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sleeping_baby_(Unsplash).jpg",
+    "query": "bed sleep Unsplash"
+  },
+  "ep-money2": {
+    "title": "Generic sterling banknote.png",
+    "creator": "Calorus",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Generic_sterling_banknote.png",
+    "query": "banknotes pound sterling"
+  }
+}

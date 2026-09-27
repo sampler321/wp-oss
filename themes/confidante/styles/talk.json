@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Talk",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Blush"
+				},
+				{
+					"slug": "contrast",
+					"color": "#141414",
+					"name": "Oxblood"
+				},
+				{
+					"slug": "accent",
+					"color": "#D1241A",
+					"name": "Tomato (Ama)"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#0F5A8A",
+					"name": "Bottle green (Roisin)"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1EFEC",
+					"name": "Deep blush"
+				},
+				{
+					"slug": "line",
+					"color": "#141414",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#555049",
+					"name": "Cocoa"
+				},
+				{
+					"slug": "paper",
+					"color": "#F7F6F4",
+					"name": "Paper"
+				}
+			]
+		}
+	}
+}

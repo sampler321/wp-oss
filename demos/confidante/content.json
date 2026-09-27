@@ -1,0 +1,170 @@
+{
+ "site": {
+  "title": "Say More",
+  "tagline": "Two friends on work, bodies, money and friendship. Every Tuesday."
+ },
+ "categories": [
+  {
+   "slug": "work",
+   "name": "Work"
+  },
+  {
+   "slug": "bodies",
+   "name": "Bodies"
+  },
+  {
+   "slug": "money",
+   "name": "Money"
+  },
+  {
+   "slug": "friendship",
+   "name": "Friendship"
+  },
+  {
+   "slug": "letters",
+   "name": "Letters",
+   "description": "Episodes built around one listener letter."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "episodes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "episodes",
+   "title": "Episodes",
+   "content": ""
+  },
+  {
+   "slug": "hosts",
+   "title": "Hosts",
+   "pattern": "confidante/hosts-page"
+  },
+  {
+   "slug": "write-to-us",
+   "title": "Write to us",
+   "pattern": "confidante/write-to-us-page"
+  },
+  {
+   "slug": "support",
+   "title": "Support the show",
+   "pattern": "confidante/support-page"
+  },
+  {
+   "slug": "subscribe",
+   "title": "Subscribe",
+   "pattern": "confidante/subscribe-page"
+  },
+  {
+   "slug": "episode-index",
+   "title": "Episode index",
+   "pattern": "confidante/episode-index-page"
+  },
+  {
+   "slug": "transcripts",
+   "title": "Transcripts",
+   "pattern": "confidante/transcripts-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "63. Asking for more money",
+   "slug": "asking-for-more-money",
+   "category": "money",
+   "image": "ep-money.jpg",
+   "excerpt": "Ama asked for a pay rise in March. It is now the autumn. Folake Adeyemi goes through her notes line by line.",
+   "date": "2026-09-22",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"The Mercury 13\", told by Megan Smith for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-content-note\"} -->\n<p class=\"is-style-content-note\">Content note: frank talk about debt, and one bereavement (from 31:40).</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">00:00</a> Hello, and what Roisin had for breakfast</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=190\">03:10</a> The email Ama sent in March</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=820\">13:40</a> Folake on salary bands</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1510\">25:10</a> Writing the one-page case</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1900\">31:40</a> Debt, and why it was hard to say out loud</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2710\">45:10</a> What happened on Thursday</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li><a href=\"https://www.acas.org.uk/\">Acas</a> runs a free helpline for workplace questions: 0300 123 1100.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.gov.uk/employment-rights-pay\">GOV.UK on pay and your rights</a>.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>The salary survey Ama used came from her union. If you are in one, ask yours.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"tagName\":\"section\",\"className\":\"is-style-deep-blush\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|40\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<section class=\"wp-block-group is-style-deep-blush\" style=\"padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:paragraph {\"className\":\"has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}},\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\" style=\"font-weight:700\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Folake Adeyemi</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Payroll auditor and union rep in Salford. Runs a Tuesday-night drop-in at the library on Chapel Street.</p>\n<!-- /wp:paragraph --></section>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-paper-box\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-paper-box\"><!-- wp:paragraph {\"className\":\"has-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}},\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\" style=\"font-weight:700\">Phrase of the week</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-large\",\"fontFamily\":\"display\"} -->\n<p class=\"has-display-font-family has-x-large-font-size\">Salary band</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The range a company has already agreed to pay for a job. Ask for it before the interview.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> Right. We’re recording. Roisin, you’ve got a face on.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> I have not got a face on. This is my face.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> So. The pay rise. I said I’d report back and I’m reporting back.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-guest\"} -->\n<p class=\"is-style-speaker-guest\"><strong>Folake</strong> Can I ask what you actually wrote? Word for word, if you have it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> I have everything. “Hi Mark, I’d like to discuss my salary at my review.” That was it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-guest\"} -->\n<p class=\"is-style-speaker-guest\"><strong>Folake</strong> That’s a fine opener. The problem is nothing came after it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "62. The friend who moved to Lisbon",
+   "slug": "the-friend-who-moved-to-lisbon",
+   "category": "friendship",
+   "image": "ep-friends.jpg",
+   "excerpt": "Roisin’s oldest friend moved abroad in January. They have spoken four times since. Whose job is it to ring?",
+   "date": "2026-09-15",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"Sally Ride\", told by Dr Ellen Stofan for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=0\">00:00</a> Hello</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=240\">04:00</a> The leaving do</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=905\">15:05</a> Voice notes versus actual phone calls</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=1620\">27:00</a> Ama’s rule about birthdays</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=2400\">40:00</a> Booking the flight</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Roisin mentioned the study on how many friends people keep after 30. We couldn’t find the original, so we are not linking a newspaper summary of it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Ryanair to Lisbon from Manchester, Tuesdays and Saturdays, since you asked.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>The book Ama keeps recommending is <em>Big Friendship</em> by Aminatou Sow and Ann Friedman.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> She sent me a photo of a custard tart and I didn’t reply for nine days.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> Nine days.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> I was thinking of something good to say.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> To a custard tart.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "61. Swimming through the menopause",
+   "slug": "swimming-through-the-menopause",
+   "category": "bodies",
+   "image": "ep-body.jpg",
+   "excerpt": "Dr Nadia Rahman, a GP in Longsight, answers the questions we were too embarrassed to ask at 44.",
+   "date": "2026-09-08",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"Sally Ride\", told by Dr Ellen Stofan for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-content-note\"} -->\n<p class=\"is-style-content-note\">Content note: periods, HRT and a short part about fertility (22:10 to 26:00).</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=0\">00:00</a> Hello, and the cold-water thing</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=420\">07:00</a> Nadia on what perimenopause actually is</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=1330\">22:10</a> HRT, and the shortage in 2022</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=2230\">37:10</a> Fertility, briefly</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=2800\">46:40</a> Questions from the Patreon</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li><a href=\"https://www.nhs.uk/conditions/menopause/\">NHS pages on menopause</a>, which Nadia says are good now.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Arcadia’s women-only swim is Wednesday 7pm.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>This episode is general information. Please talk to your own GP about your own body.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"tagName\":\"section\",\"className\":\"is-style-deep-blush\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|40\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<section class=\"wp-block-group is-style-deep-blush\" style=\"padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:paragraph {\"className\":\"has-x-small-font-size\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}},\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\" style=\"font-weight:700\">Guest</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Dr Nadia Rahman</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>GP at a practice in Longsight for twelve years. Does a menopause clinic on Thursday afternoons.</p>\n<!-- /wp:paragraph --></section>\n<!-- /wp:group -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-guest\"} -->\n<p class=\"is-style-speaker-guest\"><strong>Nadia</strong> The first thing people tell me is that they thought they were going mad.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> That was me in the car park at Asda.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-guest\"} -->\n<p class=\"is-style-speaker-guest\"><strong>Nadia</strong> You weren’t going mad.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "60. Leaving the job you’re good at",
+   "slug": "leaving-the-job-youre-good-at",
+   "category": "work",
+   "image": "ep-work.jpg",
+   "excerpt": "Ama left HR after eleven years. She was good at it and she was miserable. We talk about the week she handed in her notice.",
+   "date": "2026-09-01",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"The Mercury 13\", told by Megan Smith for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">00:00</a> Hello</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=300\">05:00</a> The Sunday-night feeling</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1100\">18:20</a> Telling her mum</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1850\">30:50</a> The pay cut, in actual numbers</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2600\">43:20</a> Six months on</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Ama’s pay went from £41,000 to £33,500. She says it’s worth it on most days and not on the day the boiler went.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> I was good at it. That was the problem. Nobody tells you that being good at something can keep you there.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> I’d have told you. You didn’t ask.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "59. Dear Say More: my sister owes me £4,000",
+   "slug": "my-sister-owes-me-4000",
+   "category": "letters",
+   "image": "ep-letters.jpg",
+   "excerpt": "Hannah lent her sister a deposit. Her sister has booked a week in Crete. We read the letter and argue about it.",
+   "date": "2026-08-25",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"The Mercury 13\", told by Megan Smith for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">00:00</a> The letter</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=360\">06:00</a> Roisin’s first answer</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=980\">16:20</a> Ama’s spreadsheet</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1700\">28:20</a> Roisin changes her mind</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=2100\">35:00</a> What we would actually say</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Hannah, if you’re listening: we hope it went all right. Tell us.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>My sister borrowed £4,000 for a deposit two years ago. We agreed she’d pay it back at £200 a month. She paid three months. She’s just booked a week in Crete and posted the villa in the family chat. Do I say something or do I let it go? I love her and I don’t want to be the sister who counts.</p>\n<!-- /wp:paragraph --><cite>Hannah, Stockport, by email</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> Let it go. It’s family.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> It’s four thousand pounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> Okay, say something.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->",
+   "template": "single-letter"
+  },
+  {
+   "title": "58. Deciding about kids at 38",
+   "slug": "deciding-about-kids-at-38",
+   "category": "bodies",
+   "image": "ep-kids.jpg",
+   "excerpt": "Roisin doesn’t know if she wants children and is tired of being asked. A long one, and a careful one.",
+   "date": "2026-08-18",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"Sally Ride\", told by Dr Ellen Stofan for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph {\"className\":\"is-style-content-note\"} -->\n<p class=\"is-style-content-note\">Content note: pregnancy loss (12:05 to 19:40). Use the chapters to skip it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=0\">00:00</a> Hello</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=725\">12:05</a> Ama’s miscarriage in 2021</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=1180\">19:40</a> Roisin at the family wedding</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=2300\">38:20</a> Egg freezing costs in Manchester</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=3300\">55:00</a> What we still don’t know</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li><a href=\"https://www.miscarriageassociation.org.uk/\">The Miscarriage Association</a>, helpline 01924 200799.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Egg freezing in the UK usually costs £3,000 to £5,000 per cycle, plus storage.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-b\"} -->\n<p class=\"is-style-speaker-b\"><strong>Roisin</strong> I don’t know. I keep saying that like it’s a placeholder, but it might just be the answer.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "57. Who pays for the hen do",
+   "slug": "who-pays-for-the-hen-do",
+   "category": "money",
+   "image": "ep-money2.jpg",
+   "excerpt": "A £640 weekend in Albufeira, for a bride Ama has met twice. Is it all right to say no?",
+   "date": "2026-08-11",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"The Mercury 13\", told by Megan Smith for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=0\">00:00</a> Hello</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=280\">04:40</a> The WhatsApp group</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=960\">16:00</a> What people actually spend</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Mercury_13_%28As_Told_By_U.S._Chief_Technology_Officer_Megan_Smith%29.ogg#t=1700\">28:20</a> How to say no in one message</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The message Ama sent in the end: “I can’t do Albufeira, but I’d love to take you for dinner before the wedding.” It worked.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-a\"} -->\n<p class=\"is-style-speaker-a\"><strong>Ama</strong> I have met her twice. Once was at a funeral.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "56. Tea with our mums",
+   "slug": "tea-with-our-mums",
+   "category": "friendship",
+   "image": "ep-kitchen.jpg",
+   "excerpt": "Grace Boateng and Siobhan Keane come to the kitchen table. They have opinions about the show.",
+   "date": "2026-08-04",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg\"></audio><figcaption class=\"wp-element-caption\">Stand-in audio: \"Sally Ride\", told by Dr Ellen Stofan for the White House (public domain). Swap in your episode file.</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Chapters</h3>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"className\":\"is-style-chapters\"} -->\n<ul class=\"wp-block-list is-style-chapters\"><!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=0\">00:00</a> Hello, mums</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=500\">08:20</a> What Grace thinks of the name</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=1400\">23:20</a> Siobhan on Derry in 1985</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://upload.wikimedia.org/wikipedia/commons/1/13/Sally_Ride_%28As_Told_By_NASA_Chief_Scientist_Dr._Ellen_Stofan%29.ogg#t=2600\">43:20</a> Their friends, and how they kept them</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Show notes</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Grace would like it known that she did not “storm off” in 2019. She went to get the bus.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Transcript</h3>\n<!-- /wp:heading -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Read the full transcript</summary><!-- wp:paragraph {\"className\":\"is-style-speaker-guest\"} -->\n<p class=\"is-style-speaker-guest\"><strong>Grace</strong> Why is it called Say More? You already say plenty.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">Checked by Roisin. Spot a mistake? Email transcripts@saymore.example.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Episodes",
+   "url": "/episodes/"
+  },
+  {
+   "label": "Hosts",
+   "url": "/hosts/"
+  },
+  {
+   "label": "Write to us",
+   "url": "/write-to-us/"
+  },
+  {
+   "label": "Support",
+   "url": "/support/"
+  },
+  {
+   "label": "Subscribe",
+   "url": "/subscribe/"
+  }
+ ]
+}

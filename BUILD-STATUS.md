@@ -27,7 +27,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | todo | |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | todo | |
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
-| 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | todo | |
+| 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | todo | |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | todo | |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | todo | |
@@ -38,7 +38,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 30 | roast | 059 Specialty coffee roaster | as researched | todo | |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | tested |  |
-| 33 | thrift | 062 Vintage clothing | as researched | todo | |
+| 33 | thrift | 062 Vintage clothing | as researched | failed test |  |
 | 34 | paper | 067 Stationery and paper goods | as researched | todo | |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
@@ -47,7 +47,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | todo | |
-| 42 | coat | 101 Painter and decorator | more colours and fun | tested |  |
+| 42 | coat | 101 Painter and decorator | more colours and fun | deployed (HTTP 404) | https://wposs-coat.b-j-kapica.workers.dev |
 | 43 | lingua | 132 Translator / interpreter | as researched | todo | |
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | todo | |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | todo | |

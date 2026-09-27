@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Speaker: Ama",
+	"slug": "speaker-a",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|accent",
+				"width": "3px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30"
+			}
+		},
+		"css": "& strong{color:var(--wp--preset--color--accent)}"
+	}
+}

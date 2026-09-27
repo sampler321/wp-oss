@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Arch",
+	"slug": "arch",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image"
+	],
+	"styles": {
+		"css": "& img{border-radius:999px 999px 22px 22px;aspect-ratio:4/5;object-fit:cover;width:100%}"
+	}
+}

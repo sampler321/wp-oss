@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Topic list",
+	"slug": "topic-list",
+	"blockTypes": [
+		"core/categories"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "700",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}& li a{display:inline-block;padding:.35rem .9rem;border:1.5px solid currentColor;border-radius:999px;text-decoration:none}& li a:hover{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base)}"
+	}
+}
