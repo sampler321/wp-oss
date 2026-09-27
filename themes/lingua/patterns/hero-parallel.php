@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Hero: the same statement in two languages
+ * Title: Hero: name and trade in two languages
  * Slug: lingua/hero-parallel
- * Categories: featured
+ * Categories: hero,featured
  * Description: The signature opening: an English statement and its Portuguese version side by side.
  */
 ?>
@@ -14,8 +14,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
-<h1 class="wp-block-heading has-xx-large-font-size">I translate Portuguese and Spanish books, papers and exhibitions into English.</h1>
-<!-- /wp:heading --></div>
+<h1 class="wp-block-heading has-xx-large-font-size">Joanna Pryce, translator from Portuguese and Spanish into English</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Books, academic papers and exhibitions, from Porto.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -24,8 +28,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xx-large"} -->
-<h2 class="wp-block-heading has-xx-large-font-size">Traduzo livros, artigos e exposições do português e do espanhol para inglês.</h2>
-<!-- /wp:heading --></div>
+<h2 class="wp-block-heading has-xx-large-font-size">Joanna Pryce, tradutora de português e espanhol para inglês</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Livros, artigos académicos e exposições, a partir do Porto.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
@@ -37,7 +45,9 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"is-style-status"} -->
+<div class="wp-block-column"><!-- wp:pattern {"slug":"lingua/on-my-desk"} /-->
+
+<!-- wp:paragraph {"className":"is-style-status"} -->
 <p class="is-style-status">Booked until 14 November. The next free slot for a short academic paper is 3 November.</p>
 <!-- /wp:paragraph -->
 

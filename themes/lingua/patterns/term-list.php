@@ -1,78 +1,76 @@
 <?php
 /**
- * Title: Credentials
- * Slug: lingua/credentials
- * Categories: about
+ * Title: A glossary extract
+ * Slug: lingua/term-list
+ * Categories: text
  */
 ?>
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Training and memberships</h2>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">From a glossary</h3>
 <!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Eleven of the 300 terms agreed for Cork Oak Country.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"is-style-specs","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-specs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>2006</p>
+<p>montado</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>BA Spanish and Portuguese, Cardiff University</p>
+<p>cork-oak woodland (not "savanna", not "dehesa")</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>2008</p>
+<p>herdade</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>MA Translation Studies, University of Bristol</p>
+<p>estate</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>2008 to 2011</p>
+<p>descortiçamento</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In-house translator and reviser at a translation company in Lisbon</p>
+<p>cork harvest</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Since 2012</p>
+<p>rendeiro</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Freelance, from Porto</p>
+<p>tenant farmer</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Since 2014</p>
+<p>seara</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>MITI, Institute of Translation and Interpreting, no. 21437</p>
+<p>wheat field, left as seara in the chapter on the 1912 strikes</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Since 2016</p>
+<p>latifúndio</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Member, Associação Portuguesa de Tradutores</p>
+<p>large estate, glossed once</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-
-<!-- wp:pattern {"slug":"lingua/credentials-line"} /-->
-
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Profiles: <a href="https://www.proz.com/">ProZ</a> and <a href="https://orcid.org/">ORCID</a>, where the academic translations are listed with their DOIs.</p>
-<!-- /wp:paragraph -->

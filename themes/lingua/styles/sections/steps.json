@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Numbered steps",
+	"slug": "steps",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|40"
+			}
+		},
+		"css": "& li{padding-block:.4em;border-bottom:1px solid var(--wp--preset--color--line)}"
+	}
+}

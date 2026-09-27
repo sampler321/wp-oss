@@ -2,7 +2,7 @@
 /**
  * Title: Services and rates
  * Slug: lingua/rates
- * Categories: services
+ * Categories: prices,services
  */
 ?>
 <!-- wp:heading -->

@@ -8,7 +8,15 @@
 ?>
 <!-- wp:pattern {"slug":"lingua/language-pairs"} /-->
 
+<!-- wp:pattern {"slug":"lingua/fields"} /-->
+
+<!-- wp:pattern {"slug":"lingua/availability"} /-->
+
 <!-- wp:pattern {"slug":"lingua/rates"} /-->
+
+<!-- wp:pattern {"slug":"lingua/translation-process"} /-->
+
+<!-- wp:pattern {"slug":"lingua/grants-note"} /-->
 
 <!-- wp:pattern {"slug":"lingua/turnaround"} /-->
 

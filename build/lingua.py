@@ -122,6 +122,28 @@ theme = {
         {'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']},
     ],
 }
+
+# ---------------------------------------------------------------- round 2: lightbox, spec rows, pattern categories
+R2_CSS = ('.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}'
+          '.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}'
+          '.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}')
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += R2_CSS
+
+
+def specs(pairs, **attrs):
+    """Label and value rows made from groups, instead of a two-column table."""
+    return group(J(*[row(J(para(k), para(v))) for k, v in pairs]), className='is-style-specs', layout={'type': 'default'}, **attrs)
+
+
+def pattern_categories(cats):
+    lines = ["<?php", "/**", " * Registers this theme's block pattern categories. Nothing else.", " */", "add_action( 'init', function () {"]
+    for slug, label in cats:
+        lines.append("\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', '%s' ) ) );" % (slug, label, THEME['slug']))
+    lines.append('} );')
+    write('functions.php', '\n'.join(lines))
+
+
 with open(os.path.join(D, 'theme.json'), 'w') as f:
     json.dump(theme, f, indent='\t', ensure_ascii=False)
 
@@ -184,6 +206,7 @@ section('status', 'Status line', ['core/paragraph', 'core/group'], {
     'typography': {'fontSize': 'var:preset|font-size|small'},
     'css': '&{display:inline-block}',
 })
+section('steps', 'Numbered steps', ['core/list'], {'spacing': {'padding': {'left': 'var:preset|spacing|40'}}, 'css': '& li{padding-block:.4em;border-bottom:1px solid var(--wp--preset--color--line)}'})
 section('pair', 'Language pair line', ['core/paragraph'], {
     'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|xx-large', 'lineHeight': '1.1'},
     'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}},
@@ -203,12 +226,14 @@ PHONE = '+351 912 000 471'
 BOOKED = 'Booked until 14 November. The next free slot for a short academic paper is 3 November.'
 
 # ---------------------------------------------------------------- front page
-pattern('hero-parallel', 'Hero: the same statement in two languages', 'featured', group(J(
-    parallel(heading('I translate Portuguese and Spanish books, papers and exhibitions into English.', 1, fontSize='xx-large'),
-             heading('Traduzo livros, artigos e exposições do português e do espanhol para inglês.', 2, fontSize='xx-large'),
+pattern('hero-parallel', 'Hero: name and trade in two languages', 'hero,featured', group(J(
+    parallel(J(heading('Joanna Pryce, translator from Portuguese and Spanish into English', 1, fontSize='xx-large'),
+               para('Books, academic papers and exhibitions, from Porto.', fontSize='large')),
+             J(heading('Joanna Pryce, tradutora de português e espanhol para inglês', 2, fontSize='xx-large'),
+               para('Livros, artigos académicos e exposições, a partir do Porto.', fontSize='large')),
              align='wide'),
     columns(('58%', para('I\'m Joanna Pryce. I grew up in Swansea and have lived in Porto since 2011. I translate literary fiction, history and social science, and the texts on museum walls. English is my first language, and the only one I translate into.', fontSize='large')),
-            (None, J(para(BOOKED, className='is-style-status'),
+            (None, J(pattern_ref('on-my-desk'), para(BOOKED, className='is-style-status'),
                      buttons(('Send me the file for a quote', '/contact/')))), align='wide', verticalAlignment='bottom')),
     align='full', className='is-style-pad-lg'), description='The signature opening: an English statement and its Portuguese version side by side.')
 
@@ -246,9 +271,9 @@ pattern('post-list', 'Post list', 'posts,query', inherit_query(
 pattern('fields', 'Fields I work in', 'services', J(
     heading('Fields', 2, fontSize='x-large'),
     columns(
-        (None, J(heading('Fiction and memoir', 4), para('Novels, short stories and the occasional memoir. Sample chapters for publishers and agents, and full books once a publisher has bought the rights.', fontSize='small'))),
-        (None, J(heading('History and social science', 4), para('Articles for journals, book chapters and whole monographs, mostly on land, labour and migration in Portugal and Spain since 1850.', fontSize='small'))),
-        (None, J(heading('Museums and exhibitions', 4), para('Wall texts, labels, audio-guide scripts and catalogues. I write to the character count you give me.', fontSize='small'))),
+        (None, J(heading('<a href="/services/literary/">Fiction and memoir</a>', 4), para('Novels, short stories and the occasional memoir. Sample chapters for publishers and agents, and full books once a publisher has bought the rights.', fontSize='small'))),
+        (None, J(heading('<a href="/services/academic/">History and social science</a>', 4), para('Articles for journals, book chapters and whole monographs, mostly on land, labour and migration in Portugal and Spain since 1850.', fontSize='small'))),
+        (None, J(heading('<a href="/services/museums/">Museums and exhibitions</a>', 4), para('Wall texts, labels, audio-guide scripts and catalogues. I write to the character count you give me.', fontSize='small'))),
         (None, J(heading('Wine and the Douro', 4), para('Back labels, tasting notes and quinta websites. I have lived next to the lodges long enough to know a lagar from a tonel.', fontSize='small'))),
         align='wide')))
 
@@ -257,7 +282,7 @@ pattern('credentials-line', 'Memberships line', 'about', para(
     fontSize='small'))
 
 # ---------------------------------------------------------------- services
-pattern('rates', 'Services and rates', 'services', J(
+pattern('rates', 'Services and rates', 'prices,services', J(
     heading('Services and rates', 2),
     table([['Literary translation', 'per 1,000 source words', 'from €100'],
            ['Academic articles and books', 'per 1,000 source words', '€120'],
@@ -285,7 +310,7 @@ pattern('turnaround', 'Turnaround', 'services', J(
     para('About 2,000 words a day for academic and museum texts, 1,200 for fiction, plus a day for revision at the end. A 90,000-word novel takes me four to five months, and I book those a year ahead.')))
 
 pattern('services-page', 'Page: services', 'services', J(
-    pattern_ref('language-pairs'), pattern_ref('rates'), pattern_ref('turnaround'), pattern_ref('what-i-dont-do'), pattern_ref('quote-what-to-send')), block_types='core/post-content')
+    pattern_ref('language-pairs'), pattern_ref('fields'), pattern_ref('availability'), pattern_ref('rates'), pattern_ref('translation-process'), pattern_ref('grants-note'), pattern_ref('turnaround'), pattern_ref('what-i-dont-do'), pattern_ref('quote-what-to-send')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- examples
 EX = [
@@ -318,12 +343,12 @@ pattern('examples-page', 'Page: examples', 'text', J(
 # ---------------------------------------------------------------- credentials, about, faq, contact
 pattern('credentials', 'Credentials', 'about', J(
     heading('Training and memberships', 2),
-    table([['2006', 'BA Spanish and Portuguese, Cardiff University'],
-           ['2008', 'MA Translation Studies, University of Bristol'],
-           ['2008 to 2011', 'In-house translator and reviser at a translation company in Lisbon'],
-           ['Since 2012', 'Freelance, from Porto'],
-           ['Since 2014', 'MITI, Institute of Translation and Interpreting, no. 21437'],
-           ['Since 2016', 'Member, Associação Portuguesa de Tradutores']]),
+    specs([('2006', 'BA Spanish and Portuguese, Cardiff University'),
+           ('2008', 'MA Translation Studies, University of Bristol'),
+           ('2008 to 2011', 'In-house translator and reviser at a translation company in Lisbon'),
+           ('Since 2012', 'Freelance, from Porto'),
+           ('Since 2014', 'MITI, Institute of Translation and Interpreting, no. 21437'),
+           ('Since 2016', 'Member, Associação Portuguesa de Tradutores')]),
     pattern_ref('credentials-line'),
     para('Profiles: <a href="https://www.proz.com/">ProZ</a> and <a href="https://orcid.org/">ORCID</a>, where the academic translations are listed with their DOIs.', fontSize='small')))
 
@@ -333,7 +358,7 @@ pattern('about-desk', 'About: desk and working hours', 'about', media_text('desk
       para('Porto is on UK time, so a call at ten in London is ten here. I work Monday to Friday and answer email twice a day.', fontSize='small')),
     width=45, align='wide'))
 
-pattern('credentials-page', 'Page: credentials', 'about', J(pattern_ref('credentials'), pattern_ref('about-desk'), pattern_ref('clients')), block_types='core/post-content')
+pattern('credentials-page', 'Page: credentials', 'about', J(pattern_ref('bio'), pattern_ref('credentials'), pattern_ref('about-desk'), pattern_ref('clients'), pattern_ref('testimonials'), pattern_ref('talks')), block_types='core/post-content')
 
 pattern('clients', 'People I translate for', 'about', J(
     heading('People I translate for', 3),
@@ -347,7 +372,7 @@ pattern('faq', 'Questions translators get asked', 'text', J(
     details('How do I pay?', para('Bank transfer in euros or sterling, within 30 days of the invoice. Publishers usually pay half on signing and half on delivery.')),
     details('Can you interpret at a meeting?', para('Occasionally, for small academic events in Porto, and only from Portuguese into English. For conferences you need a booth team, and I can recommend two.'))))
 
-pattern('faq-page', 'Page: FAQ', 'text', J(pattern_ref('faq'), pattern_ref('what-i-dont-do')), block_types='core/post-content')
+pattern('faq-page', 'Page: FAQ', 'text', J(pattern_ref('faq'), pattern_ref('why-not-machine'), pattern_ref('what-i-dont-do')), block_types='core/post-content')
 
 pattern('contact-details', 'Contact details', 'contact', columns(
     (None, J(heading('Email is best', 2, fontSize='x-large'),
@@ -375,6 +400,89 @@ pattern('portugues-page', 'Page: the site in Portuguese', 'text', J(
     para('Escreva para <a href="mailto:%s">%s</a> e envie o ficheiro ou uma amostra, o número de palavras e a data de entrega. Respondo no prazo de um dia útil.' % (EMAIL, EMAIL))), block_types='core/post-content')
 
 pattern('city-note', 'Porto note with photo', 'about', image('porto2.jpg', 'Two wooden rabelo boats moored on the Douro below the steep houses of Porto and the iron arch of the Dom Luís bridge', 'Rabelo boats below the Dom Luís I bridge. The museum label on this page is about them.'))
+# ---------------------------------------------------------------- round 2 patterns
+pattern('on-my-desk', 'On my desk now', 'hero', group(J(
+    heading('On my desk now', 6),
+    para('<em>A Casa dos Guarda-Rios</em> by Inês Lobato, for Afton Press. Chapter nine of fourteen. Due March 2027.')),
+    layout={'type': 'default'}), description='The book or job you are working on this month.')
+
+pattern('testimonials', 'What editors and authors say', 'testimonials', columns(
+    (None, quote('Joanna sent me 41 questions about my own novel. I had an answer for 38 of them, and the book is better for the other three.', 'Rita Cordeiro, author of O Ano do Sal, 2025')),
+    (None, quote('The labels came back within the character count, every one of them, which has never happened to us before.', 'Marta Fontes, curator, Casa do Rio, 2025')),
+    align='wide'))
+
+STEPS_T = [('Sample', 'For books, I translate 2,000 words so you and the publisher can hear the voice before anyone signs.'),
+           ('Glossary', 'Terms, names and anything that repeats, agreed before chapter one.'),
+           ('First draft', 'Close to the Portuguese. Ugly in places on purpose.'),
+           ('Questions', 'A list of queries for the author or editor, usually 20 to 40 for a novel.'),
+           ('Revision', 'Two passes on the English, one of them read aloud.'),
+           ('Proofs', 'I check the typeset pages. Most translators don\'t get asked; it is worth asking.')]
+pattern('translation-process', 'How a translation goes', 'services', J(
+    heading('How a translation goes', 2),
+    lst(['<strong>%s.</strong> %s' % x for x in STEPS_T], ordered=True, className='is-style-steps')))
+
+def field_page(slug, title, lede, what, example_ref, extra):
+    pattern(slug, 'Field: %s' % title.lower(), 'services', J(
+        para(lede, fontSize='large'),
+        columns((None, J(heading('What I translate', 4), lst(what))), (None, J(heading('Good to know', 4), para(extra))), align='wide'),
+        pattern_ref(example_ref)), description='A page for one specialism, with its own example.')
+
+field_page('field-literary', 'Literary translation', 'Novels, stories and memoir from Portuguese and Spanish, for UK and US publishers. I also write readers\' reports and sample translations for agents.',
+           ['Sample translations for rights sales', 'Readers\' reports in English', 'Full books once the rights are bought', 'Grant applications with the publisher'], 'example-fiction',
+           'Most literary translations from Portuguese are part-funded by the DGLAB in Lisbon or the Guimarães Rosa programme in Brazil. I help publishers fill in the forms.')
+field_page('field-academic', 'Academic translation', 'Articles, chapters and monographs in history, geography and the social sciences, for authors and journals.',
+           ['Journal articles, to the journal\'s style sheet', 'Book chapters and whole monographs', 'Grant proposals and CVs', 'Reference lists, checked, not translated'], 'example-history',
+           'I keep a glossary per author, so your second article uses the same terms as your first.')
+field_page('field-museums', 'Museum and exhibition texts', 'Wall texts, object labels, audio guides and catalogues, to your character counts.',
+           ['Object labels and wall panels', 'Audio-guide scripts, timed', 'Catalogue essays', 'Signage and wayfinding'], 'example-museum',
+           'Tell me the label hierarchy and the counts before I start. Cutting later costs more than writing short the first time.')
+
+pattern('term-list', 'A glossary extract', 'text', J(
+    heading('From a glossary', 3),
+    para('Eleven of the 300 terms agreed for Cork Oak Country.', fontSize='small'),
+    specs([('montado', 'cork-oak woodland (not "savanna", not "dehesa")'), ('herdade', 'estate'), ('descortiçamento', 'cork harvest'),
+           ('rendeiro', 'tenant farmer'), ('seara', 'wheat field, left as seara in the chapter on the 1912 strikes'), ('latifúndio', 'large estate, glossed once')])))
+
+pattern('grants-note', 'Translation grants', 'text', group(J(
+    heading('Money for translations', 4),
+    para('Publishers can apply for help with the translator\'s fee: the DGLAB and Camões for Portuguese books, and Acción Cultural Española for Spanish ones. Deadlines are usually in spring and autumn. I have filled in all three forms more times than I can count.')),
+    className='is-style-proof'))
+
+pattern('why-not-machine', 'Why not a free tool', 'text', J(
+    heading('Why not a free tool?', 3),
+    para('For a hotel review, use one. For a book, a paper under your name or a label two hundred thousand people will read, the tool gets the words right and the sense wrong often enough to matter, and you won\'t know where.'),
+    para('<a href="/examples/">See a corrected example</a>', fontSize='small')))
+
+pattern('bio', 'Short biography', 'about', media_text('library.jpg', 'A wood-panelled library reading room with tall bookcases and gothic windows',
+    J(heading('About Joanna', 2),
+      para('Joanna Pryce (b. 1984, Swansea) translates from Portuguese and Spanish. She studied at Cardiff and Bristol, worked in-house in Lisbon for three years, and has been freelance in Porto since 2012. Her translations include novels by Rita Cordeiro and Carmen Olmedo and a history of the Alentejo cork forests.'),
+      para('She is an ITI member and reads the Portuguese papers every morning, mostly for the obituaries, which are where the best sentences are.')),
+    width=40, align='wide'))
+
+pattern('talks', 'Talks and events', 'about', J(
+    heading('Talks and events', 3),
+    lst(['Translating place names, ITI conference, Birmingham, May 2026', 'The museum label as a form, Casa do Rio, Gaia, November 2025',
+         'Reading from The Salt Year, Feira do Livro do Porto, September 2025'])))
+
+pattern('writing-list', 'Recent notes', 'posts,query', J(
+    heading('Notes', 3),
+    query(J(dyn('post-title', isLink=True, level=4), dyn('post-excerpt', moreText='')), per_page=3, template_class='is-style-bibliography')))
+
+pattern('availability', 'Availability by month', 'banner', group(J(
+    heading('Availability', 4),
+    specs([('October', 'Booked'), ('November', 'Booked until the 14th, then short texts only'), ('December', 'Free from the 2nd'), ('January', 'One book slot open')])),
+    layout={'type': 'default'}), description='Month by month, so clients can plan.')
+
+pattern('bilingual-line', 'One line in two languages', 'text', parallel(
+    para('Every translation is a set of decisions. I will tell you what they were.', fontFamily='display', fontSize='x-large'),
+    para('Cada tradução é um conjunto de decisões. Digo-lhe quais foram.', fontFamily='display', fontSize='x-large'), align='wide'))
+
+pattern('cover-wall', 'Covers and sources (lightbox)', 'gallery', gallery([
+    ('books.jpg', 'A stack of four old leather-bound books with red and green edges', 'Sources for The Salt Year'),
+    ('tiles.jpg', 'A Porto chapel faced in blue and white azulejo tiles', 'Cover photo, A House of Tiles'),
+    ('lisbon.jpg', 'A yellow tram on a cobbled square in Lisbon', 'Cover photo, Tram 28'),
+    ('porto2.jpg', 'Rabelo boats on the Douro under the Dom Luís bridge', 'Casa do Rio, exhibition poster')], columns=4, align='wide'))
+
 
 print('patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
@@ -405,7 +513,9 @@ write('templates/front-page.html', page_template(J(
     group(pattern_ref('recent-translations'), align='wide', layout={'type': 'default'}, className='is-style-pad-lg'),
     pattern_ref('proof-sheet'),
     group(pattern_ref('fields'), align='wide', layout={'type': 'default'}, className='is-style-pad-lg'),
-    group(pattern_ref('quote-what-to-send'), align='full', backgroundColor='surface', className='is-style-pad-lg', layout={'type': 'constrained'})),
+    group(J(pattern_ref('testimonials'), pattern_ref('cover-wall')), align='wide', layout={'type': 'default'}),
+    pattern_ref('bilingual-line'),
+    group(group(columns(('40%', pattern_ref('availability')), (None, pattern_ref('quote-what-to-send'))), align='wide', layout={'type': 'default'}), align='full', backgroundColor='surface', className='is-style-pad-lg', layout={'type': 'constrained'})),
     layout={'type': 'constrained'}, style={'spacing': {'blockGap': 'var:preset|spacing|60'}}))
 
 write('templates/home.html', page_template(J(
@@ -436,13 +546,16 @@ write('templates/single.html', page_template(J(
             (None, J(dyn('post-title', level=1, fontSize='xx-large'), dyn('post-content', layout={'type': 'default'}))), align='wide'),
     group(J(dyn('post-navigation-link', type='previous', label='Previous', showTitle=True), dyn('post-navigation-link', label='Next', showTitle=True)),
           align='wide', layout={'type': 'flex', 'justifyContent': 'space-between'}, className='is-style-rule-top')), **M))
+pattern_categories([('hero', 'Hero'), ('prices', 'Prices')])
 print('theme written')
 
 # ---------------------------------------------------------------- demo
 def book(title, cat, img, excerpt, en, pt, facts, date, tag_pt='Original'):
     body = J(para(excerpt, fontSize='large'),
              parallel(para(en), para(pt), tag_en='My English', tag_pt=tag_pt),
-             table(facts))
+             heading('About the job', 4),
+             specs(facts),
+             buttons(('Ask about a translation', '/contact/')))
     return {'title': title, 'category': cat, 'image': img, 'excerpt': excerpt, 'date': date, 'content': body}
 
 
@@ -495,11 +608,15 @@ content = {
         {'slug': 'faq', 'title': 'Questions', 'pattern': 'lingua/faq-page'},
         {'slug': 'contact', 'title': 'Contact', 'pattern': 'lingua/contact-page', 'template': 'page-wide'},
         {'slug': 'portugues', 'title': 'Em português', 'pattern': 'lingua/portugues-page'},
+        {'slug': 'literary', 'title': 'Literary translation', 'pattern': 'lingua/field-literary', 'parent': 'services'},
+        {'slug': 'academic', 'title': 'Academic translation', 'pattern': 'lingua/field-academic', 'parent': 'services'},
+        {'slug': 'museums', 'title': 'Museum and exhibition texts', 'pattern': 'lingua/field-museums', 'parent': 'services'},
+        {'slug': 'glossaries', 'title': 'How I build a glossary', 'pattern': 'lingua/term-list'},
     ],
     'posts': POSTS,
     'nav': [{'label': 'Translations', 'url': '/translations/'}, {'label': 'Services', 'url': '/services/'}, {'label': 'Examples', 'url': '/examples/'},
             {'label': 'Credentials', 'url': '/credentials/'}, {'label': 'Questions', 'url': '/faq/'}, {'label': 'Contact', 'url': '/contact/'},
-            ],
+            {'label': 'Em português', 'url': '/portugues/'}],
 }
 os.makedirs('demos/lingua', exist_ok=True)
 with open('demos/lingua/content.json', 'w') as f:

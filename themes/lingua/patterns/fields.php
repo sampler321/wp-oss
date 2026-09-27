@@ -12,7 +12,7 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Fiction and memoir</h4>
+<h4 class="wp-block-heading"><a href="/services/literary/">Fiction and memoir</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -22,7 +22,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">History and social science</h4>
+<h4 class="wp-block-heading"><a href="/services/academic/">History and social science</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -32,7 +32,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Museums and exhibitions</h4>
+<h4 class="wp-block-heading"><a href="/services/museums/">Museums and exhibitions</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

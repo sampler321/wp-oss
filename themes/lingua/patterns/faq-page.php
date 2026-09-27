@@ -8,4 +8,6 @@
 ?>
 <!-- wp:pattern {"slug":"lingua/faq"} /-->
 
+<!-- wp:pattern {"slug":"lingua/why-not-machine"} /-->
+
 <!-- wp:pattern {"slug":"lingua/what-i-dont-do"} /-->
