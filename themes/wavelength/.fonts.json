@@ -1,0 +1,46 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Parkinsans\", sans-serif",
+      "name": "Parkinsans",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Parkinsans",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/parkinsans-normal-300_800.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Atkinson Hyperlegible Next\", sans-serif",
+      "name": "Atkinson Hyperlegible Next",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "italic",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "normal",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Parkinsans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/parkinsans",
+    "Atkinson Hyperlegible Next (Google Fonts), https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext"
+  ]
+}

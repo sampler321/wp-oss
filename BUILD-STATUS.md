@@ -20,7 +20,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 12 | studio | 025 Small branding studio | as researched | deployed | https://wposs-studio.b-j-kapica.workers.dev |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
-| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | tested |  |
+| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed (HTTP 404) | https://wposs-reel.b-j-kapica.workers.dev |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
@@ -36,7 +36,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
-| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | failed test |  |
+| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | tested |  |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
 | 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |

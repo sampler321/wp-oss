@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tuning dial",
+	"slug": "dial",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|small",
+			"fontWeight": "600"
+		},
+		"css": "&{position:relative;background-image:repeating-linear-gradient(to right,var(--wp--preset--color--base) 0 1px,transparent 1px 1%),repeating-linear-gradient(to right,var(--wp--preset--color--base) 0 2px,transparent 2px 5%);background-size:100% 10px,100% 18px;background-repeat:no-repeat;background-position:0 0,0 0}&::after{content:\"\";position:absolute;top:0;bottom:0;left:83%;width:4px;background:var(--wp--preset--color--accent-2)}& p{margin:0}"
+	}
+}

@@ -1,0 +1,156 @@
+{
+ "site": {
+  "title": "Calder Valley Radio",
+  "tagline": "104.6 FM for Hebden Bridge, Todmorden and the tops"
+ },
+ "categories": [
+  {
+   "slug": "news",
+   "name": "Local news"
+  },
+  {
+   "slug": "programmes",
+   "name": "Hear again"
+  },
+  {
+   "slug": "station",
+   "name": "Station news"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "news",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "listen",
+   "title": "How to listen",
+   "pattern": "wavelength/page-listen",
+   "template": "page-wide"
+  },
+  {
+   "slug": "schedule",
+   "title": "Schedule",
+   "pattern": "wavelength/page-schedule"
+  },
+  {
+   "slug": "programmes",
+   "title": "Programmes",
+   "pattern": "wavelength/page-programmes",
+   "template": "page-wide"
+  },
+  {
+   "slug": "news",
+   "title": "News",
+   "content": ""
+  },
+  {
+   "slug": "noticeboard",
+   "title": "Noticeboard",
+   "pattern": "wavelength/page-noticeboard",
+   "template": "page-wide"
+  },
+  {
+   "slug": "volunteer",
+   "title": "Volunteer",
+   "pattern": "wavelength/page-volunteer"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "wavelength/page-contact",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Flood defence drop-in moves to the Mytholmroyd Institute",
+   "category": "news",
+   "image": "canal.jpg",
+   "excerpt": "The Environment Agency drop-in on the new walls is now on Wednesday, 2pm to 7pm, at the Institute on Caldene Avenue.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Environment Agency drop-in about the new flood walls along the Calder has moved to the Mytholmroyd Institute on Caldene Avenue. It is now on Wednesday 8 October, 2pm to 7pm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The plans show a wall of up to 1.4 metres along Burnley Road. Engineers will be there to answer questions. You can also see the plans at Hebden Bridge library.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Sue Whitaker talked to two of the engineers on The Valley Breakfast on Thursday. That interview is on the Hear again page for four weeks.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hear again: Town Hall Talk on bins and the Walsden bus",
+   "category": "programmes",
+   "image": "townhall.jpg",
+   "excerpt": "Questions from the floor to two councillors and the head of waste services. 58 minutes.",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://stream.example.com/hear-again/town-hall-talk-september.mp3\"></audio><figcaption class=\"wp-element-caption\">Town Hall Talk, 2 September, 58 minutes</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Live from Todmorden Town Hall on the first Tuesday of September. Forty people came, and twelve rang in.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Most questions were about the change to fortnightly black bin collections and the 590 bus to Walsden, which is being cut back after 7pm.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hebden Bridge market moves to Thursdays and Saturdays only",
+   "category": "news",
+   "image": "market.jpg",
+   "excerpt": "The Wednesday market ends on 29 October. Traders say footfall has halved since the car park charges went up.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Wednesday market in Hebden Bridge will stop at the end of October. It will still run on Thursdays and Saturdays, 9am to 4pm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Traders told our news team that footfall on Wednesdays has halved since car park charges went up in the spring. The council says it will review the charges in January.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hear again: Valley Voices, the mill girls of Walsden",
+   "category": "programmes",
+   "image": "choir.jpg",
+   "excerpt": "Recordings from the Pennine Heritage archive of women who worked at the Walsden cotton mills in the 1950s.",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://stream.example.com/hear-again/valley-voices-walsden.mp3\"></audio><figcaption class=\"wp-element-caption\">Valley Voices, 17 September, 55 minutes</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph -->\n<p class=\"\">This week's Valley Voices uses recordings made in 1987 of women who worked at the Walsden cotton mills in the 1950s. They talk about the noise, the lunch breaks and the dances at the Co-op hall.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Library opening hours cut on Mondays",
+   "category": "news",
+   "image": "library.jpg",
+   "excerpt": "Todmorden library will open at 1pm on Mondays from November, to save £9,000 a year.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">From 3 November Todmorden library will open at 1pm on Mondays instead of 9.30am. Calderdale Council says this saves £9,000 a year. The Friends of Todmorden Library are collecting signatures against the change at the front desk.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "We need newsreaders for the 7am bulletin",
+   "category": "station",
+   "image": "studio.jpg",
+   "excerpt": "Two of our early newsreaders are moving away. Training starts in November.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Two of our early-morning newsreaders are moving away this autumn, so we need people for the 7am and 8am bulletins, one morning a week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">You will be in the studio from 6am to write and read the bulletin. We train you. Come to the open evening on Tuesday 7 October, 7pm.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hear again: Garden Hour on slugs and wet summers",
+   "category": "programmes",
+   "image": "moor.jpg",
+   "excerpt": "The allotment society on what to do after the wettest August since 2012.",
+   "content": "<!-- wp:audio -->\n<figure class=\"wp-block-audio\"><audio controls src=\"https://stream.example.com/hear-again/garden-hour-slugs.mp3\"></audio><figcaption class=\"wp-element-caption\">Garden Hour, 20 September, 1 hour</figcaption></figure>\n<!-- /wp:audio -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The allotment society panel took calls about blight, slugs and what to plant after the wettest August since 2012. Joan from Charlestown recommends beer traps. Brian does not.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Free radios for people who cannot get online",
+   "category": "station",
+   "image": "radio.jpg",
+   "excerpt": "We have ten donated FM radios to lend. A volunteer will bring one round.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Listeners have donated ten FM radios. If you, or someone you know, cannot get online and has no radio, ring the studio on 01422 555 104 and a volunteer will bring one round and tune it in.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Listen",
+   "url": "/listen/"
+  },
+  {
+   "label": "Schedule",
+   "url": "/schedule/"
+  },
+  {
+   "label": "Programmes",
+   "url": "/programmes/"
+  },
+  {
+   "label": "News",
+   "url": "/news/"
+  },
+  {
+   "label": "Noticeboard",
+   "url": "/noticeboard/"
+  },
+  {
+   "label": "Volunteer",
+   "url": "/volunteer/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

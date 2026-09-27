@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Evening",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#16271F",
+					"name": "Warm paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#EFE6CF",
+					"name": "Moor green"
+				},
+				{
+					"slug": "accent",
+					"color": "#F5C542",
+					"name": "Brick red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F5C542",
+					"name": "Sun yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#1F3A2E",
+					"name": "Noticeboard"
+				},
+				{
+					"slug": "line",
+					"color": "#EFE6CF",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#C3C9B8",
+					"name": "Lichen"
+				}
+			]
+		}
+	}
+}
