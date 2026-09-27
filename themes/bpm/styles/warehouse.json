@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Warehouse",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#1A1A1A",
+					"name": "Night"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFFFFF",
+					"name": "Strip light"
+				},
+				{
+					"slug": "accent",
+					"color": "#FFFFFF",
+					"name": "Sodium orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#262626",
+					"name": "Booth"
+				},
+				{
+					"slug": "line",
+					"color": "#FFFFFF",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#BDBDBD",
+					"name": "Smoke"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "900"
+				}
+			}
+		}
+	}
+}

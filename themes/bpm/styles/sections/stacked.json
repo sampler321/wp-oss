@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stacked frames",
+	"slug": "stacked",
+	"blockTypes": [
+		"core/post-featured-image",
+		"core/image",
+		"core/group",
+		"core/embed"
+	],
+	"styles": {
+		"shadow": "var:preset|shadow|stack",
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"css": "&{margin-right:16px;margin-bottom:16px}"
+	}
+}

@@ -1,0 +1,189 @@
+{
+ "site": {
+  "title": "Hania Sokół",
+  "tagline": "DJ, producer and Szum on Radio Wola, Warsaw"
+ },
+ "categories": [
+  {
+   "slug": "szum",
+   "name": "Szum"
+  },
+  {
+   "slug": "live",
+   "name": "Live"
+  },
+  {
+   "slug": "guest-mixes",
+   "name": "Guest mixes"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "mixes",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "mixes",
+   "title": "Mixes",
+   "content": ""
+  },
+  {
+   "slug": "radio",
+   "title": "Radio",
+   "pattern": "bpm/page-radio",
+   "template": "page-wide"
+  },
+  {
+   "slug": "dates",
+   "title": "Dates",
+   "pattern": "bpm/page-dates",
+   "template": "page-wide"
+  },
+  {
+   "slug": "releases",
+   "title": "Releases",
+   "pattern": "bpm/page-releases",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "bpm/page-about",
+   "template": "page-wide"
+  },
+  {
+   "slug": "booking",
+   "title": "Booking",
+   "pattern": "bpm/page-booking",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Szum 058 w/ Kaja Ptak",
+   "category": "szum",
+   "tags": [
+    "Polish jazz",
+    "Broken beat",
+    "Library"
+   ],
+   "image": "hero.jpg",
+   "template": "single-mix",
+   "excerpt": "Two hours from Studio 2. Polish jazz on 45, broken beat and a Komeda edit.",
+   "pattern": "bpm/page-mix"
+  },
+  {
+   "title": "Szum 057, three hours of dub",
+   "category": "szum",
+   "tags": [
+    "Dub",
+    "Steppers"
+   ],
+   "image": "records.jpg",
+   "template": "single-mix",
+   "excerpt": "No guest this month. Dub from the Praga flat, all on vinyl, one skip left in on purpose.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/szum-057/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/szum-057/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">No guest this month, so I did three hours instead of two. All vinyl, all dub, recorded in the flat because the studio had a leak. There is one skip at 1:12:40. I left it in.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Radio Wola 98.4 FM, 7 August, 21:00 Warsaw time</td></tr><tr><td>Length</td><td>2 hours 58 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Augustus Pablo</td><td>King Tubby Meets Rockers Uptown</td></tr><tr><td>07:30</td><td>Rhythm & Sound</td><td>Mango Drive</td></tr><tr><td>15:02</td><td>Vivian Jackson</td><td>Conquering Lion</td></tr><tr><td>24:18</td><td>Dub Syndicate</td><td>Ravi Shankar Pt. 1</td></tr><tr><td>33:40</td><td>Mala</td><td>Alicia</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Live at Jasna 1, closing set",
+   "category": "live",
+   "tags": [
+    "Electro",
+    "Techno"
+   ],
+   "image": "dj-4.jpg",
+   "template": "single-mix",
+   "excerpt": "Four hours, 2am to 6am, recorded from the desk. The last hour is the good one.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/live-jasna-1/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/live-jasna-1/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Recorded from the desk at Jasna 1 on 19 July. I played from 2am until they turned the lights on. The first hour is warm-up, skip to 3:00:00 if you want the loud part.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Not broadcast. Recorded 19 July, Jasna 1, Warsaw</td></tr><tr><td>Length</td><td>3 hours 56 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Drexciya</td><td>Bubble Metropolis</td></tr><tr><td>09:10</td><td>DJ Stingray</td><td>Sentient Laser</td></tr><tr><td>18:45</td><td>Heinrich Mueller</td><td>Continuum</td></tr><tr><td>31:20</td><td>Aux 88</td><td>Electro Tech</td></tr><tr><td>45:00</td><td>Hania Sokół</td><td>Nadajnik (dub)</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Szum 056 w/ Olek Rybak",
+   "category": "szum",
+   "tags": [
+    "Ambient",
+    "Field recordings"
+   ],
+   "image": "cables.jpg",
+   "template": "single-mix",
+   "excerpt": "Olek brought a modular case and a recording of the Vistula freezing.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/szum-056/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/szum-056/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Olek Rybak played live for his hour, on a small modular case, over a recording he made of the Vistula freezing in January.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Radio Wola 98.4 FM, 3 July, 21:00 Warsaw time</td></tr><tr><td>Length</td><td>1 hour 59 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Hania Sokół</td><td>Intro over the news jingle</td></tr><tr><td>04:12</td><td>Laurie Spiegel</td><td>Patchwork</td></tr><tr><td>12:40</td><td>Eliane Radigue</td><td>Jetsun Mila excerpt</td></tr><tr><td>61:00</td><td>Olek Rybak</td><td>Wisła, live</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Szum 055, synth-pop from both Germanies",
+   "category": "szum",
+   "tags": [
+    "Synth-pop",
+    "Cold wave"
+   ],
+   "image": "synth.jpg",
+   "template": "single-mix",
+   "excerpt": "East and West German synth records from 1979 to 1986, played side by side.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/szum-055/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/szum-055/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A theory I have had for years: you cannot tell East and West German synth-pop apart without the sleeve. Two hours testing it. I was mostly wrong.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Radio Wola 98.4 FM, 5 June, 21:00 Warsaw time</td></tr><tr><td>Length</td><td>2 hours</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Kraftwerk</td><td>Computerliebe</td></tr><tr><td>05:30</td><td>Pond</td><td>Planetenwind</td></tr><tr><td>12:14</td><td>Deutsch Amerikanische Freundschaft</td><td>Kebabträume</td></tr><tr><td>18:00</td><td>Servi</td><td>Ruhezone</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Szum 054 w/ Maja Lis",
+   "category": "szum",
+   "tags": [
+    "Italo",
+    "Disco"
+   ],
+   "image": "headphones.jpg",
+   "template": "single-mix",
+   "excerpt": "Maja from Łódź plays Italo from a single suitcase of records.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/szum-054/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/szum-054/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Maja Lis runs the Tuesday night at Ptaszarnia and owns more Italo than anyone I know. She brought one suitcase and would not tell me how she chose.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Radio Wola 98.4 FM, 1 May, 21:00 Warsaw time</td></tr><tr><td>Length</td><td>1 hour 57 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Gino Soccio</td><td>Dancer</td></tr><tr><td>06:40</td><td>Klein & MBO</td><td>Dirty Talk</td></tr><tr><td>13:20</td><td>Casco</td><td>Cybernetic Love</td></tr><tr><td>20:05</td><td>Charlie</td><td>Spacer Woman</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Guest mix for Dźwięki Miasta",
+   "category": "guest-mixes",
+   "tags": [
+    "Polish jazz",
+    "Library"
+   ],
+   "image": "mixer.jpg",
+   "template": "single-mix",
+   "excerpt": "One hour for the Dźwięki Miasta podcast, all Polskie Nagrania library records.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/dzwieki-miasta/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/dzwieki-miasta/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">One hour for the Dźwięki Miasta podcast. Every record is from the Polskie Nagrania library series, bought at the Koło flea market over about six years.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Dźwięki Miasta podcast, episode 112</td></tr><tr><td>Length</td><td>59 minutes</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>Andrzej Korzyński</td><td>Dziewczyny, bądźcie ładne</td></tr><tr><td>08:15</td><td>Czesław Niemen</td><td>Kwiaty ojczyste</td></tr><tr><td>15:40</td><td>Novi Singers</td><td>Torpeda</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Szum 053, the long one",
+   "category": "szum",
+   "tags": [
+    "Ambient",
+    "Dub"
+   ],
+   "image": "crowd.jpg",
+   "template": "single-mix",
+   "excerpt": "The station ran an all-night fundraiser and I took the 1am to 5am slot.",
+   "content": "<!-- wp:embed {\"url\":\"https://www.mixcloud.com/radiowola/szum-053/\",\"type\":\"rich\",\"providerNameSlug\":\"mixcloud\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-rich is-provider-mixcloud wp-block-embed-mixcloud\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.mixcloud.com/radiowola/szum-053/\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Radio Wola's spring fundraiser ran all night and I took 1am to 5am. We raised 14,200 zł for the new transmitter. This is the whole four hours.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-dates\"} -->\n<figure class=\"wp-block-table is-style-dates\"><table class=\"has-fixed-layout\"><tbody><tr><td>Broadcast</td><td>Radio Wola 98.4 FM, fundraiser night, 4 April, 01:00 Warsaw time</td></tr><tr><td>Length</td><td>4 hours</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Tracklist</h3>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-tracklist\"} -->\n<figure class=\"wp-block-table is-style-tracklist\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>Artist</th><th>Title</th></tr></thead><tbody><tr><td>00:00</td><td>The Orb</td><td>Blue Room</td></tr><tr><td>17:00</td><td>Basic Channel</td><td>Q-Loop</td></tr><tr><td>33:30</td><td>Grouper</td><td>Heavy Water</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Mixes",
+   "url": "/mixes/"
+  },
+  {
+   "label": "Radio",
+   "url": "/radio/"
+  },
+  {
+   "label": "Dates",
+   "url": "/dates/"
+  },
+  {
+   "label": "Releases",
+   "url": "/releases/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Booking",
+   "url": "/booking/"
+  }
+ ]
+}

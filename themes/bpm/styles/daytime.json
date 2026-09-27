@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Daytime",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2F2EE",
+					"name": "Night"
+				},
+				{
+					"slug": "contrast",
+					"color": "#121212",
+					"name": "Strip light"
+				},
+				{
+					"slug": "accent",
+					"color": "#B8430A",
+					"name": "Sodium orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#E4E4DE",
+					"name": "Booth"
+				},
+				{
+					"slug": "line",
+					"color": "#121212",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5E5E5E",
+					"name": "Smoke"
+				}
+			]
+		}
+	}
+}

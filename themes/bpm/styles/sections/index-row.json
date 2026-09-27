@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Archive index row",
+	"slug": "index-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&:hover{background:var(--wp--preset--color--surface)}"
+	}
+}

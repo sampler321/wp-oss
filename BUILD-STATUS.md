@@ -22,8 +22,8 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 14 | rep | 033 Illustration / artist representation agency | as researched | todo | |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | todo | |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
-| 17 | catalog | 039 Independent record label | inspired by a cassette label | todo | |
-| 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | todo | |
+| 17 | catalog | 039 Independent record label | inspired by a cassette label | tested |  |
+| 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | todo | |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | todo | |
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
@@ -47,7 +47,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | todo | |
-| 42 | coat | 101 Painter and decorator | more colours and fun | deploy failed |  |
+| 42 | coat | 101 Painter and decorator | more colours and fun | tested |  |
 | 43 | lingua | 132 Translator / interpreter | as researched | todo | |
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | todo | |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | todo | |

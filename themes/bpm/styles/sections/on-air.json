@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "On-air strip",
+	"slug": "on-air",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"width": "1px",
+				"style": "solid",
+				"color": "var:preset|color|contrast"
+			},
+			"bottom": {
+				"width": "1px",
+				"style": "solid",
+				"color": "var:preset|color|contrast"
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontWeight": "700",
+			"textTransform": "uppercase",
+			"fontSize": "var:preset|font-size|medium"
+		},
+		"css": "&{font-stretch:75%}& p{margin:0}"
+	}
+}

@@ -1,0 +1,3 @@
+BPM is for DJs, producers and radio shows that publish a numbered series of mixes. Each mix is a post: put the Mixcloud or SoundCloud link in an Embed block at the top, then the timestamped tracklist table (time, artist, title). Use categories for the show or series (for example "Szum", "Live", "Guest mixes") and tags for genres, which show as outlined boxes.
+
+Assign the "Mix or episode" template to mix posts. The Mixes page is a dense archive index of every mix by date. Patterns cover an on-air strip for the next broadcast, a radio schedule with a stated timezone, dates with cancelled states, releases, booking contacts by territory, a rider, a press pack download and a short Q&A to run with a guest mix.

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dates table",
+	"slug": "dates",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{font-family:var(--wp--preset--font-family--display);font-weight:800;text-transform:uppercase;font-stretch:75%;font-size:1.4em;line-height:1;white-space:nowrap}& td:last-child a{color:var(--wp--preset--color--accent)}& del{color:var(--wp--preset--color--muted)}"
+	}
+}

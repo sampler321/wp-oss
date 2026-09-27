@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tag boxes",
+	"slug": "tag-boxes",
+	"blockTypes": [
+		"core/post-terms"
+	],
+	"styles": {
+		"css": "& a{display:inline-block;border:1px solid currentColor;padding:.2em .5em .15em;margin:0 .4em .4em 0;text-decoration:none;color:inherit}& a:hover{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base)}& .wp-block-post-terms__separator{display:none}"
+	}
+}
