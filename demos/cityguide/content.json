@@ -1,0 +1,172 @@
+{
+ "site": {
+  "title": "Lampje",
+  "tagline": "An independent guide to Eindhoven, updated every Monday"
+ },
+ "categories": [
+  {
+   "slug": "whats-on",
+   "name": "What's on",
+   "description": "The week ahead and the big events."
+  },
+  {
+   "slug": "eat-drink",
+   "name": "Eat and drink",
+   "description": "Places we have eaten and paid for."
+  },
+  {
+   "slug": "culture",
+   "name": "Culture",
+   "description": "Museums, films, gigs and buildings."
+  },
+  {
+   "slug": "neighbourhoods",
+   "name": "Neighbourhoods",
+   "description": "One part of town at a time."
+  },
+  {
+   "slug": "day-trips",
+   "name": "Day trips",
+   "description": "Half an hour away by bike or train."
+  },
+  {
+   "slug": "practical",
+   "name": "Practical",
+   "description": "Getting here, getting around."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "guide",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "guide",
+   "title": "All stories",
+   "content": ""
+  },
+  {
+   "slug": "this-week",
+   "title": "This week",
+   "pattern": "cityguide/this-week-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "map",
+   "title": "The map",
+   "pattern": "cityguide/map-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "neighbourhoods",
+   "title": "Neighbourhoods",
+   "pattern": "cityguide/neighbourhoods-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About Lampje",
+   "pattern": "cityguide/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "tips",
+   "title": "Tips and corrections",
+   "pattern": "cityguide/tips-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "What's on: 28 September to 4 October",
+   "category": "whats-on",
+   "image": "dynamo.jpg",
+   "date": "2026-09-27",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A quiet week before Dutch Design Week eats the city. Our pick is Friday at Dynamo: Inferum are loud, short and done by 23:00.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Day</th><th>Time</th><th>What</th><th>Price</th></tr></thead><tbody><tr><td>Mon 28</td><td>20:00</td><td>Open mic, all instruments</td><td>Free</td></tr><tr><td>Wed 30</td><td>19:30</td><td>Film: Paris, Texas, on 35 mm</td><td>€10.50</td></tr><tr><td>Thu 1</td><td>17:00</td><td>Late opening with a talk on the Proun room</td><td>€17.50</td></tr><tr><td>Fri 2</td><td>21:00</td><td>Inferum and two support bands</td><td>€14</td></tr><tr><td>Sat 3</td><td>08:00</td><td>Saturday market, cheese and stroopwafels</td><td>Free</td></tr><tr><td>Sun 4</td><td>11:00</td><td>Guided walk along the Dommel</td><td>€6</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Six lunches under €12 near the station",
+   "category": "eat-drink",
+   "image": "lunch.jpg",
+   "date": "2026-09-24",
+   "content": "<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">1</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Soepbar Kaat</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Soup and bread, €6.50. Three soups a day, one always vegan.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">2</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Poké on the Vestdijk</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A big bowl for €11.50. The steak one is heavier than it looks.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">3</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Fırın Anadolu</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Pide with cheese, €5. A ten-minute walk, and you get simit for later.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">4</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Broodje Bert</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Kroket on white bread, €3.80. The mustard is the point.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">5</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">The station food hall</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Fine if you have eight minutes. Skip the sushi.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">6</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Lunchroom Heuvel</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Uitsmijter with three eggs, €9.50, and a window seat if you are lucky.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Dutch Design Week, a survival list",
+   "category": "whats-on",
+   "image": "ontdekfabriek.jpg",
+   "date": "2026-09-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">DDW runs from 17 to 25 October and brings about 350,000 visitors to a city of 240,000. You can still enjoy it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Go to Strijp on weekday mornings. Take a bike, not the shuttle bus. Eat in Stratum, where nobody from DDW goes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The graduation show at the Design Academy is the one thing we would queue for.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The Proun room at the Van Abbe",
+   "category": "culture",
+   "image": "vanabbe.jpg",
+   "date": "2026-09-15",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">El Lissitzky built the first Proun room in Berlin in 1923. The Van Abbemuseum reconstructed it in 1965 and it has been one of the best rooms in the city since.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It takes three minutes to walk through and about twenty to stop looking. Thursday after 17:00 is €11 instead of €17.50.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Kruisstraat, the long street",
+   "category": "neighbourhoods",
+   "image": "kruisstraat.jpg",
+   "date": "2026-09-08",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The Kruisstraat runs about two kilometres north from the centre and has more bakeries per metre than anywhere else in Eindhoven.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Start at the south end at 7:00 for simit, walk north, stop for Syrian sweets at the corner of the Hoogstraat, and end at the park.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Nuenen by bike, where Van Gogh painted the potato eaters",
+   "category": "day-trips",
+   "image": "nuenen.jpg",
+   "date": "2026-08-30",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Nuenen is 8 km east of the centre, about 30 minutes by bike along the Dommel and then the long straight Dreef.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The Vincentre is small and good. The vicarage where Van Gogh lived is private, so look from the street.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The Evoluon, open again for one weekend",
+   "category": "culture",
+   "image": "evoluon.jpg",
+   "date": "2026-08-21",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The flying saucer on the Noord Brabantlaan opened in 1966 as Philips' science museum. It is a conference centre now and opens to the public twice a year.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Next open days: 7 and 8 November, 10:00 to 16:00, free. Go up to the ring gallery; the view down is the reason to come.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Arriving: trains, the airport bus and statiegeld",
+   "category": "practical",
+   "image": "station.jpg",
+   "date": "2026-08-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Most visitors arrive at the central station. Bike hire is under the tracks on the north side; bring ID.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">From the airport, buses 400 and 401 run every ten minutes to the station and take 25 minutes. Pay by card at the door.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Every plastic bottle and can has a deposit, 15 or 25 cents. The statiegeld machines at the station give you a voucher for the shop.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Coffee in Strijp, ranked by how long we stayed",
+   "category": "eat-drink",
+   "image": "cafe.jpg",
+   "date": "2026-07-30",
+   "content": "<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">1</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Koffiebar Haring</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Three hours. A long counter, sockets everywhere, nobody hurries you.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">2</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Kiosk op het plein</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Forty minutes, standing. The best espresso and no chairs.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-timetable\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-timetable\"><!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\"}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph {\"className\":\"is-style-pin\"} -->\n<p class=\"is-style-pin\">3</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">The Klokgebouw café</h3>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n\n<!-- wp:paragraph -->\n<p class=\"\">An hour. Fine coffee, but you will stay for the building.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "This week",
+   "url": "/this-week/"
+  },
+  {
+   "label": "Eat and drink",
+   "url": "/category/eat-drink/"
+  },
+  {
+   "label": "Culture",
+   "url": "/category/culture/"
+  },
+  {
+   "label": "Neighbourhoods",
+   "url": "/neighbourhoods/"
+  },
+  {
+   "label": "The map",
+   "url": "/map/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

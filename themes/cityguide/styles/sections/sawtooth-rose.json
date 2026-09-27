@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sawtooth roof: rose",
+	"slug": "sawtooth-rose",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|pink",
+			"text": "var:preset|color|contrast"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			}
+		},
+		"spacing": {
+			"margin": {
+				"top": "var:preset|spacing|70"
+			}
+		},
+		"css": "&{position:relative}&::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:28px;background:linear-gradient(to top right,var(--wp--preset--color--pink) 50%,transparent 50%) 0 100%/56px 28px repeat-x}"
+	}
+}

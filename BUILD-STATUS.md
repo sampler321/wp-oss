@@ -32,7 +32,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
-| 27 | local | 053 Hyperlocal news | more scientific looking | todo | |
+| 27 | local | 053 Hyperlocal news | more scientific looking | tested |  |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
@@ -54,7 +54,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 46 | grain | new: Independent furniture maker | workshop maker, commissions | deployed (HTTP 404) | https://wposs-grain.b-j-kapica.workers.dev |
 | 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
-| 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | todo | |
+| 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
 | 50 | taproom | 088 Craft brewery | as researched | todo | |
 
 ## Pipeline

@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Category label (blue)",
+	"slug": "label",
+	"blockTypes": [
+		"core/paragraph",
+		"core/post-terms"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent-2"
+		},
+		"typography": {
+			"fontWeight": "600",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|accent-2"
+				}
+			}
+		}
+	}
+}

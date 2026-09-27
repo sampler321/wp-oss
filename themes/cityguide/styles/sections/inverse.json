@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Inverse buttons",
+	"slug": "inverse",
+	"blockTypes": [
+		"core/buttons"
+	],
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var:preset|color|base",
+					"text": "var:preset|color|contrast"
+				}
+			}
+		}
+	}
+}

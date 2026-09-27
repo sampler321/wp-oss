@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Market day",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFF4D6",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1B1B12",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#1F6B3A",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8A2B0B",
+					"name": "Tram blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "Pavement"
+				},
+				{
+					"slug": "line",
+					"color": "#1B1B12",
+					"name": "Line"
+				},
+				{
+					"slug": "muted",
+					"color": "#55523F",
+					"name": "Grey"
+				},
+				{
+					"slug": "pink",
+					"color": "#F5C95B",
+					"name": "Rose"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Closed place",
+	"slug": "closed",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"border": {
+			"left": {
+				"width": "6px",
+				"style": "solid",
+				"color": "var:preset|color|contrast"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"css": "& h3{text-decoration:line-through;text-decoration-thickness:3px}"
+	}
+}

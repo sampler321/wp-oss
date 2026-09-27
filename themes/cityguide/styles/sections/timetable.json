@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Timetable row",
+	"slug": "timetable",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"width": "3px",
+				"style": "solid",
+				"color": "var:preset|color|contrast"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30"
+			}
+		}
+	}
+}

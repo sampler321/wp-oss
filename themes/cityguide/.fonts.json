@@ -1,0 +1,47 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Mona Sans\", sans-serif",
+      "name": "Mona Sans",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Mona Sans",
+          "fontStyle": "normal",
+          "fontWeight": "800 900",
+          "src": [
+            "file:./assets/fonts/mona-sans-normal-800_900.woff2"
+          ],
+          "fontStretch": "112.5%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Work Sans\", sans-serif",
+      "name": "Work Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Work Sans",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/work-sans-italic-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Work Sans",
+          "fontStyle": "normal",
+          "fontWeight": "400 600",
+          "src": [
+            "file:./assets/fonts/work-sans-normal-400_600.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Mona Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/monasans",
+    "Work Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/worksans"
+  ]
+}

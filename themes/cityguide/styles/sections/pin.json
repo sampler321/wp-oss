@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Map pin number",
+	"slug": "pin",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|base"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontWeight": "900",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1"
+		},
+		"border": {
+			"radius": "999px",
+			"width": "2px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"css": "&{display:grid;place-items:center;width:2.4em;height:2.4em;flex:0 0 auto;margin:0}"
+	}
+}

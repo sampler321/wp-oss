@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Canal",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E3F1F4",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0F1E26",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#C8102E",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1B4FA8",
+					"name": "Tram blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "Pavement"
+				},
+				{
+					"slug": "line",
+					"color": "#0F1E26",
+					"name": "Line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F535C",
+					"name": "Grey"
+				},
+				{
+					"slug": "pink",
+					"color": "#FFD3DC",
+					"name": "Rose"
+				}
+			]
+		}
+	}
+}

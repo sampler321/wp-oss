@@ -1,0 +1,3 @@
+Cityguide is for independent city guides: a small team that publishes what's on every week, a map of favourite places, neighbourhood guides and lists. Stories are ordinary posts in categories (What's on, Eat and drink, Culture, Neighbourhoods, Day trips, Practical). The pages for this week, the map, neighbourhoods, about and tips are built from page-layout patterns. No plugins are needed.
+
+The signature pattern is the map list: numbered place entries with address, hours, price band and the date of the last visit, next to a sketch map whose red pins carry the same numbers. The sketch map in assets/images was drawn for this theme with a script and is CC0; replace it with your own map drawing.

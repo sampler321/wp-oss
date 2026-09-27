@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Glow night",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#141019",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F7F3EE",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF5470",
+					"name": "Signal red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8FB0FF",
+					"name": "Tram blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#221C2A",
+					"name": "Pavement"
+				},
+				{
+					"slug": "line",
+					"color": "#F7F3EE",
+					"name": "Line"
+				},
+				{
+					"slug": "muted",
+					"color": "#BDB4C4",
+					"name": "Grey"
+				},
+				{
+					"slug": "pink",
+					"color": "#5A2440",
+					"name": "Rose"
+				}
+			]
+		}
+	}
+}

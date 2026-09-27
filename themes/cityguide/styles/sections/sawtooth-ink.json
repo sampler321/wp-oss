@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sawtooth roof: ink",
+	"slug": "sawtooth-ink",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|contrast",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			}
+		},
+		"spacing": {
+			"margin": {
+				"top": "var:preset|spacing|70"
+			}
+		},
+		"css": "&{position:relative}&::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:28px;background:linear-gradient(to top right,var(--wp--preset--color--contrast) 50%,transparent 50%) 0 100%/56px 28px repeat-x}"
+	}
+}
