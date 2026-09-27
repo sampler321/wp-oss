@@ -1,0 +1,143 @@
+{
+ "site": {
+  "title": "Brennan Heating",
+  "tagline": "Gas Safe heating engineers and plumbers, Sheffield"
+ },
+ "categories": [
+  {
+   "slug": "areas",
+   "name": "Areas",
+   "description": "Where we work, with postcodes and response times."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "areas",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "areas",
+   "title": "Areas",
+   "content": ""
+  },
+  {
+   "slug": "emergency",
+   "title": "Emergency",
+   "pattern": "pipe/emergency-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "servicing",
+   "title": "Boiler servicing",
+   "pattern": "pipe/servicing-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "boilers",
+   "title": "New boilers",
+   "pattern": "pipe/boilers-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "landlords",
+   "title": "Landlords",
+   "pattern": "pipe/landlords-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "prices",
+   "title": "Prices",
+   "pattern": "pipe/prices-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "pipe/about-page",
+   "template": "page-index"
+  },
+  {
+   "slug": "quote",
+   "title": "Get a quote",
+   "pattern": "pipe/quote-page",
+   "template": "page-index"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Crookes and Walkley",
+   "category": "areas",
+   "image": "radiator.jpg",
+   "excerpt": "S6 and S10. Victorian terraces, a lot of original radiators and some very old combis. Same-day emergency visits, usually within 3 hours.",
+   "content": "<!-- wp:paragraph -->\n<p>S6 and S10. Victorian terraces, a lot of original radiators and some very old combis. Same-day emergency visits, usually within 3 hours.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S6 1 to S6 3, S10 1</td></tr><tr><td>Emergency response</td><td>Same day, usually within 3 hours</td></tr><tr><td>Typical jobs</td><td>Combi swaps in terraces, radiator valves, CP12s for student lets</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: replaced a 2004 Baxi combi on Mulehouse Road with a Worcester 4000, same place on the kitchen wall, one day.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Kelham Island and city centre",
+   "category": "areas",
+   "image": "manifold.jpg",
+   "excerpt": "S1 and S3. Flats and conversions, many with underfloor heating and shared plant rooms. Parking is the hard part.",
+   "content": "<!-- wp:paragraph -->\n<p>S1 and S3. Flats and conversions, many with underfloor heating and shared plant rooms. Parking is the hard part.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S1, S3</td></tr><tr><td>Emergency response</td><td>Same day, usually within 2 hours</td></tr><tr><td>Typical jobs</td><td>Underfloor manifolds, landlord certificates, electric to gas swaps</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: new actuators on a six-zone manifold in a Cornish Place flat. Parking cost more than the actuators.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Nether Edge and Sharrow",
+   "category": "areas",
+   "image": "cylinder.jpg",
+   "excerpt": "S7 and S11. Big semis with system boilers and hot water cylinders, some older than the owners.",
+   "content": "<!-- wp:paragraph -->\n<p>S7 and S11. Big semis with system boilers and hot water cylinders, some older than the owners.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S7 1, S11 8</td></tr><tr><td>Emergency response</td><td>Same day</td></tr><tr><td>Typical jobs</td><td>Cylinder replacements, power flushes, system to combi conversions</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: took out a 22-year-old copper cylinder on Montgomery Road and fitted an unvented one in the same cupboard.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hillsborough and Stannington",
+   "category": "areas",
+   "image": "boiler.jpg",
+   "excerpt": "S6 and S35. Semis and bungalows, plenty of back boilers still hanging on.",
+   "content": "<!-- wp:paragraph -->\n<p>S6 and S35. Semis and bungalows, plenty of back boilers still hanging on.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S6 4, S35</td></tr><tr><td>Emergency response</td><td>Same or next day</td></tr><tr><td>Typical jobs</td><td>Back boiler removals, annual services, new controls</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: removed a back boiler behind a gas fire in Stannington and fitted a combi in the kitchen. Two days, one very dusty chimney.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Dronfield and Totley",
+   "category": "areas",
+   "image": "sink.jpg",
+   "excerpt": "S17 and S18. Just over the border into Derbyshire. Next-day visits for emergencies.",
+   "content": "<!-- wp:paragraph -->\n<p>S17 and S18. Just over the border into Derbyshire. Next-day visits for emergencies.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S17, S18</td></tr><tr><td>Emergency response</td><td>Next day</td></tr><tr><td>Typical jobs</td><td>Servicing, bathroom plumbing for fitters, outside taps</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: first fix plumbing for a bathroom refit on Baslow Road, for Totley Tiling.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Rotherham",
+   "category": "areas",
+   "image": "solder.jpg",
+   "excerpt": "S60 and S65. We cover the west side of Rotherham, mainly for landlords with properties in Sheffield too.",
+   "content": "<!-- wp:paragraph -->\n<p>S60 and S65. We cover the west side of Rotherham, mainly for landlords with properties in Sheffield too.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Postcodes</td><td>S60, S65</td></tr><tr><td>Emergency response</td><td>Next day</td></tr><tr><td>Typical jobs</td><td>Landlord certificates, repairs for letting agents</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>Recent job: eight CP12s in one day for a letting agent on Moorgate.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Emergency",
+   "url": "/emergency/"
+  },
+  {
+   "label": "Servicing",
+   "url": "/servicing/"
+  },
+  {
+   "label": "New boilers",
+   "url": "/boilers/"
+  },
+  {
+   "label": "Landlords",
+   "url": "/landlords/"
+  },
+  {
+   "label": "Prices",
+   "url": "/prices/"
+  },
+  {
+   "label": "Areas",
+   "url": "/areas/"
+  },
+  {
+   "label": "Get a quote",
+   "url": "/quote/"
+  }
+ ]
+}

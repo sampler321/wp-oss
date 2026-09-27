@@ -46,14 +46,14 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
-| 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | todo | |
+| 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | deployed | https://wposs-pipe.b-j-kapica.workers.dev |
 | 42 | coat | 101 Painter and decorator | more colours and fun | deployed (HTTP 404) | https://wposs-coat.b-j-kapica.workers.dev |
 | 43 | lingua | 132 Translator / interpreter | as researched | deployed (HTTP 404) | https://wposs-lingua.b-j-kapica.workers.dev |
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | todo | |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | deployed (HTTP 404) | https://wposs-key.b-j-kapica.workers.dev |
 | 46 | grain | new: Independent furniture maker | workshop maker, commissions | deployed (HTTP 404) | https://wposs-grain.b-j-kapica.workers.dev |
 | 47 | bind | 262 Bookbinder (introligator) | as researched | todo | |
-| 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | todo | |
+| 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | tested |  |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | todo | |
 | 50 | taproom | 088 Craft brewery | as researched | todo | |
 

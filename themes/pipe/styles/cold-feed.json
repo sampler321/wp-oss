@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cold feed",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E8F0FA",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0E0E0E",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#00458F",
+					"name": "Cold feed"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#C8101B",
+					"name": "Hot feed"
+				},
+				{
+					"slug": "surface",
+					"color": "#D8E4F3",
+					"name": "Row grey"
+				},
+				{
+					"slug": "line",
+					"color": "#0E0E0E",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A5566",
+					"name": "Grey"
+				},
+				{
+					"slug": "rule-light",
+					"color": "#BFD0E6",
+					"name": "Light rule"
+				}
+			]
+		}
+	}
+}

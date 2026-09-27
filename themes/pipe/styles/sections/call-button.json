@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Call button (hot)",
+	"slug": "call-button",
+	"blockTypes": [
+		"core/button"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent-2",
+			"text": "var:preset|color|base"
+		},
+		"css": "& .wp-block-button__link:active{background:var(--wp--preset--color--base);color:var(--wp--preset--color--accent-2);box-shadow:inset 0 0 0 2px var(--wp--preset--color--accent-2)}"
+	}
+}

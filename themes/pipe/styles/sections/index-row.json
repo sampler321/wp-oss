@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Index row (rule above)",
+	"slug": "index-row",
+	"blockTypes": [
+		"core/columns",
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|contrast",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40"
+			},
+			"margin": {
+				"top": "var:preset|spacing|70"
+			}
+		}
+	}
+}

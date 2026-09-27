@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night rate",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#0E0E0E",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F2F2F2",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#7FB2FF",
+					"name": "Cold feed"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF4D57",
+					"name": "Hot feed"
+				},
+				{
+					"slug": "surface",
+					"color": "#1C1C1C",
+					"name": "Row grey"
+				},
+				{
+					"slug": "line",
+					"color": "#F2F2F2",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#B3B3B3",
+					"name": "Grey"
+				},
+				{
+					"slug": "rule-light",
+					"color": "#333333",
+					"name": "Light rule"
+				}
+			]
+		}
+	}
+}

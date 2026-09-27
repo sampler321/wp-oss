@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Phone number",
+	"slug": "phone",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|xx-large",
+			"fontWeight": "700",
+			"lineHeight": "1",
+			"letterSpacing": "-0.02em"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		}
+	}
+}
