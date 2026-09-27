@@ -13,7 +13,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Made it with the preserved lemon from the corner shop. My kids ate the sauce with a spoon.</p>
+<p class="">Made it with the preserved lemon from the corner shop. My kids ate the sauce with a spoon.</p>
 <!-- /wp:paragraph --><cite>Tomasz, Leyton, September 2026</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
@@ -21,7 +21,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Halved it for two in a 20cm pan and it worked exactly, 7 minutes for the eggs.</p>
+<p class="">Halved it for two in a 20cm pan and it worked exactly, 7 minutes for the eggs.</p>
 <!-- /wp:paragraph --><cite>Aoife, Galway, August 2026</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>

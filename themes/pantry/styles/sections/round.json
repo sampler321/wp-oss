@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Round portrait",
+	"slug": "round",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:1;object-fit:cover;border-radius:50%}"
+	}
+}

@@ -47,13 +47,13 @@ theme = {
             'defaultFontSizes': False, 'fluid': True, 'textAlign': True, 'writingMode': False,
             'fontFamilies': fonts,
             'fontSizes': [
-                {'slug': 'x-small', 'size': '0.875rem', 'name': 'Tiny', 'fluid': False},
-                {'slug': 'small', 'size': '1rem', 'name': 'Small', 'fluid': False},
-                {'slug': 'medium', 'size': '1.1875rem', 'name': 'Body', 'fluid': False},
-                {'slug': 'large', 'size': '1.5rem', 'name': 'Large', 'fluid': {'min': '1.25rem', 'max': '1.5rem'}},
-                {'slug': 'x-large', 'size': '2.25rem', 'name': 'Section', 'fluid': {'min': '1.6rem', 'max': '2.25rem'}},
-                {'slug': 'xx-large', 'size': '3.5rem', 'name': 'Title', 'fluid': {'min': '2.3rem', 'max': '3.5rem'}},
-                {'slug': 'display', 'size': '6rem', 'name': 'Display', 'fluid': {'min': '2.3rem', 'max': '6rem'}},
+                {'slug': 'x-small', 'size': '0.8125rem', 'name': 'Tiny', 'fluid': False},
+                {'slug': 'small', 'size': '0.9375rem', 'name': 'Small', 'fluid': False},
+                {'slug': 'medium', 'size': '1.0625rem', 'name': 'Body', 'fluid': False},
+                {'slug': 'large', 'size': '1.25rem', 'name': 'Large', 'fluid': {'min': '1.125rem', 'max': '1.25rem'}},
+                {'slug': 'x-large', 'size': '1.75rem', 'name': 'Section', 'fluid': {'min': '1.4rem', 'max': '1.75rem'}},
+                {'slug': 'xx-large', 'size': '2.25rem', 'name': 'Title', 'fluid': {'min': '1.75rem', 'max': '2.25rem'}},
+                {'slug': 'display', 'size': '3.25rem', 'name': 'Display', 'fluid': {'min': '2.1rem', 'max': '3.25rem'}},
             ],
         },
         'spacing': {
@@ -71,6 +71,7 @@ theme = {
         },
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -80,7 +81,7 @@ theme = {
             'link': {'color': {'text': 'var:preset|color|contrast'}, 'typography': {'textDecoration': 'underline'},
                      ':hover': {'color': {'text': 'var:preset|color|accent'}},
                      ':focus': {'outline': {'color': 'var:preset|color|accent', 'offset': '3px', 'style': 'solid', 'width': '3px'}}},
-            'heading': {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontWeight': '800', 'lineHeight': '0.98', 'letterSpacing': '-0.025em'}},
+            'heading': {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontWeight': '800', 'lineHeight': '1.05', 'letterSpacing': '-0.02em'}},
             'h1': {'typography': {'fontSize': 'var:preset|font-size|xx-large'}},
             'h2': {'typography': {'fontSize': 'var:preset|font-size|x-large'}},
             'h3': {'typography': {'fontSize': 'var:preset|font-size|large', 'lineHeight': '1.1'}},
@@ -106,7 +107,7 @@ theme = {
             'core/post-date': {'typography': {'fontSize': 'var:preset|font-size|x-small'}, 'color': {'text': 'var:preset|color|muted'}},
             'core/post-terms': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'fontWeight': '700'}},
             'core/post-excerpt': {'typography': {'fontSize': 'var:preset|font-size|small'}, 'color': {'text': 'var:preset|color|muted'}},
-            'core/image': {'border': {'radius': '18px'}},
+            'core/image': {'border': {'radius': '14px'}},
             'core/post-featured-image': {'border': {'radius': '18px'}},
             'core/cover': {'border': {'radius': '24px'}},
             'core/separator': {'color': {'text': 'var:preset|color|line'}, 'border': {'width': '2px 0 0 0'}},
@@ -121,15 +122,15 @@ theme = {
             'core/query-pagination': {'typography': {'fontSize': 'var:preset|font-size|small', 'fontWeight': '700'}},
         },
         'css': (
-            'body{font-synthesis:none}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}'
-            ':where(h1,h2,h3,.wp-block-site-title,.wp-block-post-title){font-stretch:125%}'
+            ':where(h1,h2,h3,h4) a{text-decoration:none;color:inherit}:where(h1,h2,h3,h4) a:hover{color:var(--wp--preset--color--accent)}body{font-synthesis:none}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}'
+            ':where(h1,.wp-block-site-title){font-stretch:118%}:where(h2,h3,.wp-block-post-title){font-stretch:108%}'
             'table,.wp-block-table td{font-variant-numeric:tabular-nums}'
             '.wp-block-table table{border-collapse:collapse}.wp-block-table td,.wp-block-table th{border:0;border-bottom:2px solid var(--wp--preset--color--line);padding:.6em .8em .6em 0;text-align:left}'
             '.wp-block-table thead{border-bottom:3px solid var(--wp--preset--color--contrast)}.wp-block-table th{font-weight:800}'
             '.wp-block-search__input{border-radius:999px;border:2px solid var(--wp--preset--color--contrast);padding:.7em 1.2em}.wp-block-search__button{border-radius:999px}'
             ':focus-visible{outline:3px solid var(--wp--preset--color--accent);outline-offset:3px}'
-            '.wp-block-navigation .current-menu-item>a{color:var(--wp--preset--color--accent)}@media (max-width:600px){:where(h1,h2,.wp-block-post-title){font-stretch:108%}header .wp-block-search{display:none}}'
-            '.wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--preset--color--surface)!important;font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:800}'
+            '.wp-block-navigation .current-menu-item>a{color:var(--wp--preset--color--accent)}@media (max-width:600px){:where(h1,h2,.wp-block-post-title){font-stretch:100%}header .wp-block-search{display:none}}'
+            '.wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--preset--color--surface)!important;font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:800}'
             '@media print{header,footer,.wp-block-post-featured-image,.wp-block-comments,.no-print{display:none!important}body{font-size:11pt}}'
             '@media (prefers-reduced-motion:no-preference){.wp-block-post-featured-image img,.wp-block-image img{transition:transform .3s ease}.wp-block-post-featured-image a:hover img{transform:scale(1.02)}}'
         ),
@@ -193,6 +194,10 @@ section('photo-grid', 'Photo grid (square crops)', ['core/group'], {
     'css': '&{grid-template-columns:repeat(2,minmax(0,1fr))!important}& img{aspect-ratio:1;object-fit:cover;width:100%;height:auto}& figure{margin:0}'})
 section('outlined', 'Outlined panel', ['core/group', 'core/columns'], {
     'border': {'radius': '28px', 'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'spacing': {'padding': P(60)}})
+section('rule-thin', 'Thin rule below', ['core/group', 'core/columns'], {'border': {'bottom': {'color': 'var:preset|color|line', 'width': '2px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}}})
+section('thumb', 'Square thumbnail', ['core/image'], {'css': '& img{aspect-ratio:1;object-fit:cover;width:84px;height:84px;border-radius:12px}'})
+section('crop', 'Crop 4:3', ['core/image'], {'css': '& img{aspect-ratio:4/3;object-fit:cover;width:100%}'})
+section('round', 'Round portrait', ['core/image'], {'css': '& img{aspect-ratio:1;object-fit:cover;border-radius:50%}'})
 section('notice', 'Notice bar', ['core/group'], {
     'color': {'background': 'var:preset|color|surface', 'text': 'var:preset|color|contrast'}, 'typography': {'fontSize': 'var:preset|font-size|small', 'fontWeight': '700'}})
 section('rule-top', 'Thick rule above', ['core/group'], {
@@ -232,8 +237,13 @@ GRID = lambda n: {'type': 'grid', 'columnCount': n, 'minimumColumnWidth': '10rem
 
 card = J(dyn('post-featured-image', isLink=True, aspectRatio='4/5'),
          dyn('post-terms', term='category', separator=', ', textColor='accent'),
-         dyn('post-title', isLink=True, level=3, fontSize='large'),
-         dyn('post-excerpt', excerptLength=24, moreText=''))
+         dyn('post-title', isLink=True, level=3, fontSize='medium'),
+         dyn('post-excerpt', excerptLength=18, moreText='', fontSize='x-small'))
+
+COMMENTS = ('<!-- wp:comments -->\n<div class="wp-block-comments"><!-- wp:heading {"level":3} -->\n<h3 class="wp-block-heading">Did you make it?</h3>\n<!-- /wp:heading -->\n\n'
+            '<!-- wp:comments-title {"level":4} /-->\n\n<!-- wp:comment-template -->\n<!-- wp:comment-author-name /-->\n\n<!-- wp:comment-date /-->\n\n<!-- wp:comment-content /-->\n\n<!-- wp:comment-reply-link /-->\n<!-- /wp:comment-template -->\n\n'
+            '<!-- wp:comments-pagination -->\n<!-- wp:comments-pagination-previous /-->\n\n<!-- wp:comments-pagination-numbers /-->\n\n<!-- wp:comments-pagination-next /-->\n<!-- /wp:comments-pagination -->\n\n'
+            '<!-- wp:post-comments-form /--></div>\n<!-- /wp:comments -->')
 
 # ---------------- parts
 write('parts/notice.html', pattern_ref('notice-book-tour'))
@@ -246,7 +256,7 @@ write('parts/header.html', J(
         justify='space-between', align='wide'), tag='header', align='full', style=PAD(40, 40))))
 write('parts/footer.html', group(J(
     group(J(
-        heading('Hana Qasem', 2, fontSize='display', textColor='base'),
+        heading('Hana Qasem', 2, fontSize='xx-large', textColor='base'),
         columns(
             (None, para('Recipes from a small kitchen in Walthamstow, tested at least three times each, weighed in grams and written for a normal oven. New recipes on Thursdays.', fontSize='small')),
             (None, para('<a href="/cookbooks/">Cookbooks</a><br><a href="/conversions/">Weights and temperatures</a><br><a href="/about/">About Hana</a><br><a href="mailto:hello@example.com">hello@example.com</a>', fontSize='small')),
@@ -259,18 +269,18 @@ write('parts/footer.html', group(J(
 # ---------------- templates
 T = lambda inner, t=40, b=70: page_template(inner, style=PAD(t, b))
 write('templates/front-page.html', T(J(
-    pattern_ref('hero-lime'), pattern_ref('course-chips'), pattern_ref('new-recipes'), pattern_ref('cookbook-promo'),
+    pattern_ref('hero-this-week'), pattern_ref('course-chips'), pattern_ref('new-recipes'), pattern_ref('collection-quick'), pattern_ref('cookbook-promo'),
     pattern_ref('cook-this-weekend'), pattern_ref('ingredient-index'), pattern_ref('newsletter')), 20, 60))
 archive_grid = inherit_query(card, layout=GRID(4), template_class='is-style-recipe-grid', align='wide')
 pattern('recipe-grid-archive', 'Recipe grid (inherits the page query)', 'query', archive_grid, inserter=False)
 write('templates/home.html', T(J(
-    heading('All the recipes', 1, align='wide', fontSize='display'),
+    heading('All the recipes', 1, align='wide', fontSize='xx-large'),
     columns((None, J(heading('By course', 6), dyn('categories', className='is-style-chips'))),
             (None, J(heading('By diet or ingredient', 6), dyn('tag-cloud', className='is-style-chips', smallestFontSize='1rem', largestFontSize='1rem'))), align='wide'),
     pattern_ref('recipe-grid-archive'))))
 write('templates/index.html', T(J(dyn('query-title', type='archive', align='wide'), pattern_ref('recipe-grid-archive'))))
 write('templates/archive.html', T(J(
-    dyn('query-title', type='archive', showPrefix=False, align='wide', fontSize='display'),
+    dyn('query-title', type='archive', showPrefix=False, align='wide', fontSize='xx-large'),
     dyn('term-description', align='wide'),
     dyn('categories', className='is-style-chips', align='wide'),
     pattern_ref('recipe-grid-archive'))))
@@ -279,31 +289,32 @@ write('templates/search.html', T(J(
     dyn('search', label='Search recipes', showLabel=False, placeholder='Try lemon, or 30 minutes', buttonText='Search', align='wide'),
     pattern_ref('recipe-grid-archive'))))
 write('templates/404.html', T(J(
-    heading('That recipe isn\'t here', 1, fontSize='display'),
+    heading('That recipe isn\'t here', 1, fontSize='xx-large'),
     para('It may have moved when the recipes were sorted into courses. Search for the main ingredient, it\'s usually quicker.'),
     dyn('search', label='Search recipes', showLabel=False, placeholder='Search recipes or an ingredient', buttonText='Search')), 70, 80))
-write('templates/page.html', T(J(dyn('post-title', level=1, fontSize='display'), dyn('post-content', layout={'type': 'constrained'}))))
-write('templates/page-wide.html', T(J(dyn('post-title', level=1, fontSize='display', align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1380px'}))))
+write('templates/page.html', T(J(dyn('post-title', level=1, fontSize='xx-large'), dyn('post-content', layout={'type': 'constrained'}))))
+write('templates/page-wide.html', T(J(dyn('post-title', level=1, fontSize='xx-large', align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1380px'}))))
 
 def single(img=True):
     head = columns(
         ('55%', J(dyn('post-terms', term='category', separator=', ', textColor='accent'),
-                  dyn('post-title', level=1, fontSize='display'),
-                  dyn('post-excerpt', fontSize='large'),
+                  dyn('post-title', level=1, fontSize='xx-large'),
+                  dyn('post-excerpt', fontSize='medium'),
                   row(J(buttons(('Jump to recipe', '#recipe')), dyn('post-date', format='j F Y')), style={'spacing': {'blockGap': 'var:preset|spacing|40'}}))),
         (None, dyn('post-featured-image', aspectRatio='4/5') if img else ''),
         align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})
     return T(J(head,
                dyn('post-content', layout={'type': 'constrained'}),
                group(J(heading('Tags', 6), dyn('post-terms', term='post_tag', className='is-style-chips')), className='no-print'),
+               group(COMMENTS, className='no-print'),
                group(J(heading('Cook something else', 2), q(card, per_page=4, qid=5, layout=GRID(4), pt_class='is-style-recipe-grid')), align='wide', className='is-style-rule-top no-print', layout={'type': 'default'}),
                ), 40, 70)
 write('templates/single.html', single())
 write('templates/single-plain.html', single(False))
 
 # ---------------- patterns
-pattern('hero-lime', 'Hero: lime panel with photos', 'featured', columns(
-    ('52%', J(heading('Mostly vegetables, a lot of lemon, dinner by eight.', 1, fontSize='display'),
+pattern('hero-lime', 'Hero: lime panel with photos', 'hero', columns(
+    ('52%', J(heading('Recipes for after work', 2, fontSize='xx-large'),
               para('I\'m Hana Qasem. I write recipes for people who cook after work: one tray, one pot, weights in grams, and a note on what to do with the leftovers. New recipes every Thursday.', fontSize='large'),
               buttons(('See this week\'s recipes', '/recipes/'), ('Browse by ingredient', '#ingredients', {'className': 'is-style-outline'})))),
     (None, grid(J(image('hero.jpg', 'Shakshuka in a black pan, four eggs set in tomato sauce, with bread and cutlery on a dark table'),
@@ -316,7 +327,7 @@ pattern('course-chips', 'Browse by course (chips)', 'posts', group(J(
     dyn('categories', className='is-style-chips')), align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|30'}}}))
 
 pattern('new-recipes', 'New recipes (grid)', 'posts,query', group(J(
-    row(J(heading('New this month', 2, fontSize='xx-large'), para('<a href="/recipes/">All recipes</a>', fontSize='small')), justify='space-between'),
+    row(J(heading('New this month', 2), para('<a href="/recipes/">All recipes</a>', fontSize='small')), justify='space-between'),
     q(card, per_page=8, qid=2, layout=GRID(4), pt_class='is-style-recipe-grid')), align='wide', layout={'type': 'default'}))
 
 pattern('cookbook-promo', 'Cookbook promo', 'featured,shop', columns(
@@ -438,7 +449,7 @@ pattern('conversions-spoons', 'Spoons and small amounts', 'reference', J(
 pattern('conversions-page', 'Page: weights and temperatures', 'reference', J(
     para('Every recipe here is written in grams and conventional oven temperatures, with cups in brackets where it helps. These tables are the ones I keep taped inside a cupboard door.', fontSize='large'),
     columns((None, pattern_ref('conversions-oven')), (None, pattern_ref('conversions-weights')), align='wide'),
-    pattern_ref('conversions-spoons')), block_types='core/post-content')
+    pattern_ref('conversions-spoons'), pattern_ref('faq')), block_types='core/post-content')
 
 # Cookbooks and events
 pattern('cookbooks-list', 'Cookbooks', 'shop', J(
@@ -447,11 +458,13 @@ pattern('cookbooks-list', 'Cookbooks', 'shop', J(
                  buttons(('Buy from Bookshop.org', 'https://uk.bookshop.org/')))),
         (None, J(image('lentils.jpg', 'Red lentil soup with carrot in a pale blue bowl, a spoon resting in it'), heading('A Tin of Chickpeas', 3), para('Kestrel Press, 2023. 100 recipes built on tins and jars, 256 pages, £22. Now in paperback at £14.99.'),
                  buttons(('Buy from Bookshop.org', 'https://uk.bookshop.org/')))), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})))
-pattern('events-list', 'Book events', 'events', J(
+EV = [('Sat 4 Oct, 2pm', 'Pages of Hackney, London E5', 'Signing. Free, just turn up.'), ('Thu 9 Oct, 7pm', 'Toppings, Bath', 'Talk and signing. £8, includes a glass of wine.'),
+      ('Sat 18 Oct, 11am', 'Kirkgate Market, Leeds', 'Cooking demo in the market kitchen. Free.'), ('Wed 5 Nov, 6:30pm', 'Waterstones Walthamstow', 'Signing. Free, book a seat.')]
+pattern('events-list', 'Book events (cards)', 'events', J(
     heading('Where I\'m signing', 2),
-    table([['Sat 4 Oct, 2pm', 'Pages of Hackney, London E5', 'Free, just turn up'], ['Thu 9 Oct, 7pm', 'Toppings, Bath', '£8, includes a glass of wine'], ['Sat 18 Oct, 11am', 'Leeds Kirkgate Market, demo kitchen', 'Free'], ['Wed 5 Nov, 6:30pm', 'Waterstones Walthamstow', 'Free, book a seat']],
-          head=['When', 'Where', 'Tickets'])))
-pattern('cookbooks-page', 'Page: cookbooks', 'shop', J(pattern_ref('cookbooks-list'), pattern_ref('events-list'),
+    grid(J(*[group(J(para(w, style={'typography': {'fontWeight': '800'}}, textColor='accent'), heading(where, 3, fontSize='large'), para(what, fontSize='small')), className='is-style-lime', style={'spacing': {'padding': P(40)}}) for w, where, what in EV]),
+         min_width='14rem', align='wide', style={'spacing': {'blockGap': 'var:preset|spacing|30'}})))
+pattern('cookbooks-page', 'Page: cookbooks', 'shop', J(pattern_ref('cookbooks-list'), pattern_ref('events-list'), pattern_ref('cooking-classes'), pattern_ref('press-quotes'),
     para('Signed copies by post: order from Pages of Hackney and write "signed" in the note. They\'ll send it once I\'ve been in, usually within a week.', fontSize='small')), block_types='core/post-content')
 
 # About
@@ -470,6 +483,133 @@ pattern('recipe-index-course', 'Recipe index by course (text)', 'posts', columns
     (None, J(heading('Soups', 4), lst(['<a href="/category/soups/">Red lentil soup, crispy onions</a>', '<a href="/category/soups/">Miso broth with greens</a>']))), align='wide'))
 
 pattern('page-landing', 'Page: recipe landing', 'posts', J(pattern_ref('course-chips'), pattern_ref('new-recipes'), pattern_ref('ingredient-index')), block_types='core/post-content')
+
+
+# ---------------- round 2 patterns
+pattern('hero-this-week', 'Hero: this week\'s recipe with the rest of the week', 'hero', columns(
+    ('58%', image('hero.jpg', 'Shakshuka in a black pan, four eggs set in tomato sauce, with bread and cutlery on a dark table', href='/shakshuka-preserved-lemon/')),
+    (None, J(para('New on Thursday', fontSize='small', textColor='accent', style={'typography': {'fontWeight': '800'}}),
+             heading('<a href="/shakshuka-preserved-lemon/">Shakshuka with preserved lemon and feta</a>', 1, fontSize='display'),
+             para('35 minutes, serves 4. Everything in it keeps, which is why it\'s our Monday dinner. The preserved lemon makes the sauce taste like it cooked for hours.'),
+             buttons(('Get the recipe', '/shakshuka-preserved-lemon/')),
+             heading('Also this week', 6, style={'spacing': {'margin': {'top': 'var:preset|spacing|50'}}}),
+             pattern_ref('also-this-week'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}, 'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|50'}}}))
+
+def mini(img, alt, title, href, meta):
+    return columns(('84px', image(img, alt, href=href, className='is-style-thumb')), (None, J(para('<a href="%s">%s</a>' % (href, title), style={'typography': {'fontWeight': '800'}}), para(meta, fontSize='x-small', textColor='muted'))),
+                   verticalAlignment='center', isStackedOnMobile=False, style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}, 'margin': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}}})
+
+pattern('also-this-week', 'Also this week (small list with photos)', 'posts', J(
+    mini('cauliflower.jpg', 'Roast cauliflower with turmeric on a white plate', 'Roast cauliflower with turmeric butter', '/roast-cauliflower-turmeric/', '50 min, traybake'),
+    mini('lentils.jpg', 'Red lentil soup in a pale blue bowl', 'Red lentil soup with crispy onions', '/red-lentil-soup/', '40 min, freezes well'),
+    mini('cake.jpg', 'A slice of lemon loaf on a patterned plate', 'Lemon and olive oil loaf', '/lemon-olive-oil-loaf/', '1 hr 5 min, dairy-free')))
+
+def coll_card(img, alt, title, href, meta):
+    return group(J(image(img, alt, href=href, className='is-style-crop'), para(meta, fontSize='x-small', textColor='accent', style={'typography': {'fontWeight': '800'}}), heading('<a href="%s">%s</a>' % (href, title), 3, fontSize='medium')), style={'spacing': {'blockGap': 'var:preset|spacing|20'}})
+
+pattern('collection-quick', 'Collection: under 30 minutes', 'collections', group(J(
+    row(J(heading('Dinner in under 30 minutes', 2), para('<a href="/tag/under-30-minutes/">The whole collection</a>', fontSize='small')), justify='space-between'),
+    grid(J(coll_card('chickpea.jpg', 'Chickpeas in tomato sauce with flatbread', 'Chickpeas with tomato, cumin and flatbread', '/chickpeas-tomato-cumin/', '25 min'),
+           coll_card('pasta.jpg', 'Ribbons of pasta in a white bowl', 'Pappardelle with brown butter and sage', '/pappardelle-brown-butter/', '20 min'),
+           coll_card('hummus.jpg', 'Hummus topped with falafel', 'Hummus with crispy chickpeas', '/hummus-chilli-butter/', '20 min'),
+           coll_card('hero.jpg', 'Shakshuka in a black pan', 'Shakshuka with preserved lemon', '/shakshuka-preserved-lemon/', '35 min, nearly')), min_width='13rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}))
+
+pattern('collection-weekend', 'Collection: weekend projects', 'collections', group(J(
+    heading('Weekend projects', 2),
+    para('Longer recipes for when there\'s time to wait. None of them are hard, they just take a while.'),
+    grid(J(coll_card('rice.jpg', 'Saffron rice with a golden crust', 'Saffron rice with a crust', '/saffron-rice-crust/', '2 hr'),
+           coll_card('cake.jpg', 'A slice of lemon loaf', 'Lemon and olive oil loaf', '/lemon-olive-oil-loaf/', '1 hr 5 min'),
+           coll_card('aubergine.jpg', 'Roast aubergine with tomato', 'Aubergine with miso and tomato', '/aubergine-miso-tomato/', '45 min')), min_width='14rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})),
+    align='wide', className='is-style-lime', layout={'type': 'default'}))
+
+pattern('collection-vegan', 'Collection: vegan', 'collections', group(J(
+    heading('Vegan, and nobody asks where the meat is', 2),
+    grid(J(coll_card('lentils.jpg', 'Red lentil soup', 'Red lentil soup with crispy onions', '/red-lentil-soup/', '40 min'),
+           coll_card('aubergine.jpg', 'Roast aubergine', 'Aubergine with miso and tomato', '/aubergine-miso-tomato/', '45 min'),
+           coll_card('chickpea.jpg', 'Chickpeas and flatbread', 'Chickpeas with tomato and cumin', '/chickpeas-tomato-cumin/', '25 min')), min_width='14rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})),
+    align='wide', layout={'type': 'default'}))
+
+DAYS = [('Monday', 'Shakshuka with preserved lemon', '/shakshuka-preserved-lemon/', 'Uses the tins. Make extra sauce for Wednesday.'),
+        ('Tuesday', 'Red lentil soup with crispy onions', '/red-lentil-soup/', 'Double it and freeze half.'),
+        ('Wednesday', 'Chickpeas with tomato and cumin', '/chickpeas-tomato-cumin/', 'The leftover shakshuka sauce goes in here.'),
+        ('Thursday', 'Roast cauliflower with turmeric butter', '/roast-cauliflower-turmeric/', 'One tray, 50 minutes, mostly in the oven.'),
+        ('Friday', 'Pappardelle with brown butter and sage', '/pappardelle-brown-butter/', '20 minutes. You\'ve earned it.')]
+pattern('meal-plan-week', 'Meal plan for the week', 'plan', group(J(
+    heading('Five dinners, one shop', 2),
+    *[columns(('10rem', para(d, style={'typography': {'fontWeight': '800'}}, textColor='accent')), (None, J(para('<a href="%s">%s</a>' % (h, t), fontSize='large', style={'typography': {'fontWeight': '700'}}), para(n, fontSize='small', textColor='muted'))),
+              className='is-style-rule-thin', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|40'}, 'margin': {'top': '0', 'bottom': '0'}}}) for d, t, h, n in DAYS]),
+    layout={'type': 'constrained', 'contentSize': '900px', 'justifyContent': 'left'}))
+
+pattern('shopping-list', 'Shopping list for the week', 'plan', group(J(
+    heading('The shopping list', 3),
+    columns((None, J(heading('Tins and jars', 6), lst(['3 × 400g chickpeas', '3 × 400g plum tomatoes', '1 jar preserved lemons', '1 jar rose harissa']))),
+            (None, J(heading('Fresh', 6), lst(['1 large cauliflower', '2 onions, 2 red peppers', '1 bunch coriander, 1 of sage', '2 lemons, 6 eggs']))),
+            (None, J(heading('Dry and dairy', 6), lst(['250g red lentils', '200g pappardelle', '100g feta, 60g parmesan', '4 flatbreads'])))),
+    para('Roughly £38 at a big supermarket in September 2026, less at the market.', fontSize='x-small', textColor='muted')),
+    className='is-style-recipe-card'))
+
+pattern('technique-spices', 'Technique: toasting spices', 'technique', media_text('herbs.jpg', 'Fresh herbs and a red pepper on a board', J(
+    heading('How to toast whole spices', 3),
+    lst(['Use a dry frying pan over a medium heat. No oil.', 'Add the seeds and shake the pan every 20 seconds.', 'They\'re done when they smell strong and the cumin darkens a shade, about 2 minutes.', 'Tip them straight onto a plate. The pan keeps cooking them.'], ordered=True),
+    para('Burnt cumin tastes bitter all the way through a dish. If in doubt, start again: it costs 10p.', fontSize='small')), width=45, align='wide'))
+
+pattern('ingredient-spotlight', 'Ingredient spotlight: preserved lemons', 'technique', columns(
+    ('40%', image('tomatoes.jpg', 'Red tomatoes and purple onions piled on a market stall')),
+    (None, J(heading('Preserved lemons, and where to find them', 3),
+             para('Salt-cured lemons, soft enough to chop rind and all. I use only the rind and throw away the pulp. A jar keeps for a year in the fridge once opened.'),
+             para('Most big supermarkets sell them near the olives. The small ones from Moroccan shops are better and half the price. Or make them: 6 lemons, 150g salt, a clean jar and a month.'),
+             para('<a href="/tag/tins/">Recipes that use the storecupboard</a>', fontSize='small'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}))
+
+pattern('kitchen-kit', 'What\'s in my kitchen', 'technique', group(J(
+    heading('The kit I actually use', 3),
+    lst(['<strong>A digital scale.</strong> £12, and the reason my baking works.', '<strong>A 28cm frying pan with a lid.</strong> Most of the dinners here fit it.', '<strong>Two big roasting trays</strong>, 40 × 30 cm, heavy enough not to buckle at 220°C.', '<strong>A microplane</strong> for lemon zest and garlic.', '<strong>An oven thermometer.</strong> Mine runs 10 degrees hot and yours might too.']),
+    para('I don\'t own an air fryer or a stand mixer. Nothing here needs one.', fontSize='small')), layout={'type': 'constrained', 'contentSize': '720px', 'justifyContent': 'left'}))
+
+pattern('method-with-photos', 'Method with step photos', 'recipe', J(
+    heading('Step by step', 3),
+    columns(('35%', image('rice.jpg', 'Saffron rice with a golden crust on a tray')), (None, J(heading('Press the base in firmly', 4), para('Mix a third of the par-boiled rice with the yoghurt and saffron water. Press it into the buttered pan with the back of a spoon so there are no gaps: this becomes the crust.'))), verticalAlignment='center'),
+    columns(('35%', image('herbs.jpg', 'Fresh herbs on a board')), (None, J(heading('Pile, don\'t press', 4), para('Spoon the rest of the rice in loosely, in a mound. Poke five holes down to the base with the handle of a wooden spoon so the steam can escape.'))), verticalAlignment='center'),
+    columns(('35%', image('tomatoes.jpg', 'Tomatoes and onions on a market stall')), (None, J(heading('Wrap the lid and wait', 4), para('Wrap the lid in a tea towel, cover tightly and cook on the lowest heat for 45 minutes. Don\'t lift it. Then put the base of the pan in cold water for a minute and flip.'))), verticalAlignment='center')))
+
+pattern('leftovers', 'What to do with the leftovers', 'recipe', group(J(
+    heading('Leftovers', 4),
+    para('Leftover sauce makes the base for <a href="/chickpeas-tomato-cumin/">the chickpeas</a> on Wednesday. Stir in a drained tin and simmer for 10 minutes. Leftover feta goes on toast.', fontSize='small')),
+    className='is-style-lime', style={'spacing': {'padding': P(40)}}))
+
+pattern('author-card', 'Author card (short bio)', 'about', columns(
+    ('96px', image('herbs.jpg', 'Bunches of fresh herbs', className='is-style-round')),
+    (None, J(heading('Hana Qasem', 4), para('Cook and writer in Walthamstow. Two books, one small kitchen, a recipe every Thursday since 2016.', fontSize='small'), para('<a href="/about/">More about Hana</a>', fontSize='small'))),
+    verticalAlignment='center', isStackedOnMobile=False, className='is-style-rule-top'))
+
+pattern('press-quotes', 'Press and readers (named quotes)', 'about', columns(
+    (None, quote('Hana writes the recipes I actually cook on a Tuesday. The chickpea book is falling apart in our kitchen.', 'Rachel Ofori, food editor, Weekend Table, March 2026')),
+    (None, quote('I halved the saffron rice for two and it still came out in one piece. I clapped.', 'Mateusz, Walthamstow, reader since 2019')), align='wide'))
+
+pattern('cooking-classes', 'Cooking classes', 'events', group(columns(
+    ('50%', image('flatbread.jpg', 'Hummus with falafel and flatbread on a table')),
+    (None, J(heading('Cook with me on a Saturday', 2),
+             para('Four people, three hours, one long lunch at the end. We cook three recipes from the new book in my kitchen in Walthamstow. £85 each, ingredients and aprons included.'),
+             para('Next dates: 25 October, 15 November, 6 December. Two places left in October.', style={'typography': {'fontWeight': '800'}}),
+             buttons(('Email to book a place', 'mailto:hello@example.com?subject=Saturday%20class')))), verticalAlignment='center'),
+    align='wide', className='is-style-saffron', layout={'type': 'default'}))
+
+pattern('faq', 'Questions readers ask', 'reference', J(
+    heading('Questions readers ask', 2),
+    details('Can I use a fan oven?', para('Yes. Turn the temperature down by 20 degrees. Every recipe gives both.')),
+    details('Why grams?', para('Because a cup of flour can weigh anything from 110g to 150g depending on how you fill it. A cheap scale fixes that.')),
+    details('Can I freeze it?', para('Each recipe says. Soups and sauces yes, anything with a crust or fried egg no.')),
+    details('Do you do sponsored posts?', para('No. If a recipe names a brand, it\'s because I buy it.'))))
+
+pattern('recipe-index-page', 'Page: collections', 'collections', J(
+    para('Recipes grouped the way people cook them: by how long they take, what\'s in them and when you have time.', fontSize='large'),
+    pattern_ref('collection-quick'), pattern_ref('collection-weekend'), pattern_ref('collection-vegan'), pattern_ref('recipe-index-course')), block_types='core/post-content')
+
+pattern('meal-plan-page', 'Page: this week\'s meal plan', 'plan', J(
+    para('Five weeknight dinners that share a shop, so nothing goes to waste. Updated on the first Thursday of the month.', fontSize='large'),
+    pattern_ref('meal-plan-week'), pattern_ref('shopping-list'), pattern_ref('kitchen-kit')), block_types='core/post-content')
 
 print('pantry: patterns written')
 
@@ -529,6 +669,14 @@ recipe('Pappardelle with brown butter, sage and lemon', 'pappardelle-brown-butte
        ingredients=['<strong>200g</strong> pappardelle', '<strong>60g</strong> butter', '<strong>12</strong> sage leaves', '<strong>1</strong> lemon, zest only', '<strong>40g</strong> parmesan'],
        steps=['Cook the pasta in well-salted water.', 'Meanwhile, cook the butter and sage until the butter smells nutty and the sage crisps.', 'Toss the pasta with the butter, zest, parmesan and a splash of pasta water.'])
 
+EXTRA = {'shakshuka-preserved-lemon': ['pan-size-note', 'leftovers', 'ingredient-spotlight', 'reader-notes', 'author-card'],
+         'saffron-rice-crust': ['method-with-photos', 'author-card'], 'red-lentil-soup': ['technique-spices', 'storage-notes'],
+         'lemon-olive-oil-loaf': ['diet-labels', 'author-card'], 'hummus-chilli-butter': ['substitutions']}
+for r in R:
+    r['content'] = J(r['content'], *[pattern_ref(x) for x in EXTRA.get(r['slug'], [])])
+    if r['slug'] == 'pappardelle-brown-butter':
+        r['template'] = 'single-plain'
+
 content = {
     'site': {'title': 'Hana Qasem', 'tagline': 'Recipes for weeknights, weighed in grams'},
     'categories': [{'slug': 'dinner', 'name': 'Weeknight dinners'}, {'slug': 'traybakes', 'name': 'Traybakes'}, {'slug': 'soups', 'name': 'Soups'},
@@ -540,10 +688,13 @@ content = {
         {'slug': 'cookbooks', 'title': 'Cookbooks and events', 'pattern': 'pantry/cookbooks-page', 'template': 'page-wide'},
         {'slug': 'conversions', 'title': 'Weights and temperatures', 'pattern': 'pantry/conversions-page', 'template': 'page-wide'},
         {'slug': 'about', 'title': 'About Hana', 'pattern': 'pantry/about-page', 'template': 'page-wide'},
+        {'slug': 'collections', 'title': 'Collections', 'pattern': 'pantry/recipe-index-page', 'template': 'page-wide'},
+        {'slug': 'meal-plan', 'title': 'This week\'s meal plan', 'pattern': 'pantry/meal-plan-page'},
+        {'slug': 'questions', 'title': 'Questions', 'pattern': 'pantry/faq'},
     ],
     'posts': R,
-    'nav': [{'label': 'Recipes', 'url': '/recipes/'}, {'label': 'Weeknight', 'url': '/category/dinner/'}, {'label': 'Traybakes', 'url': '/category/traybakes/'},
-            {'label': 'Baking', 'url': '/category/baking/'}, {'label': 'Cookbooks', 'url': '/cookbooks/'}, {'label': 'Conversions', 'url': '/conversions/'}, {'label': 'About', 'url': '/about/'}],
+    'nav': [{'label': 'Recipes', 'url': '/recipes/'}, {'label': 'Weeknight', 'url': '/category/dinner/'}, {'label': 'Collections', 'url': '/collections/'},
+            {'label': 'Meal plan', 'url': '/meal-plan/'}, {'label': 'Cookbooks', 'url': '/cookbooks/'}, {'label': 'Conversions', 'url': '/conversions/'}, {'label': 'About', 'url': '/about/'}],
 }
 os.makedirs(os.path.join(ROOT, 'demos', S), exist_ok=True)
 with open(os.path.join(ROOT, 'demos', S, 'content.json'), 'w') as f:

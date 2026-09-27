@@ -5,15 +5,15 @@
  * Categories: call-to-action
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-outlined","style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"default"},"anchor":"newsletter"} -->
-<div class="wp-block-group alignwide is-style-outlined" id="newsletter" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"center"} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"55%"} -->
+<!-- wp:group {"align":"wide","className":"is-style-outlined","anchor":"newsletter","style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
+<div id="newsletter" class="wp-block-group alignwide is-style-outlined" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"55%"} -->
 <div class="wp-block-column" style="flex-basis:55%"><!-- wp:heading {"fontSize":"xx-large"} -->
 <h2 class="wp-block-heading has-xx-large-font-size">Thursday recipes, by email</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>One new recipe a week, what I'm cooking at home, and the odd event date. It comes from me, it's free, and you can unsubscribe from any email.</p>
+<p class="">One new recipe a week, what I'm cooking at home, and the odd event date. It comes from me, it's free, and you can unsubscribe from any email.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

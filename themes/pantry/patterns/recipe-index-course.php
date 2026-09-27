@@ -14,13 +14,9 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><a href="/category/dinner/">Shakshuka with preserved lemon</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/category/dinner/">Chickpeas with cumin and flatbread</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/category/dinner/">Pappardelle with sage butter</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -34,9 +30,7 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><a href="/category/traybakes/">Roast cauliflower, turmeric butter</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/category/traybakes/">Aubergine with miso and tomato</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -62,9 +56,7 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><a href="/category/soups/">Red lentil soup, crispy onions</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/category/soups/">Miso broth with greens</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>

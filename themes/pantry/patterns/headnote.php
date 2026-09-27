@@ -6,7 +6,7 @@
  */
 ?>
 <!-- wp:paragraph -->
-<p>This is what we eat on Mondays, because everything in it keeps: tins, eggs, a jar of preserved lemons. The lemon is the thing people ask about. It makes the sauce taste like it cooked for longer than it did.</p>
+<p class="">This is what we eat on Mondays, because everything in it keeps: tins, eggs, a jar of preserved lemons. The lemon is the thing people ask about. It makes the sauce taste like it cooked for longer than it did.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

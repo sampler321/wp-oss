@@ -8,41 +8,41 @@
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"9rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-facts","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Serves</p>
+<p class="">Serves</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>4</p>
+<p class="">4</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Prep</p>
+<p class="">Prep</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>15 min</p>
+<p class="">15 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Cook</p>
+<p class="">Cook</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>40 min</p>
+<p class="">40 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Total</p>
+<p class="">Total</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>55 min</p>
+<p class="">55 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

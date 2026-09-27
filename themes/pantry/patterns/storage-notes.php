@@ -12,13 +12,9 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Fridge: 3 days in a lidded box.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Freezer: 2 months. Thaw overnight in the fridge.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Make ahead: cook to the end of step 2 the day before.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

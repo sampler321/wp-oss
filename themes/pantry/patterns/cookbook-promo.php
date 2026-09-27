@@ -5,9 +5,9 @@
  * Categories: featured,shop
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-saffron","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-saffron" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:column {"width":"45%"} -->
-<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:columns {"align":"wide","verticalAlignment":"center","className":"is-style-saffron","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide is-style-saffron" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/flatbread.jpg' ) ); ?>" alt="Hummus topped with falafel and pickled carrot, with flatbread in a basket behind"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -18,7 +18,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>My second book is 80 traybakes that go in the oven at 200°C and come out as dinner. Out 2 October from Kestrel Press, 288 pages, £26.</p>
+<p class="">My second book is 80 traybakes that go in the oven at 200°C and come out as dinner. Out 2 October from Kestrel Press, 288 pages, £26.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

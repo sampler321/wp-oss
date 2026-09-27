@@ -21,3 +21,5 @@
 <!-- /wp:columns -->
 
 <!-- wp:pattern {"slug":"pantry/conversions-spoons"} /-->
+
+<!-- wp:pattern {"slug":"pantry/faq"} /-->

@@ -9,13 +9,13 @@
 ?>
 <!-- wp:pattern {"slug":"pantry/headnote"} /-->
 
-<!-- wp:group {"className":"is-style-recipe-card","layout":{"type":"constrained"},"anchor":"recipe"} -->
+<!-- wp:group {"anchor":"recipe","className":"is-style-recipe-card","layout":{"type":"constrained"}} -->
 <div id="recipe" class="wp-block-group is-style-recipe-card"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"xx-large"} -->
 <h2 class="wp-block-heading has-xx-large-font-size">Shakshuka with preserved lemon and feta</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"no-print","textColor":"muted","fontSize":"x-small"} -->
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted","className":"no-print"} -->
 <p class="no-print has-muted-color has-text-color has-x-small-font-size">Print it and the photos and comments drop out.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -23,41 +23,41 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","minimumColumnWidth":"9rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-facts","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Serves</p>
+<p class="">Serves</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>4</p>
+<p class="">4</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Prep</p>
+<p class="">Prep</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>10 min</p>
+<p class="">10 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Cook</p>
+<p class="">Cook</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>25 min</p>
+<p class="">25 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-facts","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-facts"><!-- wp:paragraph -->
-<p>Total</p>
+<p class="">Total</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>35 min</p>
+<p class="">35 min</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -71,45 +71,25 @@
 <!-- wp:list {"className":"is-style-ingredients"} -->
 <ul class="wp-block-list is-style-ingredients"><!-- wp:list-item -->
 <li><strong>3 tbsp</strong> olive oil</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>2</strong> onions, thinly sliced</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>2</strong> red peppers, sliced</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>3</strong> garlic cloves, crushed</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>2 tsp</strong> cumin seeds</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>1 tbsp</strong> rose harissa</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>800g</strong> tinned plum tomatoes (2 tins)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>½</strong> preserved lemon, rind only, chopped</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>6</strong> eggs</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>100g</strong> feta (¾ cup crumbled)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>A small bunch of coriander</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -123,17 +103,11 @@
 <!-- wp:list {"ordered":true,"className":"is-style-steps"} -->
 <ol class="wp-block-list is-style-steps"><!-- wp:list-item -->
 <li>Heat the oil in a 28cm frying pan over a medium heat. Cook the onions and peppers with ½ tsp salt for 12 minutes, until soft and just catching.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Add the garlic, cumin and harissa and cook for 1 minute. Tip in the tomatoes, crush them with a spoon, add the preserved lemon and simmer for 10 minutes.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Make six hollows in the sauce and crack an egg into each. Cover and cook for 6 to 8 minutes, until the whites are set and the yolks still move.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Crumble over the feta, tear over the coriander and bring the pan to the table.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
@@ -148,7 +122,7 @@
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Make ahead and storage</summary><!-- wp:paragraph -->
-<p>The sauce keeps for 3 days in the fridge and freezes for 2 months. Reheat it until bubbling before you add the eggs. Cooked eggs don't reheat well.</p>
+<p class="">The sauce keeps for 3 days in the fridge and freezes for 2 months. Reheat it until bubbling before you add the eggs. Cooked eggs don't reheat well.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
@@ -156,13 +130,9 @@
 <details class="wp-block-details"><summary>Swaps that work</summary><!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>No preserved lemon: the zest of a whole lemon and a pinch more salt.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>No harissa: 1 tsp chilli flakes and 1 tsp sweet paprika.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Vegan: leave out the eggs and feta, add a drained tin of butter beans at step 2.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></details>
