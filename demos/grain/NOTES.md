@@ -1,0 +1,8 @@
+# Grain: notes
+
+- Direction: the order book. Dark oiled-walnut pages with pale shavings type and a linseed-amber accent, because solid wood reads best on a dark ground and a commission workshop should feel like the bench at dusk rather than a showroom. Built to sit apart from `joint` (pale ash, grotesk, green, shop-led): serif display, dark ground, no shop, the order book first.
+- Persona: Brink & Oduya, Sanne Brink and Kofi Oduya, two makers in a former tannery on the Houtmarkt in Zutphen. Oak, elm, ash and walnut from within 60 km. Copy in English, Dutch place names, prices in euros.
+- Fonts: Sentient (display, Fontshare serif, set light at large sizes) and General Sans (body, Fontshare). Fetched by hand because tools/fetch-fonts.mjs fails on Fontshare's quoted url('//...') sources.
+- Signature: the front page opens with what is on each bench this week and when the next slot is free. Every piece is a post with a cut list (part, number, timber, finished size in mm) on cut-list paper. The commission process is a week-by-week timeline, not numbered cards.
+- Also: timber table with provenance and price factor, finishes, the timber store, why elm, workshop visits on Saturdays, the two makers, care and a ten-year guarantee, what we don't make (kitchens, fitted joinery, copies of named designers).
+- Imagery: Commons has almost no CC0 photos of contemporary solid-wood furniture, so the demo uses 1930s Index of American Design chair drawings (presented as the drawings pieces were made from), museum pieces (presented as a museum copy, a study trip and a repair) and workshop and timber photos. The footer says they are stand-ins. A real maker would replace them with their own photos.

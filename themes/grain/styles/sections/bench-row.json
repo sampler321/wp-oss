@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bench row",
+	"slug": "bench-row",
+	"blockTypes": [
+		"core/columns"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40"
+			}
+		}
+	}
+}

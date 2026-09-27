@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Limed oak",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EEE8DC",
+					"name": "Oiled walnut"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A2119",
+					"name": "Shavings"
+				},
+				{
+					"slug": "accent",
+					"color": "#8A5A1E",
+					"name": "Linseed"
+				},
+				{
+					"slug": "surface",
+					"color": "#E2D9C8",
+					"name": "End grain"
+				},
+				{
+					"slug": "line",
+					"color": "#B3A58D",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5E5243",
+					"name": "Sawdust"
+				},
+				{
+					"slug": "paper",
+					"color": "#FFFFFF",
+					"name": "Cut-list paper"
+				},
+				{
+					"slug": "ink",
+					"color": "#2A2119",
+					"name": "Carpenter's pencil"
+				}
+			]
+		}
+	}
+}

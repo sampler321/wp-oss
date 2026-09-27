@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bog oak",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#151515",
+					"name": "Oiled walnut"
+				},
+				{
+					"slug": "contrast",
+					"color": "#E6E1D8",
+					"name": "Shavings"
+				},
+				{
+					"slug": "accent",
+					"color": "#C9B27C",
+					"name": "Linseed"
+				},
+				{
+					"slug": "surface",
+					"color": "#1F1F1E",
+					"name": "End grain"
+				},
+				{
+					"slug": "line",
+					"color": "#474540",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#ADA698",
+					"name": "Sawdust"
+				},
+				{
+					"slug": "paper",
+					"color": "#EFE6D8",
+					"name": "Cut-list paper"
+				},
+				{
+					"slug": "ink",
+					"color": "#231A13",
+					"name": "Carpenter's pencil"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cut-list paper",
+	"slug": "paper",
+	"blockTypes": [
+		"core/group",
+		"core/table"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|paper",
+			"text": "var:preset|color|ink"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|50",
+				"bottom": "var:preset|spacing|50",
+				"left": "var:preset|spacing|50",
+				"right": "var:preset|spacing|50"
+			}
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|ink"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|ink"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cherry",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#3A1F17",
+					"name": "Oiled walnut"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F3E7DA",
+					"name": "Shavings"
+				},
+				{
+					"slug": "accent",
+					"color": "#F0B27A",
+					"name": "Linseed"
+				},
+				{
+					"slug": "surface",
+					"color": "#46271D",
+					"name": "End grain"
+				},
+				{
+					"slug": "line",
+					"color": "#6E4636",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#D8BFA9",
+					"name": "Sawdust"
+				},
+				{
+					"slug": "paper",
+					"color": "#EFE6D8",
+					"name": "Cut-list paper"
+				},
+				{
+					"slug": "ink",
+					"color": "#3A1F17",
+					"name": "Carpenter's pencil"
+				}
+			]
+		}
+	}
+}

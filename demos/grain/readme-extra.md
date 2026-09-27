@@ -1,0 +1,3 @@
+Grain is for one- or two-person workshops that make solid-wood furniture to commission. The front page opens with the order book: what is on each bench this week and when the next slot is free. Edit the "Order book" pattern every week or two, and the "Current lead time" pattern whenever the date moves.
+
+Finished pieces are posts in the categories Chairs, Cabinets and chests, Repairs and Workshop notes. Give each a featured image, a short excerpt and a cut list (the "Cut list for a piece" pattern). Page patterns cover the commission timeline, prices, timber and finishes, the workshop and visits, care and the guarantee.
