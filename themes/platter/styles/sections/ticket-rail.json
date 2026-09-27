@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ticket rail",
+	"slug": "ticket-rail",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "& > li{background:var(--wp--preset--color--base);color:var(--wp--preset--color--contrast);padding:var(--wp--preset--spacing--40) var(--wp--preset--spacing--40) calc(var(--wp--preset--spacing--40) + 12px);clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),95% 100%,90% calc(100% - 10px),85% 100%,80% calc(100% - 10px),75% 100%,70% calc(100% - 10px),65% 100%,60% calc(100% - 10px),55% 100%,50% calc(100% - 10px),45% 100%,40% calc(100% - 10px),35% 100%,30% calc(100% - 10px),25% 100%,20% calc(100% - 10px),15% 100%,10% calc(100% - 10px),5% 100%,0 calc(100% - 10px));border-top:10px solid var(--wp--preset--color--contrast)}& > li:nth-child(3n+1){transform:rotate(-1.2deg)}& > li:nth-child(3n+2){transform:rotate(.8deg) translateY(10px)}& > li:nth-child(3n){transform:rotate(-.4deg)}& > li a{color:var(--wp--preset--color--contrast)}& > li h3 a{text-decoration:none}& .wp-block-post-excerpt{font-size:var(--wp--preset--font-size--small)}"
+	}
+}

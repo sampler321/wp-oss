@@ -1,0 +1,163 @@
+{
+ "site": {
+  "title": "Second Helpings",
+  "tagline": "Event catering from under the arches in St Werburghs, Bristol"
+ },
+ "categories": [
+  {
+   "slug": "weddings",
+   "name": "Weddings",
+   "description": "Weddings from 60 to 220 guests."
+  },
+  {
+   "slug": "crew",
+   "name": "Film and TV crews",
+   "description": "Crew catering, day and night."
+  },
+  {
+   "slug": "office",
+   "name": "Offices",
+   "description": "Lunches and breakfasts at work."
+  },
+  {
+   "slug": "private",
+   "name": "Dinners at home",
+   "description": "Private dinners and parties for 8 to 40."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "recent-jobs",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "recent-jobs",
+   "title": "Recent jobs",
+   "content": ""
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "pattern": "platter/events-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "menus",
+   "title": "Menus",
+   "pattern": "platter/menus-page",
+   "template": "page-menu"
+  },
+  {
+   "slug": "office-lunches",
+   "title": "Office lunches",
+   "pattern": "platter/office-page"
+  },
+  {
+   "slug": "suppliers",
+   "title": "Suppliers",
+   "pattern": "platter/suppliers-page"
+  },
+  {
+   "slug": "about",
+   "title": "About us",
+   "pattern": "platter/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "enquire",
+   "title": "Enquire",
+   "pattern": "platter/enquire-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Ama and Joel, The Mount Without",
+   "category": "weddings",
+   "image": "paella.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>The Mount Without, St Michael's Hill</td></tr><tr><td>Guests</td><td>140, plus 12 crew</td></tr><tr><td>Format</td><td>Family-style sharing feast, three waves</td></tr><tr><td>Staff</td><td>11 on the day, 2 in the kitchen</td></tr><tr><td>Season</td><td>August</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Flatbreads with whipped feta and chilli honey</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Paella in two 90 cm pans, chicken and chorizo, and all vegetables</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Charred hispi cabbage, anchovy butter</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Burnt Basque cheesecake instead of a wedding cake, six of them</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>What we would do differently: bring a third pan. The vegetable one went first.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "The Mount Without, 140 guests, family-style feast in three waves. Two 90 cm paella pans and six burnt cheesecakes."
+  },
+  {
+   "title": "Night shoot, Avonmouth docks",
+   "category": "crew",
+   "image": "tacos.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>Unit 12, Avonmouth docks</td></tr><tr><td>Guests</td><td>85 crew a night</td></tr><tr><td>Format</td><td>Hot buffet from a trailer kitchen, plus grab bags</td></tr><tr><td>Staff</td><td>4 per shift</td></tr><tr><td>Season</td><td>March and April</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Breakfast baps at call time, 6pm</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Tacos on Thursdays, curry on Mondays, soup every night</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>A 3am tray of brownies</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Fruit that was actually ripe</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The production manager asked us to put tacos in the schedule. We did.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Six weeks of night shoots, 85 crew, hot food at 1am. Taco Thursdays became a scheduling requirement."
+  },
+  {
+   "title": "Harbourside architects, Friday lunches",
+   "category": "office",
+   "image": "sandwiches.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>An architects' studio on Wapping Road</td></tr><tr><td>Guests</td><td>24 every Friday</td></tr><tr><td>Format</td><td>Sharing platters, delivered at 12:15</td></tr><tr><td>Staff</td><td>1 driver</td></tr><tr><td>Season</td><td>All year</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Sourdough sandwiches, four fillings</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Three salads, one of them always with grains</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>A tray of cookies, one of them always missing by 12:20</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>They asked for the coleslaw off the menu in March and back on in April.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Friday lunch for 24 people, every week since January. Sourdough sandwiches, three salads, and a running argument about coleslaw."
+  },
+  {
+   "title": "A 60th in a Clifton kitchen",
+   "category": "private",
+   "image": "roast.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>A house on Royal York Crescent</td></tr><tr><td>Guests</td><td>22</td></tr><tr><td>Format</td><td>Plated starter, family-style main, pudding in trays</td></tr><tr><td>Staff</td><td>2 staff and Femi</td></tr><tr><td>Season</td><td>November</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Crab on toast</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Roast chicken with garlic, lemon and thyme, and its gravy</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Crispy potatoes, three trays</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sticky toffee pudding</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The oven was smaller than we were told. We brought a second one in the van, which is why we always ask for a photo of the kitchen.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Dinner for 22 in a family kitchen in Clifton. Roast chicken, too many potatoes, and the washing up done by 11."
+  },
+  {
+   "title": "Rosie and Dan, Arnos Vale",
+   "category": "weddings",
+   "image": "mezze.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>Arnos Vale, the Spielman Centre</td></tr><tr><td>Guests</td><td>190</td></tr><tr><td>Format</td><td>Mezze on the tables, then sharing mains</td></tr><tr><td>Staff</td><td>14 on the day</td></tr><tr><td>Season</td><td>June</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Mezze boards with three dips, grilled vegetables and flatbread</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Slow lamb shoulder, or roast squash with the same dressing</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bitter leaves with orange and hazelnuts</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Rhubarb crumble in trays</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>We ran out of flatbread at 7:40pm and baked another 60 in the venue kitchen.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Arnos Vale, 190 guests, mezze to start and lamb shoulders to share. The vegan version went faster than the lamb."
+  },
+  {
+   "title": "Film wrap party, Paintworks",
+   "category": "crew",
+   "image": "grill.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>Paintworks yard, Arnos Vale</td></tr><tr><td>Guests</td><td>120</td></tr><tr><td>Format</td><td>Street food from two grills</td></tr><tr><td>Staff</td><td>6 plus the grill</td></tr><tr><td>Season</td><td>September</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Jerk chicken buns, pineapple hot sauce</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Halloumi and pepper skewers</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Charred corn, lime butter</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Doughnuts from Hart's</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Two grills was one too few. It is three next time.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Wrap party for 120 crew with two charcoal grills in the yard and a queue for the jerk chicken buns."
+  },
+  {
+   "title": "Charity board breakfast",
+   "category": "office",
+   "image": "pastries.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>A church hall in Redland</td></tr><tr><td>Guests</td><td>30</td></tr><tr><td>Format</td><td>Breakfast buffet</td></tr><tr><td>Staff</td><td>2</td></tr><tr><td>Season</td><td>October</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Berry and cinnamon swirl, cut on the tray</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Yoghurt pots with granola</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Fruit</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Coffee from Wogan, in an urn</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The swirl disappeared before the minutes were approved.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Breakfast for 30 trustees at 8am in Redland. Pastries, fruit and a very strong urn of coffee."
+  },
+  {
+   "title": "Garden birthday, 40 guests",
+   "category": "private",
+   "image": "cheese.jpg",
+   "content": "<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Venue</td><td>A back garden in Totterdown</td></tr><tr><td>Guests</td><td>40</td></tr><tr><td>Format</td><td>Canapés, then a sharing supper, cheese late</td></tr><tr><td>Staff</td><td>3</td></tr><tr><td>Season</td><td>July</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went out</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Five canapés, two each</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Sharing supper: flatbreads, lamb, potatoes, leaves</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Cheese board with oat crackers and chutney</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>It rained at 9pm. Everyone came inside and ate cheese in the kitchen, which was the best bit.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "A garden in Totterdown, 40 guests, one gazebo and a cheese board that lasted until midnight."
+  }
+ ],
+ "nav": [
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Menus",
+   "url": "/menus/"
+  },
+  {
+   "label": "Office lunches",
+   "url": "/office-lunches/"
+  },
+  {
+   "label": "Recent jobs",
+   "url": "/recent-jobs/"
+  },
+  {
+   "label": "Suppliers",
+   "url": "/suppliers/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Enquire",
+   "url": "/enquire/"
+  }
+ ]
+}

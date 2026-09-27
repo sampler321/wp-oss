@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ketchup and mayo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFF8EE",
+					"name": "Plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2B0F0B",
+					"name": "Espresso"
+				},
+				{
+					"slug": "accent",
+					"color": "#B3121B",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1F5C8C",
+					"name": "Pickle"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFE9B8",
+					"name": "Mustard"
+				},
+				{
+					"slug": "line",
+					"color": "#2A170E",
+					"name": "Espresso line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A3A33",
+					"name": "Gravy"
+				},
+				{
+					"slug": "cream",
+					"color": "#FFFFFF",
+					"name": "Custard"
+				}
+			]
+		}
+	}
+}

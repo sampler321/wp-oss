@@ -1,0 +1,535 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1320px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A170E",
+					"name": "Espresso"
+				},
+				{
+					"slug": "accent",
+					"color": "#C4301A",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#2E6B35",
+					"name": "Pickle"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFD35C",
+					"name": "Mustard"
+				},
+				{
+					"slug": "line",
+					"color": "#2A170E",
+					"name": "Espresso line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5C4638",
+					"name": "Gravy"
+				},
+				{
+					"slug": "cream",
+					"color": "#FFF1CF",
+					"name": "Custard"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"textAlign": true,
+			"writingMode": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Bevan\", sans-serif",
+					"name": "Bevan",
+					"slug": "display",
+					"fontFace": [
+						{
+							"fontFamily": "Bevan",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/bevan-italic-400.woff2"
+							]
+						},
+						{
+							"fontFamily": "Bevan",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/bevan-normal-400.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Karla\", sans-serif",
+					"name": "Karla",
+					"slug": "body",
+					"fontFace": [
+						{
+							"fontFamily": "Karla",
+							"fontStyle": "italic",
+							"fontWeight": "300 800",
+							"src": [
+								"file:./assets/fonts/karla-italic-300_800.woff2"
+							]
+						},
+						{
+							"fontFamily": "Karla",
+							"fontStyle": "normal",
+							"fontWeight": "300 800",
+							"src": [
+								"file:./assets/fonts/karla-normal-300_800.woff2"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "x-small",
+					"size": "0.9375rem",
+					"name": "Allergens",
+					"fluid": false
+				},
+				{
+					"slug": "small",
+					"size": "1.0625rem",
+					"name": "Small",
+					"fluid": false
+				},
+				{
+					"slug": "medium",
+					"size": "1.1875rem",
+					"name": "Body",
+					"fluid": false
+				},
+				{
+					"slug": "large",
+					"size": "1.625rem",
+					"name": "Dish",
+					"fluid": {
+						"min": "1.3rem",
+						"max": "1.625rem"
+					}
+				},
+				{
+					"slug": "x-large",
+					"size": "2.5rem",
+					"name": "Course",
+					"fluid": {
+						"min": "1.9rem",
+						"max": "2.5rem"
+					}
+				},
+				{
+					"slug": "xx-large",
+					"size": "4.25rem",
+					"name": "Title",
+					"fluid": {
+						"min": "2.6rem",
+						"max": "4.25rem"
+					}
+				},
+				{
+					"slug": "display",
+					"size": "7.5rem",
+					"name": "Sign",
+					"fluid": {
+						"min": "3.1rem",
+						"max": "7.5rem"
+					}
+				}
+			]
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"units": [
+				"px",
+				"rem",
+				"%",
+				"vw",
+				"vh"
+			],
+			"spacingSizes": [
+				{
+					"slug": "10",
+					"size": "0.25rem",
+					"name": "1"
+				},
+				{
+					"slug": "20",
+					"size": "0.5rem",
+					"name": "2"
+				},
+				{
+					"slug": "30",
+					"size": "1rem",
+					"name": "3"
+				},
+				{
+					"slug": "40",
+					"size": "clamp(1.25rem, 2vw, 1.5rem)",
+					"name": "4"
+				},
+				{
+					"slug": "50",
+					"size": "clamp(1.5rem, 3.5vw, 2.5rem)",
+					"name": "5"
+				},
+				{
+					"slug": "60",
+					"size": "clamp(2rem, 5vw, 4rem)",
+					"name": "6"
+				},
+				{
+					"slug": "70",
+					"size": "clamp(3rem, 8vw, 6rem)",
+					"name": "7"
+				},
+				{
+					"slug": "80",
+					"size": "clamp(4rem, 11vw, 9rem)",
+					"name": "8"
+				}
+			]
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"slug": "ticket",
+					"name": "Ticket on the rail",
+					"shadow": "0 3px 0 0 rgba(42,23,14,.35)"
+				}
+			]
+		},
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"custom": {
+			"gingham": "repeating-linear-gradient(0deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px),repeating-linear-gradient(90deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px)"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1.55",
+			"fontWeight": "400"
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			},
+			"blockGap": "var:preset|spacing|30"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|accent"
+				},
+				"typography": {
+					"textDecoration": "underline"
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|contrast"
+					}
+				},
+				":focus": {
+					"outline": {
+						"color": "var:preset|color|accent-2",
+						"offset": "3px",
+						"style": "solid",
+						"width": "3px"
+					}
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "400",
+					"lineHeight": "1",
+					"letterSpacing": "-0.015em"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var:preset|font-size|display",
+					"lineHeight": "0.92"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var:preset|font-size|xx-large"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var:preset|font-size|x-large"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var:preset|font-size|large",
+					"lineHeight": "1.15"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var:preset|font-size|medium",
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "800",
+					"lineHeight": "1.3"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "800",
+					"lineHeight": "1.3"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|accent",
+					"text": "var:preset|color|base"
+				},
+				"border": {
+					"radius": "6px",
+					"width": "0"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|medium"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.8em",
+						"bottom": "0.8em",
+						"left": "1.3em",
+						"right": "1.3em"
+					}
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|contrast",
+						"text": "var:preset|color|surface"
+					}
+				},
+				":focus": {
+					"outline": {
+						"color": "var:preset|color|accent-2",
+						"offset": "3px",
+						"style": "solid",
+						"width": "3px"
+					}
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontSize": "var:preset|font-size|x-small",
+					"fontStyle": "italic"
+				},
+				"color": {
+					"text": "var:preset|color|muted"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "0.95",
+					"letterSpacing": "-0.02em"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|accent"
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "700"
+				},
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+					}
+				},
+				"css": "& .wp-block-navigation__responsive-container.is-menu-open{background:var(--wp--preset--color--surface);padding:var(--wp--preset--spacing--50)}& .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:400}& .current-menu-item > a{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--wp--preset--color--accent)}"
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|contrast"
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/post-date": {
+				"typography": {
+					"fontSize": "var:preset|font-size|x-small"
+				},
+				"color": {
+					"text": "var:preset|color|muted"
+				}
+			},
+			"core/post-terms": {
+				"typography": {
+					"fontSize": "var:preset|font-size|x-small",
+					"fontWeight": "700"
+				}
+			},
+			"core/image": {
+				"border": {
+					"radius": "10px"
+				},
+				"css": "& img{border-radius:10px}"
+			},
+			"core/post-featured-image": {
+				"css": "& img{border-radius:10px}"
+			},
+			"core/separator": {
+				"color": {
+					"text": "var:preset|color|accent"
+				},
+				"border": {
+					"width": "4px 0 0 0",
+					"style": "dotted"
+				},
+				"css": "&{border-bottom:0!important;max-width:none}"
+			},
+			"core/quote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|large",
+					"lineHeight": "1.25"
+				},
+				"border": {
+					"width": "0"
+				},
+				"spacing": {
+					"padding": {
+						"left": "0"
+					}
+				},
+				"css": "&::before{content:\"\\201C\";display:block;font-family:var(--wp--preset--font-family--display);font-size:4rem;line-height:.6;color:var(--wp--preset--color--accent)}& cite{font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--x-small);font-style:normal;font-weight:700}"
+			},
+			"core/table": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				},
+				"css": "& table{border-collapse:collapse}& th{text-align:left;font-family:var(--wp--preset--font-family--display);font-weight:400;border:0!important;border-bottom:3px solid var(--wp--preset--color--contrast)!important}& td{border:0!important;border-bottom:2px dotted var(--wp--preset--color--muted)!important;font-variant-numeric:tabular-nums}& td,& th{padding:.6em .8em .6em 0}"
+			},
+			"core/details": {
+				"border": {
+					"bottom": {
+						"color": "var:preset|color|contrast",
+						"width": "2px",
+						"style": "dotted"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"top": "var:preset|spacing|30",
+						"bottom": "var:preset|spacing|30"
+					}
+				},
+				"css": "& summary{font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large)}"
+			},
+			"core/search": {
+				"css": "& .wp-block-search__input{border:3px solid var(--wp--preset--color--contrast);border-radius:6px}"
+			},
+			"core/categories": {
+				"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}& li a{display:inline-block;padding:.4em 1em;background:var(--wp--preset--color--surface);color:var(--wp--preset--color--contrast);border-radius:6px;text-decoration:none;font-weight:800}& li a:hover{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--surface)}"
+			},
+			"core/query-pagination": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			}
+		},
+		"css": ":where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none}a:focus-visible,button:focus-visible{outline:3px solid var(--wp--preset--color--accent-2);outline-offset:3px}:where(td){font-variant-numeric:tabular-nums}"
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-wide",
+			"title": "Page, wide",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-menu",
+			"title": "Menu page (mustard title, centred menu)",
+			"postTypes": [
+				"page"
+			]
+		}
+	]
+}

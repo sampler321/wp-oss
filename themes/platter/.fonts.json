@@ -1,0 +1,54 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Bevan\", sans-serif",
+      "name": "Bevan",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Bevan",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/bevan-italic-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Bevan",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/bevan-normal-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Karla\", sans-serif",
+      "name": "Karla",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Karla",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/karla-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Karla",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/karla-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Bevan (Google Fonts), https://github.com/google/fonts/tree/main/ofl/bevan",
+    "Karla (Google Fonts), https://github.com/google/fonts/tree/main/ofl/karla"
+  ]
+}

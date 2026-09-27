@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Garden party",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F3F8EC",
+					"name": "Plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#17260F",
+					"name": "Espresso"
+				},
+				{
+					"slug": "accent",
+					"color": "#2E6B35",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#B32E17",
+					"name": "Pickle"
+				},
+				{
+					"slug": "surface",
+					"color": "#CFE6B0",
+					"name": "Mustard"
+				},
+				{
+					"slug": "line",
+					"color": "#17260F",
+					"name": "Espresso line"
+				},
+				{
+					"slug": "muted",
+					"color": "#43533A",
+					"name": "Gravy"
+				},
+				{
+					"slug": "cream",
+					"color": "#FFFFFF",
+					"name": "Custard"
+				}
+			]
+		}
+	}
+}

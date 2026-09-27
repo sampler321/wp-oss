@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Late service",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#2A170E",
+					"name": "Plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFF1CF",
+					"name": "Espresso"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF8A6B",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#A9D98C",
+					"name": "Pickle"
+				},
+				{
+					"slug": "surface",
+					"color": "#4A2E1A",
+					"name": "Mustard"
+				},
+				{
+					"slug": "line",
+					"color": "#FFF1CF",
+					"name": "Espresso line"
+				},
+				{
+					"slug": "muted",
+					"color": "#E3CDB6",
+					"name": "Gravy"
+				},
+				{
+					"slug": "cream",
+					"color": "#3B2418",
+					"name": "Custard"
+				}
+			]
+		}
+	}
+}

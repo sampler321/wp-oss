@@ -44,7 +44,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
 | 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |
-| 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
+| 39 | platter | 095 Catering company | more tasty, less elegant, more fun | deployed | https://wposs-platter.b-j-kapica.workers.dev |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | deployed | https://wposs-pipe.b-j-kapica.workers.dev |
 | 42 | coat | 101 Painter and decorator | more colours and fun | deployed (HTTP 404) | https://wposs-coat.b-j-kapica.workers.dev |

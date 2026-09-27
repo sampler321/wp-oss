@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Price sticker",
+	"slug": "sticker",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|base"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1.05"
+		},
+		"css": "&{display:inline-flex;align-items:center;justify-content:center;text-align:center;width:8.5rem;height:8.5rem;border-radius:50%;padding:1rem;transform:rotate(-10deg)}"
+	}
+}
