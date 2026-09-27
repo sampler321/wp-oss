@@ -7,7 +7,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | # | Slug | Idea | Brief from the owner | Status | Demo |
 |---|---|---|---|---|---|
 | 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
-| 2 | oil | 002 Painter, studio and available works | as researched | todo | |
+| 2 | oil | 002 Painter, studio and available works | as researched | tested |  |
 | 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | deployed (HTTP 404) | https://wposs-kiln.b-j-kapica.workers.dev |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |

@@ -1,0 +1,226 @@
+{
+ "site": {
+  "title": "Lowfold Pottery",
+  "tagline": "Wood-fired stoneware by Nell Rigby, Dentdale"
+ },
+ "categories": [
+  {
+   "slug": "firings",
+   "name": "Firings",
+   "description": "One entry per kiln firing."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "kiln-log",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "kiln-log",
+   "title": "Kiln log",
+   "content": ""
+  },
+  {
+   "slug": "kiln-opening",
+   "title": "Kiln opening",
+   "pattern": "kiln/kiln-opening-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "process",
+   "title": "Process",
+   "pattern": "kiln/process-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "stockists",
+   "title": "Stockists",
+   "pattern": "kiln/stockists-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "newsletter",
+   "title": "Newsletter",
+   "pattern": "kiln/newsletter-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Firing 41: autumn wood firing",
+   "date": "2026-10-06",
+   "category": "firings",
+   "image": "vase-ash.jpg",
+   "excerpt": "Fifty-two hours, eleven tonnes of offcuts, three of us on shifts. The front of the kiln went hotter than ever, so the bottles near the fire mouth are the best I have made.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Fifty-two hours, eleven tonnes of offcuts, three of us on shifts. The front of the kiln went hotter than ever, so the bottles near the fire mouth are the best I have made.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We loaded on the Wednesday and lit on Thursday morning. By Friday night the front was at cone 12 and the back at cone 9, which is a bigger gap than I like.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The bottle vases in the front row came out with thick green ash on the shoulders and red flashing below. The mugs at the back are paler than usual. About one in twelve pots is a second, mostly from shelf wads sticking.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Everything from this firing goes up in the shop on 18 October, apart from what I keep back for the kiln opening.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Firing 40: gas kiln, celadon test",
+   "date": "2026-08-21",
+   "category": "firings",
+   "image": "bowl-celadon.jpg",
+   "excerpt": "A new celadon recipe with less iron. Greener, clearer, and it pools in carving the way I wanted. Thirty bowls, four lost to dunting.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A new celadon recipe with less iron. Greener, clearer, and it pools in carving the way I wanted. Thirty bowls, four lost to dunting.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I changed the celadon from 1.5% to 1% red iron oxide and held the reduction longer. The result is a grey-green that shows the carving much better.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four bowls cracked in cooling. I think the kiln cooled too fast below 600°C, so next time I will close the damper earlier.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Firing 39: shino tea bowls",
+   "date": "2026-06-02",
+   "category": "firings",
+   "image": "tea-bowl.jpg",
+   "excerpt": "Shino only behaves at the back of the kiln. Eleven good tea bowls out of twenty, which is about normal for me.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Shino only behaves at the back of the kiln. Eleven good tea bowls out of twenty, which is about normal for me.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Carbon trapping gave grey patches on half of them. I like those, but they are marked as such in the shop so nobody is surprised.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Firing 38: spring kiln opening pots",
+   "date": "2026-03-28",
+   "category": "firings",
+   "image": "jar-ash.jpg",
+   "excerpt": "Big jars for the spring kiln opening. The ash glaze ran further than planned and glued two lids on for good.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Big jars for the spring kiln opening. The ash glaze ran further than planned and glued two lids on for good.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two jars will be sold as sculptures now, lids fixed. The rest went at the kiln opening on 18 and 19 April.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Firing 37: moon jars",
+   "date": "2026-01-17",
+   "category": "firings",
+   "image": "moon-jar.jpg",
+   "excerpt": "Three moon jars attempted, two survived. They take two days to join and a week to dry.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Three moon jars attempted, two survived. They take two days to join and a week to dry.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The white slip was applied at leather hard and the clear ash glaze sprayed on. Both surviving jars sold to the newsletter list within the hour.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Firing 36: stamped bowls",
+   "date": "2025-11-02",
+   "category": "firings",
+   "image": "bowl-stamped.jpg",
+   "excerpt": "Stamps carved from old broom handles. The dots take a whole afternoon per bowl.",
+   "template": "single-firing",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Stamps carved from old broom handles. The dots take a whole afternoon per bowl.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I inlaid white slip into the stamped dots and scraped it back. The glaze crackle came out finer than before.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Kiln opening",
+   "url": "/kiln-opening/"
+  },
+  {
+   "label": "Process",
+   "url": "/process/"
+  },
+  {
+   "label": "Kiln log",
+   "url": "/kiln-log/"
+  },
+  {
+   "label": "Stockists",
+   "url": "/stockists/"
+  },
+  {
+   "label": "Newsletter",
+   "url": "/newsletter/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Moon jar, white slip",
+   "price": "640",
+   "image": "moon-jar.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-01",
+   "stock": 0,
+   "short": "H 38 cm, W 36 cm. White slip under a clear ash glaze. Firing 41.",
+   "description": "<p>Firing 41. Moon jar, white slip.</p><p>Size: H 38 cm, W 36 cm.<br>Clay: Stoneware, thrown in two halves and joined.<br>Glaze: White slip under a clear ash glaze.<br>Holds dried flowers. Not watertight at the join, so no water.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Tenmoku tea bowl",
+   "price": "85",
+   "image": "tea-bowl.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-02",
+   "stock": 0,
+   "short": "H 7 cm, W 15 cm. Tenmoku breaking rust and brown at the rim. Firing 41.",
+   "description": "<p>Firing 41. Tenmoku tea bowl.</p><p>Size: H 7 cm, W 15 cm.<br>Clay: Iron-rich stoneware.<br>Glaze: Tenmoku breaking rust and brown at the rim.<br>Dishwasher and microwave safe.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Stamped bowl, buncheong slip",
+   "price": "120",
+   "image": "bowl-stamped.jpg",
+   "category": "Firing 40",
+   "sku": "LF-40-03",
+   "stock": 0,
+   "short": "H 8 cm, W 22 cm. Clear celadon over white slip. Firing 40.",
+   "description": "<p>Firing 40. Stamped bowl, buncheong slip.</p><p>Size: H 8 cm, W 22 cm.<br>Clay: Grey stoneware, stamped and slip-inlaid.<br>Glaze: Clear celadon over white slip.<br>Dishwasher safe. The crackle is part of the glaze and will darken with tea.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Ash jar with lid",
+   "price": "340",
+   "image": "jar-ash.jpg",
+   "category": "Firing 40",
+   "sku": "LF-40-04",
+   "stock": 0,
+   "short": "H 24 cm, W 25 cm. Natural wood ash, runs green and amber. Firing 40.",
+   "description": "<p>Firing 40. Ash jar with lid.</p><p>Size: H 24 cm, W 25 cm.<br>Clay: Stoneware with deep throwing rings.<br>Glaze: Natural wood ash, runs green and amber.<br>Food safe inside. Hand wash.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Tall mug, oak band",
+   "price": "42",
+   "image": "mug.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-05",
+   "stock": 0,
+   "short": "H 12 cm, holds 350 ml. Green ash over a carved band of trees. Firing 41.",
+   "description": "<p>Firing 41. Tall mug, oak band.</p><p>Size: H 12 cm, holds 350 ml.<br>Clay: Buff stoneware, pulled handle.<br>Glaze: Green ash over a carved band of trees.<br>Dishwasher and microwave safe.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Teapot, brushed iron",
+   "price": "190",
+   "image": "teapot.jpg",
+   "category": "Firing 40",
+   "sku": "LF-40-06",
+   "stock": 0,
+   "short": "H 13 cm, holds 800 ml. White glaze with brushed iron decoration. Firing 40.",
+   "description": "<p>Firing 40. Teapot, brushed iron.</p><p>Size: H 13 cm, holds 800 ml.<br>Clay: Porcelain stoneware.<br>Glaze: White glaze with brushed iron decoration.<br>Dishwasher safe. Pours clean, I test every one.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Bottle vase, wood-fired",
+   "price": "220",
+   "image": "vase-ash.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-07",
+   "stock": 0,
+   "short": "H 22 cm, W 10 cm. No glaze. Flashing from the fire only. Firing 41.",
+   "description": "<p>Firing 41. Bottle vase, wood-fired.</p><p>Size: H 22 cm, W 10 cm.<br>Clay: Unglazed stoneware.<br>Glaze: No glaze. Flashing from the fire only.<br>Watertight. Wipe clean.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Celadon bowl, carved",
+   "price": "95",
+   "image": "bowl-celadon.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-08",
+   "stock": 2,
+   "short": "H 9 cm, W 19 cm. Celadon, pooled green in the carving. Firing 41.",
+   "description": "<p>Firing 41. Celadon bowl, carved.</p><p>Size: H 9 cm, W 19 cm.<br>Clay: Porcelain stoneware, carved at leather hard.<br>Glaze: Celadon, pooled green in the carving.<br>Dishwasher safe.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  },
+  {
+   "name": "Small cup, blue glaze",
+   "price": "38",
+   "image": "cup-jun.jpg",
+   "category": "Firing 41",
+   "sku": "LF-41-09",
+   "stock": 5,
+   "short": "H 5 cm, holds 120 ml. Pale blue chun, thick at the rim. Firing 41.",
+   "description": "<p>Firing 41. Small cup, blue glaze.</p><p>Size: H 5 cm, holds 120 ml.<br>Clay: Stoneware.<br>Glaze: Pale blue chun, thick at the rim.<br>Dishwasher safe. Seconds: a small glaze skip on the foot.</p><p>Every pot is photographed on the same board, so the colour you see is close to the colour you get.</p>"
+  }
+ ]
+}

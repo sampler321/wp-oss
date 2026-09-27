@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Glaze test tile",
+	"slug": "glaze-tile",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"lineHeight": "1.35"
+		}
+	}
+}

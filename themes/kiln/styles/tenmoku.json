@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tenmoku",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#3A2418",
+					"name": "Tenmoku"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F1E9DC",
+					"name": "Porcelain"
+				},
+				{
+					"slug": "accent",
+					"color": "#9CC9C2",
+					"name": "Celadon"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#23150E",
+					"name": "Dark tenmoku"
+				},
+				{
+					"slug": "surface",
+					"color": "#4A3124",
+					"name": "Iron"
+				},
+				{
+					"slug": "line",
+					"color": "#6B5040",
+					"name": "Kiln shelf"
+				},
+				{
+					"slug": "muted",
+					"color": "#D4C6B2",
+					"name": "Oatmeal"
+				},
+				{
+					"slug": "shino",
+					"color": "#E8D3B9",
+					"name": "Shino"
+				},
+				{
+					"slug": "ash",
+					"color": "#A3A283",
+					"name": "Ash glaze"
+				},
+				{
+					"slug": "cobalt",
+					"color": "#1D3F8C",
+					"name": "Cobalt"
+				},
+				{
+					"slug": "celadon-pale",
+					"color": "#BFD3C9",
+					"name": "Pale celadon"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var:preset|color|accent",
+					"text": "var:preset|color|base"
+				}
+			}
+		}
+	}
+}

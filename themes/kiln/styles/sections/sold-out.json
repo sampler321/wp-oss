@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sold out (dimmed photo)",
+	"slug": "sold-out",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "& img{opacity:.6}"
+	}
+}

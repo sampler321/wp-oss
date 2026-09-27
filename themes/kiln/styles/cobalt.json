@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cobalt",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "White slip"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E1D1B",
+					"name": "Clay black"
+				},
+				{
+					"slug": "accent",
+					"color": "#1D3F8C",
+					"name": "Cobalt"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#14295C",
+					"name": "Deep cobalt"
+				},
+				{
+					"slug": "surface",
+					"color": "#EEF0F4",
+					"name": "Blue-white"
+				},
+				{
+					"slug": "line",
+					"color": "#C6CBD6",
+					"name": "Kiln shelf"
+				},
+				{
+					"slug": "muted",
+					"color": "#545863",
+					"name": "Slate"
+				},
+				{
+					"slug": "shino",
+					"color": "#E8D3B9",
+					"name": "Shino"
+				},
+				{
+					"slug": "ash",
+					"color": "#A3A283",
+					"name": "Ash glaze"
+				},
+				{
+					"slug": "cobalt",
+					"color": "#1D3F8C",
+					"name": "Cobalt"
+				},
+				{
+					"slug": "celadon-pale",
+					"color": "#BFD3C9",
+					"name": "Pale celadon"
+				}
+			]
+		}
+	}
+}

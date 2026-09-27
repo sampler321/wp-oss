@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Celadon slab",
+	"slug": "celadon-slab",
+	"blockTypes": [
+		"core/group",
+		"core/columns",
+		"core/cover"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|base"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|base",
+					"text": "var:preset|color|accent"
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|contrast",
+						"text": "var:preset|color|base"
+					}
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|70",
+				"bottom": "var:preset|spacing|70"
+			}
+		}
+	}
+}
