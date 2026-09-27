@@ -12,11 +12,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"style":{"typography":{"textAlign":"center"}},"fontSize":"display"} -->
-<h1 class="wp-block-heading has-text-align-center has-display-font-size">Old books repaired. New books bound by hand.</h1>
+<h1 class="wp-block-heading has-text-align-center has-display-font-size">Wójcik Bindery</h1>
 <!-- /wp:heading -->
 
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">Old books repaired and new books bound by hand, at two benches in a Kazimierz courtyard</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
-<p class="has-text-align-center">Agnieszka Wójcik and Tomasz Lis run a two-bench bindery in a Kazimierz courtyard. We conserve damaged books, bind theses and small editions, and make boxes for things that should not be rebound.</p>
+<p class="has-text-align-center">Agnieszka Wójcik and Tomasz Lis. Conservation, theses, small editions, and boxes for books that should not be rebound.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

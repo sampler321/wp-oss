@@ -61,6 +61,7 @@ theme = {
     'shadow': {'defaultPresets': False, 'presets': []},
     'border': {'color': True, 'radius': True, 'style': True, 'width': True},
     'custom': {'measure': '62ch'},
+    'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
   },
   'styles': {
     'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -199,6 +200,10 @@ section('contents', 'Contents list', ['core/post-template'], {
 section('rule-top', 'Gold hairline above', ['core/group', 'core/columns'], {
     'border': {'top': {'color': 'var:preset|color|accent-2', 'width': '1px', 'style': 'solid'}},
     'spacing': {'padding': {'top': 'var:preset|spacing|40'}}})
+section('rule-row', 'Ruled row (label and value)', ['core/group'], {
+    'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}},
+    'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+    'css': '&>*{margin:0!important}&>:last-child{text-align:right;font-variant-numeric:lining-nums tabular-nums}'})
 section('plate', 'Plate (image on board)', ['core/group', 'core/image'], {
     'color': {'background': 'var:preset|color|surface'},
     'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30', 'left': 'var:preset|spacing|30', 'right': 'var:preset|spacing|30'}}})
@@ -313,15 +318,16 @@ write('templates/404.html', page_template(J(
 # ------------------------------------------------------------------ patterns: home
 pattern('cover-board', 'Front board: bindery name stamped in gold', 'featured', group(J(
     para('Introligatornia in Kazimierz, Kraków, since 1998', className='is-style-folio', textColor='foil', style=CENTER),
-    heading('Old books repaired. New books bound by hand.', 1, fontSize='display', style=CENTER),
-    para('Agnieszka Wójcik and Tomasz Lis run a two-bench bindery in a Kazimierz courtyard. We conserve damaged books, bind theses and small editions, and make boxes for things that should not be rebound.', style=CENTER),
+    heading('Wójcik Bindery', 1, fontSize='display', style=CENTER),
+    para('Old books repaired and new books bound by hand, at two benches in a Kazimierz courtyard', fontSize='large', style=CENTER),
+    para('Agnieszka Wójcik and Tomasz Lis. Conservation, theses, small editions, and boxes for books that should not be rebound.', style=CENTER),
     buttons(('Ask for an estimate', '/visit/#estimate'), ('See the price guide', '/price-guide/', {'className': 'is-style-outline'}), layout={'type': 'flex', 'justifyContent': 'center'})),
     align='full', className='is-style-board', layout={'type': 'constrained', 'contentSize': '860px'}),
     description='The home page opener, set like the front board of a cloth binding with a tooled double frame.')
 
 pattern('before-after', 'Before and after pair with side-note', 'featured,bind-cases', group(J(
-    columns(('40%', image('damaged.jpg', 'Worn brown calf binding with a split spine, rubbed corners and a paper shelf label, a ruler along the right edge', 'Before: calf, spine split, both joints gone', lightbox=False)),
-            ('40%', image('restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below', 'After: rebacked, original boards and label kept', lightbox=False)),
+    columns(('40%', image('damaged.jpg', 'Worn brown calf binding with a split spine, rubbed corners and a paper shelf label, a ruler along the right edge', 'Before: calf, spine split, both joints gone')),
+            ('40%', image('restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below', 'After: rebacked, original boards and label kept')),
             ('20%', group(J(heading('Case 41', 6),
                             para('Sermons, Venice 1492. Owned by a parish in Nowy Sącz.'),
                             para('Rebacked in dyed calf. Joints lined with Japanese tissue. Wheat starch paste only.'),
@@ -579,8 +585,8 @@ pattern('case-spec', 'Case study specification table', 'bind-cases', table(
     head=['Case note', ''], className='is-style-regular'))
 
 pattern('before-after-simple', 'Before and after pair (no side-note)', 'bind-cases', columns(
-    (None, image('boards.jpg', 'Dark leather-covered book with a torn and replaced corner patch, photographed flat', 'Before', lightbox=False)),
-    (None, image('restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below', 'After', lightbox=False)),
+    (None, image('boards.jpg', 'Dark leather-covered book with a torn and replaced corner patch, photographed flat', 'Before')),
+    (None, image('restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below', 'After')),
     align='wide', className='is-style-pair'))
 
 pattern('about-bindery', 'About the bindery', 'bind-about', group(J(
@@ -634,11 +640,54 @@ add_action(
 print('bind: patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
 # ------------------------------------------------------------------ demo content
+# ---- case-study kit: the same builders make the patterns and the demo posts
+def cs_pair(before, before_alt, after, after_alt, cap_b='Before', cap_a='After', src=''):
+    return columns((None, image(src + before, before_alt, cap_b)), (None, image(src + after, after_alt, cap_a)), className='is-style-pair', align='wide')
+
+def cs_came_in(text, note):
+    return columns(('66%', J(heading('What came in', 2), para(text))), ('34%', group(para(note), className='is-style-sidenote', layout={'type': 'default'})))
+
+def cs_steps(steps, hours):
+    return columns(('66%', J(heading('What we did', 2), lst(steps, ordered=True))),
+                   ('34%', group(J(para('<strong>Bench time</strong>'), para(hours)), className='is-style-sidenote', layout={'type': 'default'})))
+
+def cs_left_alone(text):
+    return group(J(heading('What we left alone', 3), para(text)), className='is-style-notice', layout={'type': 'default'})
+
+def cs_spec(rows):
+    return group(J(heading('Case note', 6), *[row(J(para(k), para(v)), justify='space-between', className='is-style-rule-row') for k, v in rows]),
+                 layout={'type': 'default'})
+
+def cs_detail(img, alt, cap, text, src=''):
+    return columns(('45%', image(src + img, alt, cap)), ('55%', J(heading('A closer look', 3), para(text))), verticalAlignment='center')
+
+def cs_client(text, who):
+    return quote(text, who)
+
 def post_body(before, before_alt, after, after_alt, paras, spec):
-    return J(columns((None, image(IMG + before, before_alt, 'Before', lightbox=False)),
-                     (None, image(IMG + after, after_alt, 'After', lightbox=False)), className='is-style-pair'),
-             *[para(p) for p in paras],
-             table(spec, head=['Case note', '']))
+    return J(cs_pair(before, before_alt, after, after_alt, src=IMG), *[para(p) for p in paras], cs_spec(spec))
+
+def full_case(pair, came, note, steps, hours, alone, spec, detail, client):
+    return J(cs_pair(*pair, src=IMG), cs_came_in(came, note), cs_steps(steps, hours), cs_left_alone(alone),
+             cs_detail(*detail, src=IMG), cs_spec(spec), cs_client(*client))
+
+
+D1 = ('damaged.jpg', 'Worn brown calf binding with a split spine and rubbed corners, a ruler along the edge', 'restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below')
+pattern('case-pair', 'Case study: before and after pair', 'bind-cases', cs_pair(*D1))
+pattern('case-came-in', 'Case study: what came in, with a side-note', 'bind-cases', cs_came_in(
+    'A parish register, 1788 to 1811, carried in a plastic bag. The front board was hanging by the cords and the first gathering had come loose.',
+    'Brought in by the parish office in Wieliczka, March 2026.'))
+pattern('case-steps', 'Case study: what we did, with bench time', 'bind-cases', cs_steps(
+    ['Photographed every page before we touched it.', 'Lifted the spine leather and cleaned the old animal glue off the spine.', 'Resewed the loose gathering on the original cords.',
+     'Lined the joints with Japanese tissue and reattached the board.', 'Laid the old spine back down with wheat starch paste.'], '18 hours over three weeks'))
+pattern('case-left-alone', 'Case study: what we left alone', 'bind-cases', cs_left_alone(
+    'The water stain across the lower corner of every page. It is two hundred years old, it is stable, and washing the paper would risk the ink.'))
+pattern('case-spec-rows', 'Case study: spec rows', 'bind-cases', cs_spec([['Structure', 'Sewn on five raised cords'], ['Covering', 'Original calf, new calf spine'], ['Adhesive', 'Wheat starch paste'], ['Size', '31 × 20 × 6 cm'], ['Year of work', '2026']]))
+pattern('case-detail', 'Case study: a closer look', 'bind-cases', cs_detail('gilding.jpg', 'Narrow leather spine gold-tooled with small repeated flowers, a ruler beside it', 'Spine panels after cleaning',
+    'The spine tools were a small flower and a double fillet. We found a close match in our drawer, so the new panel on volume four sits next to the others.'))
+pattern('case-client', 'Case study: note from the client', 'bind-cases', cs_client('It opens flat again and nobody has to hold the front board on with one hand.', 'Fr Marek Zając, parish of St Clement, Wieliczka, March 2026'))
+pattern('case-full', 'Case study: full layout', 'bind-cases', J(pattern_ref('case-pair'), pattern_ref('case-came-in'), pattern_ref('case-steps'), pattern_ref('case-left-alone'),
+    pattern_ref('case-detail'), pattern_ref('case-spec-rows'), pattern_ref('case-client')), post_types='post', description='A whole restoration case study built from the case-study patterns.')
 
 CASES = [
   ('Sermons, Venice 1492: rebacked in calf', 'conservation', 'restored.jpg', '2025-09-12',
@@ -684,6 +733,57 @@ CASES = [
    [['Structure', 'Resewn, rounded and backed'], ['Cloth', 'BR-4531 Brillianta, oxblood'], ['Endpapers', 'Hand-marbled, Anna Łoś'], ['Hours', '12']]),
 ]
 
+FULL = {
+ 'Sermons, Venice 1492: rebacked in calf': full_case(
+    ('damaged.jpg', 'Worn brown calf binding with a split spine and rubbed corners, a ruler along the edge', 'restored.jpg', 'Brown calf binding with tooled borders and a sound spine, photographed flat with a ruler below'),
+    'The parish in Nowy Sącz brought this in a shopping bag. Both joints had gone and the spine leather came off in three pieces when we lifted the book out.',
+    'Incunable, printed in Venice in 1492. Owned by the parish since at least 1740, according to the inscription.',
+    ['Photographed and collated every leaf.', 'Lifted the three pieces of spine leather and kept them in order.', 'Cleaned the old glue off the spine with methyl cellulose poultices.',
+     'Lined the joints with Japanese tissue toned to the leather.', 'Put on a new spine in dyed calf and laid the old leather back on top.', 'Consolidated the corners with Klucel G.'],
+    '31 hours over five weeks, most of it waiting for paste to dry',
+    'The text block. The staining is five hundred years old and tells you where people held it. We did not wash, flatten or bleach a single leaf.',
+    [['Structure', 'Sewn on five raised cords, laced-in boards'], ['Covering', 'Original calf, new calf spine'], ['Adhesive', 'Wheat starch paste'], ['Size', '21 × 15 × 4 cm'], ['Price', '1,480 zł']],
+    ('leather.jpg', 'Blind-tooled pale leather binding with an interlaced strapwork panel', 'A similar blind-tooled panel from our reference shelf',
+     'The front board has a blind-tooled strapwork panel. We did not re-tool it. The new spine is plain on purpose, so anyone can see where the old binding ends.'),
+    ('We expected a bill for a new binding. We got our own book back, and it opens.', 'Ks. Andrzej Nowak, parish of St Margaret, Nowy Sącz, October 2025')),
+ 'A clamshell box for a family prayer book': full_case(
+    ('boards.jpg', 'Dark leather-covered book with a torn and replaced corner patch, photographed flat', 'sewing.jpg', 'Brown leather binding with brass clasps resting in its new felt-lined tray', 'Before', 'After, in the box'),
+    'Ewa wanted her grandfather\'s prayer book rebound. The binding is weak but complete, and he had mended the corners himself with shoe leather.',
+    'Printed in Kraków in 1896. Pages clean, sewing sound, covers tired.',
+    ['Talked Ewa out of a rebind.', 'Measured the book at six points, since it is not square.', 'Built a two-tray clamshell in 2 mm board.', 'Covered it in AS-311 bottle green cloth and lined the trays with grey felt.',
+     'Stamped her grandfather\'s name in gold on a goatskin spine label.'],
+    '9 hours',
+    'The shoe-leather corner repairs. They are ugly and they are his, and they will outlast us.',
+    [['Box', 'Clamshell, two trays'], ['Cloth', 'AS-311 Asahi, bottle green'], ['Lining', 'Grey felt'], ['Label', 'Goatskin, gold-stamped'], ['Price', '340 zł']],
+    ('marbled.jpg', 'Open book showing a pasted certificate and dark marbled endpapers', 'The inside of the front cover',
+     'The endpapers are marbled and the front one carries a First Communion certificate from 1931. The box keeps the cover closed without any pressure on it.'),
+    ('It sits on the shelf and nobody has to be careful with it any more.', 'Ewa Kozłowska, Podgórze, March 2025')),
+ 'A 1730 map of Europe, flattened and mended along the folds': full_case(
+    ('map.jpg', 'Hand-coloured 1730 map of Europe with a decorative border, folded creases visible', 'map.jpg', 'The same map after flattening, with the fold lines repaired from the back', 'Before, folded', 'After, flat'),
+    'Folded into sixteenths for about two hundred years, so every fold had split and two corners were missing.',
+    'Engraved and hand-coloured, 62 × 48 cm. Bought at a flea market in Wrocław for 40 zł.',
+    ['Tested the colours for water sensitivity. They held.', 'Humidified the map in a chamber for two hours.', 'Flattened it between felts under light weight for a week.',
+     'Mended every fold from the back with thin kozo tissue.', 'Filled the two corner losses with toned paper.', 'Made a folder of unbuffered card.'],
+    '14 hours',
+    'The foxing. It is stable, and bleaching it out would have taken the hand-colouring with it.',
+    [['Object', 'Engraved map, hand-coloured'], ['Repair', 'Kozo tissue, wheat starch paste'], ['Housing', 'Folder, unbuffered card'], ['Size', '62 × 48 cm'], ['Price', '620 zł']],
+    ('repair.jpg', 'A conservator lifting a torn fragment with tweezers on a white board', 'Mending a fold from the back',
+     'Each fold gets a strip of tissue about 4 mm wide, torn, not cut, so the edge feathers into the paper and does not leave a line.'),
+    ('It is in a drawer now, as promised. I take it out on Sundays.', 'Paweł Grzyb, Kazimierz, November 2024')),
+ 'Red rot on a set of law reports': full_case(
+    ('damaged.jpg', 'Brown calf binding with powdery, rubbed leather and worn corners', 'leather.jpg', 'Leather binding after consolidation, surface stable'),
+    'Twenty-two volumes from a law office on Grodzka. The leather came off as orange dust on every hand that touched it.',
+    'Law reports, 1902 to 1924, still used by the office every month.',
+    ['Vacuumed each volume through a screen.', 'Tested Klucel G at 1% and 2% on the worst spine.', 'Brushed 2% Klucel G in ethanol on every leather surface.',
+     'Let each volume dry standing, fanned open, overnight.', 'Wrapped the three worst in protective jackets.'],
+    'About 40 minutes per volume, 15 hours in all',
+    'The appearance. Consolidation makes red rot stop coming off; it does not make the leather look new, and we said so in the estimate.',
+    [['Volumes', '22'], ['Treatment', 'Klucel G, 2% in ethanol'], ['Jackets', '3, in Melinex'], ['Price', '180 zł per volume']],
+    ('shelf.jpg', 'Title page of a worn 19th-century book open flat', 'One of the title pages',
+     'The paper inside is in good shape. It was only ever the leather that was falling apart.'),
+    ('The shelf no longer leaves orange on my suit.', 'Mec. Joanna Wrona, Grodzka Street, September 2024')),
+}
+
 content = {
   'site': {'title': 'Wójcik Bindery', 'tagline': 'Introligatornia: book conservation and hand binding in Kraków'},
   'categories': [{'slug': 'conservation', 'name': 'Conservation', 'description': 'Repairs to old books, maps and documents.'},
@@ -702,7 +802,7 @@ content = {
     {'slug': 'visit', 'title': 'Visit', 'pattern': 'bind/visit-page'},
   ],
   'posts': [{'title': t, 'category': c, 'image': img, 'date': d, 'excerpt': ps[0],
-             'content': post_body(*pair, ps, spec)} for t, c, img, d, pair, ps, spec in CASES],
+             'content': FULL.get(t) or post_body(*pair, ps, spec)} for t, c, img, d, pair, ps, spec in CASES],
   'nav': [{'label': 'Services', 'url': '/services/'}, {'label': 'Case studies', 'url': '/case-studies/'},
           {'label': 'Price guide', 'url': '/price-guide/'}, {'label': 'Workshops', 'url': '/workshops/'},
           {'label': 'Cloth', 'url': '/cloth-swatches/'}, {'label': 'About', 'url': '/about/'}, {'label': 'Visit', 'url': '/visit/'}],

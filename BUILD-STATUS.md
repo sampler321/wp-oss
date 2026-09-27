@@ -52,7 +52,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 44 | tick | 261 Watchmaker (zegarmistrz) | as researched | deployed | https://wposs-tick.b-j-kapica.workers.dev |
 | 45 | key | 105 Locksmith (ślusarz) | as researched | deployed (HTTP 404) | https://wposs-key.b-j-kapica.workers.dev |
 | 46 | grain | new: Independent furniture maker | workshop maker, commissions | deployed (HTTP 404) | https://wposs-grain.b-j-kapica.workers.dev |
-| 47 | bind | 262 Bookbinder (introligator) | as researched | tested |  |
+| 47 | bind | 262 Bookbinder (introligator) | as researched | deployed | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
 | 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |

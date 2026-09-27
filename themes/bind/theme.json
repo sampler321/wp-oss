@@ -265,6 +265,14 @@
 		},
 		"custom": {
 			"measure": "62ch"
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {

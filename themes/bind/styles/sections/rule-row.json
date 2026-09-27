@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ruled row (label and value)",
+	"slug": "rule-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|line",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&>*{margin:0!important}&>:last-child{text-align:right;font-variant-numeric:lining-nums tabular-nums}"
+	}
+}
