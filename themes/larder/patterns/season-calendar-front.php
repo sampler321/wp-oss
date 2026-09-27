@@ -5,14 +5,14 @@
  * Categories: featured
  */
 ?>
-<!-- wp:columns {"className":"alignwide is-style-card","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|70"}}}} -->
+<!-- wp:columns {"align":"wide","className":"is-style-card","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns alignwide is-style-card" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:column {"width":"34%"} -->
 <div class="wp-block-column" style="flex-basis:34%"><!-- wp:heading -->
 <h2 class="wp-block-heading">What to cook when</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>I shop at Zielony Rynek on Saturday mornings and cook from what's there. This is roughly when things turn up. The dots move by a week or two each year.</p>
+<p class="">I shop at Zielony Rynek on Saturday mornings and cook from what's there. This is roughly when things turn up. The dots move by a week or two each year.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-note"} -->

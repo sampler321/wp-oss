@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>I go at 8, before it gets busy. Pan Marek at the third stall from the tram stop has the best cucumbers. The mushroom lady is only there in September and October, and she takes cash only.</p>
+<p class="">I go at 8, before it gets busy. Pan Marek at the third stall from the tram stop has the best cucumbers. The mushroom lady is only there in September and October, and she takes cash only.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-note"} -->

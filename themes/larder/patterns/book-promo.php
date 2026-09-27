@@ -5,9 +5,9 @@
  * Categories: shop
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:columns {"align":"wide","verticalAlignment":"center"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/apples.jpg' ) ); ?>" alt="An old botanical plate of two apples, one red and one yellow-green, in a paper-lined box"/><figcaption class="wp-element-caption">the cover is not apples, but it should be</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -18,11 +18,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>My first book, "Soup for the whole week", is 52 soups, one for every week of the year, from sorrel soup in April to beetroot barszcz for Wigilia. Published in Polish by Wydawnictwo Ogród, 2024, 240 pages, 69 zł.</p>
+<p class="">My first book, "Soup for the whole week", is 52 soups, one for every week of the year, from sorrel soup in April to beetroot barszcz for Wigilia. Published in Polish by Wydawnictwo Ogród, 2024, 240 pages, 69 zł.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>An English edition is coming in 2027. I'm translating it myself, so it's taking a while.</p>
+<p class="">An English edition is coming in 2027. I'm translating it myself, so it's taking a while.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

@@ -13,13 +13,9 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><a href="/tag/mushrooms/">Chanterelles on toast, the only way I like them</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/tag/pickles/">Dill pickles in a 3-litre jar</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/tag/apples/">Szarlotka with too much cinnamon</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>

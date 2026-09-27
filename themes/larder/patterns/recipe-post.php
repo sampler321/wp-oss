@@ -8,7 +8,7 @@
  */
 ?>
 <!-- wp:paragraph -->
-<p>Start with why you made it, who you made it for, or what was at the market. Two short paragraphs is plenty.</p>
+<p class="">Start with why you made it, who you made it for, or what was at the market. Two short paragraphs is plenty.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"larder/what-you-need"} /-->

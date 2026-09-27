@@ -11,3 +11,5 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"larder/market-day"} /-->
+
+<!-- wp:pattern {"slug":"larder/contact-card"} /-->

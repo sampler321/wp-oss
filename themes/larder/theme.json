@@ -246,6 +246,14 @@
 			"radius": true,
 			"style": true,
 			"width": true
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -575,6 +583,13 @@
 			"title": "Page, wide",
 			"postTypes": [
 				"page"
+			]
+		},
+		{
+			"name": "single-recipe",
+			"title": "Recipe (full)",
+			"postTypes": [
+				"post"
 			]
 		}
 	]

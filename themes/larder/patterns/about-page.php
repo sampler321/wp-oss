@@ -8,7 +8,7 @@
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"42%"} -->
-<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dill.jpg' ) ); ?>" alt="Bunches of fresh dill for sale at a market"/></figure>
 <!-- /wp:image -->
 
@@ -23,15 +23,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>I stopped eating meat in 2014, and dairy a year later, after my sister got ill and we both started reading labels. My family took it badly for about two Christmases. Now my mum makes the mushroom uszka.</p>
+<p class="">I stopped eating meat in 2014, and dairy a year later, after my sister got ill and we both started reading labels. My family took it badly for about two Christmases. Now my mum makes the mushroom uszka.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This blog is just me. I cook, photograph and write everything, and I pay for it with the workshops and the book. There are no sponsored posts. If a recipe mentions a shop, it's because I go there.</p>
+<p class="">This blog is just me. I cook, photograph and write everything, and I pay for it with the workshops and the book. There are no sponsored posts. If a recipe mentions a shop, it's because I go there.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>One opinion: kasza is better than rice. I will not be taking questions.</p>
+<p class="">One opinion: kasza is better than rice. I will not be taking questions.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

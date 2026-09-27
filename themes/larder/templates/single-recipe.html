@@ -1,0 +1,79 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-terms {"term":"category","separator":" / ","textAlign":"center"} /-->
+
+<!-- wp:post-title {"level":1,"textAlign":"center","fontSize":"xx-large"} /-->
+
+<!-- wp:paragraph {"align":"center","fontSize":"small","textColor":"muted"} -->
+<p class="aligncenter has-muted-color has-text-color has-small-font-size">by Ola Wróbel</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-date {"textAlign":"center","format":"j F Y"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-featured-image {"align":"wide","aspectRatio":"16/9"} /-->
+
+<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"720px"}} /-->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"720px"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":6} -->
+<h6 class="wp-block-heading">Tagged</h6>
+<!-- /wp:heading -->
+
+<!-- wp:post-terms {"term":"post_tag","className":"is-style-produce"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","className":"is-style-wavy-top","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-wavy-top"><!-- wp:heading {"level":3,"textAlign":"center"} -->
+<h3 class="wp-block-heading">More from the same shelf</h3>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":8,"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template {"className":"is-style-tiles","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
+<!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"minHeight":260,"minHeightUnit":"px","contentPosition":"bottom left","isDark":false} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left" style="min-height:260px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:post-title {"isLink":true,"level":3} /--></div></div>
+<!-- /wp:cover -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p class="">Nothing cooked here yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"720px"}} -->
+<div class="wp-block-group"><!-- wp:comments -->
+<div class="wp-block-comments"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Did you cook it? Tell me how it went</h3>
+<!-- /wp:heading -->
+
+<!-- wp:comments-title {"level":4} /-->
+
+<!-- wp:comment-template -->
+<!-- wp:comment-author-name /-->
+
+<!-- wp:comment-date /-->
+
+<!-- wp:comment-content /-->
+
+<!-- wp:comment-reply-link /-->
+<!-- /wp:comment-template -->
+
+<!-- wp:comments-pagination -->
+<!-- wp:comments-pagination-previous /-->
+
+<!-- wp:comments-pagination-numbers /-->
+
+<!-- wp:comments-pagination-next /-->
+<!-- /wp:comments-pagination -->
+
+<!-- wp:post-comments-form /--></div>
+<!-- /wp:comments --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

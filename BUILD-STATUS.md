@@ -32,9 +32,9 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
-| 27 | local | 053 Hyperlocal news | more scientific looking | deployed (HTTP 404) | https://wposs-local.b-j-kapica.workers.dev |
+| 27 | local | 053 Hyperlocal news | more scientific looking | tested |  |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
-| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | tested |  |
+| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | deployed (HTTP 404) | https://wposs-shelf.b-j-kapica.workers.dev |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |

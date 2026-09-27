@@ -10,7 +10,7 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Workshops are in my kitchen studio at ul. Piotrkowska 138, back courtyard, second floor, no lift. Eight people at most. We cook for three hours and then eat everything. Book by email and I'll send bank details.</p>
+<p class="">Workshops are in my kitchen studio at ul. Piotrkowska 138, back courtyard, second floor, no lift. Eight people at most. We cook for three hours and then eat everything. Book by email and I'll send bank details.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
