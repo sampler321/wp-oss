@@ -65,6 +65,12 @@ CSS = (
     '.wp-block-categories.is-style-chip-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.6rem}.is-style-chip-list li{margin:0}'
     '.is-style-chip-list a{display:inline-block;padding:.35em .8em;border-radius:6px;font-weight:700;color:var(--wp--preset--color--contrast);background:var(--wp--preset--color--base);text-decoration:none;border:2px solid var(--wp--preset--color--contrast)}'
     '.is-style-chip-list .current-cat a{background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base)}'
+    # screening rows (home page, no table)
+    '.is-style-screening-row{background:var(--wp--preset--color--surface);border-radius:8px;padding:.9rem 1rem;align-items:center!important;margin-top:.5rem!important}'
+    '.is-style-screening-row>p{margin:0}.is-style-screening-row>p:first-child{font-weight:800;min-width:6.5rem}.is-style-screening-row>p:nth-child(2){min-width:7rem}'
+    '.is-style-screening-row>p:nth-child(3){flex:1 1 14rem}.is-style-screening-row>p:last-child{margin-left:auto}'
+    '.is-style-screening-row>p:last-child a{display:inline-block;background:var(--wp--preset--color--contrast);color:var(--wp--preset--color--base);text-decoration:none;font-weight:700;padding:.45em .9em;border-radius:6px}'
+    '.is-style-screening-row>p:last-child a::after{content:" \\2197"}'
     # outlined tags
     '.is-style-tag-outline{display:flex;flex-wrap:wrap;gap:.4rem}.is-style-tag-outline>p{margin:0;border:1.5px solid currentColor;border-radius:3px;padding:.05em .4em;font-weight:700;font-size:var(--wp--preset--font-size--x-small)}'
     # screenings table
@@ -106,6 +112,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 5.5rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 8rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': C('base'), 'text': C('contrast')},
@@ -203,6 +210,7 @@ section('chip', 'Programme chip', ['core/post-terms', 'core/paragraph'], {'typog
 section('chip-list', 'Chip list', ['core/categories'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 section('tag-outline', 'Outlined tags', ['core/group'], {'spacing': {'blockGap': P(10)}})
 section('screenings', 'Screenings list', ['core/table'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
+section('screening-row', 'Screening row', ['core/group'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 section('laurel', 'Laurel (text)', ['core/paragraph'], {
     'typography': {'fontWeight': '700', 'fontSize': 'var:preset|font-size|small', 'lineHeight': '1.25', 'textAlign': 'center'},
     'border': {'left': {'color': C('contrast'), 'width': '3px', 'style': 'double'}, 'right': {'color': C('contrast'), 'width': '3px', 'style': 'double'}},
@@ -372,20 +380,103 @@ pattern('notice-premiere', 'Notice: premiere date', 'banner', group(
     tag='aside', align='full', className='is-style-utility', style=pad(20), layout={'type': 'constrained'}), description='A one-line notice. Remove it after the premiere.')
 
 pattern('film-page-glasland', 'Film page: Glasland (full)', 'films', J(
-    pattern_ref('laurels'), pattern_ref('synopsis'), pattern_ref('press-quotes'), pattern_ref('screenings-list'), pattern_ref('stills-gallery'),
+    pattern_ref('laurels'), pattern_ref('synopsis'), pattern_ref('director-statement'), pattern_ref('press-quotes'), pattern_ref('screenings-list'), pattern_ref('stills-gallery'),
     columns((None, pattern_ref('where-to-watch')), (None, pattern_ref('press-kit')), align='wide'), pattern_ref('screenings-archive')),
     block_types='core/post-content', description='Everything for one film: laurels, synopsis, credits, quotes, screenings, stills and press.')
+
+pattern('screenings-rows', 'Next screenings (front page, no table)', 'films', group(J(
+    row(J(heading('Screenings of %s' % FILM, 2, fontSize='x-large'), para('<a href="/screenings/">All dates</a>', style={'typography': {'fontWeight': '700'}})), justify='space-between', align='wide'),
+    J(*[row(J(para(d), para(c), para(v + ((', ' + n) if n else '')), para('<a href="%s">Tickets</a>' % u)), className='is-style-screening-row', align='wide', style={'spacing': {'blockGap': P(30)}}) for d, c, v, n, u in screenings[:5]])),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'blockGap': '0'}}), description='The same screenings as rows of grey cards, for pages where a table would be too heavy.')
+
+pattern('trailer', 'Trailer (still linking to the video)', 'films', group(J(
+    img('still-4', href='https://vimeo.com/', aspectRatio='2.39', scale='cover', align='wide'),
+    row(J(heading('Trailer', 3), para('<a href="https://vimeo.com/">Watch the Nachttram trailer on Vimeo</a>, 1 minute 40, subtitled', style={'typography': {'fontWeight': '700'}})), justify='space-between', align='wide')),
+    align='wide', layout={'type': 'default'}), description='A still that links to the trailer, so nothing plays until someone asks.')
+
+pattern('poster-synopsis', 'Poster at 2:3 beside the synopsis', 'films', columns(
+    ('34%', img('still-5', 'Poster for De oude visser', aspectRatio='2/3', scale='cover')),
+    ('66%', J(heading('De oude visser', 2), facts_line('Noor Verbeek | 14\' | Netherlands | 2021'),
+              para('Arie Kooiman fished out of Scheveningen for 51 years. He smokes one pipe a day and tells one story per pipe. We filmed seven pipes.'),
+              buttons(('Book it for your film club', '/host-a-screening/')))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': P(50)}}}))
+
+pattern('director-statement', 'Director\'s statement', 'films', group(J(
+    heading('Why I made it', 3),
+    para('I grew up in Schiedam, twenty minutes from the Westland, and never went inside a greenhouse until I was 34. The people who pick our tomatoes live closer to us than our holiday homes, and I had never met one.'),
+    para('I did not want to make a film about a problem. I wanted to film four people at work in the dark, and let the orange light do the rest.'),
+    para('Noor Verbeek', style={'typography': {'fontWeight': '700'}})), layout={'type': 'constrained'}))
+
+pattern('funders', 'Funders and partners (text)', 'films', group(J(
+    heading('Made with support from', 6),
+    para('Netherlands Film Fund, Flanders Audiovisual Fund, Rotterdam Film Commission, VPRO (broadcaster), Lumen Doc Ghent (co-producer).', fontSize='small')),
+    className='is-style-rule-top', layout={'type': 'default'}), description='Funders set as text, never as a logo wall.')
+
+pattern('access-note', 'Subtitles and access', 'films', group(J(
+    heading('Subtitles and access', 4),
+    para('Every screening has English subtitles. Dutch subtitles for the Polish dialogue are burned in. An audio-described version is available for community screenings on request, and the DCP has a hard-of-hearing subtitle track.')),
+    className='is-style-card', layout={'type': 'default'}))
+
+pattern('study-guide', 'For teachers: study guide', 'call-to-action', group(J(
+    heading('For schools and universities', 4),
+    para('A 12-page study guide for Glasland covers seasonal work, EU labour law and how the film was shot, with questions for ages 16 and up. Free with any educational screening. Ask <a href="mailto:screenings@example.com">screenings@example.com</a>.')),
+    className='is-style-card is-style-notch', layout={'type': 'default'}))
+
+pattern('year-round', 'Year-round film club', 'call-to-action', group(J(
+    heading('Film club at the office', 3),
+    para('On the last Friday of the month we show one film we love in the old chandler\'s office on the Voorhaven. Forty chairs, €6, doors 19.30. The next one is 30 October.'),
+    buttons(('Email to reserve a chair', 'mailto:office@example.com?subject=Film%20club'))),
+    className='is-style-card', layout={'type': 'default'}))
+
+pattern('awards', 'Awards (text list)', 'films', group(J(
+    heading('Awards', 4),
+    lst(['Best documentary, Zeeland Doc Days 2026, for Glasland', 'Audience award, Kortfilmfestival Leuven 2024, for Nachttram', 'Special mention, Nordic Docs 2022, for Amazonehaven'])),
+    layout={'type': 'default'}))
+
+pattern('programme-strands', 'What the programme colours mean', 'films', group(J(
+    heading('How the programme is sorted', 4),
+    row(J(para('<a href="/category/documentary/">Documentary</a>', className='is-style-chip'), para('Feature and mid-length documentaries', fontSize='small')), style={'spacing': {'blockGap': P(20)}}),
+    row(J(para('<a href="/category/fiction/">Fiction</a>', className='is-style-chip'), para('Short and feature fiction', fontSize='small')), style={'spacing': {'blockGap': P(20)}}),
+    row(J(para('<a href="/category/shorts/">Shorts</a>', className='is-style-chip'), para('Under 30 minutes, often without dialogue', fontSize='small')), style={'spacing': {'blockGap': P(20)}}),
+    row(J(para('<a href="/category/in-development/">In development</a>', className='is-style-chip'), para('Films we are financing or shooting now', fontSize='small')), style={'spacing': {'blockGap': P(20)}})),
+    className='is-style-card', layout={'type': 'default'}, style={'spacing': {'blockGap': P(20)}}))
+
+pattern('qa-booking', 'Book a Q&A with the director', 'call-to-action', group(J(
+    heading('Q&A with Noor', 4),
+    para('Noor comes to screenings in the Netherlands and Flanders for travel costs only, and joins by video call anywhere else. She needs three weeks\' notice and does not do more than two a week.')),
+    className='is-style-card is-style-notch', layout={'type': 'default'}))
+
+pattern('coproducer-call', 'Looking for a co-producer', 'call-to-action', group(J(
+    heading('Wit woud needs a Polish co-producer', 3),
+    para('Shooting starts in the Białowieża forest in January 2027. We have 60% of the budget from the Netherlands Film Fund and a broadcaster. Youssef would like to hear from Polish producers with forest permits experience: <a href="mailto:screenings@example.com">screenings@example.com</a>.')),
+    className='is-style-card', layout={'type': 'default'}))
+
+pattern('crew-call', 'Crew and casting call', 'call-to-action', group(J(
+    heading('Crew call', 4),
+    lst(['Sound recordist, Polish speaking, six weeks in January and February 2027', 'Runner with a driving licence, Rotterdam, three weeks in spring', 'No unpaid positions. Rates follow the Dutch film crew guidelines.']),
+    para('Send a short note and one link to <a href="mailto:office@example.com">office@example.com</a>. No CVs as attachments, please.', fontSize='small')),
+    layout={'type': 'constrained'}))
+
+pattern('quote-single', 'One press quote, large', 'testimonials', group(
+    pullquote('The best Dutch documentary of the year so far.', 'NRC, 4 out of 5, Bram de Wit'), align='wide', layout={'type': 'constrained'}))
+
+pattern('film-facts', 'Film facts (rows)', 'films', group(J(
+    row(J(para('Runtime', fontSize='small'), para('94 minutes', style={'typography': {'fontWeight': '700'}})), style={'spacing': {'blockGap': P(30)}}),
+    row(J(para('Countries', fontSize='small'), para('Netherlands, Belgium', style={'typography': {'fontWeight': '700'}})), style={'spacing': {'blockGap': P(30)}}),
+    row(J(para('Languages', fontSize='small'), para('Dutch and Polish, English subtitles', style={'typography': {'fontWeight': '700'}})), style={'spacing': {'blockGap': P(30)}}),
+    row(J(para('Format', fontSize='small'), para('DCP, ProRes, 2.39:1, 5.1', style={'typography': {'fontWeight': '700'}})), style={'spacing': {'blockGap': P(30)}})),
+    className='is-style-card', layout={'type': 'default'}, style={'spacing': {'blockGap': P(10)}}), description='Technical facts programmers ask for, as rows instead of a table.')
 
 # pages
 pattern('page-screenings', 'Page: screenings', 'films', J(para('Where our films are on now, in cinemas and at festivals. Every row has its own ticket link. Past dates move to the archive at the end of the month.', fontSize='large'),
     pattern_ref('screenings-list'), pattern_ref('screenings-archive'), pattern_ref('newsletter')), block_types='core/post-content')
-pattern('page-host', 'Page: host a screening', 'call-to-action', J(pattern_ref('host-screening'), heading('Questions hosts ask', 3),
+pattern('page-host', 'Page: host a screening', 'call-to-action', J(pattern_ref('host-screening'), pattern_ref('access-note'), pattern_ref('study-guide'), heading('Questions hosts ask', 3),
     details('Do we need a cinema projector?', para('No. A good beamer and a proper sound system are fine for up to 150 people. We send a ProRes file on a USB stick or by download.')),
     details('Can we charge for tickets?', para('Yes. Keep what you take. The fee stays the same.')),
     details('Can Noor come?', para('Usually, in the Netherlands and Flanders, if you cover the train. Abroad, ask us.'))), block_types='core/post-content')
-pattern('page-press', 'Page: press', 'films', J(para('For journalists and programmers. Stills, the press kit and screener links are sent by email on request, the same working day.', fontSize='large'),
+pattern('page-press', 'Page: press', 'films', J(para('For journalists and programmers. Stills, the press kit and screener links are sent by email on request, the same working day.', fontSize='large'), pattern_ref('film-facts'), pattern_ref('qa-booking'),
     pattern_ref('press-kit'), pattern_ref('press-quotes'), pattern_ref('stills-gallery')), block_types='core/post-content')
-pattern('page-about', 'Page: about', 'about', J(pattern_ref('about-maker'), pattern_ref('contact-cards')), block_types='core/post-content')
+pattern('page-about', 'Page: about', 'about', J(pattern_ref('about-maker'), pattern_ref('awards'), pattern_ref('year-round'), pattern_ref('coproducer-call'), pattern_ref('crew-call'), pattern_ref('contact-cards')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- parts
 write('parts/header.html', J(
@@ -413,10 +504,10 @@ def tpl(name, inner, top=50, bottom=70):
 
 write('templates/front-page.html', page_template(J(
     pattern_ref('lead-film'),
-    group(pattern_ref('screenings-list'), align='wide', className='is-style-rule-top', layout={'type': 'default'}),
+    group(pattern_ref('screenings-rows'), align='wide', className='is-style-rule-top', layout={'type': 'default'}),
     group(pattern_ref('programme-grid'), align='wide', className='is-style-rule-top', layout={'type': 'default'}),
     spacer(), pattern_ref('host-band')), style={'spacing': {'padding': {'bottom': '0'}}}))
-tpl('home', J(heading('Programme A to Z', 1, align='wide'), pattern_ref('category-filter'), pattern_ref('programme-archive')))
+tpl('home', J(heading('Programme A to Z', 1, align='wide'), pattern_ref('category-filter'), pattern_ref('programme-archive'), spacer(), pattern_ref('programme-strands')))
 tpl('archive', J(dyn('query-title', type='archive', showPrefix=False, align='wide'), dyn('term-description', align='wide'), pattern_ref('category-filter'), pattern_ref('programme-archive')))
 tpl('index', J(dyn('query-title', type='archive', align='wide'), pattern_ref('programme-archive')))
 tpl('search', J(dyn('query-title', type='search', align='wide'), dyn('search', label='Search', showLabel=False, placeholder='A film, a town, a name', buttonText='Search', align='wide'), pattern_ref('programme-archive')))

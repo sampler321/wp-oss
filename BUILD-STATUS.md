@@ -20,7 +20,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 12 | studio | 025 Small branding studio | as researched | deployed | https://wposs-studio.b-j-kapica.workers.dev |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
-| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed (HTTP 404) | https://wposs-reel.b-j-kapica.workers.dev |
+| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed | https://wposs-reel.b-j-kapica.workers.dev |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |

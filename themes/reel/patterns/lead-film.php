@@ -5,7 +5,7 @@
  * Categories: featured
  */
 ?>
-<!-- wp:columns {"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50"}}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:column {"width":"72%"} -->
 <div class="wp-block-column" style="flex-basis:72%"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"16/10","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->

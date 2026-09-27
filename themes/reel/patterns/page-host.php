@@ -8,6 +8,10 @@
 ?>
 <!-- wp:pattern {"slug":"reel/host-screening"} /-->
 
+<!-- wp:pattern {"slug":"reel/access-note"} /-->
+
+<!-- wp:pattern {"slug":"reel/study-guide"} /-->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Questions hosts ask</h3>
 <!-- /wp:heading -->

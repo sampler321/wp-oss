@@ -11,6 +11,8 @@
 
 <!-- wp:pattern {"slug":"reel/synopsis"} /-->
 
+<!-- wp:pattern {"slug":"reel/director-statement"} /-->
+
 <!-- wp:pattern {"slug":"reel/press-quotes"} /-->
 
 <!-- wp:pattern {"slug":"reel/screenings-list"} /-->
