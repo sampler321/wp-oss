@@ -7,7 +7,7 @@
 - Content: beers are posts in Beers with a "Beer (paper label)" template; events and news are posts; taproom, book a table, beer club, trade and about are page-layout patterns. WooCommerce sells cans, a mixed case and merch. Nice-to-haves built: booking rules, beer club, collect and delivery with costs shown before checkout, printable tap list, allergen line, guest line.
 - Images: CC0 Commons photos of the counter, canning line, cans, taps and tacos. Can labels and merch (glass, tote, T-shirt) were drawn for this theme by build/taproom_draw.py (CC0), so no other brewery's branding appears as a product.
 - Age: no pop-up. The age rule is written in the footer, on the hours panel and next to the shop.
-- Core-block limits: "on tap" is a table the staff edit by hand; there is no per-beer on/off switch without custom fields.
+- Core-block limits: "on tap" is a set of rows the staff edit by hand; there is no per-beer on/off switch without custom fields.
 
 ## Round 2
 
