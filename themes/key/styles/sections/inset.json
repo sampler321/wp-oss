@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Inset text",
+	"slug": "inset",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|muted",
+				"width": "10px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|40",
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		}
+	}
+}

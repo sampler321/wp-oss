@@ -1,0 +1,166 @@
+{
+ "site": {
+  "title": "Nowicki, ślusarz",
+  "tagline": "Locksmith in Wrocław, day and night"
+ },
+ "categories": [
+  {
+   "slug": "advice",
+   "name": "Advice"
+  },
+  {
+   "slug": "areas",
+   "name": "Areas"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "advice",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "advice",
+   "title": "Advice",
+   "content": ""
+  },
+  {
+   "slug": "lockouts",
+   "title": "Locked out",
+   "pattern": "key/lockouts-page"
+  },
+  {
+   "slug": "lock-changes",
+   "title": "Lock changes",
+   "pattern": "key/lock-changes-page"
+  },
+  {
+   "slug": "upvc-repairs",
+   "title": "uPVC doors and windows",
+   "pattern": "key/upvc-page"
+  },
+  {
+   "slug": "burglary-repairs",
+   "title": "After a break-in",
+   "pattern": "key/burglary-page"
+  },
+  {
+   "slug": "landlords",
+   "title": "Landlords and agents",
+   "pattern": "key/landlords-page"
+  },
+  {
+   "slug": "prices",
+   "title": "Prices",
+   "pattern": "key/prices-page"
+  },
+  {
+   "slug": "areas",
+   "title": "Areas",
+   "pattern": "key/areas-page"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "key/contact-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Why cheap cylinders get picked",
+   "category": "advice",
+   "image": "euro.jpg",
+   "excerpt": "A 40 zł cylinder and a 200 zł one look the same from outside. Here is the difference.",
+   "date": "2026-09-18",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Most flat doors in Wrocław have a class A or B cylinder that came with the door. Class A ones can be picked in under a minute by anyone who has watched a few videos.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A class C cylinder has more pins, anti-drill plates and usually a snap line, so if someone breaks off the outer half, the lock still holds. It costs from 320 zł fitted.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">If you rent, ask your landlord first. Most say yes if you leave the new cylinder behind.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Please don't ask us to cut the love locks",
+   "category": "advice",
+   "image": "padlock.jpg",
+   "excerpt": "The padlocks on Tumski Bridge belong to the city. So does the job of removing them.",
+   "date": "2026-08-29",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">About once a month someone asks me to cut a padlock off Most Tumski, usually after a break-up. I can't. The bridge railings belong to the city, and cutting anything off them needs the city's permission.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">If you want it gone, email the district office. If you want it back, I'm afraid you needed to keep the key.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Seized padlocks on garages and cellars",
+   "category": "advice",
+   "image": "padlock2.jpg",
+   "excerpt": "A rusty padlock usually needs cutting, not picking. It takes five minutes.",
+   "date": "2026-08-02",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Cellar and garage padlocks in old Wrocław courtyards rust shut after a few winters. Oil rarely helps once the shackle is seized.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I cut it with a disc cutter, fit a new closed-shackle padlock and give you three keys. From 150 zł including the padlock.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Keys, and who has them",
+   "category": "advice",
+   "image": "keys.jpg",
+   "excerpt": "For landlords: a key record takes ten minutes and saves a lock change.",
+   "date": "2026-07-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every time a flat changes hands, write down how many keys exist for each door and who has them. I send landlords a key record after every cylinder change.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">If a tenant leaves with one key missing, the record tells you whether you need a new cylinder or just a new copy.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Nadodrze and Ołbin",
+   "category": "areas",
+   "image": "street.jpg",
+   "excerpt": "My own area. Usually there in 15 to 25 minutes.",
+   "date": "2026-06-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The workshop is on Jedności Narodowej, so Nadodrze, Ołbin and the streets around Nadodrze station are the quickest for me to reach.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Many tenements here still have their original entrance doors with old mortise locks. I carry parts for the common ones, and I can usually save the old lock instead of replacing it.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Stare Miasto at night",
+   "category": "areas",
+   "image": "wroclaw.jpg",
+   "excerpt": "Most of my night calls are in the old town, between midnight and 4am.",
+   "date": "2026-06-01",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Night call-outs in the centre are usually quicker than daytime ones, because I can park. Expect 15 minutes after 22:00.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Night rate is 350 zł for opening a door without damage. I tell you the price on the phone.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Key cutting at the workshop",
+   "category": "advice",
+   "image": "keycutting.jpg",
+   "excerpt": "Most house keys, while you wait, from 15 zł. Ring first.",
+   "date": "2026-05-12",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">I cut flat keys, cylinder keys and most security keys with a card, if you bring the card. I don't copy keys marked \"do not duplicate\" for blocks of flats without a letter from the building manager.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Workshop hours are Monday to Friday 9:00 to 17:00 and Saturday 9:00 to 13:00, but I close it when I go out to a lockout.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "An old door, an old lock",
+   "category": "advice",
+   "image": "lock.jpg",
+   "excerpt": "Before you replace a tenement door lock, check whether it can be serviced.",
+   "date": "2026-04-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Old mortise locks in tenement doors are often better made than new ones. They stop working because of dirt and a tired spring.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A service costs about 150 zł and takes half an hour. A new lock and a new hole in a hundred-year-old door costs a lot more.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Locked out",
+   "url": "/lockouts/"
+  },
+  {
+   "label": "Prices",
+   "url": "/prices/"
+  },
+  {
+   "label": "Lock changes",
+   "url": "/lock-changes/"
+  },
+  {
+   "label": "uPVC",
+   "url": "/upvc-repairs/"
+  },
+  {
+   "label": "Landlords",
+   "url": "/landlords/"
+  },
+  {
+   "label": "Areas",
+   "url": "/areas/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

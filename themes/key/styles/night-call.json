@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night call",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#0B0C0C",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFDD00",
+					"name": "Black"
+				},
+				{
+					"slug": "signal",
+					"color": "#FFDD00",
+					"name": "Key-cutting yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#1E1F1F",
+					"name": "Light grey"
+				},
+				{
+					"slug": "line",
+					"color": "#FFDD00",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#D6D3C4",
+					"name": "Secondary text"
+				},
+				{
+					"slug": "brass",
+					"color": "#D2B27A",
+					"name": "Brass"
+				},
+				{
+					"slug": "accent",
+					"color": "#FFFFFF",
+					"name": "Link blue"
+				}
+			]
+		}
+	}
+}

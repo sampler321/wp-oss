@@ -1,0 +1,3 @@
+Key is for independent locksmiths. The header carries a yellow call bar with the phone number and your insurance and certificate line, so people see proof before they ring; on phones it stays at the top of the screen. The front page is one column: the number in very large type, what to have ready, typical prices, how to recognise you, credentials, services and arrival times.
+
+To change the number, edit the "Call bar" and "Giant tap-to-call number" patterns. Advice notes and area pages are posts in the Advice and Areas categories. The fonts include the Latin Extended range for Polish and other Central European languages.

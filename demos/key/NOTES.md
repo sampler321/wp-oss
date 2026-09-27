@@ -1,0 +1,8 @@
+# Key: notes
+
+- Direction: public-information utility. Someone locked out at night needs the number, the price and proof that this is a real, insured locksmith, in that order, so the site takes its plainness from government service pages: one 70ch column, no hero image, underlined blue links, heavy yellow focus states.
+- Persona: Krzysztof Nowicki, ślusarz, Wrocław (Nadodrze). Copy in English for the city's English-speaking residents, prices in złoty, Polish district names.
+- Fonts: Ruda (display, the registry face, heavy for the phone number and titles) and Atkinson Hyperlegible Next (body, built for low-vision readers; its slashed zero is part of that design). Both include Latin Extended for Polish, added as extra fontFace entries because the font tool keeps only basic Latin.
+- Palette: white, near-black #0B0C0C, link-blue accent #1D5AA0, key-cutting yellow #FFDD00 as a separate "signal" colour for the call bar, buttons and focus, brass only on the credentials row. Yellow is not the accent slug because the contrast test reads accent as text on white.
+- Signature: a yellow call bar with the phone number and the insurance and certificate line side by side, as its own template part so it can stay pinned at the top on phones (the only sticky element). Also: "how to know it is me at your door" (van, registration, description), typical prices with a note on "from 49 zł" quotes, arrival times by district, landlord page with the bailiff-only eviction rule, a credentials row, and what I don't do.
+- Core-block limits: no quote form (email and phone as text instead); area and advice pages are posts in two categories.

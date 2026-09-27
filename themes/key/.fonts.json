@@ -1,0 +1,73 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Ruda\", sans-serif",
+      "name": "Ruda",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Ruda",
+          "fontStyle": "normal",
+          "fontWeight": "400 900",
+          "src": [
+            "file:./assets/fonts/ruda-normal-400_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ruda",
+          "fontStyle": "normal",
+          "fontWeight": "400 900",
+          "src": [
+            "file:./assets/fonts/ruda-normal-400_900-latin-ext.woff2"
+          ],
+          "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Atkinson Hyperlegible Next\", sans-serif",
+      "name": "Atkinson Hyperlegible Next",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "italic",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "normal",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "italic",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800-latin-ext.woff2"
+          ],
+          "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+        },
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "normal",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800-latin-ext.woff2"
+          ],
+          "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Ruda (Google Fonts), https://github.com/google/fonts/tree/main/ofl/ruda",
+    "Atkinson Hyperlegible Next (Google Fonts), https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext"
+  ]
+}
