@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bibliography list",
+	"slug": "bibliography",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "& > li{border-top:1px solid var(--wp--preset--color--line);padding-block:var(--wp--preset--spacing--40);margin:0!important}& > li:last-child{border-bottom:1px solid var(--wp--preset--color--line)}"
+	}
+}

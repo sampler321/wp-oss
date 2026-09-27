@@ -1,0 +1,58 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Noto Serif Display\", serif",
+      "name": "Noto Serif Display",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Noto Serif Display",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/noto-serif-display-italic-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "Noto Serif Display",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/noto-serif-display-normal-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Noto Sans\", sans-serif",
+      "name": "Noto Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Noto Sans",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/noto-sans-italic-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "Noto Sans",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/noto-sans-normal-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Noto Serif Display (Google Fonts), https://github.com/google/fonts/tree/main/ofl/notoserifdisplay",
+    "Noto Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/notosans"
+  ]
+}

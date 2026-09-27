@@ -1,0 +1,163 @@
+{
+ "site": {
+  "title": "Joanna Pryce",
+  "tagline": "Translator, Portuguese and Spanish into English"
+ },
+ "categories": [
+  {
+   "slug": "books",
+   "name": "Books"
+  },
+  {
+   "slug": "academic",
+   "name": "Academic"
+  },
+  {
+   "slug": "exhibitions",
+   "name": "Exhibitions"
+  },
+  {
+   "slug": "notes",
+   "name": "Notes"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "translations",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "translations",
+   "title": "Translations",
+   "content": ""
+  },
+  {
+   "slug": "services",
+   "title": "Services and rates",
+   "pattern": "lingua/services-page"
+  },
+  {
+   "slug": "examples",
+   "title": "Examples",
+   "pattern": "lingua/examples-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "credentials",
+   "title": "Credentials",
+   "pattern": "lingua/credentials-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "faq",
+   "title": "Questions",
+   "pattern": "lingua/faq-page"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "lingua/contact-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "portugues",
+   "title": "Em português",
+   "pattern": "lingua/portugues-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "The Salt Year, by Rita Cordeiro",
+   "category": "books",
+   "image": "books.jpg",
+   "excerpt": "Novel, from Portuguese. Small Hours Books, London, 2025. Original title: O Ano do Sal.",
+   "date": "2025-10-02",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Novel, from Portuguese. Small Hours Books, London, 2025. Original title: O Ano do Sal.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">My grandmother salted the cod in the yard, on her knees, like someone praying.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A minha avó salgava o bacalhau no quintal, de joelhos, como quem reza.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Original</td><td><em>O Ano do Sal</em>, 2021</td></tr><tr><td>Length</td><td>84,000 words</td></tr><tr><td>Publisher</td><td>Small Hours Books, London</td></tr><tr><td>Support</td><td>Translation grant from DGLAB</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "River Workers, exhibition texts for Casa do Rio",
+   "category": "exhibitions",
+   "image": "porto2.jpg",
+   "excerpt": "Wall texts and 64 labels, from Portuguese. Casa do Rio, Vila Nova de Gaia, 2025.",
+   "date": "2025-06-12",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Wall texts and 64 labels, from Portuguese. Casa do Rio, Vila Nova de Gaia, 2025.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Rabelo boats carried wine down the Douro to the lodges in Gaia.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Os barcos rabelos transportavam o vinho do Douro até às caves de Gaia.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Words</td><td>9,200</td></tr><tr><td>Character limit</td><td>400 per label, including spaces</td></tr><tr><td>Time</td><td>Five weeks, with two rounds of curator comments</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Tram 28 and Other Stories, by Duarte Mesquita",
+   "category": "books",
+   "image": "lisbon.jpg",
+   "excerpt": "Short stories, from Portuguese. Afton Press, 2024. Original title: O 28 e Outras Histórias.",
+   "date": "2024-09-20",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Short stories, from Portuguese. Afton Press, 2024. Original title: O 28 e Outras Histórias.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The tram stopped where it always stopped, and nobody got off.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">O elétrico parou onde parava sempre, e ninguém saiu.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Original</td><td><em>O 28 e Outras Histórias</em>, 2019</td></tr><tr><td>Length</td><td>11 stories, 52,000 words</td></tr><tr><td>Publisher</td><td>Afton Press</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Cork Oak Country, by Helena Sarmento",
+   "category": "academic",
+   "image": "library.jpg",
+   "excerpt": "History monograph, from Portuguese. Tamar University Press, 2023.",
+   "date": "2023-11-05",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">History monograph, from Portuguese. Tamar University Press, 2023.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Between 1890 and 1975 the area of cork-oak woodland in the Alentejo grew by about a third.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Entre 1890 e 1975, a área de montado no Alentejo aumentou cerca de um terço.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Length</td><td>112,000 words and 40 tables</td></tr><tr><td>Terms</td><td>A 300-entry glossary, agreed with the author before chapter one</td></tr><tr><td>Funding</td><td>Paid from the author's research grant</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "A House of Tiles, by Carmen Olmedo",
+   "category": "books",
+   "image": "tiles.jpg",
+   "excerpt": "Novel, from Spanish. Small Hours Books, 2022. Original title: La casa de los azulejos.",
+   "date": "2022-04-18",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Novel, from Spanish. Small Hours Books, 2022. Original title: La casa de los azulejos.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Every tile on the front of the house had been painted by someone who was dead.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original (Spanish)</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Cada azulejo de la fachada lo había pintado alguien que ya estaba muerto.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Original</td><td><em>La casa de los azulejos</em>, 2018</td></tr><tr><td>Length</td><td>71,000 words</td></tr><tr><td>Publisher</td><td>Small Hours Books</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Street names in two scripts",
+   "category": "notes",
+   "image": "sign.jpg",
+   "excerpt": "A note from a week in Macau, where every street sign is in Chinese and Portuguese and neither is a translation of the other.",
+   "date": "2024-03-02",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A note from a week in Macau, where every street sign is in Chinese and Portuguese and neither is a translation of the other.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Avenida de Carlos da Maia keeps its Portuguese name in English. The Chinese name beside it sounds it out.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A Avenida de Carlos da Maia mantém o nome português em inglês. O nome chinês ao lado reproduz o som.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Written</td><td>For the ITI Bulletin, spring issue</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "The ij key on a Dutch typewriter",
+   "category": "notes",
+   "image": "typewriter.jpg",
+   "excerpt": "I bought a typewriter at the Feira da Vandoma for €15 and it turned out to be Dutch. It has a key for the letter ij and a florin sign.",
+   "date": "2023-06-10",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">I bought a typewriter at the Feira da Vandoma for €15 and it turned out to be Dutch. It has a key for the letter ij and a florin sign.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">One key, one letter, two strokes. Portuguese has nothing like it, which is probably why the seller let it go.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Uma tecla, uma letra, dois traços. O português não tem nada parecido.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Where</td><td>Feira da Vandoma, Porto, Saturday mornings</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "A word list copied by hand",
+   "category": "notes",
+   "image": "dictionary.jpg",
+   "excerpt": "Notes on a Persian word list in the British Library, and why bilingual glossaries are still written by hand in my notebooks.",
+   "date": "2023-01-15",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Notes on a Persian word list in the British Library, and why bilingual glossaries are still written by hand in my notebooks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-parallel\"} -->\n<div class=\"wp-block-columns is-style-parallel\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">My English</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Every long job starts with a glossary. For Cork Oak Country it ran to 300 entries, and the author and I argued about eleven of them.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"className\":\"is-style-lang-tag\"} -->\n<p class=\"is-style-lang-tag\">Original</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Todos os trabalhos longos começam com um glossário.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Tool</td><td>A spreadsheet, then a notebook, then the spreadsheet again</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Translations",
+   "url": "/translations/"
+  },
+  {
+   "label": "Services",
+   "url": "/services/"
+  },
+  {
+   "label": "Examples",
+   "url": "/examples/"
+  },
+  {
+   "label": "Credentials",
+   "url": "/credentials/"
+  },
+  {
+   "label": "Questions",
+   "url": "/faq/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

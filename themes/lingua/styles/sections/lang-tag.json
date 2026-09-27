@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Language tag",
+	"slug": "lang-tag",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontStyle": "normal",
+			"fontWeight": "600"
+		}
+	}
+}

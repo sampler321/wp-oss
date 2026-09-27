@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Specimen",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#B5121B",
+					"name": "Proof red"
+				},
+				{
+					"slug": "surface",
+					"color": "#F6F6F4",
+					"name": "Galley"
+				},
+				{
+					"slug": "line",
+					"color": "#D9D9D6",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5B5853",
+					"name": "Graphite"
+				},
+				{
+					"slug": "highlight",
+					"color": "#FBE7A6",
+					"name": "Highlighter"
+				}
+			]
+		}
+	}
+}
