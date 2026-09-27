@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalogue rule (double line)",
+	"slug": "catalogue-rule",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|line",
+				"width": "3px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30"
+			}
+		},
+		"css": "&{box-shadow:inset 0 5px 0 -3px var(--wp--preset--color--base),inset 0 6px 0 -3px var(--wp--preset--color--line)}"
+	}
+}

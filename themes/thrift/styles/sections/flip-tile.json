@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product tile with back view",
+	"slug": "flip-tile",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"blockGap": "var:preset|spacing|20"
+		}
+	}
+}

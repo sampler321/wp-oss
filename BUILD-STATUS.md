@@ -14,7 +14,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
 | 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | deployed (HTTP 404) | https://wposs-commons.b-j-kapica.workers.dev |
 | 8 | room | 019 Interior designer + shop | as researched | deployed | https://wposs-room.b-j-kapica.workers.dev |
-| 9 | joint | 021 Furniture and object designer | as researched | todo | |
+| 9 | joint | 021 Furniture and object designer | as researched | tested |  |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
@@ -36,9 +36,9 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
-| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
+| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | failed test |  |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
-| 33 | thrift | 062 Vintage clothing | as researched | tested |  |
+| 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |

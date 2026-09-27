@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Swing tag",
+	"slug": "swing-tag",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent",
+			"text": "var:preset|color|surface"
+		},
+		"typography": {
+			"fontWeight": "700",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"border": {
+			"radius": "3px"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|surface"
+				}
+			}
+		},
+		"css": "&{display:inline-block;padding:.2em .8em .2em 1.6em!important;background:radial-gradient(circle at .8em 50%,var(--wp--preset--color--base) .24em,transparent .27em),var(--wp--preset--color--accent)!important}"
+	}
+}

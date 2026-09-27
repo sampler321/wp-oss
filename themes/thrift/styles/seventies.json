@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "70s",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EFE3C8",
+					"name": "Mustard paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#3B2314",
+					"name": "Brown"
+				},
+				{
+					"slug": "accent",
+					"color": "#A0520F",
+					"name": "Rust"
+				},
+				{
+					"slug": "surface",
+					"color": "#FAF4E6",
+					"name": "Card"
+				},
+				{
+					"slug": "line",
+					"color": "#3B2314",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#6B4E36",
+					"name": "Faded brown"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#D9A441",
+					"name": "Mustard"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "700",
+					"letterSpacing": "0.02em"
+				}
+			}
+		}
+	}
+}

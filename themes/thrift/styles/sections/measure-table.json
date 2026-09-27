@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Measurement table",
+	"slug": "measure-table",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|medium"
+		},
+		"css": "& td:not(:first-child),& th:not(:first-child){text-align:right}& td:first-child{font-weight:600}"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Decade numerals",
+	"slug": "decades",
+	"blockTypes": [
+		"core/paragraph",
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"textTransform": "none",
+			"letterSpacing": "-0.02em",
+			"fontSize": "var:preset|font-size|display",
+			"fontWeight": "800",
+			"lineHeight": "0.82"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|accent"
+					}
+				}
+			}
+		},
+		"css": "&{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:.2em}& a:hover{text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.08em}"
+	}
+}

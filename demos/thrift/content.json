@@ -1,0 +1,236 @@
+{
+ "site": {
+  "title": "Second Floor Vintage",
+  "tagline": "One-off clothes, 1940s to 2000s, measured flat"
+ },
+ "categories": [
+  {
+   "slug": "buying-trips",
+   "name": "Buying trips"
+  },
+  {
+   "slug": "on-the-table",
+   "name": "On the cutting table"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "journal",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "journal",
+   "title": "Journal",
+   "content": ""
+  },
+  {
+   "slug": "decades",
+   "title": "By decade",
+   "pattern": "thrift/page-decades",
+   "template": "page-wide"
+  },
+  {
+   "slug": "size-guide",
+   "title": "Size guide",
+   "pattern": "thrift/page-size-guide",
+   "template": "page-wide"
+  },
+  {
+   "slug": "buying-days",
+   "title": "Buying days",
+   "pattern": "thrift/page-buying",
+   "template": "page-wide"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "thrift/page-visit",
+   "template": "page-wide"
+  },
+  {
+   "slug": "shipping",
+   "title": "Shipping and returns",
+   "pattern": "thrift/page-shipping"
+  }
+ ],
+ "posts": [
+  {
+   "title": "A van full of French work jackets from Lille",
+   "category": "buying-trips",
+   "image": "chore-jacket.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aoife drove back from Lille with 60 bleu de travail jackets from a closing uniform supplier. About half are moleskin, the rest cotton drill. They go on the rail in batches of ten, starting this Friday.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Mending moth nips in army flannel",
+   "category": "on-the-table",
+   "image": "shirt-front.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Small moth holes in wool flannel darn well with a single strand of matching wool and a lot of patience. We charge nothing extra for mending, and we note every repair in the listing.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why a 1950s size 14 fits like a modern 10",
+   "category": "on-the-table",
+   "image": "blouse.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">UK sizing was redrawn several times after the war, and every redraw made the numbers smaller for the same body. That is why we list the label and then ignore it.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The field jacket that came with a letter in the pocket",
+   "category": "buying-trips",
+   "image": "field-jacket.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A 1950s M-1943 from a house clearance in Stockport had a folded letter in the inside pocket, dated 1954. We gave the letter back to the family and kept the jacket.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Buying day notes: what we took and what we passed on",
+   "category": "buying-trips",
+   "image": "shop-floor.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty people came up the stairs last Monday. We bought from 23 of them. Most of the no pile was high-street denim from the last ten years, which we cannot sell for more than you paid.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Photographing flaws before anything else",
+   "category": "on-the-table",
+   "image": "stamp-detail.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every piece gets its flaw photos taken first, before the nice ones. It stops us forgetting, and it means the last pictures in each gallery are the honest ones.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "By decade",
+   "url": "/decades/"
+  },
+  {
+   "label": "Size guide",
+   "url": "/size-guide/"
+  },
+  {
+   "label": "Buying days",
+   "url": "/buying-days/"
+  },
+  {
+   "label": "Journal",
+   "url": "/journal/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "1940s US Army wool flannel shirt, label size 15.5",
+   "price": "85",
+   "image": "shirt-front.jpg",
+   "category": "40s",
+   "sku": "SFV-400",
+   "stock": 1,
+   "short": "Label 15.5 neck. Chest 58 cm pit to pit, length 76 cm. Very good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Olive drab wool flannel with two flap pockets and a coat-style front. Soft from washing, still heavy. Fits a modern men's medium or a loose women's large.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>58 cm</td><td>22.8 in</td></tr><tr><td>Shoulder seam to seam</td><td>46 cm</td><td>18.1 in</td></tr><tr><td>Length, nape to hem</td><td>76 cm</td><td>29.9 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>60 cm</td><td>23.6 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 15.5 neck. <strong>Condition:</strong> very good. <strong>Flaws:</strong> Two moth nips on the left cuff, darned. Faint stamp inside the yoke.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1950s US Army M-1943 field jacket, label size 38R",
+   "price": "140",
+   "image": "field-jacket.jpg",
+   "category": "50s",
+   "sku": "SFV-407",
+   "stock": 1,
+   "short": "Label 38 regular. Chest 60 cm pit to pit, length 74 cm. Good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Four-pocket cotton sateen field jacket with the drawstring waist intact. Shoulders are narrow for the chest, so check the shoulder measurement against a jacket you own.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>60 cm</td><td>23.6 in</td></tr><tr><td>Shoulder seam to seam</td><td>47 cm</td><td>18.5 in</td></tr><tr><td>Length, nape to hem</td><td>74 cm</td><td>29.1 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>62 cm</td><td>24.4 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 38 regular. <strong>Condition:</strong> good. <strong>Flaws:</strong> Fraying at both cuff edges and one replaced button on the storm flap.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1960s French work jacket, bleu de travail, label size 44",
+   "price": "75",
+   "image": "chore-jacket.jpg",
+   "category": "60s",
+   "sku": "SFV-414",
+   "stock": 1,
+   "short": "Label 44 French. Chest 59 cm pit to pit, length 72 cm. Good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Cotton moleskin chore jacket faded to that washed blue. Wrap front, three patch pockets, original buttons.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>59 cm</td><td>23.2 in</td></tr><tr><td>Shoulder seam to seam</td><td>48 cm</td><td>18.9 in</td></tr><tr><td>Length, nape to hem</td><td>72 cm</td><td>28.3 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>61 cm</td><td>24.0 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 44 French. <strong>Condition:</strong> good. <strong>Flaws:</strong> Pale patch on the right elbow where it was worn thin. No holes.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1940s US Army field jacket, second type, label size 36",
+   "price": "120",
+   "image": "jacket-od.jpg",
+   "category": "40s",
+   "sku": "SFV-421",
+   "stock": 1,
+   "short": "Label 36. Chest 56 cm pit to pit, length 66 cm. Fair condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Short olive cotton jacket with slash pockets and button cuffs. Cropped at the waist, so it suits a smaller frame or a tucked shirt.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>56 cm</td><td>22.0 in</td></tr><tr><td>Shoulder seam to seam</td><td>44 cm</td><td>17.3 in</td></tr><tr><td>Length, nape to hem</td><td>66 cm</td><td>26.0 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>60 cm</td><td>23.6 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 36. <strong>Condition:</strong> fair. <strong>Flaws:</strong> Stain on the lower back panel, set in. Zip replaced with a period zip.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1950s ivory silk blouse with pintucks, label size 14",
+   "price": "58",
+   "image": "blouse.jpg",
+   "category": "50s",
+   "sku": "SFV-428",
+   "stock": 1,
+   "short": "Label 14 (1950s UK). Chest 48 cm pit to pit, length 62 cm. Very good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Heavy silk crepe with a pintucked front panel and a Peter Pan collar. A 1950s 14 is closer to a modern 10.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>48 cm</td><td>18.9 in</td></tr><tr><td>Shoulder seam to seam</td><td>38 cm</td><td>15.0 in</td></tr><tr><td>Length, nape to hem</td><td>62 cm</td><td>24.4 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>57 cm</td><td>22.4 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 14 (1950s UK). <strong>Condition:</strong> very good. <strong>Flaws:</strong> Small yellowed mark under the left arm, only visible up close.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1970s embroidered cotton smock dress, label size 12",
+   "price": "68",
+   "image": "dress.jpg",
+   "category": "70s",
+   "sku": "SFV-435",
+   "stock": 1,
+   "short": "Label 12 (1970s UK). Chest 50 cm pit to pit, length 104 cm. Very good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Unbleached cotton with red cross-stitch on the yoke and a button front to the hem. Short sleeves, loose through the body.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>50 cm</td><td>19.7 in</td></tr><tr><td>Shoulder seam to seam</td><td>37 cm</td><td>14.6 in</td></tr><tr><td>Length, nape to hem</td><td>104 cm</td><td>40.9 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>22 cm</td><td>8.7 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> 12 (1970s UK). <strong>Condition:</strong> very good. <strong>Flaws:</strong> One embroidered flower on the collar has a loose thread.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1990s hooded shell jacket, label size L",
+   "price": "45",
+   "image": "shell-jacket.jpg",
+   "category": "90s",
+   "sku": "SFV-442",
+   "stock": 1,
+   "short": "Label L. Chest 66 cm pit to pit, length 74 cm. Excellent condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Stone nylon shell with a stowaway hood and taped seams. Roomy, fits a modern large with a jumper under.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>66 cm</td><td>26.0 in</td></tr><tr><td>Shoulder seam to seam</td><td>52 cm</td><td>20.5 in</td></tr><tr><td>Length, nape to hem</td><td>74 cm</td><td>29.1 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>64 cm</td><td>25.2 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> L. <strong>Condition:</strong> excellent. <strong>Flaws:</strong> None we can find.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1980s Levi's 501 jeans, W32 L30",
+   "price": "90",
+   "image": "jeans-pocket.jpg",
+   "category": "80s",
+   "sku": "SFV-449",
+   "stock": 0,
+   "short": "Label W32 L30 (measures W31). Good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Button fly, grey-black wash. Sold in two days, kept here for the record.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> W32 L30 (measures W31). <strong>Condition:</strong> good. <strong>Flaws:</strong> Knee blowout repaired from inside.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "1980s blanket wrap coat, label size M",
+   "price": "72",
+   "image": "outfit.jpg",
+   "category": "80s",
+   "sku": "SFV-456",
+   "stock": 1,
+   "short": "Label M. Chest 64 cm pit to pit, length 88 cm. Very good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Wool blend in rust, teal and pink with a fringed hem. One button at the neck, wraps loose.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-measure-table\"} -->\n<figure class=\"wp-block-table is-style-measure-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>64 cm</td><td>25.2 in</td></tr><tr><td>Shoulder seam to seam</td><td>50 cm</td><td>19.7 in</td></tr><tr><td>Length, nape to hem</td><td>88 cm</td><td>34.6 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>58 cm</td><td>22.8 in</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> M. <strong>Condition:</strong> very good. <strong>Flaws:</strong> Fringe is uneven on the left front, as it came.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Early 2000s leather work boots, UK 9",
+   "price": "40",
+   "image": "boots.jpg",
+   "category": "Y2K",
+   "sku": "SFV-463",
+   "stock": 1,
+   "short": "Label UK 9. Good condition.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Black leather lace-up boots with a lugged sole. Resoleable. Insole length 28cm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><strong>Label size:</strong> UK 9. <strong>Condition:</strong> good. <strong>Flaws:</strong> Creased across the toes, heels have wear on the outer edge.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "name": "Gift card, £50",
+   "price": "50",
+   "image": "stamp-detail.jpg",
+   "category": "Gift cards",
+   "sku": "SFV-GIFT50",
+   "stock": 100,
+   "short": "Spend online or in the shop. Valid for two years.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Emailed within an hour, or posted in a card with a handwritten note if you ask at checkout.</p>\n<!-- /wp:paragraph -->"
+  }
+ ]
+}

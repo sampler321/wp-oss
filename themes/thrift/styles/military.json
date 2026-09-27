@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Military",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#C9C6A8",
+					"name": "Olive drab paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E2116",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#6A3A12",
+					"name": "Leather"
+				},
+				{
+					"slug": "surface",
+					"color": "#E7E4CC",
+					"name": "Card"
+				},
+				{
+					"slug": "line",
+					"color": "#1E2116",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F4230",
+					"name": "Faded olive"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#6B6B3F",
+					"name": "Olive"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"letterSpacing": "0.08em",
+					"fontWeight": "700"
+				}
+			}
+		}
+	}
+}

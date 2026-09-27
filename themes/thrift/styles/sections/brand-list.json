@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Brand list",
+	"slug": "brand-list",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"textTransform": "uppercase",
+			"letterSpacing": "0.01em",
+			"fontSize": "var:preset|font-size|x-large",
+			"fontWeight": "700",
+			"lineHeight": "1.05"
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|accent"
+					}
+				}
+			}
+		}
+	}
+}

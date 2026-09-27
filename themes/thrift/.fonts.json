@@ -1,0 +1,86 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Barlow Condensed\", sans-serif",
+      "name": "Barlow Condensed",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Barlow Condensed",
+          "fontStyle": "italic",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/barlow-condensed-italic-700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow Condensed",
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/barlow-condensed-normal-500.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow Condensed",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/barlow-condensed-normal-700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow Condensed",
+          "fontStyle": "normal",
+          "fontWeight": "800",
+          "src": [
+            "file:./assets/fonts/barlow-condensed-normal-800.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Barlow\", sans-serif",
+      "name": "Barlow",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Barlow",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/barlow-italic-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/barlow-normal-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow",
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/barlow-normal-500.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Barlow",
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "src": [
+            "file:./assets/fonts/barlow-normal-600.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Barlow Condensed (Google Fonts), https://github.com/google/fonts/tree/main/ofl/barlowcondensed",
+    "Barlow (Google Fonts), https://github.com/google/fonts/tree/main/ofl/barlow"
+  ]
+}

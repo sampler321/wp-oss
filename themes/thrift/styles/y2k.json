@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Y2K",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#D9DCE0",
+					"name": "Silver"
+				},
+				{
+					"slug": "contrast",
+					"color": "#16171A",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#C2185B",
+					"name": "Tag pink"
+				},
+				{
+					"slug": "surface",
+					"color": "#F4F5F7",
+					"name": "Card"
+				},
+				{
+					"slug": "line",
+					"color": "#16171A",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A4D55",
+					"name": "Faded ink"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#9FA6B2",
+					"name": "Chrome"
+				}
+			]
+		}
+	}
+}
