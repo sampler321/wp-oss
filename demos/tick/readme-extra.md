@@ -1,0 +1,3 @@
+Tick is for one- to three-person watch and clock repair shops. Price lists are plain lists with the "Price leaders" style: write the service, then the price in bold, and a dotted leader joins them. The Send it in page shows packing steps for each kind of timepiece and a slip customers print and put in the box.
+
+Restored clocks and watches for sale are posts. Give each one a featured image, a short excerpt with the price, and use the "Timepiece for sale" pattern for the facts. Mark a sold piece with the "Dial status, sold" paragraph style. The fonts include the Latin Extended range, so Polish, Czech and Hungarian place names display correctly.

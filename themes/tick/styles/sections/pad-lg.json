@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Roomy section",
+	"slug": "pad-lg",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|70",
+				"bottom": "var:preset|spacing|70"
+			}
+		}
+	}
+}

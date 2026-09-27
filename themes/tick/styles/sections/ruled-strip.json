@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ruled strip",
+	"slug": "ruled-strip",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|contrast",
+				"width": "1px",
+				"style": "solid"
+			},
+			"bottom": {
+				"color": "var:preset|color|contrast",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Longcase",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#2E2118",
+					"name": "Drafting film"
+				},
+				{
+					"slug": "contrast",
+					"color": "#EBDDBE",
+					"name": "Graphite"
+				},
+				{
+					"slug": "accent",
+					"color": "#C9A15B",
+					"name": "Brass"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#E7A08A",
+					"name": "Case oxblood"
+				},
+				{
+					"slug": "surface",
+					"color": "#3B2C21",
+					"name": "Plate grey"
+				},
+				{
+					"slug": "line",
+					"color": "#6E5B48",
+					"name": "Hairline"
+				},
+				{
+					"slug": "muted",
+					"color": "#CDBF9F",
+					"name": "Pencil"
+				},
+				{
+					"slug": "paper",
+					"color": "#3B2C21",
+					"name": "Slip paper"
+				}
+			]
+		}
+	}
+}

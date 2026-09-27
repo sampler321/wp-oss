@@ -1,0 +1,172 @@
+{
+ "site": {
+  "title": "Wróblewski, zegarmistrz",
+  "tagline": "Watch and clock repair in Łódź since 1961"
+ },
+ "categories": [
+  {
+   "slug": "longcase",
+   "name": "Longcase"
+  },
+  {
+   "slug": "mantel-and-carriage",
+   "name": "Mantel and carriage"
+  },
+  {
+   "slug": "watches",
+   "name": "Watches"
+  },
+  {
+   "slug": "from-the-bench",
+   "name": "From the bench"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "for-sale",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "for-sale",
+   "title": "For sale",
+   "content": ""
+  },
+  {
+   "slug": "watch-repairs",
+   "title": "Watch repairs",
+   "pattern": "tick/watch-page"
+  },
+  {
+   "slug": "clock-repairs",
+   "title": "Clock repairs",
+   "pattern": "tick/clock-page"
+  },
+  {
+   "slug": "house-calls",
+   "title": "House calls",
+   "pattern": "tick/house-calls-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "send-in",
+   "title": "Send it in",
+   "pattern": "tick/send-in-page"
+  },
+  {
+   "slug": "directions",
+   "title": "Directions",
+   "pattern": "tick/directions-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "glossary",
+   "title": "Glossary",
+   "pattern": "tick/glossary"
+  },
+  {
+   "slug": "about",
+   "title": "About the workshop",
+   "pattern": "tick/about-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Longcase clock, walnut, London, about 1720",
+   "category": "longcase",
+   "image": "longcase.jpg",
+   "excerpt": "8-day, brass dial with date. 218 cm. 18,500 zł.",
+   "date": "2026-09-12",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Available</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Came to us from a house in Zgierz with a cracked seatboard and one weight missing. New seatboard in oak, a replacement weight cast to match, full strip-down, twelve bushes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Maker</td><td>Unsigned, London</td></tr><tr><td>Case</td><td>Burr walnut veneer on oak</td></tr><tr><td>Height</td><td>218 cm</td></tr><tr><td>Movement</td><td>8-day, anchor escapement, strikes the hours on a bell</td></tr><tr><td>Price</td><td>18,500 zł, delivered and set up within 100 km</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Carriage clock, France, about 1890",
+   "category": "mantel-and-carriage",
+   "image": "carriage.jpg",
+   "excerpt": "Brass case, enamel dial, 8-day. 3,200 zł.",
+   "date": "2026-08-30",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Reserved</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A plain one, which is why it is affordable. Keeps time to about a minute a week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Brass, bevelled glass on five sides</td></tr><tr><td>Height</td><td>16 cm with handle up</td></tr><tr><td>Movement</td><td>8-day, platform lever escapement</td></tr><tr><td>Price</td><td>3,200 zł</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Gold pocket watch, Switzerland, about 1880",
+   "category": "watches",
+   "image": "pocket.jpg",
+   "excerpt": "Open face, key-wound. 4,800 zł.",
+   "date": "2026-08-14",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Available</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Serviced, new mainspring and a new crystal. The key is original.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>14 ct gold, open face, hinged dust cover</td></tr><tr><td>Movement</td><td>Key-wound cylinder movement</td></tr><tr><td>Size</td><td>42 mm</td></tr><tr><td>Price</td><td>4,800 zł, key included</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Mantel clock with Orpheus, Paris, about 1810",
+   "category": "mantel-and-carriage",
+   "image": "mantel.jpg",
+   "excerpt": "Gilt bronze, dial signed Le Roy. Sold.",
+   "date": "2026-07-22",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial-sold\"} -->\n<p class=\"is-style-dial-sold\">Sold</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Sold to a collector in Poznań in July. We have a second, smaller one coming in the autumn.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Gilt bronze figure of Orpheus with a lyre</td></tr><tr><td>Dial</td><td>White enamel, signed Le Roy, Paris</td></tr><tr><td>Movement</td><td>8-day, silk suspension converted to spring</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Urn clock with rotating hours, France, about 1790",
+   "category": "from-the-bench",
+   "image": "workshop.jpg",
+   "excerpt": "Serviced for a private collector. Not for sale.",
+   "date": "2026-06-30",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Not for sale</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The owner lives in Warsaw and drove it down on the back seat of a Škoda wrapped in a duvet. It survived.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Type</td><td>Rotating-band clock: the hours turn past a fixed pointer</td></tr><tr><td>Work</td><td>Strip-down, two new pivots, band re-tensioned</td></tr><tr><td>Time on the bench</td><td>3 weeks</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Steel dress watch, serviced",
+   "category": "watches",
+   "image": "wristwatch.jpg",
+   "excerpt": "Automatic, 40 mm, leather strap. 2,400 zł.",
+   "date": "2026-06-02",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Available</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Traded in by a customer who wanted something smaller. Service done by Magda in May.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Case</td><td>Steel, 40 mm</td></tr><tr><td>Movement</td><td>Automatic, with date</td></tr><tr><td>Work</td><td>Full service, new crown seal, strap</td></tr><tr><td>Price</td><td>2,400 zł</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "An automatic, open on the bench",
+   "category": "from-the-bench",
+   "image": "movement.jpg",
+   "excerpt": "What a full service of an automatic watch involves, in order.",
+   "date": "2026-05-10",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Not for sale</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Taken apart, every part cleaned in three baths, the mainspring checked, jewels oiled with four different oils, reassembled, then timed in six positions over five days.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Parts</td><td>About 130 in an automatic with date</td></tr><tr><td>Time</td><td>Five to six hours of bench work, spread over a week</td></tr><tr><td>Price</td><td>from 550 zł</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Where Józef started",
+   "category": "from-the-bench",
+   "image": "shopfront.jpg",
+   "excerpt": "A folding table, a loupe and a tin of parts. Bałuty market, 1961.",
+   "date": "2026-03-01",
+   "content": "<!-- wp:paragraph {\"className\":\"is-style-dial\"} -->\n<p class=\"is-style-dial\">Not for sale</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">This is not Józef in the photo, but it could be. He worked outdoors for seven years, winter included, with fingerless gloves.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>1961</td><td>Bałuty market, a folding table</td></tr><tr><td>1968</td><td>Piotrkowska 118, the courtyard workshop</td></tr><tr><td>1984</td><td>Tadeusz's master's certificate</td></tr><tr><td>2012</td><td>Magda qualifies</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:paragraph {\"fontSize\":\"x-small\"} -->\n<p class=\"has-x-small-font-size\">12 months warranty on every overhaul, 6 months on quartz movements.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Watches",
+   "url": "/watch-repairs/"
+  },
+  {
+   "label": "Clocks",
+   "url": "/clock-repairs/"
+  },
+  {
+   "label": "House calls",
+   "url": "/house-calls/"
+  },
+  {
+   "label": "Send it in",
+   "url": "/send-in/"
+  },
+  {
+   "label": "For sale",
+   "url": "/for-sale/"
+  },
+  {
+   "label": "Glossary",
+   "url": "/glossary/"
+  },
+  {
+   "label": "Directions",
+   "url": "/directions/"
+  }
+ ]
+}

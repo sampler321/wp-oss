@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bench lamp",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFDF7",
+					"name": "Drafting film"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1B2430",
+					"name": "Graphite"
+				},
+				{
+					"slug": "accent",
+					"color": "#A57A2C",
+					"name": "Brass"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#7A1F1F",
+					"name": "Case oxblood"
+				},
+				{
+					"slug": "surface",
+					"color": "#F3EEDF",
+					"name": "Plate grey"
+				},
+				{
+					"slug": "line",
+					"color": "#B9AE95",
+					"name": "Hairline"
+				},
+				{
+					"slug": "muted",
+					"color": "#55595E",
+					"name": "Pencil"
+				},
+				{
+					"slug": "paper",
+					"color": "#FFFFFF",
+					"name": "Slip paper"
+				}
+			]
+		}
+	}
+}

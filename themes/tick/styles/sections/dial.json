@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dial status",
+	"slug": "dial",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "600"
+		},
+		"css": "&{display:inline-flex;align-items:center;gap:.5em}&::before{content:\"\";width:1.1em;height:1.1em;border-radius:50%;border:2px solid var(--wp--preset--color--accent);background:radial-gradient(circle,var(--wp--preset--color--contrast) 0 2px,transparent 3px)}"
+	}
+}

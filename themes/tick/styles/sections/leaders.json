@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Price leaders",
+	"slug": "leaders",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"left": "0"
+			}
+		},
+		"css": "&{list-style:none}"
+	}
+}

@@ -1,0 +1,1 @@
+display: Poltawski Nowy (replaces Azeret Mono, which is now banned as a monospace)

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Enamel dial",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FBFAF6",
+					"name": "Drafting film"
+				},
+				{
+					"slug": "contrast",
+					"color": "#14213D",
+					"name": "Graphite"
+				},
+				{
+					"slug": "accent",
+					"color": "#A57A2C",
+					"name": "Brass"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#7A1F1F",
+					"name": "Case oxblood"
+				},
+				{
+					"slug": "surface",
+					"color": "#EFEDE6",
+					"name": "Plate grey"
+				},
+				{
+					"slug": "line",
+					"color": "#9AA0AC",
+					"name": "Hairline"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A5160",
+					"name": "Pencil"
+				},
+				{
+					"slug": "paper",
+					"color": "#FFFFFF",
+					"name": "Slip paper"
+				}
+			]
+		}
+	}
+}

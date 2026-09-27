@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dial status, sold",
+	"slug": "dial-sold",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent-2"
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "600"
+		},
+		"css": "&{display:inline-flex;align-items:center;gap:.5em}&::before{content:\"\";width:1.1em;height:1.1em;border-radius:50%;background:var(--wp--preset--color--accent-2)}"
+	}
+}
