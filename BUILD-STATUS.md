@@ -6,7 +6,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 
 | # | Slug | Idea | Brief from the owner | Status | Demo |
 |---|---|---|---|---|---|
-| 1 | ink | 001 Illustrator portfolio + shop | as researched | todo | |
+| 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
 | 2 | oil | 002 Painter, studio and available works | as researched | todo | |
 | 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | todo | |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
@@ -64,3 +64,4 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 4. Push to GitHub, deploy each demo to Cloudflare Pages.
 
 ## Log
+- 2026-09-27: tooling done (fonts, images, blocks lib, normaliser, test harness, static export, deploy). `ink` passes 30/30 and is live. Repo: https://github.com/sampler321/wp-oss. 49 themes sent to 10 builders.

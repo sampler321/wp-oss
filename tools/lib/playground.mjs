@@ -26,6 +26,8 @@ export function blueprintFor(slug, { local = true, repo = 'sampler321/wp-oss', r
     steps.push({ step: 'activateTheme', themeFolderName: slug });
   } else {
     steps.push({ step: 'installTheme', themeData: { resource: 'git:directory', url: `https://github.com/${repo}`, ref, path: `themes/${slug}` }, options: { activate: true, targetFolderName: slug } });
+    steps.push({ step: 'mkdir', path: '/wordpress/wp-content/demo-data' });
+    steps.push({ step: 'mkdir', path: '/wordpress/wp-content/demo-lib' });
     steps.push({ step: 'writeFile', path: '/wordpress/wp-content/demo-data/content.json', data: { resource: 'url', url: `https://raw.githubusercontent.com/${repo}/${ref}/demos/${slug}/content.json` } });
     steps.push({ step: 'writeFile', path: '/wordpress/wp-content/demo-lib/demo-builder.php', data: { resource: 'url', url: `https://raw.githubusercontent.com/${repo}/${ref}/tools/lib/demo-builder.php` } });
   }

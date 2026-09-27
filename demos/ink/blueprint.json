@@ -33,6 +33,14 @@
       }
     },
     {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/demo-data"
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/demo-lib"
+    },
+    {
       "step": "writeFile",
       "path": "/wordpress/wp-content/demo-data/content.json",
       "data": {
