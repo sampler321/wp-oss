@@ -237,6 +237,14 @@
 			"radius": true,
 			"style": true,
 			"width": true
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -461,9 +469,10 @@
 					"style": "solid",
 					"color": "var:preset|color|contrast"
 				},
-				"filter": {
-					"duotone": "var:preset|duotone|red-print"
-				}
+				"color": {
+					"background": "var:preset|color|accent"
+				},
+				"css": "& img{filter:grayscale(1) contrast(1.15) brightness(1.1);mix-blend-mode:screen}"
 			},
 			"core/separator": {
 				"color": {

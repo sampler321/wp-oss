@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Dutch and English, new in every Tuesday.</p>
+<p class="">Dutch and English, new in every Tuesday.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Bandes dessinées, manga and small-press zines.</p>
+<p class="">Bandes dessinées, manga and small-press zines.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sorted by age, 0 to 14.</p>
+<p class="">Sorted by age, 0 to 14.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -42,7 +42,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Upstairs by the window. Everything €5 or less.</p>
+<p class="">Upstairs by the window. Everything €5 or less.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

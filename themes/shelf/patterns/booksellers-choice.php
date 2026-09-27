@@ -5,9 +5,9 @@
  * Categories: featured
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-framed","style":{"color":{"duotone":"var:preset|duotone|red-print"}}} -->
+<!-- wp:columns {"align":"wide","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|red-print"}},"className":"is-style-framed","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large is-style-framed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/portrait.jpg' ) ); ?>" alt="Woodcut portrait of an old man with a long curling beard"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -22,7 +22,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bram has pushed this into the hands of eleven customers so far. A retired doctor in Delfshaven decides to grow the longest beard in the Netherlands and the whole street gets involved. It's very funny and then it isn't.</p>
+<p class="">Bram has pushed this into the hands of eleven customers so far. A retired doctor in Delfshaven decides to grow the longest beard in the Netherlands and the whole street gets involved. It's very funny and then it isn't.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

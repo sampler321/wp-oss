@@ -6,7 +6,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 
 | # | Slug | Idea | Brief from the owner | Status | Demo |
 |---|---|---|---|---|---|
-| 1 | ink | 001 Illustrator portfolio + shop | as researched | deployed | https://wposs-ink.b-j-kapica.workers.dev |
+| 1 | ink | 001 Illustrator portfolio + shop | as researched | tested |  |
 | 2 | oil | 002 Painter, studio and available works | as researched | deployed | https://wposs-oil.b-j-kapica.workers.dev |
 | 3 | kiln | 006 Ceramicist, shop updates and kiln openings | as researched | deployed (HTTP 404) | https://wposs-kiln.b-j-kapica.workers.dev |
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
@@ -36,8 +36,8 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed | https://wposs-larder.b-j-kapica.workers.dev |
 | 30 | roast | 059 Specialty coffee roaster | as researched | deployed (HTTP 404) | https://wposs-roast.b-j-kapica.workers.dev |
-| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | tested |  |
-| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
+| 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | deployed | https://wposs-shelf.b-j-kapica.workers.dev |
+| 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | tested |  |
 | 33 | thrift | 062 Vintage clothing | as researched | deployed (HTTP 404) | https://wposs-thrift.b-j-kapica.workers.dev |
 | 34 | paper | 067 Stationery and paper goods | as researched | deployed (HTTP 404) | https://wposs-paper.b-j-kapica.workers.dev |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |

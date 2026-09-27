@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>You only need their name and country. We send them a card with a link to the questionnaire, and the first book goes out once they've filled it in. If they never do, we pick anyway.</p>
+<p class="">You only need their name and country. We send them a card with a link to the questionnaire, and the first book goes out once they've filled it in. If they never do, we pick anyway.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

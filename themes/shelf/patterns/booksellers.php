@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Picture books, comics, anything with a monster in it. Runs the Saturday story hour.</p>
+<p class="">Picture books, comics, anything with a monster in it. Runs the Saturday story hour.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Owner since 2011. Crime, Rotterdam history and long novels about ships.</p>
+<p class="">Owner since 2011. Crime, Rotterdam history and long novels about ships.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Runs the book-a-month subscriptions. Reads about 200 books a year and remembers all of them.</p>
+<p class="">Runs the book-a-month subscriptions. Reads about 200 books a year and remembers all of them.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -42,7 +42,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Saturdays and the second-hand buying. Poetry and anything translated from Polish.</p>
+<p class="">Saturdays and the second-hand buying. Poetry and anything translated from Polish.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Gig date",
+	"slug": "gig-date",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|x-large",
+			"lineHeight": "0.9"
+		},
+		"color": {
+			"text": "var:preset|color|accent"
+		}
+	}
+}

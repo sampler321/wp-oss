@@ -1,0 +1,64 @@
+<?php
+/**
+ * Title: Opening hours (ruled rows)
+ * Slug: shelf/opening-hours
+ * Categories: visit
+ */
+?>
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
+<p class="">Tuesday to Saturday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"9rem"} -->
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
+<p class="">10:00 to 18:00</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
+<p class="">Thursday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"9rem"} -->
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
+<p class="">until 21:00</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
+<p class="">Sunday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"9rem"} -->
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
+<p class="">12:00 to 17:00</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
+<p class="">Monday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"9rem"} -->
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
+<p class="">Closed</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

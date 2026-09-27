@@ -54,6 +54,24 @@
    "title": "About the shop",
    "pattern": "shelf/about-page",
    "template": "page-wide"
+  },
+  {
+   "slug": "ordering",
+   "title": "Ordering and delivery",
+   "pattern": "shelf/ordering-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "kids",
+   "title": "Kids and schools",
+   "content": "<!-- wp:pattern {\"slug\":\"shelf/kids-corner\"} /-->\n\n<!-- wp:pattern {\"slug\":\"shelf/story-hour\"} /-->\n\n<!-- wp:pattern {\"slug\":\"shelf/school-orders\"} /-->\n\n<!-- wp:pattern {\"slug\":\"shelf/talker-card\"} /-->",
+   "template": "page-wide"
+  },
+  {
+   "slug": "comics",
+   "title": "Comics and zines",
+   "content": "<!-- wp:pattern {\"slug\":\"shelf/comics-shelf\"} /-->\n\n<!-- wp:pattern {\"slug\":\"shelf/hero-kraken\"} /-->\n\n<!-- wp:pattern {\"slug\":\"shelf/talker-row\"} /-->",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -67,7 +85,7 @@
    ],
    "image": "portrait.jpg",
    "excerpt": "A retired doctor in Delfshaven decides to grow the longest beard in the country, and his whole street gets involved.",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Anna Kruit, €24.95, hardback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A retired doctor in Delfshaven decides to grow the longest beard in the country, and his whole street gets involved. It is very funny for two hundred pages and then it isn't. I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Anna Kruit, €24.95, hardback</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A retired doctor in Delfshaven decides to grow the longest beard in the country, and his whole street gets involved. It is very funny for two hundred pages and then it isn't. I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">I've sold eleven and I want to sell a hundred.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:pattern {\"slug\":\"shelf/bookseller-profile\"} /-->"
   },
   {
    "title": "The Squid Who Couldn't Swim",
@@ -79,7 +97,7 @@
    ],
    "image": "kraken.jpg",
    "excerpt": "I read this to my nephew four times in one weekend.",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Lotte van Dijk, €16.95, ages 4 to 8</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I read this to my nephew four times in one weekend. The jellyfish choir spread is the best page I've seen this year. Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Lotte van Dijk, €16.95, ages 4 to 8</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I read this to my nephew four times in one weekend. The jellyfish choir spread is the best page I've seen this year. Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Lotte reads it in the shop on 8 October.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:pattern {\"slug\":\"shelf/story-hour\"} /-->"
   },
   {
    "title": "The Owl Year",
@@ -116,7 +134,7 @@
    ],
    "image": "rotterdam.jpg",
    "excerpt": "The Rotterdam docks in 1940, told by a crane operator.",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Joris Pieters, €22.50, hardback, signed</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The Rotterdam docks in 1940, told by a crane operator. Slow for fifty pages, then you won't put it down. This is the reading group book for November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">This is the reading group book for November.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Joris Pieters, €22.50, hardback, signed</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The Rotterdam docks in 1940, told by a crane operator. Slow for fifty pages, then you won't put it down. This is the reading group book for November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">This is the reading group book for November.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:pattern {\"slug\":\"shelf/reading-group\"} /-->"
   },
   {
    "title": "The Crocodile in the Cellar",
@@ -139,7 +157,7 @@
    ],
    "image": "cat.jpg",
    "excerpt": "Our own zine, about our own cat.",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Written by Samira, drawn by Kees Bos, €12.50</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Our own zine, about our own cat. Sixteen pages, risograph printed in red. All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Written by Samira, drawn by Kees Bos, €12.50</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Our own zine, about our own cat. Sixteen pages, risograph printed in red. All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">All profits go to the Rotterdam cat shelter on Kleiweg.</p>\n<!-- /wp:paragraph --><cite>Samira, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:pattern {\"slug\":\"shelf/loyalty-card\"} /-->"
   },
   {
    "title": "Anna Kruit in conversation, 16 October",
@@ -150,7 +168,7 @@
    ],
    "image": "portrait.jpg",
    "excerpt": "Anna talks to Bram about beards, Delfshaven and writing a funny book about grief.",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Thursday 16 October, 20:00, €7.50 or free with the book</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Anna talks to Bram about beards, Delfshaven and writing a funny book about grief. Signing after. Chairs for 40. Book at the till or by email.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Book at the till or by email.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\"><strong>Thursday 16 October, 20:00, €7.50 or free with the book</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Anna talks to Bram about beards, Delfshaven and writing a funny book about grief. Signing after. Chairs for 40. Book at the till or by email.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Book at the till or by email.</p>\n<!-- /wp:paragraph --><cite>Bram, bookseller</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"/shop/\">Buy it from the shop</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:pattern {\"slug\":\"shelf/event-detail\"} /-->",
    "template": "single-event"
   }
  ],
@@ -170,6 +188,14 @@
   {
    "label": "Events",
    "url": "/events/"
+  },
+  {
+   "label": "Kids",
+   "url": "/kids/"
+  },
+  {
+   "label": "Ordering",
+   "url": "/ordering/"
   },
   {
    "label": "Visit",

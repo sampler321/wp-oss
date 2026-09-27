@@ -5,15 +5,15 @@
  * Categories: call-to-action
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-ink","layout":{"type":"default"},"anchor":"newsletter"} -->
-<div class="wp-block-group alignwide is-style-ink" id="newsletter"><!-- wp:columns {"verticalAlignment":"center"} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"60%"} -->
+<!-- wp:group {"anchor":"newsletter","align":"wide","className":"is-style-ink","layout":{"type":"default"}} -->
+<div id="newsletter" class="wp-block-group alignwide is-style-ink"><!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:heading -->
 <h2 class="wp-block-heading">The Friday email</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>New yellow cards, this week's events and one thing we're annoyed about. Every Friday at 8. From Noor, not a machine.</p>
+<p class="">New yellow cards, this week's events and one thing we're annoyed about. Every Friday at 8. From Noor, not a machine.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

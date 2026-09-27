@@ -73,6 +73,7 @@ theme = {
         },
         'shadow': {'defaultPresets': False, 'presets': [{'slug': 'print', 'name': 'Hard print shadow', 'shadow': '6px 6px 0 0 #111111'}]},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -108,7 +109,7 @@ theme = {
             'core/post-date': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'fontWeight': '700'}, 'color': {'text': 'var:preset|color|muted'}},
             'core/post-terms': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'fontWeight': '800'}},
             'core/image': {'border': {'radius': '0'}},
-            'core/post-featured-image': {'border': {'radius': '0', 'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'filter': {'duotone': 'var:preset|duotone|red-print'}},
+            'core/post-featured-image': {'border': {'radius': '0', 'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'color': {'background': 'var:preset|color|accent'}, 'css': '& img{filter:grayscale(1) contrast(1.15) brightness(1.1);mix-blend-mode:screen}'},
             'core/separator': {'color': {'text': 'var:preset|color|contrast'}, 'border': {'width': '3px 0 0 0'}},
             'core/quote': {'typography': {'fontSize': 'var:preset|font-size|large', 'fontWeight': '700', 'lineHeight': '1.35'}, 'color': {'background': 'var:preset|color|accent-2'},
                            'border': {'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'shadow': 'var:preset|shadow|print',
@@ -260,7 +261,7 @@ write('parts/footer.html', group(J(
 # ---------------- templates
 T = lambda inner, t=50, b=70: page_template(inner, style=PAD(t, b))
 write('templates/front-page.html', T(J(
-    pattern_ref('hero-kraken'), pattern_ref('staff-picks'), pattern_ref('events-gig-list'), pattern_ref('subscription-explainer'), pattern_ref('visit-us')), 20, 0))
+    pattern_ref('hero-this-month'), pattern_ref('staff-picks'), pattern_ref('new-in'), pattern_ref('events-gig-list'), pattern_ref('print-band'), pattern_ref('subscription-explainer'), pattern_ref('visit-us')), 20, 0))
 pattern('picks-archive', 'Staff picks (inherits the page query)', 'query', inherit_query(pick_card, layout=GRID(3), template_class='is-style-talker-list', align='wide'), inserter=False)
 write('templates/home.html', T(J(
     heading('Staff picks', 1, align='wide', fontSize='display'),
@@ -283,8 +284,8 @@ write('templates/single.html', single('More from the yellow cards'))
 write('templates/single-event.html', single('Also on the shelf'))
 
 # ---------------- patterns
-pattern('hero-kraken', 'Hero: kraken and big type', 'featured', columns(
-    ('55%', J(heading('Books with teeth', 1, fontSize='display'),
+pattern('hero-kraken', 'Hero: kraken and big type', 'hero', columns(
+    ('55%', J(heading('Books with teeth', 2, fontSize='display'),
               para('De Inktvis is an independent bookshop on the Nieuwe Binnenweg. Eleven thousand books, four booksellers, one shop cat called Pim. We pick what we stock, and we\'ll order anything else by the next day.', fontSize='large'),
               buttons(('See this month\'s picks', '/picks/'), ('Get a book a month', '/subscriptions/', {'className': 'is-style-outline'})))),
     (None, J(art('kraken.jpg', 'Engraving of a giant octopus rising from a rough sea beside a steamship'),
@@ -329,7 +330,7 @@ pattern('event-detail', 'Event detail (when, where, ticket)', 'events', J(
     table([['When', 'Thursday 16 October, 20:00 to 21:30. Doors 19:30.'], ['Where', 'In the shop, ground floor, step-free'], ['Tickets', '€7.50, or free if you buy the book that night'], ['Signing', 'After the talk. Bring any of Anna\'s books.']]),
     buttons(('Email for a ticket', 'mailto:winkel@example.com?subject=Anna%20Kruit%20tickets'))))
 
-pattern('events-page', 'Page: events', 'events', J(pattern_ref('events-gig-list'), pattern_ref('event-detail'), pattern_ref('reading-group')), block_types='core/post-content')
+pattern('events-page', 'Page: events', 'events', J(pattern_ref('events-gig-list'), pattern_ref('event-detail'), pattern_ref('reading-group'), pattern_ref('story-hour')), block_types='core/post-content')
 
 pattern('reading-group', 'Reading group', 'events', group(J(
     heading('The Thursday reading group', 3),
@@ -417,9 +418,9 @@ pattern('about-page', 'Page: about the shop', 'about', J(
             (None, J(para('Bram de Wit opened De Inktvis in 2011 in a former fishmonger\'s, which is where the name and the tiled back wall come from.', fontSize='large'),
                      para('We\'re four booksellers and a cat. We stock about 11,000 books, choose every one of them, and we\'ll order anything we don\'t have by the next day. Half our customers come in for one book and leave with three, which is the plan.'),
                      para('We don\'t sell e-readers and we don\'t price-match. We do wrap presents for free.'))), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
-    pattern_ref('booksellers'), pattern_ref('shipping-times')), block_types='core/post-content')
+    pattern_ref('booksellers'), pattern_ref('bookseller-profile'), pattern_ref('signed-club'), pattern_ref('signed-shelf')), block_types='core/post-content')
 
-pattern('visit-page', 'Page: visit', 'contact', J(pattern_ref('visit-us'), pattern_ref('newsletter')), block_types='core/post-content')
+pattern('visit-page', 'Page: visit', 'visit', J(pattern_ref('visit-us'), pattern_ref('contact-block'), pattern_ref('faq'), pattern_ref('newsletter')), block_types='core/post-content')
 
 pattern('newsletter', 'Friday email', 'call-to-action', group(columns(
     ('60%', J(heading('The Friday email', 2), para('New yellow cards, this week\'s events and one thing we\'re annoyed about. Every Friday at 8. From Noor, not a machine.'))),
@@ -436,6 +437,102 @@ pattern('shop-sections', 'Shop sections (links)', 'shop', grid(J(
     group(J(heading('<a href="/shop/">Kids</a>', 3), para('Sorted by age, 0 to 14.')), className='is-style-talker'),
     group(J(heading('<a href="/shop/">Second-hand</a>', 3), para('Upstairs by the window. Everything €5 or less.')), className='is-style-talker')),
     min_width='12rem', align='wide', style={'spacing': {'blockGap': 'var:preset|spacing|50'}}))
+
+# ---------------- round 2: fewer tables, a bigger kit, a hero that opens on the book of the month
+section('ruled', 'Ruled row', ['core/columns', 'core/group'], {'border': {'bottom': {'color': 'var:preset|color|contrast', 'width': '3px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}}, 'css': '& p{margin:0}'})
+section('gig-date', 'Gig date', ['core/paragraph'], {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|x-large', 'lineHeight': '0.9'}, 'color': {'text': 'var:preset|color|accent'}})
+
+def rrow(cells, widths, first_bold=True):
+    return columns(*[(w, para(c, style={'typography': {'fontWeight': '800'}} if (i == 0 and first_bold) else {})) for i, (w, c) in enumerate(zip(widths, cells))], className='is-style-ruled', isStackedOnMobile=False, style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}, 'margin': {'top': '0', 'bottom': '0'}}})
+
+HOURS = [['Tuesday to Saturday', '10:00 to 18:00'], ['Thursday', 'until 21:00'], ['Sunday', '12:00 to 17:00'], ['Monday', 'Closed']]
+pattern('opening-hours', 'Opening hours (ruled rows)', 'visit', group(J(*[rrow(h, [None, '9rem']) for h in HOURS]), style={'spacing': {'blockGap': '0'}}))
+
+pattern('visit-us', 'Visit us (address, hours, map)', 'visit', group(columns(
+    ('45%', art('rotterdam.jpg', 'Old hand-coloured map of Rotterdam with canals and polders', 'Rotterdam in 1340, roughly. The shop is off the map, to the west.')),
+    (None, J(heading('Come in', 2, fontSize='xx-large'), pattern_ref('opening-hours'),
+             para('Nieuwe Binnenweg 112, 3015 BH Rotterdam. Tram 4 to Heemraadsplein, or ten minutes\' walk from Rotterdam Centraal. Step-free on the ground floor, which is where most of the books are.'),
+             para('Pim the cat sleeps in the travel section. Please don\'t pick him up.', style={'typography': {'fontWeight': '800'}}))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}), align='full', className='is-style-newsprint', layout={'type': 'constrained', 'contentSize': '1320px'}))
+
+def gig(date, what, when, link):
+    return columns(('8rem', para(date, className='is-style-gig-date')), (None, J(para(what, fontFamily='display', fontSize='large'), para(when, fontSize='small'))), ('9rem', para(link, style={'typography': {'fontWeight': '800'}})),
+                   className='is-style-ruled', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}, 'margin': {'top': '0', 'bottom': '0'}}})
+pattern('events-gig-list', 'Events (gig poster list)', 'events', group(J(
+    heading('On in the shop', 2, fontSize='xx-large'),
+    group(J(*[gig(*e) for e in EVENTS]), style={'spacing': {'blockGap': '0'}}),
+    para('Events are on the ground floor, step-free. Chairs for 40. Tickets at the till or by email.', fontSize='small')),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('event-detail', 'Event detail (when, where, ticket)', 'events', J(
+    group(J(*[rrow(r, ['8rem', None]) for r in [['When', 'Thursday 16 October, 20:00 to 21:30. Doors 19:30.'], ['Where', 'In the shop, ground floor, step-free'], ['Tickets', '€7.50, or free if you buy the book that night'], ['Signing', 'After the talk. Bring any of Anna\'s books.']]]), style={'spacing': {'blockGap': '0'}}),
+    buttons(('Email for a ticket', 'mailto:winkel@example.com?subject=Anna%20Kruit%20tickets'))))
+
+SIGNED = [('portrait.jpg', 'Woodcut portrait of a bearded man', 'The Long Beard of Doctor Visser', 'Anna Kruit, hardback', '€24.95'), ('rotterdam.jpg', 'Old map of Rotterdam', 'Paper Harbour', 'Joris Pieters, hardback', '€22.50'), ('kraken.jpg', 'Engraving of a giant octopus', 'The Squid Who Couldn\'t Swim', 'Lotte van Dijk, hardback', '€16.95')]
+def book_card(img, alt, t, a, p_):
+    return group(J(art(img, alt), heading(t, 3, fontSize='large'), para(a, fontSize='small'), para(p_, style={'typography': {'fontWeight': '800'}}, textColor='accent')), style={'spacing': {'blockGap': 'var:preset|spacing|20'}})
+pattern('signed-shelf', 'Signed books shelf', 'shop', J(heading('Signed on the shelf now', 3), grid(J(*[book_card(*b) for b in SIGNED]), min_width='14rem', style={'spacing': {'blockGap': 'var:preset|spacing|50'}}), para('Signed in the shop. They go fast after an event.', fontSize='small')))
+
+pattern('hero-this-month', 'Hero: the book of the month', 'hero', columns(
+    ('42%', J(art('portrait.jpg', 'Woodcut portrait of an old man with a long curling beard'), group(para('Anna Kruit in the shop, 16 Oct'), className='is-style-sticker'))),
+    (None, J(para('October\'s big one, picked by Bram', fontSize='small', style={'typography': {'fontWeight': '800'}}, textColor='accent'),
+             heading('The Long Beard of Doctor Visser', 1, fontSize='display'),
+             para('A retired doctor in Delfshaven grows the longest beard in the Netherlands and his whole street gets involved. Very funny, then it isn\'t. Anna Kruit, hardback, €24.95, signed copies at the till.', fontSize='large'),
+             buttons(('Buy it', '/shop/'), ('Book for the reading', '/anna-kruit-event/', {'className': 'is-style-outline'})),
+             para('De Inktvis, independent bookshop, Nieuwe Binnenweg 112. Open today until 18:00.', fontSize='small'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}, 'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|70'}}}))
+
+pattern('new-in', 'New in this week', 'shop', group(J(
+    row(J(heading('New in this week', 2), para('<a href="/shop/">Everything in the shop</a>')), justify='space-between'),
+    grid(J(*[book_card(*b) for b in [('owl.jpg', 'Plate of small owls on branches', 'The Owl Year', 'Freya Marsh, paperback', '€19.99'), ('fox.jpg', 'A painted fox', 'Fox Weather', 'Tomás Reyes, paperback', '€18.50'),
+                                     ('crocodile.jpg', 'Engraving of a crocodile', 'The Crocodile in the Cellar', 'Mei Tanaka, paperback', '€14.99'), ('cat.jpg', 'Illustration of a cat drinking from a dish', 'Pim Reads', 'Our own zine', '€12.50')]]),
+         min_width='12rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})), align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('print-band', 'Print band (engravings, open large)', 'gallery', grid(J(art('kraken.jpg', 'Engraving of a giant octopus'), art('owl.jpg', 'Owls on branches'), art('crocodile.jpg', 'Engraving of a crocodile'), art('fox.jpg', 'A painted fox')), min_width='12rem', align='wide', style={'spacing': {'blockGap': 'var:preset|spacing|40'}}),
+        description='A strip of house illustrations in red print. Click any one to see it large.')
+
+pattern('bookseller-profile', 'Bookseller profile', 'about', columns(
+    ('35%', art('portrait.jpg', 'Woodcut portrait of a bearded man')),
+    (None, J(heading('Bram de Wit', 3), para('Owner since 2011', fontSize='small', textColor='accent', style={'typography': {'fontWeight': '800'}}),
+             para('Reads crime, Rotterdam history and long novels about ships. Will talk to you about Simenon for as long as you let him. His yellow cards are the ones with the bad handwriting.'),
+             para('<a href="/picks/">Bram\'s picks</a>'))), verticalAlignment='center'))
+
+pattern('loyalty-card', 'Stamp card', 'shop', group(J(
+    heading('The stamp card', 3), para('One stamp per book, in the shop or online. Ten stamps and the next book is 20% off. The card is red, it lives in your wallet, and yes, we\'ll look up your stamps if you lose it.')), className='is-style-talker'))
+
+pattern('order-anything', 'We order any book', 'shop', group(columns(
+    ('60%', J(heading('Not on the shelf? We\'ll get it tomorrow', 2), para('Any book in print from a Dutch or English publisher, in the shop the next working day if you order before 15:00. Same price as online, and you can pick it up or have it posted.'))),
+    (None, buttons(('Ask us for a book', 'mailto:winkel@example.com?subject=Order'))), verticalAlignment='center'), align='wide', className='is-style-red', layout={'type': 'default'}))
+
+pattern('gift-wrap', 'Free gift wrapping', 'shop', group(J(heading('We wrap for free', 3), para('In our red paper with a black sticker, at the till or on online orders if you tick the box. Takes two minutes. We don\'t do bows.')), className='is-style-newsprint'))
+
+pattern('school-orders', 'Schools and book clubs', 'services', columns(
+    (None, J(heading('Schools', 3), para('Class sets at 15% off, delivered to the school by bike within Rotterdam. Samira visits for a reading once a term if you ask nicely.'))),
+    (None, J(heading('Book clubs', 3), para('Eight or more copies of one title: 10% off, and we\'ll hold them until your club collects.')))))
+
+pattern('story-hour', 'Saturday story hour', 'events', group(columns(
+    ('35%', art('hare.jpg', 'Nursery illustration of a hare chasing a hunter')),
+    (None, J(heading('Story hour, Saturdays 11:00', 3), para('Samira reads three picture books in the back room, then everyone draws. Ages 3 to 7, free, no booking. Parents get coffee.'))), verticalAlignment='center'), className='is-style-talker'))
+
+pattern('comics-shelf', 'Comics and zines', 'shop', group(J(
+    heading('The comics wall', 2),
+    para('Bandes dessinées, manga, small-press zines and a box of Rotterdam risograph comics by the door. Wessel orders two new small-press titles every week. Zines from €3.'),
+    buttons(('See the comics in the shop', '/shop/'))), className='is-style-ink', align='wide', layout={'type': 'constrained'}))
+
+pattern('faq', 'Questions people ask at the till', 'faq', J(
+    heading('Questions people ask at the till', 3),
+    details('Can I return a book?', para('Within 14 days with the receipt, if it\'s unread. Signed copies can\'t be returned.')),
+    details('Do you buy second-hand books?', para('Wednesdays 14:00 to 17:00. See <a href="/sell-us-your-books/">Sell us your books</a>.')),
+    details('Can I pay by card?', para('Card, phone or cash. No minimum.')),
+    details('Is the shop accessible?', para('The ground floor is step-free and has most of the books. Upstairs is second-hand only, and we\'ll bring things down for you.'))))
+
+pattern('contact-block', 'Contact (address, phone, email)', 'visit', columns(
+    (None, J(heading('Address', 4), para('Nieuwe Binnenweg 112<br>3015 BH Rotterdam'))),
+    (None, J(heading('Phone', 4), para('010 234 56 78<br>During opening hours'))),
+    (None, J(heading('Email', 4), para('<a href="mailto:winkel@example.com">winkel@example.com</a><br>We answer within a day')))))
+
+pattern('ordering-page', 'Page: ordering and delivery', 'shop', J(
+    pattern_ref('order-anything'), pattern_ref('shipping-times'), columns((None, pattern_ref('gift-wrap')), (None, pattern_ref('loyalty-card')), align='wide'), pattern_ref('school-orders'), pattern_ref('faq')), block_types='core/post-content')
 
 print('shelf: patterns written')
 
@@ -460,6 +557,10 @@ posts = [
     pick('Anna Kruit in conversation, 16 October', 'anna-kruit-event', 'Thursday 16 October, 20:00, €7.50 or free with the book', 'Anna talks to Bram about beards, Delfshaven and writing a funny book about grief. Signing after. Chairs for 40. Book at the till or by email.', 'Bram', 'portrait.jpg', ['Events'], cat='events', template='single-event'),
 ]
 
+EXTRA = {'anna-kruit-event': ['event-detail'], 'long-beard-doctor-visser': ['bookseller-profile'], 'paper-harbour': ['reading-group'], 'squid-who-couldnt-swim': ['story-hour'], 'pim-reads': ['loyalty-card']}
+for p_ in posts:
+    p_['content'] = J(p_['content'], *[pattern_ref(x) for x in EXTRA.get(p_['slug'], [])])
+
 products = [
     {'name': 'The Long Beard of Doctor Visser, Anna Kruit (signed hardback)', 'price': '24.95', 'image': 'portrait.jpg', 'category': 'Fiction', 'sku': 'INK-9789000001', 'stock': 11, 'short': 'Signed at the shop. Hardback, 312 pages.'},
     {'name': 'Paper Harbour, Joris Pieters (hardback)', 'price': '22.50', 'image': 'rotterdam.jpg', 'category': 'Fiction', 'sku': 'INK-9789000002', 'stock': 6, 'short': 'Novel of the Rotterdam docks, 1940. November\'s reading group book.'},
@@ -483,10 +584,13 @@ content = {
         {'slug': 'sell-us-your-books', 'title': 'Sell us your books', 'pattern': 'shelf/sell-page'},
         {'slug': 'visit', 'title': 'Visit', 'pattern': 'shelf/visit-page', 'template': 'page-wide'},
         {'slug': 'about', 'title': 'About the shop', 'pattern': 'shelf/about-page', 'template': 'page-wide'},
+        {'slug': 'ordering', 'title': 'Ordering and delivery', 'pattern': 'shelf/ordering-page', 'template': 'page-wide'},
+        {'slug': 'kids', 'title': 'Kids and schools', 'content': J(pattern_ref('kids-corner'), pattern_ref('story-hour'), pattern_ref('school-orders'), pattern_ref('talker-card')), 'template': 'page-wide'},
+        {'slug': 'comics', 'title': 'Comics and zines', 'content': J(pattern_ref('comics-shelf'), pattern_ref('hero-kraken'), pattern_ref('talker-row')), 'template': 'page-wide'},
     ],
     'posts': posts,
     'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'Picks', 'url': '/picks/'}, {'label': 'Book a month', 'url': '/subscriptions/'},
-            {'label': 'Events', 'url': '/events/'}, {'label': 'Visit', 'url': '/visit/'}, {'label': 'About', 'url': '/about/'}],
+            {'label': 'Events', 'url': '/events/'}, {'label': 'Kids', 'url': '/kids/'}, {'label': 'Ordering', 'url': '/ordering/'}, {'label': 'Visit', 'url': '/visit/'}, {'label': 'About', 'url': '/about/'}],
     'currency': 'EUR',
     'products': products,
 }

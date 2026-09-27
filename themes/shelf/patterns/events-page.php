@@ -11,3 +11,5 @@
 <!-- wp:pattern {"slug":"shelf/event-detail"} /-->
 
 <!-- wp:pattern {"slug":"shelf/reading-group"} /-->
+
+<!-- wp:pattern {"slug":"shelf/story-hour"} /-->

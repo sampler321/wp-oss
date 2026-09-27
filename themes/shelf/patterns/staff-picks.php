@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/picks/">Every pick, every month</a></p>
+<p class=""><a href="/picks/">Every pick, every month</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -21,16 +21,16 @@
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-talker-list","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
 <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
 
-<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
 
-<!-- wp:post-excerpt {"moreText":"Read the whole note","excerptLength":30} /-->
+<!-- wp:post-excerpt {"excerptLength":30,"moreText":"Read the whole note"} /-->
 
-<!-- wp:post-terms {"term":"post_tag"} /-->
+<!-- wp:post-terms {"term":"post_tag","separator":", "} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>No picks on the shelf yet.</p>
+<p class="">No picks on the shelf yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>
