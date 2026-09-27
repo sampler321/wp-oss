@@ -10,6 +10,8 @@
 
 <!-- wp:pattern {"slug":"catalog/dubbing-process"} /-->
 
+<!-- wp:pattern {"slug":"catalog/label-history"} /-->
+
 <!-- wp:pattern {"slug":"catalog/tape-formats-explained"} /-->
 
 <!-- wp:pattern {"slug":"catalog/stockists"} /-->

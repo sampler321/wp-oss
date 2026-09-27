@@ -5,13 +5,13 @@
  * Categories: call-to-action
  */
 ?>
-<!-- wp:group {"className":"is-style-inlay","layout":{"type":"constrained"},"anchor":"newsletter"} -->
+<!-- wp:group {"className":"is-style-inlay","anchor":"newsletter","layout":{"type":"constrained"}} -->
 <div id="newsletter" class="wp-block-group is-style-inlay"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">The mailing list</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>One email about a month: what is out, what is left, and when pre-orders open. Editions of 100 go in about a week, so this is how most people get one.</p>
+<p class="">One email about a month: what is out, what is left, and when pre-orders open. Editions of 100 go in about a week, so this is how most people get one.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

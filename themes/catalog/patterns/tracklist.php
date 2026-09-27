@@ -15,13 +15,9 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Salt rooms (part one), 11:40</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Harbour lamp, 4:12</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Kelp, drying, 6:03</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
@@ -35,9 +31,7 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Salt rooms (part two), 14:55</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>The shore at 5am, 5:31</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>

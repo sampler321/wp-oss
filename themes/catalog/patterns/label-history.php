@@ -1,92 +1,62 @@
 <?php
 /**
- * Title: Artist roster with cat nos
- * Slug: catalog/artist-roster
+ * Title: Label history by year
+ * Slug: catalog/label-history
  * Categories: about
  */
 ?>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How it went</h3>
+<!-- /wp:heading -->
+
 <!-- wp:group {"className":"is-style-defs","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-defs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Bonnie Rigg</p>
+<p class="">2016</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Songs for guitar and a bad Casio</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 037</p>
+<p class="">40 copies of Mira's loops for a gig. All sold.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Harbour Choir</p>
+<p class="">2018</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Eleven singers from Newhaven</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 035</p>
+<p class="">First vinyl, HISS 012, Low Fold. Took a year to sell 300.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Kasia Wren</p>
+<p class="">2021</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Shortwave recordings and piano</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 039</p>
+<p class="">Bought the second Nakamichi deck. Runs went from 50 to 100.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Low Fold</p>
+<p class="">2024</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Three-piece, drones and drums</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 034, 040, 042</p>
+<p class="">Kassettenkeller in Leipzig starts handling EU orders.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Mira Oduya</p>
+<p class="">2025</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Tape loops made at the seaside</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 033, 041</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Tam Boyd</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">Church organs, mostly out of tune</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 038</p>
+<p class="">Forty-one releases. Still in the spare room.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

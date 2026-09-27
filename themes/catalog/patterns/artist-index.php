@@ -17,7 +17,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/">Bonnie Rigg</a></p>
+<p class=""><a href="/artists/">Bonnie Rigg</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"className":"is-style-catno"} -->
@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/">Harbour Choir</a></p>
+<p class=""><a href="/artists/">Harbour Choir</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -35,7 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/">Kasia Wren</a></p>
+<p class=""><a href="/artists/">Kasia Wren</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"className":"is-style-catno"} -->
@@ -43,7 +43,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/">Low Fold</a></p>
+<p class=""><a href="/artists/">Low Fold</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -53,7 +53,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/mira-oduya/">Mira Oduya</a></p>
+<p class=""><a href="/artists/mira-oduya/">Mira Oduya</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"className":"is-style-catno"} -->
@@ -61,7 +61,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/artists/">Tam Boyd</a></p>
+<p class=""><a href="/artists/">Tam Boyd</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

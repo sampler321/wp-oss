@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: What C46, C60 and chrome mean
+ * Title: What C46, C60 and C90 mean
  * Slug: catalog/tape-formats-explained
  * Categories: text
  */
@@ -9,9 +9,55 @@
 <h3 class="wp-block-heading">Tape lengths, in case you were wondering</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Length</th><th>Per side</th><th>What we use it for</th></tr></thead><tbody><tr><td>C46</td><td>23 minutes a side</td><td>Most of our albums</td></tr><tr><td>C60</td><td>30 minutes a side</td><td>Longer records and compilations</td></tr><tr><td>C90</td><td>45 minutes a side</td><td>Compilations only. Thinner tape, more wobble</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-inlay","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-inlay"><!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size">C46</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">23 minutes a side</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Most of our albums.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-inlay","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-inlay"><!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size">C60</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">30 minutes a side</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Longer records and compilations.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-inlay","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-inlay"><!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size">C90</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">45 minutes a side</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Compilations only. Thinner tape, more wobble.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">All our tapes play on any normal cassette deck. Set it to chrome or Type II if it has the switch. If it does not, they still sound fine.</p>

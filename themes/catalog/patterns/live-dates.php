@@ -1,92 +1,68 @@
 <?php
 /**
- * Title: Artist roster with cat nos
- * Slug: catalog/artist-roster
- * Categories: about
+ * Title: Live dates for label artists
+ * Slug: catalog/live-dates
+ * Categories: events
  */
 ?>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Live</h3>
+<!-- /wp:heading -->
+
 <!-- wp:group {"className":"is-style-defs","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-defs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Bonnie Rigg</p>
+<p class="">8 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Songs for guitar and a bad Casio</p>
+<p class="">Hiss night: Mira Oduya, Low Fold</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">HISS 037</p>
+<p class="">Leith Depot, Edinburgh</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Harbour Choir</p>
+<p class="">15 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Eleven singers from Newhaven</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 035</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
 <p class="">Kasia Wren</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Shortwave recordings and piano</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 039</p>
+<p class="">Summerhall, Edinburgh</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Low Fold</p>
+<p class="">29 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Three-piece, drones and drums</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 034, 040, 042</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
 <p class="">Mira Oduya</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Tape loops made at the seaside</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">HISS 033, 041</p>
+<p class="">The Old Hairdressers, Glasgow</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p class="">Tam Boyd</p>
+<p class="">6 Dec</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Church organs, mostly out of tune</p>
+<p class="">Harbour Choir</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">HISS 038</p>
+<p class="">Newhaven Parish Church, free</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

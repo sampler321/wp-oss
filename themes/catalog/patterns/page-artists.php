@@ -6,7 +6,7 @@
  * Block Types: core/post-content
  */
 ?>
-<!-- wp:pattern {"slug":"catalog/artist-photos"} /-->
+<!-- wp:pattern {"slug":"catalog/artist-cards"} /-->
 
 <!-- wp:pattern {"slug":"catalog/artist-index"} /-->
 

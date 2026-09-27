@@ -9,28 +9,15 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('catalog')
-# Groups with padding/margin get their inline style written out, so the editor sees valid markup.
 import blocks as _B
-_orig_group = _B.group
-def _css_var(v):
-    return v.replace('var:preset|spacing|', 'var(--wp--preset--spacing--') + ')' if v.startswith('var:preset|spacing|') else v
-def _group_inline(inner, tag='div', layout='constrained', **attrs):
-    out = _orig_group(inner, tag=tag, layout=layout, **attrs)
-    sp = (attrs.get('style') or {}).get('spacing') or {}
-    decl = []
-    for prop in ('padding', 'margin'):
-        v = sp.get(prop)
-        if isinstance(v, dict):
-            for side in ('top', 'right', 'bottom', 'left'):
-                if side in v:
-                    decl.append('%s-%s:%s' % (prop, side, _css_var(v[side])))
-    if decl:
-        i = out.index('<%s class="' % tag)
-        j = out.index('>', i)
-        out = out[:j] + ' style="%s"' % ';'.join(decl) + out[j:]
+_orig_image = _B.image
+def _image_ratio(filename, alt, caption='', lightbox=True, href=None, **attrs):
+    out = _orig_image(filename, alt, caption, lightbox, href, **attrs)
+    if attrs.get('aspectRatio'):
+        out = out.replace('" alt="%s"/>' % alt, '" alt="%s" style="aspect-ratio:%s;object-fit:%s"/>' % (alt, attrs['aspectRatio'], attrs.get('scale', 'cover')), 1)
     return out
-_B.group = _group_inline
-group = _group_inline
+_B.image = _image_ratio
+image = _image_ratio
 S = THEME['slug']
 D = THEME['dir']
 
@@ -680,3 +667,175 @@ os.makedirs('demos/catalog', exist_ok=True)
 json.dump(content, open('demos/catalog/content.json', 'w'), indent=1, ensure_ascii=False)
 open('demos/catalog/fonts-claim.txt', 'w').write('display: Be Vietnam Pro (registry face for 039, unchanged)\n')
 print('catalog built')
+
+# ====================================================================== ROUND 2
+# Owner's review: fewer tables, lightbox on work, 40+ patterns, a home page with no table, and a demo that uses the kit.
+# Sections studied on Planet Mu, Clay Pipe Music, Fire Records, NNA Tapes and Bandcamp label pages.
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += ('.is-style-defs>.wp-block-group{border-top:1px solid var(--wp--preset--color--line);padding:.6em 0;gap:.4rem 1.5rem;margin:0!important}'
+                           '.is-style-defs>.wp-block-group:last-child{border-bottom:1px solid var(--wp--preset--color--line)}.is-style-defs p{margin:0}'
+                           '.is-style-defs>.wp-block-group>p:first-child{flex:0 0 9rem;font-weight:800}.is-style-defs>.wp-block-group>p:nth-child(2){flex:1 1 12rem}'
+                           '.is-style-cat-rows>.wp-block-group>p:first-child{color:var(--wp--preset--color--accent);letter-spacing:.04em}'
+                           '.is-style-cat-rows>.wp-block-group>p:nth-child(3){flex:1 1 14rem;font-weight:800}.is-style-cat-rows>.wp-block-group>p:nth-child(4){flex:0 0 11rem}'
+                           '@media (max-width:781px){.is-style-cat-rows>.wp-block-group>p:nth-child(4){display:none}}')
+wjson('theme.json', theme)
+
+def defs(rows, extra_cls=''):
+    """Definition-style rows made from groups (label, value, ...)."""
+    return group(J(*[row(J(*[para(c) for c in r]), wrap=True) for r in rows]), className=('is-style-defs ' + extra_cls).strip(), layout={'type': 'default'})
+
+# ---- tables replaced by designed rows
+pattern('artist-roster', 'Artist roster with cat nos', 'about', defs([
+    ['Bonnie Rigg', 'Songs for guitar and a bad Casio', 'HISS 037'], ['Harbour Choir', 'Eleven singers from Newhaven', 'HISS 035'],
+    ['Kasia Wren', 'Shortwave recordings and piano', 'HISS 039'], ['Low Fold', 'Three-piece, drones and drums', 'HISS 034, 040, 042'],
+    ['Mira Oduya', 'Tape loops made at the seaside', 'HISS 033, 041'], ['Tam Boyd', 'Church organs, mostly out of tune', 'HISS 038']]))
+pattern('artist-page', 'Artist page: bio, releases, dates', 'about', J(
+    columns(('40%', image('artist-4.jpg', 'Black and white photo of a grey-haired musician in sunglasses, sitting on a chair with arms crossed', 'Mira Oduya, photographed by Ruth Mackie')),
+            (None, J(heading('Mira Oduya', 1, fontSize='xx-large'),
+                     para('Mira Oduya (b. 1968, Aberdeen) makes long pieces from tape loops recorded along the Forth. She has two tapes on Hiss and one LP on a label in Ghent. She plays live about six times a year, always seated.'),
+                     heading('On Hiss', 4),
+                     defs([['HISS 041', '<a href="/salt-rooms/">Salt rooms</a>, 2025'], ['HISS 033', 'Cold frame, 2023, repress due March']], 'is-style-cat-rows'),
+                     heading('Live', 4),
+                     defs([['8 Nov', 'Leith Depot, Edinburgh', '<a href="/live/">Details</a>'], ['29 Nov', 'The Old Hairdressers, Glasgow', '<a href="/live/">Details</a>']]),
+                     buttons(('Read the press kit', '/artists/mira-oduya/press-kit/')))), align='wide')), block_types='core/post-content')
+pattern('release-credits', 'Release credits', 'release', J(heading('Credits', 4), defs([
+    ['Recorded', 'Portobello beach and a flat on Duke Street, winter 2024'], ['Mastered for tape', 'Rafe Lindsay at Chamber Studio'],
+    ['J-card', 'Callum Frew, riso printed at Out of the Blue'], ['Photo', 'Ruth Mackie']])))
+pattern('stockists', 'Where to find our tapes', 'shop', J(heading('Shops that stock us', 4), defs([
+    ['Edinburgh', 'Vinyl Villains, Elm Row'], ['Glasgow', 'Monorail, King Street'], ['Leipzig', 'Kassettenkeller (all EU orders)'],
+    ['London', 'Low Tide Tapes, Deptford'], ['Kyoto', 'Meditations, near Demachiyanagi']])))
+pattern('tape-formats-explained', 'What C46, C60 and C90 mean', 'text', J(
+    heading('Tape lengths, in case you were wondering', 3),
+    columns(*[(None, group(J(heading(n, 2, fontSize='xx-large'), para(side, fontSize='large'), para(use, fontSize='small')), className='is-style-inlay'))
+              for n, side, use in [('C46', '23 minutes a side', 'Most of our albums.'), ('C60', '30 minutes a side', 'Longer records and compilations.'), ('C90', '45 minutes a side', 'Compilations only. Thinner tape, more wobble.')]], align='wide'),
+    para('All our tapes play on any normal cassette deck. Set it to chrome or Type II if it has the switch. If it does not, they still sound fine.', fontSize='small')))
+pattern('release-schedule', 'Coming up: release schedule', 'release', J(heading('Coming up', 3), defs([
+    ['HISS 042', 'Low Fold', 'Night ferry', 'Out 14 November. <a href="/shop/">Pre-order</a>'], ['HISS 043', 'Harbour Choir', 'Winter hymns', 'December, being mastered'],
+    ['HISS 044', 'Kasia Wren', 'Long wave', 'February, being recorded']], 'is-style-cat-rows')))
+
+pattern('catalogue-list', 'Catalogue as ruled rows (no table)', 'release', group(J(
+    row(J(heading('The catalogue, newest first', 2, fontSize='x-large'), para('<a href="/catalogue/">Every release with sleeves</a>', fontSize='small')), justify='space-between'),
+    defs([[c, a, t, s] for c, a, t, f, e, s in CATALOGUE], 'is-style-cat-rows')), align='wide', layout={'type': 'default'}),
+    description='The catalogue as ruled rows: cat no, artist, title, status. Lighter than the full table.')
+
+# ---- new patterns
+pattern('release-feature', 'New release with pre-order', 'hero', columns(
+    ('45%', image('hero.jpg', 'A Maxell UDII 46 chrome cassette in its case on an orange cloth', 'Test pressing of HISS 042 on chrome tape')),
+    (None, J(para('HISS 042', className='is-style-catno', fontSize='large'), heading('Night ferry', 2), para('Low Fold', fontSize='large'),
+             para('Recorded on the Rosyth to Zeebrugge ferry the month before it stopped running. Drums in the car deck, guitars in a cabin. C46 in a grey shell, edition of 100, posting on 14 November.'),
+             buttons(('Pre-order the tape, £8', '/shop/'), ('Hear a track', '/salt-rooms/', {'className': 'is-style-outline'})))), align='wide'))
+
+pattern('formats-cards', 'Formats as cards with stamps', 'shop', columns(
+    (None, J(image('tapes-5.jpg', 'Two cassettes, a Sony and a clear TDK, on a wooden table', aspectRatio='4/3', scale='cover'), heading('C46 cassette', 4), para('Chrome tape, clear shell, riso J-card, download code. 100 copies.', fontSize='small'), para('£8', fontSize='large', className='is-style-catno'))),
+    (None, J(image('vinyl.jpg', 'A stack of LP sleeves seen from the side', aspectRatio='4/3', scale='cover'), heading('12" LP', 4), para('Black vinyl, printed inner sleeve. 300 copies.', fontSize='small'), para('£22', fontSize='large', className='is-style-catno'))),
+    (None, J(image('walkman.jpg', 'A black GE personal cassette player', aspectRatio='4/3', scale='cover'), heading('First run, orange shell', 4), para('Hand-stamped, numbered on the spine. 30 copies.', fontSize='small'), para('Sold out', className='is-style-sold-out'))),
+    align='wide'))
+
+pattern('listen-player', 'Listen: a track and a Bandcamp link', 'release', group(J(
+    heading('Listen', 4), audio('https://example.com/audio/hiss-041-harbour-lamp.mp3', caption='Harbour lamp, from HISS 041, 4:12'),
+    para('The whole album streams on <a href="https://bandcamp.com/">Bandcamp</a>. Buying the tape gets you the download too.', fontSize='small')), className='is-style-inlay'))
+
+pattern('physical-gallery', 'The physical tape, photographed', 'gallery', J(
+    heading('What arrives in the post', 4),
+    gallery([('tapes.jpg', 'Two cassettes side by side on a dark table', 'Shells come in six colours'), ('dubbing.jpg', 'A tape duplicator with its lid open', 'Test copies on the Copyette'),
+             ('deck.jpg', 'A portable Nakamichi cassette deck with two VU meters', 'One of the two decks we dub on')], columns=3, align='wide')))
+
+pattern('press-release', 'Press text for a release', 'release', group(J(
+    heading('Press text', 4),
+    para('Salt rooms is Mira Oduya\'s second tape for Hiss: two long pieces recorded at low tide on Portobello beach, looped on a Revox A77 and played back through a borrowed church PA. It follows Cold frame (HISS 033), which sold out in nine days.'),
+    para('For review copies and interviews, email <a href="mailto:press@example.com">press@example.com</a>. We send MP3s, not tapes, to press.', fontSize='small')), className='is-style-rule-top'))
+
+pattern('artist-cards', 'Artist cards with photos', 'about', columns(
+    (None, J(image('artist-4.jpg', 'Black and white portrait of Mira Oduya sitting with arms crossed'), heading('<a href="/artists/mira-oduya/">Mira Oduya</a>', 4), para('Tape loops, Portobello', fontSize='small'))),
+    (None, J(image('artist-2.jpg', 'Two guitarists playing on the floor of a small venue'), heading('<a href="/artists/">Low Fold</a>', 4), para('Drones and drums, Leith', fontSize='small'))),
+    (None, J(image('synth.jpg', 'A wall of modular synthesizer modules with patch cables'), heading('<a href="/artists/">Kasia Wren</a>', 4), para('Shortwave and piano, Glasgow', fontSize='small'))),
+    (None, J(image('reel.jpg', 'A grey reel-to-reel tape recorder with one spool loaded'), heading('<a href="/artists/">Tam Boyd</a>', 4), para('Church organs, Fife', fontSize='small'))),
+    align='wide'))
+
+pattern('label-night', 'Label night (event)', 'events', columns(
+    ('55%', image('crowd.jpg', 'A crowd at a concert with hands in the air under stage lights', 'The last Hiss night, March, Leith Depot')),
+    (None, J(para('Saturday 8 November, 7pm', className='is-style-catno', fontSize='large'), heading('Hiss at Leith Depot', 2),
+             para('Mira Oduya, Low Fold and a DJ set from the Harbour Choir\'s alto section. We launch HISS 042 on the night and the tape table opens at 7.'),
+             para('£8 on the door, £6 in advance. Step-free, bar till midnight.', fontSize='small'), buttons(('Get tickets', 'https://example.com/tickets')))),
+    align='wide'))
+
+pattern('live-dates', 'Live dates for label artists', 'events', J(heading('Live', 3), defs([
+    ['8 Nov', 'Hiss night: Mira Oduya, Low Fold', 'Leith Depot, Edinburgh'], ['15 Nov', 'Kasia Wren', 'Summerhall, Edinburgh'],
+    ['29 Nov', 'Mira Oduya', 'The Old Hairdressers, Glasgow'], ['6 Dec', 'Harbour Choir', 'Newhaven Parish Church, free']])))
+
+pattern('tape-club', 'Tape club subscription', 'shop', group(columns(
+    ('55%', J(heading('Every release, posted to you', 2), para('£30 a year and every new Hiss tape is posted to you on release day, before it goes on sale. That is usually five tapes, so it saves you £10 and the postage.', fontSize='large'),
+              buttons(('Join the tape club', '/shop/')))),
+    (None, lst(['Every release posted on the day it comes out', 'A download of everything in the back catalogue', 'First go at represses and the orange first runs', 'Cancel any time, no questions'])),
+    align='wide'), className='is-style-shell', align='full', layout={'type': 'constrained'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('order-faq', 'Ordering questions', 'shop', J(heading('Questions about orders', 3),
+    details('When will my tape arrive?', para('We post on Tuesdays and Fridays. In the UK that is two to four days after. Pre-orders post on release day.')),
+    details('Can I return a tape?', para('If it arrives broken or chewed, yes: send a photo and we post another. We cannot take back opened tapes otherwise, because we dub them to order.')),
+    details('Do you ship to the US?', para('Yes, £6 for up to three tapes. It takes one to two weeks and you may pay a small import fee.')),
+    details('Why is my download code on the J-card?', para('So it still works if you give the tape away. Redeem it on Bandcamp.'))))
+
+pattern('label-history', 'Label history by year', 'about', J(heading('How it went', 3), defs([
+    ['2016', '40 copies of Mira\'s loops for a gig. All sold.'], ['2018', 'First vinyl, HISS 012, Low Fold. Took a year to sell 300.'],
+    ['2021', 'Bought the second Nakamichi deck. Runs went from 50 to 100.'], ['2024', 'Kassettenkeller in Leipzig starts handling EU orders.'],
+    ['2025', 'Forty-one releases. Still in the spare room.']])))
+
+pattern('bundle', 'Back catalogue bundle', 'shop', columns(
+    ('35%', image('tapes-5.jpg', 'Two cassettes on a wooden table')),
+    (None, J(heading('Any three tapes for £21', 3), para('Pick any three from what is in stock and we post them together. Add a secondhand Walkman for £15 when we have working ones. Right now we have four.'),
+             buttons(('Choose three tapes', '/shop/')))), align='wide'))
+
+pattern('quote-single', 'One quote, big', 'testimonials', pullquote('Forty minutes of sea noise and tape wobble, and I have played it every morning this month.', 'Aisha Grant, The Skinny, October 2025'))
+
+# ---- pages that use the kit
+pattern('page-live', 'Page: live', 'events', J(pattern_ref('label-night'), pattern_ref('live-dates')), block_types='core/post-content')
+pattern('page-tape-club', 'Page: tape club', 'shop', J(pattern_ref('tape-club'), pattern_ref('formats-cards'), pattern_ref('bundle'), pattern_ref('order-faq')), block_types='core/post-content')
+pattern('page-release', 'Release page body (tracklist, formats, credits)', 'release', J(
+    para('Two long pieces recorded at low tide on Portobello beach, looped on a Revox and played back through a borrowed church PA. Side A was made in January, side B in March, when the wind dropped.'),
+    pattern_ref('tracklist'), pattern_ref('listen-player'), pattern_ref('formats-editions'), pattern_ref('physical-gallery'), pattern_ref('press-release'), pattern_ref('release-credits'), pattern_ref('quote-single')),
+    block_types='core/post-content', post_types='post')
+pattern('page-about', 'Page: about', 'about', J(pattern_ref('label-about'), pattern_ref('dubbing-process'), pattern_ref('label-history'), pattern_ref('tape-formats-explained'), pattern_ref('stockists'), pattern_ref('newsletter')), block_types='core/post-content')
+pattern('page-artists', 'Page: artists', 'about', J(pattern_ref('artist-cards'), pattern_ref('artist-index'), pattern_ref('artist-roster')), block_types='core/post-content')
+
+write('templates/front-page.html', J(
+    template_part('notice'), template_part('header', 'header'),
+    group(J(pattern_ref('jcard-latest'),
+            group(pattern_ref('release-grid'), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+            group(pattern_ref('catalogue-list'), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+            group(pattern_ref('release-feature'), align='wide', className='is-style-rule-top', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+            group(pattern_ref('tape-club'), align='full', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+            group(pattern_ref('label-night'), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+            columns((None, pattern_ref('newsletter')), (None, pattern_ref('eu-shop-note')), align='wide', style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}})),
+          tag='main', style=main_pad),
+    template_part('footer', 'footer')))
+
+write('parts/footer.html', group(J(
+    columns(
+        ('40%', J(dyn('site-title', level=0),
+                  para('A cassette label in Leith. Four or five releases a year, in editions of 100 to 150, dubbed in real time on two decks in the back room.', fontSize='small'))),
+        (None, J(heading('Post and pick-up', 6),
+                 para('2F1, 14 Great Junction Street<br>Leith, Edinburgh EH6 5LA<br><a href="mailto:hello@example.com">hello@example.com</a>', fontSize='small'),
+                 para('<a href="/shipping/">Shipping and postage</a><br><a href="/demos/">Sending us a demo</a>', fontSize='small'))),
+        (None, J(heading('Elsewhere', 6),
+                 para('<a href="https://bandcamp.com/">Bandcamp</a><br><a href="https://www.instagram.com/">Instagram</a><br><a href="/about/#newsletter">Mailing list</a>', fontSize='small'),
+                 dyn('search', label='Search the catalogue', showLabel=False, buttonText='Search', placeholder='Cat no or artist'))),
+        align='wide'),
+    para('Sleeve art on this demo is public domain painting from the Met, Cincinnati Art Museum and Wikimedia Commons, used as stand-ins for real artwork.',
+         align='wide', fontSize='x-small', textColor='muted')),
+    tag='footer', align='full', className='is-style-shell',
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|50'}, 'margin': {'top': '0'}}}))
+
+# ---- demo: pages that use the new patterns, release bodies with more of the kit
+for p in content['posts']:
+    if 'content' in p and p['content']:
+        p['content'] = J(p['content'], gallery([('tapes.jpg', 'Two cassettes side by side on a dark table', 'The tape'), (p['image'], 'Sleeve art for %s' % p['title'], 'The J-card front')], columns=2),
+                         para('Tapes are dubbed to order in batches of twelve, so allow a week before they post.', fontSize='small', textColor='muted'))
+content['pages'] += [
+    {'slug': 'live', 'title': 'Live', 'pattern': 'catalog/page-live', 'template': 'page-wide'},
+    {'slug': 'tape-club', 'title': 'Tape club', 'pattern': 'catalog/page-tape-club', 'template': 'page-wide'},
+]
+content['nav'] = [{'label': 'Catalogue', 'url': '/catalogue/'}, {'label': 'Artists', 'url': '/artists/'}, {'label': 'Shop', 'url': '/shop/'},
+                  {'label': 'Tape club', 'url': '/tape-club/'}, {'label': 'Live', 'url': '/live/'}, {'label': 'About', 'url': '/about/'}, {'label': 'Contact', 'url': '/contact/'}]
+json.dump(content, open('demos/catalog/content.json', 'w'), indent=1, ensure_ascii=False)
+print('catalog round 2 built')

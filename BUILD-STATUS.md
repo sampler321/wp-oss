@@ -22,7 +22,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
 | 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | deployed (HTTP 404) | https://wposs-reel.b-j-kapica.workers.dev |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
-| 17 | catalog | 039 Independent record label | inspired by a cassette label | tested |  |
+| 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
@@ -34,7 +34,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
 | 27 | local | 053 Hyperlocal news | more scientific looking | deployed (HTTP 404) | https://wposs-local.b-j-kapica.workers.dev |
 | 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
-| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | deployed (HTTP 404) | https://wposs-larder.b-j-kapica.workers.dev |
+| 29 | larder | 058b Independent recipe blog | like jadlonomia.com | tested |  |
 | 30 | roast | 059 Specialty coffee roaster | as researched | failed test |  |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | deployed (HTTP 404) | https://wposs-shelf.b-j-kapica.workers.dev |
 | 32 | crate | 061 Record shop | more Balenciaga-like or Zara-like | deployed (HTTP 404) | https://wposs-crate.b-j-kapica.workers.dev |
@@ -43,7 +43,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | deployed (HTTP 404) | https://wposs-deck.b-j-kapica.workers.dev |
 | 36 | stem | 077 Florist | more style and colour heavy | deployed (HTTP 404) | https://wposs-stem.b-j-kapica.workers.dev |
 | 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
-| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | deployed (HTTP 404) | https://wposs-drop.b-j-kapica.workers.dev |
+| 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | tested |  |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | deployed | https://wposs-platter.b-j-kapica.workers.dev |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | deployed (HTTP 404) | https://wposs-scoop.b-j-kapica.workers.dev |
 | 41 | pipe | 097 Plumber and heating engineer | professional, toned-down elegant, clean, technical | deployed | https://wposs-pipe.b-j-kapica.workers.dev |
