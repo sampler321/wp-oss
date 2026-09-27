@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Green room",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2F4EF",
+					"name": "Limewash"
+				},
+				{
+					"slug": "contrast",
+					"color": "#18221B",
+					"name": "Soot"
+				},
+				{
+					"slug": "accent",
+					"color": "#1E5631",
+					"name": "Kiln orange"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#C9DFC8",
+					"name": "Peach label"
+				},
+				{
+					"slug": "surface",
+					"color": "#DDE7DA",
+					"name": "Sage wall"
+				},
+				{
+					"slug": "line",
+					"color": "#BFCBBB",
+					"name": "Pencil line"
+				},
+				{
+					"slug": "muted",
+					"color": "#4E5A50",
+					"name": "Graphite"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "White"
+				}
+			]
+		}
+	}
+}

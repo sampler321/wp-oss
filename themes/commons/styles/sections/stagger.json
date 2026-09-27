@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stagger",
+	"slug": "stagger",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "@media (min-width:782px){& > li:nth-child(3n+2){margin-top:var(--wp--preset--spacing--70)!important}}"
+	}
+}

@@ -1,0 +1,189 @@
+{
+ "site": {
+  "title": "Mabgate Commons",
+  "tagline": "Artist-run gallery and studios in Leeds since 2011"
+ },
+ "categories": [
+  {
+   "slug": "solo-shows",
+   "name": "Solo shows"
+  },
+  {
+   "slug": "two-person-shows",
+   "name": "Two-person shows"
+  },
+  {
+   "slug": "group-shows",
+   "name": "Group shows"
+  },
+  {
+   "slug": "members-shows",
+   "name": "Members’ shows"
+  },
+  {
+   "slug": "residencies",
+   "name": "Residencies"
+  },
+  {
+   "slug": "events",
+   "name": "Events"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "programme",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "What's on",
+   "content": ""
+  },
+  {
+   "slug": "programme",
+   "title": "Programme",
+   "content": ""
+  },
+  {
+   "slug": "membership",
+   "title": "Membership",
+   "pattern": "commons/membership-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "opportunities",
+   "title": "Opportunities",
+   "pattern": "commons/opportunities-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit",
+   "pattern": "commons/visit-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "commons/about-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Soft borders",
+   "slug": "soft-borders",
+   "category": "two-person-shows",
+   "tags": [
+    "No. 184"
+   ],
+   "image": "hero.jpg",
+   "date": "2026-09-12",
+   "excerpt": "Hana Mirza and Ciarán Doyle. 12 September to 25 October 2026.",
+   "pattern": "commons/exhibition-text"
+  },
+  {
+   "title": "The Prince's Seat",
+   "category": "solo-shows",
+   "tags": [
+    "No. 183"
+   ],
+   "image": "show-1.jpg",
+   "date": "2026-07-10",
+   "excerpt": "Dele Okafor. 10 July to 23 August 2026.",
+   "content": "<!-- wp:paragraph -->\n<p>Three woven seats for a prince who never turns up. Dele Okafor made them from palm fibre bought in Kumasi and raffia from a florist on Kirkgate. They hung for six weeks and swung whenever the door opened.</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>Funded by members’ fees. Install by Tomasz Wrona and Dele’s brother Emeka, who drove down from Newcastle with the van.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Radical threads",
+   "category": "group-shows",
+   "tags": [
+    "No. 182"
+   ],
+   "image": "show-3.jpg",
+   "date": "2026-05-22",
+   "excerpt": "Banners from 11 union branches and community groups. 22 May to 28 June 2026.",
+   "content": "<!-- wp:paragraph -->\n<p>Banners borrowed from union branches, a tenants’ association and two choirs, hung on a wall we painted red for the purpose. The oldest one is from 1921 and needed four people to lift it.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Late landscapes",
+   "category": "members-shows",
+   "tags": [
+    "No. 181"
+   ],
+   "image": "show-6.jpg",
+   "date": "2026-04-03",
+   "excerpt": "Nine members who paint outdoors. 3 April to 10 May 2026.",
+   "content": "<!-- wp:paragraph -->\n<p>A spring show put together by the members who go out painting on Sunday mornings. Twenty-two paintings, hung in one line at eye height, as they asked.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Winter residency: Oyelaran Bello",
+   "slug": "winter-residency-oyelaran-bello",
+   "category": "residencies",
+   "tags": [
+    "No. 180"
+   ],
+   "image": "residency.jpg",
+   "date": "2026-01-16",
+   "excerpt": "Twelve weeks in the back studio. January to March 2026.",
+   "content": "<!-- wp:paragraph -->\n<p>Oyelaran painted one canvas for twelve weeks and kept painting over it. Open studio on the last Saturday of each month drew 40 to 60 people, and a lot of opinions.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A figure by the window",
+   "category": "solo-shows",
+   "tags": [
+    "No. 179"
+   ],
+   "image": "event.jpg",
+   "date": "2025-11-28",
+   "excerpt": "Maeve Kilbride. 28 November 2025 to 11 January 2026.",
+   "content": "<!-- wp:paragraph -->\n<p>One bronze, one stone, one window. Maeve asked us to leave the blinds up for the whole show, so the work looked different every afternoon.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Flower piece for a long table",
+   "category": "events",
+   "tags": [
+    "No. 178"
+   ],
+   "image": "show-7.jpg",
+   "date": "2025-10-18",
+   "excerpt": "One evening with Aiko Tanabe and the Leeds ikebana group. 18 October 2025.",
+   "content": "<!-- wp:paragraph -->\n<p>An arrangement built in three hours in front of an audience of about 70, then left up for the weekend. It dropped most of its petals by Sunday, which was the point.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Members’ show 2025",
+   "slug": "members-show-2025",
+   "category": "members-shows",
+   "tags": [
+    "No. 177"
+   ],
+   "image": "studio.jpg",
+   "date": "2025-09-19",
+   "excerpt": "Work by 61 members, hung by lottery. 19 September to 2 November 2025.",
+   "content": "<!-- wp:paragraph -->\n<p>Sixty-one works, one each, hung by pulling numbers out of a biscuit tin. The biggest was a 3 metre canvas. The smallest was a matchbox.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "What's on",
+   "url": "/"
+  },
+  {
+   "label": "Programme",
+   "url": "/programme/"
+  },
+  {
+   "label": "Membership",
+   "url": "/membership/"
+  },
+  {
+   "label": "Opportunities",
+   "url": "/opportunities/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

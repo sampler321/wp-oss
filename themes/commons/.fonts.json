@@ -1,0 +1,46 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Funnel Display\", sans-serif",
+      "name": "Funnel Display",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Funnel Display",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/funnel-display-normal-300_800.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Funnel Sans\", sans-serif",
+      "name": "Funnel Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Funnel Sans",
+          "fontStyle": "italic",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/funnel-sans-italic-300_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Funnel Sans",
+          "fontStyle": "normal",
+          "fontWeight": "300 800",
+          "src": [
+            "file:./assets/fonts/funnel-sans-normal-300_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Funnel Display (Google Fonts), https://github.com/google/fonts/tree/main/ofl/funneldisplay",
+    "Funnel Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/funnelsans"
+  ]
+}

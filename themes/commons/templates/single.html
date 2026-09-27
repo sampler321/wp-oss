@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:post-featured-image {"aspectRatio":"16/9","align":"full","style":{"border":{"radius":"0"}}} /-->
+
+<!-- wp:columns {"className":"alignwide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:column {"width":"34%"} -->
+<div class="wp-block-column" style="flex-basis:34%"><!-- wp:post-terms {"term":"post_tag","className":"is-style-running-number"} /-->
+
+<!-- wp:post-title {"level":1,"fontSize":"xx-large"} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:post-terms {"term":"category","prefix":"Filed under "} /-->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/visit/">Opening hours and access</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:post-content {"layout":{"type":"constrained","contentSize":"680px","justifyContent":"left"}} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"wide","className":"is-style-ruled","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide is-style-ruled"><!-- wp:post-navigation-link {"type":"previous","label":"Previous show","showTitle":true} /-->
+
+<!-- wp:post-navigation-link {"label":"Next show","showTitle":true} /--></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

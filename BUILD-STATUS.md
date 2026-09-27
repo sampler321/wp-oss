@@ -12,7 +12,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 4 | wall | 009 Muralist / street artist | more edgy, cargo.site-like, inspired by All Caps festival Rotterdam | todo | |
 | 5 | drum | 010 Riso and printmaking studio | definitely neo-brutalist | todo | |
 | 6 | seed | 011 Generative / creative-code artist | as researched | todo | |
-| 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | tested |  |
+| 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | deployed (HTTP 404) | https://wposs-commons.b-j-kapica.workers.dev |
 | 8 | room | 019 Interior designer + shop | as researched | todo | |
 | 9 | joint | 021 Furniture and object designer | as researched | todo | |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | todo | |
