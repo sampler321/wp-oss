@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Red stamp",
+	"slug": "stamp",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent"
+		},
+		"border": {
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|accent",
+			"radius": "0"
+		},
+		"typography": {
+			"fontWeight": "700",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|10",
+				"bottom": "var:preset|spacing|10",
+				"left": "var:preset|spacing|20",
+				"right": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{display:inline-block;transform:rotate(-2deg)}"
+	}
+}

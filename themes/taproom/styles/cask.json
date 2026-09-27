@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cask",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F5F1E8",
+					"name": "Brown paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1A1A1A",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#B3241A",
+					"name": "Stamp red"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "Label"
+				},
+				{
+					"slug": "line",
+					"color": "#1A1A1A",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4E473C",
+					"name": "Pencil"
+				},
+				{
+					"slug": "dark",
+					"color": "#1A1A1A",
+					"name": "Stout"
+				}
+			]
+		}
+	}
+}

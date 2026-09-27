@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tap list (stock sheet)",
+	"slug": "tap-list",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|medium"
+		}
+	}
+}

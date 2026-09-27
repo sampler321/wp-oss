@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Stout",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#1A1A1A",
+					"name": "Brown paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#EFE6D6",
+					"name": "Ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF6B57",
+					"name": "Stamp red"
+				},
+				{
+					"slug": "surface",
+					"color": "#2A2724",
+					"name": "Label"
+				},
+				{
+					"slug": "line",
+					"color": "#EFE6D6",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#C2B8A6",
+					"name": "Pencil"
+				},
+				{
+					"slug": "dark",
+					"color": "#0E0E0E",
+					"name": "Stout"
+				}
+			]
+		}
+	}
+}

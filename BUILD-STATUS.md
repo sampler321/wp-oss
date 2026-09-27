@@ -55,7 +55,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 47 | bind | 262 Bookbinder (introligator) | as researched | deployed (HTTP 404) | https://wposs-bind.b-j-kapica.workers.dev |
 | 48 | patchbay | 264 DIY guitar pedals | inspired by jhspedals.info | deployed (HTTP 404) | https://wposs-patchbay.b-j-kapica.workers.dev |
 | 49 | cityguide | 238 Independent city guide | inspired by thisiseindhoven.com | deployed (HTTP 404) | https://wposs-cityguide.b-j-kapica.workers.dev |
-| 50 | taproom | 088 Craft brewery | as researched | todo | |
+| 50 | taproom | 088 Craft brewery | as researched | deployed | https://wposs-taproom.b-j-kapica.workers.dev |
 
 ## Pipeline
 1. Reference theme `ink` + tools (fonts, images, demo builder, test harness, static export, deploy).

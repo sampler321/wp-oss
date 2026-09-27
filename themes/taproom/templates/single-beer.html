@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:post-featured-image {"aspectRatio":"1"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"55%"} -->
+<div class="wp-block-column" style="flex-basis:55%"><!-- wp:group {"className":"is-style-label","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-label"><!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-title {"level":1,"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"xx-large"} /-->
+
+<!-- wp:post-content {"layout":{"type":"default"}} /-->
+
+<!-- wp:paragraph -->
+<p><a href="/taproom/">Is it on tap today?</a> <a href="/shop/">Cans to go</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"wide","className":"is-style-ruled","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-ruled"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","label":"Previous beer","showTitle":true,"taxonomy":"category"} /-->
+
+<!-- wp:post-navigation-link {"label":"Next beer","showTitle":true,"taxonomy":"category"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

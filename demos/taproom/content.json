@@ -1,0 +1,291 @@
+{
+ "site": {
+  "title": "Cooperage Brewing",
+  "tagline": "Brewery and taproom in Smithfield, Dublin 7"
+ },
+ "categories": [
+  {
+   "slug": "beers",
+   "name": "Beers",
+   "description": "The core range and the specials."
+  },
+  {
+   "slug": "events",
+   "name": "Events",
+   "description": "Quiz, tastings, launches and takeovers."
+  },
+  {
+   "slug": "news",
+   "name": "News",
+   "description": "From the brewhouse."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "events",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "events",
+   "title": "Events and news",
+   "content": ""
+  },
+  {
+   "slug": "taproom",
+   "title": "Taproom",
+   "pattern": "taproom/taproom-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "book-a-table",
+   "title": "Book a table",
+   "pattern": "taproom/booking-page"
+  },
+  {
+   "slug": "beer-club",
+   "title": "Beer club",
+   "pattern": "taproom/beer-club-page"
+  },
+  {
+   "slug": "trade",
+   "title": "Trade",
+   "pattern": "taproom/trade-enquiry"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "taproom/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "tours",
+   "title": "Tours and events",
+   "pattern": "taproom/tours-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Haymarket",
+   "category": "beers",
+   "image": "label-haymarket.jpg",
+   "date": "2026-03-02",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Our first beer and still the one we sell most of. Soft, orangey, dry at the end.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>Pale ale</td></tr><tr><td>ABV</td><td>4.6%</td></tr><tr><td>Hops</td><td>Citra, Mosaic</td></tr><tr><td>Malt</td><td>Irish pale, oats, wheat</td></tr><tr><td>Formats</td><td>Keg, 440 ml can</td></tr><tr><td>Allergens</td><td>Barley, wheat, oats (gluten). Vegan.</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "Pale ale, 4.6%. The one most people start with."
+  },
+  {
+   "title": "Arran Quay",
+   "category": "beers",
+   "image": "label-arran-quay.jpg",
+   "date": "2026-02-20",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">White grape and lime from the Nelson. Brewed every six weeks, gone in four.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>IPA</td></tr><tr><td>ABV</td><td>6.2%</td></tr><tr><td>Hops</td><td>Nelson Sauvin, Motueka</td></tr><tr><td>Malt</td><td>Irish pale, wheat</td></tr><tr><td>Formats</td><td>Keg, 440 ml can</td></tr><tr><td>Allergens</td><td>Barley, wheat (gluten). Vegan.</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "IPA, 6.2%. White grape and lime from the Nelson."
+  },
+  {
+   "title": "Bow Street",
+   "category": "beers",
+   "image": "label-bow-street.jpg",
+   "date": "2026-02-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Roast, cocoa and a little lactose to round it off. On nitro on Sundays.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>Stout</td></tr><tr><td>ABV</td><td>5.0%</td></tr><tr><td>Hops</td><td>Fuggles</td></tr><tr><td>Malt</td><td>Pale, roast barley, chocolate malt</td></tr><tr><td>Formats</td><td>Keg, nitro, 440 ml can</td></tr><tr><td>Allergens</td><td>Barley, wheat (gluten), lactose (milk).</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "Stout, 5.0%. Roast, cocoa and a little lactose."
+  },
+  {
+   "title": "Phoenix",
+   "category": "beers",
+   "image": "label-phoenix.jpg",
+   "date": "2026-01-28",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Six weeks of lagering at one degree. Crisp, bready, a little floral.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>Pilsner</td></tr><tr><td>ABV</td><td>4.8%</td></tr><tr><td>Hops</td><td>Hallertau Mittelfrüh</td></tr><tr><td>Malt</td><td>Pilsner malt</td></tr><tr><td>Formats</td><td>Keg, 440 ml can</td></tr><tr><td>Allergens</td><td>Barley (gluten). Vegan.</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "Pilsner, 4.8%. Six weeks of lagering."
+  },
+  {
+   "title": "Stoneybatter",
+   "category": "beers",
+   "image": "label-stoneybatter.jpg",
+   "date": "2026-01-15",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A light, hoppy beer for the second half of a long afternoon.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>Table beer</td></tr><tr><td>ABV</td><td>2.8%</td></tr><tr><td>Hops</td><td>Saaz, East Kent Goldings</td></tr><tr><td>Malt</td><td>Pale, oats</td></tr><tr><td>Formats</td><td>Keg, 440 ml can</td></tr><tr><td>Allergens</td><td>Barley, oats (gluten). Vegan.</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "Table beer, 2.8%. Light and hoppy."
+  },
+  {
+   "title": "Four Courts",
+   "category": "beers",
+   "image": "label-four-courts.jpg",
+   "date": "2025-12-01",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Eleven months in a Jamaican rum barrel. Poured in thirds only, and only in winter.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Style</td><td>Imperial stout, rum barrel</td></tr><tr><td>ABV</td><td>10.5%</td></tr><tr><td>Hops</td><td>Magnum</td></tr><tr><td>Malt</td><td>Pale, roast, crystal, oats</td></tr><tr><td>Formats</td><td>Keg (thirds only), 440 ml can</td></tr><tr><td>Allergens</td><td>Barley, oats (gluten). Vegan.</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+   "template": "single-beer",
+   "excerpt": "Imperial stout, 10.5%. Rum barrel, thirds only."
+  },
+  {
+   "title": "Pub quiz, Wednesday 7 October",
+   "category": "events",
+   "image": "bar.jpg",
+   "date": "2026-09-26",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Teams of up to six, €2 each, cash prize and a bar tab for the winners. Starts 20:00; Síle asks the questions and takes no appeals.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Book a table if you are more than five.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Launch: Red Cow raspberry sour, Friday 2 October",
+   "category": "events",
+   "image": "cans.jpg",
+   "date": "2026-09-24",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Our first sour in two years goes on line 7 at 17:00, and cans go on sale at the same time. Limit four cans a person until Sunday.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Tasting with the brewers, Sunday 4 October",
+   "category": "events",
+   "image": "taps.jpg",
+   "date": "2026-09-22",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Six thirds, one of each core beer and two from the tanks, with Aoife talking you through them. 14:00, €22, twelve places.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:taproom@example.com?subject=Tasting\">Email to book a place</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->"
+  },
+  {
+   "title": "Tap takeover: Hazel Row from Wexford, Friday 9 October",
+   "category": "events",
+   "image": "glass.jpg",
+   "date": "2026-09-18",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four lines of Hazel Row Brewing on Friday from 16:00. Our own beers stay on the other four.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Canning day, and why the Pilsner runs out",
+   "category": "news",
+   "image": "canning.jpg",
+   "date": "2026-09-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Phoenix sits in the tank for six weeks before we can it. When it sells faster than that, it runs out. We are adding a tank in November.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hop harvest brew with fresh Irish hops",
+   "category": "news",
+   "image": "hops.jpg",
+   "date": "2026-09-03",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We drove to a farm in Kilkenny on Tuesday morning and had the hops in the kettle by 15:00. The beer is on in three weeks.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "On tap",
+   "url": "/taproom/"
+  },
+  {
+   "label": "Beers",
+   "url": "/category/beers/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Beer club",
+   "url": "/beer-club/"
+  },
+  {
+   "label": "Book a table",
+   "url": "/book-a-table/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ],
+ "currency": "EUR",
+ "products": [
+  {
+   "name": "Haymarket pale ale, 440 ml can",
+   "price": "4.20",
+   "image": "label-haymarket.jpg",
+   "category": "Cans",
+   "sku": "CB-HAY",
+   "stock": 180,
+   "short": "Pale ale, 4.6%. Citra and Mosaic. Vegan.",
+   "description": "Canned on Thursdays. Best within three months; keep it in the fridge."
+  },
+  {
+   "name": "Arran Quay IPA, 440 ml can",
+   "price": "5.00",
+   "image": "label-arran-quay.jpg",
+   "category": "Cans",
+   "sku": "CB-ARQ",
+   "stock": 64,
+   "short": "IPA, 6.2%. Nelson Sauvin and Motueka. Vegan.",
+   "description": "Drink it fresh. The hops fade after eight weeks."
+  },
+  {
+   "name": "Bow Street stout, 440 ml can",
+   "price": "4.40",
+   "image": "label-bow-street.jpg",
+   "category": "Cans",
+   "sku": "CB-BOW",
+   "stock": 96,
+   "short": "Stout, 5.0%. Contains lactose.",
+   "description": "Roast, cocoa and a round finish from lactose. Not vegan."
+  },
+  {
+   "name": "Phoenix pilsner, 440 ml can",
+   "price": "4.20",
+   "image": "label-phoenix.jpg",
+   "category": "Cans",
+   "sku": "CB-PHX",
+   "stock": 0,
+   "short": "Pilsner, 4.8%. Sold out; next canning 8 October.",
+   "description": "Six weeks lagered. Vegan."
+  },
+  {
+   "name": "Four Courts imperial stout, 440 ml can",
+   "price": "9.00",
+   "image": "label-four-courts.jpg",
+   "category": "Cans",
+   "sku": "CB-4CT",
+   "stock": 40,
+   "short": "Rum barrel-aged imperial stout, 10.5%. Two per order.",
+   "description": "Eleven months in a Jamaican rum barrel. Keeps for years in a dark cupboard."
+  },
+  {
+   "name": "Mixed case, 12 cans",
+   "price": "48",
+   "image": "cans.jpg",
+   "category": "Cases",
+   "sku": "CB-MIX12",
+   "stock": 30,
+   "short": "Three each of four core beers, picked by us.",
+   "description": "Collect at the bar or delivery in Dublin 1 to 8 on Fridays for €5."
+  },
+  {
+   "name": "Pint glass, 568 ml",
+   "price": "8",
+   "image": "merch-glass.jpg",
+   "category": "Merch",
+   "sku": "CB-GLASS",
+   "stock": 50,
+   "short": "Straight-sided pint glass with the label printed on.",
+   "description": "Dishwasher safe, but it lasts longer by hand."
+  },
+  {
+   "name": "Tote bag",
+   "price": "12",
+   "image": "merch-tote.jpg",
+   "category": "Merch",
+   "sku": "CB-TOTE",
+   "stock": 35,
+   "short": "Unbleached cotton. Holds twelve cans.",
+   "description": "Printed in Dublin 8."
+  },
+  {
+   "name": "T-shirt, black",
+   "price": "25",
+   "image": "merch-tee.jpg",
+   "category": "Merch",
+   "sku": "CB-TEE",
+   "stock": 22,
+   "short": "Organic cotton, sizes S to XXL.",
+   "description": "Sizes run slightly large. Swap by email within 30 days if it does not fit."
+  }
+ ]
+}
