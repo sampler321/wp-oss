@@ -256,7 +256,7 @@ def tap_row(no, name, style, hops, abv, half, pint, cls='is-style-tap-row'):
     price = '%s half<br><strong>%s</strong> pint' % (half, pint) if pint != 'n/a' else '<strong>%s</strong>' % half
     return group(J(para(no, className='tap-no'), heading(name, 3, className='tap-name'), para('%s<br>%s' % (style, hops), className='tap-style'),
                    para(abv, className='tap-abv'), para(price, className='tap-price')), className=cls, layout={'type': 'default'})
-TAP_ROWS = J(group(J(para('Line', className='tap-no'), para('Beer', className='tap-name'), para('Style and hops', className='tap-style'), para('ABV', className='tap-abv'), para('Price', className='tap-price')),
+TAP_ROWS = J(group(J(para('No.', className='tap-no'), para('Beer', className='tap-name'), para('Style and hops', className='tap-style'), para('ABV', className='tap-abv'), para('Price', className='tap-price')),
                    className='is-style-tap-row is-style-tap-head', layout={'type': 'default'}),
              *[tap_row(*t) for t in TAPS])
 TAP_TABLE = table([list(t) for t in TAPS], head=['Line', 'Beer', 'Style', 'Hops', 'ABV', 'Half', 'Pint'], className='is-style-tap-list')

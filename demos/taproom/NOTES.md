@@ -8,3 +8,11 @@
 - Images: CC0 Commons photos of the counter, canning line, cans, taps and tacos. Can labels and merch (glass, tote, T-shirt) were drawn for this theme by build/taproom_draw.py (CC0), so no other brewery's branding appears as a product.
 - Age: no pop-up. The age rule is written in the footer, on the hours panel and next to the shop.
 - Core-block limits: "on tap" is a table the staff edit by hand; there is no per-beer on/off switch without custom fields.
+
+## Round 2
+
+- Tap list rebuilt as rows of groups (number, beer, style and hops, ABV, prices) instead of a table, so the home page has no table; on phones it drops to beer, style, ABV and price. A plain-table version stays as "Printable tap sheet" for A4.
+- Opening hours and the kitchen menu are ruled label/value rows. Tables remain only where the data is tabular (tap sheet, beer club terms, trade formats, delivery costs, beer spec): 5 of 48 patterns.
+- Image lightbox enabled in theme.json and used on can labels, merch and photos.
+- 21 new patterns from The Kernel, Cloudwater and Other Half: in the tanks, next can release, kitchen menu, house rules, event types, quiz night, brewery tours, team, collaborations, spent grain, jobs, private hire, gift membership, stockists, keg returns, merch strip, release emails, allergen key, printable tap sheet, plus page layouts for about and tours. New "Tours and events" page; about, taproom, booking, beer club and trade pages use the new patterns in context.
+- Home: tap list first (the current thing), then the name, hours and bookings, kitchen, next release, events, cans, merch and the beer club.

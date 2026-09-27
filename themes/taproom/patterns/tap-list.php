@@ -19,7 +19,7 @@
 
 <!-- wp:group {"className":"is-style-tap-row is-style-tap-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-tap-row is-style-tap-head"><!-- wp:paragraph {"className":"tap-no"} -->
-<p class="tap-no">Line</p>
+<p class="tap-no">No.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"tap-name"} -->
