@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Episode hash",
+	"slug": "hash",
+	"blockTypes": [
+		"core/post-terms"
+	],
+	"styles": {
+		"css": "& a{color:var(--wp--preset--color--amber);text-decoration:none;font-weight:700}"
+	}
+}

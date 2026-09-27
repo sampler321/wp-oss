@@ -10,9 +10,35 @@
 <p class="has-large-font-size">New episodes every Thursday at 7am Brussels time, about 50 minutes long. Any podcast app works. These are the ones we test chapters in.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>App</th><th>Supports</th><th>Notes</th></tr></thead><tbody><tr><td><a href="https://pocketcasts.com/">Pocket Casts</a></td><td>Chapters, transcripts</td><td>What Lieke uses</td></tr><tr><td><a href="https://overcast.fm/">Overcast</a></td><td>Chapters</td><td>What Kwame uses</td></tr><tr><td><a href="https://antennapod.org/">AntennaPod</a></td><td>Chapters, transcripts</td><td>Open source, Android</td></tr><tr><td><a href="https://podcasts.apple.com/">Apple Podcasts</a></td><td>Chapters, transcripts</td><td></td></tr><tr><td><a href="https://open.spotify.com/">Spotify</a></td><td>Partial</td><td>No private feeds</td></tr><tr><td><a href="/feed/">RSS</a></td><td>Everything</td><td>Paste into your app</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:list {"className":"is-style-oneliners"} -->
+<ul class="wp-block-list is-style-oneliners"><!-- wp:list-item -->
+<li><a href="https://pocketcasts.com/">Pocket Casts</a>: chapters and transcripts. What Lieke uses.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://overcast.fm/">Overcast</a>: chapters. What Kwame uses.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://antennapod.org/">AntennaPod</a>: chapters and transcripts, open source, Android.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://podcasts.apple.com/">Apple Podcasts</a>: chapters and transcripts.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://open.spotify.com/">Spotify</a>: partial, and no private feeds.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/feed/">RSS</a>: everything. Paste it into your app.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:pattern {"slug":"patchnotes/downloads"} /-->
+
+<!-- wp:pattern {"slug":"patchnotes/newsletter"} /-->
 
 <!-- wp:paragraph -->
 <p>The ad-free feed for supporters is a private RSS link. Open Collective sends it after your first payment.</p>

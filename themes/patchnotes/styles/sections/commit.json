@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Commit row",
+	"slug": "commit",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"left": {
+				"color": "var:preset|color|line",
+				"width": "2px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"left": "var:preset|spacing|30",
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&:hover{border-left-color:var(--wp--preset--color--accent)}"
+	}
+}

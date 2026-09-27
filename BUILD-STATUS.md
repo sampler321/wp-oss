@@ -29,7 +29,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 21 | wavelength | 046b Second radio station | another radio station, different direction | deployed (HTTP 404) | https://wposs-wavelength.b-j-kapica.workers.dev |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
-| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | tested |  |
+| 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed | https://wposs-patchnotes.b-j-kapica.workers.dev |
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | deployed (HTTP 404) | https://wposs-spine.b-j-kapica.workers.dev |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | failed test |  |
 | 27 | local | 053 Hyperlocal news | more scientific looking | deployed | https://wposs-local.b-j-kapica.workers.dev |

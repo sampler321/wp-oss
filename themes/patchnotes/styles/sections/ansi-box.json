@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "ANSI box",
+	"slug": "ansi-box",
+	"blockTypes": [
+		"core/group",
+		"core/column"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|line"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"css": "& > .is-style-title-bar:first-child{margin:0 calc(-1 * var(--wp--preset--spacing--30)) var(--wp--preset--spacing--30)!important}"
+	}
+}

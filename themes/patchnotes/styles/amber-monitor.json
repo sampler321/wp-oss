@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Amber monitor",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#0A0600",
+					"name": "Screen"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFD9A0",
+					"name": "Phosphor"
+				},
+				{
+					"slug": "accent",
+					"color": "#FFB23E",
+					"name": "Bright green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF6B5E",
+					"name": "Removal red"
+				},
+				{
+					"slug": "surface",
+					"color": "#1A1103",
+					"name": "Panel"
+				},
+				{
+					"slug": "line",
+					"color": "#7A4F10",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#C9A36A",
+					"name": "Dim phosphor"
+				},
+				{
+					"slug": "hunk",
+					"color": "#2A1B05",
+					"name": "Highlight"
+				},
+				{
+					"slug": "changed",
+					"color": "#FFE08A",
+					"name": "ANSI cyan"
+				},
+				{
+					"slug": "amber",
+					"color": "#FFF1C9",
+					"name": "Amber"
+				},
+				{
+					"slug": "bar",
+					"color": "#C9B99A",
+					"name": "Title bar"
+				},
+				{
+					"slug": "ink",
+					"color": "#0A0600",
+					"name": "Ink on bar"
+				}
+			]
+		}
+	}
+}

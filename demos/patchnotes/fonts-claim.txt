@@ -1,1 +1,1 @@
-display: SUSE (047c tech podcast variant)
+display: Bitcount Prop Single (047c tech podcast, round 2; replaces SUSE as display, SUSE stays as body)

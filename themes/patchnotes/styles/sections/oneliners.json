@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Oneliners (ruled lines)",
+	"slug": "oneliners",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding-left:0!important}& li{padding:.35rem 0;border-bottom:1px dashed var(--wp--preset--color--line)}& li:last-child{border-bottom:0}"
+	}
+}

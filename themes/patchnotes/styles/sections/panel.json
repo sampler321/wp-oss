@@ -13,7 +13,9 @@
 			"text": "var:preset|color|contrast"
 		},
 		"border": {
-			"radius": "6px"
+			"width": "1px",
+			"style": "solid",
+			"color": "var:preset|color|line"
 		},
 		"spacing": {
 			"padding": {

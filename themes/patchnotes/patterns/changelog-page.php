@@ -7,3 +7,9 @@
  */
 ?>
 <!-- wp:pattern {"slug":"patchnotes/show-changelog"} /-->
+
+<!-- wp:pattern {"slug":"patchnotes/meetups"} /-->
+
+<!-- wp:pattern {"slug":"patchnotes/greetz"} /-->
+
+<!-- wp:pattern {"slug":"patchnotes/topics"} /-->

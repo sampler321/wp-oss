@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Teletype paper",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2EFE4",
+					"name": "Screen"
+				},
+				{
+					"slug": "contrast",
+					"color": "#141412",
+					"name": "Phosphor"
+				},
+				{
+					"slug": "accent",
+					"color": "#0F6B32",
+					"name": "Bright green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#B0271F",
+					"name": "Removal red"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6E1D2",
+					"name": "Panel"
+				},
+				{
+					"slug": "line",
+					"color": "#8C8672",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4E4B40",
+					"name": "Dim phosphor"
+				},
+				{
+					"slug": "hunk",
+					"color": "#FBF0B2",
+					"name": "Highlight"
+				},
+				{
+					"slug": "changed",
+					"color": "#1F5AA6",
+					"name": "ANSI cyan"
+				},
+				{
+					"slug": "amber",
+					"color": "#8A4B00",
+					"name": "Amber"
+				},
+				{
+					"slug": "bar",
+					"color": "#141412",
+					"name": "Title bar"
+				},
+				{
+					"slug": "ink",
+					"color": "#F2EFE4",
+					"name": "Ink on bar"
+				}
+			]
+		}
+	}
+}

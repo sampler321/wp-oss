@@ -8,6 +8,8 @@
 ?>
 <!-- wp:pattern {"slug":"patchnotes/support-tiers"} /-->
 
+<!-- wp:pattern {"slug":"patchnotes/greetz"} /-->
+
 <!-- wp:pattern {"slug":"patchnotes/sponsor-policy"} /-->
 
 <!-- wp:pattern {"slug":"patchnotes/sponsor-read"} /-->

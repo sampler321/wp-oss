@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Cyan BBS",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#00141C",
+					"name": "Screen"
+				},
+				{
+					"slug": "contrast",
+					"color": "#D3F6FA",
+					"name": "Phosphor"
+				},
+				{
+					"slug": "accent",
+					"color": "#5CE1E6",
+					"name": "Bright green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FF7A70",
+					"name": "Removal red"
+				},
+				{
+					"slug": "surface",
+					"color": "#002433",
+					"name": "Panel"
+				},
+				{
+					"slug": "line",
+					"color": "#1C6B80",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#8CC3CE",
+					"name": "Dim phosphor"
+				},
+				{
+					"slug": "hunk",
+					"color": "#003445",
+					"name": "Highlight"
+				},
+				{
+					"slug": "changed",
+					"color": "#FFE066",
+					"name": "ANSI cyan"
+				},
+				{
+					"slug": "amber",
+					"color": "#FFE066",
+					"name": "Amber"
+				},
+				{
+					"slug": "bar",
+					"color": "#A9C4CA",
+					"name": "Title bar"
+				},
+				{
+					"slug": "ink",
+					"color": "#00141C",
+					"name": "Ink on bar"
+				}
+			]
+		}
+	}
+}

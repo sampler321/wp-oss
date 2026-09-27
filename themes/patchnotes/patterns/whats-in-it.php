@@ -6,7 +6,7 @@
  * Description: The signature: show notes as a changelog. “Fixed” is where last week’s mistakes are corrected on the record.
  */
 ?>
-<!-- wp:columns {"className":"alignwide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"26%"} -->
 <div class="wp-block-column" style="flex-basis:26%"><!-- wp:heading {"fontSize":"large"} -->
 <h2 class="wp-block-heading has-large-font-size">In this release</h2>

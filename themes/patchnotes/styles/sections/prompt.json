@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Prompt line",
+	"slug": "prompt",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|muted"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|display"
+		},
+		"css": "&::before{content:\"> \";color:var(--wp--preset--color--accent)}"
+	}
+}

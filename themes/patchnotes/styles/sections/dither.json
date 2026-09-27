@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dither band",
+	"slug": "dither",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{min-height:28px;background:linear-gradient(90deg,var(--wp--preset--color--accent) 0 22%,transparent 22%),repeating-conic-gradient(var(--wp--preset--color--accent) 0 25%,transparent 0 50%) 0 0/6px 6px;-webkit-mask:linear-gradient(90deg,#000 0 55%,transparent 80%);mask:linear-gradient(90deg,#000 0 55%,transparent 80%)}"
+	}
+}

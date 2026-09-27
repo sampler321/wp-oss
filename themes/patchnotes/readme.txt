@@ -13,11 +13,13 @@ A podcast theme for technology and developer shows, with episodes laid out as re
 
 A podcast theme for technology and developer shows, with episodes laid out as release notes, a guest list and show notes sorted into added, changed, fixed and removed.
 
-Patchnotes is built for technology and developer podcasts. Each episode is a post with its episode number as a tag ("Episode 88") and its topics as categories, and the home page lays the newest one out like the top entry of a changelog: a rail of facts on the left, the title, summary and player on the right.
+Patchnotes is built for technology and developer podcasts that like the old internet: a BBS and demoscene look with phosphor green on black, scanlines, ANSI-style boxes with grey title bars and stepped dither bands. Each episode is a post with its episode number as a tag ("Episode 88") and its topics as categories. The home page opens like a BBS login screen with the newest episode, and the episode list reads like a commit log.
 
-Show notes use four list styles, Added, Changed, Fixed and Removed, so corrections to earlier episodes have a fixed home. The theme also includes a guest list, a show changelog page for changes to the podcast itself, a recording-setup table, chapters whose timestamps open the audio at that point, a transcript fold, support tiers, a sponsor policy and a status line for the next episode or a recording break.
+Show notes use four list styles, Added, Changed, Fixed and Removed, so corrections to earlier episodes have a fixed home. The theme also includes an .nfo box, a BBS-style main menu, oneliners from listeners, greetings to supporters, meetups and live recordings, a release-day log, episode files, sysops (the hosts), guests, support tiers, a sponsor policy, a show changelog and a status line.
 
-The theme uses one typeface, SUSE, with tabular figures. The demo audio is public-domain stand-in audio from the White House "As Told By" series on Wikimedia Commons. Replace it with your own files.
+Photos get a green phosphor duotone by default; change it in Appearance > Editor > Styles > Blocks > Image. The display face is Bitcount Prop Single, a proportional pixel font; body text is SUSE. There is no monospace font.
+
+The demo audio is public-domain stand-in audio from the White House "As Told By" series on Wikimedia Commons. Replace it with your own files.
 
 Every colour, font, size and spacing value lives in theme.json, so the whole look can be changed in Appearance > Editor > Styles. The theme uses only core WordPress blocks.
 
@@ -35,6 +37,7 @@ Patchnotes is distributed under the terms of the GNU GPL v2 or later.
 
 == Resources ==
 
+* Font: Bitcount Prop Single (Google Fonts), https://github.com/google/fonts/tree/main/ofl/bitcountpropsingle
 * Font: SUSE (Google Fonts), https://github.com/google/fonts/tree/main/ofl/suse
 * Image board.jpg: "Macro photograph of the RP2350 microcontroller on a Raspberry Pi Pico 2 board.jpg" by Profpcde, CC0, https://commons.wikimedia.org/wiki/File:Macro_photograph_of_the_RP2350_microcontroller_on_a_Raspberry_Pi_Pico_2_board.jpg
 * Image keyboard.jpg: "Switches on the back of Topre Realforce 87UB keyboard.jpg" by Syced, CC0, https://commons.wikimedia.org/wiki/File:Switches_on_the_back_of_Topre_Realforce_87UB_keyboard.jpg

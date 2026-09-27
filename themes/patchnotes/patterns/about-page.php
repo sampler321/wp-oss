@@ -12,6 +12,8 @@
 
 <!-- wp:pattern {"slug":"patchnotes/hosts"} /-->
 
+<!-- wp:pattern {"slug":"patchnotes/screenshot"} /-->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">What we won’t do</h3>
 <!-- /wp:heading -->
