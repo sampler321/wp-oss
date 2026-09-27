@@ -1,0 +1,32 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Anybody\", sans-serif",
+      "name": "Anybody",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Anybody",
+          "fontStyle": "italic",
+          "fontWeight": "100 900",
+          "src": [
+            "file:./assets/fonts/anybody-italic-100_900.woff2"
+          ],
+          "fontStretch": "50% 150%"
+        },
+        {
+          "fontFamily": "Anybody",
+          "fontStyle": "normal",
+          "fontWeight": "100 900",
+          "src": [
+            "file:./assets/fonts/anybody-normal-100_900.woff2"
+          ],
+          "fontStretch": "50% 150%"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Anybody (Google Fonts), https://github.com/google/fonts/tree/main/ofl/anybody"
+  ]
+}

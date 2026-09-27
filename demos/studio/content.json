@@ -1,0 +1,240 @@
+{
+ "site": {
+  "title": "Sandvik Ogunleye",
+  "tagline": "Design studio, Mabgate, Leeds"
+ },
+ "categories": [
+  {
+   "slug": "selected",
+   "name": "Selected"
+  },
+  {
+   "slug": "identity",
+   "name": "Identity"
+  },
+  {
+   "slug": "packaging",
+   "name": "Packaging"
+  },
+  {
+   "slug": "editorial",
+   "name": "Editorial"
+  },
+  {
+   "slug": "signage",
+   "name": "Signage"
+  },
+  {
+   "slug": "motion",
+   "name": "Motion"
+  },
+  {
+   "slug": "web",
+   "name": "Web"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "work",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "work",
+   "title": "Work",
+   "content": ""
+  },
+  {
+   "slug": "services",
+   "title": "Services",
+   "pattern": "studio/page-services"
+  },
+  {
+   "slug": "studio",
+   "title": "Studio",
+   "pattern": "studio/page-studio"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "studio/page-contact"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Casa Ribeiro",
+   "category": [
+    "identity",
+    "signage",
+    "selected"
+   ],
+   "tags": [
+    "Food and drink"
+   ],
+   "image": "hero.jpg",
+   "excerpt": "Hand-painted signs and a paper menu for a lunch bar on Harrogate Road.",
+   "date": "2025-11-10",
+   "pattern": "studio/case-image-led"
+  },
+  {
+   "title": "Kirkgate Law Library",
+   "category": [
+    "editorial",
+    "selected"
+   ],
+   "tags": [
+    "Public sector"
+   ],
+   "image": "book-1.jpg",
+   "excerpt": "A spine system for 140 volumes of court reports, readable from across the room.",
+   "date": "2025-10-10",
+   "pattern": "studio/case-text-first"
+  },
+  {
+   "title": "Leeds Print Fair 2025",
+   "category": [
+    "identity",
+    "editorial",
+    "motion",
+    "selected"
+   ],
+   "tags": [
+    "Arts and culture"
+   ],
+   "image": "tote-1.jpg",
+   "excerpt": "Poster, programme and a looping foyer screen, printed in two colours on Munken.",
+   "date": "2025-09-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The fair wanted one poster that could also be the programme cover, the tote bag and the screen by the door. We drew one figure and let it move for the screen: 12 seconds, no sound.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Printed by Footprint Workers Co-op in red and black. The run was 400 posters and 2,000 programmes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Animation: Joss Adeyemi. Print: Footprint Workers Co-op. Photography: Ade Okafor.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Ardsley Tea Merchants",
+   "category": [
+    "packaging",
+    "identity",
+    "selected"
+   ],
+   "tags": [
+    "Food and drink",
+    "Retail"
+   ],
+   "image": "pack-2.jpg",
+   "excerpt": "A tin, a rubber stamp and a price list for a tea shop open since 1931.",
+   "date": "2025-08-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Ardsley had 40 teas and 40 labels, all different. We kept the old orange tin and gave every tea the same stamped label, filled in by hand at the counter.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The price list is a single folded sheet, reprinted when prices change. It costs £38 per 500.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Tins: Hainsworth Tinware. Photography: Ade Okafor.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Esperanto Society of Leeds",
+   "category": [
+    "identity"
+   ],
+   "tags": [
+    "Non-profit"
+   ],
+   "image": "pack-1.jpg",
+   "excerpt": "Carrier bags and a membership card for a society that meets above the Victoria pub.",
+   "date": "2025-07-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The society has 63 members and a budget of £900. We set their motto in a script Maud drew from a 1920s congress badge and printed it on paper bags they hand out at the Leeds Library book sale.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The membership card is the same design, one colour, on grey board.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Lettering: Maud Kessler. Bags: Bagfactory Bradford.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Marché Couvert, Roubaix",
+   "category": [
+    "signage",
+    "selected"
+   ],
+   "tags": [
+    "Public sector",
+    "Retail"
+   ],
+   "image": "shop-1.jpg",
+   "excerpt": "Twelve enamel signs for a covered market, in French and Flemish.",
+   "date": "2025-06-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The market managers wanted rules on the wall that nobody could peel off. We set them in one condensed capital and had them fired in enamel in Lyon.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Blue and yellow are the town colours. The signs will outlive all of us.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Enamel: Émaillerie Rhône. Photography: Claire Vasseur.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Northern Tile Company",
+   "category": [
+    "editorial",
+    "web"
+   ],
+   "tags": [
+    "Retail"
+   ],
+   "image": "poster-1.jpg",
+   "excerpt": "A catalogue that shows 36 tile designs at real size, and the online version of it.",
+   "date": "2025-05-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The old catalogue printed tiles at 40 percent. Customers ordered the wrong ones. The new one prints every design at 1:1, two sheets per spread, and the website uses the same codes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We built the site in WordPress and the shop staff update stock themselves.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Photography: Ade Okafor. Print: Pureprint.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Lindqvist Matches",
+   "category": [
+    "packaging"
+   ],
+   "tags": [
+    "Retail"
+   ],
+   "image": "print-1.jpg",
+   "excerpt": "Labels for a Swedish match reissue, four designs per box.",
+   "date": "2025-04-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A reissue of labels from the Vänersborg factory archive. We redrew four of them, fixed the spelling and moved the safety text where Swedish law now wants it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Printed in two spot colours on kraft. The boxes sell in sets of four for £6.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Archive research: Karin Lindqvist.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Neon survey, Osaka",
+   "category": [
+    "motion"
+   ],
+   "tags": [
+    "Arts and culture"
+   ],
+   "image": "sign-1.jpg",
+   "excerpt": "A week photographing lit signs for the Leeds Light Night programme.",
+   "date": "2025-03-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Light Night paid for Joss and Tunde to spend a week on Dotonbori photographing signs after dark. The footage became the festival idents.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We are not sure this counts as a project. It paid, so it is in here.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Photography and edit: Joss Adeyemi.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Stockhamer Engraving",
+   "category": [
+    "identity"
+   ],
+   "tags": [
+    "Retail"
+   ],
+   "image": "print-2.jpg",
+   "excerpt": "Letterheads and cards for an engraver, printed by the client on her own press.",
+   "date": "2025-02-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Josefa Stockhamer engraves trophies and signet rings in Headingley. She wanted cards that looked like her grandfather's, so we copied the layout and redrew the script.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">She prints them herself on a proof press in the back of the shop, 50 at a time.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Lettering: Maud Kessler.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Café Coroa",
+   "category": [
+    "identity"
+   ],
+   "tags": [
+    "Food and drink"
+   ],
+   "image": "menu-1.jpg",
+   "excerpt": "A menu board and a two-page menu for a Portuguese café on Harehills Lane.",
+   "date": "2025-01-10",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Two languages, one page, and prices that line up. We set the menu in the café's own crest colours and left space for the daily soup.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The board is painted. The paper menu is printed on the studio laser every Monday.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":6} -->\n<h6 class=\"wp-block-heading\">Credits</h6>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\">Photography: Ade Okafor.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Work",
+   "url": "/work/"
+  },
+  {
+   "label": "Services",
+   "url": "/services/"
+  },
+  {
+   "label": "Studio",
+   "url": "/studio/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

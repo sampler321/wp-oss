@@ -17,16 +17,16 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 9 | joint | 021 Furniture and object designer | as researched | deployed (HTTP 404) | https://wposs-joint.b-j-kapica.workers.dev |
 | 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | failed test |  |
-| 12 | studio | 025 Small branding studio | as researched | tested |  |
+| 12 | studio | 025 Small branding studio | as researched | deployed | https://wposs-studio.b-j-kapica.workers.dev |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |
 | 14 | rep | 033 Illustration / artist representation agency | as researched | deployed | https://wposs-rep.b-j-kapica.workers.dev |
-| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | todo | |
+| 15 | reel | 034 Independent filmmaker / film site | heavily inspired by International Film Festival Rotterdam | tested |  |
 | 16 | amp | 038 Band / solo musician | duotone | todo | |
 | 17 | catalog | 039 Independent record label | inspired by a cassette label | deployed | https://wposs-catalog.b-j-kapica.workers.dev |
 | 18 | bpm | 040 DJ / producer, also works for independent radio | NTS-inspired, could be inspired by Radio Kapitał Warsaw | deployed (HTTP 404) | https://wposs-bpm.b-j-kapica.workers.dev |
 | 19 | booth | 044 Recording studio | actually modern, like studionagrywarka.pl | deployed (HTTP 404) | https://wposs-booth.b-j-kapica.workers.dev |
 | 20 | freq | 046 Community / online radio station | yes, that radio station | deployed (HTTP 404) | https://wposs-freq.b-j-kapica.workers.dev |
-| 21 | wavelength | 046b Second radio station | another radio station, different direction | todo | |
+| 21 | wavelength | 046b Second radio station | another radio station, different direction | deployed (HTTP 404) | https://wposs-wavelength.b-j-kapica.workers.dev |
 | 22 | confidante | 047a Podcast: women's conversation show | podcast variant: women | deployed (HTTP 404) | https://wposs-confidante.b-j-kapica.workers.dev |
 | 23 | evidence | 047b Podcast: true crime | podcast variant: true crime | deployed (HTTP 404) | https://wposs-evidence.b-j-kapica.workers.dev |
 | 24 | patchnotes | 047c Podcast: tech | podcast variant: tech | deployed (HTTP 404) | https://wposs-patchnotes.b-j-kapica.workers.dev |

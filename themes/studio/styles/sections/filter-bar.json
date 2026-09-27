@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Filter bar",
+	"slug": "filter-bar",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|contrast",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{align-items:baseline}& > p:first-child{min-width:7.5rem;font-stretch:75%;font-weight:500;margin:0}"
+	}
+}

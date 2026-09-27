@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Work sheet (8/4 spans)",
+	"slug": "work-sheet",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding:0}& .wp-block-post-excerpt__more-text{display:none}"
+	}
+}

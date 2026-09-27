@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Selected or all switch",
+	"slug": "switch",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "600"
+		},
+		"css": "& a{text-decoration:none;padding:.1em .45em;margin-right:.35em;color:inherit}& a:hover{text-decoration:underline}& strong{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--contrast);padding:.1em .45em;margin-right:.35em;font-weight:600}"
+	}
+}

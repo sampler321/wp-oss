@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Inline terms",
+	"slug": "inline-terms",
+	"blockTypes": [
+		"core/categories",
+		"core/tag-cloud"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "500"
+		},
+		"css": "&{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.2rem .35rem;flex:1 1 0;min-width:0}& li{margin:0}& a{font-size:inherit!important;margin:0!important;text-decoration:none;color:inherit;padding:.1em .45em;display:inline-block}& a:hover{text-decoration:underline;text-decoration-color:var(--wp--preset--color--accent)}& .current-cat>a{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--contrast)}"
+	}
+}
