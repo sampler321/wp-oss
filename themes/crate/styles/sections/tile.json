@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product tile",
+	"slug": "tile",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"textTransform": "uppercase",
+			"letterSpacing": "0.06em"
+		},
+		"spacing": {
+			"blockGap": "0"
+		},
+		"css": "& > p{margin:0 .5rem!important}& img{aspect-ratio:4/5;object-fit:cover;width:100%}"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Outline",
+	"slug": "outline-button",
+	"blockTypes": [
+		"core/button"
+	],
+	"styles": {
+		"color": {
+			"background": "transparent",
+			"text": "var:preset|color|contrast"
+		},
+		"css": "& .wp-block-button__link{background:transparent;color:inherit;border:1px solid currentColor}"
+	}
+}

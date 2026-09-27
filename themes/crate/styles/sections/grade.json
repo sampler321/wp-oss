@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Grade sticker",
+	"slug": "grade",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent-2",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "700",
+			"textTransform": "uppercase",
+			"letterSpacing": "0.06em"
+		},
+		"css": "&{display:inline-block;padding:.35em .6em}"
+	}
+}

@@ -1,0 +1,10 @@
+# crate: notes
+
+- Direction: the owner asked for Balenciaga or Zara, so this is fashion-house e-commerce minimalism applied to a used-record shop. White field, black type, a cold grey behind every product photo, and 2px gutters in an edge-to-edge 4-up grid with no cards or buttons on the listing.
+- Signature: one gigantic CRATE wordmark (the site title at 29vw) pulled up over the bottom edge of the full-bleed hero photo, half on the picture and half on white. Everything else is small uppercase.
+- The record-shop data layer from the research survives as tiny tables: the latest 100 list (artist, title, label, cat no, format, media/sleeve grade, price), the grade pair and pressing details on every used copy, the M to G grading guide, genre crates split into new LP / used LP / used 7-inch.
+- Font: Arimo only (display claim replaces Urbanist, because the brief changed direction toward a plain neo-grotesque). One family at two extremes: 11 to 12px tracked caps for UI, a screen-wide wordmark. Tabular figures for prices.
+- Palette: #FFFFFF, #000000, tile grey #EFEFEF, grey text #595959, red #D70015 only for SOLD and the Record Store Day bar, sticker yellow #FFE600 only for grade stickers. Variations: Import (obi red), Soul (brown and yellow), Dub (grey and green).
+- Exception to sniff test Q16: running text is 15px and UI labels 11 to 12px, below the 17px body minimum, because the owner's brief asks for tiny uppercase type. Contrast stays at 7:1 or better for body text.
+- Core-block limits: WooCommerce's results count, catalogue sorting, breadcrumbs and image-gallery blocks are not registered in the post editor, so the harness flags them; the shop uses a format link row instead and the product page uses the single product image block. Theme images in a Cover block fail the harness (the URL appears twice in PHP), so the hero is an Image plus a pulled-up Site Title.
+- Genres are not a separate taxonomy in the demo builder, so genre links run a product search (`/?s=jazz&post_type=product`) and product categories are the formats.

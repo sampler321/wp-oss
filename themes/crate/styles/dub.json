@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dub",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#D8D9D4",
+					"name": "Concrete grey"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0B0B0B",
+					"name": "Black ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#0A5C31",
+					"name": "Grade green"
+				},
+				{
+					"slug": "surface",
+					"color": "#C6C8C1",
+					"name": "Darker grey"
+				},
+				{
+					"slug": "line",
+					"color": "#0B0B0B",
+					"name": "Black line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3C3E3A",
+					"name": "Soot"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#E7FF00",
+					"name": "Sticker lime"
+				}
+			]
+		}
+	}
+}

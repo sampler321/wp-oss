@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Arrivals list",
+	"slug": "arrivals-list",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"textTransform": "uppercase",
+			"letterSpacing": "0.06em"
+		},
+		"css": "& thead th{border-bottom:1px solid var(--wp--preset--color--line);color:var(--wp--preset--color--muted);font-weight:400}& tr:hover td{background:var(--wp--preset--color--surface)}& td:last-child,& th:last-child{text-align:right;padding-right:0}"
+	}
+}

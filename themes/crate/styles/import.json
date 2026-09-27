@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Import",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#111111",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#C8102E",
+					"name": "Obi red"
+				},
+				{
+					"slug": "surface",
+					"color": "#F3EFE8",
+					"name": "Rice paper"
+				},
+				{
+					"slug": "line",
+					"color": "#C8102E",
+					"name": "Obi line"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A5A5A",
+					"name": "Grey text"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FFE600",
+					"name": "Sticker yellow"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/site-title": {
+				"color": {
+					"text": "var:preset|color|accent"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|accent"
+						}
+					}
+				}
+			}
+		}
+	}
+}

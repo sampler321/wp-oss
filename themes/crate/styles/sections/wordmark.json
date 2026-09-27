@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wordmark",
+	"slug": "wordmark",
+	"blockTypes": [
+		"core/site-title",
+		"core/heading",
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|display",
+			"fontWeight": "700",
+			"lineHeight": "0.76",
+			"letterSpacing": "-0.065em",
+			"textTransform": "uppercase"
+		},
+		"css": "&{margin-left:-0.04em!important;white-space:nowrap}& a{color:inherit}"
+	}
+}

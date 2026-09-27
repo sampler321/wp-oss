@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Soul",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F2E8D8",
+					"name": "Sleeve card"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2A170C",
+					"name": "Brown ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#A63A00",
+					"name": "Burnt orange"
+				},
+				{
+					"slug": "surface",
+					"color": "#E4D3B8",
+					"name": "Cardboard"
+				},
+				{
+					"slug": "line",
+					"color": "#2A170C",
+					"name": "Brown line"
+				},
+				{
+					"slug": "muted",
+					"color": "#664A36",
+					"name": "Faded brown"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F6C443",
+					"name": "Sticker yellow"
+				}
+			]
+		}
+	}
+}

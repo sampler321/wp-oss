@@ -1,0 +1,256 @@
+{
+ "site": {
+  "title": "Crate",
+  "tagline": "Used and new records, Call Lane, Leeds"
+ },
+ "categories": [
+  {
+   "slug": "events",
+   "name": "Events"
+  },
+  {
+   "slug": "shop-news",
+   "name": "Shop news"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "events",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "events",
+   "title": "Events",
+   "content": ""
+  },
+  {
+   "slug": "latest-arrivals",
+   "title": "Latest 100",
+   "pattern": "crate/page-latest-arrivals",
+   "template": "page-wide"
+  },
+  {
+   "slug": "crates",
+   "title": "Crates",
+   "pattern": "crate/page-crates",
+   "template": "page-wide"
+  },
+  {
+   "slug": "sell-to-us",
+   "title": "Sell to us",
+   "pattern": "crate/page-sell-to-us",
+   "template": "page-wide"
+  },
+  {
+   "slug": "grading",
+   "title": "Grading",
+   "pattern": "crate/page-grading"
+  },
+  {
+   "slug": "stores",
+   "title": "Shops",
+   "pattern": "crate/page-stores",
+   "template": "page-wide"
+  },
+  {
+   "slug": "shipping",
+   "title": "Shipping and returns",
+   "pattern": "crate/page-shipping",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Record Store Day: queue from 8am on Call Lane",
+   "category": "events",
+   "image": "shop-floor.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Doors open at 8am on Saturday 18 April. One copy of each title per person, and nothing from the day goes online until Monday at 10am.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bring a flask. We will have tea from 7.30 for the front of the queue.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Listening night: Impulse! gatefolds, side two only",
+   "category": "events",
+   "image": "spinning.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thursday 2 October, 7pm to 9pm at Call Lane. Ines plays the second sides of eight Impulse! records on the shop console. Free, 30 places, first come.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Buying trip to Otley: 1,400 soul and funk 45s",
+   "category": "shop-news",
+   "image": "singles-case.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We bought a collection of singles from a former DJ in Otley. They go out in boxes of 50 and on the singles wall from next Tuesday.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Folk crate moves to Hebden Bridge",
+   "category": "shop-news",
+   "image": "digging.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">From October the folk section lives at Market Street. Call Lane keeps a small crate of new folk pressings by the counter.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Cassette table, every Sunday in October",
+   "category": "events",
+   "image": "cassette.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A table of used tapes at £2 each by the door on Sundays. Inlays included, no cases for the ones that arrived without.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why we play every used record before it is priced",
+   "category": "shop-news",
+   "image": "hero.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Grading by eye misses pressing faults, warps you can only hear, and the long scratch that looks like a hairline. So every used record goes on the shop deck for at least a minute a side.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It is slower. It is also why our returns pile is small.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Latest 100",
+   "url": "/latest-arrivals/"
+  },
+  {
+   "label": "Crates",
+   "url": "/crates/"
+  },
+  {
+   "label": "Sell to us",
+   "url": "/sell-to-us/"
+  },
+  {
+   "label": "Grading",
+   "url": "/grading/"
+  },
+  {
+   "label": "Events",
+   "url": "/events/"
+  },
+  {
+   "label": "Shops",
+   "url": "/stores/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Commodores, Nightshift (7-inch)",
+   "price": "6",
+   "image": "single-motown.jpg",
+   "category": "Used 7-inch",
+   "sku": "TMG-1371",
+   "stock": 1,
+   "short": "Media VG+, sleeve VG. Motown TMG 1371, UK 1985.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Company sleeve with a small tear at the top seam. Plays clean, light surface marks on the B side.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Commodores</td></tr><tr><td>Title</td><td>Nightshift</td></tr><tr><td>Format</td><td>7-inch</td></tr><tr><td>Label</td><td>Motown</td></tr><tr><td>Cat no</td><td>TMG 1371</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1985</td></tr><tr><td>Media</td><td>VG+</td></tr><tr><td>Sleeve</td><td>VG</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Alice Coltrane, Journey in Satchidananda (LP)",
+   "price": "48",
+   "image": "spinning.jpg",
+   "category": "Used LP",
+   "sku": "AS-9203",
+   "stock": 1,
+   "short": "Media VG, sleeve VG+. Impulse! AS-9203, US 1971.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Gatefold, Van Gelder stamp in the run-out. Some crackle in the lead-in of side one, quiet after that.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Alice Coltrane</td></tr><tr><td>Title</td><td>Journey in Satchidananda</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Impulse!</td></tr><tr><td>Cat no</td><td>AS-9203</td></tr><tr><td>Country</td><td>US</td></tr><tr><td>Year</td><td>1971</td></tr><tr><td>Media</td><td>VG</td></tr><tr><td>Sleeve</td><td>VG+</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Grace Jones, Nightclubbing (LP)",
+   "price": "32",
+   "image": "orange-vinyl.jpg",
+   "category": "Used LP",
+   "sku": "ILPS-9624",
+   "stock": 1,
+   "short": "Media NM, sleeve VG+. Island ILPS 9624, UK 1981.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Original inner sleeve. Faint ring wear on the back cover only.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Grace Jones</td></tr><tr><td>Title</td><td>Nightclubbing</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Island</td></tr><tr><td>Cat no</td><td>ILPS 9624</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1981</td></tr><tr><td>Media</td><td>NM</td></tr><tr><td>Sleeve</td><td>VG+</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Arthur Russell, World of Echo (LP)",
+   "price": "27",
+   "image": "stack.jpg",
+   "category": "New LP",
+   "sku": "AU-1004-1",
+   "stock": 6,
+   "short": "New, sealed. Audika AU-1004-1.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Sealed reissue, 180g, from the 2024 pressing.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Arthur Russell</td></tr><tr><td>Title</td><td>World of Echo</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Audika</td></tr><tr><td>Cat no</td><td>AU-1004-1</td></tr><tr><td>Country</td><td>US</td></tr><tr><td>Year</td><td>2024</td></tr><tr><td>Media</td><td>New</td></tr><tr><td>Sleeve</td><td>New</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Talking Heads, Remain in Light (LP)",
+   "price": "22",
+   "image": "sleeve-hands.jpg",
+   "category": "Used LP",
+   "sku": "SRK-6095",
+   "stock": 1,
+   "short": "Media VG+, sleeve VG. Sire SRK 6095, UK 1980.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Printed inner with lyrics. Sleeve has a price sticker residue on the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Talking Heads</td></tr><tr><td>Title</td><td>Remain in Light</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Sire</td></tr><tr><td>Cat no</td><td>SRK 6095</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1980</td></tr><tr><td>Media</td><td>VG+</td></tr><tr><td>Sleeve</td><td>VG</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Portishead, Dummy (LP)",
+   "price": "95",
+   "image": "shelf.jpg",
+   "category": "Used LP",
+   "sku": "828-553-1",
+   "stock": 0,
+   "short": "Media VG+, sleeve VG+. Go! Beat 828 553-1, UK 1994.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">First pressing. Sold on the Saturday it went up, kept here for reference.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Portishead</td></tr><tr><td>Title</td><td>Dummy</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Go! Beat</td></tr><tr><td>Cat no</td><td>828 553-1</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1994</td></tr><tr><td>Media</td><td>VG+</td></tr><tr><td>Sleeve</td><td>VG+</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Studio One Rockers (LP)",
+   "price": "26",
+   "image": "crates.jpg",
+   "category": "New LP",
+   "sku": "SJR-LP48",
+   "stock": 4,
+   "short": "New, sealed. Soul Jazz SJR LP48.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Double LP repress, sealed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Various</td></tr><tr><td>Title</td><td>Studio One Rockers</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Soul Jazz</td></tr><tr><td>Cat no</td><td>SJR LP48</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>2023</td></tr><tr><td>Media</td><td>New</td></tr><tr><td>Sleeve</td><td>New</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Kate Bush, Hounds of Love (cassette)",
+   "price": "9",
+   "image": "cassette.jpg",
+   "category": "Used cassette",
+   "sku": "TC-KAB-1",
+   "stock": 1,
+   "short": "Media VG, sleeve VG. EMI TC-KAB 1, UK 1985.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Paper J-card, a little faded on the spine. Tape plays evenly, no drop-outs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Kate Bush</td></tr><tr><td>Title</td><td>Hounds of Love</td></tr><tr><td>Format</td><td>Cassette</td></tr><tr><td>Label</td><td>EMI</td></tr><tr><td>Cat no</td><td>TC-KAB 1</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1985</td></tr><tr><td>Media</td><td>VG</td></tr><tr><td>Sleeve</td><td>VG</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Sade, Diamond Life (LP)",
+   "price": "14",
+   "image": "digging.jpg",
+   "category": "Used LP",
+   "sku": "EPC-26044",
+   "stock": 1,
+   "short": "Media VG, sleeve VG. Epic EPC 26044, UK 1984.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Light surface noise between tracks. Sleeve has a name written in biro on the back.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Sade</td></tr><tr><td>Title</td><td>Diamond Life</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Epic</td></tr><tr><td>Cat no</td><td>EPC 26044</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1984</td></tr><tr><td>Media</td><td>VG</td></tr><tr><td>Sleeve</td><td>VG</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Nina Simone, Wild Is the Wind (LP)",
+   "price": "40",
+   "image": "portable.jpg",
+   "category": "Used LP",
+   "sku": "BL-7738",
+   "stock": 1,
+   "short": "Media G+, sleeve VG. Philips BL 7738, UK 1966.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Mono. Plays through with steady crackle, no skips. Priced for the crackle.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Nina Simone</td></tr><tr><td>Title</td><td>Wild Is the Wind</td></tr><tr><td>Format</td><td>LP</td></tr><tr><td>Label</td><td>Philips</td></tr><tr><td>Cat no</td><td>BL 7738</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td>1966</td></tr><tr><td>Media</td><td>G+</td></tr><tr><td>Sleeve</td><td>VG</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Soul 45s, box of 50 (7-inch)",
+   "price": "60",
+   "image": "singles-case.jpg",
+   "category": "Used 7-inch",
+   "sku": "CRATE-BOX-07",
+   "stock": 1,
+   "short": "Media VG, sleeve Company. Various CRATE-BOX-07, UK and US 1964 to 1979.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Fifty northern soul and funk 45s from one collection, bought in Otley. List inside the lid.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Various</td></tr><tr><td>Title</td><td>Soul 45s, box of 50</td></tr><tr><td>Format</td><td>7-inch</td></tr><tr><td>Label</td><td>Various</td></tr><tr><td>Cat no</td><td>CRATE-BOX-07</td></tr><tr><td>Country</td><td>UK and US</td></tr><tr><td>Year</td><td>1964 to 1979</td></tr><tr><td>Media</td><td>VG</td></tr><tr><td>Sleeve</td><td>Company</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "name": "Crate gift card",
+   "price": "25",
+   "image": "mailer.jpg",
+   "category": "Gift cards",
+   "sku": "GIFT-25",
+   "stock": 50,
+   "short": "New, sealed. Crate GIFT-25.",
+   "description": "<!-- wp:paragraph -->\n<p class=\"\">Spend it online or in either shop. Posted in a card mailer, or emailed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table {\"className\":\"is-style-spec-table\"} -->\n<figure class=\"wp-block-table is-style-spec-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Artist</td><td>Crate</td></tr><tr><td>Title</td><td>Gift card</td></tr><tr><td>Format</td><td>Card</td></tr><tr><td>Label</td><td>Crate</td></tr><tr><td>Cat no</td><td>GIFT-25</td></tr><tr><td>Country</td><td>UK</td></tr><tr><td>Year</td><td></td></tr><tr><td>Media</td><td>New</td></tr><tr><td>Sleeve</td><td>New</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  }
+ ]
+}

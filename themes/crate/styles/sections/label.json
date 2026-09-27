@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Small caps label",
+	"slug": "label",
+	"blockTypes": [
+		"core/paragraph",
+		"core/heading",
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"textTransform": "uppercase",
+			"letterSpacing": "0.06em"
+		}
+	}
+}

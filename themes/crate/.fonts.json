@@ -1,0 +1,30 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Arimo\", sans-serif",
+      "name": "Arimo",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Arimo",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/arimo-italic-400_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Arimo",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/arimo-normal-400_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Arimo (Google Fonts), https://github.com/google/fonts/tree/main/ofl/arimo"
+  ]
+}
