@@ -1,0 +1,121 @@
+{
+ "site": {
+  "title": "Nadia Branković",
+  "tagline": "Product designer for services people queue for"
+ },
+ "categories": [
+  {
+   "slug": "transport",
+   "name": "Transport"
+  },
+  {
+   "slug": "public-services",
+   "name": "Public services"
+  },
+  {
+   "slug": "retail",
+   "name": "Retail"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "work",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "work",
+   "title": "Work",
+   "content": ""
+  },
+  {
+   "slug": "working-together",
+   "title": "Working together",
+   "pattern": "case/working-together-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "case/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "case/contact-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Ticket machines that ask where you are going",
+   "slug": "ticket-machines-that-ask-where-you-are-going",
+   "category": "transport",
+   "image": "kiosk-3.jpg",
+   "date": "2025-10-20",
+   "excerpt": "Clyde Valley Rail lost a third of ticket sales at the machine. Moving one question to the front halved that.",
+   "pattern": "case/case-study-full"
+  },
+  {
+   "title": "Parking without the meter",
+   "category": "public-services",
+   "image": "parking.jpg",
+   "date": "2024-09-12",
+   "excerpt": "Renfrew Council wanted to remove 300 meters. We made sure nobody got a fine because of it.",
+   "content": "<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">The problem</h3>\n<!-- /wp:heading --><!-- wp:paragraph -->\n<p>Two thirds of parking fines in Paisley town centre were for people who had paid, but for the wrong zone. The zone number was on a sticker on the meter, and the meters were being removed.</p>\n<!-- /wp:paragraph --><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">What changed</h3>\n<!-- /wp:heading --><!-- wp:paragraph -->\n<p>The text and app flows now start from the street name, not the zone. We tested with 38 drivers in the Lagoon Centre car park and on Causeyside Street.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"case/results\"} /-->"
+  },
+  {
+   "title": "Self-checkout for a clothing chain",
+   "category": "retail",
+   "image": "selfcheckout.jpg",
+   "date": "2023-11-02",
+   "excerpt": "Kilt & Co. customers paid, then waited for staff to remove tags. We moved the tag step first.",
+   "content": "<!-- wp:pattern {\"slug\":\"case/screens-caption\"} /--><!-- wp:paragraph -->\n<p>Eight stores, four weeks of observation, one change to the order of the flow. Waits for staff at the tills fell from a median of 2 minutes 40 to under a minute.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Live departures on the platform",
+   "category": "transport",
+   "image": "departures.jpg",
+   "date": "2022-06-15",
+   "excerpt": "Bus stop displays and a phone view that agree with each other, for the first time.",
+   "content": "<!-- wp:paragraph -->\n<p>The stop displays and the app used two different feeds, so they often disagreed by several minutes. We designed one view of the next three buses and put it on both.</p>\n<!-- /wp:paragraph --><!-- wp:pattern {\"slug\":\"case/before-after\"} /-->"
+  },
+  {
+   "title": "Timetables people can read at a bus stop",
+   "category": "public-services",
+   "image": "map.jpg",
+   "date": "2022-02-10",
+   "excerpt": "A printed timetable redesign for 900 stops, tested at night and in the rain.",
+   "content": "<!-- wp:paragraph -->\n<p>Paper timetables still matter at stops with no display. We cut the text size problem by printing one route per sheet and the next hour first.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A phone app for season tickets",
+   "category": "transport",
+   "image": "phone-2.jpg",
+   "date": "2021-09-01",
+   "excerpt": "Replacing plastic season tickets with a phone barcode, without leaving older passengers behind.",
+   "content": "<!-- wp:paragraph -->\n<p>We kept the plastic card as an option and designed the app around the question people asked staff most: does my ticket cover this train?</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Work",
+   "url": "/work/"
+  },
+  {
+   "label": "Working together",
+   "url": "/working-together/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ]
+}

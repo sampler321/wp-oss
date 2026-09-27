@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Framed screen, wide crop",
+	"slug": "framed-wide",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "& img{border:2px solid var(--wp--preset--color--contrast);display:block;width:100%;aspect-ratio:16/9;object-fit:cover}"
+	}
+}

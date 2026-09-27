@@ -15,7 +15,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 7 | commons | 012 Artist-run space / collective | prettier, less brutal, image heavy | deployed (HTTP 404) | https://wposs-commons.b-j-kapica.workers.dev |
 | 8 | room | 019 Interior designer + shop | as researched | deployed | https://wposs-room.b-j-kapica.workers.dev |
 | 9 | joint | 021 Furniture and object designer | as researched | todo | |
-| 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | todo | |
+| 10 | case | 022 UX / product designer case studies | inspired by kapicadesign.com, a bit more edgy | deployed (HTTP 404) | https://wposs-case.b-j-kapica.workers.dev |
 | 11 | glyph | 024 Independent type foundry | as researched | todo | |
 | 12 | studio | 025 Small branding studio | as researched | todo | |
 | 13 | karat | 032 Jewelry maker | as researched | tested |  |

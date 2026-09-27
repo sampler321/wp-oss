@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Framed screen",
+	"slug": "framed",
+	"blockTypes": [
+		"core/image",
+		"core/post-featured-image"
+	],
+	"styles": {
+		"css": "& img{border:2px solid var(--wp--preset--color--contrast);display:block}"
+	}
+}

@@ -1,0 +1,47 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Hubot Sans\", sans-serif",
+      "name": "Hubot Sans",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Hubot Sans",
+          "fontStyle": "normal",
+          "fontWeight": "200 900",
+          "src": [
+            "file:./assets/fonts/hubot-sans-normal-200_900.woff2"
+          ],
+          "fontStretch": "75% 125%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Atkinson Hyperlegible Next\", sans-serif",
+      "name": "Atkinson Hyperlegible Next",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "italic",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Atkinson Hyperlegible Next",
+          "fontStyle": "normal",
+          "fontWeight": "200 800",
+          "src": [
+            "file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Hubot Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/hubotsans",
+    "Atkinson Hyperlegible Next (Google Fonts), https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext"
+  ]
+}

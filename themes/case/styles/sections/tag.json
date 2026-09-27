@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tag",
+	"slug": "tag",
+	"blockTypes": [
+		"core/paragraph",
+		"core/post-terms"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"fontWeight": "700"
+		},
+		"css": "&{display:inline-block;align-self:flex-start;border:2px solid var(--wp--preset--color--contrast);padding:.2em .6em;width:fit-content}& a{text-decoration:none;color:inherit}"
+	}
+}
