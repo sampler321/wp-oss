@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Seasonal",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Label white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E1A16",
+					"name": "Bean black"
+				},
+				{
+					"slug": "accent",
+					"color": "#B23A48",
+					"name": "Harvest red"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8A3B12",
+					"name": "Roast brown"
+				},
+				{
+					"slug": "surface",
+					"color": "#F2C9C3",
+					"name": "Label pink"
+				},
+				{
+					"slug": "surface-2",
+					"color": "#FBEDEA",
+					"name": "Pale pink"
+				},
+				{
+					"slug": "line",
+					"color": "#1E1A16",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A5046",
+					"name": "Chaff"
+				}
+			]
+		}
+	}
+}

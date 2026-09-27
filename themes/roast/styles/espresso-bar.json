@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Espresso bar",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#2A1D16",
+					"name": "Dark roast"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F3E6D0",
+					"name": "Crema"
+				},
+				{
+					"slug": "accent",
+					"color": "#E0A45A",
+					"name": "Caramel"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F0B97A",
+					"name": "Honey"
+				},
+				{
+					"slug": "surface",
+					"color": "#3D2A20",
+					"name": "Roasted"
+				},
+				{
+					"slug": "surface-2",
+					"color": "#35251C",
+					"name": "Bean"
+				},
+				{
+					"slug": "line",
+					"color": "#F3E6D0",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#D2C1A6",
+					"name": "Chaff"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var:preset|color|base"
+				}
+			}
+		}
+	}
+}

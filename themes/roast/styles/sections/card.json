@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Boxed card",
+	"slug": "card",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"width": "2px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		}
+	}
+}

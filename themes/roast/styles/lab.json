@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Lab",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Label white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E1A16",
+					"name": "Bean black"
+				},
+				{
+					"slug": "accent",
+					"color": "#0E6B45",
+					"name": "Data green"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8A3B12",
+					"name": "Roast brown"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6EFEA",
+					"name": "Lab green"
+				},
+				{
+					"slug": "surface-2",
+					"color": "#F4F8F6",
+					"name": "Pale lab"
+				},
+				{
+					"slug": "line",
+					"color": "#1E1A16",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#5A5046",
+					"name": "Chaff"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "800",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		}
+	}
+}

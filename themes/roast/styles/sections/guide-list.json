@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Brew guide list",
+	"slug": "guide-list",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "&{gap:0!important}&>li{border:2px solid var(--wp--preset--color--contrast);margin:-1px!important;padding:var(--wp--preset--spacing--40)}&>li:hover{background:var(--wp--preset--color--surface-2)}"
+	}
+}

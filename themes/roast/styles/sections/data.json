@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Coffee data table",
+	"slug": "data",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& td:first-child{font-weight:800;width:38%;background:var(--wp--preset--color--surface-2)}"
+	}
+}

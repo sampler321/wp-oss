@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pour schedule",
+	"slug": "timeline",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|medium"
+		},
+		"css": "& td:first-child{font-family:var(--wp--preset--font-family--display);width:6.5em;white-space:nowrap;color:var(--wp--preset--color--accent)}& td:last-child{font-variant-numeric:tabular-nums}& td{border-left:0!important;border-right:0!important}"
+	}
+}

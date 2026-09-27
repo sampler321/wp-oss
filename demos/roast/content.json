@@ -1,0 +1,266 @@
+{
+ "site": {
+  "title": "Lintel Coffee",
+  "tagline": "Roasted in Liverpool on Tuesdays and Fridays"
+ },
+ "categories": [
+  {
+   "slug": "brew-guides",
+   "name": "Brew guides"
+  },
+  {
+   "slug": "journal",
+   "name": "Journal"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "brew-guides",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "brew-guides",
+   "title": "Brew guides",
+   "content": ""
+  },
+  {
+   "slug": "subscriptions",
+   "title": "Subscriptions",
+   "pattern": "roast/subscriptions-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "wholesale",
+   "title": "Wholesale",
+   "pattern": "roast/wholesale-page"
+  },
+  {
+   "slug": "cafes",
+   "title": "Where to drink it",
+   "pattern": "roast/cafes-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "prices-we-pay",
+   "title": "Prices we pay",
+   "pattern": "roast/prices-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About the roastery",
+   "pattern": "roast/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "brewing-kit",
+   "title": "Brewing kit",
+   "pattern": "roast/brewing-kit-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "V60, 15g to 250g",
+   "slug": "v60-15g-to-250g",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "v60.jpg",
+   "excerpt": "One cup, three minutes. Our house recipe for light filter coffee.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>15g coffee</td></tr><tr><td>Water</td><td>250g water</td></tr><tr><td>Temperature</td><td>94°C</td></tr><tr><td>Grind</td><td>Medium-fine, like table salt</td></tr><tr><td>Total time</td><td>3:00</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Pour 50g to bloom. Swirl the dripper so everything is wet.</td><td>50g</td></tr><tr><td>0:45</td><td>Pour in slow circles to 150g.</td><td>150g</td></tr><tr><td>1:15</td><td>Pour to 250g, keeping the level steady.</td><td>250g</td></tr><tr><td>1:45</td><td>Give it one gentle swirl to flatten the bed.</td><td>250g</td></tr><tr><td>3:00</td><td>Drawdown should finish around here. Much later: grind coarser.</td><td>Done</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Sour or thin: grind finer.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bitter or dry: grind coarser.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Rinse the paper first, or it tastes of paper.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:pattern {\"slug\":\"roast/grind-guide\"} /-->\n\n<!-- wp:pattern {\"slug\":\"roast/water-guide\"} /-->"
+  },
+  {
+   "title": "AeroPress, upside down",
+   "slug": "aeropress-inverted",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "aeropress.jpg",
+   "excerpt": "Our recipe for one strong cup, and the one we take camping.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>14g coffee</td></tr><tr><td>Water</td><td>200g water</td></tr><tr><td>Temperature</td><td>88°C</td></tr><tr><td>Grind</td><td>Medium, like caster sugar</td></tr><tr><td>Total time</td><td>2:00</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Plunger in at the 4 mark, upside down. Add coffee, pour 200g water.</td><td>200g</td></tr><tr><td>0:10</td><td>Stir three times. Cap on with a rinsed filter.</td><td>200g</td></tr><tr><td>1:30</td><td>Flip onto the cup.</td><td>200g</td></tr><tr><td>1:30</td><td>Press gently for 30 seconds. Stop at the hiss.</td><td>Done</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Too strong: add 50g hot water to the cup.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Muddy: grind coarser and press more slowly.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:pattern {\"slug\":\"roast/equipment-cards\"} /-->"
+  },
+  {
+   "title": "Moka pot, the way it should be done",
+   "slug": "moka-pot",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "moka.jpg",
+   "excerpt": "Start with hot water and take it off the heat early. It stops the burnt taste.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>17g coffee (fill the basket, don't tamp)</td></tr><tr><td>Water</td><td>Water from the kettle to just under the valve</td></tr><tr><td>Temperature</td><td>Just boiled</td></tr><tr><td>Grind</td><td>Fine, but coarser than espresso</td></tr><tr><td>Total time</td><td>About 4:00</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Fill the base with just-boiled water. Add the basket and coffee, screw on the top with a towel.</td><td></td></tr><tr><td>0:30</td><td>Medium heat, lid open.</td><td></td></tr><tr><td>3:00</td><td>Coffee starts to come through, dark and slow.</td><td></td></tr><tr><td>3:45</td><td>It turns pale and starts to gurgle: take it off and run the base under cold water.</td><td>Done</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Burnt taste: take it off sooner.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Weak: grind a little finer. Never tamp.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Espresso, Hope Street recipe",
+   "slug": "espresso-hope-street",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "machine.jpg",
+   "excerpt": "18g in, 40g out, in 28 to 32 seconds. What we tell our cafés.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>18g coffee</td></tr><tr><td>Water</td><td>40g espresso out</td></tr><tr><td>Temperature</td><td>93°C</td></tr><tr><td>Grind</td><td>Fine, dial in by time</td></tr><tr><td>Total time</td><td>0:30</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Start the shot as soon as the portafilter is in.</td><td>0g</td></tr><tr><td>0:07</td><td>First drops. Much earlier: grind finer.</td><td>2g</td></tr><tr><td>0:20</td><td>Steady flow, like warm honey.</td><td>25g</td></tr><tr><td>0:30</td><td>Stop at 40g in the cup.</td><td>40g</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Sour and fast: grind finer.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Bitter and slow: grind coarser.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Rest the beans 10 days after roasting for espresso.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:pattern {\"slug\":\"roast/roast-log\"} /-->"
+  },
+  {
+   "title": "Batch brewer, for offices",
+   "slug": "batch-brewer",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "cafe.jpg",
+   "excerpt": "The recipe our office customers use in a Moccamaster.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>60g coffee</td></tr><tr><td>Water</td><td>1 litre water</td></tr><tr><td>Temperature</td><td>Machine default</td></tr><tr><td>Grind</td><td>Medium-coarse</td></tr><tr><td>Total time</td><td>6:00</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Rinse the paper, add coffee, fill the tank to 1 litre, switch on.</td><td></td></tr><tr><td>0:40</td><td>Give the grounds a stir with a spoon once they're wet.</td><td></td></tr><tr><td>6:00</td><td>Brew finishes. Stir the jug before pouring.</td><td>Done</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Keep it on the hot plate for 30 minutes at most.</li>\n<!-- /wp:list-item --><!-- wp:list-item -->\n<li>Descale monthly. Liverpool water is soft, but not that soft.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "Cupping at home",
+   "slug": "cupping-at-home",
+   "category": "brew-guides",
+   "tags": [
+    "Brew guide"
+   ],
+   "image": "cupping.jpg",
+   "excerpt": "How we taste every roast, scaled down for a kitchen table.",
+   "template": "single-brew-guide",
+   "content": "<!-- wp:columns {\"style\":{\"spacing\":{\"blockGap\":{\"left\":\"var:preset|spacing|50\"}}}} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"38%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:38%\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What you need</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-data\"} -->\n<figure class=\"wp-block-table is-style-data\"><table class=\"has-fixed-layout\"><tbody><tr><td>Dose</td><td>12g coffee per cup</td></tr><tr><td>Water</td><td>200g water</td></tr><tr><td>Temperature</td><td>94°C</td></tr><tr><td>Grind</td><td>Medium-coarse</td></tr><tr><td>Total time</td><td>14:00</td></tr></tbody></table></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">Pour schedule</h4>\n<!-- /wp:heading -->\n\n<!-- wp:table {\"className\":\"is-style-timeline\"} -->\n<figure class=\"wp-block-table is-style-timeline\"><table class=\"has-fixed-layout\"><thead><tr><th>Time</th><th>What to do</th><th>Scale reads</th></tr></thead><tbody><tr><td>0:00</td><td>Pour water over the grounds to the top. Start the timer.</td><td>200g</td></tr><tr><td>4:00</td><td>Break the crust with a spoon and smell it.</td><td></td></tr><tr><td>5:00</td><td>Skim the foam off with two spoons.</td><td></td></tr><tr><td>10:00</td><td>Slurp from a spoon. Taste again as it cools.</td><td>Done</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Start the timer when the water first hits the coffee.</figcaption></figure>\n<!-- /wp:table --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">If it tastes wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Taste two coffees side by side. One on its own tells you very little.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->"
+  },
+  {
+   "title": "The prices we paid this season",
+   "slug": "prices-this-season",
+   "category": "journal",
+   "tags": [
+    "Sourcing"
+   ],
+   "image": "sacks.jpg",
+   "excerpt": "Five coffees, five prices, and why the Colombian costs almost twice as much.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every autumn we publish what we paid for green coffee. This year the range is $3.85 to $11.20 per kilo, FOB.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"roast/prices-we-pay\"} /-->\n\n<!-- wp:paragraph -->\n<p class=\"\">The expensive one is La Palma y El Tucán, an anaerobic lot from Cundinamarca. It's a treat coffee and we sell it at £16 a bag with a smaller margin than the others.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"roast/producer-cards\"} /-->"
+  },
+  {
+   "title": "Why we roast on Tuesdays and Fridays",
+   "slug": "roast-days",
+   "category": "journal",
+   "tags": [
+    "Roastery"
+   ],
+   "image": "roasted.jpg",
+   "excerpt": "Two roast days means nothing sits on a shelf for more than three days before it's posted.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Roasting twice a week means every bag goes out within three days of roasting. Filter coffee tastes best from about day 7 to day 30, so it arrives just before it's ready.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The other days we cup, pack wholesale orders and clean the roaster. Friday afternoons are for the chaff collector, which nobody enjoys.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"roast/roast-log\"} /-->\n\n<!-- wp:pattern {\"slug\":\"roast/team\"} /-->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Subscriptions",
+   "url": "/subscriptions/"
+  },
+  {
+   "label": "Brew guides",
+   "url": "/brew-guides/"
+  },
+  {
+   "label": "Brewing kit",
+   "url": "/brewing-kit/"
+  },
+  {
+   "label": "Wholesale",
+   "url": "/wholesale/"
+  },
+  {
+   "label": "Prices we pay",
+   "url": "/prices-we-pay/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Kiruga AA, Kenya, 250g",
+   "price": "12.50",
+   "image": "roasted.jpg",
+   "category": "Coffee",
+   "sku": "LIN-KIR-250",
+   "stock": 40,
+   "short": "Washed, Nyeri. Blackcurrant, pink grapefruit, a bit of tomato. Roasted for filter."
+  },
+  {
+   "name": "Hambela Wamena, Ethiopia, 250g",
+   "price": "11.00",
+   "image": "green.jpg",
+   "category": "Coffee",
+   "sku": "LIN-HAM-250",
+   "stock": 36,
+   "short": "Natural, Guji. Strawberry and milk chocolate. Roasted for filter."
+  },
+  {
+   "name": "El Puente, Honduras, 1kg",
+   "price": "41.00",
+   "image": "sacks.jpg",
+   "category": "Coffee",
+   "sku": "LIN-PUE-1K",
+   "stock": 0,
+   "short": "Honey process. Red apple, caramel. Sold out, back after Tuesday's roast."
+  },
+  {
+   "name": "Hope Street espresso, 250g",
+   "price": "9.50",
+   "image": "machine.jpg",
+   "category": "Coffee",
+   "sku": "LIN-HSE-250",
+   "stock": 80,
+   "short": "Brazil and Colombia. Hazelnut, cocoa, orange. Works with milk."
+  },
+  {
+   "name": "La Palma y El Tucán, Colombia, 250g",
+   "price": "16.00",
+   "image": "cupping.jpg",
+   "category": "Coffee",
+   "sku": "LIN-LPT-250",
+   "stock": 14,
+   "short": "Anaerobic. Mango, rum, cinnamon. A treat."
+  },
+  {
+   "name": "V60 02 ceramic dripper",
+   "price": "24.00",
+   "image": "v60.jpg",
+   "category": "Equipment",
+   "sku": "LIN-EQ-V60",
+   "stock": 12,
+   "short": "White ceramic, makes one or two cups. Use 02 papers."
+  },
+  {
+   "name": "V60 02 paper filters, 100",
+   "price": "6.00",
+   "image": "v60.jpg",
+   "category": "Equipment",
+   "sku": "LIN-EQ-PAP",
+   "stock": 50,
+   "short": "Unbleached. Rinse before use."
+  },
+  {
+   "name": "AeroPress Original",
+   "price": "35.00",
+   "image": "aeropress.jpg",
+   "category": "Equipment",
+   "sku": "LIN-EQ-AER",
+   "stock": 8,
+   "short": "Comes with 350 papers. See the upside-down recipe in the brew guides."
+  }
+ ]
+}

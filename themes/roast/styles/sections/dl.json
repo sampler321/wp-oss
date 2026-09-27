@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Label data rows",
+	"slug": "dl",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"width": "1.5px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"css": "&>*{margin:0!important}&>.wp-block-columns{border-bottom:1.5px solid var(--wp--preset--color--contrast);margin:0!important;gap:0!important}&>.wp-block-columns:last-child{border-bottom:0}& .wp-block-column{padding:.45em .7em}& .wp-block-column:first-child{background:var(--wp--preset--color--surface-2);font-weight:800;border-right:1.5px solid var(--wp--preset--color--contrast)}& p{margin:0}"
+	}
+}
