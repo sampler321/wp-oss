@@ -5,6 +5,76 @@
  * Categories: about
  */
 ?>
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Name</th><th>Role</th><th>Beat</th><th>Email</th></tr></thead><tbody><tr><td>Ruth Adebayo</td><td>Editor</td><td>Council, courts, complaints</td><td><a href="mailto:ruth@example.com">ruth@example.com</a></td></tr><tr><td>Tomasz Wiśniewski</td><td>Data reporter</td><td>Planning, transport, data</td><td><a href="mailto:tomasz@example.com">tomasz@example.com</a></td></tr><tr><td>Gwen Harcourt</td><td>Reporter (3 days)</td><td>Schools, health, environment</td><td><a href="mailto:gwen@example.com">gwen@example.com</a></td></tr><tr><td>Imran Siddiqui</td><td>Membership and print</td><td>Stockists, AGM, events</td><td><a href="mailto:members@example.com">members@example.com</a></td></tr></tbody></table><figcaption class="wp-element-caption">Who works here. Volunteers who take meeting notes are credited on each set of notes.</figcaption></figure>
-<!-- /wp:table -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","minimumColumnWidth":"13rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Ruth Adebayo</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-accent-color has-text-color has-x-small-font-size">Editor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Council, courts, complaints</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><a href="mailto:ruth@example.com">ruth@example.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Tomasz Wiśniewski</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-accent-color has-text-color has-x-small-font-size">Data reporter</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Planning, transport, data</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><a href="mailto:tomasz@example.com">tomasz@example.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Gwen Harcourt</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-accent-color has-text-color has-x-small-font-size">Reporter, three days a week</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Schools, health, environment</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><a href="mailto:gwen@example.com">gwen@example.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Imran Siddiqui</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-accent-color has-text-color has-x-small-font-size">Membership and print</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Stockists, AGM, events</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><a href="mailto:members@example.com">members@example.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

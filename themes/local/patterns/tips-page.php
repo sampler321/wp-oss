@@ -11,3 +11,5 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"local/tip-options"} /-->
+
+<!-- wp:pattern {"slug":"local/contact-newsroom"} /-->

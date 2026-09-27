@@ -5,10 +5,64 @@
  * Categories: contact
  */
 ?>
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>How</th><th>Where</th><th>Notes</th></tr></thead><tbody><tr><td>Email</td><td><a href="mailto:tips@example.com">tips@example.com</a></td><td>Read by the editor and the data reporter</td></tr><tr><td>Signal</td><td>07700 900 214</td><td>Messages set to disappear after a week</td></tr><tr><td>Post</td><td>14 Catherine Hill, Frome BA11 1BY</td><td>No return address needed</td></tr><tr><td>In person</td><td>Thursday drop-in, 10am to noon</td><td>At the newsroom, first floor, no lift</td></tr></tbody></table><figcaption class="wp-element-caption">Ways to reach the newsroom. Signal is the most private.</figcaption></figure>
-<!-- /wp:table -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","minimumColumnWidth":"12rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Email</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="mailto:tips@example.com">tips@example.com</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">Read by the editor and the data reporter.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Signal</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">07700 900 214</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">Messages set to disappear after a week. The most private way.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Post</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">14 Catherine Hill, Frome BA11 1BY</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">No return address needed.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">In person</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Thursdays, 10am to noon</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">At the newsroom, first floor, no lift.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Tell us what you know, how you know it, and whether we can quote you. We check everything before we publish and we never name a source who asked us not to.</p>
+<p class="">Tell us what you know, how you know it, and whether we can quote you. We check everything before we publish and we never name a source who asked us not to.</p>
 <!-- /wp:paragraph -->

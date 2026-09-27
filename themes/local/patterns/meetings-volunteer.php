@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We pay £20 a meeting to members who sit in and send us notes. You'll get a two-hour training session at the newsroom first, and a template. The planning committee needs the most help. It runs long.</p>
+<p class="">We pay £20 a meeting to members who sit in and send us notes. You'll get a two-hour training session at the newsroom first, and a template. The planning committee needs the most help. It runs long.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

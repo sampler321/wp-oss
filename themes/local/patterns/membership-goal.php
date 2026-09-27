@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"x-large","fontFamily":"display"} -->
-<p class="has-display-font-family has-x-large-font-size">We need 400 more members paying £5 a month to hire a second full-time reporter for Somerset Council meetings.</p>
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"display","fontSize":"x-large"} -->
+<p class="has-x-large-font-size has-display-font-family">We need 400 more members paying £5 a month to hire a second full-time reporter for Somerset Council meetings.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

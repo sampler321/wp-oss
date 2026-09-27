@@ -2,15 +2,53 @@
 /**
  * Title: Membership: monthly amounts
  * Slug: local/membership-join
- * Categories: call-to-action,accountability
+ * Categories: membership
  */
 ?>
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Amount</th><th>What it does</th></tr></thead><tbody><tr><td>£3 a month</td><td>Pays for about one hour of meeting reporting</td></tr><tr><td>£5 a month</td><td>Our suggested amount. Most members pay this.</td></tr><tr><td>£10 a month</td><td>Covers a reader who can't pay</td></tr><tr><td>Any amount</td><td>Set your own, from £1</td></tr></tbody></table><figcaption class="wp-element-caption">Membership amounts. You can change or cancel any time by email.</figcaption></figure>
-<!-- /wp:table -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","minimumColumnWidth":"11rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:paragraph {"fontFamily":"display","fontSize":"xx-large"} -->
+<p class="has-xx-large-font-size has-display-font-family">£3 a month</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Pays for about one hour of meeting reporting.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:paragraph {"fontFamily":"display","fontSize":"xx-large"} -->
+<p class="has-xx-large-font-size has-display-font-family">£5 a month</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Our suggested amount. Most members pay this.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:paragraph {"fontFamily":"display","fontSize":"xx-large"} -->
+<p class="has-xx-large-font-size has-display-font-family">£10 a month</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Covers a reader who can't pay.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card-line","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-line"><!-- wp:paragraph {"fontFamily":"display","fontSize":"xx-large"} -->
+<p class="has-xx-large-font-size has-display-font-family">Any amount</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Set your own, from £1.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Members own the paper. Each member gets one vote at the annual general meeting, whatever they pay, and can stand for the board. The website stays free to read: membership pays for it to exist.</p>
+<p class="">Members own the paper. Each member gets one vote at the annual general meeting, whatever they pay, and can stand for the board. The website stays free to read: membership pays for it to exist.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

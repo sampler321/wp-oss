@@ -10,8 +10,8 @@
 <h4 class="wp-block-heading">Latest correction</h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","fontFamily":"body"} -->
-<p class="has-body-font-family has-x-small-font-size">Filed 24 September</p>
+<!-- wp:paragraph {"fontFamily":"body","fontSize":"x-small"} -->
+<p class="has-x-small-font-size has-body-font-family">Filed 24 September</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

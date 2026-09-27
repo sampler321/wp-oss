@@ -5,14 +5,14 @@
  * Categories: posts,query
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-rule-thick","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","className":"is-style-rule-thick","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide is-style-rule-thick" style="padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
 <h2 class="wp-block-heading">News log</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","fontFamily":"body"} -->
-<p class="has-body-font-family has-x-small-font-size"><a href="/news/">All reports</a></p>
+<!-- wp:paragraph {"fontFamily":"body","fontSize":"x-small"} -->
+<p class="has-x-small-font-size has-body-font-family"><a href="/news/">All reports</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -20,15 +20,15 @@
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-log"} -->
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:post-date {"format":"j M Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:post-date {"format":"j M Y"} /-->
 
-<!-- wp:post-terms {"term":"category"} /--></div>
+<!-- wp:post-terms {"term":"category","separator":", "} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+<div class="wp-block-column"><!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
 
-<!-- wp:post-excerpt {"moreText":"","excerptLength":28} /--></div>
+<!-- wp:post-excerpt {"excerptLength":28,"moreText":""} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"220px"} -->
@@ -39,7 +39,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>No reports filed yet.</p>
+<p class="">No reports filed yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

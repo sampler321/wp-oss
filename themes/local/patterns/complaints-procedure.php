@@ -12,13 +12,9 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Email <a href="mailto:corrections@example.com">corrections@example.com</a> or write to the newsroom. Say which report, and what you think is wrong.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>The editor, Ruth Adebayo, replies within seven days. Factual errors are fixed the same day, with a note at the foot of the report.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>If you're not happy with our answer after 28 days, you can take it to our regulator, IMPRESS, at impressorg.com or 020 3325 4288.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->

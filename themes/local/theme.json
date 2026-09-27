@@ -227,6 +227,14 @@
 			"style": true,
 			"width": true
 		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
+		},
 		"custom": {
 			"measure": "66ch"
 		}

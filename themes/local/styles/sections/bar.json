@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bar (text blocks)",
+	"slug": "bar",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"color": {
+			"text": "var:preset|color|accent-2"
+		},
+		"css": "&{letter-spacing:-0.12em;white-space:nowrap;overflow:hidden}"
+	}
+}

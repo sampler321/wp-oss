@@ -7,7 +7,7 @@
 ?>
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/river.jpg' ) ); ?>" alt="Brown floodwater running high between trees along a river bank"/><figcaption class="wp-element-caption">The river at Welshmill, 06:40 on 14 September. Archive photograph used as a stand-in.</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -23,7 +23,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We took the Environment Agency's 15-minute readings for the Welshmill gauge and set them against the rain gauge on the allotments at Critchill. The river peaked at 2.46 m at 04:15 on 14 September, 38 cm below the 2012 record.</p>
+<p class="">We took the Environment Agency's 15-minute readings for the Welshmill gauge and set them against the rain gauge on the allotments at Critchill. The river peaked at 2.46 m at 04:15 on 14 September, 38 cm below the 2012 record.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Card with top rule",
+	"slug": "card-line",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|contrast",
+				"width": "3px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30"
+			}
+		}
+	}
+}

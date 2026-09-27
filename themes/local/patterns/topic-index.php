@@ -5,8 +5,8 @@
  * Categories: posts
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-rule-thick","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-group alignwide is-style-rule-thick" style="margin-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns -->
+<!-- wp:group {"align":"wide","className":"is-style-rule-thick","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-rule-thick" style="padding-bottom:var(--wp--preset--spacing--60);margin-top:var(--wp--preset--spacing--60)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:heading -->
 <h2 class="wp-block-heading">Topics</h2>

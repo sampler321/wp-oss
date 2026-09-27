@@ -75,6 +75,7 @@ theme = {
         },
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
         'custom': {'measure': '66ch'},
     },
     'styles': {
@@ -401,7 +402,8 @@ pattern('meetings-volunteer', 'Volunteer to take notes', 'meetings,call-to-actio
 pattern('meetings-page', 'Page: public meetings', 'meetings', J(
     para('This is every public meeting in Frome and the parts of Somerset Council that decide things about Frome. We add meetings as soon as the agenda is published, usually five working days before.', fontSize='large'),
     pattern_ref('meetings-tracker'),
-    columns((None, pattern_ref('meetings-legend')), (None, pattern_ref('meetings-volunteer')), align='wide')),
+    columns((None, pattern_ref('meetings-legend')), (None, pattern_ref('meetings-volunteer')), align='wide'),
+    pattern_ref('how-to-attend'), pattern_ref('meeting-quote')),
     block_types='core/post-content')
 
 # Lead story + rail (front page)
@@ -539,10 +541,7 @@ pattern('membership-goal', 'Membership goal (one sentence)', 'call-to-action', g
 
 pattern('join-page', 'Page: join', 'call-to-action', J(
     pattern_ref('membership-goal'), pattern_ref('membership-join'),
-    details('Is this a donation or a share?', para('A membership of a community benefit society. It isn\'t a donation and it isn\'t tax-deductible. You get one vote at the AGM.')),
-    details('Can I pay yearly?', para('Yes. Email us and we\'ll send a yearly payment link at twelve times the monthly amount.')),
-    details('Do members get a say in what you cover?', para('Members vote on the board and on one reporting priority each year. They don\'t see stories before they are published.'))),
-    block_types='core/post-content')
+    pattern_ref('membership-faq')), block_types='core/post-content')
 
 # Transparency
 pattern('funders-table', 'Who funds us (table)', 'accountability', table([
@@ -593,7 +592,7 @@ pattern('tip-options', 'Send us a tip', 'contact', J(
 
 pattern('tips-page', 'Page: tips', 'contact', J(
     para('Most of our best stories started with a reader noticing something odd. A planning notice on a lamp post, a school letter, a bus that stopped coming.', fontSize='large'),
-    pattern_ref('tip-options')), block_types='core/post-content')
+    pattern_ref('tip-options'), pattern_ref('contact-newsroom')), block_types='core/post-content')
 
 # People
 def reporter(name, role, beat, email, img, alt):
@@ -612,7 +611,7 @@ pattern('about-page', 'Page: about', 'about', J(
     para('Frome Survey started in 2021 after the town\'s weekly paper stopped covering council meetings. Three of us began by sitting in on the planning committee and posting what was decided. There are now four staff and about 30 volunteers who take notes.', fontSize='large'),
     para('We report on Frome and the parts of Somerset Council that affect it. We don\'t cover national news, and we don\'t run press releases unchecked. Our house rule is that every number links to where it came from, and if we can\'t show the source, we say why.'),
     para('We think the planning committee is the most important meeting in town and the least attended. If you only read one thing we publish, make it the planning notes.'),
-    pattern_ref('newsroom-list'), pattern_ref('reporter-profile'), pattern_ref('print-stockists')), block_types='core/post-content')
+    pattern_ref('newsroom-list'), pattern_ref('reporter-profile'), pattern_ref('areas-covered'), pattern_ref('print-stockists'), pattern_ref('events-listing'), pattern_ref('photo-essay')), block_types='core/post-content')
 
 # Print and events
 pattern('print-stockists', 'Print edition stockists', 'about', J(
@@ -638,6 +637,130 @@ pattern('results-table', 'Election results table', 'data', table([
 
 pattern('page-landing', 'Page: news landing (log with topics)', 'posts', J(
     pattern_ref('topic-index'), pattern_ref('news-log-front')), block_types='core/post-content')
+
+# ---------------- round 2: fewer tables, more kit
+def rrow(cells, widths=None, cls='is-style-ruled', stack=True, strong_first=True):
+    widths = widths or [None] * len(cells)
+    cols = []
+    for i, (w, c) in enumerate(zip(widths, cells)):
+        cols.append((w, para(c, fontSize='small', style={'typography': {'fontWeight': '700'}} if (i == 0 and strong_first) else {})))
+    return columns(*cols, className=cls, isStackedOnMobile=stack, style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}, 'margin': {'top': '0', 'bottom': '0'}}})
+
+section('ruled', 'Ruled row', ['core/columns', 'core/group'], {
+    'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}},
+    'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}}, 'css': '& p{margin:0;font-variant-numeric:tabular-nums}'})
+section('bar', 'Bar (text blocks)', ['core/paragraph'], {'color': {'text': 'var:preset|color|accent-2'}, 'css': '&{letter-spacing:-0.12em;white-space:nowrap;overflow:hidden}'})
+section('card-line', 'Card with top rule', ['core/group'], {
+    'border': {'top': {'color': 'var:preset|color|contrast', 'width': '3px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30'}}})
+
+def bars(rows, caption):
+    out = [columns(('9rem', para(lbl, fontSize='x-small', style={'typography': {'fontWeight': '700'}})), (None, para(bar, fontSize='small', className='is-style-bar')), ('4rem', para(n, fontSize='x-small', align='right')),
+                   isStackedOnMobile=False, className='is-style-ruled', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|20'}, 'margin': {'top': '0', 'bottom': '0'}}}) for lbl, bar, n in rows]
+    return group(J(*out, para('<strong>Fig.</strong> ' + caption, fontSize='x-small', textColor='muted')), style={'spacing': {'blockGap': '0'}})
+
+pattern('meetings-rail', 'Meetings this week (rail list)', 'meetings', J(
+    heading('Public meetings this week', 3),
+    *[group(J(para(m[0], fontSize='x-small', textColor='accent', style={'typography': {'fontWeight': '700'}}), para(m[1], fontSize='small', style={'typography': {'fontWeight': '600'}}), para(m[3], fontSize='x-small', textColor='muted')),
+            className='is-style-ruled', style={'spacing': {'blockGap': '0'}}) for m in MEETINGS],
+    para('<a href="/meetings/">Full tracker with agendas and notes</a>', fontSize='small')))
+
+pattern('figure-of-the-week', 'Figure of the week (bar chart on graph paper)', 'data', group(J(
+    columns(
+        ('38%', J(heading('Figure of the week', 2),
+                  para('Missed bin collections reported to Somerset Council, June to August, for the six Frome streets with the most reports. Most misses on Vallis Road were on the same Thursday round.', fontSize='small'),
+                  label('Source: Somerset Council FOI response 2026/1147, received 11 September. n = 212 reports across Frome.'),
+                  para('<a href="/missed-bins-by-street/">Read the report</a>', fontSize='small'))),
+        (None, bars([('Vallis Road', '████████████████████', '41'), ('Nunney Road', '██████████████', '29'), ('Butts Hill', '███████████', '23'), ('Portway', '█████████', '19'), ('Styles Hill', '███████', '14'), ('Welshmill Lane', '█████', '11')],
+                    'Missed collections by street, 1 June to 31 August 2026. One block is about two reports.')),
+        style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
+    align='wide', className='is-style-graph-paper', layout={'type': 'default'}))
+
+pattern('figure-bars', 'Bar figure (edit the numbers)', 'data', bars([('Members', '███████████████████', '£62,800'), ('Grants', '█████████████', '£41,300'), ('Advertising', '████', '£11,200'), ('Events and print', '██', '£5,900')],
+    'Income, April 2025 to March 2026. One block is roughly £3,000.'), description='A bar chart made from rows of block characters. Say what one block stands for in the caption.')
+
+def nl_card(n):
+    return group(J(heading(n[0], 3, fontSize='large'), para(n[1], fontSize='x-small', textColor='accent', style={'typography': {'fontWeight': '700'}}), para(n[2], fontSize='small')), className='is-style-card-line')
+pattern('newsletter-chooser', 'Newsletter chooser', 'newsletters', J(
+    grid(J(*[nl_card(n) for n in NEWSL]), min_width='14rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}}),
+    para('To sign up, email <a href="mailto:lists@example.com?subject=Sign%20me%20up">lists@example.com</a> with the names of the lists you want. We add you by hand within a working day, and every email has a one-click unsubscribe.'),
+    buttons(('Email us to sign up', 'mailto:lists@example.com?subject=Sign%20me%20up'))))
+pattern('newsletter-chooser-short', 'Newsletter sign-up (short)', 'newsletters', group(columns(
+    ('38%', J(heading('Get it by email', 2), para('Four lists. Pick one or all of them.', fontSize='small'), buttons(('Choose your newsletters', '/newsletters/')))),
+    (None, grid(J(*[nl_card(n) for n in NEWSL]), min_width='9rem', style={'spacing': {'blockGap': 'var:preset|spacing|30'}}))),
+    align='wide', className='is-style-rule-thick', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}))
+
+pattern('membership-join', 'Membership: monthly amounts', 'membership', J(
+    grid(J(*[group(J(para(a, fontFamily='display', fontSize='xx-large'), para(t, fontSize='small')), className='is-style-card-line') for a, t in
+             [('£3 a month', 'Pays for about one hour of meeting reporting.'), ('£5 a month', 'Our suggested amount. Most members pay this.'), ('£10 a month', 'Covers a reader who can\'t pay.'), ('Any amount', 'Set your own, from £1.')]]),
+         min_width='11rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}}),
+    para('Members own the paper. Each member gets one vote at the annual general meeting, whatever they pay, and can stand for the board. The website stays free to read: membership pays for it to exist.'),
+    buttons(('Join with a monthly payment', 'https://example.com/join'), ('Ask about paying by standing order', 'mailto:members@example.com', {'className': 'is-style-outline'}))))
+
+pattern('tip-options', 'Send us a tip', 'contact', J(
+    grid(J(*[group(J(heading(h, 4), para(w, fontSize='small'), para(n, fontSize='x-small', textColor='muted')), className='is-style-card-line') for h, w, n in
+             [('Email', '<a href="mailto:tips@example.com">tips@example.com</a>', 'Read by the editor and the data reporter.'), ('Signal', '07700 900 214', 'Messages set to disappear after a week. The most private way.'),
+              ('Post', '14 Catherine Hill, Frome BA11 1BY', 'No return address needed.'), ('In person', 'Thursdays, 10am to noon', 'At the newsroom, first floor, no lift.')]]),
+         min_width='12rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}}),
+    para('Tell us what you know, how you know it, and whether we can quote you. We check everything before we publish and we never name a source who asked us not to.')))
+
+PEOPLE = [('Ruth Adebayo', 'Editor', 'Council, courts, complaints', 'ruth@example.com'), ('Tomasz Wiśniewski', 'Data reporter', 'Planning, transport, data', 'tomasz@example.com'),
+          ('Gwen Harcourt', 'Reporter, three days a week', 'Schools, health, environment', 'gwen@example.com'), ('Imran Siddiqui', 'Membership and print', 'Stockists, AGM, events', 'members@example.com')]
+pattern('newsroom-list', 'Newsroom (people and beats)', 'about', grid(J(*[group(J(heading(n, 4), para(r, fontSize='x-small', textColor='accent', style={'typography': {'fontWeight': '700'}}), para(b, fontSize='small'), para('<a href="mailto:%s">%s</a>' % (e, e), fontSize='x-small')), className='is-style-card-line') for n, r, b, e in PEOPLE]),
+    min_width='13rem', style={'spacing': {'blockGap': 'var:preset|spacing|40'}}))
+
+pattern('print-stockists', 'Print edition stockists', 'print', J(
+    heading('Where to pick up the print edition', 3),
+    para('Sixteen pages, free, on the first Friday of the month. 3,000 copies.', fontSize='small'),
+    *[rrow(r, ['14rem', None, '9rem']) for r in [['Frome Library', 'Justice Lane', 'Tue to Sat'], ['Hunting Raven Books', 'Cheap Street', 'Mon to Sat'], ['The Grain café', 'Market Yard', 'Every day'], ['Selwood Medical Centre', 'Berkley Road', 'Weekdays'], ['Fromefield Co-op', 'Fromefield', 'Every day']]]))
+
+pattern('events-listing', 'Events listing', 'events', J(
+    heading('Our events this autumn', 3),
+    *[rrow(r, ['11rem', None, '14rem', '8rem']) for r in [['Thu 8 Oct, 7pm', 'Reading a planning application, a workshop', 'Newsroom, 14 Catherine Hill', 'Free, 12 places'], ['Sat 17 Oct, 10am', 'Members\' AGM', 'Wesley Methodist Church hall', 'Members only'], ['Wed 4 Nov, 6:30pm', 'Ask the editor', 'Frome Library', 'Free, drop in']]],
+    para('Email <a href="mailto:events@example.com">events@example.com</a> to book a place.', fontSize='small')))
+
+pattern('explainer-series', 'Explainer series (numbered parts)', 'data', J(
+    heading('Somerset Council\'s budget, explained in five parts', 2),
+    lst(['<a href="/category/explainers/">Why the council said it could go bust</a>, 6 min', '<a href="/category/explainers/">What a section 114 notice does and doesn\'t do</a>, 4 min', '<a href="/category/explainers/">Where the money goes, by service</a>, 7 min',
+         '<a href="/category/explainers/">What has been cut in Frome so far</a>, 5 min', '<a href="/town-council-reserves/">The town council\'s reserves and what they\'re for</a>, 6 min'], ordered=True),
+    para('Part 6, on council tax, is due in November.', fontSize='small', textColor='muted')))
+
+pattern('reporter-byline', 'Reporter box (end of a report)', 'about', columns(
+    ('25%', image('rain.jpg', 'A rain gauge funnel on a railing')),
+    (None, J(heading('Reported by Tomasz Wiśniewski', 4), para('Data reporter. Covers planning, transport and anything with a spreadsheet. Before this, eleven years as a surveyor for Wessex Water.', fontSize='small'), para('<a href="mailto:tomasz@example.com">tomasz@example.com</a>, or Signal 07700 900 214', fontSize='x-small'))),
+    verticalAlignment='center', className='is-style-rule-top'))
+
+pattern('update-log', 'Updates to this report', 'accountability', group(J(
+    heading('Updates to this report', 4),
+    *[rrow(r, ['9rem', None]) for r in [['16 Sep, 09:10', 'Added the 15 September readings.'], ['14 Sep, 18:30', 'Added quotes from Willow Vale residents.'], ['14 Sep, 07:40', 'First published.']]]), className='is-style-abstract'))
+
+pattern('meeting-quote', 'Quote from a meeting', 'meetings', pullquote('We have approved the homes. We cannot make anyone build them.', 'Cllr Amira Okafor, chair of planning, 14 September 2026'))
+
+pattern('how-to-attend', 'How to go to a council meeting', 'meetings', J(
+    heading('Going to a meeting for the first time', 3),
+    lst(['Check the tracker for the date and whether it\'s in person.', 'Public questions: email the town clerk by noon two working days before. You get three minutes.', 'Arrive ten minutes early. Seats are at the back, and nobody minds if you leave halfway.', 'Read our notes afterwards to check what you heard.'], ordered=True)))
+
+pattern('areas-covered', 'Areas we cover', 'about', group(J(
+    heading('Where we report', 3),
+    para('Frome town, the parishes of Beckington, Berkley, Nunney, Rodden and Selwood, and the Somerset Council decisions that affect them. We don\'t cover Bath or Warminster, though we read their papers.', fontSize='small'),
+    lst(['Frome Market ward', 'Frome North ward', 'Frome East ward', 'Frome West ward', 'Frome Keyford ward', 'Frome Park ward'], className='is-style-data-list')), className='is-style-graph-paper'))
+
+pattern('photo-figure', 'Photo figure with caption and credit', 'data', image('townhall.jpg', 'The great hall of a town hall with a timber roof and tall windows', 'The hall before the full council meeting, 30 September. Photograph: Gwen Harcourt.'))
+
+pattern('photo-essay', 'Photo essay (opens large)', 'data', J(
+    heading('Market day, 29 August', 3),
+    gallery([('market.jpg', 'Squash and flowers on a market stall', ''), ('housing.jpg', 'A terrace of white houses', ''), ('bus.jpg', 'A red double-decker bus', ''), ('roadworks.jpg', 'Road works at night', '')], columns=2, align='wide'),
+    para('Photographs used as stand-ins for local photography.', fontSize='x-small', textColor='muted')))
+
+pattern('membership-faq', 'Membership questions', 'membership', J(
+    heading('Questions about joining', 3),
+    details('Is this a donation or a share?', para('A membership of a community benefit society. It isn\'t a donation and it isn\'t tax-deductible. You get one vote at the AGM.')),
+    details('Can I pay yearly?', para('Yes. Email us and we\'ll send a yearly payment link at twelve times the monthly amount.')),
+    details('Do members see stories early?', para('No. Members vote on the board and one reporting priority a year. Nobody outside the newsroom sees a story before it\'s published.'))))
+
+pattern('contact-newsroom', 'Contact the newsroom', 'contact', columns(
+    (None, J(heading('Newsroom', 4), para('First floor, 14 Catherine Hill, Frome BA11 1BY. Open weekdays 9am to 5pm. Two flights of stairs, no lift. We\'ll meet you downstairs if you ring ahead.', fontSize='small'))),
+    (None, J(heading('Phone and email', 4), para('01373 900 214<br><a href="mailto:desk@example.com">desk@example.com</a><br>Corrections: <a href="mailto:corrections@example.com">corrections@example.com</a>', fontSize='small'))),
+    (None, J(heading('Press releases', 4), para('Send them to <a href="mailto:desk@example.com">desk@example.com</a>. We read them all and publish almost none without checking.', fontSize='small')))))
 
 print('local: patterns written')
 
@@ -707,6 +830,12 @@ posts = [
                        ['Average 3,140 people a day, from 2,610 (rain) to 3,720.', '11am to noon was the busiest hour on all four days.', 'Traders say they sell most between 10am and 1pm, which fits.'],
                        'Two volunteers stood at the Cork Street and Bath Street entrances with clickers. People who left and came back were counted twice, so these are entries, not people.')),
 ]
+
+EXTRA = {'river-gauge-september': ['pull-figure', 'photo-figure', 'limits-note', 'data-download', 'update-log', 'reporter-byline'],
+         'homes-approved-not-built': ['meeting-quote', 'method-note', 'reporter-byline'], 'town-council-reserves': ['explainer-series', 'figure-bars'],
+         'missed-bins-by-street': ['data-download', 'data-sources'], 'the-51-bus-timed': ['abstract-box', 'key-findings']}
+for p_ in posts:
+    p_['content'] = J(p_['content'], *[pattern_ref(x) for x in EXTRA.get(p_['slug'], [])])
 
 content = {
     'site': {'title': 'Frome Survey', 'tagline': 'Local news for Frome, with the numbers and the sources'},

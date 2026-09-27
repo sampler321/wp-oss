@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Three sentences. What we measured, what we found, and the one number that matters. Keep it under 80 words so it fits on the front page.</p>
+<p class="">Three sentences. What we measured, what we found, and the one number that matters. Keep it under 80 words so it fits on the front page.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

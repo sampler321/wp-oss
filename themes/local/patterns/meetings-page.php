@@ -21,3 +21,7 @@
 <div class="wp-block-column"><!-- wp:pattern {"slug":"local/meetings-volunteer"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:pattern {"slug":"local/how-to-attend"} /-->
+
+<!-- wp:pattern {"slug":"local/meeting-quote"} /-->
