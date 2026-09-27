@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ingredient list",
+	"slug": "ingredients",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding-left:0}&>li{border-bottom:2px dotted var(--wp--preset--color--line);padding:.45em 0}& strong{font-variant-numeric:tabular-nums}"
+	}
+}

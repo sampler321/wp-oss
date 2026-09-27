@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Photo grid (square crops)",
+	"slug": "photo-grid",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{grid-template-columns:repeat(2,minmax(0,1fr))!important}& img{aspect-ratio:1;object-fit:cover;width:100%;height:auto}& figure{margin:0}"
+	}
+}

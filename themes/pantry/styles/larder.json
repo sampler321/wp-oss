@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Larder",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F4F1E6",
+					"name": "Parchment"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1E2116",
+					"name": "Olive black"
+				},
+				{
+					"slug": "accent",
+					"color": "#6B7A1E",
+					"name": "Olive"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#4A5412",
+					"name": "Caper"
+				},
+				{
+					"slug": "surface",
+					"color": "#DDE3B8",
+					"name": "Olive wash"
+				},
+				{
+					"slug": "line",
+					"color": "#CFCAB6",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#50533F",
+					"name": "Pepper"
+				},
+				{
+					"slug": "highlight",
+					"color": "#E7C66A",
+					"name": "Honey"
+				}
+			]
+		}
+	}
+}

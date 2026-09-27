@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Big numbered steps",
+	"slug": "steps",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding-left:0;counter-reset:step}&>li{counter-increment:step;position:relative;padding-left:3.2em;margin-bottom:1.1em;min-height:2.4em}&>li::before{content:counter(step);position:absolute;left:0;top:-.1em;font-family:var(--wp--preset--font-family--display);font-weight:900;font-stretch:125%;font-size:2em;line-height:1;color:var(--wp--preset--color--accent)}"
+	}
+}

@@ -1,0 +1,56 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Mona Sans\", sans-serif",
+      "name": "Mona Sans",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Mona Sans",
+          "fontStyle": "italic",
+          "fontWeight": "200 900",
+          "src": [
+            "file:./assets/fonts/mona-sans-italic-200_900.woff2"
+          ],
+          "fontStretch": "75% 125%"
+        },
+        {
+          "fontFamily": "Mona Sans",
+          "fontStyle": "normal",
+          "fontWeight": "200 900",
+          "src": [
+            "file:./assets/fonts/mona-sans-normal-200_900.woff2"
+          ],
+          "fontStretch": "75% 125%"
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Figtree\", sans-serif",
+      "name": "Figtree",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "italic",
+          "fontWeight": "300 900",
+          "src": [
+            "file:./assets/fonts/figtree-italic-300_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "normal",
+          "fontWeight": "300 900",
+          "src": [
+            "file:./assets/fonts/figtree-normal-300_900.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Mona Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/monasans",
+    "Figtree (Google Fonts), https://github.com/google/fonts/tree/main/ofl/figtree"
+  ]
+}

@@ -1,0 +1,63 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"55%"} -->
+<div class="wp-block-column" style="flex-basis:55%"><!-- wp:post-terms {"term":"category","textColor":"accent"} /-->
+
+<!-- wp:post-title {"level":1,"fontSize":"display"} /-->
+
+<!-- wp:post-excerpt {"fontSize":"large"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#recipe">Jump to recipe</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:post-date {"format":"j F Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:post-featured-image {"aspectRatio":"4/5"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+<!-- wp:group {"className":"no-print","layout":{"type":"constrained"}} -->
+<div class="wp-block-group no-print"><!-- wp:heading {"level":6} -->
+<h6 class="wp-block-heading">Tags</h6>
+<!-- /wp:heading -->
+
+<!-- wp:post-terms {"term":"post_tag","className":"is-style-chips"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","className":"is-style-rule-top no-print","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide is-style-rule-top no-print"><!-- wp:heading -->
+<h2 class="wp-block-heading">Cook something else</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":5,"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template {"className":"is-style-recipe-grid","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"10rem"}} -->
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/5"} /-->
+
+<!-- wp:post-terms {"term":"category","textColor":"accent"} /-->
+
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+
+<!-- wp:post-excerpt {"moreText":"","excerptLength":24} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>No recipes here yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

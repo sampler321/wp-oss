@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Recipe grid",
+	"slug": "recipe-grid",
+	"blockTypes": [
+		"core/post-template"
+	],
+	"styles": {
+		"css": "& .wp-block-post-featured-image{margin-bottom:.6rem}& .wp-block-post-title{margin-top:.4rem}"
+	}
+}

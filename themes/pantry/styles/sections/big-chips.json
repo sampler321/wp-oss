@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Big ingredient chips",
+	"slug": "big-chips",
+	"blockTypes": [
+		"core/list",
+		"core/tag-cloud"
+	],
+	"styles": {
+		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}& a{display:inline-block;text-decoration:none;border-radius:999px;padding:.3em .8em;background:var(--wp--preset--color--base);color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-weight:800;font-stretch:125%;font-size:var(--wp--preset--font-size--large)!important;letter-spacing:-.02em}& a:hover{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--base)}"
+	}
+}

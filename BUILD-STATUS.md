@@ -33,7 +33,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 25 | spine | 051 Novelist / author | Penguin aesthetics | todo | |
 | 26 | dispatch | 052 Independent journalist / paid newsletter | cutting-edge news, sharper | todo | |
 | 27 | local | 053 Hyperlocal news | more scientific looking | todo | |
-| 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | todo | |
+| 28 | pantry | 058 Recipe site / cookbook author | like ottolenghi.co.uk or mob.co.uk | deployed (HTTP 404) | https://wposs-pantry.b-j-kapica.workers.dev |
 | 29 | larder | 058b Independent recipe blog | like jadlonomia.com | todo | |
 | 30 | roast | 059 Specialty coffee roaster | as researched | todo | |
 | 31 | shelf | 060 Independent bookshop | Penguin or illustration-ish, style heavy; branding of Plato Rotterdam | todo | |
@@ -42,7 +42,7 @@ Legend: `todo` → `building` → `built` → `tested` → `deployed`
 | 34 | paper | 067 Stationery and paper goods | as researched | todo | |
 | 35 | deck | 076 Skate / surf shop | more edgy, Thrasher-like | todo | |
 | 36 | stem | 077 Florist | more style and colour heavy | todo | |
-| 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | todo | |
+| 37 | good-dog | 078 Pet goods maker | more rainbows, more fun and funny | failed test |  |
 | 38 | drop | 082 Creator merch drop store | Nirvana-style grunge, Julie (band) for reference | todo | |
 | 39 | platter | 095 Catering company | more tasty, less elegant, more fun | todo | |
 | 40 | scoop | 096 Gelateria | more professional, toned-down elegant, clean, technical | todo | |

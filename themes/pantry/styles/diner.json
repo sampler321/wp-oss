@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Diner",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#16140F",
+					"name": "Burnt"
+				},
+				{
+					"slug": "accent",
+					"color": "#B3121F",
+					"name": "Ketchup"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1E6B52",
+					"name": "Herb"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFE3E0",
+					"name": "Gingham"
+				},
+				{
+					"slug": "line",
+					"color": "#E4E1D8",
+					"name": "Tahini"
+				},
+				{
+					"slug": "muted",
+					"color": "#58544B",
+					"name": "Pepper"
+				},
+				{
+					"slug": "highlight",
+					"color": "#FFD447",
+					"name": "Mustard"
+				}
+			]
+		}
+	}
+}

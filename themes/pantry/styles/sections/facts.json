@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Recipe facts strip",
+	"slug": "facts",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"border": {
+			"radius": "18px"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
+			}
+		},
+		"css": "& p:first-child{font-size:var(--wp--preset--font-size--x-small);font-weight:700;margin:0}& p:last-child{font-family:var(--wp--preset--font-family--display);font-weight:800;font-stretch:125%;font-size:var(--wp--preset--font-size--large);margin:0;line-height:1.1}"
+	}
+}
