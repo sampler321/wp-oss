@@ -12,13 +12,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Espresso</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Espresso</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Fine, like icing sugar with a bit of grit</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -26,13 +26,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Moka pot</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Moka pot</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Fine, a bit coarser than espresso</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -40,13 +40,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">AeroPress</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">AeroPress</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Medium, like caster sugar</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -54,13 +54,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">V60</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">V60</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Medium-fine, like table salt</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -68,13 +68,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Batch brewer</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Batch brewer</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Medium-coarse, like sand</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -82,13 +82,13 @@
 
 <!-- wp:columns {"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"9rem"} -->
-<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Cafetière</p>
+<div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Cafetière</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small","style":{}} -->
+<div class="wp-block-column"><!-- wp:paragraph {"style":{},"fontSize":"small"} -->
 <p class="has-small-font-size">Coarse, like sea salt</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>

@@ -7,15 +7,15 @@
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"},"padding":{"bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"62%"} -->
-<div class="wp-block-column" style="flex-basis:62%"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">This week's filter</p>
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">This week's filter</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"roast/coffee-label"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/v60.jpg' ) ); ?>" alt="Water poured from a copper kettle into a pour-over dripper on a white table"/><figcaption class="wp-element-caption">Kiruga through a V60, 15g to 250g.</figcaption></figure>
 <!-- /wp:image -->
 

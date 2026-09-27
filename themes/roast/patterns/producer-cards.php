@@ -11,8 +11,8 @@
 <h4 class="wp-block-heading">Kiruga cooperative</h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Nyeri, Kenya, 3rd year</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Nyeri, Kenya, 3rd year</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -25,8 +25,8 @@
 <h4 class="wp-block-heading">Marysabel Caballero</h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Marcala, Honduras, 4th year</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Marcala, Honduras, 4th year</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -39,8 +39,8 @@
 <h4 class="wp-block-heading">Hambela Wamena station</h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Guji, Ethiopia, 2nd year</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Guji, Ethiopia, 2nd year</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

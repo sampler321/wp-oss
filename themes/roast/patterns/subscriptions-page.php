@@ -18,13 +18,13 @@
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Can I send one as a gift?</summary><!-- wp:paragraph -->
-<p class="">Yes. Gift subscriptions run for 3, 6 or 12 deliveries and stop on their own. We include a card with your message.</p>
+<p>Yes. Gift subscriptions run for 3, 6 or 12 deliveries and stop on their own. We include a card with your message.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Do you post outside the UK?</summary><!-- wp:paragraph -->
-<p class="">Only to Ireland and the EU, at £7.50 a bag, and only fortnightly or monthly.</p>
+<p>Only to Ireland and the EU, at £7.50 a bag, and only fortnightly or monthly.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 

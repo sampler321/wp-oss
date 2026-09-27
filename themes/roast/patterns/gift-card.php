@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">£20, £40 or £60, sent by email with your message. They never expire and work on subscriptions too.</p>
+<p>£20, £40 or £60, sent by email with your message. They never expire and work on subscriptions too.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

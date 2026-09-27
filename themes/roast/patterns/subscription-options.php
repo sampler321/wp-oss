@@ -19,8 +19,8 @@
 <p class="has-small-font-size">A different coffee each time, light roast.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">£11 per 250g</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">£11 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -33,8 +33,8 @@
 <p class="has-small-font-size">Always the same. Works with milk.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">£9.50 per 250g</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">£9.50 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -47,8 +47,8 @@
 <p class="has-small-font-size">Filter and espresso in one box.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">£20 per delivery</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">£20 per delivery</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

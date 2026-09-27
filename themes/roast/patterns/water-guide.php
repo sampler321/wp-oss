@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Liverpool tap water is soft, which suits light roasts. If your kettle furs up, use a jug filter or bottled water with low minerals. Don't use distilled water: the coffee tastes flat.</p>
+<p>Liverpool tap water is soft, which suits light roasts. If your kettle furs up, use a jug filter or bottled water with low minerals. Don't use distilled water: the coffee tastes flat.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

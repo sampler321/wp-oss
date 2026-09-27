@@ -35,9 +35,13 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Sour or thin: grind finer, or pour more slowly.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Bitter or dry: grind coarser, or use water a little cooler.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Still odd: rinse the paper filter with hot water first. It tastes of paper otherwise.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

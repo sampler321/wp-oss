@@ -19,8 +19,8 @@
 <p class="has-small-font-size">Every Tuesday.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">Most popular with offices</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">Most popular with offices</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -33,8 +33,8 @@
 <p class="has-small-font-size">Every other Tuesday.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">About a bag a fortnight for two people</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">About a bag a fortnight for two people</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -47,8 +47,8 @@
 <p class="has-small-font-size">First Tuesday of the month.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">For the weekend brewer</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">For the weekend brewer</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -61,8 +61,8 @@
 <p class="has-small-font-size">Any gap from 10 to 60 days.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">Set it in your account</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">Set it in your account</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

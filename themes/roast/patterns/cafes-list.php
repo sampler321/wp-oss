@@ -15,11 +15,11 @@
 <p class="has-small-font-size">Unit 4, Hope Street Yard, L1 9BQ</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Sat 9am to 1pm</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Sat 9am to 1pm</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent"} -->
+<!-- wp:paragraph {"textColor":"accent","fontSize":"x-small"} -->
 <p class="has-accent-color has-text-color has-x-small-font-size">Filter and beans only</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -33,11 +33,11 @@
 <p class="has-small-font-size">Bold Street, L1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Every day 8am to 5pm</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Every day 8am to 5pm</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent"} -->
+<!-- wp:paragraph {"textColor":"accent","fontSize":"x-small"} -->
 <p class="has-accent-color has-text-color has-x-small-font-size">Our espresso</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -51,11 +51,11 @@
 <p class="has-small-font-size">Seel Street, L1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Tue to Sat 9am to 4pm</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Tue to Sat 9am to 4pm</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent"} -->
+<!-- wp:paragraph {"textColor":"accent","fontSize":"x-small"} -->
 <p class="has-accent-color has-text-color has-x-small-font-size">Guest filter</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -69,11 +69,11 @@
 <p class="has-small-font-size">Lark Lane, L17</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">Wed to Sun 8am to 2pm</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">Wed to Sun 8am to 2pm</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent"} -->
+<!-- wp:paragraph {"textColor":"accent","fontSize":"x-small"} -->
 <p class="has-accent-color has-text-color has-x-small-font-size">Our espresso</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

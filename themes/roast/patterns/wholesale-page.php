@@ -15,9 +15,13 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Minimum order 5kg a week, delivered free within 15 miles of the roastery.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Free barista training at the roastery, two hours, up to four people.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>We don't lend espresso machines. We'll recommend an engineer who services them.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

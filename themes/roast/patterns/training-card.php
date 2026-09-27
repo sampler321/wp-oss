@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Two hours at the roastery for up to four people from a wholesale account: dialling in, milk and cleaning. Free for accounts, £60 a head otherwise.</p>
+<p>Two hours at the roastery for up to four people from a wholesale account: dialling in, milk and cleaning. Free for accounts, £60 a head otherwise.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

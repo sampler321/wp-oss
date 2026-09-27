@@ -18,7 +18,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","minimumColumnWidth":"12rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-square","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-square"} -->
 <figure class="wp-block-image size-large is-style-square"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/roasted.jpg' ) ); ?>" alt="Roasted coffee beans"/></figure>
 <!-- /wp:image -->
 
@@ -26,21 +26,21 @@
 <h3 class="wp-block-heading has-large-font-size">Kiruga AA</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Kenya, washed</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Kenya, washed</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Blackcurrant, grapefruit</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">£12.50 per 250g</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">£12.50 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-square","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-square"} -->
 <figure class="wp-block-image size-large is-style-square"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/green.jpg' ) ); ?>" alt="Workers sorting coffee cherries"/></figure>
 <!-- /wp:image -->
 
@@ -48,21 +48,21 @@
 <h3 class="wp-block-heading has-large-font-size">Hambela Wamena</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Ethiopia, natural</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Ethiopia, natural</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Strawberry, milk chocolate</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">£11.00 per 250g</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">£11.00 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-square","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-square"} -->
 <figure class="wp-block-image size-large is-style-square"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sacks.jpg' ) ); ?>" alt="Stacked jute coffee sacks"/></figure>
 <!-- /wp:image -->
 
@@ -70,21 +70,21 @@
 <h3 class="wp-block-heading has-large-font-size">El Puente</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Honduras, honey</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Honduras, honey</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Red apple, caramel</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">£11.50 per 250g</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">£11.50 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-square","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-square"} -->
 <figure class="wp-block-image size-large is-style-square"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/machine.jpg' ) ); ?>" alt="A barista at a lever espresso machine"/></figure>
 <!-- /wp:image -->
 
@@ -92,21 +92,21 @@
 <h3 class="wp-block-heading has-large-font-size">Hope Street espresso</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Brazil and Colombia</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Brazil and Colombia</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Hazelnut, cocoa, orange</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">£9.50 per 250g</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">£9.50 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-square","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-square"} -->
 <figure class="wp-block-image size-large is-style-square"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cupping.jpg' ) ); ?>" alt="Tasters cupping coffee at a bench"/></figure>
 <!-- /wp:image -->
 
@@ -114,16 +114,16 @@
 <h3 class="wp-block-heading has-large-font-size">La Palma y El Tucán</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"accent","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-accent-color has-text-color has-x-small-font-size">Colombia, anaerobic</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color has-x-small-font-size","style":{"typography":{"fontWeight":"800"}},"textColor":"accent","fontSize":"x-small"} -->
+<p class="has-accent-color has-text-color has-x-small-font-size" style="font-weight:800">Colombia, anaerobic</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Mango, rum, cinnamon</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-small-font-size">£16.00 per 250g</p>
+<!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"800"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:800">£16.00 per 250g</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -5,6 +5,6 @@
  * Categories: shop
  */
 ?>
-<!-- wp:paragraph {"fontSize":"small","textColor":"accent"} -->
+<!-- wp:paragraph {"textColor":"accent","fontSize":"small"} -->
 <p class="has-accent-color has-text-color has-small-font-size">Roasted Tuesdays and Fridays, posted the same afternoon. Roast date printed on the bag.</p>
 <!-- /wp:paragraph -->

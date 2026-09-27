@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"is-style-dl","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-dl"><!-- wp:columns {"isStackedOnMobile":false} -->
+<div class="wp-block-group is-style-dl"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Producer</p>
@@ -27,7 +27,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Region</p>
@@ -41,7 +41,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Variety</p>
@@ -55,7 +55,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Process</p>
@@ -69,7 +69,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Elevation</p>
@@ -83,7 +83,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Harvest</p>
@@ -97,7 +97,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">We paid</p>

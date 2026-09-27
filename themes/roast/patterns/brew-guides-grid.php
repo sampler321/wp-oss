@@ -18,14 +18,14 @@
 
 <!-- wp:query {"queryId":2,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-guide-list","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"14rem"}} -->
-<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
 
-<!-- wp:post-excerpt {"excerptLength":20,"moreText":"Open the guide","fontSize":"small"} /-->
+<!-- wp:post-excerpt {"moreText":"Open the guide","excerptLength":20,"fontSize":"small"} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p class="">No guides yet.</p>
+<p>No guides yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>
