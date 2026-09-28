@@ -12,17 +12,7 @@ const App = () => {
           <br />
           themes
         </h1>
-        <p className='text-muted-foreground mt-6 max-w-2xl text-lg'>
-          {themes.length} free, open-source WordPress block themes for small businesses, makers and creatives. Every theme
-          uses core blocks only, and every colour, font and size lives in theme.json, so it can all be changed in the
-          Site Editor.
-        </p>
-        <p className='text-muted-foreground mt-2 text-sm'>
-          GPL-2.0-or-later, WordPress 6.7 or newer, source on{' '}
-          <a className='underline underline-offset-4' href='https://github.com/sampler321/wp-oss'>
-            github.com/sampler321/wp-oss
-          </a>
-        </p>
+        <p className='text-muted-foreground mt-6 text-sm'>GPL-2.0 / WordPress 6.7+</p>
       </header>
       <Separator className='mx-auto mb-10 max-w-7xl' />
       <ThemesGrid themes={themes as Theme[]} />
