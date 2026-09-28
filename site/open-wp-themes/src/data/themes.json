@@ -8,7 +8,7 @@
     "demo": "https://wposs-deck.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fdeck%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/deck",
-    "shot": "/shots/deck.png?v=1790621112"
+    "shot": "/shots/deck.png?v=1790621244"
   },
   {
     "slug": "drop",
@@ -19,7 +19,7 @@
     "demo": "https://wposs-drop.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fdrop%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/drop",
-    "shot": "/shots/drop.png?v=1790621112"
+    "shot": "/shots/drop.png?v=1790621244"
   },
   {
     "slug": "patchbay",
@@ -30,7 +30,7 @@
     "demo": "https://wposs-patchbay.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fpatchbay%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/patchbay",
-    "shot": "/shots/patchbay.png?v=1790621112"
+    "shot": "/shots/patchbay.png?v=1790621244"
   },
   {
     "slug": "reel",
@@ -38,10 +38,10 @@
     "description": "Festival-style site for independent filmmakers.",
     "kind": "Independent filmmaker / film site",
     "brief": "heavily inspired by International Film Festival Rotterdam",
-    "demo": "https://wposs-reel.b-j-kapica.workers.dev/de-oude-visser/",
+    "demo": "https://wposs-reel.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Freel%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/reel",
-    "shot": "/shots/reel.png?v=1790621112"
+    "shot": "/shots/reel.png?v=1790621244"
   },
   {
     "slug": "amp",
@@ -52,7 +52,7 @@
     "demo": "https://wposs-amp.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Famp%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/amp",
-    "shot": "/shots/amp.png?v=1790621112"
+    "shot": "/shots/amp.png?v=1790621244"
   },
   {
     "slug": "bpm",
@@ -63,7 +63,7 @@
     "demo": "https://wposs-bpm.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fbpm%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/bpm",
-    "shot": "/shots/bpm.png?v=1790621112"
+    "shot": "/shots/bpm.png?v=1790621244"
   },
   {
     "slug": "patchnotes",
@@ -74,7 +74,7 @@
     "demo": "https://wposs-patchnotes.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fpatchnotes%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/patchnotes",
-    "shot": "/shots/patchnotes.png?v=1790621112"
+    "shot": "/shots/patchnotes.png?v=1790621244"
   },
   {
     "slug": "evidence",
@@ -85,7 +85,7 @@
     "demo": "https://wposs-evidence.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fevidence%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/evidence",
-    "shot": "/shots/evidence.png?v=1790621112"
+    "shot": "/shots/evidence.png?v=1790621244"
   },
   {
     "slug": "thrift",
@@ -96,7 +96,7 @@
     "demo": "https://wposs-thrift.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fthrift%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/thrift",
-    "shot": "/shots/thrift.png?v=1790621112"
+    "shot": "/shots/thrift.png?v=1790621244"
   },
   {
     "slug": "oil",
@@ -107,7 +107,7 @@
     "demo": "https://wposs-oil.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Foil%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/oil",
-    "shot": "/shots/oil.png?v=1790621112"
+    "shot": "/shots/oil.png?v=1790621244"
   },
   {
     "slug": "karat",
@@ -118,7 +118,7 @@
     "demo": "https://wposs-karat.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fkarat%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/karat",
-    "shot": "/shots/karat.png?v=1790621112"
+    "shot": "/shots/karat.png?v=1790621244"
   },
   {
     "slug": "rep",
@@ -129,6 +129,6 @@
     "demo": "https://wposs-rep.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Frep%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/rep",
-    "shot": "/shots/rep.png?v=1790621112"
+    "shot": "/shots/rep.png?v=1790621244"
   }
 ]
