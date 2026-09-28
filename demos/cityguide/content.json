@@ -76,6 +76,18 @@
    "slug": "tips",
    "title": "Tips and corrections",
    "pattern": "cityguide/tips-page"
+  },
+  {
+   "slug": "plan-your-visit",
+   "title": "Plan your visit",
+   "pattern": "cityguide/plan-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "printed-map",
+   "title": "The printed map",
+   "pattern": "cityguide/printed-page",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -163,6 +175,10 @@
   {
    "label": "The map",
    "url": "/map/"
+  },
+  {
+   "label": "Plan your visit",
+   "url": "/plan-your-visit/"
   },
   {
    "label": "About",

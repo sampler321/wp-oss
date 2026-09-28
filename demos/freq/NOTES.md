@@ -7,3 +7,10 @@
 - Content model: shows are categories (the description is the show intro, category.html shows it beside the episode index); episodes are posts with an Audio or Embed block and a tracklist.
 - Nice-to-haves as patterns: today's schedule, off-air notice with an end time, support block that says what the money pays for (licences, rent, DAB+, streaming), membership levels, submit a show, guest mix series, genre index, ways to listen.
 - Core-block limits: "live now" cannot be computed from the schedule without a plugin, so the red square and the player bar text are edited by hand each day. Demo stream and archive URLs are placeholders.
+
+## Round 2
+- Image lightbox on globally.
+- 41 patterns (was 26). New: one day of the schedule, show intro (art, host, slot), residents A to Z, genres as big links, picked from the archive, this week's guest mix, station events, merch, studio camera, station FAQ, hero with today as a list, contact cards, volunteer roles, episode credits. Studied on Kiosk Radio, Resonance FM, Noods Radio, Refuge Worldwide and Cashmere Radio.
+- Tables cut from 8 patterns to 2 (tracklist and the shows index). Now/next, support costs, studio directions, ways to listen and membership are rows or cards.
+- Home page has no table: today's list and the support costs are ruled rows. Added picks and station events to the home page.
+- New demo page: Today. Episode posts now end with a show-art gallery.

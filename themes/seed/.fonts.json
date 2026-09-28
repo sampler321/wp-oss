@@ -1,0 +1,48 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Tilt Neon\", sans-serif",
+      "name": "Tilt Neon",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Tilt Neon",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/tilt-neon-normal-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Mona Sans\", sans-serif",
+      "name": "Mona Sans",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Mona Sans",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/mona-sans-italic-400.woff2"
+          ],
+          "fontStretch": "100%"
+        },
+        {
+          "fontFamily": "Mona Sans",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/mona-sans-normal-400_700.woff2"
+          ],
+          "fontStretch": "100%"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Tilt Neon (Google Fonts), https://github.com/google/fonts/tree/main/ofl/tiltneon",
+    "Mona Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/monasans"
+  ]
+}

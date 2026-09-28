@@ -13,6 +13,12 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('grain')
+
+
+def grid(inner, min_width='16rem', layout=None, **attrs):
+    """Grid group; pass layout to fix the column count."""
+    return group(inner, layout=layout or {'type': 'grid', 'minimumColumnWidth': min_width}, **attrs)
+
 S = 'grain'
 D = THEME['dir']
 
@@ -123,6 +129,28 @@ theme = {
     ],
     'customTemplates': [{'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']}],
 }
+
+# ---------------------------------------------------------------- round 2: lightbox, spec rows, pattern categories
+R2_CSS = ('.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}'
+          '.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}'
+          '.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}')
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += R2_CSS
+
+
+def specs(pairs, **attrs):
+    """Label and value rows made from groups, instead of a two-column table."""
+    return group(J(*[row(J(para(k), para(v))) for k, v in pairs]), className='is-style-specs', layout={'type': 'default'}, **attrs)
+
+
+def pattern_categories(cats):
+    lines = ["<?php", "/**", " * Registers this theme's block pattern categories. Nothing else.", " */", "add_action( 'init', function () {"]
+    for slug, label in cats:
+        lines.append("\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', '%s' ) ) );" % (slug, label, THEME['slug']))
+    lines.append('} );')
+    write('functions.php', '\n'.join(lines))
+
+
 with open(os.path.join(D, 'theme.json'), 'w') as f:
     json.dump(theme, f, indent='\t', ensure_ascii=False)
 
@@ -190,18 +218,19 @@ def cutlist(rows):
 
 
 # ---------------------------------------------------------------- front page
-pattern('order-book', 'Hero: the order book (on the benches now)', 'featured', group(J(
-    heading('Solid-wood furniture, made to order by two people in Zutphen.', 1, align='wide'),
+pattern('order-book', 'Hero: name, the order book and a finished piece', 'hero,featured', group(J(
     columns(
-        ('38%', J(para('Sanne Brink and Kofi Oduya make tables, chairs and cabinets to commission in a former tannery on the Houtmarkt. Oak, elm, ash and walnut, mostly from trees felled within 60 km. No veneered board, no kitchens.', fontSize='large'),
-                  buttons(('Start a commission', '/commissions/'), ('Book a workshop visit', '/workshop/')))),
-        (None, J(heading('On the benches this week', 6),
+        ('44%', J(heading('Brink &amp; Oduya, furniture makers in Zutphen', 1, fontSize='xx-large'),
+                  para('Sanne Brink and Kofi Oduya make tables, chairs and cabinets to commission in a former tannery on the Houtmarkt. Oak, elm, ash and walnut, mostly from trees felled within 60 km.'),
+                  buttons(('Start a commission', '/commissions/'), ('Book a workshop visit', '/workshop/')),
+                  heading('On the benches this week', 6),
                  columns((None, para('Bench one', fontFamily='display', fontSize='large')),
                          ('70%', para('Oak dining table, 2400 × 950 mm, for a family in Deventer. Second coat of soap finish on Thursday.')), className='is-style-bench-row'),
                  columns((None, para('Bench two', fontFamily='display', fontSize='large')),
                          ('70%', para('Six ladder-back chairs in ash with rush seats. Chair four of six, back legs steam-bent on Monday.')), className='is-style-bench-row'),
                  columns((None, para('Next slot', fontFamily='display', fontSize='large')),
                          ('70%', para(LEAD)), className='is-style-bench-row'))),
+        (None, image('chest.jpg', 'A dark carved oak chest with three panels of stylised flowers on the front', 'Joined chest in riven oak, finished in May. The original it copies is 350 years older.')),
         align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|70'}}})),
     align='full', className='is-style-pad-lg', layout={'type': 'constrained'}), description='The signature opening: what is on each bench right now and when the next slot is free. Edit it each week or two.')
 
@@ -227,9 +256,9 @@ pattern('cut-list', 'Cut list for a piece', 'portfolio,featured', J(
     para('Joints: through mortise and tenon, drawbored with oak pegs. Top fixed with buttons so it can move with the seasons.', fontSize='small')),
     description='Every finished piece gets its cut list: part, number, timber and finished size in millimetres.')
 
-pattern('piece-facts', 'Piece facts (size, timber, finish, time, price)', 'portfolio', table([
-    ['Size', 'L 2400, W 950, H 745 mm'], ['Timber', 'Oak from the Achterhoek, air-dried three years'], ['Finish', 'Soap flakes, four coats'],
-    ['Time on the bench', '11 weeks'], ['Price', '€6,200 including delivery within 100 km']]))
+pattern('piece-facts', 'Piece facts (size, timber, finish, time, price)', 'portfolio', specs([
+    ('Size', 'L 2400, W 950, H 745 mm'), ('Timber', 'Oak from the Achterhoek, air-dried three years'), ('Finish', 'Soap flakes, four coats'),
+    ('Time on the bench', '11 weeks'), ('Price', '€6,200 including delivery within 100 km')]))
 
 # ---------------------------------------------------------------- commissions
 WEEKS = [
@@ -245,7 +274,7 @@ pattern('commission-timeline', 'Commission timeline, week by week', 'services', 
     *[columns(('24%', para(w, fontFamily='display', fontSize='large', textColor='accent')), (None, J(heading(t, 4), para(d))), className='is-style-week') for w, t, d in WEEKS]),
     description='The commission process as a timeline in weeks, from first conversation to delivery.')
 
-pattern('price-guide', 'What things cost', 'services', J(
+pattern('price-guide', 'What things cost', 'prices,services', J(
     heading('What things cost', 3),
     table([['Dining table in oak, seats six', 'from €4,800'], ['Dining chair, ash or oak', 'from €1,150 each'], ['Blanket chest', 'from €2,900'],
            ['Sideboard or cabinet', 'from €6,500'], ['Small pieces: stools, side tables, shelves', 'from €650'], ['Drawings and design, if you don\'t go ahead', '€150']],
@@ -268,18 +297,13 @@ pattern('commission-faq', 'Commission questions', 'text', J(
     details('Do you deliver abroad?', para('Belgium and Germany, yes, at cost. Further than that we crate it and a carrier takes it.'))))
 
 pattern('commissions-page', 'Page: commissions', 'services', J(
-    pattern_ref('lead-time'), pattern_ref('commission-timeline'), pattern_ref('price-guide'), pattern_ref('what-we-dont-make'), pattern_ref('commission-faq')),
+    pattern_ref('lead-time'), pattern_ref('commission-timeline'), pattern_ref('drawing-sheet'), pattern_ref('price-guide'), pattern_ref('payment-terms'), pattern_ref('delivery-note'), pattern_ref('sizes-guide'), pattern_ref('what-we-dont-make'), pattern_ref('commission-faq')),
     block_types='core/post-content')
 
 # ---------------------------------------------------------------- timber and finishes
 pattern('timber-table', 'Timber we use', 'text', J(
     heading('Timber we use', 2),
-    table([['Oak', 'Estates in the Achterhoek, air-dried three years', 'Pale honey, darkens to amber', 'base price'],
-           ['Elm', 'Trees felled for Dutch elm disease along the IJssel', 'Wild grain, brown with green streaks', '+10%'],
-           ['Ash', 'Local, from ash dieback felling', 'Pale, bends well, good for chairs', '−10%'],
-           ['Walnut', 'Garden and park trees, when we can get them', 'Chocolate brown, purple when fresh', '+45%'],
-           ['Cherry', 'A sawmill near Gent', 'Pink at first, red-brown within a year', '+20%']],
-          head=['Timber', 'Where it comes from', 'What it looks like', 'Price']),
+    pattern_ref('timber-swatches'),
     columns(('35%', image('grain.jpg', 'Sixteen small squares of different pale and golden woods arranged in a grid')),
             (None, J(heading('Samples by post', 4), para('A set of five sample boards, 150 × 100 mm, oiled on one half and bare on the other. €12 by post, refunded when you order. Or come on a Saturday and handle the real boards.'))),
             verticalAlignment='center')))
@@ -320,7 +344,7 @@ pattern('makers', 'The two makers', 'about', columns(
 
 pattern('workshop-photo', 'Workshop photo', 'gallery', image('bench.jpg', 'An old woodworking workshop with hand tools and wooden planes hanging on plank walls above a workbench', 'A workshop much like ours, with fewer power tools. Stand-in photo.'))
 
-pattern('workshop-page', 'Page: workshop', 'about', J(pattern_ref('makers'), pattern_ref('workshop-photo'), pattern_ref('workshop-visits'),
+pattern('workshop-page', 'Page: workshop', 'about', J(pattern_ref('makers'), pattern_ref('workshop-photo'), pattern_ref('making-steps'), pattern_ref('open-days'), pattern_ref('workshop-visits'), pattern_ref('makers-mark'), pattern_ref('repairs-service'),
     image('zutphen.jpg', 'A narrow brick street in Zutphen with old gabled houses and a shop sign', 'Zutphen, five minutes from the workshop.')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- care, contact
@@ -332,7 +356,7 @@ pattern('care', 'Care and guarantee', 'text', J(
          'Oil finish: a thin coat of the oil we give you, once a year.']),
     group(J(heading('Ten-year guarantee', 4), para('Joints are guaranteed for ten years. We refinish tables we made for the cost of the oil and a day\'s work, about €350, whenever you want.')), className='is-style-board')))
 
-pattern('care-page', 'Page: care', 'text', J(pattern_ref('care')), block_types='core/post-content')
+pattern('care-page', 'Page: care', 'text', J(pattern_ref('care'), pattern_ref('makers-mark')), block_types='core/post-content')
 
 pattern('contact-details', 'Contact details', 'contact', columns(
     (None, J(heading('Write, ring or visit', 2),
@@ -351,6 +375,94 @@ pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-detai
 pattern('dovetail-note', 'Hand-cut joints', 'text', media_text('dovetail.jpg', 'Engraved drawing of through and lapped dovetail joints in two pieces of wood',
     J(heading('Joints you can see', 3), para('Drawers are dovetailed by hand, carcasses are jointed, and nothing is held together with screws you can\'t get at. That is why a chest from us can be taken apart and repaired in a hundred years.')),
     width=40, right=True, align='wide'))
+# ---------------------------------------------------------------- round 2 patterns
+TIMBERS = [('Oak', 'Estates in the Achterhoek, air-dried three years', 'Pale honey, darkens to amber', 'Base price'),
+           ('Elm', 'Trees felled for Dutch elm disease along the IJssel', 'Wild grain, brown with green streaks', 'Plus 10%'),
+           ('Ash', 'Local, from ash dieback felling', 'Pale, bends well, good for chairs', 'Less 10%'),
+           ('Walnut', 'Garden and park trees, when we can get them', 'Chocolate brown, purple when fresh', 'Plus 45%'),
+           ('Cherry', 'A sawmill near Gent', 'Pink at first, red-brown within a year', 'Plus 20%')]
+pattern('timber-swatches', 'Timber cards (where from, how it looks, price)', 'text', grid(J(*[
+    stack(J(para(t, fontFamily='display', fontSize='x-large'), para(src, fontSize='small'), para(look, fontSize='small', textColor='muted'), para(price, fontSize='small', textColor='accent')), className='is-style-board')
+    for t, src, look, price in TIMBERS]), align='wide', layout={'type': 'grid', 'columnCount': 5, 'minimumColumnWidth': '11rem'}), description='One card per timber, instead of a comparison table.')
+
+pattern('three-ways', 'Three ways in: commission, pieces, visit', 'hero', columns(
+    (None, J(heading('<a href="/commissions/">Commission</a>', 3), para('A piece drawn and made for your room. From drawings to delivery in about three months.'))),
+    (None, J(heading('<a href="/ready-now/">Ready now</a>', 3), para('Two or three finished pieces that can leave the workshop this month.'))),
+    (None, J(heading('<a href="/workshop/">Visit</a>', 3), para('Saturday mornings, by appointment. Sit on the chairs, choose the boards.'))),
+    align='wide', className='is-style-bench-row'), description='Three entry points, like a maker\'s shop, a commission form and an open door.')
+
+pattern('pieces-gallery', 'Pieces gallery (lightbox)', 'gallery', gallery([
+    ('chair2.jpg', 'A ladder-back chair with a woven rush seat', 'Ladder-back chair, ash and rush'),
+    ('chair.jpg', 'A ladder-back rocking chair with a woven tape seat', 'Rocking chair, cherry'),
+    ('chest.jpg', 'A carved oak chest with flower panels', 'Joined chest, riven oak'),
+    ('cabinet.jpg', 'A large two-part cupboard in ash and oak with carved panels', 'The Nuremberg cupboard, study trip'),
+    ('stool.jpg', 'A walnut piano stool on a turned pedestal', 'Piano stool, rebuilt'),
+    ('dovetail.jpg', 'Engraved drawing of dovetail joints', 'Dovetails, for the drawers')], columns=3, align='wide'),
+    description='Six pieces. Click any to see it large.')
+
+pattern('making-steps', 'From board to piece (gallery)', 'gallery', J(
+    heading('From board to piece', 3),
+    gallery([('timber.jpg', 'Boards stacked with spacers in a timber yard', 'The boards dry, a year per 25 mm'),
+             ('shavings.jpg', 'A small hand plane lying among curled wood shavings', 'Planed by hand'),
+             ('clamps.jpg', 'A row of clamps holding a glued frame on a workshop floor', 'Glued up'),
+             ('joinery.jpg', 'Old log wall with notched corner joints', 'Jointed, not screwed')], columns=4, align='wide')))
+
+pattern('drawing-sheet', 'The drawings you get', 'services', media_text('dovetail.jpg', 'Engraved drawing of through and lapped dovetail joints, labelled A and B',
+    J(heading('Drawings before anything is cut', 3),
+      para('You get scale drawings at 1:5 of every view, with the joints drawn in, and a price that doesn\'t move. We redraw once for free. The drawings are yours, even if you don\'t go ahead.')),
+    width=40, align='wide'))
+
+pattern('payment-terms', 'Deposit and payment', 'text', J(
+    heading('Paying for a commission', 4),
+    specs([('To book a bench slot', '40% deposit'), ('On delivery', 'The balance, by bank transfer'), ('Drawings only', '€150, taken off the price if you go ahead'), ('Cancelling', 'Deposit returned in full until we cut the first board')])))
+
+pattern('delivery-note', 'Delivery', 'text', J(
+    heading('Delivery', 4),
+    para('We deliver ourselves, two of us and a van, within 100 km of Zutphen for free. Further than that in the Netherlands, Belgium and western Germany we charge the fuel. We carry it in, set it up, level it and take the blankets away.')))
+
+pattern('open-days', 'Open workshop days', 'posts', J(
+    heading('Open workshop days', 3),
+    specs([('Saturday 7 November', '10:00 to 16:00, with Kofi steam-bending chair backs at 11:00'), ('Saturday 12 December', '10:00 to 16:00, the last day to order for spring'),
+           ('Saturday 13 March', 'Timber day: the new elm boards come out of the shed')]),
+    para('No booking needed on open days. Other Saturdays are by appointment.', fontSize='small')))
+
+pattern('newsletter', 'A letter from the workshop', 'call-to-action', group(J(
+    heading('A letter from the workshop, four times a year', 4),
+    para('What we made, what timber came in and when the next bench slot is free. No offers, because there aren\'t any.'),
+    buttons(('Ask to be on the list', 'mailto:%s?subject=Letter' % EMAIL))),
+    className='is-style-board'))
+
+pattern('ready-now', 'Ready now: pieces in stock', 'portfolio', J(
+    para('Sometimes a commission is cancelled or we make a second one while the jig is set up. These can leave the workshop this month.', fontSize='large'),
+    columns(
+        (None, J(image('stool.jpg', 'A walnut piano stool on a turned pedestal with three carved feet'), heading('Walnut stool', 4), specs([('Size', 'Seat 360 mm, height 460 to 560 mm'), ('Price', '€890')]))),
+        (None, J(image('chair2.jpg', 'A ladder-back chair with a woven rush seat'), heading('Ladder-back chair, ash', 4), specs([('Size', 'Seat height 450 mm'), ('Price', '€1,150, one only')]))),
+        align='wide')), description='The handful of finished pieces available straight away.')
+
+pattern('repairs-service', 'Repairs we take on', 'services', J(
+    heading('Repairs', 3),
+    para('One or two a season, when the piece deserves it and the fix is joinery rather than a new finish: loose chairs reglued with hide glue, split tops, new drawer runners. From €180. We don\'t do French polishing or upholstery.')))
+
+pattern('testimonials', 'What clients say', 'testimonials', columns(
+    (None, quote('We visited three times while the table was being made. The third time our daughter was allowed to plane the underside.', 'Marieke and Joost, Deventer, 2026')),
+    (None, quote('The chairs are the only things in the house nobody is allowed to stand on.', 'Hanneke, Lochem, 2025')),
+    align='wide'))
+
+pattern('makers-mark', 'Signed and dated', 'about', group(J(
+    heading('Signed and dated', 4),
+    para('Every piece is signed and dated under the top or inside a drawer, with the timber\'s origin burned in beside it. If it ever comes back for repair in fifty years, whoever opens it will know where it came from.')),
+    className='is-style-board'))
+
+pattern('sizes-guide', 'Sizes that work', 'text', J(
+    heading('Sizes that work', 3),
+    specs([('Dining table height', '740 to 760 mm'), ('Chair seat height', '440 to 460 mm'), ('Width per diner', '600 mm, 700 if you like elbows'),
+           ('Space behind a chair', '900 mm to get up without scraping the wall')])))
+
+pattern('hero-piece', 'Hero: one piece, large, with a caption', 'hero', group(J(
+    image('cabinet.jpg', 'A tall two-part cupboard in golden ash and oak with carved panels and pilasters', 'The cupboard in Nuremberg that taught us how panels should float. About 1600, Stadtmuseum Fembohaus.', align='wide'),
+    row(J(heading('Pieces made to last longer than the house', 2, fontSize='x-large'), buttons(('See our pieces', '/pieces/'))), justify='space-between', align='wide')),
+    align='full', layout={'type': 'constrained'}), description='An alternative opening: one big photograph with a caption and a single link.')
+
 
 print('patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
@@ -375,15 +487,19 @@ write('parts/footer.html', group(J(
 M = {'className': 'is-style-page-main'}
 write('templates/front-page.html', page_template(J(
     pattern_ref('order-book'),
+    pattern_ref('three-ways'),
     group(pattern_ref('pieces-feature'), align='wide', layout={'type': 'default'}),
-    group(pattern_ref('commission-timeline'), align='full', className='is-style-pad-lg', layout={'type': 'constrained'}),
+    group(pattern_ref('making-steps'), align='wide', layout={'type': 'default'}),
+    group(pattern_ref('commission-timeline'), align='wide', className='is-style-pad-lg', layout={'type': 'default'}),
     group(pattern_ref('dovetail-note'), align='wide', layout={'type': 'default'}),
-    group(pattern_ref('timber-table'), align='full', className='is-style-pad-lg', layout={'type': 'constrained'}),
-    group(pattern_ref('workshop-visits'), align='wide', layout={'type': 'constrained'})),
+    group(J(heading('Timber we use', 2), pattern_ref('timber-swatches'), para('<a href="/timber/">Timber and finishes in detail</a>', fontSize='small')), align='full', className='is-style-pad-lg', layout={'type': 'constrained'}),
+    pattern_ref('testimonials'),
+    group(columns(('60%', pattern_ref('workshop-visits')), (None, pattern_ref('newsletter'))), align='wide', layout={'type': 'default'})),
     layout={'type': 'constrained'}, style={'spacing': {'blockGap': 'var:preset|spacing|60'}}))
 
 write('templates/home.html', page_template(J(
     heading('Pieces', 1, align='wide', fontSize='xx-large'),
+    pattern_ref('pieces-gallery'),
     para('Everything here was made on our two benches. Each piece has its cut list, timber and finish.', align='wide'),
     dyn('categories', align='wide'),
     pattern_ref('pieces-archive')), **M))
@@ -400,13 +516,18 @@ write('templates/single.html', page_template(J(
     dyn('post-content', layout={'type': 'constrained'}),
     group(J(dyn('post-navigation-link', type='previous', label='Previous piece', showTitle=True), dyn('post-navigation-link', label='Next piece', showTitle=True)),
           align='wide', layout={'type': 'flex', 'justifyContent': 'space-between'}, className='is-style-rule-top')), **M))
+pattern_categories([('hero', 'Hero'), ('prices', 'Prices')])
 print('theme written')
 
 # ---------------------------------------------------------------- demo
 def piece(title, cat, img, excerpt, story, facts, cut, date):
-    body = J(para(story, fontSize='large'), table(facts))
+    body = J(para(story, fontSize='large'), specs([tuple(f) for f in facts]))
     if cut:
-        body = J(body, heading('Cut list', 4), cutlist(cut))
+        body = J(body, heading('Cut list', 4), cutlist(cut),
+                 heading('In the workshop', 4),
+                 gallery([('shavings.jpg', 'A hand plane among curled shavings', 'Planed by hand'), ('clamps.jpg', 'Clamps holding a glued frame', 'Glue-up'),
+                          ('timber.jpg', 'Boards stacked with spacers in a yard', 'The boards before')], columns=3),
+                 buttons(('Ask about a piece like this', '/commissions/')))
     return {'title': title, 'category': cat, 'image': img, 'excerpt': excerpt, 'date': date, 'content': body}
 
 
@@ -453,6 +574,7 @@ content = {
         {'slug': 'workshop', 'title': 'The workshop', 'pattern': 'grain/workshop-page', 'template': 'page-wide'},
         {'slug': 'care', 'title': 'Care and guarantee', 'pattern': 'grain/care-page'},
         {'slug': 'contact', 'title': 'Contact', 'pattern': 'grain/contact-page', 'template': 'page-wide'},
+        {'slug': 'ready-now', 'title': 'Ready now', 'pattern': 'grain/ready-now', 'template': 'page-wide'},
     ],
     'posts': POSTS,
     'nav': [{'label': 'Pieces', 'url': '/pieces/'}, {'label': 'Commissions', 'url': '/commissions/'}, {'label': 'Timber and finishes', 'url': '/timber/'},

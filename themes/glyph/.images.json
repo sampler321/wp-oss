@@ -1,0 +1,58 @@
+{
+  "type": {
+    "title": "Weldon Spring letterpress (Unsplash).jpg",
+    "creator": "Rodney Truitt Jr rodneytruittjr",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Weldon_Spring_letterpress_(Unsplash).jpg",
+    "query": "metal type letterpress"
+  },
+  "books": {
+    "title": "God's Gentlemen - BL 08407k2 and W29 2517 upper covers and spines Hadaway.jpg",
+    "creator": "Southwold1966",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:God%27s_Gentlemen_-_BL_08407k2_and_W29_2517_upper_covers_and_spines_Hadaway.jpg",
+    "query": "book spines shelf"
+  },
+  "enamel": {
+    "title": "AA Misterton, Nottinghamshire enamel village name sign.jpg",
+    "creator": "Steve Knight",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:AA_Misterton,_Nottinghamshire_enamel_village_name_sign.jpg",
+    "query": "enamel street sign"
+  },
+  "menu": {
+    "title": "LUNCHEON (held by) BROADWAY CENTRAL HOTEL (at) \"NEW YORK, NY\" (HOTEL;) (NYPL Hades-272168-475136).jpg",
+    "creator": "Scan by NYPL",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:LUNCHEON_(held_by)_BROADWAY_CENTRAL_HOTEL_(at)_%22NEW_YORK,_NY%22_(HOTEL;)_(NYPL_Hades-272168-475136).jpg",
+    "query": "cafe menu board"
+  },
+  "shopfront": {
+    "title": "Shop front signage for Wards the Florist Clifford Street York Mar25 01.jpg",
+    "creator": "Malcolmxl5",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Shop_front_signage_for_Wards_the_Florist_Clifford_Street_York_Mar25_01.jpg",
+    "query": "shop front signage"
+  },
+  "wood-type": {
+    "title": "Typesetting in wood (Unsplash).jpg",
+    "creator": "Raphael Schaller raphaelphotoch",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Typesetting_in_wood_(Unsplash).jpg",
+    "query": "wood type"
+  },
+  "print": {
+    "title": "Old Threshers Miehle Press Drum.jpg",
+    "creator": "Douglas W. Jones",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Old_Threshers_Miehle_Press_Drum.jpg",
+    "query": "printing press"
+  }
+}

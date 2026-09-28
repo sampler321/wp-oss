@@ -2,10 +2,12 @@
 /**
  * Title: Project story, room by room
  * Slug: room/project-rooms
- * Categories: featured
+ * Categories: project
  * Description: The signature layout: each room gets a heading, the paint chip for its walls, a short story with the pieces linked inline and the price after them, then photos.
  */
 ?>
+<!-- wp:pattern {"slug":"room/project-contents"} /-->
+
 <!-- wp:paragraph {"fontSize":"large"} -->
 <p class="has-large-font-size">A Georgian flat on the first floor of a terrace in Stockbridge, for a family of four and a large dog. They wanted it to look as if they had lived there for twenty years by the first Christmas. We had fourteen weeks.</p>
 <!-- /wp:paragraph -->

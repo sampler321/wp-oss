@@ -6,7 +6,7 @@
  */
 ?>
 <!-- wp:group {"className":"is-style-scrap","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-scrap"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-scrap"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tape.jpg' ) ); ?>" alt="Two cassette tapes side by side on a dark table"/></figure>
 <!-- /wp:image -->
 

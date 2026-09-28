@@ -12,109 +12,109 @@
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>Where</p>
+<p class="">Where</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>How</p>
+<p class="">How</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Postage</p>
+<p class="">Postage</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Takes</p>
+<p class="">Takes</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>UK</p>
+<p class="">UK</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tracked, 2 to 4 days after we post</p>
+<p class="">Tracked, 2 to 4 days after we post</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£3.50</p>
+<p class="">£3.50</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>free over £40</p>
+<p class="">free over £40</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Europe</p>
+<p class="">Europe</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>We pay the VAT at the border</p>
+<p class="">We pay the VAT at the border</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£8</p>
+<p class="">£8</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>5 to 10 days</p>
+<p class="">5 to 10 days</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>USA and Canada</p>
+<p class="">USA and Canada</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tracked</p>
+<p class="">Tracked</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£12</p>
+<p class="">£12</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>8 to 15 days</p>
+<p class="">8 to 15 days</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Australia and NZ</p>
+<p class="">Australia and NZ</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tracked</p>
+<p class="">Tracked</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£14</p>
+<p class="">£14</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>10 to 20 days</p>
+<p class="">10 to 20 days</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Everywhere else</p>
+<p class="">Everywhere else</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tracked</p>
+<p class="">Tracked</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£14</p>
+<p class="">£14</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>10 to 25 days</p>
+<p class="">10 to 25 days</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

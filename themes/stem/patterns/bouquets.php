@@ -19,7 +19,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"18rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-still-life","backgroundColor":"surface","textColor":"contrast","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-contrast-color has-surface-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-contrast-color has-text-color has-surface-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/florists-choice-small/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/posy.jpg' ) ); ?>" alt="A small posy of roses, yarrow and wildflowers held against a white top" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -43,7 +43,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"accent-2","textColor":"base","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-base-color has-accent-2-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-base-color has-text-color has-accent-2-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/florists-choice-medium/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/roses-held.jpg' ) ); ?>" alt="A bouquet of cream and orange roses held in front of a dark red dress" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -67,7 +67,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"mint","textColor":"contrast","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-contrast-color has-mint-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-contrast-color has-text-color has-mint-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/florists-choice-large/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/gerbera-mint.jpg' ) ); ?>" alt="Pink gerberas and berries in a glass jar against a mint green wall" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -91,7 +91,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"leaf","textColor":"cream","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-cream-color has-leaf-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-cream-color has-text-color has-leaf-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/florists-choice-showy/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bridal.jpg' ) ); ?>" alt="A bridal bouquet of pink roses, lisianthus and astrantia" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -115,7 +115,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"align":"wide","fontSize":"small"} -->
+<!-- wp:paragraph {"fontSize":"small","align":"wide"} -->
 <p class="alignwide has-small-font-size">Florist's choice: we use what is best at the market that morning, and swap like for like if something runs out.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

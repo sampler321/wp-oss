@@ -16,4 +16,6 @@
 
 <!-- wp:pattern {"slug":"case/what-i-dont-do"} /-->
 
+<!-- wp:pattern {"slug":"case/faq"} /-->
+
 <!-- wp:pattern {"slug":"case/testimonials"} /-->

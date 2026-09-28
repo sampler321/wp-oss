@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pink primer",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F4C7C3",
+					"name": "Pink primer"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1D1D1B",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#1D1D1B",
+					"name": "Black"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#FFFFFF",
+					"name": "White tape"
+				},
+				{
+					"slug": "surface",
+					"color": "#EDB5B0",
+					"name": "Second coat"
+				},
+				{
+					"slug": "line",
+					"color": "#1D1D1B",
+					"name": "Black line"
+				},
+				{
+					"slug": "muted",
+					"color": "#4A3634",
+					"name": "Burnt"
+				}
+			]
+		}
+	}
+}

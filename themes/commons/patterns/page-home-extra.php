@@ -2,7 +2,7 @@
 /**
  * Title: Page: whole front page (for a page, not the template)
  * Slug: commons/page-home-extra
- * Categories: featured
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Page: aftercare and shipping
+ * Title: Page: aftercare
  * Slug: joint/aftercare-page
- * Categories: text
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

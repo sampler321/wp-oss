@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Nieuwe Binnenweg 112<br>3015 BH Rotterdam</p>
+<p>Nieuwe Binnenweg 112<br>3015 BH Rotterdam</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">010 234 56 78<br>During opening hours</p>
+<p>010 234 56 78<br>During opening hours</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="mailto:winkel@example.com">winkel@example.com</a><br>We answer within a day</p>
+<p><a href="mailto:winkel@example.com">winkel@example.com</a><br>We answer within a day</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

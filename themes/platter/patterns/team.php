@@ -2,13 +2,13 @@
 /**
  * Title: The team
  * Slug: platter/team
- * Categories: platter,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"42%"} -->
-<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/grill.jpg' ) ); ?>" alt="Chicken and steak cooking on a small charcoal grill set on grass"/><figcaption class="wp-element-caption">The grill Femi takes to every summer wedding</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

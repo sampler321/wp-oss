@@ -2,7 +2,7 @@
 /**
  * Title: Installation views (large, then two-up)
  * Slug: commons/installation-views
- * Categories: gallery
+ * Categories: show
  */
 ?>
 <!-- wp:gallery {"columns":2,"linkTo":"none","align":"wide"} -->

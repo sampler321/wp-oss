@@ -220,6 +220,14 @@
 			"radius": true,
 			"style": true,
 			"width": true
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -552,6 +560,13 @@
 		{
 			"name": "page-wide",
 			"title": "Page, wide",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-object",
+			"title": "Object (no title, full width)",
 			"postTypes": [
 				"page"
 			]

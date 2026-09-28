@@ -2,7 +2,7 @@
 /**
  * Title: Membership: how to join
  * Slug: commons/membership-how
- * Categories: text
+ * Categories: membership
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

@@ -2,7 +2,7 @@
 /**
  * Title: Paying
  * Slug: pipe/payment
- * Categories: pipe,text
+ * Categories: info
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -14,7 +14,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Card, bank transfer or phone payment on the day. We invoice landlords and letting agents with 14 days to pay. We don't take cash, so nobody carries it in the van.</p>
+<p class="">Card, bank transfer or phone payment on the day. We invoice landlords and letting agents with 14 days to pay. We don't take cash, so nobody carries it in the van.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

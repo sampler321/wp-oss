@@ -11,6 +11,13 @@ import sys, json, os; sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('platter')
 S = THEME['slug']
+
+# Round 2: map inserter categories so the pattern library groups well (first category = library page).
+CATMAP = {'featured': 'hero', 'query': 'case-study', 'text': 'info', 'call-to-action': 'enquire', 'banner': 'notices', 'gallery': 'menu', 'testimonials': 'about'}
+_pattern = pattern
+def pattern(slug, title, categories, body, **kw):
+    cats = [CATMAP.get(c.strip(), c.strip()) for c in categories.split(',') if c.strip() and c.strip() != 'platter'] or ['pages']
+    return _pattern(slug, title, ','.join(dict.fromkeys(cats)), body, **kw)
 D = THEME['dir']
 
 
@@ -66,6 +73,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': [{'slug': 'ticket', 'name': 'Ticket on the rail', 'shadow': '0 3px 0 0 rgba(42,23,14,.35)'}]},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
         'custom': {'gingham': 'repeating-linear-gradient(0deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px),repeating-linear-gradient(90deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px)'},
     },
     'styles': {
@@ -254,7 +262,7 @@ pattern('hero', 'Hero: big tray of food', 'platter,featured', group(columns(
     ('46%', J(heading('Big trays of proper food, carried in hot.', 1),
               para('Weddings, film crews, office lunches and birthday dinners for 20 to 300, cooked in our Bristol kitchen and served family-style so people pass things and talk. Femi does the cooking. Rosa makes sure it arrives.', fontSize='large'),
               buttons(('Start your brief', '/enquire/'), ('See the menus', '/menus/', {'className': 'is-style-outline'})))),
-    (None, J(img('paella.jpg', 'A wide paella pan over a fire, full of rice, mussels and red peppers, with a wooden spoon going in', lightbox=False),
+    (None, J(img('paella.jpg', 'A wide paella pan over a fire, full of rice, mussels and red peppers, with a wooden spoon going in'),
              para('Paella for 140 from £18 a head', className='is-style-sticker'))),
     align='wide', verticalAlignment='center'), tag='section', align='full', className='is-style-mustard', layout={'type': 'constrained'}),
     description='Opener: headline, one short paragraph, two buttons, a big food photo with a round price sticker.')
@@ -262,16 +270,16 @@ pattern('hero', 'Hero: big tray of food', 'platter,featured', group(columns(
 pattern('event-types', 'Event types and what is included', 'platter,services', group(J(
     heading('What we cook for', 2),
     columns(
-        (None, group(J(img('cake.jpg', 'A couple cutting a two-tier wedding cake covered in strawberries, mango and kiwi', lightbox=False),
+        (None, group(J(img('cake.jpg', 'A couple cutting a two-tier wedding cake covered in strawberries, mango and kiwi'),
                        heading('Weddings', 3), para('Sharing feasts, a late-night snack and the cake if you want it. From £38 a head, 60 to 220 guests.', fontSize='small'),
                        para('<a href="/category/weddings/">Wedding tickets on the rail</a>', fontSize='small')), layout={'type': 'default'})),
-        (None, group(J(img('tacos.jpg', 'Four loaded tacos in paper boats lined with red and white checked paper, with three small sauce pots', lightbox=False),
+        (None, group(J(img('tacos.jpg', 'Four loaded tacos in paper boats lined with red and white checked paper, with three small sauce pots'),
                        heading('Film and TV crews', 3), para('Breakfast at call time, hot lunch, and a 4pm tray of something sweet. £16 a head a day, 20 to 120 crew.', fontSize='small'),
                        para('<a href="/category/crew/">Crew tickets on the rail</a>', fontSize='small')), layout={'type': 'default'})),
-        (None, group(J(img('sandwiches.jpg', 'Heart-shaped seeded rolls filled with ham and salad on a silver tray', lightbox=False),
+        (None, group(J(img('sandwiches.jpg', 'Heart-shaped seeded rolls filled with ham and salad on a silver tray'),
                        heading('Offices', 3), para('Boxed lunches and sharing platters, delivered by 12:30. From £11.50 a head, minimum 10.', fontSize='small'),
                        para('<a href="/office-lunches/">Order office lunches</a>', fontSize='small')), layout={'type': 'default'})),
-        (None, group(J(img('roast.jpg', 'A plate of roast chicken with roast potatoes, lettuce and carrots on a table outside', lightbox=False),
+        (None, group(J(img('roast.jpg', 'A plate of roast chicken with roast potatoes, lettuce and carrots on a table outside'),
                        heading('Dinners at home', 3), para('We cook in your kitchen for 8 to 30, wash up and leave. From £55 a head with two staff.', fontSize='small'),
                        para('<a href="/category/private/">Dinner tickets on the rail</a>', fontSize='small')), layout={'type': 'default'})),
         align='wide'),
@@ -300,7 +308,7 @@ pattern('job-record', 'Job record (venue, guests, format, menu)', 'platter,text'
     para('What we would do differently: bring a third pan. The vegetable one went first.', fontSize='small')))
 
 pattern('seasonal-menu', 'Seasonal menu with dates', 'platter,menu', group(columns(
-    ('42%', J(img('mezze.jpg', 'A mezze plate of grilled vegetables, feta, flatbread and three dips on a wooden table', lightbox=False),
+    ('42%', J(img('mezze.jpg', 'A mezze plate of grilled vegetables, feta, flatbread and three dips on a wooden table'),
               para('Autumn menu, 1 October to 31 January', className='is-style-sticker'))),
     (None, J(heading('The autumn sharing feast', 2),
              para('Flatbreads, whipped feta, chilli honey', className='is-style-dish'),
@@ -411,7 +419,7 @@ pattern('brochure', 'Brochure for planners', 'platter,call-to-action', group(col
     className='is-style-mustard', layout={'type': 'constrained'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50', 'left': 'var:preset|spacing|50', 'right': 'var:preset|spacing|50'}}}))
 
 pattern('team', 'The team', 'platter,about', group(columns(
-    ('42%', img('grill.jpg', 'Chicken and steak cooking on a small charcoal grill set on grass', 'The grill Femi takes to every summer wedding', lightbox=False)),
+    ('42%', img('grill.jpg', 'Chicken and steak cooking on a small charcoal grill set on grass', 'The grill Femi takes to every summer wedding')),
     (None, J(heading('Who cooks, who carries', 2),
              para('Femi Adebayo cooked at Casamia and then at a lot of festival stalls before starting Second Helpings in 2018 with Rosa Lindqvist, who used to run events at Arnos Vale and knows where every venue keeps its fuse box.'),
              para('There are eleven of us now, plus a list of about thirty people who carry trays at weekends. Everyone who serves your food has eaten it, so they can answer "what\'s in this".'),
@@ -430,13 +438,271 @@ pattern('about-page', 'Page: about', 'platter', J(pattern_ref('team'), pattern_r
 pattern('events-page', 'Page: events', 'platter', J(pattern_ref('event-types'), pattern_ref('canape-card'), pattern_ref('booking-terms')), block_types='core/post-content')
 
 pattern('pudding', 'Pudding trays', 'platter,menu', group(columns(
-    (None, img('pastries.jpg', 'A berry and cinnamon swirl bread cut into slices on a glass tray, with a handwritten label', lightbox=False)),
+    (None, img('pastries.jpg', 'A berry and cinnamon swirl bread cut into slices on a glass tray, with a handwritten label')),
     (None, J(heading('Pudding comes in trays', 3), para('Sticky toffee, rhubarb crumble, burnt cheesecake or a berry swirl like this one. We bring them out at the table and leave the spoons.'),
              para('£6 a head', className='is-style-sticker'))), align='wide', verticalAlignment='center'), align='wide', layout={'type': 'default'}))
 
 pattern('cheese-course', 'Cheese board add-on', 'platter,menu', group(columns(
     (None, J(heading('Add a cheese board', 3), para('Three West Country cheeses, oat crackers, a sharp chutney and grapes. £7 a head, or £5 if it replaces pudding. Best for groups who stay late.'))),
-    (None, img('cheese.jpg', 'A wooden board with blue cheese, a hard cheese, crackers, grapes, bread and two pots of chutney', lightbox=False)), align='wide', verticalAlignment='center'),
+    (None, img('cheese.jpg', 'A wooden board with blue cheese, a hard cheese, crackers, grapes, bread and two pots of chutney')), align='wide', verticalAlignment='center'),
     className='is-style-mustard', align='wide', layout={'type': 'constrained'}))
 
+
+
+# =====================================================================================
+# Round 2: a catering kit. Opener shows this week's jobs; case studies are built from case-study
+# patterns; fewer tables (rows instead); seasonal menus, bowl food, team, kit list, pricing guide.
+# =====================================================================================
+section('dish-row', 'Label and value row', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|muted', 'width': '2px', 'style': 'dotted'}},
+         'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+         'css': '&{display:flex!important;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}& > *{margin:0!important}& > *:first-child{font-family:var(--wp--preset--font-family--display)}& > *:last-child{font-variant-numeric:tabular-nums}'})
+
+def rows(pairs):
+    return J(*[group(J(para(a), para(b)), className='is-style-dish-row', layout={'type': 'default'}) for a, b in pairs])
+
+WEEK = [('Tue 14 Oct', 'Film crew, Avonmouth docks, 85 a night'), ('Wed 15 Oct', 'Office lunches, 41 boxes across 6 offices'),
+        ('Fri 17 Oct', 'Wedding at Arnos Vale, 160 guests, paella'), ('Sat 18 Oct', 'A 50th in Totterdown, 40 in the garden'),
+        ('Sun 19 Oct', 'Wedding at The Mount Without, 120, lamb')]
+pattern('hero', 'Opener: on the pass this week', 'hero', group(columns(
+    ('46%', J(heading('On the pass this week', 1, fontSize='xx-large'),
+              rows(WEEK),
+              para('Second Helpings cooks for weddings, film crews, offices and dinners at home, from a kitchen under the arches in St Werburghs, Bristol.', fontSize='small'),
+              buttons(('Start your brief', '/enquire/'), ('See the menus', '/menus/', {'className': 'is-style-outline'})))),
+    (None, J(image('paella.jpg', 'A wide paella pan over a fire, full of rice, mussels and red peppers, with a wooden spoon going in', 'Friday\'s paella, pan one of two'),
+             para('Paella for 140 from £18 a head', className='is-style-sticker'))),
+    align='wide', verticalAlignment='center'), tag='section', align='full', className='is-style-mustard', layout={'type': 'constrained'}),
+    description='Opener with the current thing: this week\'s jobs as a list, a big food photo and a round price sticker.')
+
+# ---- case-study kit ----
+def case_summary(venue, guests, fmt, staff, season):
+    return group(rows([('Venue', venue), ('Guests', guests), ('Format', fmt), ('Staff', staff), ('Season', season)]), className='is-style-ticket', layout={'type': 'default'})
+
+def case_menu(title, dishes):
+    return group(J(heading(title, 3), *[para(d, className='is-style-dish') for d in dishes]), className='is-style-menu-card', layout={'type': 'constrained'})
+
+def case_gallery(imgs):
+    return gallery(imgs, columns=3, align='wide')
+
+def case_quote(text, who):
+    return quote(text, who)
+
+def case_learned(text):
+    return group(J(heading('What we would do differently', 4), para(text)), className='is-style-mustard', layout={'type': 'constrained'},
+                 style={'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
+
+def case_credits(pairs):
+    return J(heading('Who else was there', 5), rows(pairs))
+
+pattern('case-summary', 'Case study: the ticket (venue, guests, format)', 'case-study', case_summary('Arnos Vale, the Spielman Centre', '190', 'Mezze on the tables, then sharing mains', '14 on the day', 'June'))
+pattern('case-menu', 'Case study: what went out', 'case-study', case_menu('What went out', ['Mezze boards, three dips, grilled vegetables, flatbread', 'Slow lamb shoulder, or roast squash with the same dressing',
+    'Bitter leaves, orange, hazelnuts', 'Rhubarb crumble in trays']))
+pattern('case-gallery', 'Case study: photos from the day', 'case-study', case_gallery([('mezze.jpg', 'A mezze plate with dips and flatbread', 'Mezze, table 4'), ('roast.jpg', 'Roast chicken and vegetables on a plate', 'The main'), ('pastries.jpg', 'A berry swirl on a glass tray', 'Pudding tray')]))
+pattern('case-quote', 'Case study: what the client said', 'case-study', case_quote('The vegan platters went faster than the lamb, which nobody saw coming.', 'Rosie, bride, Arnos Vale, June 2026'))
+pattern('case-learned', 'Case study: what we would do differently', 'case-study', case_learned('Bake more flatbread. We ran out at 7:40pm and made another 60 in the venue kitchen.'))
+pattern('case-credits', 'Case study: planner, venue and photographer', 'case-study', case_credits([('Planner', 'Hattie Moss Weddings'), ('Venue', 'Arnos Vale'), ('Flowers', 'Wild Bunch, Stokes Croft'), ('Photos', 'Kiran Bhatt')]))
+pattern('case-intro', 'Case study: the brief in one paragraph', 'case-study', group(J(
+    para('The brief', fontSize='large', fontFamily='display'),
+    para('Rosie and Dan wanted food people would talk about, for 190 guests, in a venue with no kitchen of its own, on the hottest day of June. Half the guests were vegan. The budget was £42 a head.', fontSize='large')),
+    layout={'type': 'constrained'}))
+
+pattern('case-study-full', 'Case study: full layout', 'case-study', J(
+    pattern_ref('case-intro'), pattern_ref('case-summary'), pattern_ref('case-menu'), pattern_ref('case-gallery'), pattern_ref('case-quote'), pattern_ref('case-learned'), pattern_ref('case-credits')),
+    block_types='core/post-content', description='Every case-study block in order. Use it as the starting point for a new job.')
+
+pattern('job-record', 'Job record (venue, guests, format, menu)', 'case-study', J(
+    case_summary('Arnos Vale Cemetery, the Spielman Centre', '140, plus 12 crew and 2 dogs', 'Family-style sharing feast, three waves', '11 on the day, 2 in the kitchen', 'June'),
+    case_menu('What went out', ['Flatbreads from the wood oven with whipped feta and chilli honey', 'Paella in two 90 cm pans', 'Charred hispi cabbage, anchovy butter', 'Burnt Basque cheesecake, six of them'])))
+
+pattern('office-lunch', 'Office lunch order list', 'menu', group(J(
+    heading('Office lunches', 2),
+    para('Order by 2pm for next-day delivery across Bristol inside the ring road. Minimum 10 people. We deliver between 11:45 and 12:30 and collect the trays the next morning.'),
+    rows([('Boxed lunch: grain salad, filled flatbread, cookie', '£11.50 a head'), ('Sharing platter: sourdough sandwiches, 3 salads, fruit', '£14 a head'),
+          ('Hot tray: chicken or aubergine curry, rice, pickles', '£15 a head'), ('Breakfast box: pastries, yoghurt pots, fruit', '£7.50 a head'), ('Tray of brownies, 24 pieces', '£36')]),
+    buttons(('Email a lunch order', 'mailto:lunch@example.com?subject=Lunch%20order'))),
+    layout={'type': 'constrained'}))
+
+pattern('suppliers-strip', 'Suppliers named', 'about', group(J(
+    heading('Who we buy from', 2),
+    grid(J(*[group(J(heading(n, 4), para(w), para(d, fontSize='small')), className='is-style-ticket', layout={'type': 'default'}) for n, w, d in [
+        ('Hart\'s Bakery', 'Sourdough and flatbread dough', 'Temple Meads, 1.5 miles'), ('Jon Thorner\'s', 'Lamb, beef shin, chicken', 'Pylle, Somerset, 26 miles'),
+        ('Wyke Farms', 'Cheddar and butter', 'Bruton, 30 miles'), ('Sims Hill Shared Harvest', 'Leaves, squash, beetroot', 'Frenchay, 4 miles'),
+        ('Fish for Thought', 'Crab and mackerel', 'Brixham, twice a week')]]), min_width='13rem')),
+    tag='section', align='full', className='is-style-tomato', layout={'type': 'constrained'}))
+
+pattern('venues', 'Venues we know', 'about', group(J(
+    heading('Venues we know the back door of', 3),
+    rows([('Arnos Vale, Brislington', '220 seated'), ('The Mount Without, St Michael\'s Hill', '120 seated'), ('Paintworks, Arnos Vale', '180 seated'),
+          ('Glastonbury Abbey barn, Somerset', '150 seated'), ('Your garden, within 40 miles', 'As many as fit under the gazebo')])),
+    layout={'type': 'constrained'}))
+
+def season(c, name, dates, dishes):
+    return group(J(heading(name, 3), para(dates, fontSize='small'), *[para(d, className='is-style-dish') for d in dishes]), className='is-style-' + c, layout={'type': 'default'},
+                 style={'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
+
+pattern('menus-by-season', 'Menus by season', 'menu', group(J(
+    heading('A menu for every season', 2),
+    grid(J(season('pickle', 'Spring', 'February to April', ['Asparagus, brown butter', 'Lamb, wild garlic', 'Rhubarb crumble']),
+           season('mustard', 'Summer', 'May to August', ['Paella in the big pans', 'Tomatoes, burrata, basil', 'Strawberries and cream']),
+           season('tomato', 'Autumn', 'September to November', ['Slow lamb shoulder', 'Crispy potatoes', 'Sticky toffee pudding']),
+           season('mustard', 'Winter', 'December and January', ['Beef shin pie in trays', 'Roast roots, honey', 'Chocolate pots'])), min_width='15rem')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('bowl-food', 'Bowl food', 'menu', group(columns(
+    (None, J(heading('Bowl food', 3), para('For standing receptions where nobody wants to juggle a plate. A small bowl and a fork, handed round in waves.'),
+             rows([('Jerk chicken, rice and peas', '£6.50'), ('Mushroom risotto, parmesan', '£6'), ('Fish and chips in a cone', '£7'), ('Mac and cheese, crispy onions', '£5.50')]),
+             para('Four bowls a head is dinner. Two is a snack.', fontSize='small'))),
+    (None, image('canapes.jpg', 'Small plates of canapés on a wooden bench against a green wall', 'Bowl food at a gallery opening')), align='wide', verticalAlignment='center'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('dietary', 'Dietary needs', 'info', group(J(
+    heading('Dietary needs', 3),
+    columns((None, J(heading('Vegan', 5), para('Every menu has a vegan version of each dish at the same price, cooked first, before anything else touches the pans.', fontSize='small'))),
+            (None, J(heading('Halal', 5), para('Our lamb and chicken come halal certified from Jon Thorner\'s. Tell us and we keep it all separate.', fontSize='small'))),
+            (None, J(heading('Gluten-free', 5), para('We cook gluten-free dishes in a separate area with separate boards. We can\'t promise a gluten-free kitchen.', fontSize='small'))))),
+    layout={'type': 'constrained', 'contentSize': '980px'}))
+
+pattern('how-it-works', 'How an event works', 'enquire', group(J(
+    heading('How it goes, from email to washing up', 2),
+    lst(['You email the brief. Rosa replies within three working days with a menu and a price.', 'You come to the arches for a tasting, Tuesday to Thursday.',
+         'A 30% deposit holds the date. Final numbers are due 14 days before.', 'On the day we arrive four hours before food goes out, cook, serve, clear and take the rubbish.',
+         'Leftovers go home with guests or to the community fridge the same night.'], ordered=True)),
+    className='is-style-ticket', layout={'type': 'constrained'}))
+
+pattern('kit-list', 'What we bring', 'info', group(J(
+    heading('What we bring', 3),
+    rows([('Ovens and a hob', 'Two combi ovens on wheels, one 4-ring gas hob'), ('Plates and cutlery', 'Real china for up to 250, enamel for outdoors'),
+          ('Tables', 'Two 6 foot trestles for the kitchen'), ('Power', 'We need two 13 amp sockets, or we bring a quiet generator for £90'),
+          ('Water', 'We bring 100 litres if the venue has no tap near the kitchen')])),
+    layout={'type': 'constrained'}))
+
+pattern('pricing-guide', 'Pricing guide per head', 'enquire', group(J(
+    heading('Rough prices per head', 3),
+    rows([('Office boxed lunch', 'from £11.50'), ('Crew catering, per day', '£16'), ('Canapés, five each', '£11'), ('Sharing feast', '£38 to £48'),
+          ('Dinner at home, with two staff', 'from £55')]),
+    para('Prices include staff, plates and clearing. VAT is on top for businesses. Drinks are quoted separately.', fontSize='small')),
+    layout={'type': 'constrained'}))
+
+pattern('team-cards', 'The team (people cards)', 'about', group(J(
+    heading('Who you will meet', 2),
+    grid(J(*[group(J(heading(n, 4), para(r), para(x, fontSize='small')), className='is-style-ticket', layout={'type': 'default'}) for n, r, x in [
+        ('Femi Adebayo', 'Chef, co-owner', 'Cooked at Casamia, then at a lot of festival stalls. Makes the lamb.'),
+        ('Rosa Lindqvist', 'Runs the day, co-owner', 'Used to run events at Arnos Vale. Knows where every fuse box is.'),
+        ('Dami Okonjo', 'Sous chef', 'Does the paella pans. Has opinions about socarrat.'),
+        ('Jess Carver', 'Front of house lead', 'Runs the floor team of up to 14. Remembers everyone\'s name.')]]), min_width='14rem')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('tasting', 'Tastings', 'enquire', group(columns(
+    (None, image('bread.jpg', 'A loaf of bread in a wire basket on a red cloth', 'The bread basket at a tasting')),
+    (None, J(heading('Come and taste it first', 3), para('Tastings are at the arches on Tuesday, Wednesday and Thursday evenings. Free for weddings over 60 guests, £60 for two otherwise, taken off the final bill. Bring whoever has the strongest opinions.'),
+             buttons(('Book a tasting', 'mailto:hungry@example.com?subject=Tasting')))), align='wide', verticalAlignment='center'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('weekly-lunch-menu', 'This week\'s lunch menu', 'menu', group(J(
+    heading('This week\'s hot trays', 3),
+    rows([('Monday', 'Chicken and chickpea curry, rice, pickles'), ('Tuesday', 'Beef shin ragu, rigatoni'), ('Wednesday', 'Aubergine parmigiana (vg option)'),
+          ('Thursday', 'Jerk chicken, rice and peas, slaw'), ('Friday', 'Fish pie, greens')]),
+    para('Hot trays are £15 a head, minimum 10, for next-day delivery if you order by 2pm.', fontSize='small')),
+    className='is-style-ticket', layout={'type': 'constrained'}))
+
+pattern('wedding-faq', 'Wedding questions', 'info', group(J(
+    heading('Wedding questions', 3),
+    details('Do you cut the cake?', para('Yes, and we plate it, for free. We don\'t bake wedding cakes, but we do burnt cheesecakes if you want to skip the cake.')),
+    details('Can we have a late-night snack?', para('Bacon or halloumi rolls at 10pm, £4.50 a head. Nobody has ever regretted it.')),
+    details('What about the evening guests?', para('We count them separately. The feast is for day guests, the snack is for everyone.')),
+    details('Do the staff eat?', para('Yes, before service, from the same food. Please don\'t order extra for us.'))),
+    layout={'type': 'constrained'}))
+
+pattern('weddings-page', 'Page: weddings', 'pages', J(pattern_ref('seasonal-menu'), pattern_ref('how-it-works'), pattern_ref('case-quote'), pattern_ref('pricing-guide'), pattern_ref('wedding-faq'), pattern_ref('tasting')), block_types='core/post-content')
+pattern('events-page', 'Page: events', 'pages', J(pattern_ref('event-types'), pattern_ref('menus-by-season'), pattern_ref('bowl-food'), pattern_ref('canape-card'), pattern_ref('kit-list'), pattern_ref('booking-terms')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'pages', J(pattern_ref('team'), pattern_ref('team-cards'), pattern_ref('reviews'), pattern_ref('venues')), block_types='core/post-content')
+pattern('office-page', 'Page: office lunches', 'pages', J(pattern_ref('order-cutoff'), pattern_ref('office-lunch'), pattern_ref('weekly-lunch-menu'), pattern_ref('lunch-photo')), block_types='core/post-content')
+pattern('enquire-page', 'Page: enquire', 'pages', J(pattern_ref('enquiry-brief'), pattern_ref('pricing-guide'), pattern_ref('dietary'), pattern_ref('booking-terms'), pattern_ref('faq')), block_types='core/post-content')
+pattern('menus-page', 'Page: menus', 'pages', J(pattern_ref('seasonal-menu'), pattern_ref('menus-by-season'), pattern_ref('canape-card'), pattern_ref('pudding'), pattern_ref('cheese-course'), pattern_ref('allergen-matrix'), pattern_ref('brochure')), block_types='core/post-content')
+
+CATS = [('hero', 'Platter: openers'), ('case-study', 'Platter: case studies'), ('menu', 'Platter: menus'), ('services', 'Platter: event types'), ('enquire', 'Platter: enquiries and pricing'),
+        ('about', 'Platter: team, suppliers, venues'), ('info', 'Platter: questions and practical'), ('notices', 'Platter: notices'), ('pages', 'Platter: page layouts')]
+write('functions.php', """<?php
+/**
+ * Platter: pattern categories only.
+ *
+ * @package platter
+ */
+
+add_action(
+	'init',
+	function () {
+%s
+	}
+);""" % '\n'.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'platter' ) ) );" % c for c in CATS))
+
+write('templates/front-page.html', page_template(J(
+    pattern_ref('hero'), pattern_ref('event-types'), pattern_ref('ticket-rail'), pattern_ref('seasonal-menu'), pattern_ref('team-cards'), pattern_ref('suppliers-strip'), pattern_ref('enquiry-brief')),
+    style={'spacing': {'padding': {'top': '0', 'bottom': '0'}, 'margin': {'top': '0'}}}))
+
+# ---- demo content: case studies built from the case-study blocks ----
+CJ = 'demos/platter/content.json'
+C = json.load(open(CJ))
+CASES = {
+ 'Ama and Joel, The Mount Without': (('The Mount Without, St Michael\'s Hill', '140, plus 12 crew', 'Family-style feast in three waves', '11 on the day', 'August'),
+    'Ama and Joel wanted West African and Spanish food on the same table for 140 people in a church with a tiny kitchen.',
+    ['Flatbreads, whipped feta, chilli honey', 'Jollof paella in two 90 cm pans', 'Suya-spiced lamb, pickled onions', 'Six burnt Basque cheesecakes'],
+    [('paella.jpg', 'A paella pan over a fire', 'Pan one'), ('cake.jpg', 'A couple cutting a fruit-covered cake', 'The cake they brought'), ('bread.jpg', 'Bread in a wire basket', 'Flatbreads')],
+    ('The jollof paella was the talk of the night. My uncles went back three times.', 'Ama, August 2026'), 'Bring a third pan. The vegetable one went first.',
+    [('Planner', 'Themselves, with a spreadsheet'), ('Venue', 'The Mount Without'), ('Photos', 'Tola Ade')]),
+ 'Night shoot, Avonmouth docks': (('Unit 12, Avonmouth docks', '85 crew a night', 'Hot buffet from a trailer kitchen', '4 per shift', 'March and April'),
+    'Six weeks of night shoots, 85 crew, hot food at 1am, and a production manager who had been let down twice.',
+    ['Breakfast baps at call time', 'Tacos on Thursdays, curry on Mondays', 'Soup every night', 'A 3am tray of brownies'],
+    [('tacos.jpg', 'Tacos in paper boats', 'Taco Thursday'), ('grill.jpg', 'Chicken on a charcoal grill', 'The grill at wrap'), ('lunchbox.jpg', 'A boxed meal', 'Grab bags for the late unit')],
+    ('Six weeks and nobody complained about the food once, which has never happened.', 'Sian, production manager, April 2026'), 'Order more soup cups. We ran out twice.',
+    [('Production', 'Harbour Light Films'), ('Location', 'Avonmouth docks'), ('Trailer', 'Hired from Mobile Kitchens Bristol')]),
+ 'Harbourside architects, Friday lunches': (('An architects\' studio on Wapping Road', '24 every Friday', 'Sharing platters at 12:15', '1 driver', 'All year'),
+    'A standing Friday lunch for a studio of 24 people who all have opinions about coleslaw.',
+    ['Sourdough sandwiches, four fillings', 'Three salads, one always with grains', 'A tray of cookies'],
+    [('sandwiches.jpg', 'Heart-shaped rolls on a tray', 'Sandwich tray'), ('salad.jpg', 'A bowl of green leaves', 'Salad two of three'), ('lunchbox.jpg', 'A boxed lunch', 'The one boxed lunch for the vegan')],
+    ('We schedule meetings around it.', 'Priya, studio manager, June 2026'), 'Put the coleslaw in a separate tub so the anti-coleslaw faction can ignore it.',
+    [('Client', 'Wapping Wharf Architects'), ('Delivery', 'Every Friday since January')]),
+ 'A 60th in a Clifton kitchen': (('A house on Royal York Crescent', '22', 'Plated starter, family-style main', '2 staff and Femi', 'November'),
+    'A 60th birthday dinner for 22 in a family kitchen with an oven smaller than we were told.',
+    ['Crab on toast', 'Roast chicken with garlic, lemon and thyme', 'Crispy potatoes, three trays', 'Sticky toffee pudding'],
+    [('roast.jpg', 'Roast chicken on a plate', 'The main'), ('pastries.jpg', 'A berry swirl on a tray', 'Pudding'), ('cheese.jpg', 'A cheese board', 'Cheese, late')],
+    ('We did no washing up. That was the whole present.', 'Marion, November 2025'), 'Ask for a photo of the oven. We now always do.',
+    [('Host', 'Marion\'s children'), ('Wine', 'Averys, Park Street')]),
+ 'Rosie and Dan, Arnos Vale': (('Arnos Vale, the Spielman Centre', '190', 'Mezze, then sharing mains', '14 on the day', 'June'),
+    'Rosie and Dan wanted food people would talk about, for 190 guests, half of them vegan, on the hottest day of June.',
+    ['Mezze boards, three dips, flatbread', 'Slow lamb shoulder, or roast squash with the same dressing', 'Bitter leaves, orange, hazelnuts', 'Rhubarb crumble in trays'],
+    [('mezze.jpg', 'A mezze plate', 'Mezze, table 4'), ('salad.jpg', 'Green leaves in a bowl', 'Leaves'), ('pastries.jpg', 'A berry swirl on a tray', 'Pudding tray')],
+    ('The vegan platters went faster than the lamb, which nobody saw coming.', 'Rosie, June 2026'), 'Bake more flatbread. We ran out at 7:40pm.',
+    [('Planner', 'Hattie Moss Weddings'), ('Flowers', 'Wild Bunch, Stokes Croft'), ('Photos', 'Kiran Bhatt')]),
+ 'Film wrap party, Paintworks': (('Paintworks yard, Arnos Vale', '120', 'Street food from two grills', '6 plus the grill', 'September'),
+    'A wrap party for 120 crew in a yard with no kitchen, two grills and a queue.',
+    ['Jerk chicken buns, pineapple hot sauce', 'Halloumi and pepper skewers', 'Charred corn, lime butter', 'Doughnuts from Hart\'s'],
+    [('grill.jpg', 'Chicken on a charcoal grill', 'Grill two'), ('tacos.jpg', 'Tacos in paper boats', 'The side stall'), ('canapes.jpg', 'Small plates on a bench', 'Early bites')],
+    ('Best wrap food I have had in fifteen years of wraps.', 'Dev, first AD, September 2025'), 'Two grills was one too few. It is three next time.',
+    [('Production', 'Harbour Light Films'), ('Venue', 'Paintworks')]),
+ 'Charity board breakfast': (('A church hall in Redland', '30', 'Breakfast buffet', '2', 'October'),
+    'Breakfast for 30 trustees at 8am, on a charity budget, before a long meeting.',
+    ['Berry and cinnamon swirl', 'Yoghurt pots with granola', 'Fruit', 'Coffee in an urn'],
+    [('pastries.jpg', 'A berry swirl on a tray', 'The swirl'), ('bread.jpg', 'Bread in a basket', 'Toast station'), ('salad.jpg', 'Leaves in a bowl', 'Fruit, before')],
+    ('The swirl disappeared before the minutes were approved.', 'Jo, chair of trustees, October 2025'), 'Bring a second urn. Trustees drink a lot of coffee.',
+    [('Client', 'Redland Community Trust')]),
+ 'Garden birthday, 40 guests': (('A back garden in Totterdown', '40', 'Canapés, sharing supper, cheese late', '3', 'July'),
+    'A garden birthday for 40 with one gazebo, one outside tap and a forecast of rain at nine.',
+    ['Five canapés, two each', 'Flatbreads, lamb, potatoes, leaves', 'Cheese board with oat crackers and chutney'],
+    [('cheese.jpg', 'A cheese board', 'The cheese that lasted till midnight'), ('canapes.jpg', 'Canapés on a bench', 'Canapés'), ('roast.jpg', 'A plate of roast chicken', 'Supper')],
+    ('It rained, we all ate cheese in the kitchen, it was the best bit.', 'Sam, July 2026'), 'Bring the second gazebo even when the forecast is good.',
+    [('Host', 'Sam and Chris'), ('Gazebo', 'Borrowed from next door')]),
+}
+for po in C['posts']:
+    c = CASES.get(po['title'])
+    if not c: continue
+    summ, brief, dishes, imgs, (q, who), learned, credits = c
+    po.pop('pattern', None)
+    po['content'] = J(para(brief, fontSize='large'), case_summary(*summ), case_menu('What went out', dishes), case_gallery(imgs), case_quote(q, who), case_learned(learned), case_credits(credits))
+pages = {p['slug']: p for p in C['pages']}
+pages['weddings'] = {'slug': 'weddings', 'title': 'Weddings', 'pattern': 'platter/weddings-page', 'template': 'page-wide'}
+C['pages'] = list(pages.values())
+C['nav'] = [{'label': l, 'url': u} for l, u in [('Events', '/events/'), ('Weddings', '/weddings/'), ('Menus', '/menus/'), ('Office lunches', '/office-lunches/'),
+            ('Recent jobs', '/recent-jobs/'), ('Suppliers', '/suppliers/'), ('About', '/about/'), ('Enquire', '/enquire/')]]
+json.dump(C, open(CJ, 'w'), indent=1, ensure_ascii=False)
 print('platter: build done')

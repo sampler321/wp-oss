@@ -109,7 +109,7 @@ theme = {
             'core/post-date': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'fontWeight': '700'}, 'color': {'text': 'var:preset|color|muted'}},
             'core/post-terms': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'fontWeight': '800'}},
             'core/image': {'border': {'radius': '0'}},
-            'core/post-featured-image': {'border': {'radius': '0', 'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'color': {'background': 'var:preset|color|accent'}, 'css': '& img{filter:grayscale(1) contrast(1.15) brightness(1.1);mix-blend-mode:screen}'},
+            'core/post-featured-image': {'border': {'radius': '0', 'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'filter': {'duotone': 'var:preset|duotone|red-print'}},
             'core/separator': {'color': {'text': 'var:preset|color|contrast'}, 'border': {'width': '3px 0 0 0'}},
             'core/quote': {'typography': {'fontSize': 'var:preset|font-size|large', 'fontWeight': '700', 'lineHeight': '1.35'}, 'color': {'background': 'var:preset|color|accent-2'},
                            'border': {'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast'}, 'shadow': 'var:preset|shadow|print',

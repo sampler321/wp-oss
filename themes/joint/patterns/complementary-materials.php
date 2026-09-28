@@ -2,7 +2,7 @@
 /**
  * Title: Complementary materials
  * Slug: joint/complementary-materials
- * Categories: text
+ * Categories: making
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->

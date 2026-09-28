@@ -2,7 +2,7 @@
 /**
  * Title: Funders line
  * Slug: commons/funders-line
- * Categories: text
+ * Categories: show
  */
 ?>
 <!-- wp:paragraph {"fontSize":"small"} -->

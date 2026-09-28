@@ -14,5 +14,5 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p class="">Unridden and unassembled goods can come back within 28 days. Once grip is on a deck, it is yours.</p>
+<p>Unridden and unassembled goods can come back within 28 days. Once grip is on a deck, it is yours.</p>
 <!-- /wp:paragraph -->

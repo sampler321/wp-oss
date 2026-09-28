@@ -11,6 +11,13 @@ import sys, json, os; sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('scoop')
 S = THEME['slug']
+
+# Round 2: map inserter categories so the pattern library groups well (first category = library page).
+CATMAP = {'featured': 'hero', 'shop': 'tubs', 'call-to-action': 'signup', 'contact': 'visit', 'text': 'info', 'gallery': 'about', 'banner': 'notices', 'services': 'events'}
+_pattern = pattern
+def pattern(slug, title, categories, body, **kw):
+    cats = [CATMAP.get(c.strip(), c.strip()) for c in categories.split(',') if c.strip() and c.strip() != 'scoop'] or ['pages']
+    return _pattern(slug, title, ','.join(dict.fromkeys(cats)), body, **kw)
 D = THEME['dir']
 
 
@@ -65,6 +72,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3.5rem, 9vw, 7rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(5rem, 12vw, 10rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -245,7 +253,7 @@ pattern('hero', 'Hero: this month and the numbers', 'scoop,featured', group(J(
         (None, table([['Churned', 'Daily, 7 to 11am'], ['Pans in the cabinet', '24'], ['Served at', '−12 °C'], ['Base', '3.8% fat whole milk'], ['Open', 'Tue to Sun, 12 to 7pm']],
                      className='is-style-default')),
         align='wide', verticalAlignment='bottom'),
-    img('hero.jpg', 'Steel gelato pans in a shop cabinet, filled with strawberry, lemon, pistachio and stracciatella, with scoop spades standing in them', 'The cabinet at 11:40, just before we open', lightbox=False, align='wide')),
+    img('hero.jpg', 'Steel gelato pans in a shop cabinet, filled with strawberry, lemon, pistachio and stracciatella, with scoop spades standing in them', 'The cabinet at 11:40, just before we open', align='wide')),
     align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60'}}}),
     description='Opener: the month as a headline, one paragraph, a small table of numbers and a wide photo of the cabinet.')
 
@@ -295,7 +303,7 @@ pattern('cabinet-map', 'Cabinet map (24 pans)', 'scoop,menu', group(J(
     align='wide', layout={'type': 'default'}, style=SEC))
 
 pattern('method', 'Method: how a batch is made', 'scoop,about', group(columns(
-    ('38%', img('pistachios.jpg', 'A heap of shelled and unshelled pistachio nuts', 'Bronte pistachios, before we roast and grind them', lightbox=False)),
+    ('38%', img('pistachios.jpg', 'A heap of shelled and unshelled pistachio nuts', 'Bronte pistachios, before we roast and grind them')),
     (None, J(heading('How a batch is made', 3),
              table([['Pasteurise', '85 °C for 15 seconds, then cooled to 4 °C'], ['Age', '6 hours at 4 °C, overnight for nut bases'],
                     ['Churn', 'Batch freezer, 10 minutes, out at −8 °C'], ['Harden', '40 minutes at −25 °C'],
@@ -309,7 +317,7 @@ pattern('tubs', 'Tubs to take home', 'scoop,shop', group(columns(
              table([['500 ml', '1 or 2 flavours', '£9.50'], ['1 litre', 'up to 3 flavours', '£17'], ['2.5 litre', 'for events, up to 3 flavours', '£38']], head=['Size', 'Flavours', 'Price']),
              para('Order by 5pm Thursday for Friday delivery, £4 inside the bypass. It keeps 3 weeks at −18 °C. Take it out of the freezer 10 minutes before serving.', className='is-style-spec'),
              buttons(('Order tubs by email', 'mailto:ciao@example.com?subject=Tub%20order')))),
-    ('40%', img('tubs.jpg', 'A paper cup of chocolate and blackcurrant ripple gelato with three wooden spoons', lightbox=False)), align='wide'),
+    ('40%', img('tubs.jpg', 'A paper cup of chocolate and blackcurrant ripple gelato with three wooden spoons')), align='wide'),
     align='wide', layout={'type': 'default'}, style=SEC))
 
 pattern('vote-back', 'Vote a flavour back', 'scoop,call-to-action', group(J(
@@ -343,7 +351,7 @@ pattern('print-board', 'Printable flavour board', 'scoop,menu', group(J(
     className='is-style-hairline-top', layout={'type': 'constrained'}))
 
 pattern('events', 'Events and catering', 'scoop,services', group(columns(
-    ('40%', img('cone.jpg', 'A hand holding a waffle cone with two scoops, one pale fig and one pistachio, and a white spoon', lightbox=False)),
+    ('40%', img('cone.jpg', 'A hand holding a waffle cone with two scoops, one pale fig and one pistachio, and a white spoon')),
     (None, J(heading('Events and catering', 3),
              para('We bring a four-pan cabinet on a trolley, one person to serve, cones, cups and spoons. It needs a normal plug and 2 metres of floor.'),
              table([['Up to 80 guests', '4 flavours, 2 hours', '£480'], ['80 to 150 guests', '4 flavours, 3 hours', '£720'], ['Tubs only, delivered', '2.5 litre tubs', '£38 each']],
@@ -403,7 +411,7 @@ pattern('ingredient-strip', 'Ingredient photos', 'scoop,gallery', gallery([
 pattern('affogato', 'Affogato', 'scoop,menu', group(columns(
     (None, J(heading('Affogato', 4), para('A scoop of fior di latte or hazelnut with a double espresso poured over at the counter. £4.80. Coffee from Machina on Nicolson Street.'),
              para('Served from 12 until 5pm, when the coffee machine goes off.', className='is-style-spec'))),
-    ('34%', img('affogato.jpg', 'Espresso being poured from a small jug over a scoop of gelato in a copper cup', lightbox=False, aspectRatio='4/3', scale='cover')), align='wide', verticalAlignment='center', className='is-style-hairline-top'),
+    ('34%', img('affogato.jpg', 'Espresso being poured from a small jug over a scoop of gelato in a copper cup', aspectRatio='4/3', scale='cover')), align='wide', verticalAlignment='center', className='is-style-hairline-top'),
     align='wide', layout={'type': 'default'}))
 
 
@@ -425,4 +433,212 @@ pattern('wholesale', 'Gelato for restaurants', 'scoop,services', group(columns(
              para('We are full until January. Email to go on the list.', className='is-style-spec'))), align='wide', className='is-style-hairline-top'),
     align='wide', layout={'type': 'default'}))
 
+
+
+# =====================================================================================
+# Round 2: no tables on the home page, spec rows made of groups, a technical kit (glossary,
+# fruit calendar, serving sizes, overrun), people, reviews, gallery. Demo content written here.
+# =====================================================================================
+section('spec-row', 'Spec row (label and value)', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|rule', 'width': '1px', 'style': 'solid'}},
+         'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+         'css': '&{display:flex!important;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}& > *{margin:0!important}& > *:first-child{color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)}& > *:last-child{font-variant-numeric:tabular-nums}'})
+
+def rows(pairs):
+    return J(*[group(J(para(a), para(b)), className='is-style-spec-row', layout={'type': 'default'}) for a, b in pairs])
+
+pattern('hero', 'Opener: this month and the numbers', 'hero', group(J(
+    columns(
+        ('62%', J(heading('October, in 24 pans', 1),
+                  para('Gelato made every morning in Stockbridge from Scottish whole milk, Sicilian pistachios and fruit bought that week. Sixteen classics stay all year. Eight specials change on the first Tuesday of the month.', fontSize='large'),
+                  buttons(('See the October menu', '/menu/'), ('Order a tub', '/tubs/', {'className': 'is-style-outline'})))),
+        (None, rows([('Churned', 'Daily, 7 to 11am'), ('Pans in the cabinet', '24'), ('Served at', '−12 °C'), ('Base', '3.8% fat whole milk'), ('Open', 'Tue to Sun, 12 to 7pm')])),
+        align='wide', verticalAlignment='bottom'),
+    pattern_ref('ingredient-triptych')),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60'}}}),
+    description='Opener: the month as a headline, one paragraph, spec rows and three photos of this month\'s ingredients.')
+
+pattern('ingredient-triptych', 'Three photos: gelato and what is in it', 'about', gallery([
+    ('hero.jpg', 'Steel gelato pans in a cabinet with strawberry, lemon and pistachio', 'The cabinet at 11:40'),
+    ('pistachios.jpg', 'A heap of pistachio nuts', 'Bronte pistachios'),
+    ('cone.jpg', 'A waffle cone with two scoops held up on the street', 'Fig leaf and pistachio, to go')], columns=3, align='wide'))
+
+pattern('method', 'Method: how a batch is made', 'about', group(columns(
+    ('38%', image('pistachios.jpg', 'A heap of shelled and unshelled pistachio nuts', 'Bronte pistachios, before we roast and grind them')),
+    (None, J(heading('How a batch is made', 3),
+             rows([('Pasteurise', '85 °C for 15 seconds, cooled to 4 °C'), ('Age', '6 hours at 4 °C, overnight for nut bases'), ('Churn', 'Batch freezer, 10 minutes, out at −8 °C'),
+                   ('Harden', '40 minutes at −25 °C'), ('Serve', 'Cabinet at −12 °C, sorbets at −14 °C'), ('Keep', 'Anything left after 3 days is thrown away')]),
+             para('Every base is made from scratch, except the chestnut paste, which comes from a single producer in Cuneo.', fontSize='small'))),
+    align='wide'), align='full', className='is-style-mist', layout={'type': 'constrained'}))
+
+pattern('tubs', 'Tubs to take home', 'tubs', group(columns(
+    (None, J(heading('Tubs to take home', 3),
+             para('Any flavour from the cabinet, packed to order in insulated tubs. Collect from the shop, or we deliver in Edinburgh on Friday and Saturday afternoons.'),
+             rows([('500 ml, 1 or 2 flavours', '£9.50'), ('1 litre, up to 3 flavours', '£17'), ('2.5 litres, for events', '£38')]),
+             para('Order by 5pm Thursday for Friday delivery, £4 inside the bypass. It keeps 3 weeks at −18 °C.', className='is-style-spec'),
+             buttons(('Order tubs by email', 'mailto:ciao@example.com?subject=Tub%20order')))),
+    ('40%', image('tubs.jpg', 'A paper cup of chocolate and blackcurrant ripple gelato with three wooden spoons')), align='wide'),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|40'}}}))
+
+pattern('vote-back', 'Vote a flavour back', 'signup', group(J(
+    heading('Vote a special back', 3),
+    para('Reply to the newsletter, or tell whoever is serving, with the name of a past special. The one with most votes on the last day of the month goes back in the cabinet the month after.'),
+    rows([('Blood orange sorbet, last made February', '41 votes'), ('Olive oil and sea salt, last made June', '37 votes'), ('Rhubarb and custard, last made April', '29 votes')])),
+    layout={'type': 'constrained'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|40'}}}))
+
+pattern('find-us', 'Find us', 'visit', group(columns(
+    (None, J(heading('Find us', 3), para('41 Raeburn Place, Stockbridge, Edinburgh EH4 1HX. The 24 and 29 buses stop outside. One step at the door and a ramp we put down if you ask.'))),
+    (None, rows([('Tuesday to Friday', '12 to 7pm'), ('Saturday and Sunday', '11am to 7pm'), ('Monday', 'Closed, we clean the machines'), ('Over 20 °C', 'Open until 10pm')])),
+    align='wide'), align='wide', className='is-style-hairline-top', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}))
+
+pattern('events', 'Events and catering', 'events', group(columns(
+    ('40%', image('cone.jpg', 'A hand holding a waffle cone with two scoops and a white spoon')),
+    (None, J(heading('Events and catering', 3),
+             para('We bring a four-pan cabinet on a trolley, one person to serve, cones, cups and spoons. It needs a normal plug and 2 metres of floor.'),
+             rows([('Up to 80 guests, 4 flavours, 2 hours', '£480'), ('80 to 150 guests, 4 flavours, 3 hours', '£720'), ('Tubs only, delivered', '£38 per 2.5 litres')]),
+             para('Within 20 miles of Stockbridge. One event per weekend, so ask early for June.', fontSize='small'),
+             buttons(('Ask about a date', 'mailto:ciao@example.com?subject=Event')))), align='wide'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('suppliers', 'Where the ingredients come from', 'about', group(J(
+    heading('Where it comes from', 4),
+    rows([('Whole milk and cream', 'Mansfield\'s dairy, East Lothian, 18 miles'), ('Pistachios', 'Bronte, Sicily, via Valvona and Crolla'), ('Hazelnuts', 'Piedmont IGP, same importer'),
+          ('Chocolate', 'Ecuador, 70%, from a Glasgow wholesaler'), ('Fruit', 'Saturday farmers\' market, Castle Terrace')])),
+    layout={'type': 'constrained'}))
+
+pattern('wholesale', 'Gelato for restaurants', 'events', group(columns(
+    ('30%', heading('For restaurants', 4)),
+    (None, J(para('We make 5-litre pans for eleven restaurants in Edinburgh, delivered on Tuesday and Friday mornings. Fior di latte, pistachio, one sorbet and a flavour made for your menu.'),
+             rows([('5 litre pan, classic', '£48'), ('5 litre pan, made for you', '£56, minimum 3 pans a month')]),
+             para('We are full until January. Email to go on the list.', className='is-style-spec'))), align='wide', className='is-style-hairline-top'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('glossary', 'Gelato, in numbers', 'info', group(columns(
+    ('30%', J(heading('Gelato, in numbers', 3), para('What makes it gelato and not ice cream, measured.', className='is-style-note'))),
+    (None, rows([('Fat', 'Ours 6 to 13%. Ice cream is usually 10 to 16%.'), ('Air (overrun)', 'Ours 25 to 30%. Supermarket ice cream can be 100%.'),
+                 ('Serving temperature', 'Ours −12 °C. Ice cream is served at about −18 °C.'), ('Sugar', '16 to 27%, depending on the base'),
+                 ('Churn time', '10 minutes in a batch freezer'), ('Shelf life in the cabinet', '3 days')])), align='wide', className='is-style-hairline-top'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('fruit-calendar', 'What fruit, when', 'menu', group(J(
+    heading('What fruit, when', 3),
+    para('We only make fruit sorbets when the fruit is good here. This is roughly how the year goes.', fontSize='small'),
+    rows([('January to March', 'Blood orange, Seville orange, forced rhubarb'), ('April and May', 'Rhubarb, elderflower at the very end'),
+          ('June and July', 'Strawberry, gooseberry, cherry, raspberry'), ('August', 'Peach, plum, blackcurrant'), ('September and October', 'Bramble, apple, pear, fig leaf'),
+          ('November and December', 'Quince, clementine, chestnut')])),
+    layout={'type': 'constrained'}))
+
+pattern('serving-sizes', 'Cones and cups', 'menu', group(columns(
+    ('30%', heading('Cones and cups', 4)),
+    (None, J(rows([('Small, one flavour', '£3.80'), ('Medium, two flavours', '£4.90'), ('Large, three flavours', '£5.90'), ('Assaggio, three small scoops', '£5.20'), ('Waffle cone', '+ 60p')]),
+             para('Cones contain gluten, egg and soya. Cups don\'t.', className='is-style-spec'))), align='wide', className='is-style-hairline-top'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('sorbet-list', 'Sorbets (all vegan)', 'menu', group(J(
+    heading('Sorbets this month', 4), para('All vegan. Water, sugar, fruit and nothing else, unless it says so.', className='is-style-note'),
+    flavour('Bramble', 'hand-picked in the Pentlands', 'Water base, 26% sugar. Allergens: none', True),
+    flavour('Pear and bay', 'Conference pears, one bay leaf per litre', 'Water base, 24% sugar. Allergens: none', True),
+    flavour('Lemon', 'Amalfi lemons, zest and juice', 'Water base, 27% sugar. Allergens: none', True),
+    flavour('Dark chocolate', '70% Ecuadorian chocolate and water', 'Water base, 22% sugar, 5% fat. Allergens: none', True)),
+    layout={'type': 'constrained'}))
+
+pattern('flavour-feature', 'Flavour of the month', 'menu', group(columns(
+    (None, image('hazelnuts.jpg', 'Green hazelnuts in their husks on a branch', 'Piedmont hazelnuts, a month before harvest')),
+    (None, J(para('Flavour of the month', className='is-style-spec'), heading('Hazelnut, roasted dark', 2),
+             para('Piedmont IGP hazelnuts, roasted for 14 minutes at 160 °C until the skins crack, ground warm into a paste, then 13% of the weight goes into the milk base. It tastes like the smell of the roaster.'),
+             rows([('Base', 'Milk, 17% sugar, 13% fat'), ('Allergens', 'milk, nuts'), ('In the cabinet', 'Pan 4, all year')]))), align='wide', verticalAlignment='center'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('how-to-order', 'How to order tubs', 'tubs', group(J(
+    heading('How to order', 4),
+    lst(['Email the flavours, the sizes and a collection or delivery day.', 'We confirm within a working day with the total.', 'Pay by card link. We pack the morning of the day.',
+         'Collect from the shop, or we deliver Friday and Saturday afternoons inside the bypass.'], ordered=True)),
+    className='is-style-hairline-top', layout={'type': 'constrained'}))
+
+pattern('tub-care', 'Keeping a tub', 'tubs', group(J(
+    heading('Keeping a tub', 4),
+    rows([('In your freezer', 'Up to 3 weeks at −18 °C'), ('Before serving', '10 minutes out, or 20 seconds in the microwave on defrost'), ('Once opened', 'Press baking paper on the surface to stop ice crystals')])),
+    layout={'type': 'constrained'}))
+
+pattern('people', 'Who you will meet', 'about', group(J(
+    heading('Who you will meet', 3),
+    columns((None, J(heading('Chiara Benedetti', 5), para('Makes every batch, 7 to 11am. Trained in Bologna, six summers in Parma.', fontSize='small'))),
+            (None, J(heading('Callum Reid', 5), para('Books, deliveries and the tablet flavour.', fontSize='small'))),
+            (None, J(heading('Ines Rocha', 5), para('Serves on weekdays. Knows every allergen by heart.', fontSize='small'))),
+            (None, J(heading('Oskar Nilsson', 5), para('Serves at weekends. Will give you a third taste.', fontSize='small'))), align='wide')),
+    align='wide', className='is-style-hairline-top', layout={'type': 'default'}))
+
+pattern('reviews', 'What people said', 'about', group(columns(
+    (None, quote('The pistachio tastes of pistachio, which sounds obvious until you have had the green kind.', 'Morag, Stockbridge, August 2026')),
+    (None, quote('Four-pan cart at our wedding. Our guests queued longer for the gelato than for the bar.', 'Dev and Hannah, Leith, June 2026')), align='wide'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('dog-cup', 'Dog cup note', 'info', group(J(
+    para('Dogs get a free cup of plain yoghurt gelato with no sugar added, one per dog. Water bowl by the door.', className='is-style-note')),
+    className='is-style-hairline-top', layout={'type': 'constrained'}))
+
+pattern('affogato-at-home', 'Affogato at home', 'info', group(J(
+    heading('Affogato at home', 4),
+    lst(['Take a 500 ml tub of fior di latte out of the freezer 10 minutes before.', 'Make a double espresso, or the strongest coffee your kitchen can make.',
+         'One scoop in a small glass, coffee poured over at the table.', 'Eat it fast. That is the whole point.'], ordered=True)),
+    layout={'type': 'constrained'}))
+
+pattern('process-gallery', 'Kitchen photos', 'about', group(J(
+    heading('In the kitchen', 4),
+    gallery([('vanilla.jpg', 'Vanilla pods tied in a bundle', 'Madagascar vanilla'), ('chocolate.jpg', 'Two squares of dark chocolate', '70% Ecuador'),
+             ('lemons.jpg', 'A green lemon on a tree', 'Lemons for the sorbet'), ('espresso.jpg', 'An espresso in a white cup', 'Coffee for the coffee flavour')], columns=4, align='wide')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('menu-page', 'Page: menu', 'pages', J(pattern_ref('monthly-menu'), pattern_ref('serving-sizes'), pattern_ref('tasting'), pattern_ref('affogato'), pattern_ref('sorbet-list'), pattern_ref('cabinet-map'), pattern_ref('fruit-calendar'), pattern_ref('print-board')), block_types='core/post-content')
+pattern('tubs-page', 'Page: tubs', 'pages', J(pattern_ref('tubs'), pattern_ref('how-to-order'), pattern_ref('tub-care'), pattern_ref('affogato-at-home'), pattern_ref('gift-voucher')), block_types='core/post-content')
+pattern('about-page', 'Page: story', 'pages', J(pattern_ref('story'), pattern_ref('people'), pattern_ref('method'), pattern_ref('glossary'), pattern_ref('suppliers'), pattern_ref('process-gallery'), pattern_ref('reviews')), block_types='core/post-content')
+pattern('find-us-page', 'Page: find us', 'pages', J(pattern_ref('find-us'), pattern_ref('dog-cup'), pattern_ref('newsletter')), block_types='core/post-content')
+pattern('events-page', 'Page: events', 'pages', J(pattern_ref('events'), pattern_ref('wholesale'), pattern_ref('faq')), block_types='core/post-content')
+
+pattern('stamp-card', 'Stamp card', 'info', group(columns(
+    ('30%', heading('Stamp card', 4)),
+    (None, para('Ten stamps, one free medium cup. Paper card, from the counter. We don\'t do an app.')), align='wide', className='is-style-hairline-top'),
+    align='wide', layout={'type': 'default'}))
+
+pattern('private-hire', 'Private hire after hours', 'events', group(columns(
+    ('30%', heading('The shop, after hours', 4)),
+    (None, J(para('Monday evenings the shop is yours for up to 20 people: a birthday, a book group, a very small wedding. Chiara makes a flavour for the night and serves it herself.'),
+             rows([('Up to 20 people, 2 hours', '£260'), ('A flavour made for you', 'included')]))), align='wide', className='is-style-hairline-top'),
+    align='wide', layout={'type': 'default'}))
+pattern('events-page', 'Page: events', 'pages', J(pattern_ref('events'), pattern_ref('private-hire'), pattern_ref('wholesale'), pattern_ref('faq')), block_types='core/post-content')
+pattern('find-us-page', 'Page: find us', 'pages', J(pattern_ref('find-us'), pattern_ref('dog-cup'), pattern_ref('stamp-card'), pattern_ref('newsletter')), block_types='core/post-content')
+
+CATS = [('hero', 'Scoop: openers'), ('menu', 'Scoop: menu and flavours'), ('tubs', 'Scoop: tubs and vouchers'), ('events', 'Scoop: events and wholesale'),
+        ('about', 'Scoop: story, method, people'), ('info', 'Scoop: numbers and notes'), ('visit', 'Scoop: find us'), ('signup', 'Scoop: newsletter and votes'),
+        ('notices', 'Scoop: notices'), ('pages', 'Scoop: page layouts')]
+write('functions.php', """<?php
+/**
+ * Scoop: pattern categories only.
+ *
+ * @package scoop
+ */
+
+add_action(
+	'init',
+	function () {
+%s
+	}
+);""" % '\n'.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'scoop' ) ) );" % c for c in CATS))
+
+write('templates/front-page.html', page_template(J(
+    pattern_ref('hero'), pattern_ref('monthly-menu'), pattern_ref('flavour-feature'), pattern_ref('cabinet-map'), pattern_ref('method'), pattern_ref('tubs'), pattern_ref('vote-back'), pattern_ref('find-us'))))
+
+# ---- demo content: menus as posts built from flavour lines ----
+CJ = 'demos/scoop/content.json'
+C = json.load(open(CJ))
+import re as _re
+for po in C['posts']:
+    if po['category'] != 'menus':
+        continue
+    src = po.setdefault('src', po['content'])
+    items = _re.findall(r'<li>(.*?)</li>', src)
+    notes = _re.findall(r'<p>(.*?)</p>', src)
+    fl = [flavour(i.replace(' (vg)', ''), 'a special for %s' % po['title'].split()[0], 'Specials change on the first Tuesday', '(vg)' in i) for i in items]
+    po['content'] = J(para(notes[0], fontSize='large'), *fl, para(notes[-1], className='is-style-note'), para('<a href="/menu/">This month\'s menu</a>'))
+json.dump(C, open(CJ, 'w'), indent=1, ensure_ascii=False)
 print('scoop: build done')

@@ -2,7 +2,7 @@
 /**
  * Title: Programme index before 2019 (table)
  * Slug: commons/programme-table
- * Categories: text
+ * Categories: programme
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"1000px"}} -->

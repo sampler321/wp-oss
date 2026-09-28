@@ -5,7 +5,7 @@
 
 <!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide"} /-->
 
-<!-- wp:group {"align":"wide","className":"is-style-hairline","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"align":"wide","className":"is-style-hairline","layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group alignwide is-style-hairline"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><a href="/product-category/notebooks/">Notebooks</a></p>
 <!-- /wp:paragraph -->
@@ -31,13 +31,11 @@
 
 <!-- wp:woocommerce/product-collection {"queryId":0,"query":{"perPage":16,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"align":"wide"} -->
 <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template -->
-<!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfQueryLoop":true,"aspectRatio":"1"} -->
-<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
-<!-- /wp:woocommerce/product-image -->
+<!-- wp:woocommerce/product-image {"showSaleBadge":true,"imageSizing":"single","isDescendentOfQueryLoop":true,"aspectRatio":"1","scale":"cover"} /-->
 
-<!-- wp:post-title {"isLink":true,"__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+<!-- wp:post-title {"level":2,"isLink":true,"__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
 
-<!-- wp:post-excerpt {"excerptLength":12,"textColor":"muted","fontSize":"x-small","__woocommerceNamespace":"woocommerce/product-collection/product-summary"} /-->
+<!-- wp:post-excerpt {"excerptLength":12,"fontSize":"x-small","textColor":"muted","__woocommerceNamespace":"woocommerce/product-collection/product-summary"} /-->
 
 <!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true} /-->
 <!-- /wp:woocommerce/product-template -->
@@ -52,7 +50,7 @@
 
 <!-- wp:woocommerce/product-collection-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing on this shelf at the moment. Ask in the shop, we may have one in the back.</p>
+<p class="">Nothing on this shelf at the moment. Ask in the shop, we may have one in the back.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:woocommerce/product-collection-no-results --></div>
 <!-- /wp:woocommerce/product-collection --></main>

@@ -2,7 +2,7 @@
 /**
  * Title: Newsletter
  * Slug: case/newsletter
- * Categories: call-to-action
+ * Categories: writing
  */
 ?>
 <!-- wp:group {"className":"is-style-ink","layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>One email every six weeks: what I saw people struggle with, and what we changed. About 900 designers and product managers read it.</p>
+<p>One email every six weeks: what I saw people struggle with, and what we changed.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

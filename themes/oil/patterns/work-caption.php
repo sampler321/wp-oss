@@ -2,7 +2,7 @@
 /**
  * Title: Work caption (medium, size in cm and inches, availability)
  * Slug: oil/work-caption
- * Categories: portfolio
+ * Categories: oil-work-page,portfolio
  * Description: Put this in each work post. Size is given once in cm and once in inches, then a plain availability line.
  */
 ?>
@@ -15,7 +15,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Available, £4,800</p>
+<p class="">Available, £4,800</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -26,6 +26,6 @@
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Describe this work</summary><!-- wp:paragraph -->
-<p>The front room at nine in the morning in August. Two tall windows on the left throw squares of light across bare boards towards a closed panelled door. The walls are a warm brown grey. There is nobody in the room.</p>
+<p class="">The front room at nine in the morning in August. Two tall windows on the left throw squares of light across bare boards towards a closed panelled door. The walls are a warm brown grey. There is nobody in the room.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->

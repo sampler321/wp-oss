@@ -2,7 +2,7 @@
 /**
  * Title: Search results list
  * Slug: case/post-list
- * Categories: query
+ * Categories: work
  * Inserter: no
  */
 ?>

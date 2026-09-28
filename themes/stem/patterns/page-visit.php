@@ -8,6 +8,10 @@
 ?>
 <!-- wp:pattern {"slug":"stem/visit"} /-->
 
-<!-- wp:pattern {"slug":"stem/about"} /-->
+<!-- wp:pattern {"slug":"stem/team"} /-->
 
-<!-- wp:pattern {"slug":"stem/weddings-intro"} /-->
+<!-- wp:pattern {"slug":"stem/delivery-bike"} /-->
+
+<!-- wp:pattern {"slug":"stem/faq"} /-->
+
+<!-- wp:pattern {"slug":"stem/photo-strip"} /-->

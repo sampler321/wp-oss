@@ -12,7 +12,7 @@
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/look-1.jpg' ) ); ?>" alt="A man in a plain white t-shirt laughing at the camera, black and white"/></figure>
 <!-- /wp:image -->
 
@@ -22,7 +22,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tee.jpg' ) ); ?>" alt="A rail of printed t-shirts on wooden hangers"/></figure>
 <!-- /wp:image -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/look-2.jpg' ) ); ?>" alt="A woman floating on her back in dark water, seen from above"/></figure>
 <!-- /wp:image -->
 
@@ -43,6 +43,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><a href="/lookbook/">The whole lookbook</a></p>
+<p class=""><a href="/lookbook/">The whole lookbook</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

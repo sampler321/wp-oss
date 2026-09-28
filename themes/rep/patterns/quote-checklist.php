@@ -18,8 +18,56 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"67%"} -->
-<div class="wp-block-column" style="flex-basis:67%"><!-- wp:table {"className":"is-style-stack"} -->
-<figure class="wp-block-table is-style-stack"><table class="has-fixed-layout"><tbody><tr><td>Usage</td><td>Where it will appear: cover, packaging, social, outdoor, film</td></tr><tr><td>Territory</td><td>UK only, Europe, worldwide</td></tr><tr><td>Duration</td><td>How long you want to use it: one year, five years, in perpetuity</td></tr><tr><td>Deadline</td><td>When you need roughs and when you need finals</td></tr><tr><td>Budget</td><td>A range is fine. It tells us which artists to suggest</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<div class="wp-block-column" style="flex-basis:67%"><!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"top":{"color":"var:preset|color|line","width":"1px","style":"solid"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Usage</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Where it will appear: cover, packaging, social, outdoor, film</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Territory</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">UK only, Europe, worldwide</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Duration</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">How long you want to use it: one year, five years, in perpetuity</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Deadline</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">When you need roughs and when you need finals</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Budget</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">A range is fine. It tells us which artists to suggest</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

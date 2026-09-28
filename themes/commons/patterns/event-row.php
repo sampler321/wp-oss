@@ -2,7 +2,7 @@
 /**
  * Title: Events and talks (photo and text)
  * Slug: commons/event-row
- * Categories: featured
+ * Categories: whats-on
  */
 ?>
 <!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":45} -->

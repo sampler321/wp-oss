@@ -7,6 +7,6 @@
 ?>
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Built the Ginnel kit with my daughter over two evenings. One transistor in backwards, fixed after one email. It is on my board now and she wants the Moor Echo.</p>
+<p class="">Built the Ginnel kit with my daughter over two evenings. One transistor in backwards, fixed after one email. It is on my board now and she wants the Moor Echo.</p>
 <!-- /wp:paragraph --><cite>Declan Moss, Sheffield, built in January 2026</cite></blockquote>
 <!-- /wp:quote -->

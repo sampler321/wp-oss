@@ -7,3 +7,10 @@
 - Nice-to-haves built as patterns: edition sizes with sold-out stamp, EU customers note, A to Z artist index, artist EPK, pre-order notice bar, release schedule, stockists, tape care.
 - Core-block limits: the vertical spine uses CSS (writing-mode, absolute positioning) in theme.json because no block does vertical text in a flex column; on phones it turns into a horizontal strip. Cat nos are post tags because Query Loop cannot read custom fields.
 - Sleeve art is public domain painting (Mondrian, Kandinsky, Klee, af Klint and others) standing in for real covers.
+
+## Round 2
+- Image lightbox on globally (theme.json), so sleeves, artist photos and the physical-tape gallery open large.
+- 50 patterns (was 34). New: new release with pre-order, formats as stamped cards, listen player, physical-tape gallery, press text, artist cards, label night, live dates, tape club subscription, ordering questions, label history, back-catalogue bundle, one big quote, and a ruled-row catalogue. Sections studied on Planet Mu, Clay Pipe Music, Fire Records, NNA Tapes and Bandcamp label pages.
+- Tables cut from 9 patterns to 3 (full catalogue, formats price list, postage). Roster, artist releases and dates, credits, stockists, release schedule and tape lengths are now ruled rows or cards. The home page has no table: the catalogue shows as ruled rows.
+- Home page: latest release as a J-card, sleeve grid, catalogue rows, the next release with pre-order, tape club, label night, mailing list and EU note.
+- New demo pages: Tape club and Live, both built from the new patterns and linked in the menu. Every release post now ends with a gallery of the tape and a dubbing note; Salt rooms uses the full release kit.

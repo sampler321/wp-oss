@@ -1,15 +1,15 @@
 <?php
 /**
- * Title: Case studies (big cards)
+ * Title: Case studies as big cards
  * Slug: case/case-cards
- * Categories: featured,query
+ * Categories: work
  * Keywords: case studies, work
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading">Case studies</h2>
+<h2 class="wp-block-heading">More case studies</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -17,7 +17,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":42,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"align":"wide"} -->
+<!-- wp:query {"queryId":42,"query":{"perPage":3,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","inherit":false},"align":"wide"} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"default"}} -->
 <!-- wp:columns {"verticalAlignment":"center","className":"is-style-case-card","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center is-style-case-card"><!-- wp:column {"width":"58%"} -->

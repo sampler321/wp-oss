@@ -5,7 +5,7 @@
  * Categories: cityguide-practical
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"level":3} -->
@@ -23,11 +23,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Rent a bike at the station. The centre is flat and small; nothing on our map is more than 20 minutes by bike from Stratumseind.</p>
+<p class="">Rent a bike at the station. The centre is flat and small; nothing on our map is more than 20 minutes by bike from Stratumseind.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bottles have a deposit. Return them at the statiegeld machines in any supermarket or at the station for 15 or 25 cents.</p>
+<p class="">Bottles have a deposit. Return them at the statiegeld machines in any supermarket or at the station for 15 or 25 cents.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

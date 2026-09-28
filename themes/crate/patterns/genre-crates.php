@@ -20,13 +20,9 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/new-lp/">New LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-7-inch/">Used 7-inch</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -40,13 +36,9 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/new-lp/">New LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-7-inch/">Used 7-inch</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -60,13 +52,9 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/new-lp/">New LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-7-inch/">Used 7-inch</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -80,13 +68,9 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-7-inch/">Used 7-inch</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-cassette/">Cassette</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -100,9 +84,7 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/new-lp/">New LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -116,9 +98,7 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-cassette/">Cassette</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -144,9 +124,7 @@
 <!-- wp:list {"className":"is-style-label"} -->
 <ul class="wp-block-list is-style-label"><!-- wp:list-item -->
 <li><a href="/product-category/used-lp/">Used LP</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li><a href="/product-category/used-7-inch/">Used 7-inch</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>

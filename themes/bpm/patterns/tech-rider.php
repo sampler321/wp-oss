@@ -12,21 +12,13 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Two Technics SL-1210 MK2 with good needles, or I bring my own Ortofons</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Two Pioneer CDJ-3000 or CDJ-2000NXS2, linked</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Allen &amp; Heath Xone:92 or Pioneer DJM-900</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Allen & Heath Xone:92 or Pioneer DJM-900</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Booth monitors at head height, not on the floor</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>A table that does not wobble</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

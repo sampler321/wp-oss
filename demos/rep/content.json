@@ -101,7 +101,7 @@
    ],
    "image": "map-1.jpg",
    "excerpt": "Faber, 2026",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Endpaper for a novel that moves between nine Baltic ports. Each port is drawn from its harbour side.</p>\n<!-- /wp:paragraph -->",
+   "pattern": "rep/project-baltic",
    "date": "2026-09-20"
   },
   {
@@ -159,7 +159,7 @@
    ],
    "image": "bot-1.jpg",
    "excerpt": "Kew Gardens shop, 2026",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">One of twelve seed packets. Painted at twice size, printed at 85 mm wide.</p>\n<!-- /wp:paragraph -->",
+   "pattern": "rep/project-seed-packets",
    "date": "2026-08-20"
   },
   {
@@ -248,7 +248,7 @@
    ],
    "image": "bw-2.jpg",
    "excerpt": "Penguin Modern Classics, 2026",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Cover linocut, cut at 1:1 and scanned at 1,200 dpi.</p>\n<!-- /wp:paragraph -->",
+   "pattern": "rep/project-cover",
    "date": "2026-07-12"
   },
   {
@@ -276,7 +276,7 @@
    ],
    "image": "anim-1.jpg",
    "excerpt": "BBC Four, 2025",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Title sequence for a history series. Twelve seconds, sixteen frames on a loop.</p>\n<!-- /wp:paragraph -->",
+   "pattern": "rep/project-titles",
    "date": "2026-06-20"
   },
   {

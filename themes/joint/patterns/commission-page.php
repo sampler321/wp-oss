@@ -2,7 +2,7 @@
 /**
  * Title: Page: commission
  * Slug: joint/commission-page
- * Categories: services
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>
@@ -21,3 +21,5 @@
 <div class="wp-block-column"><!-- wp:pattern {"slug":"joint/commission-faq"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:pattern {"slug":"joint/client-quote"} /-->

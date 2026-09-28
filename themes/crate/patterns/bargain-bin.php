@@ -8,7 +8,7 @@
 ?>
 <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading -->
+<div class="wp-block-group alignfull" style="padding-left:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30)"><!-- wp:heading -->
 <h2 class="wp-block-heading">Under £5</h2>
 <!-- /wp:heading -->
 
@@ -17,14 +17,14 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"is-style-tile-grid","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"10rem"}} -->
+<!-- wp:group {"className":"is-style-tile-grid","align":"full","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"10rem"}} -->
 <div class="wp-block-group alignfull is-style-tile-grid"><!-- wp:group {"className":"is-style-tile","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-tile"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-tile"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/singles-case.jpg' ) ); ?>" alt="An open carry case of 7-inch singles on a wooden floor" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>Soul 45s, loose</p>
+<p class="">Soul 45s, loose</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->
@@ -33,12 +33,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-tile","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-tile"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-tile"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cassette.jpg' ) ); ?>" alt="Two cassette tapes side by side on a black cloth" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>Tapes with inlays</p>
+<p class="">Tapes with inlays</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->
@@ -47,12 +47,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-tile","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-tile"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-tile"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/crates.jpg' ) ); ?>" alt="Rows of used LPs packed tight in wooden crates" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The £4 LP crate</p>
+<p class="">The £4 LP crate</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->
@@ -61,12 +61,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-tile","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-tile"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-tile"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/stack.jpg' ) ); ?>" alt="A tall stack of LPs on their sides, spines showing catalogue numbers" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>12-inch singles</p>
+<p class="">12-inch singles</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->

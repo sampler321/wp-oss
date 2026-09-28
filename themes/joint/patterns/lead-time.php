@@ -2,8 +2,7 @@
 /**
  * Title: Lead time: in stock and made to order
  * Slug: joint/lead-time
- * Categories: shop
- * Description: Use the first line for pieces in the in-stock list and the second for everything else.
+ * Categories: object
  */
 ?>
 <!-- wp:group {"className":"is-style-lead-time","layout":{"type":"constrained"}} -->

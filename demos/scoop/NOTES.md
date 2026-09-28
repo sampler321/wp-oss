@@ -7,3 +7,10 @@
 - Differs from pipe: serif display, white and cherry palette, calm centred measure, italic notes; pipe is an all-grotesk black and white index with a red emergency bar.
 - Nice-to-haves as patterns: allergen sheet, vote a special back, events and catering, warm-weather hours notice, printable window board, gift vouchers.
 - Core-block limits: the vote is a table the owner updates by hand; tubs are ordered by email because the theme doesn't need WooCommerce.
+
+## Round 2
+
+- Home page has no tables: the opener numbers, method, tubs, vote and hours are spec rows made of groups with hairlines. The opener adds menu and tub buttons and a three-photo strip (ingredients and cabinet) in place of the single large photo.
+- New blocks: gelato in numbers (fat, overrun, serving temperature), fruit calendar, cones and cups, sorbet list, flavour of the month, how to order, keeping a tub, people, reviews, dog cup, affogato at home, kitchen gallery, stamp card, private hire. 41 patterns.
+- Only the allergen sheet is still a table. Past-menu posts are rebuilt from the flavour-line block.
+- Lightbox on globally; categories regrouped (openers, menu, tubs, events, story and method, numbers, find us, sign-ups, notices, page layouts).

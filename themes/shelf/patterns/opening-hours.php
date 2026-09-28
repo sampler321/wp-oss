@@ -6,58 +6,58 @@
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class="">Tuesday to Saturday</p>
+<p style="font-weight:800">Tuesday to Saturday</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
-<p class="">10:00 to 18:00</p>
+<p>10:00 to 18:00</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class="">Thursday</p>
+<p style="font-weight:800">Thursday</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
-<p class="">until 21:00</p>
+<p>until 21:00</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class="">Sunday</p>
+<p style="font-weight:800">Sunday</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
-<p class="">12:00 to 17:00</p>
+<p>12:00 to 17:00</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class="">Monday</p>
+<p style="font-weight:800">Monday</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{}} -->
-<p class="">Closed</p>
+<p>Closed</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

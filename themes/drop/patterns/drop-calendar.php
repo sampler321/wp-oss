@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Drops open at 7pm UK time on the date below and close two Sundays later. We only put a date here when the blanks are in the flat.</p>
+<p class="">Drops open at 7pm UK time on the date below and close two Sundays later. We only put a date here when the blanks are in the flat.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"15rem"}} -->

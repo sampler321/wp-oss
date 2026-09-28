@@ -2,12 +2,12 @@
 /**
  * Title: Notify me when this form is back
  * Slug: kiln/notify-back
- * Categories: shop,call-to-action
+ * Categories: kiln-pots,shop,call-to-action
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-rule-top"><!-- wp:paragraph -->
-<p>Mugs, tea bowls and the small cups come back in every update. Sign up and I'll email you the evening before they go up.</p>
+<p class="">Mugs, tea bowls and the small cups come back in every update. Sign up and I'll email you the evening before they go up.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

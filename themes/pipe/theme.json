@@ -232,6 +232,14 @@
 			"radius": true,
 			"style": true,
 			"width": true
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -455,9 +463,9 @@
 			},
 			"core/quote": {
 				"typography": {
-					"fontSize": "var:preset|font-size|large",
-					"fontWeight": "300",
-					"lineHeight": "1.3"
+					"fontSize": "var:preset|font-size|medium",
+					"fontWeight": "400",
+					"lineHeight": "1.45"
 				},
 				"border": {
 					"top": {
@@ -481,7 +489,7 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|small"
 				},
-				"css": "& table{border-collapse:collapse;border-top:1px solid var(--wp--preset--color--contrast)!important}& th{text-align:left;font-weight:500;border:0!important;border-bottom:1px solid var(--wp--preset--color--contrast)!important}& td{border:0!important;border-bottom:1px solid var(--wp--preset--color--rule-light)!important;font-variant-numeric:tabular-nums}& td,& th{padding:.75em 1em .75em 0}& tbody tr:nth-child(even){background:var(--wp--preset--color--surface)}& td:last-child{font-weight:500;white-space:nowrap}"
+				"css": "& table{border-collapse:collapse;border-top:1px solid var(--wp--preset--color--contrast)!important}& th{text-align:left;font-weight:500;border:0!important;border-bottom:1px solid var(--wp--preset--color--contrast)!important}& td{border:0!important;border-bottom:1px solid var(--wp--preset--color--rule-light)!important;font-variant-numeric:tabular-nums}& td,& th{padding:.75em 1em .75em 0}& tbody tr:nth-child(even){background:var(--wp--preset--color--surface)}& td:last-child{font-weight:500}"
 			},
 			"core/details": {
 				"border": {
@@ -506,7 +514,7 @@
 				"css": "&{padding-left:1.2em}"
 			}
 		},
-		"css": ":where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none;font-variant-numeric:tabular-nums}a[href^=\"tel:\"]{white-space:nowrap}a:focus-visible,button:focus-visible{outline:2px solid var(--wp--preset--color--accent);outline-offset:2px}"
+		"css": ":where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none;font-variant-numeric:tabular-nums lining-nums}a[href^=\"tel:\"]{white-space:nowrap}a:focus-visible,button:focus-visible{outline:2px solid var(--wp--preset--color--accent);outline-offset:2px}"
 	},
 	"templateParts": [
 		{
@@ -529,6 +537,13 @@
 		{
 			"name": "page-index",
 			"title": "Page with left index column",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-wide",
+			"title": "Page, wide",
 			"postTypes": [
 				"page"
 			]

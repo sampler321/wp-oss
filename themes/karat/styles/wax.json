@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Wax",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#D9D6CC",
+					"name": "Carving wax"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1D1B18",
+					"name": "Loupe black"
+				},
+				{
+					"slug": "accent",
+					"color": "#5E4518",
+					"name": "Old gold"
+				},
+				{
+					"slug": "surface",
+					"color": "#CECABE",
+					"name": "Sprue"
+				},
+				{
+					"slug": "line",
+					"color": "#A9A497",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#47443E",
+					"name": "Pumice"
+				}
+			]
+		}
+	}
+}

@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Our own notebooks are available to other independent shops. We do not sell wholesale to online marketplaces.</p>
+<p class="">Our own notebooks are available to other independent shops. We do not sell wholesale to online marketplaces.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-spec"} -->
@@ -18,5 +18,5 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Minimum first order £150, then £80. Net 30 days after the first order. Email <a href="mailto:shop@example.com?subject=Wholesale">shop@example.com</a> with your shop name and address for the full price list.</p>
+<p class="">Minimum first order £150, then £80. Net 30 days after the first order. Email <a href="mailto:shop@example.com?subject=Wholesale">shop@example.com</a> with your shop name and address for the full price list.</p>
 <!-- /wp:paragraph -->

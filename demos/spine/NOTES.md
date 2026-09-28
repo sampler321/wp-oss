@@ -7,3 +7,11 @@
 - Pages: books in order, buy (all editions, signed copies from one named shop, international editions and translations), events, book groups (questions and guide), newsletter with an archive of past letters, about, contact split by agent, publicist and film rights.
 - Variations: Hardback (cloth grey, gold-brown), Pulp (yellow, red), Crime at night (dark).
 - No author portrait: Commons had no suitable CC0 portrait, so the about page uses a desk photo with an honest caption. Praise quotes are attributed to invented publications and people.
+
+## Round 2
+
+- Owner: "too dull, could be more playful; study the patchwork covers". Added the clothbound-classics idea: recolourable repeating motifs drawn as inline SVG masks in section styles (fen waves for crime, half-drop dots for fiction, fish scales for the memoir, Lisbon tiles for travel, plus reeds and stripes). The motif is drawn in the band's text colour at 30% over the genre colour, so every style variation recolours it.
+- Clothbound covers: a patterned cloth with a label plate for title and author. The shelf now alternates the classic three-band paperback with the patterned cloth cover.
+- Home opens with a collage: the new book tilted like a copy on a table, over a cerise cut-paper circle and an orange triangle, then a patterned band and a colour-coded patchwork of shelves (each tile its own motif) that links to the genre archives, book groups and events.
+- 43 patterns (was 26): clothbound cover, collage opener, series patchwork, four pattern bands, a line from the book on a pattern, the Fenland novels in order, events as ruled rows (no table on the home page), audiobook sample, places in the books (lightbox gallery), a note on the covers, translations as chips, short pieces, prizes, book-group questions.
+- Image lightbox on globally.

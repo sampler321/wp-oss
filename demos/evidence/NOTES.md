@@ -8,3 +8,9 @@
 - Variations: Daylight file (manila paper), Night shift (navy with amber), Newsprint (grey).
 - Core-block limits: chapter timestamps open the audio file at that time (#t= fragment) instead of seeking an on-page player.
 - Demo cases, people and places are invented; the footer says so. Stand-in audio is a CC0 LibriVox reading.
+
+## Round 2
+
+- Tables out of the case file: the manila file card is now ruled label rows, and the timeline is ruled date rows, so the home page has no table. Tables remain only for the corrections log, support tiers, apps and transcripts.
+- 42 patterns (was 34). New: people in this case (named with permission or by a court, everyone else by role), where the case stands, the places (lightbox gallery), season trailer, document with transcription, letters from listeners, further reading, between-seasons card.
+- Image lightbox on globally (photos keep the greyscale treatment). Header, title-band and post-navigation borders moved into section styles.

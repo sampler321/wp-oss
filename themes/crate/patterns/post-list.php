@@ -7,11 +7,11 @@
  */
 ?>
 <!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template -->
+<div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group is-style-rule-top"><!-- wp:post-date {"format":"d.m.y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+<div class="wp-block-group is-style-rule-top"><!-- wp:post-date {"format":"d.m.y"} /-->
 
-<!-- wp:post-title {"isLink":true,"fontSize":"small"} /--></div>
+<!-- wp:post-title {"isLink":true,"level":2,"fontSize":"small"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
@@ -25,7 +25,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing matches that yet.</p>
+<p class="">Nothing matches that yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->

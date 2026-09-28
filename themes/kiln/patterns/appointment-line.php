@@ -2,7 +2,7 @@
 /**
  * Title: Shop by appointment line
  * Slug: kiln/appointment-line
- * Categories: contact
+ * Categories: kiln-contact,contact
  */
 ?>
 <!-- wp:paragraph {"fontSize":"large"} -->

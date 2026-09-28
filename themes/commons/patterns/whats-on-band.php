@@ -2,7 +2,7 @@
 /**
  * Title: What's on: text band (no photo)
  * Slug: commons/whats-on-band
- * Categories: featured
+ * Categories: whats-on
  * Description: A smaller version of the current show for inner pages.
  */
 ?>

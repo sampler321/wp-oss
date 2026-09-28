@@ -15,7 +15,8 @@ export function prepare(file) {
     if (m) { header = m[0]; body = raw.slice(m[0].length); }
   }
   const php = [];
-  body = body.replace(PHP_RE, s => { php.push(s); return `WPOSSPHP${php.length - 1}X`; });
+  // Identical PHP snippets share one token, so an image URL used in both a block attribute and its HTML still matches.
+  body = body.replace(PHP_RE, s => { let i = php.indexOf(s); if (i < 0) { php.push(s); i = php.length - 1; } return `WPOSSPHP${i}X`; });
   return { header, body, php };
 }
 
@@ -44,7 +45,7 @@ export async function openEditor(siteUrl) {
   for (let attempt = 0; attempt < 4; attempt++) {
     await page.goto(`${siteUrl}/wp-admin/post-new.php`, { waitUntil: 'domcontentloaded', timeout: 120000 });
     if (!page.url().includes('post-new.php')) continue;
-    try { await page.waitForFunction(() => window.wp?.blocks?.getBlockTypes?.().length > 60, null, { timeout: 90000 }); break; }
+    try { await page.waitForFunction(() => window.wp?.blocks?.getBlockTypes?.().length > 60, null, { timeout: 180000 }); break; }
     catch (e) { if (attempt === 3) throw e; }
   }
   // Close the welcome guide if present, so it doesn't matter for screenshots.

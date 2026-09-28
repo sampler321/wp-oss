@@ -46,6 +46,18 @@
    "title": "Newsletter",
    "pattern": "kiln/newsletter-page",
    "template": "page-wide"
+  },
+  {
+   "slug": "questions",
+   "title": "Questions",
+   "pattern": "kiln/faq-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "visit",
+   "title": "Visit and lessons",
+   "pattern": "kiln/visit-page",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -56,7 +68,7 @@
    "image": "vase-ash.jpg",
    "excerpt": "Fifty-two hours, eleven tonnes of offcuts, three of us on shifts. The front of the kiln went hotter than ever, so the bottles near the fire mouth are the best I have made.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Fifty-two hours, eleven tonnes of offcuts, three of us on shifts. The front of the kiln went hotter than ever, so the bottles near the fire mouth are the best I have made.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We loaded on the Wednesday and lit on Thursday morning. By Friday night the front was at cone 12 and the back at cone 9, which is a bigger gap than I like.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The bottle vases in the front row came out with thick green ash on the shoulders and red flashing below. The mugs at the back are paler than usual. About one in twelve pots is a second, mostly from shelf wads sticking.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Everything from this firing goes up in the shop on 18 October, apart from what I keep back for the kiln opening.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Fifty-two hours, eleven tonnes of offcuts, three of us on shifts. The front of the kiln went hotter than ever, so the bottles near the fire mouth are the best I have made.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We loaded on the Wednesday and lit on Thursday morning. By Friday night the front was at cone 12 and the back at cone 9, which is a bigger gap than I like.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/vase-ash.jpg' ) ); ?>\" alt=\"Pot from firing 41\"/><figcaption class=\"wp-element-caption\">From firing 41</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The bottle vases in the front row came out with thick green ash on the shoulders and red flashing below. The mugs at the back are paler than usual. About one in twelve pots is a second, mostly from shelf wads sticking.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Everything from this firing goes up in the shop on 18 October, apart from what I keep back for the kiln opening.</p>\n<!-- /wp:paragraph -->"
   },
   {
    "title": "Firing 40: gas kiln, celadon test",
@@ -65,7 +77,7 @@
    "image": "bowl-celadon.jpg",
    "excerpt": "A new celadon recipe with less iron. Greener, clearer, and it pools in carving the way I wanted. Thirty bowls, four lost to dunting.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A new celadon recipe with less iron. Greener, clearer, and it pools in carving the way I wanted. Thirty bowls, four lost to dunting.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I changed the celadon from 1.5% to 1% red iron oxide and held the reduction longer. The result is a grey-green that shows the carving much better.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four bowls cracked in cooling. I think the kiln cooled too fast below 600°C, so next time I will close the damper earlier.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A new celadon recipe with less iron. Greener, clearer, and it pools in carving the way I wanted. Thirty bowls, four lost to dunting.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I changed the celadon from 1.5% to 1% red iron oxide and held the reduction longer. The result is a grey-green that shows the carving much better.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/bowl-celadon.jpg' ) ); ?>\" alt=\"Pot from firing 40\"/><figcaption class=\"wp-element-caption\">From firing 40</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four bowls cracked in cooling. I think the kiln cooled too fast below 600°C, so next time I will close the damper earlier.</p>\n<!-- /wp:paragraph -->"
   },
   {
    "title": "Firing 39: shino tea bowls",
@@ -74,7 +86,7 @@
    "image": "tea-bowl.jpg",
    "excerpt": "Shino only behaves at the back of the kiln. Eleven good tea bowls out of twenty, which is about normal for me.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Shino only behaves at the back of the kiln. Eleven good tea bowls out of twenty, which is about normal for me.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Carbon trapping gave grey patches on half of them. I like those, but they are marked as such in the shop so nobody is surprised.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Shino only behaves at the back of the kiln. Eleven good tea bowls out of twenty, which is about normal for me.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Carbon trapping gave grey patches on half of them. I like those, but they are marked as such in the shop so nobody is surprised.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/tea-bowl.jpg' ) ); ?>\" alt=\"Pot from firing 39\"/><figcaption class=\"wp-element-caption\">From firing 39</figcaption></figure>\n<!-- /wp:image -->"
   },
   {
    "title": "Firing 38: spring kiln opening pots",
@@ -83,7 +95,7 @@
    "image": "jar-ash.jpg",
    "excerpt": "Big jars for the spring kiln opening. The ash glaze ran further than planned and glued two lids on for good.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Big jars for the spring kiln opening. The ash glaze ran further than planned and glued two lids on for good.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two jars will be sold as sculptures now, lids fixed. The rest went at the kiln opening on 18 and 19 April.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Big jars for the spring kiln opening. The ash glaze ran further than planned and glued two lids on for good.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two jars will be sold as sculptures now, lids fixed. The rest went at the kiln opening on 18 and 19 April.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/jar-ash.jpg' ) ); ?>\" alt=\"Pot from firing 38\"/><figcaption class=\"wp-element-caption\">From firing 38</figcaption></figure>\n<!-- /wp:image -->"
   },
   {
    "title": "Firing 37: moon jars",
@@ -92,7 +104,7 @@
    "image": "moon-jar.jpg",
    "excerpt": "Three moon jars attempted, two survived. They take two days to join and a week to dry.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Three moon jars attempted, two survived. They take two days to join and a week to dry.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The white slip was applied at leather hard and the clear ash glaze sprayed on. Both surviving jars sold to the newsletter list within the hour.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Three moon jars attempted, two survived. They take two days to join and a week to dry.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The white slip was applied at leather hard and the clear ash glaze sprayed on. Both surviving jars sold to the newsletter list within the hour.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/moon-jar.jpg' ) ); ?>\" alt=\"Pot from firing 37\"/><figcaption class=\"wp-element-caption\">From firing 37</figcaption></figure>\n<!-- /wp:image -->"
   },
   {
    "title": "Firing 36: stamped bowls",
@@ -101,7 +113,7 @@
    "image": "bowl-stamped.jpg",
    "excerpt": "Stamps carved from old broom handles. The dots take a whole afternoon per bowl.",
    "template": "single-firing",
-   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Stamps carved from old broom handles. The dots take a whole afternoon per bowl.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I inlaid white slip into the stamped dots and scraped it back. The glaze crackle came out finer than before.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Stamps carved from old broom handles. The dots take a whole afternoon per bowl.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I inlaid white slip into the stamped dots and scraped it back. The glaze crackle came out finer than before.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/bowl-stamped.jpg' ) ); ?>\" alt=\"Pot from firing 36\"/><figcaption class=\"wp-element-caption\">From firing 36</figcaption></figure>\n<!-- /wp:image -->"
   }
  ],
  "nav": [
@@ -124,6 +136,14 @@
   {
    "label": "Stockists",
    "url": "/stockists/"
+  },
+  {
+   "label": "Visit",
+   "url": "/visit/"
+  },
+  {
+   "label": "Questions",
+   "url": "/questions/"
   },
   {
    "label": "Newsletter",

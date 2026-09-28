@@ -2,7 +2,7 @@
 /**
  * Title: Wallpaper by the roll
  * Slug: room/wallpaper-note
- * Categories: shop
+ * Categories: fabric
  */
 ?>
 <!-- wp:columns {"align":"wide"} -->

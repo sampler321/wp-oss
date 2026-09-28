@@ -2,7 +2,7 @@
 /**
  * Title: Areas and response times
  * Slug: pipe/areas-table
- * Categories: pipe,contact
+ * Categories: areas
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -17,12 +17,68 @@
 <h3 class="wp-block-heading">Where we go and how fast</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Area</th><th>Postcodes</th><th>Emergency response</th></tr></thead><tbody><tr><td>Sheffield city centre and Kelham</td><td>S1, S3</td><td>Same day, usually within 2 hours</td></tr><tr><td>Crookes, Walkley, Broomhill</td><td>S6, S10</td><td>Same day</td></tr><tr><td>Sharrow, Nether Edge, Ecclesall</td><td>S7, S11</td><td>Same day</td></tr><tr><td>Hillsborough, Stannington</td><td>S6, S35</td><td>Same or next day</td></tr><tr><td>Dronfield and Totley</td><td>S17, S18</td><td>Next day</td></tr><tr><td>Rotherham</td><td>S60, S65</td><td>Next day</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">City centre and Kelham, S1 and S3</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Same day, usually within 2 hours</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Crookes, Walkley, Broomhill, S6 and S10</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Same day</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Sharrow, Nether Edge, Ecclesall, S7 and S11</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Same day</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Hillsborough, Stannington, S6 and S35</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Same or next day</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Dronfield and Totley, S17 and S18</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Next day</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Rotherham, S60 and S65</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Next day</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Postcode not listed? We are probably too far to get there quickly. The <a href="https://www.gassaferegister.co.uk/">Gas Safe Register</a> lists engineers near you.</p>
+<p class="has-small-font-size">Postcode not listed? We are probably too far to get there quickly. The <a href="https://www.gassaferegister.co.uk/">Gas Safe Register</a> lists engineers near you. <a href="/areas/">Every area</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

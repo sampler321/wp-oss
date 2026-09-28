@@ -49,6 +49,18 @@
    "title": "Visit",
    "pattern": "stem/page-visit",
    "template": "page-wide"
+  },
+  {
+   "slug": "weddings-and-events",
+   "title": "Weddings and events",
+   "pattern": "stem/page-weddings-events",
+   "template": "page-wide"
+  },
+  {
+   "slug": "occasions",
+   "title": "Occasions",
+   "pattern": "stem/page-occasions",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -56,37 +68,43 @@
    "title": "Nkechi and Tom, Round Chapel, June",
    "category": "weddings",
    "image": "wedding.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">A pink and silver bouquet with garden roses, freesias and brunia, and jam jars of sweet peas down two long tables. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-flowers-used\"} /-->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A pink and silver bouquet with garden roses, freesias and brunia, and jam jars of sweet peas down two long tables. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-flowers-used\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-gallery\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/bouquet-styles\"} /-->"
   },
   {
    "title": "Priya and Joe, a pub garden in Walthamstow",
    "category": "weddings",
    "image": "bridal.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty guests, one very old apple tree and a bouquet of lisianthus, astrantia and roses. Photographs by Marek Zielinski.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty guests, one very old apple tree and a bouquet of lisianthus, astrantia and roses. Photographs by Marek Zielinski.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-process\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-gallery\"} /-->"
   },
   {
    "title": "Carnations are back and we are not sorry",
    "category": "shop",
    "image": "peonies.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">They last two weeks, they come in colours nobody else sells, and they cost less than a coffee a stem. We have 300 in the shop this week.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">They last two weeks, they come in colours nobody else sells, and they cost less than a coffee a stem. We have 300 in the shop this week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/seasonal\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/colour-lean\"} /-->"
   },
   {
    "title": "Ellie and Sam, Clapton, September",
    "category": "weddings",
    "image": "roses-held.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Orange and cream roses with rosehips and dahlias from Rosa's allotment. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Orange and cream roses with rosehips and dahlias from Rosa's allotment. Photographs by Ama Boateng.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-flowers-used\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/photo-strip\"} /-->"
   },
   {
    "title": "Why we stopped using floral foam",
    "category": "shop",
    "image": "gerbera-mint.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Foam is a plastic that breaks into dust and never goes away. Everything we make now sits in water, moss or scrunched chicken wire. It takes longer. It is worth it.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Foam is a plastic that breaks into dust and never goes away. Everything we make now sits in water, moss or scrunched chicken wire. It takes longer. It is worth it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/care-card\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/events-installations\"} /-->"
   },
   {
    "title": "Dahlias from the allotment, August to October",
    "category": "shop",
    "image": "dahlia.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rosa grows about 60 dahlia plants on a plot in Walthamstow. They go into bouquets from August until the first frost.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rosa grows about 60 dahlia plants on a plot in Walthamstow. They go into bouquets from August until the first frost.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/seasonal-calendar\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/this-week\"} /-->"
+  },
+  {
+   "title": "Maya and Chidi, Hackney Town Hall, October",
+   "category": "weddings",
+   "image": "bouquet-sandals.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A registry-office wedding with a posy of dahlias and rosehips and six buttonholes. Lunch after at a Turkish place on Mare Street. Photographs by Marek Zielinski.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"stem/bouquet-styles\"} /-->\n\n<!-- wp:pattern {\"slug\":\"stem/wedding-flowers-used\"} /-->"
   }
  ],
  "nav": [
@@ -103,7 +121,15 @@
    "url": "/subscriptions/"
   },
   {
+   "label": "Occasions",
+   "url": "/occasions/"
+  },
+  {
    "label": "Weddings",
+   "url": "/weddings-and-events/"
+  },
+  {
+   "label": "Real weddings",
    "url": "/weddings/"
   },
   {

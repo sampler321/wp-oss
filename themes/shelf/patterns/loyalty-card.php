@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">One stamp per book, in the shop or online. Ten stamps and the next book is 20% off. The card is red, it lives in your wallet, and yes, we'll look up your stamps if you lose it.</p>
+<p>One stamp per book, in the shop or online. Ten stamps and the next book is 20% off. The card is red, it lives in your wallet, and yes, we'll look up your stamps if you lose it.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

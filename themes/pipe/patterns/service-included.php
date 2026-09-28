@@ -2,7 +2,7 @@
 /**
  * Title: What a service includes
  * Slug: pipe/service-included
- * Categories: pipe,services
+ * Categories: services
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -22,21 +22,13 @@
 <div class="wp-block-column"><!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Flue gas analysis with a calibrated analyser, printed</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Gas pressure and flow rate checked against the manufacturer's figures</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Burner, heat exchanger and condensate trap cleaned</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Seals and flue joints checked</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Expansion vessel pressure topped up</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
@@ -46,17 +38,11 @@
 <div class="wp-block-column"><!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Controls and thermostat tested</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Carbon monoxide alarm tested, or fitted for £28 if you have none</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Service record filled in, so your warranty stays valid</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>A written report emailed the same day</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

@@ -7,3 +7,10 @@
 - Nice-to-haves as patterns: weekly "next free dates" bar (template part), deposit and cancellation terms beside the rates, load-in, parking and nearest hardware shop, rehearsal room, engineers with credits.
 - Core-block limits: the headline-over-collage layout uses a CSS grid in theme.json styles.css (grid areas and top offsets); on phones it becomes headline then two photos.
 - Photos are CC0 stand-ins from other studios; swap in your own rooms.
+
+## Round 2
+- Image lightbox on globally; room photos, sessions and the discography grid open large.
+- 41 patterns (was 25). New: rates as cards, session packages, services, mastering, live session video, booking questions, what to bring, the console story, room gallery, one big quote, office hours card, getting here by train, tram or van, staying nearby, room hero with one fact, and a discography cover grid. Studied on studionagrywarka.pl, Electrical Audio, The Bunker, Tarbox Road and Abbey Road.
+- Tables cut from 7 patterns to 2 (gear inventory and the rate list, both real tabular data). Room specs, load-in, Studio B specs and the room cards on the orange block are ruled rows; credits are a cover grid.
+- Home page has no table: rates show as three cards.
+- New demo page: Services. A fifth session post (Ola Kruk). Every session post ends with a gallery and a quote.

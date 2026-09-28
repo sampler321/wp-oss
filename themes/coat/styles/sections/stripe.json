@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Chip stripe",
+	"slug": "stripe",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"spacing": {
+			"blockGap": "0",
+			"padding": {
+				"top": "0",
+				"bottom": "0"
+			}
+		},
+		"css": "&{gap:0!important}& > *{flex:1 1 0;min-height:0.75rem;margin:0!important}"
+	}
+}

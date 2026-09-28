@@ -288,6 +288,7 @@ RECORDS = [
 def slugify(s):
     import re, unicodedata
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    s = s.replace('.', '-')
     s = re.sub(r'[^a-z0-9 _-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     return re.sub(r'-+', '-', s).strip('-')
@@ -567,7 +568,7 @@ PRE = [('Basic Channel', 'BCD-2 (repress)', 'Basic Channel', 'Due 17 October', '
        ('Beverley Glenn-Copeland', 'Keyboard Fantasies', 'Transgressive', 'Due 7 November', '£26'), ('Various', 'Studio One Women', 'Soul Jazz', 'Due 14 November', '£28')]
 pattern('pre-orders', 'Pre-orders and forthcoming', 'shop', group(J(
   heading('Forthcoming', 2),
-  rows([['%s' % a, '%s, %s' % (t, l), d, pr] for a, t, l, d, pr in PRE], min_w='8rem'),
+  rows([['%s<br>%s, %s' % (a, t, l), '%s<br>%s' % (d.replace('Due ', ''), pr)] for a, t, l, d, pr in PRE], min_w='6rem'),
   para('Pre-order online or at the till. We charge when it arrives and hold it for two weeks.', className='is-style-label', textColor='muted')),
   layout={'type': 'default'}), description='Releases due in, with dates and prices. We charge on arrival.')
 pattern('back-in-stock', 'Back in stock', 'shop', group(J(
@@ -592,7 +593,7 @@ pattern('label-index', 'Label index', 'shop', group(J(
   para(', '.join('<a href="/?s=%s&amp;post_type=product">%s</a>' % (slugify(l) or 'impulse', l) for l in LABELS), fontSize='large')),
   layout={'type': 'default'}, className='is-style-rule-top'), description='Labels we keep a divider for, each a search link.')
 pattern('collection-bought', 'A collection we bought', 'shop,featured', columns(
-  (None, image('singles-case.jpg', ALTS['singles-case.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, image('sleeve-hands.jpg', ALTS['sleeve-hands.jpg'], aspectRatio='4/5', scale='cover')),
   (None, J(heading('Bought this month: a DJ\'s singles, Otley', 2),
      para('1,400 northern soul and funk 45s from a man who played the Wigan all-nighters and never threw a record away. Most are VG or better. They go out in boxes of fifty and on the singles wall from Tuesday.'),
      para('Delroy drove the van. Ines graded every one on the shop deck, which took three weeks.'),

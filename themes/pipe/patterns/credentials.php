@@ -2,7 +2,7 @@
 /**
  * Title: Registration and cover
  * Slug: pipe/credentials
- * Categories: pipe,about
+ * Categories: about
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -26,11 +26,11 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">City &amp; Guilds</h4>
+<h4 class="wp-block-heading">City & Guilds</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Niall and Aisha hold City &amp; Guilds 6035 in plumbing and heating. Kacper is finishing his in 2027.</p>
+<p class="has-small-font-size">Niall and Aisha hold City & Guilds 6035 in plumbing and heating. Kacper is finishing his in 2027.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

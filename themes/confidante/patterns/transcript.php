@@ -35,7 +35,7 @@
 <p class="is-style-speaker-guest"><strong>Folake</strong> That’s fine as an opener. The problem is nothing came after it.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
 <p class="has-muted-color has-text-color has-x-small-font-size">Transcripts are made with software and checked by Roisin, who is slow but thorough. Spot a mistake? Email transcripts@saymore.example.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->

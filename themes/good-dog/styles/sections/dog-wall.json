@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dog wall",
+	"slug": "dog-wall",
+	"blockTypes": [
+		"core/post-template",
+		"core/gallery"
+	],
+	"styles": {
+		"css": "& img{aspect-ratio:1;object-fit:cover}"
+	}
+}

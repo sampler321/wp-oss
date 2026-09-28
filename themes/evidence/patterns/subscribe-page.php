@@ -6,6 +6,10 @@
  * Block Types: core/post-content
  */
 ?>
+<!-- wp:pattern {"slug":"evidence/season-trailer"} /-->
+
+<!-- wp:pattern {"slug":"evidence/season-break-card"} /-->
+
 <!-- wp:paragraph {"fontSize":"large"} -->
 <p class="has-large-font-size">New parts come out on Thursdays at 5am while a season is running. Between seasons the feed is quiet, apart from updates.</p>
 <!-- /wp:paragraph -->
@@ -15,7 +19,7 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Start each case at part 1. The parts are not standalone and we don’t recap much.</p>
+<p class="">Start each case at part 1. The parts are not standalone and we don’t recap much.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"evidence/support-tiers"} /-->

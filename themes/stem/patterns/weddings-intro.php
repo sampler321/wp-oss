@@ -7,7 +7,7 @@
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-leaf-field","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide is-style-leaf-field"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/wedding.jpg' ) ); ?>" alt="A bride holding a round bouquet of pink roses, freesias and silver brunia" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -18,7 +18,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Bea Oyelaran does our weddings, about twenty a year, mostly in east London and Essex. She likes a loose, garden look and will talk you out of a flower wall.</p>
+<p class="">Bea Oyelaran does our weddings, about twenty a year, mostly in east London and Essex. She likes a loose, garden look and will talk you out of a flower wall.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
@@ -26,7 +26,7 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Minimum spend £900. We book up to 18 months ahead and take four weddings a month at most.</p>
+<p class="">Minimum spend £900. We book up to 18 months ahead and take four weddings a month at most.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

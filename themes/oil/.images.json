@@ -86,5 +86,45 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:The_White_Door_and_the_Golden_Cupboard).jpg",
     "query": "Hammershøi white doors"
+  },
+  "j-palette": {
+    "title": "Paint box with nude study - MET 2019.442.1.jpg",
+    "creator": "Creator:Helena de Kay",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Paint_box_with_nude_study_-_MET_2019.442.1.jpg",
+    "query": "artist palette oil paint"
+  },
+  "j-brushes": {
+    "title": "Jar of Paint Brushes (Unsplash).jpg",
+    "creator": "Joshua Niedermayer allesistdesign",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Jar_of_Paint_Brushes_(Unsplash).jpg",
+    "query": "paint brushes jar"
+  },
+  "j-easel": {
+    "title": "Schilder aanschouwt zijn werk in zijn atelier, RP-P-OB-49.667.jpg",
+    "creator": "Rijksmuseum",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Schilder_aanschouwt_zijn_werk_in_zijn_atelier,_RP-P-OB-49.667.jpg",
+    "query": "easel studio window"
+  },
+  "j-canvas": {
+    "title": "Portrait of a Young Woman MET DP278515.jpg",
+    "creator": "Mather Brown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Young_Woman_MET_DP278515.jpg",
+    "query": "canvas stretcher"
+  },
+  "j-leith": {
+    "title": "165A Leith Walk, Edinburgh.jpg",
+    "creator": "McPhail",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:165A_Leith_Walk,_Edinburgh.jpg",
+    "query": "Leith Edinburgh"
   }
 }

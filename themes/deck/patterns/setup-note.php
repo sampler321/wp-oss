@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Buy a deck and parts online and pick them up assembled. Choose "collect from the shop" at checkout and give us a day. Online orders to post arrive assembled too, unless you tick the box to leave them in parts.</p>
+<p>Buy a deck and parts online and pick them up assembled. Choose "collect from the shop" at checkout and give us a day. Online orders to post arrive assembled too, unless you tick the box to leave them in parts.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

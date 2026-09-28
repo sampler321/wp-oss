@@ -12,7 +12,7 @@
 
 <!-- wp:pattern {"slug":"evidence/evidence-board"} /-->
 
-<!-- wp:columns {"className":"alignwide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"58%"} -->
 <div class="wp-block-column" style="flex-basis:58%"><!-- wp:pattern {"slug":"evidence/timeline"} /--></div>
 <!-- /wp:column -->
@@ -24,7 +24,7 @@
 
 <!-- wp:pattern {"slug":"evidence/episode-list"} /-->
 
-<!-- wp:columns {"className":"alignwide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:column {"width":"58%"} -->
 <div class="wp-block-column" style="flex-basis:58%"><!-- wp:pattern {"slug":"evidence/how-we-report"} /--></div>
 <!-- /wp:column -->

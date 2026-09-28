@@ -2,7 +2,7 @@
 /**
  * Title: Membership questions
  * Slug: commons/membership-faq
- * Categories: text
+ * Categories: membership
  */
 ?>
 <!-- wp:heading {"level":3} -->

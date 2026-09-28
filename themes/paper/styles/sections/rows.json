@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Hairline rows (instead of a table)",
+	"slug": "rows",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "& > .wp-block-group{border-bottom:1px solid var(--wp--preset--color--line);padding:2.5mm 0!important;margin:0!important;column-gap:5mm!important;row-gap:1mm!important}& > .wp-block-group:first-child{border-top:1px solid var(--wp--preset--color--accent)}& > .wp-block-group > p{margin:0!important;font-size:var(--wp--preset--font-size--small)}& > .wp-block-group > p:first-child{color:var(--wp--preset--color--muted)}& > .wp-block-group > p:last-child:not(:first-child){text-align:right}"
+	}
+}

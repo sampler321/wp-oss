@@ -2,15 +2,81 @@
 /**
  * Title: Show credits and funders
  * Slug: commons/show-credits
- * Categories: text
+ * Categories: show
  */
 ?>
-<!-- wp:group {"className":"is-style-ruled","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-ruled"><!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Artists</td><td>Hana Mirza, Ciarán Doyle</td></tr><tr><td>Curated by</td><td>Rhiannon Price for the committee</td></tr><tr><td>Install</td><td>Tomasz Wrona, Kofi Mensah-Hart and six members</td></tr><tr><td>Photography</td><td>Aiko Tanabe</td></tr><tr><td>Funded by</td><td>Leeds Inspired small grant (£1,800) and members’ fees</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled"><!-- wp:column {"width":"32%"} -->
+<div class="wp-block-column" style="flex-basis:32%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Artists</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Hana Mirza, Ciarán Doyle</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled"><!-- wp:column {"width":"32%"} -->
+<div class="wp-block-column" style="flex-basis:32%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Curated by</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Rhiannon Price for the committee</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled"><!-- wp:column {"width":"32%"} -->
+<div class="wp-block-column" style="flex-basis:32%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Install</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Tomasz Wrona, Kofi Mensah-Hart and six members</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled"><!-- wp:column {"width":"32%"} -->
+<div class="wp-block-column" style="flex-basis:32%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Photography</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Aiko Tanabe</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-ruled"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-ruled"><!-- wp:column {"width":"32%"} -->
+<div class="wp-block-column" style="flex-basis:32%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Funded by</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Leeds Inspired small grant (£1,800) and members’ fees</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
-<p class="has-muted-color has-text-color has-x-small-font-size">Copy this table into the grant report. It already has what they ask for.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<p class="has-muted-color has-text-color has-x-small-font-size">Copy these lines into the grant report. They already have what funders ask for.</p>
+<!-- /wp:paragraph -->

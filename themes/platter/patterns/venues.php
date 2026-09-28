@@ -2,7 +2,7 @@
 /**
  * Title: Venues we know
  * Slug: platter/venues
- * Categories: platter,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -10,7 +10,53 @@
 <h3 class="wp-block-heading">Venues we know the back door of</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Venue</th><th>Where</th><th>Capacity</th></tr></thead><tbody><tr><td>Arnos Vale</td><td>Brislington</td><td>220 seated</td></tr><tr><td>The Mount Without</td><td>St Michael's Hill</td><td>120 seated</td></tr><tr><td>Paintworks event space</td><td>Arnos Vale</td><td>180 seated</td></tr><tr><td>Glastonbury Abbey barn</td><td>Somerset</td><td>150 seated</td></tr><tr><td>Your garden</td><td>Anywhere within 40 miles</td><td>As many as fit under the gazebo</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"className":"is-style-dish-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-dish-row"><!-- wp:paragraph -->
+<p>Arnos Vale, Brislington</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>220 seated</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-dish-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-dish-row"><!-- wp:paragraph -->
+<p>The Mount Without, St Michael's Hill</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>120 seated</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-dish-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-dish-row"><!-- wp:paragraph -->
+<p>Paintworks, Arnos Vale</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>180 seated</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-dish-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-dish-row"><!-- wp:paragraph -->
+<p>Glastonbury Abbey barn, Somerset</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>150 seated</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-dish-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-dish-row"><!-- wp:paragraph -->
+<p>Your garden, within 40 miles</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>As many as fit under the gazebo</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

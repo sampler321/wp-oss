@@ -46,15 +46,13 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-paperback","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-paperback"><!-- wp:group {"className":"is-style-band-crime","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-crime"><!-- wp:paragraph {"className":"has-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-<p class="has-small-font-size has-display-font-family" style="font-weight:600">Crime, Fenland 1</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<!-- wp:group {"className":"is-style-band-crime is-style-pattern-waves is-style-clothbound","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-band-crime is-style-pattern-waves is-style-clothbound"><!-- wp:group {"className":"is-style-label-plate","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-label-plate"><!-- wp:paragraph {"className":"has-x-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size has-display-font-family" style="font-weight:600">Crime, Fenland 1</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"is-style-cover-panel","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-cover-panel"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-medium-font-size"><a href="/low-country/">Low Country</a></h3>
 <!-- /wp:heading -->
 
@@ -64,12 +62,6 @@
 
 <!-- wp:paragraph {"fontSize":"small","fontFamily":"display"} -->
 <p class="has-display-font-family has-small-font-size">Tamsin Rourke</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"is-style-band-crime","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-crime"><!-- wp:paragraph {"fontSize":"x-small","fontFamily":"display"} -->
-<p class="has-display-font-family has-x-small-font-size">Harrow &amp; Lane</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -102,15 +94,13 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-paperback","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-paperback"><!-- wp:group {"className":"is-style-band-crime","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-crime"><!-- wp:paragraph {"className":"has-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-<p class="has-small-font-size has-display-font-family" style="font-weight:600">Crime, Fenland 2</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<!-- wp:group {"className":"is-style-band-crime is-style-pattern-waves is-style-clothbound","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-band-crime is-style-pattern-waves is-style-clothbound"><!-- wp:group {"className":"is-style-label-plate","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-label-plate"><!-- wp:paragraph {"className":"has-x-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size has-display-font-family" style="font-weight:600">Crime, Fenland 2</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"is-style-cover-panel","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-cover-panel"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-medium-font-size"><a href="/a-drowned-parish/">A Drowned Parish</a></h3>
 <!-- /wp:heading -->
 
@@ -120,12 +110,6 @@
 
 <!-- wp:paragraph {"fontSize":"small","fontFamily":"display"} -->
 <p class="has-display-font-family has-small-font-size">Tamsin Rourke</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"is-style-band-crime","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-crime"><!-- wp:paragraph {"fontSize":"x-small","fontFamily":"display"} -->
-<p class="has-display-font-family has-x-small-font-size">Harrow &amp; Lane</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -158,15 +142,13 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-paperback","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-paperback"><!-- wp:group {"className":"is-style-band-memoir","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-memoir"><!-- wp:paragraph {"className":"has-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-<p class="has-small-font-size has-display-font-family" style="font-weight:600">Memoir</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<!-- wp:group {"className":"is-style-band-memoir is-style-pattern-scales is-style-clothbound","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-band-memoir is-style-pattern-scales is-style-clothbound"><!-- wp:group {"className":"is-style-label-plate","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-label-plate"><!-- wp:paragraph {"className":"has-x-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"600"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size has-display-font-family" style="font-weight:600">Memoir</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"is-style-cover-panel","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-cover-panel"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
 <h3 class="wp-block-heading has-medium-font-size"><a href="/my-fathers-boats/">My Father’s Boats</a></h3>
 <!-- /wp:heading -->
 
@@ -176,12 +158,6 @@
 
 <!-- wp:paragraph {"fontSize":"small","fontFamily":"display"} -->
 <p class="has-display-font-family has-small-font-size">Tamsin Rourke</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"is-style-band-memoir","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-band-memoir"><!-- wp:paragraph {"fontSize":"x-small","fontFamily":"display"} -->
-<p class="has-display-font-family has-x-small-font-size">Harrow &amp; Lane</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

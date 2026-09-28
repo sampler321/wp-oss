@@ -1,0 +1,229 @@
+{
+ "site": {
+  "title": "Nora Bakri",
+  "tagline": "Murals and lettering, Rotterdam"
+ },
+ "categories": [
+  {
+   "slug": "homes",
+   "name": "Homes",
+   "description": "Back gardens, stairwells, one bedroom ceiling."
+  },
+  {
+   "slug": "businesses",
+   "name": "Businesses",
+   "description": "Shop fronts, signs and shutters."
+  },
+  {
+   "slug": "schools",
+   "name": "Schools",
+   "description": "Painted with the pupils, one day of painting per class included."
+  },
+  {
+   "slug": "public",
+   "name": "Public walls",
+   "description": "Festivals, the gemeente and legal walls."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "murals",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "murals",
+   "title": "Murals",
+   "content": ""
+  },
+  {
+   "slug": "map",
+   "title": "Map",
+   "pattern": "wall/map-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "commissions",
+   "title": "Commissions",
+   "pattern": "wall/commissions-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "prints",
+   "title": "Prints",
+   "pattern": "wall/prints-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "wall/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "schools",
+   "title": "Schools",
+   "pattern": "wall/schools-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "homes-and-shops",
+   "title": "Homes and shops",
+   "pattern": "wall/homes-business-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "index",
+   "title": "Index",
+   "pattern": "wall/index-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Viaduct pillar, Hofplein line",
+   "date": "2026-09-10",
+   "category": "public",
+   "tags": [
+    "Rotterdam",
+    "Rotterdam"
+   ],
+   "image": "viaduct.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Four faces looking up at the trains, painted from a cherry picker over nine days in May. The black-and-white keeps it readable under the viaduct shadow.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Pillar 14, Hofbogen, Rotterdam-Noord</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Gemeente Rotterdam, Kunst in de openbare ruimte</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Festival</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Caps Lock weekend</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2026</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">4 × 9 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Corner block, Witte de With",
+   "date": "2025-08-10",
+   "category": "businesses",
+   "tags": [
+    "Rotterdam",
+    "Rotterdam"
+   ],
+   "image": "corner-block.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">The whole corner in balloons and one big face. Twenty-three colours, all exterior silicate paint. The record shop is on the ground floor.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Corner of Witte de Withstraat and Schiedamse Vest</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Pantheon Records</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">11 × 22 m, two facades</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Gable with objects",
+   "date": "2025-07-10",
+   "category": "public",
+   "tags": [
+    "Festival",
+    "Zaragoza"
+   ],
+   "image": "gable-objects.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Things people in the street lent me for a morning: a guitar, a key, a ball of wool, their neighbour's rabbit. Painted in eleven days in 34 degrees.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Calle Delicias 41, Zaragoza</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Barrio Delicias festival</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Festival</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Delicias walls 2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">12 × 15 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Faces, Colegio Maravillas",
+   "date": "2024-06-10",
+   "category": "schools",
+   "tags": [
+    "School",
+    "Málaga"
+   ],
+   "image": "school-faces.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Five laughing faces made from 4,000 mosaic dots. Year 5 painted the dots, I did the drawing and the edges.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Courtyard, Colegio Maravillas, Málaga</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The school parents' association</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3 × 14 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Letters, Maashaven hall of fame",
+   "date": "2024-05-10",
+   "category": "public",
+   "tags": [
+    "Rotterdam",
+    "Lettering",
+    "Gone",
+    "Rotterdam"
+   ],
+   "image": "letters.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A piece for the legal wall. Legal walls turn over every few months, which is the point.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Legal wall, Maashaven Zuidzijde</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Self-initiated</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Festival</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Caps Lock weekend</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2024</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3 × 8 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Gone. Painted over by Kees and Rafi in March 2025, as it should be</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Tunnel, IJ-oever",
+   "date": "2023-04-10",
+   "category": "public",
+   "tags": [
+    "Lettering",
+    "Gone",
+    "Amsterdam"
+   ],
+   "image": "tunnel.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">One continuous brown line for forty metres, with a question mark at the end. People wrote answers on it within a week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Pedestrian tunnel under the IJ-oever, Amsterdam</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Stadsdeel Centrum</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3 × 40 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Gone. Tunnel repainted grey in 2025</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Garden wall, Afrikaanderwijk",
+   "date": "2023-09-10",
+   "category": "homes",
+   "tags": [
+    "Rotterdam",
+    "Rotterdam"
+   ],
+   "image": "garden-wall.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Two grandparents, from a photo from 1971. Painted in sepia so it sits quietly next to the vegetable beds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Back garden, Afrikaanderwijk (private address)</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Private client</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3 × 12 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Window, Nieuwe Binnenweg",
+   "date": "2022-08-10",
+   "category": "businesses",
+   "tags": [
+    "Rotterdam",
+    "Trompe l'oeil",
+    "Rotterdam"
+   ],
+   "image": "window.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">A painted window where a real one was bricked up in 1962. The table and the loaf are for the bakery downstairs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Nieuwe Binnenweg 212, above the bakery</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bakkerij Van Olst</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2022</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2.5 × 4 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Completed, still there</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Squat wall, Zuidplein",
+   "date": "2021-07-10",
+   "category": "public",
+   "tags": [
+    "Rotterdam",
+    "Gone",
+    "Rotterdam"
+   ],
+   "image": "ruin.jpg",
+   "template": "single-mural",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Painted in one afternoon with leftover paint. The building came down for 80 flats.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|20\"}},\"layout\":{\"type\":\"flex\",\"orientation\":\"vertical\",\"justifyContent\":\"stretch\"}} -->\n<div class=\"wp-block-group\"><!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Former garage, Zuidplein</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Commissioned by</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Self-initiated</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Year</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2021</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Wall</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3 × 6 m</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"className\":\"is-style-rule-top\",\"style\":{\"spacing\":{\"blockGap\":\"var:preset|spacing|30\",\"padding\":{\"top\":\"var:preset|spacing|20\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group is-style-rule-top\" style=\"padding-top:var(--wp--preset--spacing--20)\"><!-- wp:paragraph {\"fontSize\":\"small\",\"style\":{\"typography\":{\"fontWeight\":\"700\"}}} -->\n<p class=\"has-small-font-size\">Status</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Gone. Building demolished in 2023</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Murals",
+   "url": "/murals/"
+  },
+  {
+   "label": "Map",
+   "url": "/map/"
+  },
+  {
+   "label": "Commissions",
+   "url": "/commissions/"
+  },
+  {
+   "label": "Schools",
+   "url": "/schools/"
+  },
+  {
+   "label": "Homes and shops",
+   "url": "/homes-and-shops/"
+  },
+  {
+   "label": "Prints",
+   "url": "/prints/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  }
+ ]
+}

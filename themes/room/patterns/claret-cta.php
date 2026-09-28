@@ -2,7 +2,7 @@
 /**
  * Title: Claret band: start a project
  * Slug: room/claret-cta
- * Categories: call-to-action
+ * Categories: services
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-claret","layout":{"type":"constrained"}} -->

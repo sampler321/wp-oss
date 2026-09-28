@@ -14,5 +14,5 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>LPs travel out of their sleeves to stop seam splits, in a stiff mailer with card corners. Orders placed by 1pm go out the same day.</p>
+<p class="">LPs travel out of their sleeves to stop seam splits, in a stiff mailer with card corners. Orders placed by 1pm go out the same day.</p>
 <!-- /wp:paragraph -->

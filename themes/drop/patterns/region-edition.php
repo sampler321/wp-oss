@@ -11,6 +11,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The LP is pressed in Czechia, and posting a single record to the US now costs more than the record. Our US label, Dead Letter Office in Portland, sells it over there.</p>
+<p class="">The LP is pressed in Czechia, and posting a single record to the US now costs more than the record. Our US label, Dead Letter Office in Portland, sells it over there.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

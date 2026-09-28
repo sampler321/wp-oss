@@ -2,13 +2,13 @@
 /**
  * Title: Seasonal menu with dates
  * Slug: platter/seasonal-menu
- * Categories: platter,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
 <section class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"42%"} -->
-<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:42%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/mezze.jpg' ) ); ?>" alt="A mezze plate of grilled vegetables, feta, flatbread and three dips on a wooden table"/></figure>
 <!-- /wp:image -->
 

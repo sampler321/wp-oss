@@ -16,9 +16,13 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Fiction and non-fiction in good condition, Dutch or English</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Comics and graphic novels</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Art, design and Rotterdam history</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
@@ -30,9 +34,13 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Textbooks and old encyclopaedias</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Books with water damage or smells</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Reader's Digest anything</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

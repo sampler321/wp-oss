@@ -6,3 +6,10 @@
 - Signature: the new-release block (panel drawing, "docs and power" legend, assembled vs kit prices side by side, versioned document table). Nice-to-haves built: fault table before the repair steps, retired pedals' manuals kept online, dealer directory by country, parts-substitution note, custom artwork lead time.
 - Images: CC0 Commons photos of parts, a kit, an iron, a breadboard, a schematic, an amp and rigs. The commercial pedals on Commons are all other brands (Danelectro, Boss, EHX), so product images are panel and PCB drawings made for this theme by build/patchbay_draw.py (CC0), not photos of someone else's pedals.
 - Core-block limits: assembled/kit/PCB are separate simple WooCommerce products (the demo builder has no variable products). The signal chain links to product category archives. The wire behind it and its mobile layout needed top-level CSS because section-style CSS drops @media blocks.
+
+## Round 2
+
+- Look kept ("great design"). Home h1 is now a plain statement of what is sold and where, and the intro names the current release (Moor Echo).
+- Tables cut from 13 to 5 of 48 patterns: the panel legend, versioned docs, controls, warranty, retired manuals, dealers and hours are spec rows with a 2px rule, and difficulty levels are three enclosure-coloured cards. Tables remain for the kit comparison, BOM, manuals list, fault table and postage.
+- Eleven new patterns from JHS, Old Blood Noise, Befaco, Aion FX and ZVEX: difficulty levels, build service, soldering evening, enclosure colours, settings to start from, limited colourway note, customer boards, out-of-warranty repair prices, FAQ, gift vouchers, and Coal Tit vs Snicket. The kits, repairs, about and contact pages use them.
+- Image lightbox enabled in theme.json and on drawings and photos.

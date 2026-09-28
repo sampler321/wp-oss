@@ -2,7 +2,7 @@
 /**
  * Title: Show page: text, installation views and credits
  * Slug: commons/exhibition-text
- * Categories: text
+ * Categories: show
  * Description: Body copy for one show, with installation photos and a credits line.
  */
 ?>

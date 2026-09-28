@@ -2,7 +2,7 @@
 /**
  * Title: Coming up (ruled list)
  * Slug: commons/coming-up-list
- * Categories: text
+ * Categories: whats-on
  * Description: Events and talks as ruled rows with their own running numbers.
  */
 ?>

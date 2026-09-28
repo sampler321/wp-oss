@@ -10,7 +10,7 @@
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-card-list"} -->
 <!-- wp:post-terms {"term":"category"} /-->
 
-<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+<!-- wp:post-title {"isLink":true,"level":2,"fontSize":"large"} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-pagination -->
@@ -23,7 +23,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing matches that yet.</p>
+<p class="">Nothing matches that yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->

@@ -2,7 +2,7 @@
 /**
  * Title: Fabric samples request
  * Slug: room/fabric-samples
- * Categories: call-to-action
+ * Categories: fabric
  */
 ?>
 <!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":45,"className":"is-style-putty"} -->

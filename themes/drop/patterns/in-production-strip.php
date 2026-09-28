@@ -14,7 +14,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>Heavy hoodie, washed black.</strong> Pre-order until 2 November. We order the blanks the next morning, print the week after, and post the first batch between 24 and 29 November.</p>
+<p class=""><strong>Heavy hoodie, washed black.</strong> Pre-order until 2 November. We order the blanks the next morning, print the week after, and post the first batch between 24 and 29 November.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -36,7 +36,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>Songs for the car park</strong> sold out in four days. If 50 people put their name down, Mags will dub a second batch of 100 in December. Right now 31 have.</p>
+<p class=""><strong>Songs for the car park</strong> sold out in four days. If 50 people put their name down, Mags will dub a second batch of 100 in December. Right now 31 have.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-scrawl"} -->

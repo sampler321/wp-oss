@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Oxblood",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#3A1418",
+					"name": "Oxblood"
+				},
+				{
+					"slug": "contrast",
+					"color": "#E9DCC9",
+					"name": "Ivory"
+				},
+				{
+					"slug": "accent",
+					"color": "#D9B36A",
+					"name": "Yellow gold"
+				},
+				{
+					"slug": "surface",
+					"color": "#4A1D22",
+					"name": "Velvet"
+				},
+				{
+					"slug": "line",
+					"color": "#6E3A3F",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#CDBBA6",
+					"name": "Chamois"
+				}
+			]
+		}
+	}
+}

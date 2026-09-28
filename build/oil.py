@@ -12,6 +12,31 @@ from blocks import *
 set_theme('oil')
 S = THEME['slug']
 
+# Round 2: works and journal notes are both posts. Work queries are limited to the medium categories
+# (ids 2, 3, 4 in the demo: paintings, drawings, monotypes); journal notes live in category 5 and use their own templates.
+WORK_CATS = [2, 3, 4]
+JOURNAL_CAT = 5
+CATS = {'oil-catalogue': 'Painter: catalogue and works', 'oil-work-page': 'Painter: work page details', 'oil-exhibitions': 'Painter: exhibitions and gallery',
+        'oil-cv': 'Painter: CV and press', 'oil-journal': 'Painter: journal', 'oil-contact': 'Painter: visits, buying and contact',
+        'oil-pages': 'Painter: page layouts'}
+CATMAP = {'portfolio': 'oil-catalogue', 'featured': 'oil-exhibitions', 'about': 'oil-cv', 'testimonials': 'oil-cv', 'text': 'oil-journal',
+          'posts': 'oil-journal', 'contact': 'oil-contact', 'call-to-action': 'oil-contact', 'banner': 'oil-contact', 'shop': 'oil-contact',
+          'work-caption': 'oil-work-page', 'work-detail': 'oil-work-page', 'dimensions-line': 'oil-work-page', 'price-on-request': 'oil-work-page',
+          'sold-marker': 'oil-work-page', 'describe-work': 'oil-work-page', 'enquire-button': 'oil-work-page', 'now-showing': 'oil-exhibitions',
+          'representation': 'oil-exhibitions', 'exhibitions-list': 'oil-exhibitions', 'studio-strip': 'oil-journal'}
+_query = query
+def query(inner, category=None, **kw):
+    m = _query(inner, **kw)
+    if category:
+        m = m.replace('"inherit":false}', '"inherit":false,"taxQuery":{"category":%s}}' % json.dumps(category, separators=(',', ':')), 1)
+    return m
+
+_pattern = pattern
+def pattern(slug, title, cats, body, **kw):
+    first = cats.split(',')[0]
+    c = 'oil-pages' if kw.get('block_types') == 'core/post-content' else CATMAP.get(slug) or CATMAP.get(first, 'oil-catalogue')
+    return _pattern(slug, title, c + ',' + cats, body, **kw)
+
 
 def wjson(rel, data):
     write(rel, json.dumps(data, indent='\t', ensure_ascii=False))
@@ -87,6 +112,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -298,7 +324,7 @@ card = J(dyn('post-featured-image', isLink=True),
                layout={'type': 'flex', 'orientation': 'vertical'}, style={'spacing': {'blockGap': sp(10)}}))
 
 pattern('filter-panel', 'Index: medium, year and availability', 'portfolio', J(
-    heading('Medium', 2, fontSize='small', fontFamily='body', style={'typography': {'fontWeight': '600'}}),
+    heading('Medium and journal', 2, fontSize='small', fontFamily='body', style={'typography': {'fontWeight': '600'}}),
     dyn('categories', showPostCounts=True),
     heading('Year', 2, fontSize='small', fontFamily='body', style={'typography': {'fontWeight': '600'}}),
     dyn('archives', type='yearly', showPostCounts=True),
@@ -317,7 +343,7 @@ pattern('catalogue-index', 'Catalogue index (front page)', 'portfolio,featured,q
     J(heading('Work', 1),
       para('Agnes Brekke paints the rooms she lives in, the city around them and the people who visit, mostly in oil on linen, in a top-floor studio in Leith.'),
       pattern_ref('filter-panel')),
-    query(card, per_page=12, layout={'type': 'grid', 'columnCount': 4}, template_class='is-style-catalogue')),
+    query(card, per_page=12, category=WORK_CATS, layout={'type': 'grid', 'columnCount': 4}, template_class='is-style-catalogue')),
     description='Signature: the index column beside a grid of every work, newest first, with sold works marked by a red dot.')
 
 pattern('catalogue-archive', 'Catalogue archive (inherits the page query)', 'portfolio,query', index_columns(
@@ -328,7 +354,8 @@ pattern('catalogue-all', 'Catalogue, all work (posts page)', 'portfolio,query', 
     J(heading('All work', 1),
       para('Every finished painting, drawing and monotype since 2014, sold ones included, so the prices here double as a record.', fontSize='small'),
       pattern_ref('filter-panel')),
-    inherit_query(card, layout={'type': 'grid', 'columnCount': 4}, template_class='is-style-catalogue')), inserter=False)
+    query(card, per_page=48, category=WORK_CATS, query_id=2, layout={'type': 'grid', 'columnCount': 4}, template_class='is-style-catalogue')),
+    description='The whole catalogue. Choose your medium categories in the Query Loop settings.')
 
 pattern('post-list', 'Plain list of results', 'posts,query', inherit_query(
     row(J(dyn('post-date', format='Y'), dyn('post-title', isLink=True, level=2, fontSize='large', fontFamily='body')), wrap=True,
@@ -336,6 +363,11 @@ pattern('post-list', 'Plain list of results', 'posts,query', inherit_query(
     align='wide'), inserter=False)
 
 W0 = WORKS[0]
+
+def label_rows(rows):
+    return group(J(*[columns(('30%', para(k, textColor='muted', fontSize='small')), (None, para(v, fontSize='small')), isStackedOnMobile=False,
+                             className='is-style-rule-bottom', style={'spacing': {'blockGap': {'left': sp(30)}, 'padding': {'bottom': sp(10)}}}) for k, v in rows]),
+                 layout={'type': 'default'}, style={'spacing': {'blockGap': sp(20)}})
 pattern('work-caption', 'Work caption (medium, size in cm and inches, availability)', 'portfolio', J(
     work_caption_blocks(W0)),
     description='Put this in each work post. Size is given once in cm and once in inches, then a plain availability line.')
@@ -383,8 +415,8 @@ pattern('now-showing', 'Now showing (current exhibition)', 'featured', group(col
     (None, J(para('Now showing', fontSize='small', style={'typography': {'fontWeight': '600'}}),
              heading('<em>Rooms without us</em>', 2),
              para('Fourteen new paintings of the flat on Couper Street and the streets down to the shore. Nine are for sale.', fontSize='large'),
-             table([['Where', 'Fairlie Gallery, 14 Dundas Street, Edinburgh EH3 6HZ'], ['When', '12 September to 1 November 2026'],
-                    ['Open', 'Tuesday to Saturday, 10am to 5pm'], ['Talk', 'Saturday 10 October, 2pm. Free, no need to book.']]),
+             label_rows([['Where', 'Fairlie Gallery, 14 Dundas Street, Edinburgh EH3 6HZ'], ['When', '12 September to 1 November 2026'],
+                         ['Open', 'Tuesday to Saturday, 10am to 5pm'], ['Talk', 'Saturday 10 October, 2pm. Free, no need to book.']]),
              buttons(('See the works in the show', '/tag/available/')))),
     align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}, verticalAlignment='center'),
     className='is-style-wall-label', align='full'))
@@ -397,7 +429,7 @@ pattern('studio-visit', 'Studio visit enquiry', 'contact,call-to-action', group(
     heading('Visit the studio', 3),
     para('Thursdays, by appointment, 11am to 5pm. Top floor of 3 Couper Street, Leith. Four flights of stairs and no lift, so tell me if that is a problem and I will bring work down to Fairlie Gallery instead.'),
     buttons(('Book a Thursday visit', 'mailto:studio@example.com?subject=Studio%20visit'))),
-    className='is-style-rule-top'))
+    className='is-style-rule-top', layout={'type': 'default'}))
 
 pattern('describe-work', 'Describe this work (image description toggle)', 'portfolio,text', details(
     'Describe this work', para(W0['desc'])),
@@ -412,11 +444,11 @@ CV = {
     'Awards and residencies': [['2023', 'Kirkhill summer residency, Arbroath'], ['2018', 'Dundas Street Painting Prize, shortlisted'], ['2011', 'Visual Arts Scotland, Open award']],
     'Collections': [['', 'Leith Civic Collection'], ['', 'Leith Hospital Trust'], ['', 'Private collections in Scotland, Norway, Canada and Japan']],
 }
-pattern('cv-education', 'CV: education', 'about', J(heading('Education', 3, fontSize='large'), table(CV['Education'])))
-pattern('cv-awards', 'CV: awards and residencies', 'about', J(heading('Awards and residencies', 3, fontSize='large'), table(CV['Awards and residencies'])))
+pattern('cv-education', 'CV: education', 'about', J(heading('Education', 3, fontSize='large'), label_rows(CV['Education'])))
+pattern('cv-awards', 'CV: awards and residencies', 'about', J(heading('Awards and residencies', 3, fontSize='large'), label_rows(CV['Awards and residencies'])))
 pattern('cv-collections', 'CV: collections', 'about', J(heading('Collections', 3, fontSize='large'), lst([r[1] for r in CV['Collections']])))
-pattern('cv-solo', 'CV: solo shows', 'about', J(heading('Solo shows', 3, fontSize='large'), table([[y, '<em>%s</em>, %s' % (t, v)] for y, t, v, k, d in EXH if k == 'Solo'])))
-pattern('cv-group', 'CV: group shows', 'about', J(heading('Group shows', 3, fontSize='large'), table([[y, '<em>%s</em>, %s' % (t, v)] for y, t, v, k, d in EXH if k == 'Group'])))
+pattern('cv-solo', 'CV: solo shows', 'about', J(heading('Solo shows', 3, fontSize='large'), label_rows([[y, '<em>%s</em>, %s' % (t, v)] for y, t, v, k, d in EXH if k == 'Solo'])))
+pattern('cv-group', 'CV: group shows', 'about', J(heading('Group shows', 3, fontSize='large'), label_rows([[y, '<em>%s</em>, %s' % (t, v)] for y, t, v, k, d in EXH if k == 'Group'])))
 
 pattern('bibliography', 'Bibliography', 'about', J(
     heading('Bibliography', 3, fontSize='large'),
@@ -447,10 +479,10 @@ pattern('about-page', 'Page: about and CV', 'about', J(
     columns((None, J(pattern_ref('cv-education'), pattern_ref('cv-awards'), pattern_ref('cv-collections'))),
             (None, J(pattern_ref('cv-solo'), pattern_ref('cv-group'), pattern_ref('bibliography'), pattern_ref('cv-download'))),
             align='wide', className='is-style-rule-top', style={'spacing': {'blockGap': {'left': sp(60)}}}),
-    pattern_ref('reviews')), block_types='core/post-content')
+    pattern_ref('reviews'), pattern_ref('series-intro'), pattern_ref('materials'), pattern_ref('studio-photo')), block_types='core/post-content')
 
 pattern('exhibitions-page', 'Page: exhibitions', 'about', J(
-    pattern_ref('now-showing'), pattern_ref('exhibitions-list'),
+    pattern_ref('now-showing'), pattern_ref('exhibitions-list'), pattern_ref('gallery-card'),
     para('Photographs of past shows are on each painting\'s page. For loans, write to Fairlie Gallery.', fontSize='small', textColor='muted')),
     block_types='core/post-content')
 
@@ -480,7 +512,7 @@ pattern('contact-details', 'Contact details', 'contact', columns(
              para('Works at Fairlie Gallery are sold by the gallery. Prices are the same either way.'))),
     align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}))
 
-pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), pattern_ref('studio-visit')), block_types='core/post-content')
+pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), pattern_ref('visit-and-find'), pattern_ref('studio-visit'), pattern_ref('open-studio')), block_types='core/post-content')
 
 pattern('notice-open-studio', 'Notice: open studio weekend', 'banner', group(
     para('Open studio on Saturday 7 and Sunday 8 November, 11am to 5pm. Unframed drawings from £250. Take this bar down on 9 November.'),
@@ -489,8 +521,9 @@ pattern('notice-open-studio', 'Notice: open studio weekend', 'banner', group(
 
 pattern('studio-strip', 'Studio and journal strip (front page)', 'featured', columns(
     (None, J(heading('From the journal', 2, fontSize='x-large'),
-             *[J(para(d, fontSize='small', textColor='muted'), heading(t, 3, fontSize='large'), para(b.split('. ')[0] + '.')) for d, t, b in JOURNAL[:2]],
-             para('<a href="/journal/">All journal notes</a>', fontSize='small'))),
+             query(J(dyn('post-date', fontSize='small'), dyn('post-title', isLink=True, level=3, fontSize='large'), dyn('post-excerpt', excerptLength=24)),
+                   per_page=3, category=[JOURNAL_CAT], query_id=3),
+             para('<a href="/category/journal/">All journal notes</a>', fontSize='small'))),
     (None, J(pattern_ref('representation'), pattern_ref('studio-visit'))),
     align='wide', className='is-style-rule-top', style={'spacing': {'blockGap': {'left': sp(70)}}}))
 
@@ -500,10 +533,94 @@ pattern('year-heading', 'Year heading with works', 'portfolio', J(
             align='wide')),
     description='A hand-picked year: big year numeral at the left, the year\'s works on the right.')
 
+
+# ------------------------------------------------------------------ round 2: journal posts and more of the kit
+journal_card = J(dyn('post-featured-image', isLink=True, aspectRatio='4/3'), dyn('post-date', fontSize='small'),
+                 dyn('post-title', isLink=True, level=3, fontSize='large'), dyn('post-excerpt', excerptLength=26))
+pattern('journal-latest', 'Journal: latest three notes', 'posts,query', J(
+    row(J(heading('Journal', 2, fontSize='x-large'), para('<a href="/category/journal/">All notes</a>', fontSize='small')), justify='space-between', align='wide'),
+    query(journal_card, per_page=3, category=[JOURNAL_CAT], query_id=4, layout={'type': 'grid', 'columnCount': 3}, align='wide')),
+    description='The three newest journal notes. Set the Journal category in the Query Loop settings.')
+
+pattern('journal-archive', 'Journal archive (inherits the page query)', 'posts,query', inherit_query(
+    columns(('33%', dyn('post-featured-image', isLink=True, aspectRatio='4/3')),
+            (None, J(dyn('post-date', fontSize='small'), dyn('post-title', isLink=True, level=2, fontSize='x-large'), dyn('post-excerpt', excerptLength=40))),
+            className='is-style-rule-top', style={'spacing': {'blockGap': {'left': sp(50)}, 'padding': {'top': sp(40)}}}),
+    align='wide'), inserter=False)
+
+pattern('journal-feature', 'Journal: newest note, large', 'posts,query', query(
+    columns(('58%', dyn('post-featured-image', isLink=True)),
+            (None, J(dyn('post-date', fontSize='small'), dyn('post-title', isLink=True, level=2, fontSize='xx-large'), dyn('post-excerpt', excerptLength=50, moreText='Read the note'))),
+            verticalAlignment='center', style={'spacing': {'blockGap': {'left': sp(60)}}}),
+    per_page=1, category=[JOURNAL_CAT], query_id=5, align='wide'))
+
+pattern('studio-photo', 'Studio photo with caption', 'text', image('j-easel.jpg', 'Etching of a painter sitting back in a chair in front of a tall studio window', 'The studio window faces north over the rooftops, which is why the paintings are grey.'))
+
+pattern('series-intro', 'Series: Couper Street rooms', 'portfolio', J(
+    columns(('33%', J(heading('Couper Street rooms', 2, fontSize='x-large'),
+                      para('Since 2019 I have painted the same four rooms of the flat at different hours. Twenty-two paintings so far; these are the ones still in the studio or on loan.'))),
+            (None, gallery([('hero.jpg', 'Oil painting of an empty room with sunlight on the floorboards', 'Sunlight on the floor'),
+                            ('work-9.jpg', 'Oil painting of a pale door and an ochre cupboard', 'White door and yellow cupboard'),
+                            ('work-1.jpg', 'Oil painting of a grey room with a piano and a cello', 'Music room, afternoon'),
+                            ('work-5.jpg', 'Monotype of the same room at night in violet greys', 'Moonlight')], columns=2)),
+            align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}})))
+
+pattern('available-cards', 'Available now (cards with prices)', 'portfolio,shop', J(
+    heading('Available from the studio', 2, fontSize='x-large'),
+    group(J(*[group(J(image(w['img'], '%s, %s, %s' % (w['t'], w['mat'].lower(), dims(w['h'], w['w']))),
+                      heading(w['t'], 3, fontSize='medium', fontFamily='body', style={'typography': {'fontWeight': '500'}}),
+                      para('%s, %s' % (w['mat'], dims(w['h'], w['w'])), className='is-style-caption-line'),
+                      para(w['price'])), layout={'type': 'flex', 'orientation': 'vertical'}, style={'spacing': {'blockGap': sp(10)}})
+              for w in WORKS if w['st'] == 'available'][:4]),
+          layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'}, style={'spacing': {'blockGap': sp(50)}})))
+
+pattern('buying-steps', 'How to buy a painting', 'call-to-action', J(
+    heading('Buying a painting from the studio', 3),
+    lst(['Email me the title. I reply the same week with more photos, including one on the wall for scale.',
+         'If you want it, I send a payment link and hold the painting for seven days.',
+         'I deliver it myself between Aberdeen and Newcastle, usually on a Sunday. Further away, a fine-art courier at cost.',
+         'If it looks wrong on your wall, you have 14 days to send it back.'], ordered=True)))
+
+pattern('framing-note', 'Framing and hanging', 'text', J(
+    heading('Frames', 3),
+    para('Paintings come in a plain oak float frame, 2 cm deep, with a D-ring on each side and wire. Works on paper come unframed in a card mount; I can recommend two framers in Leith.')))
+
+pattern('materials', 'Materials', 'text', J(
+    heading('What the paintings are made of', 3),
+    lst(['Belgian linen, primed in the studio with oil ground.', 'Oil paint from Michael Harding and Williamsburg, mostly earth colours and one cadmium red.', 'Cold-wax medium for the matt surfaces.', 'Monotypes printed on the etching press at Edinburgh Printmakers.'])))
+
+pattern('collector-quote', 'Collector quote', 'testimonials', quote(
+    'It hangs opposite our kitchen window, and it is a different painting at seven in the morning and at five in the afternoon.',
+    'Ingrid and Tom, Portobello, bought <em>Two sisters reading</em> in 2025'))
+
+pattern('gallery-card', 'Representing gallery', 'featured', columns(
+    ('40%', image('j-leith.jpg', 'A two-storey stone and white-rendered corner building on a sunny street')),
+    (None, J(heading('Fairlie Gallery', 3), para('14 Dundas Street, Edinburgh EH3 6HZ. Tuesday to Saturday, 10am to 5pm. Morag Fairlie has shown my work since 2017 and handles loans and exhibitions.'),
+             para('<a href="mailto:hello@example.com">hello@example.com</a>, 0131 496 0990'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': sp(50)}}}))
+
+pattern('open-studio', 'Open studio weekend', 'call-to-action', columns(
+    ('40%', image('j-palette.jpg', 'An open paint box with a small oil sketch in the lid and a crusted palette below')),
+    (None, J(heading('Open studio, 7 and 8 November', 3),
+             lst(['Saturday and Sunday, 11am to 5pm', 'Unframed drawings and oil sketches from £250', 'Tea at 3pm, bring your own cup if you like']),
+             para('No booking needed. The door is the green one next to the barber.'))),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(50)}}}))
+
+pattern('visit-and-find', 'Visit and find the studio', 'contact', columns(
+    (None, J(heading('Find the studio', 3), para('Top floor, 3 Couper Street, Leith, Edinburgh EH6 6HH. Green door next to the barber. The 16 and 22 buses stop on Great Junction Street.'))),
+    (None, J(heading('When', 3), lst(['Thursdays, 11am to 5pm, by appointment', 'Open studio twice a year', 'Four flights of stairs, no lift']))),
+    align='wide', className='is-style-rule-top', style={'spacing': {'blockGap': {'left': sp(60)}}}))
+
+pattern('journal-page-layout', 'Page: journal index', 'posts', J(
+    pattern_ref('journal-feature'), spacer(), pattern_ref('journal-latest')), block_types='core/post-content')
+pattern('buying-page', 'Page: buying a painting', 'shop', J(
+    pattern_ref('available-cards'), spacer(), pattern_ref('buying-steps'), pattern_ref('framing-note'), pattern_ref('collector-quote'), pattern_ref('price-record')), block_types='core/post-content')
+
 # ------------------------------------------------------------------ templates
 main_pad = {'spacing': {'padding': {'top': sp(40), 'bottom': sp(70)}}}
 write('templates/front-page.html', page_template(J(
-    pattern_ref('catalogue-index'), spacer('var:preset|spacing|70'), pattern_ref('now-showing'), spacer('var:preset|spacing|60'), pattern_ref('studio-strip')),
+    pattern_ref('catalogue-index'), spacer('var:preset|spacing|70'), pattern_ref('now-showing'), spacer('var:preset|spacing|70'), pattern_ref('journal-latest'),
+    spacer('var:preset|spacing|60'), pattern_ref('visit-and-find')),
     layout={'type': 'constrained'}, style={'spacing': {'padding': {'top': sp(40), 'bottom': sp(70)}, 'blockGap': '0'}}))
 write('templates/home.html', page_template(pattern_ref('catalogue-all'), style=main_pad))
 write('templates/archive.html', page_template(pattern_ref('catalogue-archive'), style=main_pad))
@@ -532,32 +649,92 @@ single_work = J(
     row(J(dyn('post-navigation-link', type='previous', label='Newer', showTitle=True),
           dyn('post-navigation-link', label='Older', showTitle=True)), justify='space-between', align='wide', className='is-style-rule-top'))
 write('templates/single-work.html', page_template(single_work, style=main_pad))
-write('templates/single.html', page_template(single_work, style=main_pad))
+write('templates/single.html', page_template(J(
+    dyn('post-date', fontSize='small'), dyn('post-title', level=1, fontSize='xx-large'),
+    dyn('post-featured-image', align='wide'),
+    dyn('post-content', layout={'type': 'constrained'}),
+    dyn('post-terms', term='category', prefix='Filed under '),
+    row(J(dyn('post-navigation-link', type='previous', label='Newer note', showTitle=True, taxonomy='category'),
+          dyn('post-navigation-link', label='Older note', showTitle=True, taxonomy='category')), justify='space-between', className='is-style-rule-top')),
+    style=main_pad))
+write('templates/category-journal.html', page_template(J(
+    heading('Journal', 1, align='wide'),
+    para('Notes from the studio, a few times a year. Mostly about paint, sometimes about the stairs.', align='wide', fontSize='large'),
+    pattern_ref('journal-archive')), style=main_pad))
 
 # ------------------------------------------------------------------ demo content
 posts = []
 for w in WORKS:
     posts.append({'title': w['t'], 'category': w['cat'], 'tags': w['tags'], 'image': w['img'], 'date': w['date'],
                   'template': 'single-work', 'content': work_caption_blocks(w)})
+JPOSTS = [
+    ('Hanging day', '2026-09-18', 'work-7.jpg', 'Fourteen paintings, one spirit level and Morag from the gallery, who hangs everything 2 cm lower than I would.',
+     ['She is right every time. Lower paintings pull you closer, and my rooms need you close.',
+      'We hung the big harbour painting last, on its own wall, so you see it through the doorway from the street. The biggest painting still smells of linseed. The show opens on Saturday at 2pm.'],
+     ('Hanging runs on tea and pencil marks.', 'Morag Fairlie, twenty minutes in')),
+    ('Why the floor is always bare', '2026-08-02', 'hero.jpg', 'People ask where the rug went. It went to my sister in Bergen in 2019.',
+     ['I meant to buy another one. Then the light came in across the bare boards one August morning and it turned out to be the whole subject.',
+      'Boards take light like water: every gap, every knot, every place where someone dragged a chair. A rug would hide all of it. I will paint a rug when I own one again.'], None),
+    ('A new batch of linen', '2026-05-30', 'j-canvas.jpg', 'Twelve metres of Belgian linen arrived on Tuesday, which is about eighteen paintings.',
+     ['I size it with rabbit-skin glue, two thin coats, then prime it with an oil ground. It takes three weeks to cure before I can paint on it, so the next paintings start in late June.',
+      'The back of a finished canvas is as good a record as any: the stretcher keys, the date in pencil, the gallery label. I photograph every one before it leaves.'], None),
+    ('The paint box', '2026-04-11', 'j-palette.jpg', 'I paint outside with a box my grandfather used, and the palette has not been cleaned since 2009.',
+     ['It holds six colours and a small panel in the lid. That limit is the point: outside, I have twenty minutes before the light moves, and six colours is all I can think about.',
+      'The small panels are for me. A few go to the open studio in November, unframed, from £250.'], None),
+    ('Cleaning brushes', '2026-02-20', 'j-brushes.jpg', 'Every Friday I clean every brush, whether I used it or not.',
+     ['Safflower oil first, then soap, then shaped with my fingers and left upright in the jar to dry. A good hog brush lasts two years this way.',
+      'It is also the hour where I decide what I am painting next week, which is why Friday is not a visiting day.'], None),
+    ('A walk up Leith Walk', '2026-01-09', 'j-leith.jpg', 'In January I draw outside instead of painting, because the light in the flat is gone by three.',
+     ['This week: the corner buildings up Leith Walk, white render and stone. Low sun makes them look like stage sets.',
+      'Two drawings from these walks are in the catalogue now. The rest stay in the sketchbook.'], ('Drawing in January is a way of waiting.', '')),
+    ('Studio visits start again', '2025-11-14', 'j-easel.jpg', 'From next Thursday the studio is open again for visits, by appointment.',
+     ['The stairs have not got shorter. There are four flights and no lift, and a chair on every landing.',
+      'If you are coming to see a particular painting, tell me when you book, so it is on the easel and not in the rack.'], None),
+]
+for t, d, img, lead, paras, q in JPOSTS:
+    body = [para(lead, fontSize='large'), para(paras[0]), image(img, 'Studio photo for the note: ' + t.lower(), lightbox=True)]
+    if q:
+        body.append(quote(q[0], q[1]) if q[1] else pullquote(q[0]))
+    body += [para(x) for x in paras[1:]]
+    posts.append({'title': t, 'category': 'journal', 'image': img, 'date': d, 'excerpt': lead, 'content': J(*body)})
 demo = {
     'site': {'title': 'Agnes Brekke', 'tagline': 'Paintings from a top-floor studio in Leith'},
     'categories': [{'slug': 'paintings', 'name': 'Paintings', 'description': 'Oil on linen, canvas and panel.'},
                    {'slug': 'drawings', 'name': 'Drawings', 'description': 'Pencil and charcoal, mostly drawn standing up outside.'},
-                   {'slug': 'monotypes', 'name': 'Monotypes', 'description': 'One-off prints pulled from a painted plate on the etching press at Edinburgh Printmakers.'}],
+                   {'slug': 'monotypes', 'name': 'Monotypes', 'description': 'One-off prints pulled from a painted plate on the etching press at Edinburgh Printmakers.'},
+                   {'slug': 'journal', 'name': 'Journal', 'description': 'Notes from the studio.'}],
     'front_page': 'home', 'posts_page': 'work',
     'pages': [
         {'slug': 'home', 'title': 'Home', 'content': ''},
         {'slug': 'work', 'title': 'Work', 'content': ''},
         {'slug': 'exhibitions', 'title': 'Exhibitions', 'pattern': 'oil/exhibitions-page', 'template': 'page-wide'},
-        {'slug': 'journal', 'title': 'Journal', 'pattern': 'oil/journal-page', 'template': 'page-wide'},
+        {'slug': 'journal', 'title': 'Journal', 'pattern': 'oil/journal-page-layout', 'template': 'page-wide'},
+        {'slug': 'buying', 'title': 'Buying a painting', 'pattern': 'oil/buying-page', 'template': 'page-wide'},
         {'slug': 'about', 'title': 'About', 'pattern': 'oil/about-page', 'template': 'page-wide'},
         {'slug': 'contact', 'title': 'Contact', 'pattern': 'oil/contact-page', 'template': 'page-wide'},
     ],
     'posts': posts,
     'nav': [{'label': 'Work', 'url': '/work/'}, {'label': 'Exhibitions', 'url': '/exhibitions/'}, {'label': 'Journal', 'url': '/journal/'},
-            {'label': 'About', 'url': '/about/'}, {'label': 'Contact', 'url': '/contact/'}],
+            {'label': 'Buying', 'url': '/buying/'}, {'label': 'About', 'url': '/about/'}, {'label': 'Contact', 'url': '/contact/'}],
 }
 os.makedirs('demos/oil', exist_ok=True)
 with open('demos/oil/content.json', 'w', encoding='utf-8') as f:
     json.dump(demo, f, indent=1, ensure_ascii=False)
+write('functions.php', """<?php
+/**
+ * Oil: pattern categories only.
+ *
+ * @package oil
+ */
+
+add_action(
+	'init',
+	function () {
+		foreach ( array(
+""" + "\n".join("\t\t\t'%s' => '%s'," % (k, v) for k, v in CATS.items()) + """
+		) as $slug => $label ) {
+			register_block_pattern_category( $slug, array( 'label' => $label ) );
+		}
+	}
+);""")
 print('oil built')

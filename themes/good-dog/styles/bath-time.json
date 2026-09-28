@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bath time",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EAF4FF",
+					"name": "Clean towel"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0E2446",
+					"name": "Navy ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#B3261E",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1D5FB8",
+					"name": "Lead blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#FFFFFF",
+					"name": "Butter"
+				},
+				{
+					"slug": "line",
+					"color": "#0E2446",
+					"name": "Stitch line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3B4C66",
+					"name": "Slate"
+				},
+				{
+					"slug": "coral",
+					"color": "#FF7A5C",
+					"name": "Coral"
+				},
+				{
+					"slug": "orange",
+					"color": "#FFA531",
+					"name": "Orange"
+				},
+				{
+					"slug": "yellow",
+					"color": "#FFD93D",
+					"name": "Yellow"
+				},
+				{
+					"slug": "green",
+					"color": "#5FCB7D",
+					"name": "Grass"
+				},
+				{
+					"slug": "sky",
+					"color": "#6FB0F5",
+					"name": "Sky"
+				},
+				{
+					"slug": "pink",
+					"color": "#F79BC8",
+					"name": "Bubblegum"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var:preset|color|sky"
+				}
+			}
+		}
+	}
+}

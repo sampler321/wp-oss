@@ -2,7 +2,7 @@
 /**
  * Title: Page: materials
  * Slug: joint/materials-page
- * Categories: featured
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>
@@ -13,6 +13,10 @@
 <!-- /wp:spacer -->
 
 <!-- wp:pattern {"slug":"joint/finishes"} /-->
+
+<!-- wp:pattern {"slug":"joint/tools"} /-->
+
+<!-- wp:pattern {"slug":"joint/joint-detail"} /-->
 
 <!-- wp:pattern {"slug":"joint/complementary-materials"} /-->
 

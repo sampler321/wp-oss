@@ -11,12 +11,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Trucks, wheels, bearings and bolts in one box, matched to a deck width. We fit them free, and we show you how, so you can do it next time.</p>
+<p>Trucks, wheels, bearings and bolts in one box, matched to a deck width. We fit them free, and we show you how, so you can do it next time.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover","className":"is-style-halftone"} -->
+<div class="wp-block-column"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><a href="/product/undercarriage-kit-139-trucks-and-53mm-wheels/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/rail.jpg' ) ); ?>" alt="A flat rail and a concrete bank at an outdoor skatepark" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Everything under an 8.0 to 8.25in deck: trucks, wheels, bearings, bolts. We fit it free.</p>
+<p>Everything under an 8.0 to 8.25in deck: trucks, wheels, bearings, bolts. We fit it free.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-sticker"} -->
@@ -34,7 +34,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover","className":"is-style-halftone"} -->
+<div class="wp-block-column"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><a href="/product/undercarriage-kit-149-trucks-and-56mm-wheels/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bowl.jpg' ) ); ?>" alt="An empty concrete skate bowl covered in graffiti, trees around it" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -43,7 +43,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">For 8.5in decks and transition. Softer, bigger wheels for rough concrete.</p>
+<p>For 8.5in decks and transition. Softer, bigger wheels for rough concrete.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-sticker"} -->

@@ -2,12 +2,12 @@
 /**
  * Title: Work detail (painting 8/12, caption 4/12)
  * Slug: oil/work-detail
- * Categories: portfolio
+ * Categories: oil-work-page,portfolio
  */
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="Oil painting of an empty room with sunlight falling in squares across bare floorboards, 61 × 51 cm"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -30,7 +30,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Available, £4,800</p>
+<p class="">Available, £4,800</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -41,7 +41,7 @@
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Describe this work</summary><!-- wp:paragraph -->
-<p>The front room at nine in the morning in August. Two tall windows on the left throw squares of light across bare boards towards a closed panelled door. The walls are a warm brown grey. There is nobody in the room.</p>
+<p class="">The front room at nine in the morning in August. Two tall windows on the left throw squares of light across bare boards towards a closed panelled door. The walls are a warm brown grey. There is nobody in the room.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
 <!-- /wp:column --></div>

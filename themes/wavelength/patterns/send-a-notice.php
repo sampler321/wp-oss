@@ -5,7 +5,7 @@
  * Categories: contact
  */
 ?>
-<!-- wp:group {"layout":{"type":"default"},"anchor":"send"} -->
+<!-- wp:group {"anchor":"send","layout":{"type":"default"}} -->
 <div id="send" class="wp-block-group"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Send a notice</h3>
 <!-- /wp:heading -->
@@ -17,13 +17,9 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Text it to 07700 900 104.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Email <a href="mailto:notices@example.com">notices@example.com</a>.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Put it through the letterbox at the Old Co-op, 22 Market Street.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

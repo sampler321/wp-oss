@@ -2,17 +2,123 @@
 /**
  * Title: Dates (date, venue, city, tickets)
  * Slug: bpm/dates-table
- * Categories: text
+ * Categories: events
  */
 ?>
 <!-- wp:heading -->
 <h2 class="wp-block-heading">Dates</h2>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-dates"} -->
-<figure class="wp-block-table is-style-dates"><table class="has-fixed-layout"><thead><tr><th>Date</th><th>Venue</th><th>City</th><th></th></tr></thead><tbody><tr><td>Fri 3 Oct</td><td>Jasna 1</td><td>Warsaw</td><td><a href="https://example.com/tickets">Tickets</a></td></tr><tr><td>Sat 11 Oct</td><td>Hala Koszyki, Unsound opening</td><td>Kraków</td><td><a href="https://example.com/tickets">Tickets</a></td></tr><tr><td>Fri 24 Oct</td><td>Tresor, Globus floor</td><td>Berlin</td><td><a href="https://example.com/tickets">Tickets</a></td></tr><tr><td>Sat 8 Nov</td><td>Pogłos</td><td>Warsaw</td><td>Free before midnight</td></tr><tr><td>Sat 22 Nov</td><td>De School</td><td>Amsterdam</td><td><del>Cancelled</del></td></tr><tr><td>Fri 12 Dec</td><td>Ptaszarnia</td><td>Wrocław</td><td><a href="https://example.com/tickets">Tickets</a></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Fri 3 Oct</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
+<!-- wp:paragraph -->
+<p class="">Jasna 1</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Warsaw</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/tickets">Tickets</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Sat 11 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Hala Koszyki, Unsound opening</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Kraków</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/tickets">Tickets</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Fri 24 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Tresor, Globus floor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Berlin</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/tickets">Tickets</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Sat 8 Nov</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Pogłos</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Warsaw</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Free before midnight</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Sat 22 Nov</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">De School</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Amsterdam</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><del>Cancelled</del></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Fri 12 Dec</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ptaszarnia</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Wrocław</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/tickets">Tickets</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-x-small-font-size">Dates marked cancelled stay on the list for a month, so people who bought tickets can find them.</p>
 <!-- /wp:paragraph -->

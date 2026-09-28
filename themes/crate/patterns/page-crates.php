@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:paragraph -->
-<p>Every genre is split the way the racks are: new LPs, used LPs, used singles. Tap a format to see what is in that crate today.</p>
+<p class="">Every genre is split the way the racks are: new LPs, used LPs, used singles. Tap a format to see what is in that crate today.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"crate/genre-crates"} /-->

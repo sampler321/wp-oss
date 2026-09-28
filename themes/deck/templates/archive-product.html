@@ -1,11 +1,11 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:woocommerce/store-notices /-->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:woocommerce/store-notices /-->
 
 <!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","className":"is-style-ransom"} /-->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"align":"wide","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-sticker"} -->
 <p class="is-style-sticker"><a href="/product-category/decks/">Decks</a></p>
 <!-- /wp:paragraph -->
@@ -31,9 +31,11 @@
 
 <!-- wp:woocommerce/product-collection {"queryId":0,"query":{"perPage":16,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"align":"wide"} -->
 <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template -->
-<!-- wp:woocommerce/product-image {"showSaleBadge":true,"imageSizing":"single","isDescendentOfQueryLoop":true,"aspectRatio":"3/4","scale":"cover"} /-->
+<!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfQueryLoop":true,"aspectRatio":"3/4"} -->
+<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
+<!-- /wp:woocommerce/product-image -->
 
-<!-- wp:post-title {"level":2,"isLink":true,"__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+<!-- wp:post-title {"isLink":true,"__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
 
 <!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true} /-->
 <!-- /wp:woocommerce/product-template -->
@@ -48,7 +50,7 @@
 
 <!-- wp:woocommerce/product-collection-no-results -->
 <!-- wp:paragraph -->
-<p class="">Sold out on this rack. Ring the shop, there might be one in the back.</p>
+<p>Sold out on this rack. Ring the shop, there might be one in the back.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:woocommerce/product-collection-no-results --></div>
 <!-- /wp:woocommerce/product-collection --></main>

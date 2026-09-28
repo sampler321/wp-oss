@@ -7,3 +7,11 @@
 - Palette: petal pink #FFE3EA, aubergine #2B0B1E, poppy #C4221B, marigold #FFC72C, cobalt #1D4ED8, mint #BFEBD6, leaf #1F6B3A, cream #FFF6E9. The WooCommerce grid cycles the same five fields behind product photos. Variations: Dried (sand and rust), Studio (white, one colour), Night (near-black, ivory).
 - Core-block limit: WordPress applies one block style variation per block, so the per-bouquet colour fields use the Group's background and text colour presets, and the section style only handles the still-life layout.
 - The delivery-date picker and subscriptions plugins from the research are not part of the theme; the copy and patterns cover the rules in plain words.
+
+## Round 2
+
+- The home h1 was the motto "Order by 2pm, on the table by 6."; the hero now opens on this week's flowers, with the cut-off as the line under it.
+- Kit grew from 27 to 46 patterns, from sections on Wild at Heart, Grace & Thorn and Rebel Rebel: flowers by occasion on colour fields, sympathy flowers, office and restaurant flowers, events and installations (lightbox), a month-by-month seasonal list, a colour lean picker as pills, add-ons, how a wedding works, bridal bouquet styles, a wedding gallery, private workshops, what you make at a workshop, the team, delivery by bike, questions, an alternative "today's bouquets" hero and a photo strip.
+- Tables cut from seven to one (wedding prices). Delivery zones, subscriptions, workshops, hours, sizes and flowers-used are rows built from groups. No table on the home page.
+- New pages: Weddings and events, Occasions. Seven posts (five real weddings), each using the kit.
+- Image lightbox on globally.

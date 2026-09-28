@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Galley",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#E9EEF2",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#10345C",
+					"name": "Type black"
+				},
+				{
+					"slug": "accent",
+					"color": "#B8321F",
+					"name": "Proof red"
+				},
+				{
+					"slug": "surface",
+					"color": "#DAE2E9",
+					"name": "Galley"
+				},
+				{
+					"slug": "line",
+					"color": "#B6C4D1",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#3F5670",
+					"name": "Grey"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product card",
+	"slug": "card",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"radius": "22px",
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"css": "& figure{margin:0 0 .75rem}& img{aspect-ratio:1;object-fit:cover;width:100%}& h3,& h4{margin:0}& p{margin:.35rem 0 0}"
+	}
+}

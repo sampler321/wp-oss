@@ -2,7 +2,7 @@
 /**
  * Title: Who comes to your house
  * Slug: pipe/team
- * Categories: pipe,about
+ * Categories: about
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -17,12 +17,48 @@
 <h3 class="wp-block-heading">Who comes to your house</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Name</th><th>Does</th><th>Registered</th></tr></thead><tbody><tr><td>Niall Brennan</td><td>Boilers, installs, surveys</td><td>Gas Safe since 2009</td></tr><tr><td>Aisha Siddiqui</td><td>Repairs, landlords, the difficult ones</td><td>Gas Safe since 2014</td></tr><tr><td>Kacper Wróbel</td><td>Servicing and radiators</td><td>Gas Safe since 2021</td></tr><tr><td>Dom Hollis</td><td>Plumbing, leaks, cylinders</td><td>Plumber, not gas registered</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Niall Brennan, boilers, installs, surveys</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Niall started Brennan Heating in 2013 in a Transit with no shelves. Aisha joined in 2016 and runs the diary. Both still do jobs every day.</p>
+<p class="">Gas Safe since 2009</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Aisha Siddiqui, repairs, landlords, the difficult ones</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Gas Safe since 2014</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Kacper Wróbel, servicing and radiators</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Gas Safe since 2021</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Dom Hollis, plumbing, leaks, cylinders</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Plumber, not gas registered</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p class="">Niall started Brennan Heating in 2013 in a Transit with no shelves. Aisha joined in 2016 and runs the diary. Both still do jobs every day.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

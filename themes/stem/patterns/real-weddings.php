@@ -17,17 +17,17 @@
 <!-- /wp:group -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"15rem"}} -->
-<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4"} /-->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"15rem"}} -->
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4","scale":"cover"} /-->
 
-<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:post-title {"isLink":true,"level":3} /-->
 
 <!-- wp:post-excerpt {"excerptLength":16,"fontSize":"small"} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing here yet.</p>
+<p class="">Nothing here yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

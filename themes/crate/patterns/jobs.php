@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Saturdays 10.30 to 7 at Call Lane, £13.50 an hour. You will run the till, grade and price used stock, and play records all day. You need to know at least one genre well and be patient with people selling their dad's collection.</p>
+<p class="">Saturdays 10.30 to 7 at Call Lane, £13.50 an hour. You will run the till, grade and price used stock, and play records all day. You need to know at least one genre well and be patient with people selling their dad's collection.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

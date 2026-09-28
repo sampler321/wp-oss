@@ -44,3 +44,6 @@ Deck is distributed under the terms of the GNU GPL v2 or later.
 * Image carry.jpg: "Man carrying skateboard (Unsplash).jpg" by Brooke Cagle brookecagle, CC0, https://commons.wikimedia.org/wiki/File:Man_carrying_skateboard_(Unsplash).jpg
 * Image complete-green.jpg: "Skateboard backside.jpg" by Cynroya, CC0, https://commons.wikimedia.org/wiki/File:Skateboard_backside.jpg
 * Image complete-black.jpg: "Skateboard upside.jpg" by Cynroya, CC0, https://commons.wikimedia.org/wiki/File:Skateboard_upside.jpg
+* Image sunset-park.jpg: "Venice Beach Skatepark (Unsplash).jpg" by Matteo Paganelli matteopaga, CC0, https://commons.wikimedia.org/wiki/File:Venice_Beach_Skatepark_(Unsplash).jpg
+* Image stairs.jpg: "Skateboard Tricks (Unsplash).jpg" by Hector Bermudez hectorbermudez, CC0, https://commons.wikimedia.org/wiki/File:Skateboard_Tricks_(Unsplash).jpg
+* Image cruiser-wall.jpg: "Skateboard near a wall (Unsplash).jpg" by Imani Clovis imaniclovis, CC0, https://commons.wikimedia.org/wiki/File:Skateboard_near_a_wall_(Unsplash).jpg

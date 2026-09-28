@@ -1,10 +1,14 @@
 <?php
 /**
- * Title: Project page: drawing, story and credits
+ * Title: Project: drawing, story and facts
  * Slug: joint/project-sheet
- * Categories: featured
+ * Categories: projects
  */
 ?>
+<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","align":"wide","className":"is-style-plate"} -->
+<figure class="wp-block-image alignwide size-large is-style-plate"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/table.jpg' ) ); ?>" alt="Measured drawing of a small table from above, from the side and from the end, with dimensions in inches"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"58%"} -->
 <div class="wp-block-column" style="flex-basis:58%"><!-- wp:paragraph {"fontSize":"large"} -->
@@ -18,9 +22,65 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"is-style-title-block","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-title-block"><!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Client</td><td>Calderdale Council</td></tr><tr><td>Timber</td><td>Cherry, hardwax oil</td></tr><tr><td>Size</td><td>1800 / 900 / 740 mm each</td></tr><tr><td>Finished</td><td>May 2024</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<div class="wp-block-group is-style-title-block"><!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-spec-row"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-spec-row"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-label"} -->
+<p class="is-style-label">Client</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Calderdale Council</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-spec-row"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-spec-row"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-label"} -->
+<p class="is-style-label">Timber</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Cherry, hardwax oil</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-spec-row"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-spec-row"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-label"} -->
+<p class="is-style-label">Size</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">1800 / 900 / 740 mm each</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-spec-row"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-spec-row"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-label"} -->
+<p class="is-style-label">Finished</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">May 2024</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>They are the first library tables in thirty years that nobody has carved their name into. Yet.</p><cite>Joanne Pickles, Todmorden library, 2025</cite></blockquote></figure>
+<!-- /wp:pullquote -->

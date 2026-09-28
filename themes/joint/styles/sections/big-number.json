@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Big number",
+	"slug": "big-number",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|xx-large",
+			"fontWeight": "700",
+			"lineHeight": "1",
+			"letterSpacing": "-0.03em"
+		},
+		"css": "&{font-variant-numeric:tabular-nums lining-nums}"
+	}
+}

@@ -1,0 +1,91 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Ronzino\", sans-serif",
+      "name": "Ronzino",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/ronzino-Regular.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "italic",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/ronzino-Oblique.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/ronzino-Medium.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "italic",
+          "fontWeight": "500",
+          "src": [
+            "file:./assets/fonts/ronzino-MediumOblique.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/ronzino-Bold.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Ronzino",
+          "fontStyle": "italic",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/ronzino-BoldOblique.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Ronzino\", sans-serif",
+      "name": "Ronzino (text)",
+      "slug": "body"
+    },
+    {
+      "fontFamily": "\"Petrona\", serif",
+      "name": "Petrona",
+      "slug": "accent",
+      "fontFace": [
+        {
+          "fontFamily": "Petrona",
+          "fontStyle": "italic",
+          "fontWeight": "100 900",
+          "src": [
+            "file:./assets/fonts/petrona-italic-100_900.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Petrona",
+          "fontStyle": "normal",
+          "fontWeight": "100 900",
+          "src": [
+            "file:./assets/fonts/petrona-normal-100_900.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Ronzino by Collletttivo, SIL Open Font License 1.1, https://github.com/collletttivo/ronzino",
+    "Petrona (Google Fonts), https://github.com/google/fonts/tree/main/ofl/petrona"
+  ]
+}

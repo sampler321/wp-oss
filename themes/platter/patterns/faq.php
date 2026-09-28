@@ -2,7 +2,7 @@
 /**
  * Title: Questions people ask
  * Slug: platter/faq
- * Categories: platter,text
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

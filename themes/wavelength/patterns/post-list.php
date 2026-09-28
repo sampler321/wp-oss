@@ -9,9 +9,9 @@
 <!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-rule-top"><!-- wp:post-date {"format":"l j F, g:ia","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+<div class="wp-block-group is-style-rule-top"><!-- wp:post-date {"format":"l j F, g:ia"} /-->
 
-<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
 
 <!-- wp:post-excerpt {"moreText":"","excerptLength":30} /--></div>
 <!-- /wp:group -->
@@ -27,7 +27,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing matches that yet.</p>
+<p class="">Nothing matches that yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->

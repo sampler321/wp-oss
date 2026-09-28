@@ -2,7 +2,7 @@
 /**
  * Title: Lunch photo pair
  * Slug: platter/lunch-photo
- * Categories: platter,gallery
+ * Categories: menu
  */
 ?>
 <!-- wp:gallery {"columns":2,"linkTo":"none","align":"wide"} -->

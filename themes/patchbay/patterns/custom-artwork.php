@@ -12,11 +12,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>For bands, shops and gifts. Any of our pedals in your colours and artwork, from ten units, or one for a present if the artwork is yours.</p>
+<p class="">For bands, shops and gifts. Any of our pedals in your colours and artwork, from ten units, or one for a present if the artwork is yours.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Lead time: 8 to 12 weeks. Payment upfront.</strong></p>
+<p class=""><strong>Lead time: 8 to 12 weeks. Payment upfront.</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Your truck axle should be about the same width as your deck, give or take a quarter inch. Too narrow and it feels twitchy; too wide and the wheels stick out and catch.</p>
+<p>Your truck axle should be about the same width as your deck, give or take a quarter inch. Too narrow and it feels twitchy; too wide and the wheels stick out and catch.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -28,8 +28,76 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Deck width</th><th>Truck axle</th><th>Wheels</th></tr></thead><tbody><tr><td>7.25 to 7.5in</td><td>114 to 129mm</td><td>50 to 52mm</td></tr><tr><td>7.75 to 8.0in</td><td>129 to 139mm</td><td>52 to 54mm</td></tr><tr><td>8.0 to 8.25in</td><td>139mm</td><td>53 to 55mm</td></tr><tr><td>8.25 to 8.5in</td><td>144 to 149mm</td><td>54 to 56mm</td></tr><tr><td>8.5 to 9.0in</td><td>149 to 159mm</td><td>56 to 58mm</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>7.25 to 7.5in</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>114 to 129mm trucks</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>50 to 52mm wheels</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>7.75 to 8.0in</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>129 to 139mm trucks</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>52 to 54mm wheels</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>8.0 to 8.25in</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>139mm trucks</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>53 to 55mm wheels</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>8.25 to 8.5in</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>144 to 149mm trucks</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>54 to 56mm wheels</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>8.5 to 9.0in</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>149 to 159mm trucks</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>56 to 58mm wheels</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

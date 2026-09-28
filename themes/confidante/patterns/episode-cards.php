@@ -22,18 +22,18 @@
 <div class="wp-block-group"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1","className":"is-style-square"} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:post-terms {"term":"category","separator":", "} /-->
+<div class="wp-block-group"><!-- wp:post-terms {"term":"category"} /-->
 
-<!-- wp:post-date {"format":"j M Y"} /--></div>
+<!-- wp:post-date {"format":"j M Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /--></div>
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p class="">Nothing here yet.</p>
+<p>Nothing here yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></section>

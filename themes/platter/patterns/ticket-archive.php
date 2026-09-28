@@ -2,7 +2,7 @@
 /**
  * Title: Ticket rail (inherits the page query)
  * Slug: platter/ticket-archive
- * Categories: platter,query
+ * Categories: case-study
  * Inserter: no
  */
 ?>

@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Bring in a complete you have outgrown and we take £15 off a new one. Old boards get cleaned up and go to the Saturday learn-to-skate sessions at the Level.</p>
+<p>Bring in a complete you have outgrown and we take £15 off a new one. Old boards get cleaned up and go to the Saturday learn-to-skate sessions at the Level.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

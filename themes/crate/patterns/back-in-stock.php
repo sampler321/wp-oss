@@ -13,43 +13,43 @@
 <!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"7rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Arthur Russell</p>
+<p class="">Arthur Russell</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>World of Echo, LP</p>
+<p class="">World of Echo, LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£27</p>
+<p class="">£27</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"7rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Various</p>
+<p class="">Various</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Studio One Rockers, 2LP</p>
+<p class="">Studio One Rockers, 2LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£26</p>
+<p class="">£26</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"7rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Beverley Glenn-Copeland</p>
+<p class="">Beverley Glenn-Copeland</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Keyboard Fantasies, LP</p>
+<p class="">Keyboard Fantasies, LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£26</p>
+<p class="">£26</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

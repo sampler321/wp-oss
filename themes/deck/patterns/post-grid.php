@@ -7,12 +7,12 @@
  */
 ?>
 <!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"align":"wide"} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
-<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","scale":"cover","className":"is-style-halftone"} /-->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","className":"is-style-halftone"} /-->
 
-<!-- wp:post-date /-->
+<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
 
-<!-- wp:post-title {"isLink":true,"level":2,"fontSize":"large"} /-->
+<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
 
 <!-- wp:post-excerpt {"excerptLength":20} /-->
 <!-- /wp:post-template -->
@@ -27,7 +27,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p class="">Nothing matches that yet.</p>
+<p>Nothing matches that yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->

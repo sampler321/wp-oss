@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tilted left",
+	"slug": "tilt-left",
+	"blockTypes": [
+		"core/image",
+		"core/group"
+	],
+	"styles": {
+		"css": "&{transform:rotate(-2.5deg)}"
+	}
+}

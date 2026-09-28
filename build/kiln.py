@@ -13,6 +13,19 @@ from blocks import *
 set_theme('kiln')
 S = THEME['slug']
 
+CATS = {'kiln-shop': 'Pottery: shop and updates', 'kiln-pots': 'Pottery: pots and product details', 'kiln-opening': 'Pottery: kiln openings',
+        'kiln-process': 'Pottery: process and glazes', 'kiln-log': 'Pottery: kiln log', 'kiln-about': 'Pottery: about, stockists and press',
+        'kiln-contact': 'Pottery: newsletter, contact and notices', 'kiln-pages': 'Pottery: page layouts'}
+CATMAP = {'featured': 'kiln-opening', 'shop': 'kiln-pots', 'text': 'kiln-opening', 'posts': 'kiln-log', 'portfolio': 'kiln-process', 'media': 'kiln-process',
+          'about': 'kiln-about', 'testimonials': 'kiln-about', 'contact': 'kiln-contact', 'call-to-action': 'kiln-contact', 'banner': 'kiln-contact',
+          'shop-closed-slab': 'kiln-shop', 'shop-open-slab': 'kiln-shop', 'status-bar': 'kiln-shop', 'last-update-grid': 'kiln-shop', 'glaze-tiles': 'kiln-process',
+          'care-card': 'kiln-pots', 'postage-note': 'kiln-pots'}
+_pattern = pattern
+def pattern(slug, title, cats, body, **kw):
+    first = cats.split(',')[0]
+    c = 'kiln-pages' if kw.get('block_types') == 'core/post-content' else CATMAP.get(slug) or CATMAP.get(first, 'kiln-shop')
+    return _pattern(slug, title, c + ',' + cats, body, **kw)
+
 
 def wjson(rel, data):
     write(rel, json.dumps(data, indent='\t', ensure_ascii=False))
@@ -81,6 +94,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 8rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -276,6 +290,11 @@ def pot_card(p, link='/shop/'):
                  **({'className': 'is-style-sold-out'} if sold else {}))
 
 # ------------------------------------------------------------------ patterns
+def label_rows(rows):
+    return group(J(*[columns(('28%', para(k, fontSize='small', style={'typography': {'fontWeight': '600'}})), (None, para(v, fontSize='small')), isStackedOnMobile=False,
+                             style={'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}, 'spacing': {'blockGap': {'left': sp(30)}, 'padding': {'bottom': sp(10)}}}) for k, v in rows]),
+                 layout={'type': 'default'}, style={'spacing': {'blockGap': sp(20)}})
+
 pattern('shop-closed-slab', 'Shop closed: next update (signature)', 'featured,shop', group(columns(
     ('58%', J(para('The shop is closed', fontSize='large', style={'typography': {'fontWeight': '600'}}),
               heading('Next update: Sunday 18 October, 7pm', 1),
@@ -308,7 +327,7 @@ pattern('product-card', 'Pot card (sold out, dimmed)', 'shop', pot_card(POTS[1])
         description='A square photo, name and price. Sold pots keep their card and the photo is dimmed.')
 
 pattern('product-detail', 'Pot details (size, clay, glaze, care)', 'shop', J(
-    table([['Size', POTS[1]['size']], ['Clay', POTS[1]['clay']], ['Glaze', POTS[1]['glaze']], ['Firing', 'Number %s, wood kiln, 3 to 5 October 2026' % POTS[1]['fir']], ['Care', POTS[1]['care']]]),
+    label_rows([['Size', POTS[1]['size']], ['Clay', POTS[1]['clay']], ['Glaze', POTS[1]['glaze']], ['Firing', 'Number %s, wood kiln, 3 to 5 October 2026' % POTS[1]['fir']], ['Care', POTS[1]['care']]]),
     pattern_ref('firing-number')))
 
 pattern('firing-number', 'Firing number note', 'shop', para(
@@ -331,8 +350,9 @@ pattern('notify-back', 'Notify me when this form is back', 'shop,call-to-action'
 pattern('kiln-opening-dates', 'Kiln opening dates with hours per day', 'featured', group(J(
     columns(
         ('40%', J(para('Autumn kiln opening', fontSize='large', style={'typography': {'fontWeight': '600'}}), heading('Saturday 7 and Sunday 8 November', 2), para('Two days at the pottery, straight after the autumn wood firing. About 200 pots, a lot of them only sold here.', fontSize='large'))),
-        (None, J(table([['Saturday 7 November', '10am to 5pm', 'Doors open at 10. No queueing before 9, the lane is narrow.'],
-                        ['Sunday 8 November', '11am to 4pm', 'Quieter. Seconds table goes out at 2pm.']], head=['Day', 'Open', 'Notes']),
+        (None, J(columns(*[(None, J(heading(d, 3, fontSize='large'), para(h, fontSize='x-large', fontFamily='display', style={'typography': {'fontWeight': '700'}}), para(n)))
+                           for d, h, n in [('Saturday 7 November', '10am to 5pm', 'Doors open at 10. No queueing before 9, the lane is narrow.'),
+                                           ('Sunday 8 November', '11am to 4pm', 'Quieter. Seconds table goes out at 2pm.')]], style={'spacing': {'blockGap': {'left': sp(50)}}}),
                  para('Lowfold, Cowgill, Dent LA10 5RL. Parking in the field opposite, wellies advised. Card and cash.', fontSize='small'))),
         align='wide', style={'spacing': {'blockGap': {'left': sp(70)}}})),
     className='is-style-biscuit', align='full'),
@@ -389,17 +409,15 @@ pattern('process-sequence', 'Process: throwing, trimming, firing', 'portfolio,ga
 
 pattern('stockists', 'Stockists (shops and galleries)', 'about', J(
     heading('Where to see the pots in person', 2, fontSize='x-large'),
-    table([['Sedbergh', 'Rawthey Mill Makers', 'Mugs and bowls, restocked after each firing'],
-           ['Kendal', 'Stricklandgate Craft Shop', 'Tea bowls and small cups'],
-           ['Leeds', 'Briggate Clay Gallery', 'Moon jars, when there are any'],
-           ['Edinburgh', 'Leith Street Makers', 'Wood-fired bottles and jars']], head=['Town', 'Shop', 'Usually has'])))
+    group(J(*[group(J(para(t, fontSize='small', textColor='muted'), heading(n, 3, fontSize='large'), para(h)), style={'border': {'top': {'color': 'var:preset|color|contrast', 'width': '2px', 'style': 'solid'}}, 'spacing': {'padding': {'top': sp(30)}}})
+              for t, n, h in [('Sedbergh', 'Rawthey Mill Makers', 'Mugs and bowls, restocked after each firing'), ('Kendal', 'Stricklandgate Craft Shop', 'Tea bowls and small cups'),
+                              ('Leeds', 'Briggate Clay Gallery', 'Moon jars, when there are any'), ('Edinburgh', 'Leith Street Makers', 'Wood-fired bottles and jars')]]),
+          layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '13rem'}, style={'spacing': {'blockGap': sp(40)}})))
 
 pattern('exhibitions', 'Exhibitions list', 'about', J(
     heading('Exhibitions', 3),
-    table([['2026', 'Fire and Ash, group show', 'Rawthey Mill Makers, Sedbergh'],
-           ['2025', 'Northern potters\' fair', 'York'],
-           ['2024', 'Midlands pottery fair', 'Nottinghamshire'],
-           ['2023', 'Moon jars, solo', 'Briggate Clay Gallery, Leeds']])))
+    lst(['2026, <em>Fire and Ash</em>, group show, Rawthey Mill Makers, Sedbergh', '2025, Northern potters\' fair, York',
+         '2024, Midlands pottery fair, Nottinghamshire', '2023, <em>Moon jars</em>, solo, Briggate Clay Gallery, Leeds'])))
 
 pattern('appointment-line', 'Shop by appointment line', 'contact', para(
     'Local? You can buy from the workshop shelves any time of year by appointment. Phone 015396 25518 the day before, and if nobody answers I\'m probably in the kiln.',
@@ -437,10 +455,10 @@ pattern('notice-holiday', 'Notice: workshop closed', 'banner', group(
 
 # page layouts
 pattern('kiln-opening-page', 'Page: kiln opening', 'featured', J(
-    pattern_ref('kiln-opening-dates'), spacer(), pattern_ref('kiln-opening-expect'), pattern_ref('video-block'), pattern_ref('press-quote')),
+    pattern_ref('kiln-opening-dates'), spacer(), pattern_ref('kiln-opening-expect'), pattern_ref('find-the-pottery'), pattern_ref('video-block'), pattern_ref('seconds-sale'), pattern_ref('press-quote')),
     block_types='core/post-content')
 pattern('process-page', 'Page: process and about', 'about', J(
-    pattern_ref('process-sequence'), spacer(), pattern_ref('glaze-tiles'), spacer(), pattern_ref('about-potter'), pattern_ref('care-card')),
+    pattern_ref('process-sequence'), spacer(), pattern_ref('glaze-tiles'), spacer(), pattern_ref('glaze-closeups'), spacer(), pattern_ref('about-potter'), pattern_ref('maker-marks'), pattern_ref('care-card')),
     block_types='core/post-content')
 pattern('stockists-page', 'Page: stockists and exhibitions', 'about', J(
     pattern_ref('stockists'), pattern_ref('exhibitions'), pattern_ref('appointment-line')), block_types='core/post-content')
@@ -448,12 +466,105 @@ pattern('newsletter-page', 'Page: newsletter', 'call-to-action', J(
     para('The shop opens four times a year and usually sells out in an evening. The newsletter is the fair way to hear first: everyone on it gets the full list at the same time, two days before the update.', fontSize='large'),
     pattern_ref('newsletter-signup'), pattern_ref('notify-back'), pattern_ref('postage-note')), block_types='core/post-content')
 
+
+# ------------------------------------------------------------------ round 2: more of the kit
+pattern('hero-kiln-opening', 'Opener: kiln opening this weekend', 'featured', group(columns(
+    ('58%', J(para('This weekend at the pottery', fontSize='large', style={'typography': {'fontWeight': '600'}}),
+              heading('Kiln opening, 7 and 8 November', 1),
+              para('About 200 pots from the autumn wood firing, most of them only sold here. Saturday 10am to 5pm, Sunday 11am to 4pm.', fontSize='large'),
+              buttons(('How to find us', '/kiln-opening/'), ('What sold last time', '/shop/')))),
+    ('42%', image('jar-ash.jpg', 'A round ribbed jar with streaky tan and green glaze and a red lid', 'Ash jars come out of the front of the kiln')),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': sp(70)}}}), className='is-style-celadon-slab', align='full'),
+    description='Swap this in the week before a kiln opening.')
+
+pattern('pot-of-the-week', 'Pot of the week', 'shop', columns(
+    ('45%', image('teapot.jpg', 'A squat white teapot with loose brushed grey lines and a short spout')),
+    (None, J(para('From the workshop shelf', fontSize='large', style={'typography': {'fontWeight': '600'}}),
+             heading('Teapot, brushed iron', 2, fontSize='x-large'),
+             para('Holds 800 ml, pours clean. I test every spout with a full pot over the sink before it leaves.'),
+             label_rows([['Size', 'H 13 cm, holds 800 ml'], ['Glaze', 'White with brushed iron'], ['Firing', '40, gas kiln']]),
+             para('£190. The next ones go up in the October update.'))),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}))
+
+pattern('glaze-closeups', 'Glaze close-ups (lightbox)', 'portfolio,gallery', J(
+    heading('Up close', 2, fontSize='x-large'),
+    gallery([('bowl-celadon.jpg', 'Celadon pooling green in carved leaves', 'Celadon in the carving'),
+             ('tea-bowl.jpg', 'Tenmoku breaking rust at the rim', 'Tenmoku at the rim'),
+             ('vase-ash.jpg', 'Red flashing on unglazed clay', 'Flashing from the fire'),
+             ('bowl-stamped.jpg', 'White slip dots under clear celadon', 'Stamped slip')], columns=4, align='wide')))
+
+pattern('maker-marks', 'Maker\'s stamp and firing number', 'shop', columns(
+    (None, J(heading('How to read the foot', 3),
+             lst(['The round stamp is mine: an L inside a circle.', 'The scratched number is the firing.', 'A small dot means it was a second, sold at the kiln opening.']))),
+    (None, image('trimming.jpg', 'A leather-hard mug seen from above next to lumps of clay and a stamp')),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}))
+
+pattern('seconds-sale', 'Seconds table', 'shop', group(J(
+    heading('Seconds', 3),
+    para('Pots with a glaze skip, a small crawl or a wobble go on the seconds table at the kiln opening, at half price. They are fine to use. They are never sold online.')),
+    className='is-style-biscuit'))
+
+pattern('no-commissions', 'Commissions (a clear limit)', 'contact', para(
+    'I don\'t take commissions for dinner services or wedding lists. Forty matching plates from a wood kiln is not a promise I can keep. Single pieces for a special birthday, sometimes: ask.',
+    fontSize='large'))
+
+pattern('classes', 'Throwing lessons', 'call-to-action', columns(
+    ('45%', image('wheel.jpg', 'Three potter\'s wheels in a workshop with stools upturned on the splash pans')),
+    (None, J(heading('Throwing lessons, two people at a time', 3),
+             para('Wednesday afternoons from January to March. Three hours on the wheel, then I trim, glaze and fire your two best pots and post them to you.'),
+             lst(['£120 per person, clay and firing included', 'Beginners welcome, no children under 14', 'Wear clothes you don\'t mind']),
+             buttons(('Ask for a Wednesday', 'mailto:nell@example.com?subject=Throwing%20lesson')))),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}))
+
+pattern('faq', 'Questions about pots and orders', 'text', J(
+    heading('Questions', 2, fontSize='x-large'),
+    details('Why is everything sold out?', para('I make about 600 pots a year and the shop opens four times. Most updates sell out in an evening. The newsletter gets the list two days early.')),
+    details('Can I reserve a pot?', para('No, it wouldn\'t be fair on the newsletter list. At the kiln opening you can put a name on a pot for an hour.')),
+    details('Do you post abroad?', para('Europe, yes, by weight. Outside Europe, no: too many breakages.')),
+    details('Is it food safe?', para('Everything with a glazed inside is. Unglazed wood-fired pieces are for flowers.'))))
+
+pattern('find-the-pottery', 'Find the pottery', 'contact', columns(
+    (None, J(heading('Finding Lowfold', 3),
+             para('Lowfold, Cowgill, Dent, Cumbria LA10 5RL. From Dent village, follow the dale road east for three miles. We are the white byre after the chapel, on the left.'),
+             para('Dent station is four miles away and uphill. Phone and we might fetch you.'))),
+    (None, J(heading('Opening', 3), lst(['Kiln openings: spring and autumn, dates above', 'Other times by appointment, phone the day before', '015396 25518']))),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(60)}}}))
+
+pattern('quotes-row', 'Quotes from buyers', 'testimonials', columns(
+    (None, quote('The mug arrived in more wood wool than I have ever seen. Not a chip.', 'Hamid, Glasgow, bought in the June update')),
+    (None, quote('We drove up from Leeds for the kiln opening and stayed for the kiln door. Worth the lane.', 'Shona and Dev, November 2025')),
+    align='wide', style={'spacing': {'blockGap': {'left': sp(50)}}}))
+
+pattern('packing-note', 'How pots are packed', 'shop', group(J(
+    heading('Packing', 3),
+    para('Paper, wood wool and a double-wall box. No plastic. Boxes are reused from the village shop, so yours might say crisps.')),
+    className='is-style-rule-top'))
+
+pattern('firing-feature', 'Latest firing, large', 'posts,query', query(
+    columns(('55%', dyn('post-featured-image', isLink=True, aspectRatio='4/3')),
+            (None, J(dyn('post-date'), dyn('post-title', isLink=True, level=2, fontSize='xx-large'), dyn('post-excerpt', excerptLength=45, moreText='Read the firing notes'))),
+            verticalAlignment='center', style={'spacing': {'blockGap': {'left': sp(60)}}}),
+    per_page=1, align='wide', query_id=7))
+
+pattern('firing-summary', 'Firing summary (hours, wood, losses)', 'posts', group(columns(
+    *[(None, J(para(k, fontSize='small'), para(v, fontSize='x-large', fontFamily='display', style={'typography': {'fontWeight': '700'}}))) for k, v in [
+        ('Firing time', '52 hours'), ('Wood', '11 tonnes'), ('Top temperature', 'cone 12'), ('Seconds', '1 in 12')]]),
+    className='is-style-biscuit'), description='For a firing post: the four numbers people ask about.')
+
+pattern('instagram-strip', 'Workshop photos strip', 'portfolio,gallery', gallery([
+    ('moon-jar.jpg', 'A large white moon jar', ''), ('mug.jpg', 'A tall green mug', ''), ('cup-jun.jpg', 'A small blue cup', ''),
+    ('jar-celadon.jpg', 'A tall celadon jar with spouts', ''), ('teapot.jpg', 'A white teapot', ''), ('bowl-stamped.jpg', 'A stamped bowl', '')], columns=6, align='full'))
+
+pattern('faq-page', 'Page: questions', 'text', J(pattern_ref('faq'), spacer(), pattern_ref('maker-marks'), pattern_ref('seconds-sale'), pattern_ref('packing-note'), pattern_ref('no-commissions')), block_types='core/post-content')
+pattern('visit-page', 'Page: visit and lessons', 'contact', J(pattern_ref('find-the-pottery'), spacer(), pattern_ref('classes'), pattern_ref('quotes-row')), block_types='core/post-content')
+
 # ------------------------------------------------------------------ templates
 mp = {'spacing': {'padding': {'top': sp(50), 'bottom': sp(70)}}}
 write('templates/front-page.html', page_template(J(
     pattern_ref('shop-closed-slab'), spacer('var:preset|spacing|70'), pattern_ref('last-update-grid'), spacer('var:preset|spacing|70'),
     pattern_ref('kiln-opening-dates'), spacer('var:preset|spacing|70'), pattern_ref('glaze-tiles'), spacer('var:preset|spacing|70'),
-    pattern_ref('firing-log'), spacer('var:preset|spacing|70'), pattern_ref('newsletter-signup')),
+    pattern_ref('firing-log'), spacer('var:preset|spacing|70'), pattern_ref('quotes-row'), spacer('var:preset|spacing|70'), pattern_ref('newsletter-signup'),
+    pattern_ref('instagram-strip')),
     header='header-plain', style={'spacing': {'blockGap': '0'}}))
 write('templates/home.html', page_template(J(
     heading('Kiln log', 1, align='wide'),
@@ -500,7 +611,7 @@ FIRINGS = [
 posts = []
 for t, d, img, ex, paras in FIRINGS:
     posts.append({'title': t, 'date': d, 'category': 'firings', 'image': img, 'excerpt': ex, 'template': 'single-firing',
-                  'content': J(para(ex, fontSize='large'), *[para(x) for x in paras])})
+                  'content': J(para(ex, fontSize='large'), para(paras[0]), image(img, 'Pot from %s' % t.split(':')[0].lower(), 'From %s' % t.split(':')[0].lower()), *[para(x) for x in paras[1:]])})
 
 products = []
 for p in POTS:
@@ -518,14 +629,34 @@ demo = {
         {'slug': 'process', 'title': 'Process', 'pattern': 'kiln/process-page', 'template': 'page-wide'},
         {'slug': 'stockists', 'title': 'Stockists', 'pattern': 'kiln/stockists-page', 'template': 'page-wide'},
         {'slug': 'newsletter', 'title': 'Newsletter', 'pattern': 'kiln/newsletter-page', 'template': 'page-wide'},
+        {'slug': 'questions', 'title': 'Questions', 'pattern': 'kiln/faq-page', 'template': 'page-wide'},
+        {'slug': 'visit', 'title': 'Visit and lessons', 'pattern': 'kiln/visit-page', 'template': 'page-wide'},
     ],
     'posts': posts,
     'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'Kiln opening', 'url': '/kiln-opening/'}, {'label': 'Process', 'url': '/process/'},
-            {'label': 'Kiln log', 'url': '/kiln-log/'}, {'label': 'Stockists', 'url': '/stockists/'}, {'label': 'Newsletter', 'url': '/newsletter/'}],
+            {'label': 'Kiln log', 'url': '/kiln-log/'}, {'label': 'Stockists', 'url': '/stockists/'}, {'label': 'Visit', 'url': '/visit/'},
+            {'label': 'Questions', 'url': '/questions/'}, {'label': 'Newsletter', 'url': '/newsletter/'}],
     'currency': 'GBP',
     'products': products,
 }
 os.makedirs('demos/kiln', exist_ok=True)
 with open('demos/kiln/content.json', 'w', encoding='utf-8') as f:
     json.dump(demo, f, indent=1, ensure_ascii=False)
+write('functions.php', """<?php
+/**
+ * Kiln: pattern categories only.
+ *
+ * @package kiln
+ */
+
+add_action(
+	'init',
+	function () {
+		foreach ( array(
+""" + "\n".join("\t\t\t'%s' => '%s'," % (k, v) for k, v in CATS.items()) + """
+		) as $slug => $label ) {
+			register_block_pattern_category( $slug, array( 'label' => $label ) );
+		}
+	}
+);""")
 print('kiln built')

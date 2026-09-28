@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>If your basket has a pre-order and something in stock, we send the in-stock part now and the pre-order when it is made. You pay postage once. Your order page says which parcel is which.</p>
+<p class="">If your basket has a pre-order and something in stock, we send the in-stock part now and the pre-order when it is made. You pay postage once. Your order page says which parcel is which.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

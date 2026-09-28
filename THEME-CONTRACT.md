@@ -40,7 +40,7 @@ themes/<slug>/
 `style.css` header fields: Theme Name, Theme URI (https://github.com/sampler321/wp-oss), Author (WP-OSS), Description (one plain sentence, who it is for), Version 1.0.0, Requires at least 6.7, Tested up to 6.9, Requires PHP 7.4, License GPL-2.0-or-later, License URI, Text Domain `<slug>`, Tags.
 
 ## 4. Patterns and demo content
-- **At least 25 patterns** per theme, mostly from the research entry's Patterns list, including the Signature pattern and at least 3 Nice-to-haves built as patterns (e.g. a scheduled notice bar, a printable price list, find us, credentials row).
+- **At least 40 patterns** per theme (round 2, see REVISION-BRIEF.md), mostly from the research entry's Patterns list, including the Signature pattern and at least 3 Nice-to-haves built as patterns (e.g. a scheduled notice bar, a printable price list, find us, credentials row).
 - Page-layout patterns (`Block Types: core/post-content`) for each demo page, so "Add page" offers them.
 - Copy is written in the owner's voice following `research/ANTI-AI-WRITING.md`: named people, real-feeling places and numbers, one opinion, one limit. **Zero em dashes.** Sentence case headings and buttons. `copylint` must pass with no S5 findings.
 - Images: pattern images use `<?php echo esc_url( get_theme_file_uri( 'assets/images/x.jpg' ) ); ?>` with literal, specific alt text.

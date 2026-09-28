@@ -9,3 +9,5 @@
 <!-- wp:pattern {"slug":"patchbay/contact-details"} /-->
 
 <!-- wp:pattern {"slug":"patchbay/custom-artwork"} /-->
+
+<!-- wp:pattern {"slug":"patchbay/gift-voucher"} /-->

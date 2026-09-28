@@ -11,6 +11,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Missed it? Email <a href="mailto:merch@example.com?subject=Second%20batch">merch@example.com</a> with the item name. If enough people ask, we make a second batch and email you first. Asking is free, and we only use your email for this.</p>
+<p class="">Missed it? Email <a href="mailto:merch@example.com?subject=Second%20batch">merch@example.com</a> with the item name. If enough people ask, we make a second batch and email you first. Asking is free, and we only use your email for this.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -2,7 +2,7 @@
 /**
  * Title: Gelato for restaurants
  * Slug: scoop/wholesale
- * Categories: scoop,services
+ * Categories: events
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -15,12 +15,28 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>We make 5-litre pans for eleven restaurants in Edinburgh, delivered on Tuesday and Friday mornings. Fior di latte, pistachio, one sorbet and a flavour made for your menu.</p>
+<p class="">We make 5-litre pans for eleven restaurants in Edinburgh, delivered on Tuesday and Friday mornings. Fior di latte, pistachio, one sorbet and a flavour made for your menu.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>What</th><th>Price</th></tr></thead><tbody><tr><td>5 litre pan, classic</td><td>£48</td></tr><tr><td>5 litre pan, made for you</td><td>£56, minimum 3 pans a month</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">5 litre pan, classic</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£48</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">5 litre pan, made for you</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£56, minimum 3 pans a month</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"is-style-spec"} -->
 <p class="is-style-spec">We are full until January. Email to go on the list.</p>

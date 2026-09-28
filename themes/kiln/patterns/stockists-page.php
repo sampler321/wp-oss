@@ -2,7 +2,7 @@
 /**
  * Title: Page: stockists and exhibitions
  * Slug: kiln/stockists-page
- * Categories: about
+ * Categories: kiln-pages,about
  * Block Types: core/post-content
  */
 ?>

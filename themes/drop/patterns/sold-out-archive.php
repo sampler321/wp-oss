@@ -11,12 +11,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Everything we have made and sold out of, kept up as a record. Some of it comes back as a second batch if enough people ask.</p>
+<p class="">Everything we have made and sold out of, kept up as a record. Some of it comes back as a second batch if enough people ask.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/crowd.jpg' ) ); ?>" alt="A crowd under blue stage lights"/></figure>
 <!-- /wp:image -->
 
@@ -25,7 +25,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">flood tee</p>
+<p class="has-large-font-size has-display-font-family">flood tee</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -34,7 +34,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tote.jpg' ) ); ?>" alt="A canvas tote bag held up by one handle"/></figure>
 <!-- /wp:image -->
 
@@ -43,7 +43,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">tour tote</p>
+<p class="has-large-font-size has-display-font-family">tour tote</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -52,7 +52,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bass.jpg' ) ); ?>" alt="Two guitarists in a small bar"/></figure>
 <!-- /wp:image -->
 
@@ -61,7 +61,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">lighthouse longsleeve</p>
+<p class="has-large-font-size has-display-font-family">lighthouse longsleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -70,7 +70,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tape.jpg' ) ); ?>" alt="Two cassette tapes on a dark table"/></figure>
 <!-- /wp:image -->
 
@@ -79,7 +79,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">demo tape</p>
+<p class="has-large-font-size has-display-font-family">demo tape</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -88,7 +88,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/amp.jpg' ) ); ?>" alt="The front of a guitar amplifier with its knobs"/></figure>
 <!-- /wp:image -->
 
@@ -97,7 +97,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">amp tee</p>
+<p class="has-large-font-size has-display-font-family">amp tee</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -106,7 +106,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/live.jpg' ) ); ?>" alt="A drummer under stage lights"/></figure>
 <!-- /wp:image -->
 
@@ -115,7 +115,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">holdall tees</p>
+<p class="has-large-font-size has-display-font-family">holdall tees</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -125,6 +125,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><a href="/past-drops/">The story of each drop</a></p>
+<p class=""><a href="/past-drops/">The story of each drop</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

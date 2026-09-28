@@ -5,7 +5,7 @@
  * Categories: featured
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<!-- wp:columns {"align":"wide","verticalAlignment":"center"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/townhall.jpg' ) ); ?>" alt="The ballroom of Todmorden Town Hall with a painted ceiling, tall windows and a wooden floor"/><figcaption class="wp-element-caption">Todmorden Town Hall, where Town Hall Talk goes out live</figcaption></figure>
@@ -18,11 +18,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>On the first Tuesday of the month we broadcast live from Todmorden Town Hall. Two councillors, one officer, and questions from whoever turns up or rings in. Nobody gets to make a speech.</p>
+<p class="">On the first Tuesday of the month we broadcast live from Todmorden Town Hall. Two councillors, one officer, and questions from whoever turns up or rings in. Nobody gets to make a speech.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Next one: Tuesday 7 October, 7pm, on bin collections and the Walsden bus. Doors at 6.30pm, free, step-free entrance on Rochdale Road.</p>
+<p class="">Next one: Tuesday 7 October, 7pm, on bin collections and the Walsden bus. Doors at 6.30pm, free, step-free entrance on Rochdale Road.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

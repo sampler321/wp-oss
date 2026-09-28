@@ -1,0 +1,11 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Contact sheet (1px ruled cells)",
+	"slug": "sheet",
+	"blockTypes": [
+		"core/group",
+		"core/post-template"
+	],
+	"styles": {}
+}

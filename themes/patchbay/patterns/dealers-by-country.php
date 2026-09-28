@@ -9,22 +9,164 @@
 <h3 class="wp-block-heading">United Kingdom</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>City</th><th>Shop</th><th>Link</th></tr></thead><tbody><tr><td>Leeds</td><td>Northern Tone Supply, Call Lane</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Manchester</td><td>Brick Wall Guitars, Oldham Street</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Glasgow</td><td>Saltmarket Music</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Bristol</td><td>Stokes Croft Sound</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>London</td><td>Denmark Street Pedal Room</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Leeds</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Northern Tone Supply, Call Lane</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Manchester</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Brick Wall Guitars, Oldham Street</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Glasgow</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Saltmarket Music</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Bristol</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Stokes Croft Sound</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>London</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Denmark Street Pedal Room</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Ireland</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>City</th><th>Shop</th><th>Link</th></tr></thead><tbody><tr><td>Dublin</td><td>Capel Street Pedals</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Dublin</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Capel Street Pedals</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Netherlands and Germany</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>City</th><th>Shop</th><th>Link</th></tr></thead><tbody><tr><td>Rotterdam</td><td>Witte de With Gitaren</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Utrecht</td><td>Oudegracht Effects</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Berlin</td><td>Kreuzberg Tretminen</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Hamburg</td><td>Schanze Sound</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr><tr><td>Cologne</td><td>Ehrenfeld Pedalwerk</td><td><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Rotterdam</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Witte de With Gitaren</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Utrecht</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Oudegracht Effects</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Berlin</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Kreuzberg Tretminen</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Hamburg</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Schanze Sound</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Cologne</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ehrenfeld Pedalwerk</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><a href="https://example.com/search?q=patchbay">Their Patchbay stock</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->

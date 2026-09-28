@@ -1,7 +1,7 @@
 {
   "slug": "case",
-  "date": "2026-09-27T16:09:37.057Z",
-  "passed": true,
+  "date": "2026-09-27T21:01:01.460Z",
+  "passed": false,
   "results": [
     {
       "name": "required files",
@@ -54,6 +54,11 @@
       "detail": "x-small,small,medium,large,x-large,xx-large,display"
     },
     {
+      "name": "image lightbox enabled in theme.json (round 2)",
+      "ok": true,
+      "detail": "{\"enabled\":true,\"allowEditing\":true}"
+    },
+    {
       "name": "spacing presets",
       "ok": true,
       "detail": ""
@@ -71,7 +76,7 @@
     {
       "name": "section styles",
       "ok": true,
-      "detail": "9"
+      "detail": "13"
     },
     {
       "name": "PHP lint",
@@ -79,9 +84,19 @@
       "detail": ""
     },
     {
-      "name": "25+ patterns",
+      "name": "functions.php has no enqueues or CPTs",
       "ok": true,
-      "detail": "29"
+      "detail": ""
+    },
+    {
+      "name": "40+ patterns (round 2)",
+      "ok": true,
+      "detail": "54"
+    },
+    {
+      "name": "tables in at most 20% of patterns (round 2)",
+      "ok": true,
+      "detail": "1 of 54"
     },
     {
       "name": "pattern headers (Title, Slug prefix)",
@@ -129,7 +144,27 @@
       "detail": ""
     },
     {
-      "name": "front end: 14 pages 200, no PHP notices",
+      "name": "home page shows no table (round 2)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home h1 is not a motto ending in a full stop (round 2)",
+      "ok": true,
+      "detail": "Nadia Branković"
+    },
+    {
+      "name": "demo has 6+ posts (round 2)",
+      "ok": true,
+      "detail": "6"
+    },
+    {
+      "name": "no dead internal links (25 checked, round 2)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "front end: 25 pages 200, no PHP notices",
       "ok": true,
       "detail": ""
     },
@@ -141,7 +176,7 @@
     {
       "name": "editor: demo pages readable",
       "ok": true,
-      "detail": "5"
+      "detail": "15"
     },
     {
       "name": "editor: demo page content valid",
@@ -149,9 +184,14 @@
       "detail": ""
     },
     {
-      "name": "mobile 390px: no horizontal overflow",
+      "name": "every pattern appears in the demo (round 2)",
       "ok": true,
-      "detail": ""
+      "detail": "0 missing: "
+    },
+    {
+      "name": "mobile 390px: no horizontal overflow",
+      "ok": false,
+      "detail": "/working-together/ 399px"
     },
     {
       "name": "screenshot.png 1200x900",

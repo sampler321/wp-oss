@@ -6,7 +6,7 @@
  * Description: Notices read out on air. Keep them short: what, where, when, and a phone number.
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-noticeboard","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"is-style-noticeboard","align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide is-style-noticeboard"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
 <h2 class="wp-block-heading">Noticeboard</h2>

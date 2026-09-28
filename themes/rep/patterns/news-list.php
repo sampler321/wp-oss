@@ -10,7 +10,35 @@
 <h3 class="wp-block-heading">News</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-stack"} -->
-<figure class="wp-block-table is-style-stack"><table class="has-fixed-layout"><tbody><tr><td>September 2026</td><td>Hattie Blume's seed packets are in every Kew Gardens shop.</td></tr><tr><td>August 2026</td><td>Leo Hartigan joins the roster for animation and title sequences.</td></tr><tr><td>June 2026</td><td>Ines Carvalho wins the V&A Illustration Award for book illustration.</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"top":{"color":"var:preset|color|line","width":"1px","style":"solid"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">September 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Hattie Blume's seed packets are in every Kew Gardens shop.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">August 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Leo Hartigan joins the roster for animation and title sequences.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">June 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ines Carvalho wins the V&A Illustration Award for book illustration.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

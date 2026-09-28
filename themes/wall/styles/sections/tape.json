@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tape label",
+	"slug": "tape",
+	"blockTypes": [
+		"core/paragraph",
+		"core/heading",
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent-2",
+			"text": "var:preset|color|contrast"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "0.15em",
+				"bottom": "0.15em",
+				"left": "0.35em",
+				"right": "0.35em"
+			}
+		},
+		"css": "&{display:inline-block;width:auto}"
+	}
+}

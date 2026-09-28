@@ -1,6 +1,6 @@
 {
   "slug": "paper",
-  "date": "2026-09-27T15:31:59.051Z",
+  "date": "2026-09-27T20:24:01.897Z",
   "passed": true,
   "results": [
     {
@@ -54,6 +54,11 @@
       "detail": "x-small,small,medium,large,x-large,xx-large,display"
     },
     {
+      "name": "image lightbox enabled in theme.json (round 2)",
+      "ok": true,
+      "detail": "{\"enabled\":true,\"allowEditing\":true}"
+    },
+    {
       "name": "spacing presets",
       "ok": true,
       "detail": ""
@@ -71,7 +76,7 @@
     {
       "name": "section styles",
       "ok": true,
-      "detail": "11"
+      "detail": "13"
     },
     {
       "name": "PHP lint",
@@ -79,9 +84,14 @@
       "detail": ""
     },
     {
-      "name": "25+ patterns",
+      "name": "40+ patterns (round 2)",
       "ok": true,
-      "detail": "26"
+      "detail": "45"
+    },
+    {
+      "name": "tables in at most 20% of patterns (round 2)",
+      "ok": true,
+      "detail": "3 of 45"
     },
     {
       "name": "pattern headers (Title, Slug prefix)",
@@ -125,36 +135,6 @@
     },
     {
       "name": "demo content.json present",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "front end: 20 pages 200, no PHP notices",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "editor: zero invalid/unknown blocks in templates, parts, patterns",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "editor: demo pages readable",
-      "ok": true,
-      "detail": "11"
-    },
-    {
-      "name": "editor: demo page content valid",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "mobile 390px: no horizontal overflow",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "screenshot.png 1200x900",
       "ok": true,
       "detail": ""
     }

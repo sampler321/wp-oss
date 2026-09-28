@@ -1,0 +1,46 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Italiana\", sans-serif",
+      "name": "Italiana",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Italiana",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/italiana-normal-400.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Petrona\", sans-serif",
+      "name": "Petrona",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Petrona",
+          "fontStyle": "italic",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/petrona-italic-300_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Petrona",
+          "fontStyle": "normal",
+          "fontWeight": "300 700",
+          "src": [
+            "file:./assets/fonts/petrona-normal-300_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Italiana (Google Fonts), https://github.com/google/fonts/tree/main/ofl/italiana",
+    "Petrona (Google Fonts), https://github.com/google/fonts/tree/main/ofl/petrona"
+  ]
+}

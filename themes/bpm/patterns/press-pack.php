@@ -10,15 +10,15 @@
 <!-- /wp:heading -->
 
 <!-- wp:gallery {"columns":3,"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-3 is-cropped"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dj-4.jpg' ) ); ?>" alt="A DJ playing to a packed outdoor crowd at night under blue light"/><figcaption class="wp-element-caption">Closing set, summer 2025. Photo: Marta Nowak</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/headphones.jpg' ) ); ?>" alt="A DJ in headphones at a lit-up booth with a city skyline behind"/><figcaption class="wp-element-caption">Rooftop set, Łódź. Photo: Piotr Rak</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/mixer.jpg' ) ); ?>" alt="A black DJ mixer with rows of knobs, photographed close up"/><figcaption class="wp-element-caption">The booth at Jasna 1. Photo: Hania Sokół</figcaption></figure>
 <!-- /wp:image --></figure>
 <!-- /wp:gallery -->

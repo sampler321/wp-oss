@@ -8,4 +8,8 @@
 ?>
 <!-- wp:pattern {"slug":"tick/house-calls"} /-->
 
+<!-- wp:pattern {"slug":"tick/house-call-area"} /-->
+
 <!-- wp:pattern {"slug":"tick/house-call-questions"} /-->
+
+<!-- wp:pattern {"slug":"tick/care-tips"} /-->

@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Park",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#F4FBEF",
+					"name": "Clean towel"
+				},
+				{
+					"slug": "contrast",
+					"color": "#12301F",
+					"name": "Navy ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#A2361C",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#1D5F8A",
+					"name": "Lead blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#DDF2CF",
+					"name": "Butter"
+				},
+				{
+					"slug": "line",
+					"color": "#12301F",
+					"name": "Stitch line"
+				},
+				{
+					"slug": "muted",
+					"color": "#3E5446",
+					"name": "Slate"
+				},
+				{
+					"slug": "coral",
+					"color": "#FF7A5C",
+					"name": "Coral"
+				},
+				{
+					"slug": "orange",
+					"color": "#FFA531",
+					"name": "Orange"
+				},
+				{
+					"slug": "yellow",
+					"color": "#FFD93D",
+					"name": "Yellow"
+				},
+				{
+					"slug": "green",
+					"color": "#5FCB7D",
+					"name": "Grass"
+				},
+				{
+					"slug": "sky",
+					"color": "#6FB0F5",
+					"name": "Sky"
+				},
+				{
+					"slug": "pink",
+					"color": "#F79BC8",
+					"name": "Bubblegum"
+				}
+			]
+		}
+	}
+}

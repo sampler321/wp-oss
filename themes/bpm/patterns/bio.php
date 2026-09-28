@@ -18,14 +18,14 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Hania Sokół (b. 1989, Białystok) is a DJ and producer in Warsaw. She has hosted Szum on Radio Wola every month since 2019, and runs a small label, Szum Nagrania, from a flat in Praga.</p>
+<p class="">Hania Sokół (b. 1989, Białystok) is a DJ and producer in Warsaw. She has hosted Szum on Radio Wola every month since 2019, and runs a small label, Szum Nagrania, from a flat in Praga.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Her sets move between Polish jazz, dub and slow electro, usually around 110 BPM. She plays records and USB, and takes a long time to get to the loud bit. She has played Tresor, Unsound, De School and a lot of basements.</p>
+<p class="">Her sets move between Polish jazz, dub and slow electro, usually around 110 BPM. She plays records and USB, and takes a long time to get to the loud bit. She has played Tresor, Unsound, De School and a lot of basements.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-small-font-size">She does not play b2b with people she has not met, and she does not do wedding requests, even for friends.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>

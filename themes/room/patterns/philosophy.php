@@ -2,7 +2,7 @@
 /**
  * Title: How we think about a room
  * Slug: room/philosophy
- * Categories: about
+ * Categories: services
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

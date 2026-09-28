@@ -11,16 +11,16 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Tariq Hussain opened Coping in a lock-up behind Gloucester Road with forty decks and a borrowed drill. Lou Okafor runs the surf side from the back room, where the wetsuits drip into a bath.</p>
+<p>Tariq Hussain opened Coping in a lock-up behind Gloucester Road with forty decks and a borrowed drill. Lou Okafor runs the surf side from the back room, where the wetsuits drip into a bath.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">We skate everything we sell. We stock the shop brands we would ride and our own decks, pressed in Portugal. We do not sell toy boards from supermarkets, and we will tell you if the board you brought in is one.</p>
+<p>We skate everything we sell. We stock the shop brands we would ride and our own decks, pressed in Portugal. We do not sell toy boards from supermarkets, and we will tell you if the board you brought in is one.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p class="">Tariq set up my first board and told me to come back when I could ollie the kerb outside. Took three weeks.</p>
+<p>Tariq set up my first board and told me to come back when I could ollie the kerb outside. Took three weeks.</p>
 <!-- /wp:paragraph --><cite>Aisha Brown, team rider since 2022</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:group -->

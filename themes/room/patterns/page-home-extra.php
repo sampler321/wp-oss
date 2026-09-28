@@ -2,7 +2,7 @@
 /**
  * Title: Page: whole front page
  * Slug: room/page-home-extra
- * Categories: featured
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

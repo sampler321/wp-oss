@@ -2,7 +2,7 @@
 /**
  * Title: Band: commissions open
  * Slug: joint/green-cta
- * Categories: call-to-action
+ * Categories: services
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-green","layout":{"type":"constrained"}} -->

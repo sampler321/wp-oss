@@ -2,7 +2,7 @@
 /**
  * Title: Page: kiln opening
  * Slug: kiln/kiln-opening-page
- * Categories: featured
+ * Categories: kiln-pages,featured
  * Block Types: core/post-content
  */
 ?>
@@ -14,6 +14,10 @@
 
 <!-- wp:pattern {"slug":"kiln/kiln-opening-expect"} /-->
 
+<!-- wp:pattern {"slug":"kiln/find-the-pottery"} /-->
+
 <!-- wp:pattern {"slug":"kiln/video-block"} /-->
+
+<!-- wp:pattern {"slug":"kiln/seconds-sale"} /-->
 
 <!-- wp:pattern {"slug":"kiln/press-quote"} /-->

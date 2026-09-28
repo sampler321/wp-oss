@@ -2,7 +2,7 @@
 /**
  * Title: Canapé list (printed card)
  * Slug: platter/canape-card
- * Categories: platter,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"className":"is-style-menu-card","layout":{"type":"constrained"}} -->

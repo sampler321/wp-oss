@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pattern: fen water",
+	"slug": "pattern-waves",
+	"blockTypes": [
+		"core/group",
+		"core/column",
+		"core/cover"
+	],
+	"styles": {
+		"css": "&{position:relative;isolation:isolate}&::before{content:\"\";position:absolute;inset:0;z-index:-1;pointer-events:none;background-color:currentColor;opacity:.3;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"%3E%3Cpath d=\"M0 12 Q6 5 12 12 T24 12\" fill=\"none\" stroke=\"black\" stroke-width=\"2.4\"/%3E%3C/svg%3E\") 0 0/24px 14px repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"%3E%3Cpath d=\"M0 12 Q6 5 12 12 T24 12\" fill=\"none\" stroke=\"black\" stroke-width=\"2.4\"/%3E%3C/svg%3E\") 0 0/24px 14px repeat}"
+	}
+}

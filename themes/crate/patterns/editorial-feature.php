@@ -5,9 +5,9 @@
  * Categories: featured,gallery
  */
 ?>
-<!-- wp:columns {"verticalAlignment":"bottom","align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"}}}} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-bottom"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/2","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:columns {"align":"full","verticalAlignment":"bottom","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/digging.jpg' ) ); ?>" alt="A woman flicking through a crate of records by a shop window" style="aspect-ratio:3/2;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -18,7 +18,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The first hour on a Saturday is the diggers' hour: new used stock goes out at 11, and the regulars know it.</p>
+<p class="">The first hour on a Saturday is the diggers' hour: new used stock goes out at 11, and the regulars know it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-label"} -->

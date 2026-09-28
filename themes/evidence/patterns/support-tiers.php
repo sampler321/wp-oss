@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>One series takes about a year. Court transcripts alone cost us £1,860 for season 2. Listeners pay for most of it.</p>
+<p class="">One series takes about a year. Court transcripts alone cost us £1,860 for season 2. Listeners pay for most of it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
@@ -27,6 +27,6 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-small-font-size">We don’t take sponsors who sell home security, legal services or anything else that profits from fear.</p>
 <!-- /wp:paragraph -->

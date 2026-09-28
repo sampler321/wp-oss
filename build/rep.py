@@ -58,6 +58,9 @@ CSS = (
     '.wp-block-tag-cloud.is-style-style-index{display:flex;flex-wrap:wrap;gap:.2rem 1.2rem;margin:0}'
     '.is-style-style-index a{font-size:var(--wp--preset--font-size--x-large)!important;font-weight:500;letter-spacing:-.02em;text-decoration:none;color:inherit;margin:0!important}'
     '.is-style-style-index a:hover{color:var(--wp--preset--color--accent)}'
+    # ruled rows (instead of tables)
+    '.is-style-ruled-row{border-bottom:1px solid var(--wp--preset--color--line);padding:.5rem 0;gap:.15rem 1.5rem!important}.is-style-ruled-row>p{margin:0;flex:1 1 12rem}'
+    '.is-style-ruled-row>p:first-child{flex:0 1 11rem;font-weight:500}'
     # ruled tables
     '.wp-block-table table{border-collapse:collapse}.wp-block-table td,.wp-block-table th{border:0;border-bottom:1px solid var(--wp--preset--color--line);padding:.5rem 1rem .5rem 0;text-align:left;vertical-align:top}'
     '.wp-block-table thead th{font-weight:500;color:var(--wp--preset--color--muted)}'
@@ -88,6 +91,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 5rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 8rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': C('base'), 'text': C('contrast')},
@@ -171,6 +175,7 @@ section('native-grid', 'Native-ratio grid', ['core/post-template'], {'typography
 section('roster', 'Roster (names list)', ['core/categories'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 section('filter-row', 'Filter link', ['core/paragraph'], {'typography': {'fontSize': 'var:preset|font-size|medium'}})
 section('style-index', 'Style index', ['core/tag-cloud'], {'typography': {'fontWeight': '500'}})
+section('ruled-row', 'Ruled row', ['core/group'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 section('stack', 'Stacks on phones', ['core/table'], {'typography': {'fontSize': 'var:preset|font-size|small'}})
 section('rule-top', 'Rule above', ['core/group', 'core/columns'], {'border': {'top': {'color': C('line'), 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': P(20)}, 'margin': {'top': P(60)}}})
 section('rule-bottom', 'Rule below', ['core/group'], {'border': {'bottom': {'color': C('line'), 'width': '1px', 'style': 'solid'}}})
@@ -187,10 +192,20 @@ tile = J(dyn('post-featured-image', isLink=True, sizeSlug='medium'),
          dyn('post-excerpt', excerptLength=8, moreText=''))
 ntile = tile.replace('"sizeSlug":"medium"', '"sizeSlug":"large"')
 
-pattern('intro-line', 'Agency line', 'featured', group(J(
-    heading('We represent seven illustrators, one animator and one photographer, and find them work in books, packaging, editorial and advertising.', 1, fontSize='xx-large', align='wide'),
-    row(J(para('Holloway Pask, Tabernacle Street, London. Since 2009.', fontSize='small', textColor='muted'),
-          para('<a href="/contact/">Commission an artist</a>', fontSize='small')), justify='space-between', align='wide')),
+def rows(data, top=True):
+    return group(J(*[row(J(*[para(c) for c in r]), className='is-style-ruled-row') for r in data]), layout={'type': 'default'},
+                 style={'spacing': {'blockGap': '0'}, 'border': {'top': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}} if top else {'spacing': {'blockGap': '0'}})
+
+pattern('intro-line', 'Hero: agency name and one fact', 'hero', group(J(
+    row(J(heading('Holloway Pask', 1, fontSize='xx-large'),
+          para('Agents for seven illustrators, one animator and one photographer. Tabernacle Street, London, since 2009. <a href="/contact/">Commission an artist</a>', fontSize='small', style={'layout': {'selfStretch': 'fixed', 'flexSize': '32rem'}})),
+        justify='space-between', align='wide', style={'spacing': {'blockGap': P(40)}})),
+    tag='section', align='full', layout={'type': 'constrained'}, style=pad(50, 30)),
+    description='A name and one fact, then straight into the work.')
+
+pattern('intro-statement', 'Hero: what the agency does, in one line', 'hero', group(J(
+    heading('Illustration, animation and photography for books, packaging, editorial and advertising', 1, fontSize='xx-large', align='wide'),
+    para('Holloway Pask, Tabernacle Street, London', fontSize='small', textColor='muted', align='wide')),
     tag='section', align='full', layout={'type': 'constrained'}, style=pad(60, 50)))
 
 pattern('discipline-filter', 'Discipline filter (Illustration, Animation, Photography)', 'portfolio', group(
@@ -241,11 +256,11 @@ pattern('style-cloud', 'Every style and subject (text index)', 'portfolio', grou
 
 pattern('quote-checklist', 'What we need to quote', 'services', columns(
     ('33%', J(heading('What we need to quote', 3), para('Send these five things and we can come back with a price and availability within a day.', fontSize='small'))),
-    ('67%', table([['Usage', 'Where it will appear: cover, packaging, social, outdoor, film'],
-                   ['Territory', 'UK only, Europe, worldwide'],
-                   ['Duration', 'How long you want to use it: one year, five years, in perpetuity'],
-                   ['Deadline', 'When you need roughs and when you need finals'],
-                   ['Budget', 'A range is fine. It tells us which artists to suggest']], className='is-style-stack')),
+    ('67%', rows([['Usage', 'Where it will appear: cover, packaging, social, outdoor, film'],
+                  ['Territory', 'UK only, Europe, worldwide'],
+                  ['Duration', 'How long you want to use it: one year, five years, in perpetuity'],
+                  ['Deadline', 'When you need roughs and when you need finals'],
+                  ['Budget', 'A range is fine. It tells us which artists to suggest']])),
     align='wide', className='is-style-rule-top'), description='The five things an agent needs before quoting a commission.')
 
 agents = [('Priya Raman', 'Books, publishing and editorial', 'priya@example.com', '020 7946 0321'),
@@ -253,7 +268,7 @@ agents = [('Priya Raman', 'Books, publishing and editorial', 'priya@example.com'
           ('Marta Kowalczyk', 'Licensing, Europe, and anything in Polish or German', 'marta@example.com', '020 7946 0323')]
 pattern('agent-contacts', 'Agents with direct email and phone', 'contact', group(J(
     heading('Talk to an agent', 3),
-    table([[n, r, '<a href="mailto:%s">%s</a>' % (e, e), '<a href="tel:+44%s">%s</a>' % (t.replace(' ', '')[1:], t)] for n, r, e, t in agents], className='is-style-stack')),
+    rows([[n, r, '<a href="mailto:%s">%s</a>' % (e, e), '<a href="tel:+44%s">%s</a>' % (t.replace(' ', '')[1:], t)] for n, r, e, t in agents])),
     layout={'type': 'default'}), description='Named agents with a direct email and phone number, for the foot of every artist page.')
 
 pattern('commission-artist', 'Commission this artist (enquiry band)', 'call-to-action', group(J(
@@ -266,17 +281,16 @@ pattern('commission-artist', 'Commission this artist (enquiry band)', 'call-to-a
 pattern('artist-hero', 'Artist introduction', 'portfolio', columns(
     ('58%', J(heading('Ines Carvalho', 2, fontSize='display'),
               para('Ines Carvalho (b. 1987, Porto) draws maps and bird\'s-eye views of towns, mostly in ink with a flat second colour. She lives in Lisbon and has worked with us since 2016.', fontSize='large'))),
-    ('42%', table([['Disciplines', 'Illustration, maps'], ['Based', 'Lisbon, one hour ahead of London'], ['Clients', 'Faber, The Financial Times, Porto Tourism, Monocle'], ['Agent', 'Priya Raman']])),
+    ('42%', rows([['Disciplines', 'Illustration, maps'], ['Based', 'Lisbon, one hour ahead of London'], ['Clients', 'Faber, The Financial Times, Porto Tourism, Monocle'], ['Agent', 'Priya Raman']])),
     align='wide', verticalAlignment='bottom'))
 
 pattern('recent-commissions', 'Recent commissions list (client, artist, year)', 'portfolio', group(J(
     heading('Recent commissions', 3),
-    table([['Faber', 'Ines Carvalho', 'Endpaper map for a novel set in the Azores', '2026'],
-           ['Kew Gardens shop', 'Hattie Blume', 'Seed packet range, twelve plants', '2026'],
-           ['The Guardian Weekend', 'Tomasz Wrona', 'Cover, the new Kraków tram depot', '2025'],
-           ['Muji Europe', 'Kenji Arai', 'Christmas window characters', '2025'],
-           ['BBC Four', 'Leo Hartigan', 'Title sequence, twelve seconds of galloping', '2025']],
-          head=['Client', 'Artist', 'Job', 'Year'], className='is-style-stack')),
+    rows([['Faber', 'Ines Carvalho', 'Endpaper map for a novel set in the Azores', '2026'],
+          ['Kew Gardens shop', 'Hattie Blume', 'Seed packet range, twelve plants', '2026'],
+          ['The Guardian Weekend', 'Tomasz Wrona', 'Cover, the new Kraków tram depot', '2025'],
+          ['Muji Europe', 'Kenji Arai', 'Christmas window characters', '2025'],
+          ['BBC Four', 'Leo Hartigan', 'Title sequence, twelve seconds of galloping', '2025']])),
     align='wide', className='is-style-rule-top', layout={'type': 'default'}))
 
 pattern('about-agency', 'About the agency', 'about', columns(
@@ -304,9 +318,9 @@ pattern('interview', 'Studio visit (interview)', 'text', group(J(
 
 pattern('news-list', 'Agency news (text list)', 'text', group(J(
     heading('News', 3),
-    table([['September 2026', 'Hattie Blume\'s seed packets are in every Kew Gardens shop.'],
-           ['August 2026', 'Leo Hartigan joins the roster for animation and title sequences.'],
-           ['June 2026', 'Ines Carvalho wins the V&A Illustration Award for book illustration.']], className='is-style-stack')),
+    rows([['September 2026', 'Hattie Blume\'s seed packets are in every Kew Gardens shop.'],
+          ['August 2026', 'Leo Hartigan joins the roster for animation and title sequences.'],
+          ['June 2026', 'Ines Carvalho wins the V&A Illustration Award for book illustration.']])),
     align='wide', className='is-style-rule-top', layout={'type': 'default'}))
 
 pattern('notice-portfolio-review', 'Notice: portfolio reviews', 'banner', group(
@@ -334,15 +348,92 @@ pattern('animator-profile', 'Animator profile with rates', 'portfolio', columns(
     ('50%', image('anim-1.jpg', 'Sequence of sixteen photographs of a horse and rider galloping, in three rows', 'Galloping, sixteen frames, BBC Four titles, 2025')),
     ('50%', J(heading('<a href="/category/leo-hartigan/">Leo Hartigan</a>', 2, fontSize='x-large'),
               para('Leo animates frame by frame from photographs and drawings, usually at 12 frames a second. He works from a shed in Bristol and delivers ProRes and looping MP4s.'),
-              table([['Clients', 'BBC Four, Aardman shop, Bristol Old Vic'], ['Ident, up to 10 seconds', 'From £4,000'], ['Title sequence', 'From £9,000'], ['Lead time', 'Four to eight weeks']], className='is-style-stack'),
+              rows([['Clients', 'BBC Four, Aardman shop, Bristol Old Vic'], ['Ident, up to 10 seconds', 'From £4,000'], ['Title sequence', 'From £9,000'], ['Lead time', 'Four to eight weeks']]),
               para('<a href="/tag/animation/">All animation work</a>', style={'typography': {'fontWeight': '500'}}))),
     align='wide', style={'spacing': {'blockGap': {'left': P(50)}}}))
 
+
+# ---------------------------------------------------------------- project stories and more (round 2)
+pattern('project-brief', 'Project: the brief', 'project', columns(
+    ('33%', heading('The brief', 4)),
+    ('67%', J(para('Faber wanted an endpaper map for a novel that moves between nine Baltic ports over forty years. It had to work in black only for the paperback and in two colours for the hardback.'),
+              para('Deadline: roughs in two weeks, finals in five. Licence: world, all editions, seven years.', fontSize='small'))),
+    align='wide', className='is-style-rule-top'))
+
+pattern('project-roughs', 'Project: roughs next to the final', 'project', gallery([
+    ('map-2.jpg', "Bird's-eye engraving of Venice with its canals, islands and lagoon", 'Style reference Ines sent with the roughs'),
+    ('map-1.jpg', 'Picture map of the Baltic Sea with small drawings of ports and ships', 'Final, two colours')], columns=2, align='wide'))
+
+pattern('project-in-use', 'Project: the work in use', 'project', columns(
+    ('58%', image('bot-1.jpg', 'Hand-coloured botanical plate of yellow loosestrife with leaves and seed heads', 'The painting, at twice print size')),
+    ('42%', J(heading('On the shelf', 4), para('Printed at 85 mm wide on uncoated card, twelve plants, sold in every Kew Gardens shop from March. Hattie painted each plant from specimens in the herbarium.'))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': P(50)}}}))
+
+pattern('project-credits', 'Project: credits and licence', 'project', group(J(
+    heading('Credits', 6),
+    rows([['Artist', 'Ines Carvalho'], ['Client', 'Faber'], ['Art director', 'Hannah Moore'], ['Agent', 'Priya Raman'], ['Licence', 'World, all editions, seven years']])),
+    layout={'type': 'constrained'}))
+
+pattern('project-quote', 'Project: the art director, quoted', 'project', group(
+    quote('We sent a list of nine ports and got back a map people photograph in bookshops.', 'Hannah Moore, art director, Faber, 2026'), layout={'type': 'constrained'}))
+
+pattern('project-baltic', 'Project layout: Baltic ports endpaper', 'project', J(
+    pattern_ref('project-brief'), pattern_ref('project-roughs'), pattern_ref('project-quote'), pattern_ref('project-credits')),
+    block_types='core/post-content', description='A complete project page built from the project patterns.')
+
+pattern('project-seed-packets', 'Project layout: seed packets', 'project', J(
+    para('Twelve seed packets for the Kew Gardens shops, painted in watercolour from herbarium specimens.', fontSize='large'),
+    pattern_ref('project-in-use'),
+    group(J(heading('Credits', 6), rows([['Artist', 'Hattie Blume'], ['Client', 'Kew Gardens shop'], ['Agent', 'Jonah Feld'], ['Licence', 'Packaging, UK and EU, five years']])), layout={'type': 'constrained'})),
+    block_types='core/post-content')
+
+pattern('project-titles', 'Project layout: title sequence', 'project', J(
+    para('Twelve seconds of galloping for a BBC Four history series, sixteen frames on a loop.', fontSize='large'),
+    image('anim-1.jpg', 'Sequence of sixteen photographs of a horse and rider galloping, in three rows', 'The reference sequence Leo animated over', align='wide'),
+    columns((None, J(heading('How', 5), para('Leo traced each frame by hand at 12 frames a second, then scanned the drawings and cleaned them on a lightbox app.'))),
+            (None, J(heading('Delivered', 5), para('ProRes 4444 with alpha, a 1080 square loop for social, and the sixteen drawings, which the director bought.'))), align='wide'),
+    group(J(heading('Credits', 6), rows([['Animator', 'Leo Hartigan'], ['Client', 'BBC Four'], ['Agent', 'Jonah Feld']])), layout={'type': 'constrained'})),
+    block_types='core/post-content')
+
+pattern('project-cover', 'Project layout: a book cover', 'project', J(
+    columns(('42%', image('bw-2.jpg', 'Bold black and white linocut of a stylised figure in striped patterns')),
+            ('58%', J(heading('Cut at 1:1', 3), para('Sade cut the cover at the size it prints, 129 x 198 mm, so every mark on the book is a mark on the block. It took nine days and one new blade.'),
+                      pattern_ref('project-quote'))), align='wide', verticalAlignment='center'),
+    group(J(heading('Credits', 6), rows([['Artist', 'Sade Olatunji'], ['Client', 'Penguin Modern Classics'], ['Agent', 'Priya Raman'], ['Licence', 'World, all editions, ten years']])), layout={'type': 'constrained'})),
+    block_types='core/post-content')
+
+pattern('artist-feature', 'Featured artist (large image and short bio)', 'portfolio', columns(
+    ('58%', image('char-1.jpg', 'Woodblock triptych of figures in patterned robes on a rocky shore', 'Sunrise at the bay, Muji Europe windows, 2025')),
+    ('42%', J(para('Artist of the month', textColor='muted', fontSize='small'), heading('<a href="/category/kenji-arai/">Kenji Arai</a>', 2),
+              para('Characters and landscapes in flat colour, for packaging and posters. Manchester. Available from November.'),
+              para('<a href="/category/kenji-arai/">See Kenji\'s work</a>', style={'typography': {'fontWeight': '500'}}))),
+    align='wide', verticalAlignment='bottom', style={'spacing': {'blockGap': {'left': P(50)}}}))
+
+pattern('licensing-note', 'Licensing existing work', 'services', columns(
+    ('33%', heading('Licensing existing work', 3)),
+    ('67%', J(para('Most of the work on this site can be licensed as it is, for a cover, a print run or a campaign. It is quicker and usually cheaper than a commission. Marta handles licensing and replies within a day.'),
+              para('<a href="mailto:marta@example.com?subject=Licensing">marta@example.com</a>', style={'typography': {'fontWeight': '500'}}))),
+    align='wide', className='is-style-rule-top'))
+
+pattern('art-buyer-letter', 'Newsletter for art buyers', 'call-to-action', group(J(
+    heading('Six new pieces a month, by email', 4),
+    para('For art directors and buyers only. One email on the first Monday of the month. Ask Priya to add you at <a href="mailto:priya@example.com?subject=Monthly%20email">priya@example.com</a>.')),
+    className='is-style-proof', layout={'type': 'default'}))
+
+pattern('availability', 'Who is free this month', 'portfolio', group(J(
+    heading('Free to start in October', 4),
+    rows([['<a href="/category/kenji-arai/">Kenji Arai</a>', 'From 6 October'], ['<a href="/category/sade-olatunji/">Sade Olatunji</a>', 'From 13 October'], ['<a href="/category/leo-hartigan/">Leo Hartigan</a>', 'Short jobs only until December']])),
+    layout={'type': 'default'}), description='A short availability list, updated monthly by the agents.')
+
+pattern('pdf-portfolio', 'Ask for a PDF portfolio', 'call-to-action', group(
+    para('Want a PDF of one artist, or of every map we have ever made? Ask Priya and it arrives the same day, sized for email.', fontSize='large'),
+    className='is-style-rule-top', layout={'type': 'default'}))
+
 # pages
 pattern('page-animation', 'Page: animation roster', 'portfolio', J(pattern_ref('animation-intro'), pattern_ref('animator-profile'), pattern_ref('quote-checklist'), pattern_ref('commission-artist')), block_types='core/post-content')
-pattern('page-artists', 'Page: artists (roster)', 'portfolio', J(pattern_ref('roster-names'), pattern_ref('roster-grid'), pattern_ref('commission-artist')), block_types='core/post-content')
+pattern('page-artists', 'Page: artists (roster)', 'portfolio', J(pattern_ref('roster-names'), pattern_ref('availability'), pattern_ref('artist-feature'), pattern_ref('roster-grid'), pattern_ref('commission-artist')), block_types='core/post-content')
 pattern('page-styles', 'Page: styles and subjects', 'portfolio', J(para('Every style page pulls work from the whole roster, with the artist and client under each image.', fontSize='large'), pattern_ref('style-cloud'), pattern_ref('style-index')), block_types='core/post-content')
-pattern('page-about', 'Page: about', 'about', J(pattern_ref('about-agency'), pattern_ref('rates-note'), pattern_ref('news-list'), pattern_ref('interview'), pattern_ref('about-languages')), block_types='core/post-content')
+pattern('page-about', 'Page: about', 'about', J(pattern_ref('about-agency'), pattern_ref('rates-note'), pattern_ref('licensing-note'), pattern_ref('art-buyer-letter'), pattern_ref('news-list'), pattern_ref('interview'), pattern_ref('about-languages')), block_types='core/post-content')
 pattern('page-contact', 'Page: contact', 'contact', J(para('Ring or email the agent for the kind of job you have. We don\'t use a contact form.', fontSize='large'), pattern_ref('agent-contacts'), pattern_ref('quote-checklist'),
     columns((None, J(heading('Office', 5), para('3rd floor, 21 Tabernacle Street<br>London EC2A 4DE<br>Old Street station, exit 4, then five minutes south'))),
             (None, J(heading('Artists who want representing', 5), para('Portfolio reviews twice a year. Send a PDF of up to 15 images to <a href="mailto:new@example.com">new@example.com</a> in May or November.'))), align='wide', className='is-style-rule-top')),
@@ -369,7 +460,7 @@ def tpl(name, inner, top=50, bottom=70):
 write('templates/front-page.html', page_template(J(
     pattern_ref('intro-line'), pattern_ref('works-index'),
     group(pattern_ref('roster-names'), align='wide', className='is-style-rule-top', layout={'type': 'default'}),
-    pattern_ref('style-index'), pattern_ref('recent-commissions'), spacer(), pattern_ref('commission-artist')), style={'spacing': {'padding': {'bottom': '0'}}}))
+    pattern_ref('style-index'), pattern_ref('artist-feature'), pattern_ref('recent-commissions'), spacer(), pattern_ref('commission-artist')), style={'spacing': {'padding': {'bottom': '0'}}}))
 tpl('home', J(heading('All work', 1, align='wide'), pattern_ref('discipline-filter'), pattern_ref('works-index-archive')))
 tpl('category', J(
     dyn('query-title', type='archive', showPrefix=False, align='wide'),
@@ -430,7 +521,8 @@ works = [
 disc = {s_: p_.capitalize() for s_, n_, p_, d_ in artists}
 posts = []
 for i, (title, a, img_, client, tags, body) in enumerate(works):
-    posts.append({'title': title, 'category': [a], 'tags': [disc[a]] + [t for t in tags if t not in ('Animation', 'Photography')], 'image': img_, 'excerpt': client, 'content': para(body), 'date': '2026-%02d-%02d' % (9 - i // 4, 20 - (i % 4) * 4)})
+    pat = {'Baltic ports, endpaper map': 'rep/project-baltic', 'Loosestrife, seed packet': 'rep/project-seed-packets', 'Galloping, sixteen frames': 'rep/project-titles', 'Pattern portrait': 'rep/project-cover'}.get(title)
+    posts.append({'title': title, 'category': [a], 'tags': [disc[a]] + [t for t in tags if t not in ('Animation', 'Photography')], 'image': img_, 'excerpt': client, **({'pattern': pat} if pat else {'content': para(body)}), 'date': '2026-%02d-%02d' % (9 - i // 4, 20 - (i % 4) * 4)})
 
 cats = [{'slug': s, 'name': n, 'description': d} for s, n, p, d in artists]
 content = {

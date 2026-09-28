@@ -8,6 +8,8 @@
 ?>
 <!-- wp:pattern {"slug":"spine/newsletter-signup"} /-->
 
+<!-- wp:pattern {"slug":"spine/band-dots"} /-->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">All letters</h3>
 <!-- /wp:heading -->

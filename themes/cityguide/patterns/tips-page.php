@@ -17,7 +17,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Tell us the name, the street and why you go there. One good reason is enough.</p>
+<p class="">Tell us the name, the street and why you go there. One good reason is enough.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -33,7 +33,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Closed, moved, new hours, new prices. We check it and fix the page within a week, with a dated note.</p>
+<p class="">Closed, moved, new hours, new prices. We check it and fix the page within a week, with a dated note.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

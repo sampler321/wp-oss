@@ -7,3 +7,11 @@
 - Signature: "How urgent is it?", three options in the customer's words (no heating or hot water / something is wrong but working / planned work), each sending the customer to the right channel, plus what to tell us (property type, boiler model, fault code, tenant or owner).
 - Nice-to-haves as patterns: guide price table with the written-price note, areas and response times (areas are posts), what to do while you wait, lead-time line, Gas Safe number with a link to the register.
 - Tool note: fetch-fonts.mjs fails on Fontshare CSS because the font URLs are protocol-relative (//cdn.fontshare.com). The woff2 files and .fonts.json were fetched by hand.
+
+## Round 2
+
+- Opener is now the name and one fact ("Brennan Heating, Sheffield", Gas Safe number, current lead time) beside the numbered service index and the phone number.
+- Home page has no tables: the price guide and areas are index rows. The full price list with time on site stays as one table on the Prices page.
+- New blocks: fault codes by brand, what happens on the day, guarantee, finance, tenants, before-winter checklist, recent jobs gallery (lightbox), contact details, CO alarms, power flushing, partners. 42 patterns. New Tenants and Contact pages, and a page-wide template for the pattern library.
+- Area posts are rebuilt from index rows (at a glance, recent job, book) instead of tables.
+- Lightbox on globally; categories regrouped (openers, services and prices, quotes, areas and contact, people, advice, notices, page layouts).

@@ -69,6 +69,12 @@
    "title": "Visit",
    "pattern": "booth/page-visit",
    "template": "page-wide"
+  },
+  {
+   "slug": "services",
+   "title": "Services",
+   "pattern": "booth/page-services",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -77,28 +83,28 @@
    "category": "sessions",
    "image": "drums.jpg",
    "excerpt": "Six players in the room, no click, three Coles ribbons on the kit. The album is out in spring.",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rzeka tracked their third album live, all six of them in the room at once, with the singer in booth 2. Bartek miked the kit with a pair of Coles 4038s and a Tonsil MD 263 on the kick, which nobody believed would work.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>4 tracking, 3 mixing in Studio B</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr><tr><td>Tape</td><td>Two reels on the Studer, then Pro Tools</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Rzeka tracked their third album live, all six of them in the room at once, with the singer in booth 2. Bartek miked the kit with a pair of Coles 4038s and a Tonsil MD 263 on the kick, which nobody believed would work.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>4 tracking, 3 mixing in Studio B</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr><tr><td>Tape</td><td>Two reels on the Studer, then Pro Tools</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/drums.jpg' ) ); ?>\" alt=\"Photo from the session: Rzeka, four days live in Studio A\"/><figcaption class=\"wp-element-caption\">On the day</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/console.jpg' ) ); ?>\" alt=\"The Studio A control room\"/><figcaption class=\"wp-element-caption\">In the control room</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">We booked four days and finished in three. We used the fourth to play pool.</p>\n<!-- /wp:paragraph --><cite>From the band, afterwards</cite></blockquote>\n<!-- /wp:quote -->"
   },
   {
    "title": "Gdańsk Chamber Choir, Christmas record",
    "category": "sessions",
    "image": "vocal.jpg",
    "excerpt": "Thirty-two singers, one pair of U 87s and the plate reverb next door.",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thirty-two singers stood in a horseshoe in the live room. We used a spaced pair of U 87s and almost nothing else, and sent a little to the EMT plate in the old paint store.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>2</td></tr><tr><td>Engineer</td><td>Bartek Szulc</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Thirty-two singers stood in a horseshoe in the live room. We used a spaced pair of U 87s and almost nothing else, and sent a little to the EMT plate in the old paint store.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>2</td></tr><tr><td>Engineer</td><td>Bartek Szulc</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/vocal.jpg' ) ); ?>\" alt=\"Photo from the session: Gdańsk Chamber Choir, Christmas record\"/><figcaption class=\"wp-element-caption\">On the day</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/console.jpg' ) ); ?>\" alt=\"The Studio A control room\"/><figcaption class=\"wp-element-caption\">In the control room</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">We booked four days and finished in three. We used the fourth to play pool.</p>\n<!-- /wp:paragraph --><cite>From the band, afterwards</cite></blockquote>\n<!-- /wp:quote -->"
   },
   {
    "title": "Mixing Doki for Mała Orkiestra Portowa",
    "category": "sessions",
    "image": "band.jpg",
    "excerpt": "Eleven songs mixed in Studio B through the X-Desk, with a half-inch copy for the vinyl cut.",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">The band recorded at home and brought us 11 songs to mix. Iga ran everything through the X-Desk and printed a half-inch copy on the Otari for the vinyl master.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio B</td></tr><tr><td>Days</td><td>6</td></tr><tr><td>Engineer</td><td>Iga Dąbrowska</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The band recorded at home and brought us 11 songs to mix. Iga ran everything through the X-Desk and printed a half-inch copy on the Otari for the vinyl master.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio B</td></tr><tr><td>Days</td><td>6</td></tr><tr><td>Engineer</td><td>Iga Dąbrowska</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/band.jpg' ) ); ?>\" alt=\"Photo from the session: Mixing Doki for Mała Orkiestra Portowa\"/><figcaption class=\"wp-element-caption\">On the day</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/console.jpg' ) ); ?>\" alt=\"The Studio A control room\"/><figcaption class=\"wp-element-caption\">In the control room</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">We booked four days and finished in three. We used the fourth to play pool.</p>\n<!-- /wp:paragraph --><cite>From the band, afterwards</cite></blockquote>\n<!-- /wp:quote -->"
   },
   {
    "title": "Burza, stage music for Teatr Wybrzeże",
    "category": "sessions",
    "image": "piano.jpg",
    "excerpt": "Prepared piano, a string quartet and a lot of thunder sheet.",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Music for a new production of The Tempest. Prepared piano on the C7, a string quartet, and a thunder sheet borrowed from the theatre that was louder than anything else we have recorded.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>3</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Music for a new production of The Tempest. Prepared piano on the C7, a string quartet, and a thunder sheet borrowed from the theatre that was louder than anything else we have recorded.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Room</td><td>Studio A</td></tr><tr><td>Days</td><td>3</td></tr><tr><td>Engineer</td><td>Marta Kołodziej</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/piano.jpg' ) ); ?>\" alt=\"Photo from the session: Burza, stage music for Teatr Wybrzeże\"/><figcaption class=\"wp-element-caption\">On the day</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/console.jpg' ) ); ?>\" alt=\"The Studio A control room\"/><figcaption class=\"wp-element-caption\">In the control room</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">We booked four days and finished in three. We used the fourth to play pool.</p>\n<!-- /wp:paragraph --><cite>From the band, afterwards</cite></blockquote>\n<!-- /wp:quote -->"
   },
   {
    "title": "New tape machine, same old tape",
@@ -113,12 +119,23 @@
    "image": "amp.jpg",
    "excerpt": "From October the rehearsal room opens Sundays 12:00 to 22:00.",
    "content": "<!-- wp:paragraph -->\n<p class=\"\">From October the rehearsal room is open on Sundays too, 12:00 to 22:00. Book by text with Iga. Three hours minimum at weekends.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Price</td><td>60 zł an hour</td></tr><tr><td>Book</td><td>+48 600 555 219, by text</td></tr></tbody></table></figure>\n<!-- /wp:table -->"
+  },
+  {
+   "title": "Ola Kruk, a solo drum record in one day",
+   "category": "sessions",
+   "image": "tape.jpg",
+   "excerpt": "Twelve improvisations on the house kit, straight to half-inch tape, no edits.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Ola booked the \"one song in a day\" package and recorded twelve instead. Everything went straight to the Otari at 15 ips, no edits and no overdubs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:group {\"className\":\"is-style-defs\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-defs\"><!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Room</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Studio A</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Days</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">1</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Engineer</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bartek Szulc</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Tape</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">One reel of half-inch</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->\n\n<!-- wp:gallery {\"columns\":2,\"linkTo\":\"none\"} -->\n<figure class=\"wp-block-gallery has-nested-images columns-2 is-cropped\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/tape.jpg' ) ); ?>\" alt=\"A reel-to-reel tape deck in the dark\"/><figcaption class=\"wp-element-caption\">The Otari</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/drums.jpg' ) ); ?>\" alt=\"A drum kit from above\"/><figcaption class=\"wp-element-caption\">The house kit</figcaption></figure>\n<!-- /wp:image --></figure>\n<!-- /wp:gallery -->"
   }
  ],
  "nav": [
   {
    "label": "Rooms",
    "url": "/rooms/"
+  },
+  {
+   "label": "Services",
+   "url": "/services/"
   },
   {
    "label": "Gear",

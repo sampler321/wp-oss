@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tilted right",
+	"slug": "tilt-right",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{transform:rotate(1.6deg)}"
+	}
+}

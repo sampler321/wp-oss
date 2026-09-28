@@ -8,7 +8,11 @@
 ?>
 <!-- wp:pattern {"slug":"key/lock-changes"} /-->
 
+<!-- wp:pattern {"slug":"key/lost-keys"} /-->
+
 <!-- wp:pattern {"slug":"key/cylinder-advice"} /-->
+
+<!-- wp:pattern {"slug":"key/keys-we-cut"} /-->
 
 <!-- wp:pattern {"slug":"key/door-check"} /-->
 

@@ -21,9 +21,47 @@
 <p class="">Leo animates frame by frame from photographs and drawings, usually at 12 frames a second. He works from a shed in Bristol and delivers ProRes and looping MP4s.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table {"className":"is-style-stack"} -->
-<figure class="wp-block-table is-style-stack"><table class="has-fixed-layout"><tbody><tr><td>Clients</td><td>BBC Four, Aardman shop, Bristol Old Vic</td></tr><tr><td>Ident, up to 10 seconds</td><td>From £4,000</td></tr><tr><td>Title sequence</td><td>From £9,000</td></tr><tr><td>Lead time</td><td>Four to eight weeks</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"top":{"color":"var:preset|color|line","width":"1px","style":"solid"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Clients</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">BBC Four, Aardman shop, Bristol Old Vic</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Ident, up to 10 seconds</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">From £4,000</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Title sequence</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">From £9,000</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Lead time</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Four to eight weeks</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"500"}}} -->
 <p class=""><a href="/tag/animation/">All animation work</a></p>

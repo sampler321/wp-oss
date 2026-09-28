@@ -272,6 +272,14 @@
 					"name": "Tag corner"
 				}
 			]
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {

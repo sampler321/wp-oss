@@ -11,10 +11,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Sold the last tour tote at 11:40pm to someone who had driven from Dundee. Van made it home on the second attempt. Twenty-two zines gone, four tapes, one very damp tenner.</p>
+<p class="">Sold the last tour tote at 11:40pm to someone who had driven from Dundee. Van made it home on the second attempt. Twenty-two zines gone, four tapes, one very damp tenner.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/crowd.jpg' ) ); ?>" alt="A crowd under blue stage lights in a small venue"/><figcaption class="wp-element-caption">from the stage, before the tote ran out</figcaption></figure>
 <!-- /wp:image -->
 

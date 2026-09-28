@@ -2,7 +2,7 @@
 /**
  * Title: Start your brief (gingham)
  * Slug: platter/enquiry-brief
- * Categories: platter,call-to-action
+ * Categories: enquire
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-gingham","layout":{"type":"constrained","contentSize":"680px"},"anchor":"brief"} -->

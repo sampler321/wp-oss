@@ -1,7 +1,7 @@
 {
   "slug": "booth",
-  "date": "2026-09-27T15:21:47.135Z",
-  "passed": true,
+  "date": "2026-09-27T20:40:21.344Z",
+  "passed": false,
   "results": [
     {
       "name": "required files",
@@ -54,6 +54,11 @@
       "detail": "x-small,small,medium,large,x-large,xx-large,display"
     },
     {
+      "name": "image lightbox enabled in theme.json (round 2)",
+      "ok": true,
+      "detail": "{\"enabled\":true,\"allowEditing\":true}"
+    },
+    {
       "name": "spacing presets",
       "ok": true,
       "detail": ""
@@ -79,9 +84,14 @@
       "detail": ""
     },
     {
-      "name": "25+ patterns",
+      "name": "40+ patterns (round 2)",
       "ok": true,
-      "detail": "25"
+      "detail": "41"
+    },
+    {
+      "name": "tables in at most 20% of patterns (round 2)",
+      "ok": true,
+      "detail": "2 of 41"
     },
     {
       "name": "pattern headers (Title, Slug prefix)",
@@ -129,24 +139,34 @@
       "detail": ""
     },
     {
-      "name": "front end: 18 pages 200, no PHP notices",
+      "name": "home page shows no table (round 2)",
       "ok": true,
       "detail": ""
     },
     {
-      "name": "editor: zero invalid/unknown blocks in templates, parts, patterns",
+      "name": "home h1 is not a motto ending in a full stop (round 2)",
+      "ok": true,
+      "detail": "A big room for bands who want to play together"
+    },
+    {
+      "name": "demo has 6+ posts (round 2)",
+      "ok": true,
+      "detail": "7"
+    },
+    {
+      "name": "no dead internal links (33 checked, round 2)",
       "ok": true,
       "detail": ""
     },
     {
-      "name": "editor: demo pages readable",
-      "ok": true,
-      "detail": "9"
-    },
-    {
-      "name": "editor: demo page content valid",
+      "name": "front end: 35 pages 200, no PHP notices",
       "ok": true,
       "detail": ""
+    },
+    {
+      "name": "editor loads",
+      "ok": false,
+      "detail": "page.waitForFunction: Timeout 180000ms exceeded."
     },
     {
       "name": "mobile 390px: no horizontal overflow",

@@ -1,14 +1,14 @@
 <?php
 /**
- * Title: Hero: name, phone and service index
+ * Title: Opener: name, phone and service index
  * Slug: pipe/hero
- * Categories: pipe,featured
- * Description: Opener: the trade and the town as the headline, a numbered service index with prices, and the phone number at full size.
+ * Categories: hero
+ * Description: Opener: the name and the town, the Gas Safe number and lead time, a numbered service index with prices, and the phone number at full size.
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":1,"align":"wide"} -->
-<h1 class="wp-block-heading alignwide">Boilers, heating and plumbing in Sheffield.</h1>
+<h1 class="wp-block-heading alignwide">Brennan Heating, Sheffield</h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
@@ -20,33 +20,19 @@
 <!-- wp:list {"className":"is-style-service-index"} -->
 <ul class="wp-block-list is-style-service-index"><!-- wp:list-item -->
 <li>Annual boiler service, from £72</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Boiler repair, call-out £85 including the first hour</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Boiler replacement, fixed quote after a free survey</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Landlord gas safety certificate (CP12), from £65</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Radiators, valves and power flushing</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Leaks, burst pipes and stopcocks</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Hot water cylinders and immersion heaters</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Underfloor heating manifolds and controls</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
@@ -66,7 +52,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Niall, Aisha and two engineers, all Gas Safe registered. We cover S1 to S14, S17, S35 and S60. Right now we are booking non-urgent work <strong>3 working days ahead</strong>.</p>
+<p class="">Gas Safe register 612884. Niall, Aisha and two engineers covering S1 to S14, S17, S35 and S60. Right now we are booking non-urgent work <strong>3 working days ahead</strong>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -79,7 +65,7 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/manifold.jpg' ) ); ?>" alt="A brass underfloor heating manifold with six white and grey thermal actuators on top"/><figcaption class="wp-element-caption">Manifold with new actuators, Crookes, last week</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>

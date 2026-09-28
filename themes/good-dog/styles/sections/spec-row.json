@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Label and value row",
+	"slug": "spec-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|contrast",
+				"width": "2px",
+				"style": "dotted"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{display:flex!important;justify-content:space-between;gap:1rem;flex-wrap:wrap}& > *{margin:0!important}& > *:first-child{font-weight:800}"
+	}
+}

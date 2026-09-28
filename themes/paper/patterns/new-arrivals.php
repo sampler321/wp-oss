@@ -20,7 +20,7 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"10rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/a5-notebook-dot-grid-5mm/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dot-grid.jpg' ) ); ?>" alt="Open dot grid notebook with a handwritten shopping list in pen and highlighter" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -40,7 +40,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/blue-black-gall-ink-50ml/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ink.jpg' ) ); ?>" alt="Square glass bottle of blue-black writing ink with a blue label" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -60,7 +60,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/pocket-notebook-blank-tan-leather/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/pocket-notebook.jpg' ) ); ?>" alt="Tan leather pocket notebook with a binder clip and a silver pen on white" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -80,7 +80,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/laid-envelopes-c6-pack-of-20/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/envelopes.jpg' ) ); ?>" alt="White envelopes tied with grey ribbon, a pencil and eucalyptus leaves on white" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -100,7 +100,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/brass-dip-pen-with-a-medium-nib/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/nib-brass.jpg' ) ); ?>" alt="Close-up of a brass dip pen nib on cream paper" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -120,7 +120,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/coloured-pencils-tin-of-12/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/pencils.jpg' ) ); ?>" alt="A fan of rainbow coloured pencils with water droplets" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -140,7 +140,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/2026-diary-a5-week-to-view/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/journal-pen.jpg' ) ); ?>" alt="Open journal with handwriting and a fountain pen resting on the page" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -160,7 +160,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/graph-exercise-books-pack-of-2/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/graph-books.jpg' ) ); ?>" alt="Two school exercise books, green and red, on squared paper with a ruler" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->

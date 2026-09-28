@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Rows (instead of a table)",
+	"slug": "rows",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "& > .wp-block-group{border-bottom:2px solid currentColor;padding:.6em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.15rem!important}& > .wp-block-group > p{margin:0!important}& > .wp-block-group > p:first-child{font-weight:800}& > .wp-block-group > p:last-child:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}"
+	}
+}

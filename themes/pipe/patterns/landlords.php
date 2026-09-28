@@ -2,7 +2,7 @@
 /**
  * Title: Landlords
  * Slug: pipe/landlords
- * Categories: pipe,services
+ * Categories: services
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -18,15 +18,51 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A CP12 certificate every 12 months is a legal requirement for any rented home with gas. We check every gas appliance, flue and alarm, and email the certificate the same day.</p>
+<p class="">A CP12 certificate every 12 months is a legal requirement for any rented home with gas. We check every gas appliance, flue and alarm, and email the certificate the same day.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>What</th><th>Price</th></tr></thead><tbody><tr><td>First property</td><td>£65</td></tr><tr><td>Each extra property, same visit day</td><td>£50</td></tr><tr><td>With a boiler service</td><td>£110 total</td></tr><tr><td>Portfolio of 10 or more</td><td>Ask for a yearly rate</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">First property</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£65</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Each extra property, same visit day</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£50</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">With a boiler service</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£110 total</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Portfolio of 10 or more</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ask for a yearly rate</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">We arrange access with tenants directly, give them a two-hour window and send you a text when the certificate is done.</p>
+<p class="has-small-font-size">We arrange access with tenants directly, give them a two-hour window and text you when the certificate is done.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

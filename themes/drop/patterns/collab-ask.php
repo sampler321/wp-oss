@@ -11,7 +11,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bands, zines, print clubs and record shops: email a sentence and a photo of something you made. We say yes about twice a year, so please don't be offended by a no.</p>
+<p class="">Bands, zines, print clubs and record shops: email a sentence and a photo of something you made. We say yes about twice a year, so please don't be offended by a no.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

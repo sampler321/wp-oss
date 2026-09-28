@@ -71,6 +71,15 @@
 							"fontStyle": "italic",
 							"fontWeight": "400 700",
 							"src": [
+								"file:./assets/fonts/poltawski-nowy-italic-400_700-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Poltawski Nowy",
+							"fontStyle": "italic",
+							"fontWeight": "400 700",
+							"src": [
 								"file:./assets/fonts/poltawski-nowy-italic-400_700.woff2"
 							],
 							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
@@ -80,16 +89,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400 700",
 							"src": [
-								"file:./assets/fonts/poltawski-nowy-normal-400_700.woff2"
-							],
-							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-						},
-						{
-							"fontFamily": "Poltawski Nowy",
-							"fontStyle": "italic",
-							"fontWeight": "400 700",
-							"src": [
-								"file:./assets/fonts/poltawski-nowy-italic-400_700-latin-ext.woff2"
+								"file:./assets/fonts/poltawski-nowy-normal-400_700-latin-ext.woff2"
 							],
 							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
 						},
@@ -98,9 +98,9 @@
 							"fontStyle": "normal",
 							"fontWeight": "400 700",
 							"src": [
-								"file:./assets/fonts/poltawski-nowy-normal-400_700-latin-ext.woff2"
+								"file:./assets/fonts/poltawski-nowy-normal-400_700.woff2"
 							],
-							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
 						}
 					]
 				},
@@ -109,6 +109,15 @@
 					"name": "Public Sans",
 					"slug": "body",
 					"fontFace": [
+						{
+							"fontFamily": "Public Sans",
+							"fontStyle": "italic",
+							"fontWeight": "300 800",
+							"src": [
+								"file:./assets/fonts/public-sans-italic-300_800-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
@@ -123,16 +132,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "300 800",
 							"src": [
-								"file:./assets/fonts/public-sans-normal-300_800.woff2"
-							],
-							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "300 800",
-							"src": [
-								"file:./assets/fonts/public-sans-italic-300_800-latin-ext.woff2"
+								"file:./assets/fonts/public-sans-normal-300_800-latin-ext.woff2"
 							],
 							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
 						},
@@ -141,9 +141,9 @@
 							"fontStyle": "normal",
 							"fontWeight": "300 800",
 							"src": [
-								"file:./assets/fonts/public-sans-normal-300_800-latin-ext.woff2"
+								"file:./assets/fonts/public-sans-normal-300_800.woff2"
 							],
-							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
 						}
 					]
 				}
@@ -281,6 +281,14 @@
 		},
 		"custom": {
 			"measure": "66ch"
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -510,6 +518,18 @@
 					"padding": {
 						"left": "var:preset|spacing|40"
 					}
+				},
+				"elements": {
+					"cite": {
+						"typography": {
+							"fontFamily": "var:preset|font-family|body",
+							"fontSize": "var:preset|font-size|x-small",
+							"fontStyle": "normal"
+						},
+						"color": {
+							"text": "var:preset|color|muted"
+						}
+					}
 				}
 			},
 			"core/table": {
@@ -543,7 +563,7 @@
 				}
 			}
 		},
-		"css": ".wp-block-post-content > * + :is(h2,h3,.wp-block-columns,.wp-block-media-text,.wp-block-group,.wp-block-image,.wp-block-details){margin-block-start:var(--wp--preset--spacing--60)}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none;font-variant-numeric:lining-nums}a:focus-visible,summary:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--wp--preset--color--contrast);outline-offset:3px;box-shadow:0 0 0 5px var(--wp--preset--color--accent)}.is-style-leaders li{display:flex;align-items:baseline;gap:.4em;padding:.45em 0;border-bottom:1px solid var(--wp--preset--color--line)}.is-style-leaders li strong{order:2;white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}.is-style-leaders li::after{content:\"\";order:1;flex:1 1 2rem;border-bottom:1px dotted var(--wp--preset--color--contrast);transform:translateY(-.3em)}@media (min-width:782px){.is-style-guides{background-image:repeating-linear-gradient(to right,var(--wp--preset--color--surface) 0 1px,transparent 1px calc(100% / 12))}}@media print{header.wp-block-template-part,footer.wp-block-template-part,.no-print{display:none!important}.is-style-slip{border-style:dashed}}"
+		"css": ".wp-block-post-content > * + :is(h2,h3,.wp-block-columns,.wp-block-media-text,.wp-block-group,.wp-block-image,.wp-block-details){margin-block-start:var(--wp--preset--spacing--60)}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none;font-variant-numeric:lining-nums}a:focus-visible,summary:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--wp--preset--color--contrast);outline-offset:3px;box-shadow:0 0 0 5px var(--wp--preset--color--accent)}.is-style-leaders li{display:flex;align-items:baseline;gap:.4em;padding:.45em 0;border-bottom:1px solid var(--wp--preset--color--line)}.is-style-leaders li strong{order:2;white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}.is-style-leaders li::after{content:\"\";order:1;flex:1 1 2rem;border-bottom:1px dotted var(--wp--preset--color--contrast);transform:translateY(-.3em)}@media (min-width:782px){.is-style-guides{background-image:repeating-linear-gradient(to right,var(--wp--preset--color--surface) 0 1px,transparent 1px calc(100% / 12))}}@media print{header.wp-block-template-part,footer.wp-block-template-part,.no-print{display:none!important}.is-style-slip{border-style:dashed}}.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}.slip-lines > .wp-block-group > :last-child{border-bottom:1px dotted var(--wp--preset--color--contrast);min-height:2.2em}.slip-lines > .wp-block-group{border-bottom:0!important}"
 	},
 	"templateParts": [
 		{

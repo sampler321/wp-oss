@@ -2,7 +2,7 @@
 /**
  * Title: Post list
  * Slug: platter/post-list
- * Categories: platter,query
+ * Categories: case-study
  * Inserter: no
  */
 ?>

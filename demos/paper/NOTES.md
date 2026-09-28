@@ -8,3 +8,11 @@
 - Nice-to-haves built: fountain-pen-friendly yes/no table, handmade note, printable ruling samples, next year's diaries bar (September to February), wholesale price list, perpetual calendar, gift wrap.
 - Tool issue: `tools/fetch-fonts.mjs` keeps a random CJK subset (about 1KB) for Japanese families because Google labels those subsets with numbers, not "latin". The Latin faces were fetched by hand into the same file names; re-running fetch-fonts for this theme would break the type again.
 - Ruling variants are separate simple products because the demo builder makes simple products only.
+
+## Round 2
+
+- The home h1 was a sentence ending in a full stop; it now opens on the current thing: "New in: the A5 notebook, sewn in Leith, in four rulings".
+- Kit grew from 26 to 44 patterns, from sections on Present & Correct and Choosing Keeping: ink swatches (four ink colours added to the palette), a gsm guide on a dot-grid field, bindings compared, pencil grades, the testing desk, evening classes, pen repair, gift sets, a monthly letter box, a paper sample pack, desk objects, how the notebooks are sewn (lightbox photos), what the staff use, a school list, a contact line and an alternative hero that opens on the category list.
+- Tables cut from six patterns to three (fountain-pen test results, wholesale price list, postage). The ruling selector, diaries, hours, classes and guides use hairline rows built from groups. No table on the home page.
+- New pages: Classes and repairs, Paper guides, Gifts. Seven notes posts, each using the kit.
+- Image lightbox on globally.

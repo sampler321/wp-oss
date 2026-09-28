@@ -27,6 +27,7 @@ def jdump(rel, data):
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    s = s.replace('.', '-')
     s = re.sub(r'[^a-z0-9 _-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     return re.sub(r'-+', '-', s).strip('-')
@@ -69,6 +70,7 @@ theme = {
   'shadow': {'defaultPresets': False, 'presets': []},
   'border': {'color': True, 'radius': True, 'style': True, 'width': True,
              'radiusSizes': [{'slug': 'none', 'size': '0', 'name': 'Square'}, {'slug': 'tag', 'size': '3px', 'name': 'Tag corner'}]},
+  'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
  },
  'styles': {
   'color': {'background': C('base'), 'text': C('contrast')},
@@ -220,6 +222,19 @@ section('brand-list', 'Brand list', ['core/paragraph'],
         {'typography': {**cond, 'fontSize': FS('x-large'), 'fontWeight': '700', 'lineHeight': '1.05'},
          'elements': {'link': {'typography': {'textDecoration': 'none'}, ':hover': {'color': {'text': C('accent')}}}}})
 
+section('rows', 'Catalogue rows (instead of a table)', ['core/group'],
+        {'css': ('& > .wp-block-group{border-bottom:1px solid var(--wp--preset--color--line);padding:.5em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.1rem!important}'
+                 '& > .wp-block-group:first-child{border-top:3px solid var(--wp--preset--color--line)}& > .wp-block-group > p{margin:0!important}'
+                 '& > .wp-block-group > p:first-child{font-family:var(--wp--preset--font-family--display);text-transform:uppercase;font-weight:700;font-size:1.1em;letter-spacing:.02em}'
+                 '& > .wp-block-group > p:last-child:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}')})
+
+
+def rows(items, min_w='7rem', cls='is-style-rows', **kw):
+    n = max(len(r) for r in items)
+    return group(J(*[group(J(*[para(c) for c in r]), layout={'type': 'grid', 'columnCount': n, 'minimumColumnWidth': min_w}) for r in items]),
+                 className=cls, layout={'type': 'default'}, **kw)
+
+
 # ---------------------------------------------------------------- content data
 SHOP = {'name': 'Second Floor Vintage', 'addr': '61 Oldham Street, second floor, Manchester M1 1JR', 'email': 'rail@example.com', 'phone': '0161 496 0733'}
 DECADES = [('40s', '40s'), ('50s', '50s'), ('60s', '60s'), ('70s', '70s'), ('80s', '80s'), ('90s', '90s'), ('Y2K', 'y2k')]
@@ -261,6 +276,10 @@ P = [
 
 def purl(p):
     return '/product/%s/' % slugify(p[0])
+
+
+def mrows(p):
+    return rows([[label, '%d cm, %.1f in' % (v, v / 2.54)] for label, v in [('Chest, pit to pit', p[7]), ('Shoulder', p[8]), ('Length, nape to hem', p[9]), ('Sleeve', p[10])] if v])
 
 
 def mtable(p):
@@ -309,7 +328,7 @@ pattern('catalogue-entry', 'Catalogue entry (photo, measurements, tag)', 'shop,f
   ('55%', image('field-jacket.jpg', ALT['field-jacket.jpg'], aspectRatio='4/5', scale='cover')),
   (None, J(heading('1950s US Army M-1943 field jacket', 2),
      row(J(para('£140', className='is-style-swing-tag'), para('Label 38R. Measures like a modern M.', fontSize='small')), style={'spacing': {'blockGap': SP('30')}}),
-     mtable(P[1]),
+     mrows(P[1]),
      para('Condition: good. Fraying at both cuff edges and one replaced button on the storm flap.'),
      buttons(('Buy this jacket', purl(P[1]))))), align='wide', className='is-style-catalogue-rule', style={'spacing': {'blockGap': {'left': SP('60')}}}),
   description='A single piece laid out like an old workwear catalogue page.')
@@ -367,7 +386,7 @@ pattern('brand-index', 'Shop by brand', 'shop', group(J(
 pattern('buying-days', 'Buying days', 'text', group(J(
   heading('Buying days', 2),
   para('First Monday of every month, 11am to 3pm. Bring up to two bags, washed. We look while you wait and pay cash or 20% more in credit.'),
-  table([['Monday 6 October', '11am to 3pm'], ['Monday 3 November', '11am to 3pm'], ['Monday 1 December', '11am to 3pm']], head=['Next dates', 'Times']),
+  rows([['Monday 6 October', '11am to 3pm'], ['Monday 3 November', '11am to 3pm'], ['Monday 1 December', '11am to 3pm']]),
   para('We need photo ID for every purchase. It is a condition of our dealer licence.', fontSize='small')),
   className='is-style-card', align='wide', layout={'type': 'constrained', 'justifyContent': 'left'}))
 
@@ -379,7 +398,7 @@ pattern('visit', 'Visit the shop', 'contact', columns(
   ('55%', image('shop-floor.jpg', ALT['shop-floor.jpg'], aspectRatio='16/10', scale='cover')),
   (None, J(heading('Visit', 2),
      para('%s. Buzz 2 at the green door next to the barber. Two flights of stairs and no lift, sorry. If you cannot manage the stairs, call and we will bring rails down on a Wednesday morning.' % SHOP['addr']),
-     table([['Mon and Tue', 'Closed'], ['Wed to Sat', '11am to 6pm'], ['Sun', '12pm to 5pm']], head=['Day', 'Open']),
+     rows([['Mon and Tue', 'Closed'], ['Wed to Sat', '11am to 6pm'], ['Sun', '12pm to 5pm']]),
      para('<a href="tel:01614960733">%s</a>, <a href="mailto:%s">%s</a>' % (SHOP['phone'], SHOP['email'], SHOP['email'])))), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}))
 
 pattern('shipping-returns', 'Shipping and returns', 'shop', J(
@@ -437,15 +456,99 @@ pattern('post-grid', 'Journal grid (inherits query)', 'posts,query', inherit_que
 pattern('post-list', 'Results list', 'posts,query', inherit_query(
   group(J(dyn('post-title', isLink=True, level=2, fontSize='large'), dyn('post-date')), className='is-style-catalogue-rule', layout={'type': 'default'}), align='wide'), inserter=False)
 
+
+# ---------------------------------------------------------------- round 2
+KINDS = [('Jackets', 'field-jacket.jpg'), ('Shirts', 'shirt-front.jpg'), ('Dresses', 'dress.jpg'), ('Blouses', 'blouse.jpg'), ('Denim', 'jeans-pocket.jpg'), ('Boots', 'boots.jpg')]
+pattern('category-tiles', 'Shop by garment', 'shop,featured', group(J(
+  heading('By garment', 2),
+  group(J(*[group(J(image(img, ALT[img], href='/?s=%s&post_type=product' % k.lower().rstrip('s'), aspectRatio='4/5', scale='cover'), heading('<a href="/?s=%s&amp;post_type=product">%s</a>' % (k.lower().rstrip('s'), k), 3, fontSize='large')), layout={'type': 'default'}) for k, img in KINDS]),
+        align='wide', layout={'type': 'grid', 'columnCount': 6, 'minimumColumnWidth': '9rem'}, style={'spacing': {'blockGap': SP('30')}})),
+  align='wide', className='is-style-catalogue-rule', layout={'type': 'default'}), description='Six garment types, each a photo and a search link.')
+pattern('womens-mens', 'Women\'s and men\'s', 'shop,featured', columns(
+  (None, J(image('dress.jpg', ALT['dress.jpg'], aspectRatio='4/5', scale='cover'), heading('<a href="/?s=dress&amp;post_type=product">Women\'s</a>', 2), para('Dresses, blouses, coats and knitwear, 1940s to the early 2000s. Kwame buys it.'))),
+  (None, J(image('field-jacket.jpg', ALT['field-jacket.jpg'], aspectRatio='4/5', scale='cover'), heading('<a href="/?s=jacket&amp;post_type=product">Men\'s</a>', 2), para('Workwear, military, shirts and boots. Aoife buys it.'))),
+  align='wide', style={'spacing': {'blockGap': {'left': SP('40')}}}), description='Two big photos, women\'s and men\'s, with who buys each.')
+pattern('piece-of-the-week', 'Piece of the week', 'shop,featured', columns(
+  ('50%', gallery([('shirt-front.jpg', ALT['shirt-front.jpg'], 'Front'), ('shirt-back.jpg', ALT['shirt-back.jpg'], 'Back'), ('stamp-detail.jpg', ALT['stamp-detail.jpg'], 'Size stamp')], columns=2)),
+  (None, J(heading('Piece of the week: 1940s army flannel shirt', 2),
+     para('Olive wool flannel, coat front, two flap pockets. Heavy, soft from washing, and the moth nips on the cuff are darned in matching wool. Label 15.5, fits a modern men\'s medium.'),
+     mrows(P[0]), row(J(para('£85', className='is-style-swing-tag'), para('<a href="%s">See the listing</a>' % purl(P[0]))), style={'spacing': {'blockGap': SP('30')}}))),
+  align='wide', className='is-style-catalogue-rule', style={'spacing': {'blockGap': {'left': SP('60')}}}),
+  description='One piece shown front, back and detail, with its measurements. Click a photo to open it.')
+pattern('dating-guide', 'How we date a garment', 'text', group(J(
+  heading('How we date a piece', 2),
+  para('Labels and hardware tell you more than the cut. These are the clues we check first.'),
+  rows([['Union label', 'A small cloth union tag in US workwear usually means before the late 1980s.'], ['Care label', 'UK care labels became common in the early 1970s. None at all often means older.'],
+        ['Zip', 'Metal zips with a maker\'s name on the pull point to the 50s and 60s. Plastic coil zips arrive in the 70s.'], ['Size format', 'Chest sizes in inches on women\'s clothes are usually pre-1970. Dress sizes 10 to 16 take over after that.'],
+        ['Stock number', 'Army clothing carries a stock or contract number and a date stamp inside.']], min_w='9rem')),
+  layout={'type': 'constrained', 'justifyContent': 'left'}), description='Label, zip and stamp clues used to date clothing.')
+pattern('fabric-notes', 'Fabric notes', 'text', columns(
+  (None, J(heading('Wool flannel', 4), para('Warm, heavy, forgives creases. Moths love it; keep cedar in the wardrobe.'))),
+  (None, J(heading('Cotton sateen', 4), para('The shiny army cotton. Fades to a soft green with every wash.'))),
+  (None, J(heading('Moleskin', 4), para('Dense brushed cotton in French work jackets. Wears pale at the elbows and cuffs.'))),
+  (None, J(heading('Silk crepe', 4), para('Matte and heavy. Hand wash cold, never wring.'))), align='wide', className='is-style-catalogue-rule'))
+pattern('alterations', 'Alterations and repairs', 'services', columns(
+  (None, J(heading('Alterations and repairs', 2), para('Kwame takes in, lets out and mends on a 1970s Singer at the back of the shop. Anything bought here gets its first alteration free.'),
+     rows([['Take in a waist', '£18'], ['Shorten sleeves', '£22'], ['Darn a moth hole', '£6 each'], ['Replace a zip', '£20']]))),
+  (None, image('stamp-detail.jpg', ALT['stamp-detail.jpg'], aspectRatio='4/5', scale='cover')), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}),
+  description='Repairs and alterations with prices.')
+pattern('costume-hire', 'Hire for film and theatre', 'services', group(J(
+  heading('Hire for film, stage and photo shoots', 2),
+  para('We hire pieces by the week to costume departments and stylists. Military and workwear are what people ask for most. A deposit of the sale price, returned when it comes back clean.'),
+  rows([['One week', '20% of the sale price'], ['Two weeks', '30% of the sale price'], ['Whole rail for a production', 'Ask us']]),
+  buttons(('Email about hire', 'mailto:%s?subject=Hire' % SHOP['email']))),
+  className='is-style-card', align='wide', layout={'type': 'constrained', 'justifyContent': 'left'}), description='Costume hire terms for productions and shoots.')
+pattern('styling-appointment', 'Book a quiet hour', 'services', group(J(
+  heading('Book a quiet hour', 2),
+  para('Wednesday mornings before we open, we will pull pieces in your size and decade and leave you to try them on. Free, one person at a time, an hour each.'),
+  buttons(('Email to book a Wednesday', 'mailto:%s?subject=Quiet%%20hour' % SHOP['email']))),
+  className='is-style-ink', align='full', layout={'type': 'constrained'}))
+pattern('markets', 'Where we pop up', 'events', group(J(
+  heading('Markets and pop-ups', 2),
+  rows([['Sat 18 Oct', 'Levenshulme Market', 'Two rails of workwear and knitwear.'], ['Sun 2 Nov', 'Makers Market, Piccadilly', 'Military and outerwear only.'], ['Sat 6 Dec', 'Christmas vintage fair, Victoria Baths', 'The full shop on 12 rails.']], min_w='9rem')),
+  layout={'type': 'default'}), description='Market dates and what we bring.')
+pattern('wanted', 'Wanted list', 'shop', group(J(
+  heading('On our wanted list', 3),
+  lst(['French chore jackets in moleskin, any size', 'Barbour Bedale and Beaufort, even worn through', '1970s embroidered smock dresses', 'Wool army shirts with stamps intact']),
+  para('Got one? Bring it on a buying day or email a photo.', fontSize='small')), className='is-style-card', layout={'type': 'default'}))
+pattern('lookbook', 'Lookbook (photos open large)', 'gallery', J(
+  heading('Autumn rail', 2, align='wide'),
+  gallery([('outfit.jpg', ALT['outfit.jpg'], 'Blanket wrap coat, 80s'), ('chore-jacket.jpg', ALT['chore-jacket.jpg'], 'Bleu de travail, 60s'),
+           ('blouse.jpg', ALT['blouse.jpg'], 'Silk blouse, 50s'), ('shell-jacket.jpg', ALT['shell-jacket.jpg'], 'Shell jacket, 90s')], columns=4, align='wide')),
+  description='Four pieces from the current rail. Click to open.')
+pattern('detail-strip', 'Details: labels, seams and wear', 'gallery', gallery([
+  ('stamp-detail.jpg', ALT['stamp-detail.jpg'], 'Size stamp'), ('jeans-pocket.jpg', ALT['jeans-pocket.jpg'], 'Arcuate stitching'), ('shirt-back.jpg', ALT['shirt-back.jpg'], 'Back yoke')], columns=3, align='wide'),
+  description='Close-ups of labels and construction. Click to open.')
+pattern('size-finder', 'Size finder: chest to modern size', 'text', group(J(
+  heading('From chest to modern size', 3),
+  rows([['Chest 48 to 50 cm flat', 'Women\'s UK 8 to 10'], ['Chest 52 to 55 cm flat', 'Women\'s UK 12 to 14, men\'s XS'], ['Chest 56 to 59 cm flat', 'Men\'s S to M'], ['Chest 60 to 63 cm flat', 'Men\'s M to L'], ['Chest 64 cm and up', 'Men\'s L and up']])),
+  layout={'type': 'default'}), description='A rough guide from flat chest measurement to modern size.')
+pattern('staff', 'Who is behind the rails', 'about', columns(
+  (None, J(heading('Aoife Brennan', 3), para('Buys menswear, workwear and military. Knows a stock number by sight. Will talk you out of a jacket that does not fit.'))),
+  (None, J(heading('Kwame Asante', 3), para('Buys womenswear and anything embroidered. Does the alterations on a Singer older than both of us.'))), align='wide', className='is-style-catalogue-rule'))
+pattern('faq', 'Questions people ask', 'text', group(J(
+  heading('Questions', 2),
+  details('Can I try things on?', para('Yes, in the shop, behind a curtain made from an old parachute.')),
+  details('Do you hold pieces?', para('For 24 hours if you call. One-offs sell fast.')),
+  details('Why is the label size different from the fit?', para('Sizes shrank over the decades. Read the measurements and the size guide.')),
+  details('Do you clean everything?', para('Yes. Wool is aired and steamed, cotton washed, leather conditioned.'))),
+  layout={'type': 'constrained', 'justifyContent': 'left'}))
+pattern('hero-piece', 'Hero: one piece with its measurements', 'featured,banner', columns(
+  ('45%', image('field-jacket.jpg', ALT['field-jacket.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, J(heading('New this Friday: 1950s M-1943 field jacket', 1, fontSize='x-large'), mrows(P[1]), row(J(para('£140', className='is-style-swing-tag'), para('<a href="%s">Buy it</a>' % purl(P[1]))), style={'spacing': {'blockGap': SP('30')}}))),
+  align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}), description='An alternative opening: one piece, its measurements and price.')
+
 # page layouts
 pattern('page-decades', 'Page: by decade', 'shop', J(
   para('Every piece is filed under the decade it was made, as close as the labels and construction let us date it. When we are guessing, the listing says so.'),
   pattern_ref('decade-index'), pattern_ref('catalogue-entry'), pattern_ref('brand-index'), pattern_ref('sold-archive')), block_types='core/post-content')
-pattern('page-size-guide', 'Page: size guide', 'text', J(pattern_ref('measuring-guide'), pattern_ref('compare-tip'), pattern_ref('measurement-table'), pattern_ref('care-notes')), block_types='core/post-content')
+pattern('page-size-guide', 'Page: size guide', 'text', J(pattern_ref('measuring-guide'), pattern_ref('size-finder'), pattern_ref('compare-tip'), pattern_ref('measurement-table'), pattern_ref('dating-guide'), pattern_ref('fabric-notes'), pattern_ref('care-notes')), block_types='core/post-content')
 pattern('page-buying', 'Page: buying days', 'text', J(
   para('We buy from the public once a month and from house clearances by arrangement.', fontSize='large'),
-  pattern_ref('buying-days'), pattern_ref('what-we-buy')), block_types='core/post-content')
-pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('about-shop'), pattern_ref('quote-customer')), block_types='core/post-content')
+  pattern_ref('buying-days'), pattern_ref('what-we-buy'), pattern_ref('wanted')), block_types='core/post-content')
+pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('markets'), pattern_ref('about-shop'), pattern_ref('staff'), pattern_ref('quote-customer'), pattern_ref('faq')), block_types='core/post-content')
+pattern('page-services', 'Page: alterations, hire and quiet hours', 'services', J(pattern_ref('alterations'), pattern_ref('costume-hire'), pattern_ref('styling-appointment')), block_types='core/post-content')
+pattern('page-lookbook', 'Page: lookbook', 'gallery', J(pattern_ref('lookbook'), pattern_ref('piece-of-the-week'), pattern_ref('detail-strip'), pattern_ref('womens-mens')), block_types='core/post-content')
 pattern('page-shipping', 'Page: shipping and returns', 'shop', J(pattern_ref('shipping-returns'), pattern_ref('gift-card')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- parts
@@ -460,7 +563,7 @@ write('parts/footer.html', group(J(
   pattern_ref('decade-index-compact'),
   columns(
     (None, J(heading('Second Floor Vintage', 4), para('%s<br>Wed to Sat 11 to 6, Sun 12 to 5<br><a href="tel:01614960733">%s</a>' % (SHOP['addr'], SHOP['phone']), fontSize='small'))),
-    (None, J(heading('Help', 4), para('<a href="/size-guide/">Size guide</a><br><a href="/shipping/">Shipping and returns</a><br><a href="/buying-days/">Sell to us</a>', fontSize='small'))),
+    (None, J(heading('Help', 4), para('<a href="/size-guide/">Size guide</a><br><a href="/shipping/">Shipping and returns</a><br><a href="/buying-days/">Sell to us</a><br><a href="/services/">Alterations and hire</a><br><a href="/lookbook/">Lookbook</a>', fontSize='small'))),
     (None, J(heading('Friday drop', 4), para('New pieces every Friday at noon, by email an hour earlier. <a href="mailto:%s?subject=Friday%%20drop">Sign up</a>' % SHOP['email'], fontSize='small'))),
     align='wide', className='is-style-catalogue-rule'),
   para('Demo photographs are CC0 and public domain images from Wikimedia Commons, including garments from a French military museum collection, used as stand-ins.', fontSize='x-small', textColor='muted', align='wide')),
@@ -476,8 +579,8 @@ def tpl(name, inner):
     write('templates/%s.html' % name, J(template_part('header', 'header'), inner, template_part('footer', 'footer')))
 
 
-tpl('front-page', group(J(pattern_ref('decade-index'), pattern_ref('new-in-grid'), pattern_ref('intro-split'), pattern_ref('catalogue-entry'),
-    pattern_ref('brand-index'), pattern_ref('journal-list'), pattern_ref('newsletter')), tag='main', layout={'type': 'constrained'}, style={'spacing': {'blockGap': SP('60')}}))
+tpl('front-page', group(J(pattern_ref('decade-index'), pattern_ref('new-in-grid'), pattern_ref('category-tiles'), pattern_ref('piece-of-the-week'), pattern_ref('womens-mens'),
+    pattern_ref('intro-split'), pattern_ref('brand-index'), pattern_ref('journal-list'), pattern_ref('newsletter')), tag='main', layout={'type': 'constrained'}, style={'spacing': {'blockGap': SP('60')}}))
 tpl('page', main(J(dyn('post-title', level=1), dyn('post-content', layout={'type': 'constrained'}))))
 tpl('page-wide', main(J(dyn('post-title', level=1, align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1320px'}))))
 tpl('single', main(J(dyn('post-date'), dyn('post-title', level=1, align='wide'), dyn('post-featured-image', align='wide', aspectRatio='16/9', scale='cover'),
@@ -553,23 +656,28 @@ demo = {
   {'slug': 'buying-days', 'title': 'Buying days', 'pattern': 'thrift/page-buying', 'template': 'page-wide'},
   {'slug': 'visit', 'title': 'Visit', 'pattern': 'thrift/page-visit', 'template': 'page-wide'},
   {'slug': 'shipping', 'title': 'Shipping and returns', 'pattern': 'thrift/page-shipping'},
+  {'slug': 'services', 'title': 'Alterations and hire', 'pattern': 'thrift/page-services', 'template': 'page-wide'},
+  {'slug': 'lookbook', 'title': 'Lookbook', 'pattern': 'thrift/page-lookbook', 'template': 'page-wide'},
  ],
  'posts': [
   {'title': 'A van full of French work jackets from Lille', 'category': 'buying-trips', 'image': 'chore-jacket.jpg', 'content': J(
-     para('Aoife drove back from Lille with 60 bleu de travail jackets from a closing uniform supplier. About half are moleskin, the rest cotton drill. They go on the rail in batches of ten, starting this Friday.'))},
+     para('Aoife drove back from Lille with 60 bleu de travail jackets from a closing uniform supplier. About half are moleskin, the rest cotton drill. They go on the rail in batches of ten, starting this Friday.'),
+     para('The supplier had kept every size from 40 to 56, so for once we have the same jacket in a run of sizes. Measurements differ a little from jacket to jacket because they shrank differently in the wash.'), pattern_ref('fabric-notes'), pattern_ref('lookbook'))},
   {'title': 'Mending moth nips in army flannel', 'category': 'on-the-table', 'image': 'shirt-front.jpg', 'content': J(
-     para('Small moth holes in wool flannel darn well with a single strand of matching wool and a lot of patience. We charge nothing extra for mending, and we note every repair in the listing.'))},
+     para('Small moth holes in wool flannel darn well with a single strand of matching wool and a lot of patience. We charge nothing extra for mending, and we note every repair in the listing.'), pattern_ref('flaw-notes'), pattern_ref('alterations'))},
   {'title': 'Why a 1950s size 14 fits like a modern 10', 'category': 'on-the-table', 'image': 'blouse.jpg', 'content': J(
-     para('UK sizing was redrawn several times after the war, and every redraw made the numbers smaller for the same body. That is why we list the label and then ignore it.'))},
+     para('UK sizing was redrawn several times after the war, and every redraw made the numbers smaller for the same body. That is why we list the label and then ignore it.'), pattern_ref('size-finder'), pattern_ref('compare-tip'))},
   {'title': 'The field jacket that came with a letter in the pocket', 'category': 'buying-trips', 'image': 'field-jacket.jpg', 'content': J(
-     para('A 1950s M-1943 from a house clearance in Stockport had a folded letter in the inside pocket, dated 1954. We gave the letter back to the family and kept the jacket.'))},
+     para('A 1950s M-1943 from a house clearance in Stockport had a folded letter in the inside pocket, dated 1954. We gave the letter back to the family and kept the jacket.'), pattern_ref('catalogue-entry'), pattern_ref('dating-guide'))},
   {'title': 'Buying day notes: what we took and what we passed on', 'category': 'buying-trips', 'image': 'shop-floor.jpg', 'content': J(
-     para('Forty people came up the stairs last Monday. We bought from 23 of them. Most of the no pile was high-street denim from the last ten years, which we cannot sell for more than you paid.'))},
+     para('Forty people came up the stairs last Monday. We bought from 23 of them. Most of the no pile was high-street denim from the last ten years, which we cannot sell for more than you paid.'), pattern_ref('what-we-buy'), pattern_ref('buying-days'))},
   {'title': 'Photographing flaws before anything else', 'category': 'on-the-table', 'image': 'stamp-detail.jpg', 'content': J(
-     para('Every piece gets its flaw photos taken first, before the nice ones. It stops us forgetting, and it means the last pictures in each gallery are the honest ones.'))},
+     para('Every piece gets its flaw photos taken first, before the nice ones. It stops us forgetting, and it means the last pictures in each gallery are the honest ones.'), pattern_ref('detail-strip'), pattern_ref('one-of-one-note'))},
+  {'title': 'Costume hire for a BBC period drama', 'category': 'buying-trips', 'image': 'jacket-od.jpg', 'content': J(
+     para('A costume department borrowed thirty army jackets and shirts for six weeks of filming in Salford. Everything came back, two with extra mud.'), pattern_ref('costume-hire'))},
  ],
  'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'By decade', 'url': '/decades/'}, {'label': 'Size guide', 'url': '/size-guide/'},
-         {'label': 'Buying days', 'url': '/buying-days/'}, {'label': 'Journal', 'url': '/journal/'}, {'label': 'Visit', 'url': '/visit/'}],
+         {'label': 'Buying days', 'url': '/buying-days/'}, {'label': 'Lookbook', 'url': '/lookbook/'}, {'label': 'Hire', 'url': '/services/'}, {'label': 'Journal', 'url': '/journal/'}, {'label': 'Visit', 'url': '/visit/'}],
  'currency': 'GBP',
  'products': [{'name': p[0], 'price': p[4], 'image': p[1], 'category': p[3], 'sku': 'SFV-%d' % (400 + i * 7), 'stock': p[5],
                'short': pshort(p), 'description': pdesc(p)} for i, p in enumerate(P)] + [

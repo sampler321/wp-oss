@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Specimen ground",
+	"slug": "specimen",
+	"blockTypes": [
+		"core/group",
+		"core/column",
+		"core/image"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|surface"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30",
+				"bottom": "var:preset|spacing|30",
+				"left": "var:preset|spacing|30",
+				"right": "var:preset|spacing|30"
+			}
+		},
+		"css": "& .wp-block-image{margin:0}& img{display:block;width:100%}"
+	}
+}

@@ -2,7 +2,7 @@
 /**
  * Title: Allergen sheet
  * Slug: scoop/allergen-sheet
- * Categories: scoop,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

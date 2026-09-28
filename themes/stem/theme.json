@@ -245,6 +245,14 @@
 					"name": "Arch"
 				}
 			]
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {

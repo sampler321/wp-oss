@@ -2,7 +2,7 @@
 /**
  * Title: Story of the maker
  * Slug: scoop/story
- * Categories: scoop,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -15,15 +15,15 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Chiara Benedetti trained at the Carpigiani Gelato University in Bologna and worked six summers at a gelateria in Parma before moving to Edinburgh in 2017. She opened Latteria Nord in 2020 with her partner Callum Reid, who does the books, the deliveries and, now, the tablet flavour.</p>
+<p class="">Chiara Benedetti trained at the Carpigiani Gelato University in Bologna and worked six summers at a gelateria in Parma before moving to Edinburgh in 2017. She opened Latteria Nord in 2020 with her partner Callum Reid, who does the books, the deliveries and, now, the tablet flavour.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Chiara makes every batch herself between 7 and 11. Two people serve in the afternoons: Ines on weekdays and Oskar at weekends.</p>
+<p class="">Chiara makes every batch herself between 7 and 11. Two people serve in the afternoons: Ines on weekdays and Oskar at weekends.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>One opinion she will give you unasked: gelato should be served soft enough to bend the spade. If it is piled up high like a mountain, it has stabilisers in it.</p>
+<p class="">One opinion she will give you unasked: gelato should be served soft enough to bend the spade. If it is piled up high like a mountain, it has stabilisers in it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-note"} -->

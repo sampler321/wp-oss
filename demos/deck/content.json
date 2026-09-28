@@ -6,7 +6,13 @@
  "categories": [
   {
    "slug": "videos",
-   "name": "Videos"
+   "name": "Videos",
+   "description": "Parts, raw files and trips filmed by the team."
+  },
+  {
+   "slug": "team",
+   "name": "Team",
+   "description": "The four riders who skate for the shop."
   },
   {
    "slug": "shop-news",
@@ -14,7 +20,7 @@
   }
  ],
  "front_page": "home",
- "posts_page": "videos",
+ "posts_page": "news",
  "pages": [
   {
    "slug": "home",
@@ -22,9 +28,15 @@
    "content": ""
   },
   {
-   "slug": "videos",
-   "title": "Videos",
+   "slug": "news",
+   "title": "News",
    "content": ""
+  },
+  {
+   "slug": "completes",
+   "title": "Completes",
+   "pattern": "deck/page-completes",
+   "template": "page-wide"
   },
   {
    "slug": "truck-size-guide",
@@ -34,7 +46,7 @@
   },
   {
    "slug": "team",
-   "title": "Team",
+   "title": "About the team",
    "pattern": "deck/page-team",
    "template": "page-wide"
   },
@@ -42,6 +54,30 @@
    "slug": "events",
    "title": "Events",
    "pattern": "deck/page-events",
+   "template": "page-wide"
+  },
+  {
+   "slug": "spots",
+   "title": "Spot guide",
+   "pattern": "deck/page-spots",
+   "template": "page-wide"
+  },
+  {
+   "slug": "zine",
+   "title": "Zine",
+   "pattern": "deck/page-zine",
+   "template": "page-wide"
+  },
+  {
+   "slug": "drops",
+   "title": "Drops and sale",
+   "pattern": "deck/page-drops",
+   "template": "page-wide"
+  },
+  {
+   "slug": "stockists",
+   "title": "Stockists",
+   "pattern": "deck/page-stockists",
    "template": "page-wide"
   },
   {
@@ -55,38 +91,70 @@
   {
    "title": "Nia Campbell, Brighton part",
    "category": "videos",
-   "image": "kickflip.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four minutes, filmed over one summer between the Level and the seafront. Filmed and edited by Jonny Kerr. Premiere night at the shop on 23 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\"><a href=\"https://www.youtube.com/\">Watch it on YouTube</a></p>\n<!-- /wp:paragraph -->"
+   "image": "stairs.jpg",
+   "excerpt": "Four minutes, filmed over one summer between the Level and the seafront. Nia wanted every trick on a spot you can reach by bus from the.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Four minutes, filmed over one summer between the Level and the seafront. Nia wanted every trick on a spot you can reach by bus from the shop, and she got close.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The ender took two sessions. The first try went through a hedge. The second is in the part.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:group {\"className\":\"is-style-rows\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-rows\"><!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Filmed</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Jonny Kerr, VX1000 and a phone</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Edited</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Jonny Kerr</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Music</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two tracks by a Brighton band, with permission</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">4 min 12 s</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Premiere</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Coping, Thursday 23 October, 7pm</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->\n\n<!-- wp:pattern {\"slug\":\"deck/video-stills\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/video-night\"} /-->"
   },
   {
    "title": "Jonny Kerr at Hove Lagoon, raw files",
    "category": "videos",
    "image": "venice-grind.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete and the odd.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete and the odd gull.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Filmed over three mornings at 7am, before the scooters wake up.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:group {\"className\":\"is-style-rows\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-rows\"><!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Filmed</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Sol Rivera, from the deck of the bowl</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Edited</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Not really</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">12 min</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Spot</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Hove Lagoon bowl</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->\n\n<!-- wp:pattern {\"slug\":\"deck/video-tracklist\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/video-night\"} /-->"
   },
   {
    "title": "Couch session with Aisha",
    "category": "videos",
    "image": "couch-ollie.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aisha filmed a whole part in her flat during the rain in March. The couch did not survive.</p>\n<!-- /wp:paragraph -->"
-  },
-  {
-   "title": "Our own decks are back from the press",
-   "category": "shop-news",
-   "image": "deck-wall.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Two widths, 8.0 and 8.5, pressed in Portugal from seven-ply maple. Free grip, fitted at the counter.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Aisha filmed a whole part in her flat during the rain in March. Manuals down the hall, ollies over the sofa, a kickflip into the kitchen.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aisha filmed a whole part in her flat during the rain in March. Manuals down the hall, ollies over the sofa, a kickflip into the kitchen that her landlord has not seen.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The couch did not survive. The part did.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:group {\"className\":\"is-style-rows\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-rows\"><!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Filmed</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Aisha Brown and her flatmate Remi</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Music</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Remi, on a keyboard from a charity shop</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">2 min 40 s</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Spot</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A flat in Moulsecoomb</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->\n\n<!-- wp:pattern {\"slug\":\"deck/video-stills\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/video-night\"} /-->"
   },
   {
    "title": "Pushing to Shoreham and back",
    "category": "videos",
    "image": "road.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday.</p>\n<!-- /wp:paragraph -->"
+   "excerpt": "Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday and two stops for.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday and two stops for chips.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">If you want to try it, go west in the morning so the wind is behind you on the way home.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:group {\"className\":\"is-style-rows\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-rows\"><!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Filmed</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Jonny Kerr, from a borrowed bike</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Board</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Cruiser, 36in, 65mm 78a wheels</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Distance</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">14 miles</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"grid\",\"columnCount\":2,\"minimumColumnWidth\":\"8rem\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">6 min</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->\n\n<!-- wp:pattern {\"slug\":\"deck/video-tracklist\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/video-night\"} /-->"
+  },
+  {
+   "title": "Nia Campbell",
+   "category": "team",
+   "image": "kickflip.jpg",
+   "excerpt": "Nia is the one behind the counter on Saturdays, fitting grip and arguing about wheel sizes. Her new part premieres on 23 October.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Nia is the one behind the counter on Saturdays, fitting grip and arguing about wheel sizes. Her new part premieres on 23 October.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/rider-profile-nia\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/tour-dates\"} /-->"
+  },
+  {
+   "title": "Jonny Kerr",
+   "category": "team",
+   "image": "venice-grind.jpg",
+   "excerpt": "Jonny has ridden for the shop since 2016 and films most of what we put out. If you see a man in a bowl with a camera on a stick, say hello.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Jonny has ridden for the shop since 2016 and films most of what we put out. If you see a man in a bowl with a camera on a stick, say hello.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/rider-profile-jonny\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/rider-quote\"} /-->"
+  },
+  {
+   "title": "Sol Rivera",
+   "category": "team",
+   "image": "surf.jpg",
+   "excerpt": "Sol runs the learn-to-skate sessions at the Level on Sundays and the surf rental hut in summer. Good at explaining things slowly.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Sol runs the learn-to-skate sessions at the Level on Sundays and the surf rental hut in summer. Good at explaining things slowly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/rider-profile-sol\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/tour-dates\"} /-->"
+  },
+  {
+   "title": "Aisha Brown",
+   "category": "team",
+   "image": "couch-ollie.jpg",
+   "excerpt": "Aisha learned to ollie on the kerb outside the shop and joined the team two years later. She skates flat ground and small rooms better than anyone we know.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aisha learned to ollie on the kerb outside the shop and joined the team two years later. She skates flat ground and small rooms better than anyone we know.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/rider-profile-aisha\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/tour-dates\"} /-->"
+  },
+  {
+   "title": "Our own decks are back from the press",
+   "category": "shop-news",
+   "image": "deck-wall.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Two widths, 8.0 and 8.5, pressed in Portugal from seven-ply maple. Forty of each graphic, free grip, fitted at the counter.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/drop-rules\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/lookbook\"} /-->"
   },
   {
    "title": "Winter surf days, what we rent and when",
    "category": "shop-news",
    "image": "surf.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Board rental from the seafront hut runs until the end of October, then by appointment. Winter wetsuits are 5/4, and we have eight to lend.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Board rental from the seafront hut runs until the end of October, then by appointment. Winter wetsuits are 5/4, and we have eight to lend.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"deck/surf-rental\"} /-->\n\n<!-- wp:pattern {\"slug\":\"deck/surf-corner\"} /-->"
   }
  ],
  "nav": [
@@ -95,8 +163,8 @@
    "url": "/shop/"
   },
   {
-   "label": "Decks",
-   "url": "/product-category/decks/"
+   "label": "Completes",
+   "url": "/completes/"
   },
   {
    "label": "Truck guide",
@@ -104,15 +172,27 @@
   },
   {
    "label": "Team",
-   "url": "/team/"
+   "url": "/category/team/"
   },
   {
    "label": "Videos",
-   "url": "/videos/"
+   "url": "/category/videos/"
   },
   {
    "label": "Events",
    "url": "/events/"
+  },
+  {
+   "label": "Spots",
+   "url": "/spots/"
+  },
+  {
+   "label": "Zine",
+   "url": "/zine/"
+  },
+  {
+   "label": "Drops",
+   "url": "/drops/"
   },
   {
    "label": "Visit",

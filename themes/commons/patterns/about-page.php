@@ -2,7 +2,7 @@
 /**
  * Title: Page: about and committee
  * Slug: commons/about-page
- * Categories: about
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

@@ -6,9 +6,9 @@
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-toner","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-toner"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"45%"} -->
-<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group alignfull is-style-toner"><!-- wp:columns {"align":"wide","verticalAlignment":"center"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/live.jpg' ) ); ?>" alt="A drummer playing under two bright stage lights, black and white"/><figcaption class="wp-element-caption">Moth Club soundcheck, last year</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -19,7 +19,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Black tee with the four dates on the back in Mags's handwriting. Printed once, about 120, sold at the table first. Anything left goes online the morning after the London show.</p>
+<p class="">Black tee with the four dates on the back in Mags's handwriting. Printed once, about 120, sold at the table first. Anything left goes online the morning after the London show.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-scrawl"} -->

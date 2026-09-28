@@ -2,7 +2,7 @@
 /**
  * Title: Publications
  * Slug: commons/publications-list
- * Categories: text
+ * Categories: about
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

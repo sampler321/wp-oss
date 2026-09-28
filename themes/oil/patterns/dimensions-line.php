@@ -2,7 +2,7 @@
 /**
  * Title: Size in cm and inches
  * Slug: oil/dimensions-line
- * Categories: portfolio
+ * Categories: oil-work-page,portfolio
  * Description: Type the size once in each unit, height first.
  */
 ?>

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Rainbow edge",
+	"slug": "rainbow-edge",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{border-top:14px solid transparent;border-image:var(--wp--custom--rainbow) 1}"
+	}
+}

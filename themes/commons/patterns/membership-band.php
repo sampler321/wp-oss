@@ -2,7 +2,7 @@
 /**
  * Title: Membership band with photo
  * Slug: commons/membership-band
- * Categories: call-to-action
+ * Categories: membership
  * Description: Image and text band pointing to the membership page.
  */
 ?>

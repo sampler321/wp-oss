@@ -2,7 +2,7 @@
 /**
  * Title: Case studies archive (inherits the page query)
  * Slug: case/case-archive
- * Categories: query
+ * Categories: work
  * Inserter: no
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Title: One room, with paint chip and linked pieces
  * Slug: room/room-chapter
- * Categories: text
+ * Categories: project
  * Description: Copy this for each room in a project. Change the chip colour in the block settings.
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Title: Page: visit
  * Slug: commons/visit-page
- * Categories: contact
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

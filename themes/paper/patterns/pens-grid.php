@@ -19,7 +19,7 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"10rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/steel-fountain-pen-fine-nib/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/nib-steel.jpg' ) ); ?>" alt="Macro photo of a steel fountain pen nib against a dark background" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -39,7 +39,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/brass-dip-pen-with-a-medium-nib/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/nib-brass.jpg' ) ); ?>" alt="Close-up of a brass dip pen nib on cream paper" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -59,7 +59,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/blue-black-gall-ink-50ml/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ink.jpg' ) ); ?>" alt="Square glass bottle of blue-black writing ink with a blue label" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -79,7 +79,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-field","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-field"><!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-field"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"1","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/two-hole-pencil-sharpener-pink/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sharpener.jpg' ) ); ?>" alt="Pink two-hole pencil sharpener held between finger and thumb" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->

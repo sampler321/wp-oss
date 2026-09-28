@@ -28,9 +28,47 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:table {"className":"is-style-measure-table"} -->
-<figure class="wp-block-table is-style-measure-table"><table class="has-fixed-layout"><thead><tr><th>Measured flat</th><th>cm</th><th>in</th></tr></thead><tbody><tr><td>Chest, pit to pit</td><td>60 cm</td><td>23.6 in</td></tr><tr><td>Shoulder seam to seam</td><td>47 cm</td><td>18.5 in</td></tr><tr><td>Length, nape to hem</td><td>74 cm</td><td>29.1 in</td></tr><tr><td>Sleeve, shoulder to cuff</td><td>62 cm</td><td>24.4 in</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Chest, pit to pit</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>60 cm, 23.6 in</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Shoulder</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>47 cm, 18.5 in</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Length, nape to hem</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>74 cm, 29.1 in</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Sleeve</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>62 cm, 24.4 in</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
 <p>Condition: good. Fraying at both cuff edges and one replaced button on the storm flap.</p>

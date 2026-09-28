@@ -10,31 +10,7 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('freq')
-# Groups with padding/margin get their inline style (and anchors their id) written out, so the editor sees valid markup.
 import blocks as _B
-_orig_group = _B.group
-def _css_var(v):
-    return v.replace('var:preset|spacing|', 'var(--wp--preset--spacing--') + ')' if v.startswith('var:preset|spacing|') else v
-def _group_inline(inner, tag='div', layout='constrained', **attrs):
-    out = _orig_group(inner, tag=tag, layout=layout, **attrs)
-    sp = (attrs.get('style') or {}).get('spacing') or {}
-    decl = []
-    for prop in ('padding', 'margin'):
-        v = sp.get(prop)
-        if isinstance(v, dict):
-            for side in ('top', 'right', 'bottom', 'left'):
-                if side in v:
-                    decl.append('%s-%s:%s' % (prop, side, _css_var(v[side])))
-    if attrs.get('anchor'):
-        k = out.index('<%s class="' % tag)
-        out = out[:k] + '<%s id="%s" class="' % (tag, attrs['anchor']) + out[k + len('<%s class="' % tag):]
-    if decl:
-        i = out.index(' class="', out.index('<%s ' % tag))
-        j = out.index('>', i)
-        out = out[:j] + ' style="%s"' % ';'.join(decl) + out[j:]
-    return out
-_B.group = _group_inline
-group = _group_inline
 _orig_image = _B.image
 def _image_ratio(filename, alt, caption='', lightbox=True, href=None, **attrs):
     out = _orig_image(filename, alt, caption, lightbox, href, **attrs)
@@ -64,7 +40,7 @@ def cols(*cs, **attrs):
     va = ('are-vertically-aligned-' + a['verticalAlignment']) if a.get('verticalAlignment') else ''
     if a.get('isStackedOnMobile') is False:
         va += ' is-not-stacked-on-mobile'
-    return '<!-- wp:columns%s -->\n<div class="%s">%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), '\n\n'.join(out))
+    return '<!-- wp:columns%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), _B._style(a), '\n\n'.join(out))
 
 # ------------------------------------------------------------------ theme.json
 fonts = json.load(open(os.path.join(D, '.fonts.json')))['fontFamilies']
@@ -532,3 +508,140 @@ os.makedirs('demos/freq', exist_ok=True)
 json.dump(content, open('demos/freq/content.json', 'w'), indent=1, ensure_ascii=False)
 open('demos/freq/fonts-claim.txt', 'w').write('display: Radio Canada (registry face for 046, unchanged)\n')
 print('freq built')
+
+# ====================================================================== ROUND 2
+# Owner's review: fewer tables, lightbox on, 40+ patterns, no table on the home page, the demo uses the kit.
+# Sections studied on Kiosk Radio (week schedule, timezone, studio video), Resonance FM (day pages, support),
+# Noods Radio (shows directory), Refuge Worldwide (residents, events, picks) and Cashmere Radio (listen back).
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += ('.is-style-defs>.wp-block-group{border-top:1px solid color-mix(in srgb,currentColor 60%,transparent);padding:.45em 0;gap:.25rem 1.5rem;margin:0!important}'
+                           '.is-style-defs>.wp-block-group:last-child{border-bottom:1px solid color-mix(in srgb,currentColor 60%,transparent)}.is-style-defs p{margin:0}'
+                           '.is-style-defs>.wp-block-group>p:first-child{flex:0 0 7rem;font-weight:700}.is-style-defs>.wp-block-group>p:nth-child(2){flex:1 1 12rem}.is-style-defs>.wp-block-group>p:nth-child(3){margin-left:auto;font-weight:700}')
+wjson('theme.json', theme)
+
+def defs(data):
+    return group(J(*[row(J(*[para(c) for c in r]), wrap=True) for r in data]), className='is-style-defs', layout={'type': 'default'})
+
+# ---- tables replaced
+pattern('now-next', 'On air now and up next', 'hero', cols(
+    ('62%', J(para('On air now', className='is-style-live-dot'),
+              heading('Kapsalon with DJ Yasmina', 1),
+              para('Rotterdam rap old and new, a guest verse live from the studio every week, and the phone line open from 21:00. Thursday 20:00 to 22:00.', fontSize='large'),
+              buttons(('Listen live', '#player'), ('Past episodes of Kapsalon', '/category/kapsalon/', {'className': 'is-style-outline'})))),
+    (None, J(heading('Today, Thursday', 4),
+             defs([['08:00', 'Ochtend op de Kade'], ['17:00', 'Guest mix: Lotte Ploeg'], ['20:00', '<strong>Kapsalon</strong>, live now'], ['22:00', 'Klankkast'], ['00:00', 'Non-stop from the archive']]),
+             para('<a href="/schedule/">The whole week</a>', fontSize='small'))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}))
+pattern('episode-body', 'Episode body (player, notes, tracklist)', 'episode', J(
+    audio('https://stream.example.com/archive/kapsalon-2026-09-25.mp3', caption='Kapsalon, 25 September, 1 hour 58 minutes'),
+    para('Mikey Blanco came in to do a verse live at 20:21 and stayed for the whole show. The phone line was busy for once. Two tracks from the new Winne record, and Yasmina finally played the Opgezwolle tune everyone texts in for.'),
+    pattern_ref('tracklist'), pattern_ref('episode-credits')), block_types='core/post-content', post_types='post')
+pattern('episode-credits', 'Episode credits', 'episode', defs([['Presented by', 'DJ Yasmina'], ['Guest', 'Mikey Blanco'], ['Studio', 'Deliplein 14, studio 1']]))
+pattern('support-costs', 'Support: what your money pays for', 'support', group(cols(
+    ('45%', J(heading('Radio Havik costs €2,140 a month to run', 2),
+              para('Nobody is paid. The money goes on things we cannot get for free. 412 people give us a few euros a month, and that covers about two thirds of it.', fontSize='large'))),
+    (None, J(heading('Each month', 4),
+             defs([['€690', 'Music licences (Buma/Stemra and Sena)'], ['€850', 'Rent for the studio on the Deliplein'], ['€380', 'DAB+ transmission, block 11C'],
+                   ['€140', 'Stream hosting and the archive'], ['€80', 'Insurance, electricity, coffee']]),
+             buttons(('Give €5 a month', 'https://example.com/support/5'), ('Give once', 'https://example.com/support/once')),
+             para('We are a stichting (foundation) registered in Rotterdam, KvK 71234567. Gifts are tax-deductible in the Netherlands because we have ANBI status.', fontSize='x-small'))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
+    className='is-style-signal', align='full', layout={'type': 'constrained'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}), description='Says exactly what the donations pay for.')
+pattern('membership-levels', 'Membership levels', 'support', J(
+    heading('Become a member', 3),
+    cols(*[(None, group(J(heading(a, 3), para(b)), className='is-style-grey')) for a, b in [
+        ('€3 a month', 'Your name read out on the first Sunday of the month, if you want.'),
+        ('€6 a month', 'That, plus a Havik tote bag and 10% off at the Deliplein record fair.'),
+        ('€12 a month', 'All of that, plus one hour in studio 2 a year to record whatever you like.')]], align='wide'),
+    para('Every level pays for the same radio. Pick whatever you can manage and change it any time.', fontSize='small')))
+pattern('find-the-studio', 'Find the studio', 'contact', cols(
+    ('50%', image('rotterdam.jpg', 'Black and white aerial photo of Rotterdam harbour with Katendrecht on the peninsula', 'Katendrecht is the peninsula in the middle. The studio is at the end nearest the bridge.')),
+    (None, J(heading('Come by the studio', 3),
+             defs([['Address', 'Deliplein 14, 3072 CT Rotterdam'], ['Getting here', 'Metro to Rijnhaven, then 8 minutes on foot, or the water taxi to Hotel New York'],
+                   ['Open', 'The window is open whenever someone is on air. Knock during the songs, not the talking'], ['Step-free', 'Yes, one small ramp at the door']]),
+             para('The record fair on the Deliplein, first Saturday of the month, is when most of us are around.', fontSize='small'))), align='wide'))
+pattern('listen-options', 'Ways to listen', 'listen', J(
+    heading('Ways to listen', 3),
+    cols(*[(None, group(J(heading(a, 4), para(b, fontSize='small')), className='is-style-grey')) for a, b in [
+        ('In the browser', 'The player at the bottom of every page.'), ('Apps and speakers', 'stream.example.com/radiohavik-128.mp3, or -320 for high quality.'),
+        ('DAB+', 'Block 11C in Rotterdam and Schiedam. Search for "Havik".'), ('Old episodes', 'The <a href="/archive/">Listen back</a> page, back to 2019.')]], align='wide'),
+    para('Studio phone during live shows: 010 555 0199. Texts are read out, calls sometimes go on air.', fontSize='small')))
+
+# ---- new patterns
+pattern('schedule-day', 'One day of the schedule', 'schedule', J(
+    heading('Thursday', 3), defs([['08:00', '<a href="/category/ochtend-op-de-kade/">Ochtend op de Kade</a>', 'Fenna and Ruud'], ['17:00', 'Guest mix', 'Lotte Ploeg'],
+                                  ['20:00', '<a href="/category/kapsalon/">Kapsalon</a>', 'DJ Yasmina'], ['22:00', '<a href="/category/klankkast/">Klankkast</a>', 'Sem van Dijk']]),
+    para('All times Rotterdam, CET or CEST.', fontSize='x-small', textColor='muted')))
+pattern('show-intro', 'Show intro (art, host, slot)', 'shows', cols(
+    ('30%', image('headphones.jpg', 'Show art for Kapsalon: a man with red headphones round his neck', aspectRatio='1', scale='cover', className='is-style-bw')),
+    (None, J(heading('Kapsalon', 2), para('Rotterdam rap and hip-hop, old and new, with a guest verse live from the studio most weeks.', fontSize='large'),
+             defs([['Presenter', 'DJ Yasmina'], ['When', 'Thursdays, 20:00 to 22:00'], ['Since', 'March 2021']]),
+             buttons(('Every episode of Kapsalon', '/category/kapsalon/')))), align='wide', verticalAlignment='top'))
+pattern('residents-az', 'Residents, A to Z', 'shows', J(heading('Everyone on air', 3),
+    group(J(*[para('<a href="/category/%s/">%s</a><br>%s' % (k, v[0], v[1]), fontSize='small') for k, v in sorted(SHOWS.items(), key=lambda x: x[1][0])]),
+          layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'})))
+GEN = [('Hip-hop', 'hip-hop'), ('Dub', 'dub'), ('Experimental', 'experimental'), ('Kaseko', 'kaseko'), ('Ambient', 'ambient'), ('Talk', 'talk'), ('Soul', 'soul'), ('Nederpop', 'nederpop')]
+pattern('genre-links', 'Genres as big links', 'shows', J(heading('Listen by genre', 3),
+    para(', '.join('<a href="/tag/%s/">%s</a>' % (s, n) for n, s in GEN), fontSize='x-large')))
+pattern('picks', 'Picked from the archive', 'listen', J(heading('Picked from the archive', 3), cols(
+    (None, J(image('cello.jpg', 'A woman playing the cello, old photograph', aspectRatio='1', scale='cover', className='is-style-bw'), heading('<a href="/nachtbus-the-3am-special/">Nachtbus, the 3am special</a>', 4), para('Picked by Ruud: "Put it on when you cannot sleep."', fontSize='small'))),
+    (None, J(image('accordion.jpg', 'Two accordion players at a stall', aspectRatio='1', scale='cover', className='is-style-bw'), heading('<a href="/buurtpraat-the-new-ferry-timetable/">Buurtpraat: the ferry</a>', 4), para('Picked by Fenna: "Henk from the Kaapse Maria is the best guest we have had."', fontSize='small'))),
+    (None, J(image('laptop.jpg', 'A musician at a keyboard under stage lights', aspectRatio='1', scale='cover', className='is-style-bw'), heading('<a href="/live-electronics-from-codarts-students/">Codarts students, live</a>', 4), para('Picked by Sem: "Mei Lin\'s crane piece still gives me chills."', fontSize='small'))),
+    align='wide')))
+pattern('guest-mix-feature', 'This week\'s guest mix', 'shows', cols(
+    (None, image('dj.jpg', 'A DJ controller with jog wheels and lit pads', aspectRatio='4/3', scale='cover', className='is-style-bw')),
+    (None, J(para('Thursday 17:00', className='is-style-live-dot'), heading('Guest mix: Lotte Ploeg', 3),
+             para('Lotte runs the Sunday afternoon at Worm and plays mostly Dutch new wave and Surinamese funk. One hour, recorded at home in Spangen.'),
+             para('<a href="mailto:shows@example.com?subject=Guest%20mix">Send us a guest mix</a>'))), align='wide', verticalAlignment='center'))
+pattern('station-events', 'Station events', 'events', J(heading('Come and see us', 3), defs([
+    ['Sat 4 Oct', 'Record fair on the Deliplein, 10:00 to 16:00', 'Free'], ['Fri 17 Oct', 'Havik fundraiser at Worm, five residents back to back', '€8'],
+    ['Sat 1 Nov', 'Record fair on the Deliplein', 'Free'], ['Sun 23 Nov', 'Buurtpraat live at the Katendrecht library', 'Free']])))
+pattern('merch', 'Station merch', 'support', J(heading('Tote bags and shirts', 3), cols(
+    (None, J(image('records.jpg', 'Rows of LP sleeves in a crate'), heading('Tote bag, €15', 4), para('Holds about 30 records. Screen printed in Crooswijk.', fontSize='small'))),
+    (None, J(image('turntable.jpg', 'A turntable with a record playing, from above'), heading('T-shirt, €25', 4), para('Black, with the logo in blue. S to XXL.', fontSize='small'))),
+    (None, J(image('cables.jpg', 'Two audio cables with gold plugs on a table'), heading('Slipmat pair, €18', 4), para('For the 1200s at home.', fontSize='small'))),
+    align='wide'), para('On sale at the record fair and in the studio window. All the money goes to the station.', fontSize='small')))
+pattern('studio-cam', 'Studio camera', 'listen', cols(
+    ('62%', embed('https://www.youtube.com/watch?v=radiohavik-studio', provider='youtube', type_='video')),
+    (None, J(heading('Watch the studio', 4), para('The camera in studio 1 is on from 17:00 every day. It points at the desk, not the presenters\' faces, unless they ask.'))), align='wide', verticalAlignment='center'))
+pattern('station-faq', 'Questions about the station', 'about', J(heading('Questions people ask', 3),
+    details('Can I play my own music on air?', para('Yes, if you are a resident or doing a guest mix. We pay the licences for everything we broadcast.')),
+    details('Do you pay presenters?', para('No. Nobody at Havik is paid, including the people who run it.')),
+    details('Can I advertise my club night?', para('We read out events on Buurtpraat for free. We do not run paid adverts.')),
+    details('How do I get a show?', para('Send a pilot in March or September. <a href="/submit-a-show/">How to submit a show</a>.'))))
+pattern('hero-schedule', 'Hero: today as a list', 'hero', J(
+    row(J(heading('Today on Havik', 1), para('Thursday. All times Rotterdam.', fontSize='large')), justify='space-between', align='wide'),
+    group(pattern_ref('schedule-day'), align='wide', layout={'type': 'default'})))
+pattern('contact-cards', 'Contact cards', 'contact', cols(
+    (None, group(J(heading('Studio line', 4), para('010 555 0199, during live shows only.')), className='is-style-grey')),
+    (None, group(J(heading('Email', 4), para('<a href="mailto:studio@example.com">studio@example.com</a>. We answer within a week.')), className='is-style-grey')),
+    (None, group(J(heading('Shows', 4), para('<a href="mailto:shows@example.com">shows@example.com</a> for pilots and guest mixes.')), className='is-style-grey')), align='wide'))
+pattern('volunteer-roles', 'Volunteer at the station', 'support', J(heading('Not a presenter? We still need you', 3), defs([
+    ['Tech', 'Look after the desk, the stream and the DAB+ box. Two evenings a month'], ['Schedule', 'Keep the week up to date and chase missing shows'],
+    ['Archive', 'Upload episodes and write the tracklists'], ['Record fair', 'Run the stall on the first Saturday']])))
+
+# ---- pages that use the kit
+pattern('page-schedule', 'Page: schedule', 'schedule', J(pattern_ref('schedule-week'), pattern_ref('schedule-day'), pattern_ref('guest-mix-feature'), pattern_ref('shows-index')), block_types='core/post-content')
+pattern('page-shows', 'Page: shows and residents', 'shows', J(pattern_ref('residents-grid'), pattern_ref('show-intro'), pattern_ref('residents-az'), pattern_ref('genre-links'), pattern_ref('guest-mix-series')), block_types='core/post-content')
+pattern('page-support', 'Page: support', 'support', J(pattern_ref('support-costs'), pattern_ref('membership-levels'), pattern_ref('merch'), pattern_ref('volunteer-roles')), block_types='core/post-content')
+pattern('page-about', 'Page: about', 'about', J(pattern_ref('about-station'), pattern_ref('listen-options'), pattern_ref('studio-cam'), pattern_ref('station-events'), pattern_ref('find-the-studio'), pattern_ref('contact-cards'), pattern_ref('station-faq'), pattern_ref('newsletter')), block_types='core/post-content')
+pattern('page-today', 'Page: today', 'schedule', J(pattern_ref('hero-schedule'), pattern_ref('picks')), block_types='core/post-content')
+
+write('templates/front-page.html', tpl(J(
+    pattern_ref('now-next'),
+    sp(pattern_ref('schedule-week')),
+    sp(pattern_ref('episode-index')),
+    sp(pattern_ref('episode-tiles'), sz='50'),
+    sp(pattern_ref('picks')),
+    group(pattern_ref('support-costs'), align='full', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+    sp(pattern_ref('residents-grid')),
+    sp(pattern_ref('station-events'), sz='60'),
+    sp(cols((None, pattern_ref('submit-callout')), (None, pattern_ref('newsletter')), align='wide'), sz='60'))))
+
+for p in content['posts']:
+    if p.get('content'):
+        p['content'] = J(p['content'], gallery([(p['image'], 'Show art for this episode', 'Show art'), ('studio.jpg', 'A presenter beside two studio microphones', 'Studio 1')], columns=2))
+content['pages'].append({'slug': 'today', 'title': 'Today', 'pattern': 'freq/page-today', 'template': 'page-wide'})
+json.dump(content, open('demos/freq/content.json', 'w'), indent=1, ensure_ascii=False)
+print('freq round 2 built')

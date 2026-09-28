@@ -38,6 +38,6 @@
 				"right": "var:preset|spacing|40"
 			}
 		},
-		"css": "& table td{border-bottom-color:currentColor!important}& table th{border-bottom-color:currentColor!important}& table td:first-child{font-family:var(--wp--preset--font-family--display);font-weight:600;width:38%}"
+		"css": "& > p{border-bottom:1px solid currentColor;padding-bottom:.4rem;margin-top:.4rem!important}& > p strong{display:inline-block;min-width:6.5rem;font-family:var(--wp--preset--font-family--display);text-transform:uppercase}"
 	}
 }

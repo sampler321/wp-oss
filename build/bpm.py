@@ -9,28 +9,7 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('bpm')
-# Groups with padding/margin get their inline style written out, so the editor sees valid markup.
 import blocks as _B
-_orig_group = _B.group
-def _css_var(v):
-    return v.replace('var:preset|spacing|', 'var(--wp--preset--spacing--') + ')' if v.startswith('var:preset|spacing|') else v
-def _group_inline(inner, tag='div', layout='constrained', **attrs):
-    out = _orig_group(inner, tag=tag, layout=layout, **attrs)
-    sp = (attrs.get('style') or {}).get('spacing') or {}
-    decl = []
-    for prop in ('padding', 'margin'):
-        v = sp.get(prop)
-        if isinstance(v, dict):
-            for side in ('top', 'right', 'bottom', 'left'):
-                if side in v:
-                    decl.append('%s-%s:%s' % (prop, side, _css_var(v[side])))
-    if decl:
-        i = out.index('<%s class="' % tag)
-        j = out.index('>', i)
-        out = out[:j] + ' style="%s"' % ';'.join(decl) + out[j:]
-    return out
-_B.group = _group_inline
-group = _group_inline
 S = THEME['slug']
 D = THEME['dir']
 V = lambda k: 'var:preset|color|' + k
@@ -46,12 +25,12 @@ def cols(*cs, **attrs):
         ca = dict(c[2]) if len(c) > 2 else {}
         if w:
             ca = {'width': w, **ca}
-        cls = 'wp-block-column' + ((' ' + ca['className']) if ca.get('className') else '')
+        cls = 'wp-block-column' + ((' is-vertically-aligned-' + ca['verticalAlignment']) if ca.get('verticalAlignment') else '') + ((' ' + ca['className']) if ca.get('className') else '')
         st = (' style="flex-basis:%s"' % w) if w else ''
         out.append('<!-- wp:column%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:column -->' % ((' ' + json.dumps(ca, separators=(',', ':'))) if ca else '', cls, st, inner))
     a = attrs
     va = ('are-vertically-aligned-' + a['verticalAlignment']) if a.get('verticalAlignment') else ''
-    return '<!-- wp:columns%s -->\n<div class="%s">%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), '\n\n'.join(out))
+    return '<!-- wp:columns%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), _B._style(a), '\n\n'.join(out))
 
 def cover_featured(inner, min_vh=70, dim=30, position='bottom left', **attrs):
     a = {'useFeaturedImage': True, 'dimRatio': dim, 'overlayColor': 'base', 'isUserOverlayColor': True, 'minHeight': min_vh, 'minHeightUnit': 'vh',
@@ -553,3 +532,137 @@ os.makedirs('demos/bpm', exist_ok=True)
 json.dump(content, open('demos/bpm/content.json', 'w'), indent=1, ensure_ascii=False)
 open('demos/bpm/fonts-claim.txt', 'w').write('display: Mona Sans\n')
 print('bpm built')
+
+# ====================================================================== ROUND 2
+# Owner's review: fewer tables, lightbox on, 40+ patterns, no table on the home page, the demo uses the kit.
+# Sections studied on NTS (live channels, moods, picks, genre tags), RA Podcast (numbered series, Q&A),
+# The Lot Radio (today, archive index) and LYL Radio (resident pages).
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += ('.is-style-rows>.wp-block-group{border-top:1px solid var(--wp--preset--color--line);padding:.55em 0;gap:.3rem 1.5rem;margin:0!important;align-items:baseline}'
+                           '.is-style-rows>.wp-block-group:last-child{border-bottom:1px solid var(--wp--preset--color--line)}.is-style-rows p{margin:0}'
+                           '.is-style-rows>.wp-block-group>p:first-child{flex:0 0 7.5rem;font-family:var(--wp--preset--font-family--display);font-weight:800;text-transform:uppercase;font-stretch:75%;font-size:1.25em;line-height:1}'
+                           '.is-style-rows>.wp-block-group>p:nth-child(2){flex:1 1 12rem}.is-style-rows>.wp-block-group>p:nth-child(3){flex:0 1 auto}.is-style-rows a{color:var(--wp--preset--color--accent)}'
+                           '.is-style-mood .wp-block-cover__inner-container h3{font-size:var(--wp--preset--font-size--x-large)}')
+wjson('theme.json', theme)
+
+def rows(data):
+    return group(J(*[row(J(*[para(c) for c in r]), wrap=True) for r in data]), className='is-style-rows', layout={'type': 'default'})
+
+# ---- tables replaced by designed rows
+pattern('dates-compact', 'Dates (compact, next four)', 'events', rows([[d[0], '%s, %s' % (d[1], d[2])] for d in DATES[:4]]))
+pattern('dates-table', 'Dates (date, venue, city, tickets)', 'events', J(
+    heading('Dates', 2), rows([list(d) for d in DATES]),
+    para('Dates marked cancelled stay on the list for a month, so people who bought tickets can find them.', fontSize='x-small', textColor='muted')))
+pattern('mix-meta', 'Mix details (broadcast, location, length)', 'episode', rows([
+    ['Broadcast', 'Radio Wola 98.4 FM, Thursday 4 September, 21:00 Warsaw time'], ['Recorded', 'Studio 2, ul. Wolska 40, Warsaw'],
+    ['Length', '1 hour 58 minutes'], ['Guest', 'Kaja Ptak, producer, Kraków']]))
+pattern('booking-territories', 'Booking contacts by territory', 'contact', J(
+    heading('Booking', 2),
+    rows([['Europe', 'Lena Hartmann, Fluss Agency, Berlin', '<a href="mailto:lena@example.com">lena@example.com</a>'],
+          ['Poland', 'Kuba Wrona, Dźwięk Agency, Warsaw. Also the Baltics', '<a href="mailto:kuba@example.com">kuba@example.com</a>'],
+          ['Elsewhere', 'Hania directly', '<a href="mailto:hania@example.com">hania@example.com</a>'],
+          ['Press', 'Radio, press and podcasts: Hania directly', '<a href="mailto:hania@example.com">hania@example.com</a>']]),
+    para('Please give us six weeks for club dates and three months for festivals. I play four hours or less, and I do not play before 23:00 unless it is a radio show or a record shop.', fontSize='small')))
+REL = [('SZUM003', 'Wolska 40 EP', 'Szum Nagrania, 2026. 12" and digital', 'records.jpg'), ('NSD017', 'Tramwaj, with Kaja Ptak', 'Nowy Świat Dźwięku, 2025. 12" and digital', 'mixer.jpg'),
+       ('SZUM002', 'Niskie Częstotliwości', 'Szum Nagrania, 2024. Cassette and digital', 'cables.jpg'), ('SZUM001', 'Pierwsza EP', 'Szum Nagrania, 2022. Digital only', 'synth.jpg')]
+pattern('releases-table', 'Releases (sleeve cards)', 'release', J(
+    heading('Releases', 2),
+    group(J(*[group(J(image(img, 'Artwork for %s' % t, aspectRatio='1', scale='cover', className='is-style-stacked'), para(c, fontSize='x-small', textColor='muted'),
+                      heading(t, 4), para(d, fontSize='small')), layout={'type': 'flex', 'orientation': 'vertical'}) for c, t, d, img in REL]),
+          layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'}),
+    buttons(('Buy on Bandcamp', 'https://bandcamp.com/'))))
+pattern('release-feature', 'Release feature', 'release', cols(
+    ('45%', image('records.jpg', 'Rows of LP sleeves in a record shop crate, photographed at an angle', className='is-style-stacked')),
+    (None, J(heading('Wolska 40', 2), para('New EP, out 17 October on Szum Nagrania. Four tracks made in the radio studio after hours, on the station\'s Roland MC-909 and a Juno borrowed from the breakfast show.'),
+             lst(['A1 Wolska 40, 6:40', 'A2 Studio 2, 5:12', 'B1 Po wiadomościach, 7:03', 'B2 Nadajnik, 8:20']),
+             buttons(('Pre-order the 12"', 'https://bandcamp.com/')))), align='wide', verticalAlignment='top'))
+
+# ---- new patterns
+pattern('live-channels', 'Live strip: station and next show', 'hero', group(cols(
+    (None, row(J(para('Live', className='is-style-live-box'), para('<strong>Radio Wola</strong> Rzeka, with Ola Zawada, until 20:00'))), {'verticalAlignment': 'center'}),
+    (None, row(J(para('Next', className='is-style-live-box'), para('<strong>Szum 059</strong> Thursday 2 October, 21:00, with Kaja Ptak'))), {'verticalAlignment': 'center'}),
+    align='wide', verticalAlignment='center'), className='is-style-on-air', align='full', layout={'type': 'constrained'}))
+
+TAGS = [('Polish jazz', 'polish-jazz', 'records.jpg'), ('Dub', 'dub', 'decks.jpg'), ('Ambient', 'ambient', 'cables.jpg'), ('Electro', 'electro', 'dj-4.jpg')]
+pattern('moods', 'Moods: mixes by genre', 'featured', group(J(
+    heading('By mood', 3),
+    group(J(*[cover(img, J(heading('<a href="/tag/%s/">%s</a>' % (slug, name), 3)), dim=50, overlay='base', min_height=28, className='is-style-mood') for name, slug, img in TAGS]),
+          layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'})), align='wide', layout={'type': 'default'}))
+
+pattern('shows-by-series', 'Mixes by series', 'featured', group(J(
+    heading('Series', 3),
+    columns(*[(None, J(image(img, alt, aspectRatio='4/3', scale='cover', className='is-style-stacked'), heading('<a href="/category/%s/">%s</a>' % (slug, name), 4), para(d, fontSize='small')))
+              for name, slug, img, alt, d in [('Szum', 'szum', 'hero.jpg', 'Hands on a DJ mixer under blue light', 'Monthly on Radio Wola since 2019, two hours, usually a guest.'),
+                                              ('Live', 'live', 'dj-4.jpg', 'A DJ playing to a packed outdoor crowd', 'Club sets recorded from the desk.'),
+                                              ('Guest mixes', 'guest-mixes', 'mixer.jpg', 'A black DJ mixer close up', 'For podcasts, other stations and festivals.')]], align='wide')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('upcoming-broadcasts', 'Next broadcasts', 'events', J(heading('Next on Szum', 3), rows([
+    ['2 Oct', 'Szum 059 with Kaja Ptak, part two', 'Radio Wola, 21:00'], ['6 Nov', 'Szum 060, Hania solo, records from Łódź', 'Radio Wola, 21:00'],
+    ['4 Dec', 'Szum 061 with Maja Lis', 'Radio Wola, 21:00'], ['31 Dec', 'New year, four hours', 'Radio Wola, 22:00']])))
+
+pattern('hero-next-show', 'Hero: the next show', 'hero', cols(
+    ('60%', J(para('Thursday 2 October, 21:00 Warsaw time', className='is-style-live-box'),
+              heading('Szum 059 with Kaja Ptak', 1),
+              para('Part two. Kaja brings the rest of the 45s, and plays two tracks from her EP a month before it comes out.', fontSize='large'),
+              buttons(('Listen live on Thursday', 'https://example.com/radiowola-stream'), ('Hear part one', '/szum-058-w-kaja-ptak/', {'className': 'is-style-outline'})))),
+    (None, image('headphones.jpg', 'A DJ in headphones at a lit-up booth with a city skyline behind', className='is-style-stacked')), align='wide', verticalAlignment='center'))
+
+pattern('guest-profile', 'Guest profile', 'episode', group(cols(
+    ('30%', image('dj-3.jpg', 'A DJ at a festival booth under purple light', aspectRatio='1', scale='cover')),
+    (None, J(heading('Kaja Ptak', 4), para('Producer and DJ from Podgórze, Kraków. Runs the Wednesday at Hala Koszyki and has an EP coming on Nowy Świat Dźwięku in spring. Plays mostly 45s.', fontSize='small'),
+             para('<a href="https://soundcloud.com/">SoundCloud</a>, <a href="https://www.instagram.com/">Instagram</a>', fontSize='small'))), verticalAlignment='center'), className='is-style-boxed'))
+
+pattern('record-of-the-month', 'Ten records this month', 'text', J(heading('Ten records I keep playing', 3), lst([
+    'Skalpel, Konfusion (2004)', 'Sadar Bahar, Soul Sides', 'Kaja Ptak, Tramwaj 18 (not out yet)', 'Novika, Tricks of the Light', 'Marek Biliński, Ogród Króla Świtu',
+    'Rhythm & Sound, Mango Drive', 'Laurie Spiegel, Patchwork', 'Drexciya, Bubble Metropolis', 'Andrzej Korzyński, Dziewczyny, bądźcie ładne', 'Grouper, Heavy Water'], ordered=True)))
+
+pattern('set-video', 'Filmed set', 'media', J(heading('Filmed at Jasna 1', 4),
+    embed('https://www.youtube.com/watch?v=hania-sokol-jasna', provider='youtube', type_='video'),
+    para('The last hour of the July closing set, filmed from the booth by Piotr Rak.', fontSize='x-small', textColor='muted')))
+
+pattern('photo-strip', 'Photos from the booth', 'gallery', gallery([
+    ('dj-4.jpg', 'A DJ playing to a packed outdoor crowd at night under blue light', 'Closing set, summer'), ('crowd.jpg', 'People dancing in a club under pink light', 'Pogłos, March'),
+    ('decks.jpg', 'A turntable with a record on it', 'The Praga flat'), ('headphones.jpg', 'A DJ in headphones at a lit booth', 'Rooftop, Łódź')], columns=4, align='wide'))
+
+pattern('setup', 'What I play on', 'about', group(J(heading('Setup at home', 4), rows([
+    ['Decks', 'Two Technics SL-1210 MK2, Ortofon Concorde needles'], ['Mixer', 'Allen & Heath Xone:92, bought from a closing club in 2018'],
+    ['Records', 'About 4,000, a third of them Polish'], ['Studio', 'Roland MC-909, Juno-60, a Mac Mini and patience']])), className='is-style-boxed'))
+
+pattern('support-station', 'Support the station', 'call-to-action', group(J(
+    heading('Radio Wola runs on donations', 3),
+    para('Szum is free to make because Radio Wola is run by volunteers. If you like the show, give the station 20 zł a month. It pays for the transmitter and the music licences.', fontSize='small'),
+    buttons(('Support Radio Wola', 'https://example.com/radiowola-support'))), className='is-style-inverse'))
+
+pattern('series-index', 'Numbered series index', 'text', J(heading('Szum, by number', 3), rows([
+    ['058', '<a href="/szum-058-w-kaja-ptak/">with Kaja Ptak</a>', 'September'], ['057', '<a href="/szum-057-three-hours-of-dub/">three hours of dub</a>', 'August'],
+    ['056', '<a href="/szum-056-w-olek-rybak/">with Olek Rybak</a>', 'July'], ['055', '<a href="/szum-055-synth-pop-from-both-germanies/">synth-pop from both Germanies</a>', 'June'],
+    ['054', '<a href="/szum-054-w-maja-lis/">with Maja Lis</a>', 'May'], ['053', '<a href="/szum-053-the-long-one/">the long one</a>', 'April']])))
+
+# ---- pages that use the kit
+pattern('page-radio', 'Page: radio', 'text', J(pattern_ref('live-channels'), pattern_ref('residency'), pattern_ref('radio-today'), pattern_ref('upcoming-broadcasts'), pattern_ref('series-index'), pattern_ref('series-note'), pattern_ref('guest-mix-call'), pattern_ref('support-station')), block_types='core/post-content')
+pattern('page-about', 'Page: about', 'about', J(pattern_ref('bio'), pattern_ref('photo-strip'), pattern_ref('record-of-the-month'), pattern_ref('setup'), pattern_ref('press-quotes'), pattern_ref('press-pack')), block_types='core/post-content')
+pattern('page-dates', 'Page: dates', 'events', J(pattern_ref('dates-table'), pattern_ref('set-video'), pattern_ref('dates-past')), block_types='core/post-content')
+pattern('page-mix', 'Mix page body (player, notes, tracklist, Q&A)', 'episode', J(
+    pattern_ref('mix-player'),
+    para('Kaja came up from Kraków with a bag of 45s and a cold. First hour is me, mostly Polish jazz and library records. Second hour is Kaja, live on the desk, including two of her own tracks that are not out yet.'),
+    pattern_ref('mix-meta'), pattern_ref('tracklist'), pattern_ref('guest-profile'), pattern_ref('mix-qa')), block_types='core/post-content', post_types='post')
+pattern('page-explore', 'Page: explore', 'featured', J(pattern_ref('hero-next-show'), pattern_ref('moods'), pattern_ref('shows-by-series')), block_types='core/post-content')
+
+write('templates/front-page.html', tpl(J(
+    pattern_ref('hero-latest-mix'),
+    group(pattern_ref('mix-grid'), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+    group(pattern_ref('moods'), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}),
+    group(cols((None, pattern_ref('dates-table')), ('40%', pattern_ref('upcoming-broadcasts'))), align='wide', className='is-style-rule-top', layout={'type': 'default'},
+          style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+    group(pattern_ref('release-feature'), align='wide', className='is-style-rule-top', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+    group(cols((None, pattern_ref('newsletter')), (None, pattern_ref('guest-mix-call'))), align='wide', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|60'}}}))))
+
+content['pages'].append({'slug': 'explore', 'title': 'Explore', 'pattern': 'bpm/page-explore', 'template': 'page-wide'})
+content['nav'] = [{'label': 'Mixes', 'url': '/mixes/'}, {'label': 'Explore', 'url': '/explore/'}, {'label': 'Radio', 'url': '/radio/'}, {'label': 'Dates', 'url': '/dates/'},
+                  {'label': 'Releases', 'url': '/releases/'}, {'label': 'About', 'url': '/about/'}, {'label': 'Booking', 'url': '/booking/'}]
+for p in content['posts']:
+    if p.get('content'):
+        p['content'] = p['content'].replace('<!-- wp:table {"className":"is-style-dates"}', '<!-- wp:table {"className":"is-style-dates"}')
+json.dump(content, open('demos/bpm/content.json', 'w'), indent=1, ensure_ascii=False)
+print('bpm round 2 built')

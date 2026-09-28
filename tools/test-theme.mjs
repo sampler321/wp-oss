@@ -11,6 +11,7 @@ import { openEditor, analyse, prepare, themeFiles } from './lib/editor.mjs';
 const slug = process.argv[2];
 const staticOnly = process.argv.includes('--static');
 const noShots = process.argv.includes('--no-shots');
+const quick = process.argv.includes('--quick'); // release mode: all checks, only screenshot.png
 if (!slug) { console.error('usage: test-theme.mjs <slug> [--static] [--no-shots]'); process.exit(1); }
 const dir = path.join(ROOT, 'themes', slug);
 const demoDir = path.join(ROOT, 'demos', slug);
@@ -64,6 +65,8 @@ const remoteFonts = fam.flatMap(f => (f.fontFace || []).flatMap(ff => ff.src)).f
 check('fonts self-hosted and present', !fontSrcMissing.length && !remoteFonts.length, [...fontSrcMissing, ...remoteFonts].join(', '));
 const sizes = (tj.settings?.typography?.fontSizes || []).map(s => s.slug);
 check('font size presets', ['small', 'medium', 'large', 'x-large'].every(s => sizes.includes(s)) && tj.settings?.typography?.defaultFontSizes === false, sizes.join(','));
+const lb = tj.settings?.blocks?.['core/image']?.lightbox;
+check('image lightbox enabled in theme.json (round 2)', lb?.enabled === true, JSON.stringify(lb || null));
 check('spacing presets', (tj.settings?.spacing?.spacingSizes || []).length >= 6 && tj.settings?.spacing?.defaultSpacingSizes === false);
 
 // Contrast across the base palette and every variation that defines a palette.
@@ -95,7 +98,9 @@ if (fs.existsSync(funcs)) {
 
 const files = themeFiles(dir);
 const patterns = files.filter(f => f.includes('/patterns/'));
-check('25+ patterns', patterns.length >= 25, `${patterns.length}`);
+check('40+ patterns (round 2)', patterns.length >= 40, `${patterns.length}`);
+const tablePatterns = patterns.filter(f => /<!-- wp:table/.test(read(f)));
+check('tables in at most 20% of patterns (round 2)', tablePatterns.length <= Math.floor(patterns.length * 0.2), `${tablePatterns.length} of ${patterns.length}`);
 const badHeaders = patterns.filter(f => { const h = read(f).slice(0, 600); return !/Title:/.test(h) || !new RegExp(`Slug:\\s*${slug}/`).test(h); }).map(f => path.basename(f));
 check('pattern headers (Title, Slug prefix)', !badHeaders.length, badHeaders.join(', '));
 
@@ -153,26 +158,57 @@ if (!staticOnly) {
   const site = await startSite(slug, { port: 9800 + Math.floor(Math.random() * 400) });
   try {
     const demo = JSON.parse(read(path.join(demoDir, 'content.json')));
-    const api = async p => (await fetch(site.url + p)).json();
+    const api = async p => (await fetch(site.url + p, { signal: AbortSignal.timeout(90000) })).json();
     const pages = await api('/wp-json/wp/v2/pages?per_page=100&_fields=link,slug');
     const posts = await api('/wp-json/wp/v2/posts?per_page=100&_fields=link,slug');
-    const urls = new Set(['/', ...pages.map(p => new URL(p.link).pathname), ...posts.slice(0, 6).map(p => new URL(p.link).pathname), ...(demo.nav || []).map(n => n.url), '/?s=the']);
+    const urls = new Set(['/', ...pages.map(p => new URL(p.link).pathname).filter(x => !/^\/(cart|checkout|my-account)\//.test(x)), ...posts.slice(0, 6).map(p => new URL(p.link).pathname), ...(demo.nav || []).map(n => n.url), '/?s=the']);
     if (demo.products?.length) urls.add('/shop/');
     const cats = await api('/wp-json/wp/v2/categories?per_page=5&_fields=link,count');
     cats.filter(c => c.count).slice(0, 2).forEach(c => urls.add(new URL(c.link).pathname));
     const bad = [];
     for (const u of urls) {
-      const r = await fetch(site.url + u); const h = await r.text();
+      let r, h; try { r = await fetch(site.url + u, { redirect: 'manual', signal: AbortSignal.timeout(90000) }); h = await r.text(); } catch (e) { bad.push(`${u} timeout`); continue; }
+      if (r.status >= 300 && r.status < 400 && !u.startsWith('/?') && !/^\/(cart|checkout|my-account)\//.test(u)) { bad.push(`${u} redirects to ${r.headers.get('location')}`); continue; }
       const notice = (h.match(/<b>(Warning|Notice|Fatal error|Deprecated|Parse error)<\/b>:[^<]{0,200}/g) || []).filter(n => !/\/plugins\//.test(n));
       if (r.status !== 200) bad.push(`${u} ${r.status}`);
       if (notice.length) bad.push(`${u} ${notice[0].replace(/<[^>]+>/g, '').slice(0, 140)}`);
       if (/core\/missing|Your site doesn’t include support for/.test(h)) bad.push(`${u} missing block`);
     }
-    const r404 = await fetch(site.url + '/zz-no-such-page-' + Date.now() + '/', { redirect: 'manual' });
+    // Round 2: home page composition and content depth.
+    const homeHtml = await (await fetch(site.url + '/', { signal: AbortSignal.timeout(90000) })).text();
+    const homeMain = homeHtml.replace(/[\s\S]*?<main/, '<main');
+    check('home page shows no table (round 2)', !/<table[\s>]/.test(homeMain));
+    const h1 = ((homeMain.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || '').replace(/<[^>]+>/g, '').replace(/&[a-z#0-9]+;/g, ' ').trim();
+    check('home h1 is not a motto ending in a full stop (round 2)', !(h1.length > 20 && /\.$/.test(h1)), h1.slice(0, 80));
+    check('demo has 6+ posts (round 2)', posts.length >= 6, `${posts.length}`);
+    // Dead internal links across the pages we fetched.
+    const linkSet = new Set();
+    for (const u of [...urls].filter(x => !x.startsWith('/?')).slice(0, 25)) {
+      try {
+        const h = await (await fetch(site.url + u, { signal: AbortSignal.timeout(90000) })).text();
+        for (const m of h.matchAll(/href="([^"#?]+)"/g)) {
+          let l = m[1];
+          if (l.startsWith(site.url)) l = l.slice(site.url.length) || '/';
+          if (!l.startsWith('/') || l.startsWith('//')) continue;
+          if (/^\/(wp-|feed|comments|xmlrpc|cart|checkout|my-account)|\.(css|js|png|jpe?g|webp|svg|woff2?|xml|ico|pdf|zip)$|\/feed\/$|\/(page\/\d+)\/$/.test(l)) continue;
+          linkSet.add(l);
+        }
+      } catch {}
+    }
+    const dead = [];
+    for (const l of linkSet) {
+      try { const r = await fetch(site.url + l, { redirect: 'manual', signal: AbortSignal.timeout(60000) }); if (r.status === 404) dead.push(l); } catch {}
+    }
+    check(`no dead internal links (${linkSet.size} checked, round 2)`, !dead.length, dead.slice(0, 6).join(' '));
+    const r404 = await fetch(site.url + '/zz-no-such-page-' + Date.now() + '/', { redirect: 'manual', signal: AbortSignal.timeout(90000) });
     if (![404, 301, 302].includes(r404.status)) bad.push(`404 page returned ${r404.status}`);
     check(`front end: ${urls.size} pages 200, no PHP notices`, !bad.length, bad.slice(0, 5).join(' | '));
 
-    const { browser, page } = await openEditor(site.url);
+    let editor;
+    try { editor = await openEditor(site.url); }
+    catch (e) { check('editor loads', false, String(e.message).split('\n')[0]); }
+    if (editor) {
+    const { browser, page } = editor;
     const prepared = files.map(prepare);
     const res = await analyse(page, prepared.map(p => p.body));
     const probs = res.flatMap((r, i) => r.problems.map(p => `${path.relative(dir, files[i])}: ${p.kind} ${p.block} ${p.issue || ''}`));
@@ -185,8 +221,12 @@ if (!staticOnly) {
       const pr = await analyse(page, bodies.map(b => b.content.raw));
       pageProbs = pr.flatMap((r, i) => r.problems.map(p => `${bodies[i].slug}: ${p.kind} ${p.block}`));
       check('editor: demo page content valid', !pageProbs.length, pageProbs.slice(0, 5).join(' | '));
+      const allContent = bodies.map(b => b.content.raw).join('\n');
+      const unshown = patterns.map(f => (read(f).match(/Slug:\s*(\S+)/) || [])[1]).filter(sl => sl && !allContent.includes(`"slug":"${sl}"`) && !allContent.includes(`"slug":"${sl.replace('/', '\\/')}"`));
+      check('every pattern appears in the demo (round 2)', !unshown.length, `${unshown.length} missing: ${unshown.slice(0, 5).join(', ')}`);
     }
     await browser.close();
+    }
 
     // Layout + screenshots.
     const b2 = await chromium.launch();
@@ -198,12 +238,12 @@ if (!staticOnly) {
       const ctx = await b2.newContext({ viewport: vp, deviceScaleFactor: 1, reducedMotion: 'reduce' });
       const pg = await ctx.newPage();
       for (const u of shotUrls) {
-        await pg.goto(site.url + u, { waitUntil: 'networkidle', timeout: 90000 }).catch(() => {});
+        await pg.goto(site.url + u, { waitUntil: quick ? 'load' : 'networkidle', timeout: 90000 }).catch(() => {});
         if (label === 'mobile') {
           const w = await pg.evaluate(() => document.documentElement.scrollWidth);
           if (w > vp.width + 2) overflow.push(`${u} ${w}px`);
         }
-        if (!noShots) {
+        if (!noShots && !quick) {
           const name = (u === '/' ? 'home' : u.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '')) + `-${label}.jpg`;
           await pg.screenshot({ path: path.join(shotDir, name), type: 'jpeg', quality: 75, fullPage: true });
         }

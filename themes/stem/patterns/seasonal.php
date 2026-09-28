@@ -12,7 +12,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"13rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-still-life","backgroundColor":"mint","textColor":"contrast","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-contrast-color has-mint-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-contrast-color has-text-color has-mint-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/red-tulips-20-stems/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tulips.jpg' ) ); ?>" alt="Red tulips standing close together, soft focus" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -36,7 +36,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"leaf","textColor":"cream","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-cream-color has-leaf-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-cream-color has-text-color has-leaf-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/pink-carnations-25-stems/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/peonies.jpg' ) ); ?>" alt="A dense mass of frilly pink carnations filling the frame" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -60,7 +60,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"accent","textColor":"cream","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-cream-color has-accent-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-cream-color has-text-color has-accent-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/white-dahlias-7-stems/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dahlia.jpg' ) ); ?>" alt="A single white dahlia on a dark slate background" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -84,7 +84,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-still-life","backgroundColor":"surface","textColor":"contrast","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-still-life has-contrast-color has-surface-background-color has-text-color has-background"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
+<div class="wp-block-group is-style-still-life has-contrast-color has-text-color has-surface-background-color has-background"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/5","scale":"cover"} -->
 <figure class="wp-block-image size-large"><a href="/product/pink-peonies-10-stems/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/peony-vase.jpg' ) ); ?>" alt="Two pink peonies in a stoneware jug against a grey plaster wall" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 

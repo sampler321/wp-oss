@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalogue rows (instead of a table)",
+	"slug": "rows",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "& > .wp-block-group{border-bottom:1px solid var(--wp--preset--color--line);padding:.5em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.1rem!important}& > .wp-block-group:first-child{border-top:3px solid var(--wp--preset--color--line)}& > .wp-block-group > p{margin:0!important}& > .wp-block-group > p:first-child{font-family:var(--wp--preset--font-family--display);text-transform:uppercase;font-weight:700;font-size:1.1em;letter-spacing:.02em}& > .wp-block-group > p:last-child:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}"
+	}
+}

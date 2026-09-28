@@ -2,7 +2,7 @@
 /**
  * Title: Page: allergens
  * Slug: scoop/allergens-page
- * Categories: scoop
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

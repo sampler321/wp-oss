@@ -29,6 +29,7 @@ def jdump(rel, data):
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    s = s.replace('.', '-')
     s = re.sub(r'[^a-z0-9 _-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     return re.sub(r'-+', '-', s).strip('-')
@@ -44,7 +45,8 @@ FS = lambda s: V('font-size', s)
 SP = lambda s: V('spacing', s)
 
 PALETTE = [('base', '#FFFFFF', 'Paper white'), ('contrast', '#222222', 'Graphite'), ('accent', '#1A7A98', 'Graph cyan'),
-           ('surface', '#F4F7F8', 'Pale field'), ('line', '#BFD3DA', 'Cyan hairline'), ('muted', '#56646A', 'Pencil grey'), ('accent-2', '#C0392B', 'Correction red')]
+           ('surface', '#F4F7F8', 'Pale field'), ('line', '#BFD3DA', 'Cyan hairline'), ('muted', '#56646A', 'Pencil grey'), ('accent-2', '#C0392B', 'Correction red'),
+           ('ink-blue-black', '#1F2A44', 'Ink: blue-black'), ('ink-sepia', '#6B4A2B', 'Ink: sepia'), ('ink-green', '#1E5A46', 'Ink: bottle green'), ('ink-violet', '#4B2E6B', 'Ink: violet')]
 GRID = ('background-image:linear-gradient(var(--wp--preset--color--line) 1px,transparent 1px),linear-gradient(90deg,var(--wp--preset--color--line) 1px,transparent 1px);'
         'background-size:5mm 5mm;background-position:-1px -1px')
 
@@ -72,6 +74,7 @@ theme = {
   'shadow': {'defaultPresets': False, 'presets': []},
   'border': {'color': True, 'radius': True, 'style': True, 'width': True,
              'radiusSizes': [{'slug': 'none', 'size': '0', 'name': 'Square'}, {'slug': 'corner', 'size': '2mm', 'name': 'Rounded corner'}]},
+  'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
  },
  'styles': {
   'color': {'background': C('base'), 'text': C('contrast')},
@@ -135,7 +138,8 @@ theme = {
    '@media (prefers-reduced-motion:no-preference){.is-style-ruling-preview > .wp-block-image:target{animation:paperfade .15s ease-out}}@keyframes paperfade{from{opacity:.4}}'
    # objects small on large fields
    '.is-style-field .wp-block-image{background:var(--wp--preset--color--surface);aspect-ratio:1;display:flex;align-items:center;justify-content:center;margin:0}'
-   '.is-style-field .wp-block-image img{width:64%;aspect-ratio:1;object-fit:cover}'
+   '.is-style-field .wp-block-image > a{display:flex;align-items:center;justify-content:center;width:100%;height:100%}'
+   '.is-style-field .wp-block-image img{width:64%!important;aspect-ratio:1;object-fit:cover}.is-style-field .wp-block-image > a img{width:64%!important}'
    # WooCommerce
    '.wc-block-product-template{gap:10mm 5mm!important}'
    '.wc-block-product-template .wc-block-components-product-image{background:var(--wp--preset--color--surface);aspect-ratio:1;display:flex!important;align-items:center;justify-content:center}'
@@ -218,6 +222,19 @@ section('index-list', 'Category index list', ['core/list'],
 section('vertical', 'Vertical label', ['core/paragraph'],
         {'typography': {'fontFamily': V('font-family', 'display'), 'fontSize': FS('large'), 'letterSpacing': '0.3em', 'writingMode': 'vertical-rl'}})
 
+section('rows', 'Hairline rows (instead of a table)', ['core/group'],
+        {'css': ('& > .wp-block-group{border-bottom:1px solid var(--wp--preset--color--line);padding:2.5mm 0!important;margin:0!important;column-gap:5mm!important;row-gap:1mm!important}'
+                 '& > .wp-block-group:first-child{border-top:1px solid var(--wp--preset--color--accent)}& > .wp-block-group > p{margin:0!important;font-size:var(--wp--preset--font-size--small)}'
+                 '& > .wp-block-group > p:first-child{color:var(--wp--preset--color--muted)}& > .wp-block-group > p:last-child:not(:first-child){text-align:right}')})
+section('swatch', 'Ink swatch', ['core/group'], {'css': '&{aspect-ratio:1;border-radius:50%;box-shadow:inset 0 0 0 5mm rgba(255,255,255,.12)}'})
+
+
+def rows(items, min_w='7rem', cls='is-style-rows', **kw):
+    n = max(len(r) for r in items)
+    return group(J(*[group(J(*[para(c) for c in r]), layout={'type': 'grid', 'columnCount': n, 'minimumColumnWidth': min_w}) for r in items]),
+                 className=cls, layout={'type': 'default'}, **kw)
+
+
 # ---------------------------------------------------------------- content
 SHOP = {'name': 'Margin', 'addr': '14 Bruntsfield Place, Edinburgh EH10 4HN', 'email': 'shop@example.com', 'phone': '0131 496 0281'}
 
@@ -285,7 +302,7 @@ ALT.update({'desk-clips.jpg': 'Paper clips, a black mug, a pencil and an eraser 
 
 # ---------------------------------------------------------------- patterns
 pattern('hero-graph', 'Hero on graph paper', 'featured,banner', group(columns(
-  ('55%', J(heading('Notebooks, pens and paper, tested with a wet nib before we stock them.', 1),
+  ('55%', J(heading('New in: the A5 notebook, sewn in Leith, in four rulings', 1),
      para('A small shop on Bruntsfield Place, since 2014. Every paper on these shelves has been written on with a wet fountain pen by one of us, and the spec on the label says honestly what happened to the ink. Some feather.'),
      buttons(('See the notebooks', '/product-category/notebooks/'), ('Download ruling samples', '/ruling-samples/', {'className': 'is-style-outline'})))),
   (None, group(image('desk-clips.jpg', ALT['desk-clips.jpg'], aspectRatio='1', scale='cover'), className='is-style-field', layout={'type': 'default'})), align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': SP('80')}}}),
@@ -326,8 +343,8 @@ pattern('ruling-selector', 'Notebook with ruling selector', 'shop,featured', col
   (None, J(heading('A5 notebook, in four rulings', 2),
      para('Choose a ruling to see the page.', fontSize='small', textColor='muted'),
      row(J(*[para('<a href="#%s">%s</a>' % (a, n)) for a, n, f in RULINGS]), style={'spacing': {'blockGap': SP('40')}}, className='is-style-hairline'),
-     table([['Dot grid', '5mm pitch, 0.3mm dots, pale grey'], ['Ruled', '7mm lines, no margin'], ['Squared', '5mm squares'], ['Blank', 'Nothing printed']], head=['Ruling', 'Spacing'], className='is-style-spec'),
-     table([['Size', '148 × 210 mm'], ['Paper', '100gsm cream, acid-free'], ['Pages', '192'], ['Fountain pen friendly', 'Yes, no bleed with a medium nib']], className='is-style-spec'),
+     rows([['Dot grid', '5mm pitch, 0.3mm dots, pale grey'], ['Ruled', '7mm lines, no margin'], ['Squared', '5mm squares'], ['Blank', 'Nothing printed']]),
+     rows([['Size', '148 × 210 mm'], ['Paper', '100gsm cream, acid-free'], ['Pages', '192'], ['Fountain pen friendly', 'Yes, no bleed with a medium nib']]),
      para('Each notebook is sewn by hand in Leith, so the thread colour and the squareness of the corners vary a little from one to the next.', fontSize='small'),
      buttons(('Buy the dot grid', purl(P[0])), ('Buy the ruled', purl(P[1]), {'className': 'is-style-outline'})))),
   align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}),
@@ -355,7 +372,7 @@ pattern('diaries-page-intro', 'Dated diaries (seasonal)', 'shop', columns(
   (None, image('journal-pen.jpg', ALT['journal-pen.jpg'], aspectRatio='4/3', scale='cover')),
   (None, J(heading('2026 diaries', 2),
      para('Three layouts, all A5, all starting on Monday 29 December 2025. Printed in Glasgow on 80gsm cream that takes a fountain pen.'),
-     table([['Week to view', 'Week left, notes right', '£24'], ['Day to a page', 'One page a day, Sundays shared', '£28'], ['Month to view', 'Twelve spreads and 60 blank pages', '£18']], head=['Layout', 'Page', 'Price'], className='is-style-spec'),
+     rows([['Week to view', 'Week left, notes right', '£24'], ['Day to a page', 'One page a day, Sundays shared', '£28'], ['Month to view', 'Twelve spreads and 60 blank pages', '£18']]),
      para('Once they sell out we do not reprint. Last year the day-to-a-page went by early November.', fontSize='small'))), align='wide'))
 
 pattern('perpetual-calendar', 'Perpetual calendar', 'shop', group(J(
@@ -369,7 +386,7 @@ pattern('visit', 'Shop visit and hours', 'contact', columns(
   ('55%', image('shop.jpg', ALT['shop.jpg'], aspectRatio='3/2', scale='cover', caption='Stand-in photo. Our shop is smaller and quieter than this.')),
   (None, J(heading('Visit', 2),
      para('%s. Between the bakery and the bike shop, opposite the Links. The 11, 15 and 16 buses stop outside.' % SHOP['addr']),
-     table([['Monday', 'Closed'], ['Tuesday to Friday', '10am to 5.30pm'], ['Saturday', '10am to 5pm'], ['Sunday', '12pm to 4pm']], className='is-style-spec'),
+     rows([['Monday', 'Closed'], ['Tuesday to Friday', '10am to 5.30pm'], ['Saturday', '10am to 5pm'], ['Sunday', '12pm to 4pm']]),
      para('There is a testing desk by the window with every pen and ink we sell. Please try them. We ask you not to test on the notebooks themselves.', fontSize='small'),
      para('<a href="tel:01314960281">%s</a>, <a href="mailto:%s">%s</a>' % (SHOP['phone'], SHOP['email'], SHOP['email']), fontSize='small'))), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}))
 
@@ -406,11 +423,95 @@ pattern('post-grid', 'Notes grid (inherits query)', 'posts,query', inherit_query
 pattern('post-list', 'Results list', 'posts,query', inherit_query(
   group(J(dyn('post-title', isLink=True, level=2, fontSize='large'), dyn('post-date')), className='is-style-hairline', layout={'type': 'default'}), align='wide'), inserter=False)
 
+
+# ---------------------------------------------------------------- round 2
+INKS = [('ink-blue-black', 'Blue-black gall', 'Writes blue, dries darker. Waterproof once dry.'), ('ink-sepia', 'Sepia', 'Warm brown, lovely on cream paper.'),
+        ('ink-green', 'Bottle green', 'Dark enough for letters, green enough to notice.'), ('ink-violet', 'Violet', 'The school ink. Fades a little in sunlight.')]
+pattern('ink-swatches', 'Ink swatches', 'shop,featured', group(J(
+  heading('Inks on the testing desk', 2),
+  group(J(*[group(J(group('', className='is-style-swatch', backgroundColor=c, layout={'type': 'default'}), heading(n, 3, fontSize='medium'), para(d, className='is-style-spec', textColor='muted')), layout={'type': 'default'}) for c, n, d in INKS]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '9rem'}, style={'spacing': {'blockGap': SP('50')}}),
+  para('All four are 50ml, £12. Try them at the desk by the window before you buy.', fontSize='small')),
+  align='wide', layout={'type': 'default'}), description='Round ink swatches with a note on each ink.')
+pattern('gsm-guide', 'Paper weight explained', 'text', group(J(
+  heading('What gsm means on the page', 2),
+  para('Grams per square metre: the weight of one sheet the size of a small table. Heavier usually means less show-through, but coating matters as much as weight.'),
+  rows([['60gsm', 'School exercise books. Pencil and ballpoint only.'], ['80gsm', 'Our pocket refills and diaries. Fine nibs are fine.'],
+        ['100gsm', 'Our A5 notebooks. Medium nibs, no bleed, a little show-through.'], ['120gsm', 'Cloth-bound blanks. Wet inks, light washes.'], ['300gsm', 'Card. Postcards and covers.']], min_w='6rem')),
+  className='is-style-dots', align='wide', layout={'type': 'constrained', 'justifyContent': 'left'}), description='Paper weights from 60 to 300gsm, with what each is for.')
+pattern('bindings', 'Bindings compared', 'text', columns(
+  (None, J(heading('Thread-sewn', 4), para('Signatures sewn through the fold. Lies flat, lasts decades. Our A5 notebooks.'))),
+  (None, J(heading('Case-bound', 4), para('Sewn and glued into a hard cover. Stiffer spine, better for a shelf.'))),
+  (None, J(heading('Stapled', 4), para('Two staples through the fold. Cheap and light; the exercise books.'))),
+  (None, J(heading('Perfect bound', 4), para('Glued spine, no sewing. Will not lie flat. We do not stock it.'))), align='wide', className='is-style-hairline'),
+  description='Four bindings, one line each on how they behave.')
+pattern('pencil-grades', 'Pencil grades', 'text', group(J(
+  heading('Which pencil', 3),
+  rows([['2H', 'Hard, pale. Technical drawing and ruling lines.'], ['HB', 'The middle. Writing and everyday notes.'], ['2B', 'Soft, dark. Sketching, smudges if you let it.'], ['6B', 'Very soft. Shading and big drawings.']], min_w='5rem')),
+  layout={'type': 'default'}))
+pattern('testing-desk', 'The testing desk', 'featured', columns(
+  ('45%', image('desk-clips.jpg', ALT['desk-clips.jpg'], aspectRatio='1', scale='cover')),
+  (None, J(heading('Try before you buy', 2),
+     para('The desk by the window has every pen and ink we sell, a pad of each paper, and a bin for the scraps. Write your name, draw a spiral, see what happens to the ink.'),
+     para('We ask you not to test on the notebooks themselves. There is always a pad of the same paper next to them.', fontSize='small'))),
+  align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': SP('70')}}}))
+pattern('classes', 'Evening classes', 'events', group(J(
+  heading('Classes at the shop', 2),
+  rows([['Thu 16 Oct', 'Italic handwriting for beginners', '£35, 6 places'], ['Thu 30 Oct', 'Sew a pamphlet notebook', '£40, 6 places'], ['Thu 13 Nov', 'Pointed pen copperplate', '£45, full'], ['Thu 27 Nov', 'Letter-writing evening, bring an address', 'Free, 10 places']], min_w='8rem'),
+  buttons(('Email to book a class', 'mailto:%s?subject=Class' % SHOP['email']))),
+  align='wide', layout={'type': 'default'}), description='Class dates, prices and places left.')
+pattern('pen-repair', 'Pen repair', 'services', group(J(
+  heading('Pen repair', 3),
+  para('Mei fixes piston fillers, replaces sacs in old lever fillers and smooths scratchy nibs. Leave it with us for a week; we quote before we start.'),
+  rows([['Nib smoothing', '£8'], ['Replace an ink sac', '£18'], ['Piston service', '£25']])),
+  className='is-style-pale', layout={'type': 'default'}), description='Pen repairs with prices.')
+pattern('gift-sets', 'Gift sets', 'shop', group(J(
+  heading('Gift sets, wrapped', 2),
+  group(J(*[group(J(group(image(img, ALT[img], aspectRatio='1', scale='cover'), className='is-style-field', layout={'type': 'default'}), heading(n, 3, fontSize='medium'), para(d, className='is-style-spec', textColor='muted'), para(pr, fontSize='small')), layout={'type': 'default'}) for img, n, d, pr in [
+     ('journal-pen.jpg', 'The letter writer', 'Laid envelopes, gall ink, dip pen', '£32'), ('pencils.jpg', 'The sketcher', 'Coloured pencils, sharpener, blank A5', '£38'),
+     ('black-notebook.jpg', 'The note taker', 'Dot grid A5, steel fountain pen', '£52')]]),
+        align='wide', layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '12rem'}, style={'spacing': {'blockGap': SP('50')}})),
+  align='wide', layout={'type': 'default'}), description='Three wrapped sets with what is in each.')
+pattern('letter-box', 'Letter-writing subscription', 'shop', columns(
+  (None, image('envelopes.jpg', ALT['envelopes.jpg'], aspectRatio='4/3', scale='cover')),
+  (None, J(heading('A letter box, every month', 2), para('Six sheets of a paper we like, six envelopes, a stamp and a prompt. £9 a month, posted on the first Monday. Cancel by email any time.'),
+     buttons(('Email to start one', 'mailto:%s?subject=Letter%%20box' % SHOP['email'])))), align='wide', className='is-style-pale', verticalAlignment='center'))
+pattern('sample-pack', 'Free paper sample pack', 'shop', group(J(
+  heading('Ask for a sample pack', 3),
+  para('Eight A6 sheets: our four rulings in 100gsm cream, plus 80gsm, 120gsm, laid and kraft. Free with any order, or £2 on its own.'),
+  para('Add "sample pack" to your order note.', className='is-style-spec')), className='is-style-margin-rule', layout={'type': 'default'}))
+pattern('desk-objects', 'Desk objects', 'shop', group(J(
+  heading('For the desk', 2),
+  group(J(*[group(J(group(image(img, ALT[img], aspectRatio='1', scale='cover'), className='is-style-field', layout={'type': 'default'}), heading(n, 3, fontSize='medium'), para(pr, fontSize='small')), layout={'type': 'default'}) for img, n, pr in [
+     ('sharpener.jpg', 'Two-hole sharpener', '£4.50'), ('eraser.jpg', 'Pencil-top eraser', '£3'), ('desk-clips.jpg', 'Brass paper clips, box of 50', '£6'), ('stamps.jpg', 'Loose stamps for letters', 'From £1')]]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '9rem'}, style={'spacing': {'blockGap': SP('50')}})),
+  align='wide', layout={'type': 'default'}))
+pattern('sewing-process', 'How the notebooks are made', 'about,gallery', group(J(
+  heading('Sewn in a back room in Leith', 2),
+  lst(['Paper cut to size from 500-sheet reams, 12 sheets to a signature.', 'Signatures folded by hand with a bone folder.', 'Sewn on a frame with linen thread, whatever colour the supplier has.', 'Covers glued, pressed overnight under old dictionaries.'], ordered=True),
+  gallery([('ruled-macro.jpg', ALT['ruled-macro.jpg'], 'Ruling up close'), ('stamped-book.jpg', ALT['stamped-book.jpg'], 'An old stamped book we keep for reference'), ('black-notebook.jpg', ALT['black-notebook.jpg'], 'Finished')], columns=3)),
+  align='wide', layout={'type': 'constrained', 'justifyContent': 'left'}), description='Four steps and three photos. Click a photo to open it.')
+pattern('staff-picks', 'What we use ourselves', 'shop', columns(
+  (None, J(heading('Mei uses', 4), para('The steel fountain pen with blue-black gall ink, in the ruled A5. Every till receipt.'))),
+  (None, J(heading('Callum uses', 4), para('A 2B pencil and the blank cloth notebook, for sketching sewing jigs.'))), align='wide', className='is-style-hairline'))
+pattern('school-list', 'Back to school list', 'shop', group(J(
+  heading('The school list, sorted', 3),
+  lst(['Squared exercise books, 5mm, pack of two, £7', 'HB pencils and a two-hole sharpener, £6', 'A latex-free eraser, £3', 'Coloured pencils, tin of 12, £18']),
+  para('We make these up as bundles in August. Ask at the till.', fontSize='small')), className='is-style-pale', layout={'type': 'default'}))
+pattern('hero-shelves', 'Hero: the shelves as a list', 'featured,banner', group(columns(
+  (None, J(heading('On the shelves this week', 1, fontSize='x-large'), lst(['<a href="/product-category/%s/">%s</a><span>%d</span>' % (s_, n, c) for n, s_, c in CATS[:6]], className='is-style-index-list'))),
+  ('40%', group(image('pencils.jpg', ALT['pencils.jpg'], aspectRatio='1', scale='cover'), className='is-style-field', layout={'type': 'default'})), align='wide', verticalAlignment='center'),
+  align='full', className='is-style-graph', layout={'type': 'constrained'}), description='An alternative opening: the category list on graph paper.')
+pattern('find-us-line', 'Contact line', 'contact', para('Call <a href="tel:01314960281">%s</a> or email <a href="mailto:%s">%s</a>. We answer within a working day.' % (SHOP['phone'], SHOP['email'], SHOP['email']), fontSize='small'))
+
 # pages
 pattern('page-new-arrivals', 'Page: new arrivals', 'shop', J(para('What came in over the last month, newest first. Paper goods sell out slowly; pens and ink quickly.'), pattern_ref('new-arrivals'), pattern_ref('pens-grid')), block_types='core/post-content')
 pattern('page-diaries', 'Page: diaries', 'shop', J(pattern_ref('diaries-page-intro'), pattern_ref('perpetual-calendar'), pattern_ref('gift-wrap')), block_types='core/post-content')
 pattern('page-ruling-samples', 'Page: ruling samples', 'shop', J(pattern_ref('ruling-selector'), pattern_ref('ruling-samples'), pattern_ref('fountain-pen-friendly')), block_types='core/post-content')
-pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('about'), pattern_ref('quote')), block_types='core/post-content')
+pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('testing-desk'), pattern_ref('about'), pattern_ref('staff-picks'), pattern_ref('quote'), pattern_ref('find-us-line')), block_types='core/post-content')
+pattern('page-classes', 'Page: classes and repairs', 'events', J(pattern_ref('classes'), pattern_ref('pen-repair'), pattern_ref('sewing-process')), block_types='core/post-content')
+pattern('page-guides', 'Page: paper and pen guides', 'text', J(pattern_ref('gsm-guide'), pattern_ref('bindings'), pattern_ref('pencil-grades'), pattern_ref('ink-swatches'), pattern_ref('fountain-pen-friendly')), block_types='core/post-content')
+pattern('page-gifts', 'Page: gifts', 'shop', J(pattern_ref('gift-sets'), pattern_ref('letter-box'), pattern_ref('sample-pack'), pattern_ref('desk-objects'), pattern_ref('school-list'), pattern_ref('gift-wrap')), block_types='core/post-content')
 pattern('page-wholesale', 'Page: wholesale', 'shop', J(pattern_ref('wholesale'), pattern_ref('shipping')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- parts
@@ -425,7 +526,7 @@ write('parts/footer.html', group(J(
   columns(
     ('40%', J(dyn('site-title', level=0), para('Paper, pens and desk things. %s.' % SHOP['addr'], fontSize='small'))),
     (None, J(heading('Hours', 5), para('Tue to Fri 10 to 5.30<br>Sat 10 to 5, Sun 12 to 4<br>Closed Mondays', fontSize='small'))),
-    (None, J(heading('Help', 5), para('<a href="/wholesale/">Wholesale and postage</a><br><a href="/ruling-samples/">Ruling samples</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email']), fontSize='small'))),
+    (None, J(heading('Help', 5), para('<a href="/wholesale/">Wholesale and postage</a><br><a href="/ruling-samples/">Ruling samples</a><br><a href="/guides/">Paper guides</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email']), fontSize='small'))),
     align='wide'),
   para('Demo photographs are CC0 and public domain images from Wikimedia Commons and Unsplash, used as stand-ins for our own product photos.', fontSize='x-small', textColor='muted', align='wide')),
   tag='footer', align='full', className='is-style-graph', layout={'type': 'constrained'}))
@@ -441,7 +542,7 @@ def tpl(name, inner):
 
 
 tpl('front-page', group(J(pattern_ref('hero-graph'), pattern_ref('category-index'), pattern_ref('new-arrivals'), pattern_ref('ruling-selector'),
-    pattern_ref('diaries-page-intro'), pattern_ref('notes-list'), pattern_ref('visit')), tag='main', layout={'type': 'constrained'},
+    pattern_ref('ink-swatches'), pattern_ref('gift-sets'), pattern_ref('diaries-page-intro'), pattern_ref('testing-desk'), pattern_ref('notes-list'), pattern_ref('visit')), tag='main', layout={'type': 'constrained'},
     style={'spacing': {'blockGap': SP('80'), 'padding': {'bottom': SP('80')}}}))
 tpl('page', main(J(dyn('post-title', level=1), dyn('post-content', layout={'type': 'constrained'}))))
 tpl('page-wide', main(J(dyn('post-title', level=1, align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1240px'}))))
@@ -511,23 +612,28 @@ demo = {
   {'slug': 'ruling-samples', 'title': 'Rulings', 'pattern': 'paper/page-ruling-samples', 'template': 'page-wide'},
   {'slug': 'wholesale', 'title': 'Wholesale', 'pattern': 'paper/page-wholesale'},
   {'slug': 'visit', 'title': 'Visit', 'pattern': 'paper/page-visit', 'template': 'page-wide'},
+  {'slug': 'classes', 'title': 'Classes and repairs', 'pattern': 'paper/page-classes', 'template': 'page-wide'},
+  {'slug': 'guides', 'title': 'Paper guides', 'pattern': 'paper/page-guides', 'template': 'page-wide'},
+  {'slug': 'gifts', 'title': 'Gifts', 'pattern': 'paper/page-gifts', 'template': 'page-wide'},
  ],
  'posts': [
   {'title': 'Nine inks on our 100gsm cream, side by side', 'category': 'paper-tests', 'image': 'ink.jpg', 'content': J(
-     para('We wrote the same sentence in nine inks with a medium steel nib and left the page for a day. Two showed through, none bled. The gall ink darkened most.'))},
+     para('We wrote the same sentence in nine inks with a medium steel nib and left the page for a day. Two showed through, none bled. The gall ink darkened most.'), pattern_ref('ink-swatches'), pattern_ref('fountain-pen-friendly'))},
   {'title': 'Why the dot grid is 5mm and not 4mm', 'category': 'paper-tests', 'image': 'dot-grid.jpg', 'content': J(
-     para('At 4mm most people write two dots per line and the page looks crowded. At 5mm it lines up with a relaxed hand and still works for small drawings.'))},
+     para('At 4mm most people write two dots per line and the page looks crowded. At 5mm it lines up with a relaxed hand and still works for small drawings.'), pattern_ref('ruling-selector'), pattern_ref('sample-pack'))},
   {'title': 'The 2026 diaries are in', 'category': 'shop-notes', 'image': 'journal-pen.jpg', 'content': J(
-     para('Week to view, day to a page and month to view, all starting 29 December. We printed the same number as last year, which ran out in November.'))},
+     para('Week to view, day to a page and month to view, all starting 29 December. We printed the same number as last year, which ran out in November.'), pattern_ref('diaries-page-intro'), pattern_ref('perpetual-calendar'))},
   {'title': 'Sewing a batch of 200 notebooks', 'category': 'shop-notes', 'image': 'black-notebook.jpg', 'content': J(
-     para('Callum sews on Mondays when the shop is closed. A batch of 200 takes three Mondays, and the thread colour depends on what the supplier has that month.'))},
+     para('Callum sews on Mondays when the shop is closed. A batch of 200 takes three Mondays, and the thread colour depends on what the supplier has that month.'), pattern_ref('sewing-process'), pattern_ref('handmade-note'))},
   {'title': 'Exercise books and why we still sell them', 'category': 'shop-notes', 'image': 'graph-books.jpg', 'content': J(
-     para('They feather under a fountain pen and the paper is thin. They are also £3.50 each and perfect for maths homework, so they stay.'))},
+     para('They feather under a fountain pen and the paper is thin. They are also £3.50 each and perfect for maths homework, so they stay.'), pattern_ref('school-list'), pattern_ref('gsm-guide'))},
   {'title': 'Testing envelopes in the rain', 'category': 'paper-tests', 'image': 'envelopes.jpg', 'content': J(
-     para('We posted ten laid envelopes to ourselves during a wet week. The addresses in gall ink arrived sharp; the ones in a dye ink had run on two.'))},
+     para('We posted ten laid envelopes to ourselves during a wet week. The addresses in gall ink arrived sharp; the ones in a dye ink had run on two.'), pattern_ref('letter-box'), pattern_ref('paper-spec'))},
+  {'title': 'Fixing a 1950s lever-fill pen', 'category': 'shop-notes', 'image': 'nib-steel.jpg', 'content': J(
+     para('A customer brought in her grandfather\'s lever filler with a perished sac. Mei replaced the sac, cleaned the feed and smoothed the nib. It writes a wet fine line again.'), pattern_ref('pen-repair'), pattern_ref('classes'))},
  ],
  'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'New arrivals', 'url': '/new-arrivals/'}, {'label': 'Rulings', 'url': '/ruling-samples/'},
-         {'label': 'Diaries', 'url': '/diaries/'}, {'label': 'Wholesale', 'url': '/wholesale/'}, {'label': 'Notes', 'url': '/notes/'}, {'label': 'Visit', 'url': '/visit/'}],
+         {'label': 'Diaries', 'url': '/diaries/'}, {'label': 'Gifts', 'url': '/gifts/'}, {'label': 'Guides', 'url': '/guides/'}, {'label': 'Classes', 'url': '/classes/'}, {'label': 'Notes', 'url': '/notes/'}, {'label': 'Visit', 'url': '/visit/'}],
  'currency': 'GBP',
  'products': [{'name': p[0], 'price': p[3], 'image': p[1], 'category': p[2], 'sku': 'MGN-%d' % (100 + i), 'stock': p[4], 'short': p[6], 'description': pdesc(p)} for i, p in enumerate(P)],
 }

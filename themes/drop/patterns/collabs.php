@@ -11,12 +11,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Things we made with other people, split down the middle.</p>
+<p class="">Things we made with other people, split down the middle.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/print.jpg' ) ); ?>" alt="Screen printing with red ink"/></figure>
 <!-- /wp:image -->
 
@@ -34,7 +34,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/vinyl.jpg' ) ); ?>" alt="A record coming out of its sleeve"/></figure>
 <!-- /wp:image -->
 
@@ -52,7 +52,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/zine.jpg' ) ); ?>" alt="Stacks of folded zines"/></figure>
 <!-- /wp:image -->
 

@@ -2,7 +2,7 @@
 /**
  * Title: Exhibitions (solo and group, venue, dates)
  * Slug: oil/exhibitions-list
- * Categories: about
+ * Categories: oil-exhibitions,about
  */
 ?>
 <!-- wp:heading {"fontSize":"x-large"} -->

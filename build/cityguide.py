@@ -60,6 +60,7 @@ theme = {
         {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 8.5rem)', 'name': '8'}]},
     'shadow': {'defaultPresets': False, 'presets': []},
     'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+    'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
   },
   'styles': {
     'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -168,6 +169,10 @@ section('closed', 'Closed place', ['core/group'], {
     'border': {'left': {'width': '6px', 'style': 'solid', 'color': 'var:preset|color|contrast'}},
     'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}},
     'css': '& h3{text-decoration:line-through;text-decoration-thickness:3px}'})
+section('rule-row', 'Ruled row', ['core/group'], {
+    'border': {'bottom': {'width': '1px', 'style': 'solid', 'color': 'var:preset|color|contrast'}},
+    'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+    'css': '&>*{margin:0!important}'})
 section('note', 'Note box', ['core/group', 'core/paragraph'], {
     'color': {'background': 'var:preset|color|surface'},
     'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
@@ -194,7 +199,7 @@ write('parts/header.html', group(
 write('parts/footer.html', group(J(
     columns(('40%', J(para('Lampje', fontSize='xx-large', fontFamily='display', style={'typography': {'fontWeight': '900', 'lineHeight': '1'}}),
                       para('An independent guide to Eindhoven by Sanne Verhoeven and Joost Bakker. Nobody pays to be in it. We pay for our own coffee.'))),
-            (None, J(heading('The guide', 6, textColor='base'), para('<a href="/this-week/">This week</a><br><a href="/map/">The map</a><br><a href="/neighbourhoods/">Neighbourhoods</a><br><a href="/guide/">All stories</a>'))),
+            (None, J(heading('The guide', 6, textColor='base'), para('<a href="/this-week/">This week</a><br><a href="/map/">The map</a><br><a href="/printed-map/">The printed map</a><br><a href="/neighbourhoods/">Neighbourhoods</a><br><a href="/guide/">All stories</a><br><a href="/tips/">Tips and corrections</a>'))),
             (None, J(heading('Write to us', 6, textColor='base'), para('Tips, corrections and closures: <a href="mailto:tips@example.com">tips@example.com</a>'),
                      para('We read everything and reply on Mondays.'))),
             (None, J(heading('The Thursday list', 6, textColor='base'), para('Six things for the weekend, every Thursday at 7:00.'),
@@ -214,7 +219,7 @@ CARD = J(dyn('post-featured-image', isLink=True, aspectRatio='4/3', scale='cover
          dyn('post-title', isLink=True, level=3, fontSize='large'))
 
 write('templates/front-page.html', page_template(J(
-    pattern_ref('hero-this-week'), pattern_ref('this-week-list'), pattern_ref('latest-lists'),
+    pattern_ref('hero-this-week'), pattern_ref('this-week-list'), pattern_ref('latest-lists'), pattern_ref('featured-story'),
     pattern_ref('neighbourhood-tiles'), pattern_ref('map-list'), pattern_ref('weekend-picks'), pattern_ref('strijp-night-strip')),
     **{'style': {'spacing': {'padding': {'top': '0', 'bottom': '0'}}}}))
 
@@ -402,11 +407,11 @@ pattern('event-calendar', 'Coming up this autumn', 'cityguide-events', sect(J(
 pattern('this-week-page', 'Page: this week', 'cityguide-events', J(
     para('Everything we would go to this week, in order. Prices are at the door unless we say otherwise.', fontSize='large'),
     group(event_rows(EVENTS + [('Sun 4', '15:00', 'Record fair, second-hand only', 'Klokgebouw, Strijp', '€3')]), layout={'type': 'default'}),
-    pattern_ref('event-calendar'), pattern_ref('newsletter-thursday')), block_types='core/post-content')
+    pattern_ref('event-highlight'), pattern_ref('season-guide'), pattern_ref('event-calendar'), pattern_ref('newsletter-thursday')), block_types='core/post-content')
 
 pattern('map-page', 'Page: the map', 'cityguide-places', J(
     para('Our eight favourite places right now, numbered on a map you can print. We update the list at the start of each month.', fontSize='large'),
-    pattern_ref('printable-list'), pattern_ref('map-list'), pattern_ref('place-closed'), pattern_ref('price-band-key')), block_types='core/post-content')
+    pattern_ref('printable-list'), pattern_ref('map-list'), pattern_ref('new-openings'), pattern_ref('place-closed'), pattern_ref('price-band-key'), pattern_ref('printed-guide-shop')), block_types='core/post-content')
 
 def hood_section(n, img, t, a, alt, extra):
     return sect(columns(('45%', crop(image(img, alt, aspectRatio='4/3', scale='cover'))),
@@ -423,7 +428,7 @@ EXTRAS = {
 }
 pattern('neighbourhoods-page', 'Page: neighbourhoods', 'cityguide-places', J(
     para('Six parts of town, each with what we would do there on a free afternoon.', fontSize='large'),
-    *[hood_section(n, img, t, a, alt, EXTRAS[a]) for n, img, t, a, alt in HOODS]), block_types='core/post-content')
+    *[hood_section(n, img, t, a, alt, EXTRAS[a]) for n, img, t, a, alt in HOODS], pattern_ref('walking-route'), pattern_ref('list-cards')), block_types='core/post-content')
 
 pattern('about-us', 'About the guide', 'cityguide-about', sect(columns(
     ('58%', J(para('Lampje is Sanne Verhoeven and Joost Bakker. Sanne grew up in Woensel and runs a bike repair shop in Strijp; Joost moved here in 2017 for a job at the TU/e and stayed for the soup.', fontSize='large'),
@@ -438,7 +443,7 @@ pattern('how-we-choose', 'How we choose places', 'cityguide-about', group(J(
     lst(['We visit twice, at different times, before a place goes in.', 'We write down the date of the last visit on every entry.', 'Closed places stay up with a note for three months.',
          'Readers\' tips get checked in person. Send them anyway.'], ordered=True)), layout={'type': 'constrained'}, style=PAD))
 
-pattern('about-page', 'Page: about', 'cityguide-about', J(pattern_ref('about-us'), pattern_ref('how-we-choose'), pattern_ref('getting-here'), pattern_ref('accommodation-types')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'cityguide-about', J(pattern_ref('about-us'), pattern_ref('contributors'), pattern_ref('how-we-choose'), pattern_ref('support-us')), block_types='core/post-content')
 
 pattern('quote-reader', 'Quote from a reader', 'cityguide-about', quote(
     'Moved here in March, knew nobody. Went to every place on the map in order. Number 7 is now my Saturday.',
@@ -458,6 +463,105 @@ pattern('tips-page', 'Page: tips and corrections', 'cityguide-about', J(
                      buttons(('Email a correction', 'mailto:tips@example.com?subject=Correction'))))),
     pattern_ref('corrections-note'), pattern_ref('quote-reader')), block_types='core/post-content')
 
+
+# ------------------------------------------------------------------ round 2: more of the kit (This is Eindhoven, Herb Lester, Tokyo Cheapo, The List)
+def rrow(a, b):
+    return row(J(para('<strong>%s</strong>' % a), para(b)), justify='space-between', className='is-style-rule-row')
+
+LISTS = [('eat-drink', 'Eat and drink', 'Six lunches under €12 near the station', 'lunch.jpg', 'A wooden bowl of poké with tortilla chips and tomatoes on a café table'),
+         ('culture', 'Culture', 'The Proun room at the Van Abbe', 'vanabbe.jpg', 'A white room with black and wooden geometric shapes fixed to the walls'),
+         ('neighbourhoods', 'Neighbourhoods', 'Kruisstraat, the long street', 'kruisstraat.jpg', 'An old sandstone house on a street corner with red brick paving'),
+         ('day-trips', 'Day trips', 'Nuenen by bike', 'nuenen.jpg', 'A straight brick bike path between bare trees at dawn')]
+pattern('list-cards', 'Lists by category (cards)', 'cityguide-lists', sect(J(
+    heading('Pick a list', 2),
+    grid(J(*[stack(J(crop(image(img, alt, href='/category/%s/' % c, aspectRatio='4/3', scale='cover')), label(lab), heading('<a href="/category/%s/">%s</a>' % (c, t), 3)),
+                   style={'spacing': {'blockGap': 'var:preset|spacing|20'}}) for c, lab, t, img, alt in LISTS]), min_width='14rem'))))
+
+pattern('featured-story', 'Featured story, big', 'cityguide-lists', sect(columns(
+    ('60%', image('evoluon.jpg', 'The Evoluon, a round concrete building like a flying saucer, with people walking in front of it', 'The Evoluon when it opened in 1966. Nationaal Archief, public domain.')),
+    ('40%', J(label('Culture'), heading('The flying saucer opens its doors for one weekend', 2),
+              para('Philips\' 1966 science museum is a conference centre now, and opens to the public twice a year. Next time: 7 and 8 November, free.'),
+              para('<a href="/category/culture/">More culture stories</a>'))),
+    align='wide', verticalAlignment='center')))
+
+pattern('season-guide', 'This autumn, four things', 'cityguide-events', sect(J(
+    heading('Four things for this autumn', 2),
+    columns((None, J(label('October'), heading('Dutch Design Week', 3), para('17 to 25 October. Go to Strijp on weekday mornings.'))),
+            (None, J(label('November'), heading('GLOW', 3), para('8 to 15 November. A walking route of light art through the centre, free.'))),
+            (None, J(label('November'), heading('Evoluon open days', 3), para('7 and 8 November, 10:00 to 16:00, free.'))),
+            (None, J(label('December'), heading('Winter market', 3), para('From 28 November on the Catharinaplein.'))), align='wide'))))
+
+pattern('day-itinerary', 'A day in Strijp', 'cityguide-places', sect(J(
+    heading('A day in Strijp', 2),
+    group(J(rrow('9:00', 'Flat white at Koffiebar Haring, Torenallee'), rrow('10:30', 'Walk the Torenallee and look up at the sawtooth roofs'),
+            rrow('12:30', 'Lunch at the Klokgebouw café'), rrow('14:00', 'Flea market, first Sunday of the month'), rrow('16:30', 'Bike to Stratum for the Van Abbe late opening on Thursdays')),
+          layout={'type': 'default'}))))
+
+pattern('walking-route', 'Walking route: the Dommel', 'cityguide-places', sect(columns(
+    ('55%', J(heading('Walk: along the Dommel', 2), para('6 km, about 90 minutes, flat all the way. Start at the Genneper Hoeve café, end at the Van Abbemuseum.'),
+              lst(['Genneper Hoeve café, coffee and a map on the wall', 'The watermill, 1.2 km', 'Where three rivers meet, 2.5 km', 'Under the ring road bridge, 4 km', 'Van Abbemuseum, 6 km'], ordered=True))),
+    ('45%', image('dommel.jpg', 'A concrete bridge over the Dommel river, photographed in black and white when it was new', 'The Dommel bridge in 1960s. The river is greener now.')),
+    align='wide', verticalAlignment='top')))
+
+pattern('printed-guide-shop', 'Printed guide: the folded map', 'cityguide-shop', sect(columns(
+    ('45%', image('sketch-map.jpg', 'Sketch map of Eindhoven with red numbered pins', 'The folded map, drawn by Sanne. A2, folds to A6.')),
+    ('55%', J(heading('The Lampje map, printed', 2), para('Forty places on one A2 sheet that folds into a jacket pocket. Numbers on the map match the list on the back. Updated every spring.', fontSize='large'),
+              para('<strong>€6</strong>, or €4 each for ten or more. Sold at Platenzaak Rondje, Koffiebar Haring and by post.'),
+              buttons(('Email to order a map', 'mailto:hello@example.com?subject=Printed%20map')))),
+    align='wide', verticalAlignment='center')))
+
+pattern('delivery-times', 'Printed guide: delivery times', 'cityguide-shop', group(J(
+    heading('Delivery', 3), rrow('Netherlands', '€2, 1 to 2 days'), rrow('Belgium and Germany', '€4, 3 to 5 days'), rrow('Rest of Europe', '€6, 5 to 8 days'), rrow('Everywhere else', '€9, 8 to 15 days')),
+    layout={'type': 'default'}))
+
+pattern('client-work', 'Commissioned guides', 'cityguide-shop', group(J(
+    heading('Guides we make for others', 3),
+    para('Hotels, offices and conferences ask us for their own version: twenty places near their door, printed with their name on it. We keep the same rule: nobody pays to be in it.'),
+    para('Recent: a walking map for a Strijp hotel, a lunch list for a design school, a Dutch Design Week map for a Brussels studio.'),
+    buttons(('Email about a commission', 'mailto:hello@example.com?subject=Commissioned%20guide'))), className='is-style-note', layout={'type': 'default'}))
+
+pattern('parking-bikes', 'Parking, bikes and taxis', 'cityguide-practical', sect(J(
+    heading('Parking and bikes', 2),
+    group(J(rrow('Station bike park', 'Free for the first 24 hours, 4,000 spaces'), rrow('Bike hire', 'Under the tracks, north side, from €9.50 a day'),
+            rrow('Car parking in the centre', 'About €3.50 an hour; the Heuvel garage is cheapest after 18:00'), rrow('Taxi rank', 'Station, south side, card accepted')), layout={'type': 'default'}))))
+
+pattern('new-openings', 'Just opened', 'cityguide-places', sect(J(
+    heading('Just opened', 2),
+    columns((None, J(label('Centrum, September'), heading('Bakkerij Leenders, second shop', 3), para('The sourdough people from Stratum now have a counter on the Kleine Berg.'))),
+            (None, J(label('Strijp, August'), heading('Natlab late screenings', 3), para('Friday films at 22:30, €8. So far, all horror.'))),
+            (None, J(label('Woensel, August'), heading('Wok Wok, Woenselse Markt', 3), para('A market stall turned into a shop. Noodles by weight.'))), align='wide'))))
+
+pattern('local-words', 'Words you will hear', 'cityguide-practical', group(J(
+    heading('Words you will hear', 3),
+    rrow('Houdoe', 'Goodbye, the Brabant way'), rrow('Lichtstad', 'City of light, for the Philips years'), rrow('Doei', 'Bye, to friends'), rrow('Gezellig', 'Cosy, sociable; used about most pubs')),
+    className='is-style-note', layout={'type': 'default'}))
+
+pattern('contributors', 'Who writes Lampje', 'cityguide-about', sect(J(
+    heading('Who writes it', 2),
+    columns((None, J(heading('Sanne Verhoeven', 3), para('Grew up in Woensel. Runs a bike repair shop. Draws the map.', fontSize='small'))),
+            (None, J(heading('Joost Bakker', 3), para('Moved here for the TU/e in 2017. Writes the Thursday list on the train.', fontSize='small'))),
+            (None, J(heading('Meryem Kaya', 3), para('Writes about the Kruisstraat and anything with bread in it.', fontSize='small'))), align='wide'))))
+
+pattern('support-us', 'Support Lampje', 'cityguide-about', group(J(
+    heading('Keep it free of adverts', 2),
+    para('Lampje is paid for by about 400 readers at €3 a month. That covers printing, the website and our coffee. Nothing else.'),
+    buttons(('Support Lampje for €3 a month', 'mailto:hello@example.com?subject=Support'))),
+    align='full', className='is-style-sawtooth-rose', layout=FULL, style=FULLPAD))
+
+pattern('event-highlight', 'Event highlight: GLOW', 'cityguide-events', sect(columns(
+    ('55%', image('strijp.jpg', 'Philips factory buildings at night with every window lit', 'The city has been lighting itself up since the 1950s.')),
+    ('45%', J(label('8 to 15 November'), heading('GLOW, the light festival', 2),
+              para('A 5 km walking route of light art through the centre, 18:00 to 23:00 every night. Free. It is busiest on Saturday; go on Tuesday.'),
+              para('<a href="/this-week/">What else is on</a>'))),
+    align='wide', verticalAlignment='center')))
+
+pattern('plan-page', 'Page: plan your visit', 'cityguide-practical', J(
+    para('Getting here, getting around, where to sleep and what to do with one day.', fontSize='large'),
+    pattern_ref('getting-here'), pattern_ref('parking-bikes'), pattern_ref('accommodation-types'), pattern_ref('day-itinerary'), pattern_ref('local-words')), block_types='core/post-content')
+
+pattern('printed-page', 'Page: the printed map', 'cityguide-shop', J(
+    pattern_ref('printed-guide-shop'), pattern_ref('delivery-times'), pattern_ref('client-work')), block_types='core/post-content')
+
 print('cityguide: patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
 write('functions.php', '''<?php
@@ -475,6 +579,7 @@ add_action(
 			'cityguide-places'    => 'City guide: places and map',
 			'cityguide-lists'     => 'City guide: lists and stories',
 			'cityguide-practical' => 'City guide: practical',
+			'cityguide-shop'      => 'City guide: printed map',
 			'cityguide-about'     => 'City guide: about',
 		) as $slug => $label ) {
 			register_block_pattern_category( $slug, array( 'label' => $label ) );
@@ -543,11 +648,13 @@ content = {
     {'slug': 'neighbourhoods', 'title': 'Neighbourhoods', 'pattern': 'cityguide/neighbourhoods-page', 'template': 'page-wide'},
     {'slug': 'about', 'title': 'About Lampje', 'pattern': 'cityguide/about-page', 'template': 'page-wide'},
     {'slug': 'tips', 'title': 'Tips and corrections', 'pattern': 'cityguide/tips-page'},
+    {'slug': 'plan-your-visit', 'title': 'Plan your visit', 'pattern': 'cityguide/plan-page', 'template': 'page-wide'},
+    {'slug': 'printed-map', 'title': 'The printed map', 'pattern': 'cityguide/printed-page', 'template': 'page-wide'},
   ],
   'posts': [{'title': t, 'category': c, 'image': img, 'date': d, 'content': body} for t, c, img, d, body in POSTS],
   'nav': [{'label': 'This week', 'url': '/this-week/'}, {'label': 'Eat and drink', 'url': '/category/eat-drink/'},
           {'label': 'Culture', 'url': '/category/culture/'}, {'label': 'Neighbourhoods', 'url': '/neighbourhoods/'},
-          {'label': 'The map', 'url': '/map/'}, {'label': 'About', 'url': '/about/'}],
+          {'label': 'The map', 'url': '/map/'}, {'label': 'Plan your visit', 'url': '/plan-your-visit/'}, {'label': 'About', 'url': '/about/'}],
 }
 os.makedirs('demos/cityguide', exist_ok=True)
 json.dump(content, open('demos/cityguide/content.json', 'w'), indent=1, ensure_ascii=False)

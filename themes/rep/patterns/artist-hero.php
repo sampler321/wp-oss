@@ -17,8 +17,46 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"42%"} -->
-<div class="wp-block-column" style="flex-basis:42%"><!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Disciplines</td><td>Illustration, maps</td></tr><tr><td>Based</td><td>Lisbon, one hour ahead of London</td></tr><tr><td>Clients</td><td>Faber, The Financial Times, Porto Tourism, Monocle</td></tr><tr><td>Agent</td><td>Priya Raman</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<div class="wp-block-column" style="flex-basis:42%"><!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"top":{"color":"var:preset|color|line","width":"1px","style":"solid"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Disciplines</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Illustration, maps</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Based</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Lisbon, one hour ahead of London</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Clients</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Faber, The Financial Times, Porto Tourism, Monocle</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Agent</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Priya Raman</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

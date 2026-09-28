@@ -5,18 +5,106 @@
  * Categories: services
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-mint-field","layout":{"type":"constrained","contentSize":"900px"}} -->
+<!-- wp:group {"className":"is-style-mint-field","align":"full","layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group alignfull is-style-mint-field"><!-- wp:heading -->
 <h2 class="wp-block-heading">Workshops</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Evening classes in the shop, eight people at most. Wine, flowers and a jar to take home are included.</p>
+<p class="">Evening classes in the shop, eight people at most. Wine, flowers and a jar to take home are included.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Date</th><th>Workshop</th><th>Places</th><th>Price</th></tr></thead><tbody><tr><td>Thu 9 Oct</td><td>Autumn hand-tied bouquet</td><td>3 places left</td><td>£95</td></tr><tr><td>Thu 23 Oct</td><td>Dried flower wreath</td><td>5 places left</td><td>£85</td></tr><tr><td>Thu 27 Nov</td><td>Christmas door wreath</td><td>Full, waiting list open</td><td>£95</td></tr><tr><td>Thu 4 Dec</td><td>Christmas door wreath</td><td>6 places left</td><td>£95</td></tr><tr><td>Thu 11 Dec</td><td>Table centrepiece</td><td>8 places left</td><td>£85</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Thu 9 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Autumn hand-tied bouquet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">3 places left</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£95</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Thu 23 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Dried flower wreath</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">5 places left</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£85</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Thu 27 Nov</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Christmas door wreath</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Full, waiting list open</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£95</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Thu 4 Dec</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Christmas door wreath</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">6 places left</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£95</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Thu 11 Dec</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Table centrepiece</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">8 places left</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£85</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->

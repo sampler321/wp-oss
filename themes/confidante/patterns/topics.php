@@ -11,8 +11,8 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Four things, over and over, because they never stop being complicated.</p>
+<p>Four things, over and over, because they never stop being complicated.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:categories {"className":"is-style-topic-list","showPostCounts":false} /--></div>
+<!-- wp:categories {"className":"is-style-topic-list"} /--></div>
 <!-- /wp:group -->

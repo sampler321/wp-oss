@@ -2,7 +2,7 @@
 /**
  * Title: Tools of the trade (illustration)
  * Slug: pipe/tools
- * Categories: pipe,about
+ * Categories: about
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -13,7 +13,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/wrench.jpg' ) ); ?>" alt="A watercolour drawing of an old pipe wrench on cream paper"/><figcaption class="wp-element-caption">Pipe wrench, drawn for the Index of American Design, 1940</figcaption></figure>
 <!-- /wp:image -->
 

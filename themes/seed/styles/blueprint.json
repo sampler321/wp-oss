@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Blueprint",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#10357A",
+					"name": "Blueprint"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F2F2F2",
+					"name": "Chalk"
+				},
+				{
+					"slug": "accent",
+					"color": "#FFD166",
+					"name": "Marker yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#153F8C",
+					"name": "Light blueprint"
+				},
+				{
+					"slug": "line",
+					"color": "#4A6BAA",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#C9D3E8",
+					"name": "Pale blue"
+				}
+			]
+		}
+	}
+}

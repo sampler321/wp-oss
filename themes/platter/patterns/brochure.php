@@ -2,10 +2,10 @@
 /**
  * Title: Brochure for planners
  * Slug: platter/brochure
- * Categories: platter,call-to-action
+ * Categories: enquire
  */
 ?>
-<!-- wp:group {"className":"is-style-mustard","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<!-- wp:group {"className":"is-style-mustard","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-mustard" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->

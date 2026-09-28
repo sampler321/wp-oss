@@ -14,13 +14,23 @@ import blocks as _b
 set_theme('room')
 S = THEME['slug']
 D = THEME['dir']
+import shutil
+for _d in ('patterns', 'templates', 'parts', 'styles'):
+    shutil.rmtree(os.path.join(D, _d), ignore_errors=True)  # rebuilt below; drops stale files
 
 
-def group(inner, tag='div', layout='constrained', **attrs):
-    # The normaliser drops `layout` from a plain div group that also carries `style`; a section tag keeps it.
-    if tag == 'div' and attrs.get('style') and layout and layout != {'type': 'default'}:
-        tag = 'section'
-    return _b.group(inner, tag=tag, layout=layout, **attrs)
+group = _b.group
+
+
+def columns(*cols, **attrs):
+    """core/columns with the classes WordPress saves for verticalAlignment and isStackedOnMobile."""
+    extra = []
+    if attrs.get('verticalAlignment'):
+        extra.append('are-vertically-aligned-' + attrs['verticalAlignment'])
+    if attrs.get('isStackedOnMobile') is False:
+        extra.append('is-not-stacked-on-mobile')
+    out = _b.columns(*cols, **attrs)
+    return out.replace('class="wp-block-columns', 'class="wp-block-columns ' + ' '.join(extra), 1) if extra else out
 
 
 PAL = [
@@ -102,6 +112,7 @@ theme = {
         },
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -229,6 +240,25 @@ section('text-link', 'Text link button', ['core/button'], {
 section('inline-list', 'Inline list', ['core/categories'], {
     'css': '&{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}'})
 
+
+CATS = [('project', 'Project stories'), ('shop', 'Shop'), ('fabric', 'Fabric and wallpaper'), ('services', 'Services and fees'), ('about', 'About'), ('contact', 'Contact'), ('hero', 'Heroes'), ('page', 'Page layouts')]
+CATMAP = {'project-rooms': 'project', 'room-chapter': 'project', 'paint-chips': 'project', 'project-credits': 'project', 'press-quote': 'about', 'pieces-in-project': 'shop',
+          'the-edit': 'shop', 'hero-latest-project': 'hero', 'projects-grid': 'project', 'projects-archive': 'project', 'shop-categories': 'shop', 'fabric-compositions': 'fabric',
+          'fabric-samples': 'fabric', 'wallpaper-note': 'fabric', 'philosophy': 'services', 'enquiry-what-to-send': 'services', 'fees': 'services', 'trade-account': 'services',
+          'contact-details': 'contact', 'about-studio': 'about', 'shipping-note': 'shop', 'journal-strip': 'project', 'claret-cta': 'services', 'post-list': 'project',
+          'project-contents': 'project', 'material-board': 'project', 'project-gallery': 'project', 'before-after-room': 'project', 'designer-note': 'project', 'client-testimonial': 'about',
+          'process-steps': 'services', 'services-cards': 'services', 'product-spotlight': 'shop', 'shop-by-room': 'shop', 'sample-box': 'fabric', 'antiques-note': 'shop',
+          'press-list': 'about', 'project-intro': 'project', 'room-palette': 'project', 'visit-shop': 'contact'}
+_pattern = pattern
+
+
+def pattern(slug, title, categories, body, **kw):
+    return _pattern(slug, title, CATMAP.get(slug, 'page' if kw.get('block_types') else categories), body, **kw)
+
+
+write('functions.php', "<?php\n/**\n * Room: registers the pattern categories used by the theme's patterns.\n *\n * @package room\n */\n\nadd_action(\n\t'init',\n\tfunction () {\n"
+      + ''.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'room' ) ) );\n" % c for c in CATS) + "\t}\n);\n")
+
 # ---------------------------------------------------------------- parts
 write('parts/header.html', group(J(
     row(J(stack(J(dyn('site-title', level=0), dyn('site-tagline')), style={'spacing': {'blockGap': '0'}}),
@@ -301,6 +331,7 @@ def room_block(title, color, paint, img, mode, text):
 
 
 pattern('project-rooms', 'Project story, room by room', 'featured', J(
+    pattern_ref('project-contents'),
     para('A Georgian flat on the first floor of a terrace in Stockbridge, for a family of four and a large dog. They wanted it to look as if they had lived there for twenty years by the first Christmas. We had fourteen weeks.', fontSize='large'),
     *[room_block(*r) for r in ROOMS]),
     description='The signature layout: each room gets a heading, the paint chip for its walls, a short story with the pieces linked inline and the price after them, then photos.')
@@ -314,9 +345,13 @@ pattern('paint-chips', 'Paint colours used in a project', 'text', group(J(
            chip('chip-green', 'Lichen', 'Dining room'), chip('chip-blue', 'Slate sky', 'Bedroom')), min_width='14rem')),
     className='is-style-rule-top', align='wide', layout={'type': 'default'}))
 
+def ruled(pairs):
+    return group(J(*[columns(('38%', para(a, fontSize='small', textColor='muted')), (None, para(b)), className='is-style-rule-top', isStackedOnMobile=False) for a, b in pairs]), layout={'type': 'default'})
+
+
 pattern('project-credits', 'Project credits', 'text', group(J(
-    table([['Where', 'Stockbridge, Edinburgh'], ['Finished', 'December 2025'], ['Photography', 'Callum Fraser'], ['Styling', 'Priya Shah'], ['Builder', 'Leith Joinery Co.']])),
-    className='is-style-rule-top'), description='Credits line: place, year, photographer, stylist, builder.')
+    heading('Credits', 4), ruled([('Where', 'Stockbridge, Edinburgh'), ('Finished', 'December 2025'), ('Photography', 'Callum Fraser'), ('Styling', 'Priya Shah'), ('Builder', 'Leith Joinery Co.')])),
+    layout={'type': 'constrained'}), description='Credits line: place, year, photographer, stylist, builder.')
 
 pattern('press-quote', 'Press quote with publication and date', 'testimonials', pullquote(
     'Wren Lamont has a rare habit of leaving the good old things exactly where they were.',
@@ -416,7 +451,7 @@ pattern('fees', 'Fees', 'services', J(
     para('We take on four whole-house projects a year. We do not do show homes or rental flips.', fontSize='small')))
 
 pattern('how-we-work-page', 'Page: how we work', 'about', J(
-    pattern_ref('about-studio'), spacer('var:preset|spacing|60'), pattern_ref('philosophy'), spacer('var:preset|spacing|60'),
+    pattern_ref('about-studio'), pattern_ref('services-cards'), pattern_ref('process-steps'), spacer('var:preset|spacing|60'), pattern_ref('philosophy'), spacer('var:preset|spacing|60'),
     columns((None, pattern_ref('enquiry-what-to-send')), (None, pattern_ref('fees')), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
     pattern_ref('press-quote')), block_types='core/post-content')
 
@@ -426,20 +461,21 @@ pattern('trade-account', 'Trade account', 'shop', J(
     lst(['Email <a href="mailto:trade@example.com">trade@example.com</a> with your company name, address and VAT number.',
          'Send a link to your website or three recent projects.',
          'We open the account within five working days and send you a login.'], ordered=True),
-    table([['Own lamps, fabric, wallpaper', '15% off'], ['Antiques', '10% off'], ['Sample cuttings', 'Up to ten at a time, free'], ['Delivery', 'Trade rates on request']], head=['What', 'Trade discount'])))
+    heading('What trade accounts get', 3),
+    ruled([('Own lamps, fabric, wallpaper', '15% off'), ('Antiques', '10% off'), ('Sample cuttings', 'Up to ten at a time, free'), ('Delivery', 'Trade rates on request')])))
 
 pattern('trade-page', 'Page: trade', 'shop', J(pattern_ref('trade-account')), block_types='core/post-content')
 
 pattern('contact-details', 'Contact and shop hours', 'contact', columns(
     (None, J(heading('The studio and shop', 3),
              para('14 Hamilton Place, Stockbridge, Edinburgh EH3 5AU. The shop is on the ground floor, the studio is up the stairs behind it. The 24 and 29 buses stop on Raeburn Place, two minutes away.'),
-             table([['Wednesday to Friday', '10am to 5pm'], ['Saturday', '10am to 4pm'], ['Sunday to Tuesday', 'Closed, or by appointment']]))),
+             ruled([('Wednesday to Friday', '10am to 5pm'), ('Saturday', '10am to 4pm'), ('Sunday to Tuesday', 'Closed, or by appointment')]))),
     (None, J(heading('Ask us', 3),
              para('Projects: <a href="mailto:studio@example.com">studio@example.com</a><br>Shop and orders: <a href="mailto:shop@example.com">shop@example.com</a><br>Phone: 0131 496 0715'),
              para('Wren and Priya are usually out on site on Mondays and Tuesdays. We answer email the same week.', fontSize='small'))),
-    align='wide'))
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}))
 
-pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), spacer('var:preset|spacing|60'), pattern_ref('enquiry-what-to-send')), block_types='core/post-content')
+pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), spacer('var:preset|spacing|60'), pattern_ref('visit-shop'), spacer('var:preset|spacing|60'), pattern_ref('enquiry-what-to-send')), block_types='core/post-content')
 
 pattern('about-studio', 'About the studio', 'about', media_text('bedroom.jpg', IMG['bedroom'], J(
     heading('Wren and Priya', 3),
@@ -461,6 +497,91 @@ pattern('claret-cta', 'Claret band: start a project', 'call-to-action', group(J(
     para('Two whole-house slots and a handful of single rooms. Send us a floor plan and some photos and we will tell you if we are the right people.'),
     buttons(('What to send us', '/contact/'))), className='is-style-claret', align='full', layout={'type': 'constrained'}))
 
+pattern('project-intro', 'Project intro: place, brief and time', 'project', columns(
+    ('40%', J(heading('The brief', 4), para('A Georgian flat on the first floor of a terrace in Stockbridge, for a family of four and a large dog.'))),
+    (None, para('They wanted it to look as if they had lived there for twenty years by the first Christmas. We had fourteen weeks, a builder we trust, and one rule from the client: the piano stays where it is.', fontSize='large')),
+    align='wide'))
+
+pattern('project-contents', 'Rooms in this project', 'project', group(J(
+    heading('Rooms in this project', 6),
+    lst(['The hall', 'The drawing room', 'The dining room', 'The main bedroom'], ordered=True)), className='is-style-rule-top'))
+
+pattern('room-palette', 'Colours in one room', 'project', group(J(
+    heading('The drawing room, in three colours', 4),
+    row(J(chip('chip-ochre', 'Mustard seed', 'Walls'), chip('chip-green', 'Lichen', 'Woodwork'), chip('chip-pink', 'Setting plaster', 'Ceiling')))), layout={'type': 'constrained'}))
+
+pattern('material-board', 'Material board', 'project', group(J(
+    heading('What went into the drawing room', 3),
+    gallery([('fabric.jpg', IMG['fabric'], 'Lion and pomegranate linen, curtains'), ('wallpaper.jpg', IMG['wallpaper'], 'Temple wallpaper, the alcoves'),
+             ('rug.jpg', IMG['rug'], 'Kelim runner by the window'), ('vase.jpg', IMG['vase'], 'Oxblood vase, mantelpiece')], columns=4, align='wide'),
+    row(J(chip('chip-ochre', 'Mustard seed', 'Walls'), chip('chip-green', 'Lichen', 'Woodwork')))), align='wide', layout={'type': 'default'}),
+    description='Fabric, paper, rugs and objects from one room, with the paint colours underneath.')
+
+pattern('project-gallery', 'Project gallery (opens large)', 'project', gallery(
+    [('living.jpg', IMG['living'], 'Drawing room'), ('hall.jpg', IMG['hall'], 'Hall'), ('dining.jpg', IMG['dining'], 'Dining room'),
+     ('bedroom.jpg', IMG['bedroom'], 'Main bedroom'), ('kitchen.jpg', IMG['kitchen'], 'Kitchen'), ('bath.jpg', IMG['bath'], 'Bathroom')], columns=3, align='wide'))
+
+pattern('before-after-room', 'Before and after, one room', 'project', columns(
+    (None, image('bath.jpg', IMG['bath'], 'Before: the bathroom as we found it, taps dripping')),
+    (None, image('kitchen.jpg', IMG['kitchen'], 'After: the kitchen next door, with the dresser we found in Lauder')), align='wide'))
+
+pattern('designer-note', 'Designer\u2019s note', 'project', group(J(
+    heading('Why the ceiling is pink', 5),
+    para('North-facing rooms in Edinburgh go grey by three in the afternoon. A warm ceiling puts some of the light back. Nobody notices it is pink until you tell them.')),
+    className='is-style-putty'))
+
+pattern('client-testimonial', 'Client testimonial', 'about', quote(
+    'We gave Wren a list of what we could not part with and she built the rooms around it. The piano has never looked so good.', 'Fiona and Hamish Mackenzie, Stockbridge, 2025'))
+
+pattern('process-steps', 'How a project runs, with pictures', 'services', group(J(
+    heading('How a project runs', 2, fontSize='x-large'),
+    grid(J(*[stack(J(image(f, IMG[f[:-4]], className='is-style-crop-square'), heading(h, 4), para(t, fontSize='small'))) for f, h, t in [
+        ('hall.jpg', 'First visit', 'Two hours at your house. We look, measure and ask what stays.'),
+        ('wallpaper.jpg', 'Scheme', 'Paint, paper, fabric and a furniture plan, room by room.'),
+        ('dining.jpg', 'Making it happen', 'We order, chase, supervise the builder and hang the curtains.'),
+        ('living.jpg', 'Install day', 'Everything arrives on one day. You come home to finished rooms.')]]), min_width='13rem', align='wide')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('services-cards', 'Services, three ways in', 'services', grid(J(*[group(J(heading(h, 3), para(t), para(p_, fontSize='large')), className='is-style-putty') for h, t, p_ in [
+    ('First visit', 'Two hours at your house, notes and a colour list you can use without us.', '£350'),
+    ('One room', 'Design, drawings, sourcing and one install day.', 'From £2,800'),
+    ('Whole house', 'Design and project management with your builder.', '12% of the budget')]]), min_width='16rem', align='wide'))
+
+pattern('product-spotlight', 'Product spotlight', 'shop', media_text('lamp.jpg', IMG['lamp'], J(
+    heading('The Ormond lamp', 3),
+    para('Lacquered and hand-painted base, pleated silk shade in claret, 68 cm tall. We rewire every one in the studio with a braided flex.'),
+    para('£340', fontSize='large'),
+    buttons(('See it in the shop', '/shop/'))), width=40, className='is-style-putty', align='wide'))
+
+pattern('shop-by-room', 'Shop by room', 'shop', group(J(
+    heading('Shop by room', 3),
+    grid(J(*[stack(J(image(f, IMG[f[:-4]], href='/shop/', className='is-style-crop-portrait'), heading('<a href="/shop/">%s</a>' % n, 4))) for f, n in [
+        ('hall.jpg', 'Hall'), ('living.jpg', 'Drawing room'), ('dining.jpg', 'Dining room'), ('bedroom.jpg', 'Bedroom')]]), min_width='12rem', align='wide')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('sample-box', 'Sample box', 'fabric', group(J(
+    heading('A box of cuttings', 3),
+    para('Five fabric cuttings, a half-metre of wallpaper and four painted paint cards, posted in a box. £12, refunded on your first order.'),
+    buttons(('Order a sample box', '/shop/'))), className='is-style-claret', layout={'type': 'constrained', 'justifyContent': 'left'}))
+
+pattern('antiques-note', 'How we buy antiques', 'shop', columns(
+    ('40%', image('chair.jpg', IMG['chair'])),
+    (None, J(heading('How we buy antiques', 3),
+             para('We go to about ten sales a year, mostly in the Borders and Northumberland, and buy what we would put in a client\u2019s house. Chairs are reglued and recovered before they go on sale. Lamps are rewired.'),
+             para('Antiques are one-offs. If one has gone, ask: we often know where there is another.'))), align='wide', verticalAlignment='center'))
+
+pattern('press-list', 'Press', 'about', group(J(
+    heading('Written about in', 4),
+    lst(['<em>The Scotsman Magazine</em>, the Stockbridge flat, March 2026', '<em>House &amp; Garden</em>, a Borders dining room, October 2025', '<em>Homes &amp; Interiors Scotland</em>, the shop, May 2024'])),
+    className='is-style-rule-top'))
+
+pattern('visit-shop', 'Visit the shop', 'contact', media_text('hall.jpg', IMG['hall'], J(
+    heading('Come to the shop', 3),
+    para('14 Hamilton Place, Stockbridge. Wednesday to Saturday, 10am to 5pm (4pm on Saturdays). Dogs welcome, and there is usually one asleep under the desk.'),
+    para('<a href="/contact/">Directions and contact</a>')), width=45, align='wide', right=True))
+
+pattern('shop-page', 'Page: shop intro', 'shop', J(pattern_ref('shop-by-room'), pattern_ref('product-spotlight'), pattern_ref('antiques-note'), pattern_ref('sample-box')), block_types='core/post-content')
+
 pattern('page-home-extra', 'Page: whole front page', 'featured', J(
     pattern_ref('hero-latest-project'), pattern_ref('projects-grid'), pattern_ref('shop-categories'), pattern_ref('claret-cta')), block_types='core/post-content')
 
@@ -472,7 +593,7 @@ pattern('post-list', 'Search results list', 'query', inherit_query(
 MAINPAD = {'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}
 
 write('templates/front-page.html', J(template_part('header', 'header'), group(J(
-    pattern_ref('hero-latest-project'), pattern_ref('projects-grid'), pattern_ref('the-edit'), pattern_ref('shop-categories'), pattern_ref('press-quote')),
+    pattern_ref('hero-latest-project'), pattern_ref('projects-grid'), pattern_ref('the-edit'), pattern_ref('shop-categories'), pattern_ref('client-testimonial')),
     tag='main', layout={'type': 'constrained'}, style={'spacing': {'blockGap': 'var:preset|spacing|70'}}),
     pattern_ref('claret-cta'), template_part('footer', 'footer')))
 
@@ -502,7 +623,7 @@ write('templates/404.html', page_template(J(
 SINGLE = J(template_part('header', 'header'), group(J(
     group(J(dyn('post-terms', term='category'), dyn('post-title', level=1), dyn('post-excerpt', showMoreOnPage=False, fontSize='large')), layout={'type': 'constrained'}),
     dyn('post-featured-image', align='wide', aspectRatio='3/2', scale='cover'),
-    dyn('post-content', layout={'type': 'constrained'}),
+    dyn('post-content', align='full', layout={'type': 'constrained'}),
     pattern_ref('pieces-in-project'),
     group(J(dyn('post-navigation-link', type='previous', label='Previous project', showTitle=True),
             dyn('post-navigation-link', label='Next project', showTitle=True)),
@@ -521,3 +642,48 @@ write('templates/page-wide.html', page_template(J(
     dyn('post-content', layout={'type': 'constrained', 'contentSize': '960px'})), layout={'type': 'constrained', 'contentSize': '960px'}, style=MAINPAD))
 
 print('room built')
+
+# ---------------------------------------------------------------- demo: four projects told room by room
+import re
+PHPIMG = re.compile(r"<\?php echo esc_url\( get_theme_file_uri\( 'assets/images/([\w.-]+)' \) \); \?>")
+def as_post(m):
+    return PHPIMG.sub(lambda x: '/wp-content/themes/room/assets/images/' + x.group(1), m)
+
+
+def credits_(where, when, photo):
+    return J(heading('Credits', 4), ruled([('Where', where), ('Finished', when), ('Photography', photo), ('Styling', 'Priya Shah')]))
+
+
+STORIES = {
+    'A townhouse hall in the New Town': J(
+        para('A five-storey house on Heriot Row, bought by a couple who had lived with a grey hall for eleven years. They asked for three rooms: the hall, the drawing room and their bedroom.', fontSize='large'),
+        room_block('The hall', 'chip-pink', 'Setting plaster, estate emulsion', 'hall.jpg', 'full', 'We took up the runner and had the marble table repolished in the hall itself, because it would not fit through the door. The %s on it came from our shop.' % piece('oxblood vase', '£165')),
+        room_block('The drawing room', 'chip-ochre', 'Mustard seed', 'living.jpg', 'full', 'Two sofas kept, one sold. The %s sits by the window where the light is best for reading.' % piece('Tay needlepoint armchair', '£2,400')),
+        room_block('The bedroom', 'chip-blue', 'Slate sky, dead flat', 'bedroom.jpg', 'full', 'Heavy interlined curtains in our %s, because the street lamps are right outside.' % piece('lion and pomegranate linen', '£96 a metre')),
+        credits_('Heriot Row, Edinburgh', 'September 2025', 'Callum Fraser')),
+    'A dining room for twelve in the Borders': J(
+        para('A family house near Kelso where Sunday lunch is for whoever turns up. The dining room had to seat twelve and the kitchen had to feed them.', fontSize='large'),
+        room_block('The dining room', 'chip-green', 'Lichen, eggshell, on panelling', 'dining.jpg', 'pair', 'The panelling went from brown varnish to green eggshell over two weeks. The %s runs the length of the sideboard.' % piece('kelim runner', '£780')),
+        room_block('The kitchen', 'chip-ochre', 'Mustard seed on the dresser', 'kitchen.jpg', 'full', 'We found the dresser at a farm sale in Lauder and painted the inside yellow. Pair of %s on the table.' % piece('brass pricket candlesticks', '£220 each')),
+        room_block('A bedroom', 'chip-pink', 'Setting plaster', 'bedroom.jpg', 'full', 'The guest room, for the people who stay after Sunday lunch. A %s at the end of the bed.' % piece('low ash stool', '£390')),
+        credits_('Near Kelso, Scottish Borders', 'June 2025', 'Morven Hay')),
+    'A farmhouse kitchen near Peebles': J(
+        para('The clients asked for a kitchen that looked as if it had not been designed. We did three rooms on the ground floor of a farmhouse on the Tweed.', fontSize='large'),
+        room_block('The kitchen', 'chip-pink', 'Setting plaster, and a small red paper', 'kitchen.jpg', 'full', 'Small red print on the walls, the old dresser, a table for eight under the window and a %s for the plants.' % piece('oxblood vase', '£165')),
+        room_block('The sitting room', 'chip-ochre', 'Mustard seed', 'living.jpg', 'full', 'The only room with a fire. We added the %s and moved the sofa to face the fire rather than the television.' % piece('Ormond lamp', '£340')),
+        room_block('The back hall', 'chip-green', 'Lichen', 'hall.jpg', 'full', 'Boots, dogs, coats. A %s where muddy boots come off.' % piece('corner chair with cushion', '£1,650')),
+        credits_('Near Peebles, Tweeddale', 'March 2025', 'Callum Fraser')),
+}
+content = json.load(open('demos/room/content.json'))
+for po in content['posts']:
+    if po['title'] in STORIES:
+        po.pop('pattern', None)
+        po['content'] = as_post(STORIES[po['title']])
+if not any(pg['slug'] == 'antiques' for pg in content['pages']):
+    content['pages'].insert(3, {'slug': 'antiques', 'title': 'Antiques', 'pattern': 'room/shop-page', 'template': 'page-wide'})
+    content['nav'].insert(2, {'label': 'Antiques', 'url': '/antiques/'})
+for pg in content['pages']:
+    if pg['slug'] == 'contact':
+        pg['pattern'] = 'room/contact-page'
+json.dump(content, open('demos/room/content.json', 'w'), indent=1, ensure_ascii=False)
+print('room demo updated')

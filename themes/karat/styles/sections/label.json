@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Specimen label",
+	"slug": "label",
+	"blockTypes": [
+		"core/paragraph"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|x-small",
+			"lineHeight": "1.45",
+			"letterSpacing": "0.03em"
+		},
+		"css": "&{font-variant-caps:all-small-caps;font-variant-numeric:lining-nums tabular-nums}"
+	}
+}

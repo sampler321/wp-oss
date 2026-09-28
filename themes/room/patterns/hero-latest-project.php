@@ -2,7 +2,7 @@
 /**
  * Title: Hero: latest project with an arched photo
  * Slug: room/hero-latest-project
- * Categories: featured
+ * Categories: hero
  */
 ?>
 <!-- wp:columns {"verticalAlignment":"bottom","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"},"padding":{"top":"var:preset|spacing|50"}}}} -->

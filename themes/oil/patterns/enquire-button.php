@@ -2,7 +2,7 @@
 /**
  * Title: Enquire about this work
  * Slug: oil/enquire-button
- * Categories: call-to-action
+ * Categories: oil-work-page,call-to-action
  * Description: Change the subject line to the title and year of the work.
  */
 ?>

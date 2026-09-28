@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Price list",
+	"slug": "price-list",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var:preset|font-size|medium"
+		},
+		"css": "&{font-variant-numeric:tabular-nums}& td{padding:.7em .5em;border-width:0 0 2px 0!important}& th{border-width:0 0 3px 0!important}& td:last-child{text-align:right;white-space:nowrap}& th:last-child{text-align:right;white-space:nowrap}& thead{border:0}"
+	}
+}

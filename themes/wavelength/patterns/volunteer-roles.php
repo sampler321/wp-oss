@@ -2,16 +2,98 @@
 /**
  * Title: Volunteer roles and time needed
  * Slug: wavelength/volunteer-roles
- * Categories: text
+ * Categories: volunteer
  */
 ?>
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">What you could do</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Role</th><th>What it involves</th><th>Time</th></tr></thead><tbody><tr><td>Presenter</td><td>A weekly or monthly programme</td><td>2 to 4 hours a week</td></tr><tr><td>Newsreader</td><td>Read the hourly bulletin, one morning a week</td><td>3 hours a week</td></tr><tr><td>Noticeboard</td><td>Answer the notices phone and type them up</td><td>2 hours a week, from home</td></tr><tr><td>Talking Books</td><td>Read a local book for Sunday evening</td><td>At your own pace</td></tr><tr><td>Tech and transmitter</td><td>Look after the kit on Heptonstall Road</td><td>On call, one weekend a month</td></tr><tr><td>Fundraising</td><td>Run the stall at the Hebden Bridge market</td><td>One Thursday a month</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"15rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Presenter</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">A weekly or monthly programme.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2 to 4 hours a week</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Newsreader</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">Read the hourly bulletin, one morning a week.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">3 hours a week</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Noticeboard</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">Answer the notices phone and type them up.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2 hours a week, from home</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Talking Books</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">Read a local book for Sunday evening.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">At your own pace</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Tech and transmitter</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">Look after the kit on Heptonstall Road.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">One weekend a month</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-paper"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Fundraising</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">Run the stall at Hebden Bridge market.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-small-font-size">One Thursday a month</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">We pay travel expenses and there is always tea. Presenters need a DBS check for programmes with children, which we arrange and pay for.</p>

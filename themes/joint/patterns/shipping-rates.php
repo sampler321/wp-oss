@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Delivery rates
+ * Title: Delivery rates (table)
  * Slug: joint/shipping-rates
- * Categories: shop
+ * Categories: pieces
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

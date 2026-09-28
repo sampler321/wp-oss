@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Price guide
+ * Title: Price guide (rows)
  * Slug: pipe/price-guide
- * Categories: pipe,services
+ * Categories: services
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -17,12 +17,88 @@
 <h2 class="wp-block-heading">What things cost</h2>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Job</th><th>Time on site</th><th>Price</th></tr></thead><tbody><tr><td>Annual boiler service, gas</td><td>45 to 60 minutes</td><td>£72</td></tr><tr><td>Service and landlord certificate (CP12) together</td><td>1 hour 15</td><td>£110</td></tr><tr><td>Landlord gas safety certificate only, up to 3 appliances</td><td>45 minutes</td><td>£65</td></tr><tr><td>Call-out, weekdays 8am to 6pm</td><td>includes first hour</td><td>£85</td></tr><tr><td>Call-out, evenings and weekends until 10pm</td><td>includes first hour</td><td>£120</td></tr><tr><td>Each extra half hour</td><td></td><td>£32</td></tr><tr><td>Power flush, up to 10 radiators</td><td>most of a day</td><td>£450</td></tr><tr><td>New combi boiler, like for like, fitted</td><td>1 to 2 days</td><td>from £2,350</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Annual boiler service, gas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£72</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Service and landlord certificate (CP12) together</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£110</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Landlord certificate only, up to 3 appliances</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£65</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Call-out, weekdays 8am to 6pm, first hour</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£85</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Call-out, evenings and weekends, first hour</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£120</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Each extra half hour</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£32</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Power flush, up to 10 radiators</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£450</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">New combi boiler, like for like, fitted</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">from £2,350</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">These are guide prices including VAT. For anything over £200 we confirm the price in writing before we start, and we stick to it unless we find something we have shown you and you have agreed to.</p>
+<p class="has-small-font-size">Guide prices including VAT. For anything over £200 we confirm the price in writing before we start, and we stick to it. <a href="/prices/">Full price list with times</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

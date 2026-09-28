@@ -2,7 +2,7 @@
 /**
  * Title: What people said after
  * Slug: platter/reviews
- * Categories: platter,testimonials
+ * Categories: about
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

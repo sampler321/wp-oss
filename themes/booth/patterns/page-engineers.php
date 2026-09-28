@@ -10,4 +10,6 @@
 
 <!-- wp:pattern {"slug":"booth/credits-list"} /-->
 
+<!-- wp:pattern {"slug":"booth/quote-big"} /-->
+
 <!-- wp:pattern {"slug":"booth/client-quotes"} /-->

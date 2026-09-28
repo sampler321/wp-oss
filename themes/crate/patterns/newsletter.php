@@ -5,13 +5,13 @@
  * Categories: call-to-action
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-inverse","layout":{"type":"constrained"},"anchor":"newsletter"} -->
-<div class="wp-block-group alignfull is-style-inverse" id="newsletter"><!-- wp:heading -->
+<!-- wp:group {"className":"is-style-inverse","align":"full","anchor":"newsletter","layout":{"type":"constrained"}} -->
+<div id="newsletter" class="wp-block-group alignfull is-style-inverse"><!-- wp:heading -->
 <h2 class="wp-block-heading">The Friday list</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Every Friday at 10am, the week's best used arrivals in one plain email. Around 40 records, with grades and prices, before they go on the site.</p>
+<p class="">Every Friday at 10am, the week's best used arrivals in one plain email. Around 40 records, with grades and prices, before they go on the site.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

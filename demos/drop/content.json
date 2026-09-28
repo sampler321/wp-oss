@@ -18,6 +18,16 @@
    "slug": "diary",
    "name": "Diary",
    "description": "Packing days, print nights and tour notes from the back bedroom."
+  },
+  {
+   "slug": "diary",
+   "name": "Diary",
+   "description": "Packing days, print nights and tour notes from the back bedroom."
+  },
+  {
+   "slug": "diary",
+   "name": "Diary",
+   "description": "Packing days, print nights and tour notes from the back bedroom."
   }
  ],
  "front_page": "home",
@@ -99,34 +109,6 @@
  ],
  "posts": [
   {
-   "title": "Dubbing the tape",
-   "category": "diary",
-   "image": "tape.jpg",
-   "pattern": "drop/diary-mastering",
-   "excerpt": "One hundred tapes, real time, one side at a time, on a borrowed Tascam."
-  },
-  {
-   "title": "Glasgow, the Hug and Pint",
-   "category": "diary",
-   "image": "crowd.jpg",
-   "pattern": "drop/diary-glasgow",
-   "excerpt": "Sold the last tour tote at 11:40pm to someone who had driven from Dundee."
-  },
-  {
-   "title": "Print night at Hyde Park",
-   "category": "diary",
-   "image": "print.jpg",
-   "pattern": "drop/diary-print-night",
-   "excerpt": "Priya pulled 200 car park tees in two sessions."
-  },
-  {
-   "title": "Packing day",
-   "category": "diary",
-   "image": "tee.jpg",
-   "pattern": "drop/diary-packing-day",
-   "excerpt": "Two hundred and eleven parcels."
-  },
-  {
    "title": "Drop six: flood tee",
    "category": "drops",
    "image": "guitar.jpg",
@@ -167,6 +149,48 @@
    "image": "live.jpg",
    "content": "<!-- wp:paragraph -->\n<p>Forty tees sold out of a holdall at our first six shows, in 2021. No website, cash only. We still have one, framed, in the practice room.</p>\n<!-- /wp:paragraph -->",
    "excerpt": "Forty tees, cash only, 2021."
+  },
+  {
+   "title": "Printing the car park tee",
+   "category": "diary",
+   "image": "print.jpg",
+   "excerpt": "Two Thursdays, 200 tees, one torn screen.",
+   "content": "<!-- wp:paragraph -->\n<p>Priya printed all 200 car park tees over two Thursday nights at Hyde Park Print Club. The screen tore on shirt 188, so the last twelve have a small extra line on the bumper. We think it is an improvement.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why the tape costs £8",
+   "category": "diary",
+   "image": "vinyl.jpg",
+   "excerpt": "Where the £8 goes, line by line.",
+   "content": "<!-- wp:paragraph -->\n<p>A chrome C40 blank costs us £2.10, the J-card print 40p, the case 60p, and the postage bag 35p. The rest pays for Mags's time dubbing in real time, which is twenty minutes a tape.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Packing day",
+   "category": "diary",
+   "image": "tee.jpg",
+   "pattern": "drop/diary-packing-day",
+   "excerpt": "Two hundred and eleven parcels."
+  },
+  {
+   "title": "Print night at Hyde Park",
+   "category": "diary",
+   "image": "print.jpg",
+   "pattern": "drop/diary-print-night",
+   "excerpt": "Priya pulled 200 car park tees in two sessions."
+  },
+  {
+   "title": "Glasgow, the Hug and Pint",
+   "category": "diary",
+   "image": "crowd.jpg",
+   "pattern": "drop/diary-glasgow",
+   "excerpt": "Sold the last tour tote at 11:40pm to someone who had driven from Dundee."
+  },
+  {
+   "title": "Dubbing the tape",
+   "category": "diary",
+   "image": "tape.jpg",
+   "pattern": "drop/diary-mastering",
+   "excerpt": "One hundred tapes, real time, one side at a time, on a borrowed Tascam."
   }
  ],
  "nav": [

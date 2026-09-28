@@ -8,4 +8,12 @@
 ?>
 <!-- wp:pattern {"slug":"spine/bio"} /-->
 
+<!-- wp:pattern {"slug":"spine/author-note"} /-->
+
+<!-- wp:pattern {"slug":"spine/places"} /-->
+
+<!-- wp:pattern {"slug":"spine/prizes"} /-->
+
+<!-- wp:pattern {"slug":"spine/short-stories"} /-->
+
 <!-- wp:pattern {"slug":"spine/praise"} /-->

@@ -12,25 +12,25 @@
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Do you post records abroad?</summary><!-- wp:paragraph -->
-<p>Yes, to the EU and the rest of the world. Costs are on the shipping page.</p>
+<p class="">Yes, to the EU and the rest of the world. Costs are on the shipping page.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Can I reserve a record?</summary><!-- wp:paragraph -->
-<p>For 48 hours if you call. After that it goes back in the rack.</p>
+<p class="">For 48 hours if you call. After that it goes back in the rack.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Do you price by Discogs?</summary><!-- wp:paragraph -->
-<p>We look, then price on the copy in front of us. Condition first.</p>
+<p class="">We look, then price on the copy in front of us. Condition first.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Will you buy my CDs?</summary><!-- wp:paragraph -->
-<p>Not right now. We ran out of room.</p>
+<p class="">Not right now. We ran out of room.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
 <!-- /wp:group -->

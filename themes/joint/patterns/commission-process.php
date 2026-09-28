@@ -10,9 +10,13 @@
 <h2 class="wp-block-heading">How a commission works</h2>
 <!-- /wp:heading -->
 
-<!-- wp:columns {"align":"wide","className":"is-style-rule-top"} -->
-<div class="wp-block-columns alignwide is-style-rule-top"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<!-- wp:group {"align":"wide","className":"is-style-steps","layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
+<div class="wp-block-group alignwide is-style-steps"><!-- wp:group {"className":"is-style-step","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-step"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/desk.jpg' ) ); ?>" alt="Measured drawing of a writing desk, front and side elevations with dimension lines"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Concept</h4>
 <!-- /wp:heading -->
 
@@ -23,34 +27,42 @@
 <!-- wp:paragraph {"className":"is-style-label"} -->
 <p class="is-style-label">Free, about two weeks</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<!-- wp:group {"className":"is-style-step","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-step"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/table.jpg' ) ); ?>" alt="Measured drawing of a small table from above, from the side and from the end, with dimensions in inches"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Development</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We draw it properly at 1:5 and, for chairs, make a rough mock-up in pine for you to sit in. A 40% deposit starts this.</p>
+<p>We draw it properly at 1:5 and, for chairs, make a mock-up in pine for you to sit in. A 40% deposit starts this.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-label"} -->
 <p class="is-style-label">Two to four weeks</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<!-- wp:group {"className":"is-style-step","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-step"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A maker fixing the back rail of a wooden chair frame in an open workshop"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Fabrication</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We choose the boards with you if you want, then make it. You get photos at glue-up and before finishing.</p>
+<p>We choose the boards with you if you want, then make it. Photos at glue-up and before finishing.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-label"} -->
 <p class="is-style-label">Six to ten weeks</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

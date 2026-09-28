@@ -6,7 +6,7 @@
  * Description: One-off pieces with price tags. Hover or focus a piece to see its back.
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide","className":"is-style-catalogue-rule","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide is-style-catalogue-rule"><!-- wp:heading -->
 <h2 class="wp-block-heading">New in this Friday</h2>
@@ -21,16 +21,16 @@
 <div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-flip-tile","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-flip-tile"><!-- wp:group {"className":"flip","layout":{"type":"default"}} -->
 <div class="wp-block-group flip"><!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-155/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/shirt-front.jpg' ) ); ?>" alt="Olive wool flannel army shirt laid flat on grey, front view" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
+<figure class="wp-block-image size-large"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-15-5/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/shirt-front.jpg' ) ); ?>" alt="Olive wool flannel army shirt laid flat on grey, front view" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-155/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/shirt-back.jpg' ) ); ?>" alt="Back of the olive wool flannel shirt laid flat, second view" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
+<figure class="wp-block-image size-large"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-15-5/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/shirt-back.jpg' ) ); ?>" alt="Back of the olive wool flannel shirt laid flat, second view" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-155/">1940s US Army wool flannel shirt, label size 15.5</a></h3>
+<h3 class="wp-block-heading has-medium-font-size"><a href="/product/1940s-us-army-wool-flannel-shirt-label-size-15-5/">1940s US Army wool flannel shirt, label size 15.5</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Making steps",
+	"slug": "steps",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{counter-reset:step}"
+	}
+}

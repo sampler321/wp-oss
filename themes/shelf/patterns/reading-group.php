@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">First Thursday of the month, 19:30, around the big table. We read one novel a month, chosen by vote at the meeting before. Members get 10% off the book. Twelve seats; there's usually one free.</p>
+<p>First Thursday of the month, 19:30, around the big table. We read one novel a month, chosen by vote at the meeting before. Members get 10% off the book. Twelve seats; there's usually one free.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

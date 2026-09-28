@@ -2,7 +2,7 @@
 /**
  * Title: Opportunities with deadlines
  * Slug: commons/opportunities-list
- * Categories: text
+ * Categories: opportunities
  * Description: Open calls as ruled rows with deadline, detail and fee.
  */
 ?>

@@ -1,44 +1,4 @@
 {
-  "phone": {
-    "title": "It is my LIFE (Unsplash).jpg",
-    "creator": "Igor Miske igorm",
-    "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:It_is_my_LIFE_(Unsplash).jpg",
-    "query": "smartphone app screen hand"
-  },
-  "screen-1": {
-    "title": "2025 United States federal government shutdown notification by department.png",
-    "creator": "Johnson524",
-    "license": "Public domain",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:2025_United_States_federal_government_shutdown_notification_by_department.png",
-    "query": "government website screenshot"
-  },
-  "screen-2": {
-    "title": "Screenshot of Commons Android app, 2023.png",
-    "creator": "Syced",
-    "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:Screenshot_of_Commons_Android_app,_2023.png",
-    "query": "mobile app screenshot"
-  },
-  "team": {
-    "title": "New Year's Greetings from President of Ukraine Volodymyr Zelenskyy in Kyiv, Ukraine on 31 December 2024.jpg",
-    "creator": "President Of Ukraine from Україна",
-    "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:New_Year%27s_Greetings_from_President_of_Ukraine_Volodymyr_Zelenskyy_in_Kyiv,_Ukraine_on_31_December_2024.jpg",
-    "query": "team meeting office table"
-  },
-  "portrait": {
-    "title": "Joannes Berwinckel (engraver), David Vinckboons (designer) - Portrait of Nicolas Vallet.jpg",
-    "creator": "Joannes Berwinckel",
-    "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:Joannes_Berwinckel_(engraver),_David_Vinckboons_(designer)_-_Portrait_of_Nicolas_Vallet.jpg",
-    "query": "designer portrait"
-  },
   "map": {
     "title": "1055Queues at bus stops during the COVID-19 pandemic in the Philippines 24.jpg",
     "creator": "Judgefloro",
@@ -48,8 +8,8 @@
     "query": "bus timetable display"
   },
   "kiosk": {
-    "title": "西宮北口駅券売機の画面.png",
-    "creator": "小田急4000系ファン",
+    "title": "\u897f\u5bae\u5317\u53e3\u99c5\u5238\u58f2\u6a5f\u306e\u753b\u9762.png",
+    "creator": "\u5c0f\u7530\u60254000\u7cfb\u30d5\u30a1\u30f3",
     "license": "CC0",
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%AE%AE%E5%8C%97%E5%8F%A3%E9%A7%85%E5%88%B8%E5%A3%B2%E6%A9%9F%E3%81%AE%E7%94%BB%E9%9D%A2.png",
@@ -57,7 +17,7 @@
   },
   "kiosk-2": {
     "title": "Higashi-Narita station ticket-vending machine.jpg",
-    "creator": "特急東海",
+    "creator": "\u7279\u6025\u6771\u6d77",
     "license": "CC0",
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Higashi-Narita_station_ticket-vending_machine.jpg",
@@ -86,14 +46,6 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Dash_Coffee_at_Gate_1_Dasma_-_Interior_-_Post-it_notes_wall_1.jpg",
     "query": "post-it notes"
-  },
-  "whiteboard": {
-    "title": "67 Whiteboard 2025-11-09.jpg",
-    "creator": "GuiltyGearFan37",
-    "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:67_Whiteboard_2025-11-09.jpg",
-    "query": "whiteboard"
   },
   "laptop": {
     "title": "Laptop on desk book stacks (Unsplash).jpg",
@@ -127,12 +79,92 @@
     "url": "https://commons.wikimedia.org/wiki/File:Smartphone_use_at_railway_station.jpg",
     "query": "person using smartphone"
   },
-  "workshop": {
-    "title": "2013 06 12 AMISOM Gender Kampala-5 (9027704052).jpg",
-    "creator": "AMISOM Public Information",
+  "ui-kiosk-before": {
+    "title": "Ticket machine, fare grid first (before)",
+    "creator": "WP-OSS, drawn for the Case theme demo",
     "license": "CC0",
-    "source": "Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:2013_06_12_AMISOM_Gender_Kampala-5_(9027704052).jpg",
-    "query": "design workshop people table"
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-kiosk-after": {
+    "title": "Ticket machine, destination first (after)",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-kiosk-price": {
+    "title": "Ticket machine, price with railcard saving beside it",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "wf-kiosk": {
+    "title": "Wireframes, ticket machine flow",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "wf-parking": {
+    "title": "Wireframes, parking by street name",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "wf-checkout": {
+    "title": "Wireframes, self-checkout with tag step first",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-parking": {
+    "title": "Parking app, three screens: street, time, confirmation",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-checkout": {
+    "title": "Self-checkout screen with the tag step before payment",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-departures": {
+    "title": "Bus stop display showing the next four buses with live times",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "sk-journey": {
+    "title": "Pencil sketch of the ticket buying journey with the low point at the price screen",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
+  },
+  "ui-kit": {
+    "title": "Design system sheet for the ticket machines: colours, type sizes, buttons and the search field",
+    "creator": "WP-OSS, drawn for the Case theme demo",
+    "license": "CC0",
+    "source": "Original work",
+    "url": "https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py",
+    "query": ""
   }
 }

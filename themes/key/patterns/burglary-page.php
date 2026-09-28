@@ -8,8 +8,6 @@
 ?>
 <!-- wp:pattern {"slug":"key/burglary"} /-->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:+48698000412">Call 698 000 412</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- wp:pattern {"slug":"key/insurer-note"} /-->
+
+<!-- wp:pattern {"slug":"key/call-strip"} /-->

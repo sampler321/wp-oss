@@ -742,10 +742,18 @@ write('templates/front-page.html', page_template(J(
 CJ = 'demos/drop/content.json'
 C = json.load(open(CJ))
 C['categories'] = [c for c in C['categories'] if c['slug'] != 'notes'] + [{'slug': 'diary', 'name': 'Diary', 'description': 'Packing days, print nights and tour notes from the back bedroom.'}]
+P_ = lambda t: '<!-- wp:paragraph -->\n<p>%s</p>\n<!-- /wp:paragraph -->' % t
+diary_titles = [d[3] for d in DIARY]
 posts = [p for p in C['posts'] if p['category'] == 'drops']
-for p in C['posts']:
-    if p['category'] == 'notes':
-        p['category'] = 'diary'; posts.append(p)
+notes = [p for p in C['posts'] if p['category'] in ('notes', 'diary') and p['title'] not in diary_titles]
+if not notes:
+    notes = [{'title': 'Printing the car park tee', 'category': 'diary', 'image': 'print.jpg', 'excerpt': 'Two Thursdays, 200 tees, one torn screen.',
+              'content': P_('Priya printed all 200 car park tees over two Thursday nights at Hyde Park Print Club. The screen tore on shirt 188, so the last twelve have a small extra line on the bumper. We think it is an improvement.')},
+             {'title': 'Why the tape costs £8', 'category': 'diary', 'image': 'vinyl.jpg', 'excerpt': 'Where the £8 goes, line by line.',
+              'content': P_('A chrome C40 blank costs us £2.10, the J-card print 40p, the case 60p, and the postage bag 35p. The rest pays for Mags\'s time dubbing in real time, which is twenty minutes a tape.')}]
+for p in notes:
+    p['category'] = 'diary'
+posts += notes
 for slug, title, date, heading_, text, f, alt, cap, note in DIARY:
     posts.append({'title': heading_, 'category': 'diary', 'image': f, 'pattern': 'drop/' + slug, 'excerpt': text.split('. ')[0] + '.'})
 C['posts'] = posts

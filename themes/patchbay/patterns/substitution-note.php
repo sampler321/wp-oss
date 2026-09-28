@@ -11,10 +11,10 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The 2N5088 in Q1 went out of production in our supplier's range in May. Kits shipped after 1 June use a BC549C with the pins turned: collector, base, emitter reads left to right as the silkscreen says. It sounds the same; we A/B tested it for an afternoon.</p>
+<p class="">The 2N5088 in Q1 went out of production in our supplier's range in May. Kits shipped after 1 June use a BC549C with the pins turned: collector, base, emitter reads left to right as the silkscreen says. It sounds the same; we A/B tested it for an afternoon.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/manuals/">Substitutes sheet, v3</a></p>
+<p class=""><a href="/manuals/">Substitutes sheet, v3</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -48,3 +48,8 @@ Oil is distributed under the terms of the GNU GPL v2 or later.
 * Image studio.jpg: "Amile-Ursule Guillebaud: Portrait of the artist, seated at her easel.jpg" by Amile Ursule Guillebaud, Public domain, https://commons.wikimedia.org/wiki/File:Amile-Ursule_Guillebaud_-_Portrait_of_the_artist,_seated_at_her_easel.jpg
 * Image work-8.jpg: "Slender Trees on a Hill MET DP875891.jpg" by Vilhelm Hammershøi, CC0, https://commons.wikimedia.org/wiki/File:Slender_Trees_on_a_Hill_MET_DP875891.jpg
 * Image work-9.jpg: "The White Door and the Golden Cupboard).jpg" by Vilhelm Hammershøi, Public domain, https://commons.wikimedia.org/wiki/File:The_White_Door_and_the_Golden_Cupboard).jpg
+* Image j-palette.jpg: "Paint box with nude study: MET 2019.442.1.jpg" by Creator:Helena de Kay, CC0, https://commons.wikimedia.org/wiki/File:Paint_box_with_nude_study_-_MET_2019.442.1.jpg
+* Image j-brushes.jpg: "Jar of Paint Brushes (Unsplash).jpg" by Joshua Niedermayer allesistdesign, CC0, https://commons.wikimedia.org/wiki/File:Jar_of_Paint_Brushes_(Unsplash).jpg
+* Image j-easel.jpg: "Schilder aanschouwt zijn werk in zijn atelier, RP-P-OB-49.667.jpg" by Rijksmuseum, CC0, https://commons.wikimedia.org/wiki/File:Schilder_aanschouwt_zijn_werk_in_zijn_atelier,_RP-P-OB-49.667.jpg
+* Image j-canvas.jpg: "Portrait of a Young Woman MET DP278515.jpg" by Mather Brown, CC0, https://commons.wikimedia.org/wiki/File:Portrait_of_a_Young_Woman_MET_DP278515.jpg
+* Image j-leith.jpg: "165A Leith Walk, Edinburgh.jpg" by McPhail, CC0, https://commons.wikimedia.org/wiki/File:165A_Leith_Walk,_Edinburgh.jpg

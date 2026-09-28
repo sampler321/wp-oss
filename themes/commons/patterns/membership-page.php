@@ -2,7 +2,7 @@
 /**
  * Title: Page: membership
  * Slug: commons/membership-page
- * Categories: call-to-action
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

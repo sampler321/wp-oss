@@ -2,9 +2,47 @@
 /**
  * Title: Dates (compact, next four)
  * Slug: bpm/dates-compact
- * Categories: text
+ * Categories: events
  */
 ?>
-<!-- wp:table {"className":"is-style-dates"} -->
-<figure class="wp-block-table is-style-dates"><table class="has-fixed-layout"><tbody><tr><td>Fri 3 Oct</td><td>Jasna 1, Warsaw</td></tr><tr><td>Sat 11 Oct</td><td>Hala Koszyki, Unsound opening, Kraków</td></tr><tr><td>Fri 24 Oct</td><td>Tresor, Globus floor, Berlin</td></tr><tr><td>Sat 8 Nov</td><td>Pogłos, Warsaw</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Fri 3 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Jasna 1, Warsaw</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Sat 11 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Hala Koszyki, Unsound opening, Kraków</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Fri 24 Oct</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Tresor, Globus floor, Berlin</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">Sat 8 Nov</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Pogłos, Warsaw</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

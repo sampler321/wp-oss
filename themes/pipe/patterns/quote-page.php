@@ -2,7 +2,7 @@
 /**
  * Title: Page: get a quote
  * Slug: pipe/quote-page
- * Categories: pipe
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

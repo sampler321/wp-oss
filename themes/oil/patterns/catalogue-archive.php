@@ -2,7 +2,7 @@
 /**
  * Title: Catalogue archive (inherits the page query)
  * Slug: oil/catalogue-archive
- * Categories: portfolio,query
+ * Categories: oil-catalogue,portfolio,query
  * Inserter: no
  */
 ?>
@@ -21,12 +21,12 @@
 <!-- wp:post-featured-image {"isLink":true} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontWeight":"500","lineHeight":"1.35"}},"fontSize":"small","fontFamily":"body"} /-->
+<div class="wp-block-group"><!-- wp:post-title {"isLink":true,"level":3,"fontSize":"small","fontFamily":"body","style":{"typography":{"fontWeight":"500","lineHeight":"1.35"}}} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:post-date {"format":"Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+<div class="wp-block-group"><!-- wp:post-date {"format":"Y"} /-->
 
-<!-- wp:post-terms {"term":"post_tag"} /--></div>
+<!-- wp:post-terms {"term":"post_tag","separator":", "} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
@@ -41,7 +41,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing matches that yet.</p>
+<p class="">Nothing matches that yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

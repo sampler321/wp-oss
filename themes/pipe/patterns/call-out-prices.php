@@ -2,7 +2,7 @@
 /**
  * Title: Call-out prices
  * Slug: pipe/call-out-prices
- * Categories: pipe,services
+ * Categories: services
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -13,8 +13,34 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>When</th><th>Price</th></tr></thead><tbody><tr><td>Weekdays 8am to 6pm</td><td>£85, includes the first hour</td></tr><tr><td>Evenings until 10pm and weekends</td><td>£120, includes the first hour</td></tr><tr><td>After 10pm</td><td>We don't go out. Call the gas emergency line for gas, and turn off the stopcock for water.</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Weekdays 8am to 6pm</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£85, includes the first hour</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">Evenings until 10pm and weekends</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">£120, includes the first hour</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-price-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-price-row"><!-- wp:paragraph -->
+<p class="">After 10pm</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">We don't go out. Gas: call 0800 111 999. Water: turn off the stopcock.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

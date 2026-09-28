@@ -2,7 +2,7 @@
 /**
  * Title: Fabric by composition
  * Slug: room/fabric-compositions
- * Categories: shop
+ * Categories: fabric
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"960px"}} -->

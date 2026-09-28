@@ -2,7 +2,7 @@
 /**
  * Title: Support: what your money pays for
  * Slug: freq/support-costs
- * Categories: call-to-action
+ * Categories: support
  * Description: Says exactly what the donations pay for.
  */
 ?>
@@ -19,9 +19,61 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:table {"className":"is-style-costs"} -->
-<figure class="wp-block-table is-style-costs"><table class="has-fixed-layout"><thead><tr><th>Each month</th><th></th></tr></thead><tbody><tr><td>Music licences (Buma/Stemra and Sena)</td><td>€690</td></tr><tr><td>Rent for the studio on the Deliplein</td><td>€850</td></tr><tr><td>DAB+ transmission, block 11C</td><td>€380</td></tr><tr><td>Stream hosting and the archive</td><td>€140</td></tr><tr><td>Insurance, electricity, coffee</td><td>€80</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Each month</h4>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"is-style-defs","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-defs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>€690</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Music licences (Buma/Stemra and Sena)</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>€850</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rent for the studio on the Deliplein</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>€380</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>DAB+ transmission, block 11C</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>€140</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stream hosting and the archive</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>€80</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Insurance, electricity, coffee</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->

@@ -23,7 +23,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Two friends at a kitchen table in Levenshulme. One keeps spreadsheets, one sends voice notes. We record on Sunday afternoons and it goes out on Tuesday at 6am.</p>
+<p>Two friends at a kitchen table in Levenshulme. One keeps spreadsheets, one sends voice notes. We record on Sunday afternoons and it goes out on Tuesday at 6am.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

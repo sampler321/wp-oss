@@ -8,7 +8,7 @@ const slug = process.argv[2];
 const ROOT = path.resolve(import.meta.dirname, '..');
 const dist = path.join(ROOT, 'dist', slug);
 if (!fs.existsSync(path.join(dist, 'index.html'))) { console.error(`no dist/${slug}; run export-static first`); process.exit(1); }
-const name = slug === '_gallery' ? 'wposs-themes' : `wposs-${slug}`.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+const name = slug === '_gallery' ? 'wposs-themes' : slug === '_open' ? 'open-wp-themes' : `wposs-${slug}`.toLowerCase().replace(/[^a-z0-9-]/g, '-');
 const cfgDir = path.join(ROOT, '.cache', 'deploy', slug);
 fs.mkdirSync(cfgDir, { recursive: true });
 fs.writeFileSync(path.join(cfgDir, 'wrangler.jsonc'), JSON.stringify({
@@ -16,9 +16,13 @@ fs.writeFileSync(path.join(cfgDir, 'wrangler.jsonc'), JSON.stringify({
   assets: { directory: dist, not_found_handling: '404-page', html_handling: 'auto-trailing-slash' },
   workers_dev: true, preview_urls: false,
 }, null, 2));
-const r = spawnSync('npx', ['--yes', 'wrangler@latest', 'deploy', '--config', path.join(cfgDir, 'wrangler.jsonc')], { cwd: cfgDir, encoding: 'utf8', maxBuffer: 1 << 26 });
-const out = (r.stdout || '') + (r.stderr || '');
-const url = (out.match(/https:\/\/[a-z0-9.-]+\.workers\.dev/) || [])[0];
+let r, out = '', url;
+for (let attempt = 1; attempt <= 3 && !url; attempt++) {
+  r = spawnSync('npx', ['--yes', 'wrangler@latest', 'deploy', '--config', path.join(cfgDir, 'wrangler.jsonc')], { cwd: cfgDir, encoding: 'utf8', maxBuffer: 1 << 26, timeout: 10 * 60 * 1000 });
+  out = (r.stdout || '') + (r.stderr || '');
+  url = r.status === 0 ? (out.match(/https:\/\/[a-z0-9.-]+\.workers\.dev/) || [])[0] : undefined;
+  if (!url && attempt < 3) spawnSync('sleep', [String(15 * attempt)]);
+}
 if (r.status !== 0 || !url) { console.error(out.slice(-2000)); process.exit(1); }
 fs.mkdirSync(path.join(ROOT, 'demos', slug), { recursive: true });
 const statusPath = path.join(ROOT, 'demos', slug, 'deploy.json');

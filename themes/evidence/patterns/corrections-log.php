@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Newest first. We fix the audio and the transcript, then log it here.</p>
+<p class="">Newest first. We fix the audio and the transcript, then log it here.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->

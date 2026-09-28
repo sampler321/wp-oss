@@ -2,7 +2,7 @@
 /**
  * Title: Search results list
  * Slug: commons/post-list
- * Categories: query
+ * Categories: programme
  * Inserter: no
  */
 ?>

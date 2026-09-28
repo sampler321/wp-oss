@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Clothbound cover",
+	"slug": "clothbound",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{aspect-ratio:2/3;display:flex!important;flex-direction:column;justify-content:center;overflow:hidden}"
+	}
+}

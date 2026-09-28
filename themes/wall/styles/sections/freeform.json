@@ -1,0 +1,11 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Freeform wall (varied spans)",
+	"slug": "freeform",
+	"blockTypes": [
+		"core/post-template",
+		"core/group"
+	],
+	"styles": {}
+}

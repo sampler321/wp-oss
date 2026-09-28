@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Collage shapes",
+	"slug": "collage",
+	"blockTypes": [
+		"core/group",
+		"core/columns"
+	],
+	"styles": {
+		"css": "&{position:relative;isolation:isolate}&::before{content:\"\";position:absolute;z-index:-1;width:min(34vw,420px);aspect-ratio:1;border-radius:50%;background:var(--wp--preset--color--travel);top:-2rem;left:-3rem;opacity:.9}&::after{content:\"\";position:absolute;z-index:-1;width:min(26vw,300px);aspect-ratio:1;background:var(--wp--preset--color--accent);clip-path:polygon(0 0,100% 30%,70% 100%);bottom:-2.5rem;left:24%;opacity:.95}"
+	}
+}

@@ -2,7 +2,7 @@
 /**
  * Title: CV as a PDF
  * Slug: oil/cv-download
- * Categories: about
+ * Categories: oil-cv,about
  * Description: Link a PDF of your CV here once you have uploaded it to the media library.
  */
 ?>

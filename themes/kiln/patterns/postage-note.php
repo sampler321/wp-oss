@@ -2,7 +2,7 @@
 /**
  * Title: Postage and returns
  * Slug: kiln/postage-note
- * Categories: shop
+ * Categories: kiln-pots,shop
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->

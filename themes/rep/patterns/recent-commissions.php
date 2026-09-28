@@ -10,7 +10,95 @@
 <h3 class="wp-block-heading">Recent commissions</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-stack"} -->
-<figure class="wp-block-table is-style-stack"><table class="has-fixed-layout"><thead><tr><th>Client</th><th>Artist</th><th>Job</th><th>Year</th></tr></thead><tbody><tr><td>Faber</td><td>Ines Carvalho</td><td>Endpaper map for a novel set in the Azores</td><td>2026</td></tr><tr><td>Kew Gardens shop</td><td>Hattie Blume</td><td>Seed packet range, twelve plants</td><td>2026</td></tr><tr><td>The Guardian Weekend</td><td>Tomasz Wrona</td><td>Cover, the new Kraków tram depot</td><td>2025</td></tr><tr><td>Muji Europe</td><td>Kenji Arai</td><td>Christmas window characters</td><td>2025</td></tr><tr><td>BBC Four</td><td>Leo Hartigan</td><td>Title sequence, twelve seconds of galloping</td><td>2025</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"top":{"color":"var:preset|color|line","width":"1px","style":"solid"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Faber</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ines Carvalho</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Endpaper map for a novel set in the Azores</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Kew Gardens shop</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Hattie Blume</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Seed packet range, twelve plants</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">The Guardian Weekend</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Tomasz Wrona</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Cover, the new Kraków tram depot</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">Muji Europe</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Kenji Arai</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Christmas window characters</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-ruled-row","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group is-style-ruled-row"><!-- wp:paragraph -->
+<p class="">BBC Four</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Leo Hartigan</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Title sequence, twelve seconds of galloping</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

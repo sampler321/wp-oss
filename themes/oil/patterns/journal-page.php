@@ -2,7 +2,7 @@
 /**
  * Title: Page: journal
  * Slug: oil/journal-page
- * Categories: text
+ * Categories: oil-pages,text
  * Block Types: core/post-content
  */
 ?>

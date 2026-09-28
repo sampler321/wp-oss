@@ -2,7 +2,7 @@
 /**
  * Title: Search results list
  * Slug: joint/post-list
- * Categories: query
+ * Categories: projects
  * Inserter: no
  */
 ?>
@@ -11,7 +11,7 @@
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-rule-top"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"22%"} -->
-<div class="wp-block-column" style="flex-basis:22%"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /--></div>
+<div class="wp-block-column" style="flex-basis:22%"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","scale":"contain"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->

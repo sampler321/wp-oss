@@ -838,4 +838,7 @@ content['pages'] += [
 content['nav'] = [{'label': 'Catalogue', 'url': '/catalogue/'}, {'label': 'Artists', 'url': '/artists/'}, {'label': 'Shop', 'url': '/shop/'},
                   {'label': 'Tape club', 'url': '/tape-club/'}, {'label': 'Live', 'url': '/live/'}, {'label': 'About', 'url': '/about/'}, {'label': 'Contact', 'url': '/contact/'}]
 json.dump(content, open('demos/catalog/content.json', 'w'), indent=1, ensure_ascii=False)
+theme['styles']['blocks']['core/pullquote']['elements'] = {'cite': {'typography': {'fontFamily': 'var:preset|font-family|body', 'fontSize': 'var:preset|font-size|small', 'fontStyle': 'normal', 'fontWeight': '400', 'letterSpacing': '0', 'textTransform': 'none'}}}
+theme['styles']['css'] += '.wp-block-pullquote{text-align:left;padding-left:0;padding-right:0}.wp-block-pullquote blockquote{margin:0}'
+wjson('theme.json', theme)
 print('catalog round 2 built')

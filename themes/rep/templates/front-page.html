@@ -1,7 +1,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:pattern {"slug":"rep/intro-line"} /-->
+<main class="wp-block-group" style="padding-bottom:0"><!-- wp:pattern {"slug":"rep/intro-line"} /-->
 
 <!-- wp:pattern {"slug":"rep/works-index"} /-->
 
@@ -11,10 +11,12 @@
 
 <!-- wp:pattern {"slug":"rep/style-index"} /-->
 
+<!-- wp:pattern {"slug":"rep/artist-feature"} /-->
+
 <!-- wp:pattern {"slug":"rep/recent-commissions"} /-->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50"} -->
-<div style="height:var:preset|spacing|50" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:pattern {"slug":"rep/commission-artist"} /--></main>

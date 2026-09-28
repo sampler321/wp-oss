@@ -14,7 +14,11 @@
 
 <!-- wp:pattern {"slug":"spine/signed-copies"} /-->
 
+<!-- wp:pattern {"slug":"spine/audiobook-sample"} /-->
+
 <!-- wp:pattern {"slug":"spine/editions"} /-->
+
+<!-- wp:pattern {"slug":"spine/translations"} /-->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">The other books</h2>

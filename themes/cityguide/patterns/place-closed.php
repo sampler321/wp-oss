@@ -16,6 +16,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Closed in August 2026.</strong> The owners retired. We keep the entry so nobody walks there for nothing. The terrace is now a phone shop.</p>
+<p class=""><strong>Closed in August 2026.</strong> The owners retired. We keep the entry so nobody walks there for nothing. The terrace is now a phone shop.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

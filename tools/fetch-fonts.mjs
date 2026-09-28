@@ -28,12 +28,12 @@ function parseFaces(css, latinOnly) {
   let m;
   while ((m = re.exec(css))) {
     const subset = m[2];
-    if (latinOnly && subset && subset !== 'latin') continue;
+    if (latinOnly && subset && !['latin', 'latin-ext'].includes(subset)) continue;
     const body = m[3];
     const prop = k => (body.match(new RegExp(`${k}:\\s*([^;]+);`)) || [])[1]?.trim();
-    const src = (body.match(/url\(([^)]+)\)\s*format\(['"]?(woff2|woff)['"]?\)/) || [])[1];
+    const src = (body.match(/url\(['"]?([^)'"]+)['"]?\)\s*format\(['"]?(woff2|woff)['"]?\)/) || [])[1];
     if (!src) continue;
-    faces.push({ family: prop('font-family').replace(/['"]/g, ''), style: prop('font-style') || 'normal', weight: prop('font-weight') || '400', src: src.replace(/['"]/g, ''), stretch: prop('font-stretch') });
+    faces.push({ family: prop('font-family').replace(/['"]/g, ''), style: prop('font-style') || 'normal', weight: prop('font-weight') || '400', src: src.replace(/['"]/g, ''), stretch: prop('font-stretch'), unicodeRange: prop('unicode-range'), subset: subset || '' });
   }
   return faces;
 }
@@ -45,10 +45,10 @@ for (const spec of specs) {
   let css, source, licenceUrl, familyName;
   if (rest.startsWith('fontshare:')) {
     const [fs_slug, weights] = rest.slice(10).split('@');
-    const q = (weights || '400').split(',').map(w => `f[]=${fs_slug}@${w}`).join('&');
+    const q = `f[]=${fs_slug}@${weights || '400'}`;
     css = await get(`https://api.fontshare.com/v2/css?${q}&display=swap`);
     source = 'Fontshare'; licenceUrl = `https://www.fontshare.com/licenses/itf-ffl`;
-    if (css.includes('url(//')) css = css.replaceAll('url(//', 'url(https://');
+    css = css.replace(/url\((['"]?)\/\//g, 'url($1https://');
   } else {
     familyName = rest.split(':')[0];
     css = await get(`https://fonts.googleapis.com/css2?family=${encodeURIComponent(rest).replace(/%20/g, '+').replace(/%3A/g, ':').replace(/%40/g, '@').replace(/%2C/g, ',').replace(/%3B/g, ';')}&display=swap`);
@@ -60,7 +60,7 @@ for (const spec of specs) {
   // Merge faces that point at the same file (variable fonts served once per weight).
   const bySrc = new Map();
   for (const f of faces) {
-    const k = f.src + f.style;
+    const k = f.src + f.style + (f.unicodeRange || '');
     if (!bySrc.has(k)) bySrc.set(k, { ...f, weights: [] });
     bySrc.get(k).weights.push(...f.weight.split(/\s+/).map(Number));
   }
@@ -68,11 +68,12 @@ for (const spec of specs) {
   const fontFace = [];
   const seen = new Set();
   for (const f of bySrc.values()) {
-    const file = `${kebab(familyName)}-${f.style}-${f.weight.replace(/\s+/g, '_')}.woff2`;
+    const file = `${kebab(familyName)}-${f.style}-${f.weight.replace(/\s+/g, '_')}${f.subset && f.subset !== 'latin' ? '-' + f.subset : ''}.woff2`;
     if (seen.has(file)) continue; seen.add(file);
     fs.writeFileSync(path.join(fontDir, file), await get(f.src, true));
     const face = { fontFamily: familyName, fontStyle: f.style, fontWeight: f.weight, src: [`file:./assets/fonts/${file}`] };
     if (f.stretch && f.stretch !== 'normal') face.fontStretch = f.stretch;
+    if (f.unicodeRange && f.subset) face.unicodeRange = f.unicodeRange;
     fontFace.push(face);
   }
   // Licence file

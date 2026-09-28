@@ -18,6 +18,11 @@
    "slug": "monotypes",
    "name": "Monotypes",
    "description": "One-off prints pulled from a painted plate on the etching press at Edinburgh Printmakers."
+  },
+  {
+   "slug": "journal",
+   "name": "Journal",
+   "description": "Notes from the studio."
   }
  ],
  "front_page": "home",
@@ -42,7 +47,13 @@
   {
    "slug": "journal",
    "title": "Journal",
-   "pattern": "oil/journal-page",
+   "pattern": "oil/journal-page-layout",
+   "template": "page-wide"
+  },
+  {
+   "slug": "buying",
+   "title": "Buying a painting",
+   "pattern": "oil/buying-page",
    "template": "page-wide"
   },
   {
@@ -178,6 +189,62 @@
    "date": "2023-09-28",
    "template": "single-work",
    "content": "<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">Oil on linen</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-caption-line\"} -->\n<p class=\"is-style-caption-line\">120 × 80 cm / 47¼ × 31½ in</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"is-style-red-dot\"} -->\n<p class=\"is-style-red-dot\">Sold, 2023. Last price £9,500</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"mailto:studio@example.com?subject=Enquiry:%20Prince%20Albert%2C%20Charlotte%20Square%20%282023%29\">Ask about similar work</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:details -->\n<details class=\"wp-block-details\"><summary>Describe this work</summary><!-- wp:paragraph -->\n<p class=\"\">An equestrian statue on a high stone plinth, seen from below against the pale stone front of a Georgian terrace. Nearly monochrome, grey and cream.</p>\n<!-- /wp:paragraph --></details>\n<!-- /wp:details -->"
+  },
+  {
+   "title": "Hanging day",
+   "category": "journal",
+   "image": "work-7.jpg",
+   "date": "2026-09-18",
+   "excerpt": "Fourteen paintings, one spirit level and Morag from the gallery, who hangs everything 2 cm lower than I would.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Fourteen paintings, one spirit level and Morag from the gallery, who hangs everything 2 cm lower than I would.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">She is right every time. Lower paintings pull you closer, and my rooms need you close.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/work-7.jpg' ) ); ?>\" alt=\"Studio photo for the note: hanging day\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p class=\"\">Hanging runs on tea and pencil marks.</p>\n<!-- /wp:paragraph --><cite>Morag Fairlie, twenty minutes in</cite></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p class=\"\">We hung the big harbour painting last, on its own wall, so you see it through the doorway from the street. The biggest painting still smells of linseed. The show opens on Saturday at 2pm.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why the floor is always bare",
+   "category": "journal",
+   "image": "hero.jpg",
+   "date": "2026-08-02",
+   "excerpt": "People ask where the rug went. It went to my sister in Bergen in 2019.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">People ask where the rug went. It went to my sister in Bergen in 2019.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I meant to buy another one. Then the light came in across the bare boards one August morning and it turned out to be the whole subject.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>\" alt=\"Studio photo for the note: why the floor is always bare\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Boards take light like water: every gap, every knot, every place where someone dragged a chair. A rug would hide all of it. I will paint a rug when I own one again.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A new batch of linen",
+   "category": "journal",
+   "image": "j-canvas.jpg",
+   "date": "2026-05-30",
+   "excerpt": "Twelve metres of Belgian linen arrived on Tuesday, which is about eighteen paintings.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Twelve metres of Belgian linen arrived on Tuesday, which is about eighteen paintings.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I size it with rabbit-skin glue, two thin coats, then prime it with an oil ground. It takes three weeks to cure before I can paint on it, so the next paintings start in late June.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/j-canvas.jpg' ) ); ?>\" alt=\"Studio photo for the note: a new batch of linen\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The back of a finished canvas is as good a record as any: the stretcher keys, the date in pencil, the gallery label. I photograph every one before it leaves.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "The paint box",
+   "category": "journal",
+   "image": "j-palette.jpg",
+   "date": "2026-04-11",
+   "excerpt": "I paint outside with a box my grandfather used, and the palette has not been cleaned since 2009.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">I paint outside with a box my grandfather used, and the palette has not been cleaned since 2009.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It holds six colours and a small panel in the lid. That limit is the point: outside, I have twenty minutes before the light moves, and six colours is all I can think about.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/j-palette.jpg' ) ); ?>\" alt=\"Studio photo for the note: the paint box\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The small panels are for me. A few go to the open studio in November, unframed, from £250.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Cleaning brushes",
+   "category": "journal",
+   "image": "j-brushes.jpg",
+   "date": "2026-02-20",
+   "excerpt": "Every Friday I clean every brush, whether I used it or not.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Every Friday I clean every brush, whether I used it or not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Safflower oil first, then soap, then shaped with my fingers and left upright in the jar to dry. A good hog brush lasts two years this way.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/j-brushes.jpg' ) ); ?>\" alt=\"Studio photo for the note: cleaning brushes\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It is also the hour where I decide what I am painting next week, which is why Friday is not a visiting day.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A walk up Leith Walk",
+   "category": "journal",
+   "image": "j-leith.jpg",
+   "date": "2026-01-09",
+   "excerpt": "In January I draw outside instead of painting, because the light in the flat is gone by three.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">In January I draw outside instead of painting, because the light in the flat is gone by three.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">This week: the corner buildings up Leith Walk, white render and stone. Low sun makes them look like stage sets.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/j-leith.jpg' ) ); ?>\" alt=\"Studio photo for the note: a walk up leith walk\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:pullquote -->\n<figure class=\"wp-block-pullquote\"><blockquote><p>Drawing in January is a way of waiting.</p></blockquote></figure>\n<!-- /wp:pullquote -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two drawings from these walks are in the catalogue now. The rest stay in the sketchbook.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Studio visits start again",
+   "category": "journal",
+   "image": "j-easel.jpg",
+   "date": "2025-11-14",
+   "excerpt": "From next Thursday the studio is open again for visits, by appointment.",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">From next Thursday the studio is open again for visits, by appointment.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The stairs have not got shorter. There are four flights and no lift, and a chair on every landing.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/j-easel.jpg' ) ); ?>\" alt=\"Studio photo for the note: studio visits start again\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p class=\"\">If you are coming to see a particular painting, tell me when you book, so it is on the easel and not in the rack.</p>\n<!-- /wp:paragraph -->"
   }
  ],
  "nav": [
@@ -192,6 +259,10 @@
   {
    "label": "Journal",
    "url": "/journal/"
+  },
+  {
+   "label": "Buying",
+   "url": "/buying/"
   },
   {
    "label": "About",

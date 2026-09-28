@@ -2,7 +2,7 @@
 /**
  * Title: Recent jobs on the ticket rail
  * Slug: platter/ticket-rail
- * Categories: platter,query
+ * Categories: case-study
  * Description: The signature: case studies as kitchen tickets with venue, guest count and what was served.
  */
 ?>

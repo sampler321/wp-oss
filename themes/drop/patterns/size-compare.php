@@ -13,17 +13,11 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Take a tee that fits how you like.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Lay it flat on the floor, smooth it out.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Measure straight across, armpit to armpit. That is the chest number.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Pick our size with the closest chest number. Between two? Go up. They shrink about 3% on a hot wash.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>

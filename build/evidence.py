@@ -65,6 +65,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -162,7 +163,14 @@ section('file-card', 'Manila file card', ['core/group', 'core/column'],
          'elements': {'link': {'color': {'text': 'var:preset|color|ink'}}, 'heading': {'color': {'text': 'var:preset|color|ink'}},
                       'button': {'color': {'background': 'var:preset|color|ink', 'text': 'var:preset|color|folder'}}},
          'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}},
-         'css': '& table td,& table th{border-bottom-color:currentColor!important}& table td:first-child{font-family:var(--wp--preset--font-family--display);font-weight:600;width:38%}'})
+         'css': '& > p{border-bottom:1px solid currentColor;padding-bottom:.4rem;margin-top:.4rem!important}& > p strong{display:inline-block;min-width:6.5rem;font-family:var(--wp--preset--font-family--display);text-transform:uppercase}'})
+section('rule-row', 'Ruled row', ['core/group'],
+        {'border': {'top': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+         'css': '& p:first-child{color:var(--wp--preset--color--accent-2)}'})
+section('rule-bottom', 'Rule below', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}})
+section('rule-top', 'Rule above', ['core/group'],
+        {'border': {'top': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30'}}})
 section('board', 'Case board', ['core/group', 'core/columns'],
         {'color': {'background': 'var:preset|color|surface', 'text': 'var:preset|color|contrast'},
          'border': {'top': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}, 'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}})
@@ -215,7 +223,7 @@ def listen_row():
                 '<a href="/feed/">RSS</a>'], className='is-style-listen-row')
 
 def file_card(rows, title='Case file'):
-    return group(J(heading(title, 4), table([[a, b] for a, b in rows])), className='is-style-file-card')
+    return group(J(heading(title, 4), *[para('<strong>%s</strong> %s' % (a, b)) for a, b in rows]), className='is-style-file-card')
 
 def label(t, **kw):
     return para(t, fontSize='x-small', fontFamily='display', style={'typography': {'fontWeight': '700'}}, **kw)
@@ -244,14 +252,19 @@ pattern('latest-file', 'Latest episode: file card and player', 'featured,audio',
 pattern('content-warning', 'Content warning line', 'text,audio', para('<strong>Content warning</strong> Discussion of a death in a fire, and of a suicide attempt in prison (31:20 to 34:05). Help is listed at the end of the show notes.', className='is-style-warning'),
         description='Say what the episode contains and where, so people can skip or stop.')
 
+# ---------------------------------------------------------------- round 2: more of the file
+def fact_rows(rows):
+    return J(*[group(columns(('30%', para(a, fontFamily='display', style={'typography': {'fontWeight': '700'}})), ('70%', para(b)), isStackedOnMobile=False,
+                            style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}}}), className='is-style-rule-row', layout={'type': 'default'}) for a, b in rows])
+
 pattern('timeline', 'The case so far (timeline)', 'text', J(
     heading('The case so far', 2),
-    table([['11 Mar 1994', 'Fire at Wagstaff’s timber yard, Alexandra Dock. Arthur Kell, 63, the night watchman, dies.'],
-           ['19 Mar 1994', 'A second fire report is written by an investigator from Leeds. It is filed and not disclosed.'],
-           ['2 Jun 1994', 'Lee Pryce, 22, is arrested after a witness places him on Hedon Road that night.'],
-           ['Feb 1995', 'Convicted of manslaughter and arson at Hull Crown Court. Sentenced to 16 years.'],
-           ['2009', 'Released on licence. Has applied twice to the Criminal Cases Review Commission.'],
-           ['May 2025', 'Arthur’s daughter Janet writes to us. She wants to know what happened to her dad.']], className='is-style-timeline'),
+    fact_rows([('11 Mar 1994', 'Fire at Wagstaff’s timber yard, Alexandra Dock. Arthur Kell, 63, the night watchman, dies.'),
+               ('19 Mar 1994', 'A second fire report is written by an investigator from Leeds. It is filed and not disclosed.'),
+               ('2 Jun 1994', 'Lee Pryce, 22, is arrested after a witness places him on Hedon Road that night.'),
+               ('Feb 1995', 'Convicted of manslaughter and arson at Hull Crown Court. Sentenced to 16 years.'),
+               ('2009', 'Released on licence. Has applied twice to the Criminal Cases Review Commission.'),
+               ('May 2025', 'Arthur’s daughter Janet writes to us. She wants to know what happened to her dad.')]),
     para('<a href="/cases/">Both cases, from the beginning</a>', fontSize='small')))
 
 def exhibit(img, alt, tag):
@@ -396,7 +409,7 @@ pattern('help-lines', 'Help lines', 'text', J(
 
 pattern('transcript-download', 'Transcript download line', 'text', para('Transcript: on this page, or as a <a href="/transcripts/">PDF with page numbers for citing</a>.', fontSize='small'))
 
-pattern('subscribe-page', 'Page: subscribe', 'call-to-action', J(
+pattern('subscribe-page', 'Page: subscribe', 'call-to-action', J(pattern_ref('season-trailer'), pattern_ref('season-break-card'),
     para('New parts come out on Thursdays at 5am while a season is running. Between seasons the feed is quiet, apart from updates.', fontSize='large'),
     table([['<a href="https://podcasts.apple.com/">Apple Podcasts</a>', 'Tap Follow. Turn on downloads if you listen on the train.'],
            ['<a href="https://open.spotify.com/">Spotify</a>', 'Tap Follow and the bell.'],
@@ -420,13 +433,13 @@ pattern('sources-page', 'Page: sources and corrections', 'text', J(
 
 pattern('about-page', 'Page: about and how we report', 'about', J(
     para('Low Water is an independent true-crime podcast about cases from the Humber estuary, made by two people in Hessle and Cottingham. Each season is one case. We work from court records, archive files and people who were there.', fontSize='large'),
-    pattern_ref('hosts'), pattern_ref('how-we-report'), pattern_ref('in-memory')), block_types='core/post-content')
+    pattern_ref('hosts'), pattern_ref('how-we-report'), pattern_ref('in-memory'), pattern_ref('listener-mail'), pattern_ref('reading-list')), block_types='core/post-content')
 
 pattern('tips-page', 'Page: tips', 'contact', J(pattern_ref('tip-line'), pattern_ref('help-lines')), block_types='core/post-content')
 
 pattern('support-page', 'Page: support', 'call-to-action', J(pattern_ref('support-tiers'), pattern_ref('sponsor-read')), block_types='core/post-content')
 
-pattern('cases-page', 'Page: cases', 'featured', J(pattern_ref('cases-index'), pattern_ref('timeline')), block_types='core/post-content')
+pattern('cases-page', 'Page: cases', 'featured', J(pattern_ref('cases-index'), pattern_ref('case-status'), pattern_ref('timeline'), pattern_ref('people'), pattern_ref('case-places'), pattern_ref('document-scan')), block_types='core/post-content')
 
 pattern('transcripts-page', 'Page: transcripts', 'text', J(
     para('Every part has a transcript on its page. PDFs have page and line numbers so students and journalists can cite them.', fontSize='large'),
@@ -439,6 +452,57 @@ pattern('episode-full', 'Episode: full layout (file card, player, chapters, sour
     audio(AUD, CAP), pattern_ref('content-warning'), pattern_ref('chapters-list'), pattern_ref('sources-list'),
     pattern_ref('guest-card'), pattern_ref('transcript'), pattern_ref('help-lines')),
     block_types='core/post-content', description='Every part in the same order: file card, player, warning, chapters, sources, transcript.')
+
+pattern('people', 'People in this case', 'team,text', J(
+    heading('People in this case', 2),
+    para('Named with their permission, or because a court named them. Everyone else is described by role only.', fontSize='small', textColor='muted'),
+    fact_rows([('Arthur Kell', 'Night watchman at Wagstaff’s, 1985 to 1994. Died in the fire, aged 63.'),
+               ('Janet Kell', 'Arthur’s daughter. Asked us to make this series. Hears every episode before it goes out.'),
+               ('Lee Pryce', 'Convicted in 1995, released in 2009. Says he was at his mother’s that night.'),
+               ('Brian Oduya', 'Retired fire investigator. Read the second report for us.'),
+               ('The witness', 'Gave the statement that placed Lee on Hedon Road. Asked not to be named. We agreed.')])))
+
+pattern('case-status', 'Where the case stands', 'text', group(J(
+    heading('Where things stand', 2),
+    fact_rows([('Wagstaff’s Yard', 'Lee Pryce’s lawyers applied to the Criminal Cases Review Commission for a third time in August 2026, citing the second report. Decision expected in 2027.'),
+               ('The Ferry Inn', 'Still an open missing-person case with Humberside Police. They reviewed it in 2024 after season 1. Carol Denby has not been found.')])),
+    className='is-style-file-card'))
+
+pattern('case-places', 'Places in the case (photos)', 'gallery,media', J(
+    heading('The places', 2),
+    gallery([('docks.jpg', 'Sepia photograph of a dock basin with sailing ships and a tall brick tower', 'The docks, early 1900s'),
+             ('court.jpg', 'The old Crown Court building in Wakefield with columns and a clock tower', 'Where the trial was moved'),
+             ('station.jpg', 'A red-brick former police station on a quiet street', 'A police station of the period'),
+             ('bridge.jpg', 'The Humber Bridge seen from a riverside path on a sunny day', 'The estuary path')], columns=4, align='wide'),
+    para('Photographs are public domain or CC0, shown in greyscale. Click one to see it large.', fontSize='x-small', textColor='muted')))
+
+pattern('season-trailer', 'Season trailer', 'media,audio', group(J(
+    label('Trailer, season 2'),
+    heading('Wagstaff’s Yard, in two minutes', 3),
+    audio(AUD, CAP),
+    para('No crime scene audio, ever. The trailer is Maren and Janet, and the sound of the dock.', fontSize='small')), className='is-style-board',
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}}))
+
+pattern('document-scan', 'Document with transcription', 'text,media', columns(
+    ('45%', image('archive.jpg', 'Shelves of labelled grey archive boxes', caption='Box 14 of 31, Hull History Centre. Stand-in photograph.')),
+    ('55%', J(heading('Transcription', 4),
+              quote('The seat of the fire is not consistent with the account given. The pattern of charring on the east wall indicates an origin some distance from the office door.', 'West Yorkshire Fire Service report, 19 March 1994, page 3', className='is-style-redacted'))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|50'}}}))
+
+pattern('listener-mail', 'Letters from listeners', 'testimonials', J(
+    heading('Letters', 2),
+    quote('I worked the night shift at the cold store next door in 1994. Nobody ever asked me what I saw. I have written it down and sent it to your tips address.', 'A listener in Hull, September 2026, shared with permission'),
+    quote('Thank you for saying Arthur’s name every time. My dad knew him from the Rovers.', 'Colin, Marfleet, August 2026')))
+
+pattern('reading-list', 'Further reading', 'text', J(
+    heading('Further reading', 3),
+    lst(['The Criminal Cases Review Commission’s own guide to applying, on gov.uk.', 'Hull History Centre’s guide to police and fire service records.',
+         'The Centre for Criminal Appeals’ reports on non-disclosure, 2019 to 2024.'])))
+
+pattern('season-break-card', 'Between seasons card', 'call-to-action', group(J(
+    heading('Season 3 is in production', 3),
+    para('Back on Thursday 14 January. Updates on Wagstaff’s Yard go out in the feed as they happen, and in the email.'),
+    buttons(('Get the email', '/subscribe/'))), className='is-style-file-card'))
 
 pattern('front-page-layout', 'Home: title card, latest file, board, episodes', 'featured', J(
     pattern_ref('title-card'), pattern_ref('latest-file'), pattern_ref('evidence-board'),
@@ -459,9 +523,8 @@ write('parts/header.html', group(row(J(
     dyn('site-title', level=0),
     row(J(dyn('navigation', overlayMenu='mobile', layout={'type': 'flex', 'justifyContent': 'right'}), buttons(('Subscribe', '/subscribe/'))),
         justify='right', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})),
-    justify='space-between', align='wide'), tag='header', align='full',
-    style={'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}},
-           'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}}))
+    justify='space-between', align='wide'), tag='header', align='full', className='is-style-rule-bottom',
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}}}))
 
 write('parts/footer.html', group(J(
     columns(('44%', J(para('Low Water', fontSize='xx-large', fontFamily='display', style={'typography': {'fontWeight': '700', 'textTransform': 'uppercase', 'lineHeight': '0.9'}}),
@@ -499,9 +562,8 @@ write('templates/404.html', page_template(J(
     dyn('search', label='Search', showLabel=False, placeholder='A name, a place, a date', buttonText='Search')), style=PAD))
 
 def title_band():
-    return group(group(dyn('post-title', level=1, fontSize='display'), align='wide', layout={'type': 'default'}), align='full',
-                 style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|40'}, 'margin': {'top': '0'}},
-                        'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}})
+    return group(group(dyn('post-title', level=1, fontSize='display'), align='wide', layout={'type': 'default'}), align='full', className='is-style-rule-bottom',
+                 style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|40'}, 'margin': {'top': '0'}}})
 write('templates/page.html', page_template(J(title_band(), group(dyn('post-content', align='wide', layout={'type': 'constrained'}), align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60'}}})), style=NOTOP))
 write('templates/page-wide.html', page_template(J(title_band(), group(dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1320px'}), align='wide', layout={'type': 'default'},
     style={'spacing': {'padding': {'top': 'var:preset|spacing|60'}}})), style=NOTOP))
@@ -512,8 +574,7 @@ write('templates/single.html', page_template(J(
             ('36%', pattern_ref('episode-rail')), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|70'}}}),
     group(J(dyn('post-navigation-link', type='previous', label='Previous part', showTitle=True, taxonomy='category'),
             dyn('post-navigation-link', label='Next part', showTitle=True, taxonomy='category')),
-          align='wide', layout={'type': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'space-between'},
-          style={'border': {'top': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30'}}})),
+          align='wide', className='is-style-rule-top', layout={'type': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'space-between'})),
     style=PAD))
 write('templates/single-update.html', page_template(J(
     group(J(para('Update', fontSize='small', fontFamily='display', style={'typography': {'fontWeight': '700', 'textTransform': 'uppercase'}}),

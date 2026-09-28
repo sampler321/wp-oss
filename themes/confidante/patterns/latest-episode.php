@@ -7,14 +7,14 @@
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-arch","lightbox":{"enabled":true}} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-arch"} -->
 <figure class="wp-block-image size-large is-style-arch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ep-money.jpg' ) ); ?>" alt="Ceramic piggy banks shaped like a cow, an elephant and two pigs on a supermarket shelf, with price tags"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
-<p class="has-small-font-size">New this week, 52 minutes, filed under Money</p>
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"700"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:700">New this week, 52 minutes, filed under Money</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xx-large"} -->
@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Ama asked for a pay rise in March and got a “let’s revisit in the autumn”. It is now the autumn. We go through her notes line by line with Folake Adeyemi, who has sat on the other side of that table for 15 years.</p>
+<p>Ama asked for a pay rise in March and got a “let’s revisit in the autumn”. It is now the autumn. We go through her notes line by line with Folake Adeyemi, who has sat on the other side of that table for 15 years.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-content-note"} -->
@@ -36,15 +36,25 @@
 <!-- wp:list {"className":"is-style-listen-row"} -->
 <ul class="wp-block-list is-style-listen-row"><!-- wp:list-item -->
 <li><a href="https://podcasts.apple.com/">Apple Podcasts</a></li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><a href="https://open.spotify.com/">Spotify</a></li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><a href="https://pocketcasts.com/">Pocket Casts</a></li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><a href="https://overcast.fm/">Overcast</a></li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><a href="https://www.youtube.com/">YouTube</a></li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><a href="/feed/">RSS</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>

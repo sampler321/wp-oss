@@ -2,7 +2,7 @@
 /**
  * Title: Commission questions
  * Slug: joint/commission-faq
- * Categories: text
+ * Categories: services
  */
 ?>
 <!-- wp:heading {"level":4} -->

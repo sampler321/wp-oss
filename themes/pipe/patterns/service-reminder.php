@@ -2,7 +2,7 @@
 /**
  * Title: Service reminder
  * Slug: pipe/service-reminder
- * Categories: pipe,call-to-action
+ * Categories: quote
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -14,7 +14,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>We text you 11 months after your service. Reply YES and we book you in. Reply STOP and we never text again.</p>
+<p class="">We text you 11 months after your service. Reply YES and we book you in. Reply STOP and we never text again.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

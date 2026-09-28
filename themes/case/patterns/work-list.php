@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Work list: full case studies and NDA entries
+ * Title: Work list: case studies and NDA entries
  * Slug: case/work-list
- * Categories: featured
- * Description: A table of every project: full case studies link through, NDA work shows a marker and no link.
+ * Categories: work
+ * Description: Every project as a ruled row: published case studies link through, NDA work shows a marker and no link.
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"1240px"}} -->
@@ -11,7 +11,159 @@
 <h3 class="wp-block-heading">Everything, briefly</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Client and year</th><th>What</th><th></th></tr></thead><tbody><tr><td><a href="/ticket-machines-that-ask-where-you-are-going/">Clyde Valley Rail</a><br>2025</td><td>Ticket machines that ask where you are going first</td><td>Case study</td></tr><tr><td><a href="/parking-without-the-meter/">Renfrew Council</a><br>2024</td><td>Paying for parking by text, app or card at the kerb</td><td>Case study</td></tr><tr><td>Dutch pension provider<br>2024</td><td>Onboarding for workplace pension members</td><td><mark>Under NDA</mark></td></tr><tr><td><a href="/self-checkout-for-a-clothing-chain/">Kilt &amp; Co.</a><br>2023</td><td>Self-checkout that handles security tags</td><td>Case study</td></tr><tr><td>UK neobank<br>2023</td><td>Card freeze and dispute flow</td><td><mark>Under NDA</mark></td></tr><tr><td><a href="/live-departures-on-the-platform/">Strathclyde bus partnership</a><br>2022</td><td>Live departures on stop displays and phones</td><td>Case study</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><a href="/ticket-machines-that-ask-where-you-are-going/">Clyde Valley Rail</a></h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Ticket machines that ask where you are going first</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/ticket-machines-that-ask-where-you-are-going/">Read it</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><a href="/parking-without-the-meter/">Renfrew Council</a></h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2024</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Paying for parking by street name, by text or app</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/parking-without-the-meter/">Read it</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Dutch pension provider</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2024</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Onboarding for workplace pension members</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"className":"is-style-tag"} -->
+<p class="is-style-tag">Under NDA</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><a href="/self-checkout-for-a-clothing-chain/">Kilt &amp; Co.</a></h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2023</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Self-checkout that handles security tags</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/self-checkout-for-a-clothing-chain/">Read it</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">UK neobank</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2023</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Card freeze and dispute flow</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"className":"is-style-tag"} -->
+<p class="is-style-tag">Under NDA</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-row-rule"} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-row-rule"><!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><a href="/live-departures-on-the-platform/">Strathclyde bus partnership</a></h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"12%"} -->
+<div class="wp-block-column" style="flex-basis:12%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">2022</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Live departures on stop displays and phones</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><a href="/live-departures-on-the-platform/">Read it</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->

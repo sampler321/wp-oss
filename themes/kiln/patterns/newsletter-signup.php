@@ -2,24 +2,24 @@
 /**
  * Title: Newsletter for early notice
  * Slug: kiln/newsletter-signup
- * Categories: call-to-action
+ * Categories: kiln-contact,call-to-action
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-celadon-slab","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-celadon-slab"><!-- wp:columns {"verticalAlignment":"bottom","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-bottom"><!-- wp:column -->
+<!-- wp:group {"className":"is-style-celadon-slab","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-celadon-slab"><!-- wp:columns {"align":"wide","verticalAlignment":"bottom"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"x-large"} -->
 <h2 class="wp-block-heading has-x-large-font-size">The shop list arrives two days early</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Four emails a year, one before each shop update, with every pot, its size and its price. Plus the kiln opening dates in autumn and spring. Nothing else.</p>
+<p class="">Four emails a year, one before each shop update, with every pot, its size and its price. Plus the kiln opening dates in autumn and spring. Nothing else.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Send a blank email and I add you by hand. To leave, reply "stop".</p>
+<p class="">Send a blank email and I add you by hand. To leave, reply "stop".</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

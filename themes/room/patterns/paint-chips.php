@@ -2,7 +2,7 @@
 /**
  * Title: Paint colours used in a project
  * Slug: room/paint-chips
- * Categories: text
+ * Categories: project
  */
 ?>
 <!-- wp:group {"align":"wide","className":"is-style-rule-top","layout":{"type":"default"}} -->

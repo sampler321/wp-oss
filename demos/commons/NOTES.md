@@ -7,3 +7,8 @@
 - Nice-to-haves built: closed-for-install notice (parts/notice.html), membership card with a flat fee, committee with terms and past members, access page, funders and credits table for grant reports, donate block, publications.
 - Core-block limits: running numbers live in post tags (no custom fields). "Now / next / past" by date is not possible without a plugin, so "Coming up" is a pattern the committee edits by hand.
 - Shared-tool notes: the normaliser drops `layout` from a plain div Group that also has a `style` attribute (worked around by using a section tag), drops `aspectRatio` on core/image, and single posts redirect to the home page in Playground until permalinks are re-saved, so official single-post screenshots show the front page.
+
+## Round 2
+- 49 patterns in eight registered categories (what's on, programme, show pages, membership, opportunities, about, visit, page layouts). New: opening night, past events, installation mosaic, artist in the show, room sheet (list of works), studio holders, hire the long room, volunteer call, winter residency, commissioned writing excerpt, exhibition page, studios page.
+- Tables cut to three (programme index before 2019, studio rents, publications). Committee is now cards, show credits and opening hours are ruled rows.
+- The current show's post is built from the exhibition page pattern. New Studios page in the menu. Lightbox on.

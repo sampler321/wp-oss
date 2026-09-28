@@ -2,10 +2,10 @@
 /**
  * Title: Cabinet map (24 pans)
  * Slug: scoop/cabinet-map
- * Categories: scoop,menu
+ * Categories: menu
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|40"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:heading {"level":3} -->
@@ -21,241 +21,241 @@
 <div class="wp-block-column"><!-- wp:group {"className":"is-style-cabinet","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-cabinet"><!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 1</p>
+<p class="">Pan 1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Fior di latte</p>
+<p class="">Fior di latte</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 2</p>
+<p class="">Pan 2</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Stracciatella</p>
+<p class="">Stracciatella</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 3</p>
+<p class="">Pan 3</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Pistachio</p>
+<p class="">Pistachio</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 4</p>
+<p class="">Pan 4</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Hazelnut</p>
+<p class="">Hazelnut</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 5, special</p>
+<p class="">Pan 5, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Fig leaf and honey</p>
+<p class="">Fig leaf and honey</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 6, special</p>
+<p class="">Pan 6, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tablet</p>
+<p class="">Tablet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 7</p>
+<p class="">Pan 7</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Coffee</p>
+<p class="">Coffee</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 8</p>
+<p class="">Pan 8</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Vanilla</p>
+<p class="">Vanilla</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 9</p>
+<p class="">Pan 9</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Gianduja</p>
+<p class="">Gianduja</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 10</p>
+<p class="">Pan 10</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Salted caramel</p>
+<p class="">Salted caramel</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 11, special</p>
+<p class="">Pan 11, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Roast pumpkin</p>
+<p class="">Roast pumpkin</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 12, special</p>
+<p class="">Pan 12, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Black sesame</p>
+<p class="">Black sesame</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 13</p>
+<p class="">Pan 13</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ricotta and fig</p>
+<p class="">Ricotta and fig</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 14</p>
+<p class="">Pan 14</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Yoghurt</p>
+<p class="">Yoghurt</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 15, special</p>
+<p class="">Pan 15, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Chestnut and rum</p>
+<p class="">Chestnut and rum</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 16, special</p>
+<p class="">Pan 16, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Apple crumble</p>
+<p class="">Apple crumble</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 17</p>
+<p class="">Pan 17</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Mint choc</p>
+<p class="">Mint choc</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 18</p>
+<p class="">Pan 18</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Malaga</p>
+<p class="">Malaga</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 19</p>
+<p class="">Pan 19</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Lemon sorbet</p>
+<p class="">Lemon sorbet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 20</p>
+<p class="">Pan 20</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Chocolate sorbet</p>
+<p class="">Chocolate sorbet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 21</p>
+<p class="">Pan 21</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Raspberry sorbet</p>
+<p class="">Raspberry sorbet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan"><!-- wp:paragraph -->
-<p>Pan 22</p>
+<p class="">Pan 22</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Mango sorbet</p>
+<p class="">Mango sorbet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 23, special</p>
+<p class="">Pan 23, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bramble sorbet</p>
+<p class="">Bramble sorbet</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-pan-special","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-pan-special"><!-- wp:paragraph -->
-<p>Pan 24, special</p>
+<p class="">Pan 24, special</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Pear and bay</p>
+<p class="">Pear and bay</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

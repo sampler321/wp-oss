@@ -5,7 +5,7 @@
  * Categories: shop
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70)"><!-- wp:heading -->
 <h2 class="wp-block-heading">The shop</h2>
 <!-- /wp:heading -->

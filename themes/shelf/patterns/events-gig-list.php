@@ -11,16 +11,16 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:columns {"className":"is-style-ruled","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
+<div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center","className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
 <div class="wp-block-column" style="flex-basis:8rem"><!-- wp:paragraph {"className":"is-style-gig-date"} -->
 <p class="is-style-gig-date">8 Oct</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontFamily":"display","fontSize":"large"} -->
-<p class="has-large-font-size has-display-font-family">Lotte van Dijk reads The Squid Who Couldn't Swim</p>
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
+<p class="has-display-font-family has-large-font-size">Lotte van Dijk reads The Squid Who Couldn't Swim</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -30,21 +30,21 @@
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class=""><a href="/events/">Book a place</a></p>
+<p style="font-weight:800"><a href="/events/">Book a place</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
 <div class="wp-block-column" style="flex-basis:8rem"><!-- wp:paragraph {"className":"is-style-gig-date"} -->
 <p class="is-style-gig-date">16 Oct</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontFamily":"display","fontSize":"large"} -->
-<p class="has-large-font-size has-display-font-family">Anna Kruit in conversation with Bram</p>
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
+<p class="has-display-font-family has-large-font-size">Anna Kruit in conversation with Bram</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -54,21 +54,21 @@
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class=""><a href="/events/">Tickets</a></p>
+<p style="font-weight:800"><a href="/events/">Tickets</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
 <div class="wp-block-column" style="flex-basis:8rem"><!-- wp:paragraph {"className":"is-style-gig-date"} -->
 <p class="is-style-gig-date">24 Oct</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontFamily":"display","fontSize":"large"} -->
-<p class="has-large-font-size has-display-font-family">Comics swap and drawing night</p>
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
+<p class="has-display-font-family has-large-font-size">Comics swap and drawing night</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -78,21 +78,21 @@
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class=""><a href="/events/">Just come</a></p>
+<p style="font-weight:800"><a href="/events/">Just come</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"className":"is-style-ruled","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
+<!-- wp:columns {"verticalAlignment":"center","className":"is-style-ruled","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-style-ruled" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"8rem"} -->
 <div class="wp-block-column" style="flex-basis:8rem"><!-- wp:paragraph {"className":"is-style-gig-date"} -->
 <p class="is-style-gig-date">6 Nov</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"fontFamily":"display","fontSize":"large"} -->
-<p class="has-large-font-size has-display-font-family">Reading group: Paper Harbour</p>
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
+<p class="has-display-font-family has-large-font-size">Reading group: Paper Harbour</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -102,7 +102,7 @@
 
 <!-- wp:column {"width":"9rem"} -->
 <div class="wp-block-column" style="flex-basis:9rem"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}}} -->
-<p class=""><a href="/events/">Sign up</a></p>
+<p style="font-weight:800"><a href="/events/">Sign up</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

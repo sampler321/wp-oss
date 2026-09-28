@@ -2,7 +2,7 @@
 /**
  * Title: Enquiries: what to send
  * Slug: room/enquiry-what-to-send
- * Categories: contact
+ * Categories: services
  */
 ?>
 <!-- wp:group {"className":"is-style-putty","layout":{"type":"constrained","justifyContent":"left"}} -->

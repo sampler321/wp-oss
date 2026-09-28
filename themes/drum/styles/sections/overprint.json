@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Overprint (stacked ink layers)",
+	"slug": "overprint",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"color": "var:preset|color|contrast",
+			"width": "3px",
+			"style": "solid"
+		},
+		"shadow": "var:preset|shadow|hard-lg",
+		"color": {
+			"background": "var:preset|color|base"
+		},
+		"css": "&{display:grid!important;padding:var(--wp--preset--spacing--40)}& > *{grid-area:1/1;margin:0!important}& img{mix-blend-mode:multiply;border:0!important;display:block}& > *:last-child{transform:translate(5px,4px)}"
+	}
+}

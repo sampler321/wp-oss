@@ -1,17 +1,87 @@
 <?php
 /**
- * Title: Releases
+ * Title: Releases (sleeve cards)
  * Slug: bpm/releases-table
- * Categories: text
+ * Categories: release
  */
 ?>
 <!-- wp:heading -->
 <h2 class="wp-block-heading">Releases</h2>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"is-style-dates"} -->
-<figure class="wp-block-table is-style-dates"><table class="has-fixed-layout"><thead><tr><th>Cat no</th><th>Title</th><th>Label</th><th>Year</th><th>Formats</th></tr></thead><tbody><tr><td>SZUM003</td><td><em>Wolska 40</em> EP</td><td>Szum Nagrania</td><td>2026</td><td>12", digital</td></tr><tr><td>NSD017</td><td><em>Tramwaj</em> with Kaja Ptak</td><td>Nowy Świat Dźwięku</td><td>2025</td><td>12", digital</td></tr><tr><td>SZUM002</td><td><em>Niskie Częstotliwości</em></td><td>Szum Nagrania</td><td>2024</td><td>Cassette, digital</td></tr><tr><td>SZUM001</td><td><em>Pierwsza</em> EP</td><td>Szum Nagrania</td><td>2022</td><td>Digital</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover","className":"is-style-stacked","lightbox":{"enabled":true}} -->
+<figure class="wp-block-image size-large is-style-stacked"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/records.jpg' ) ); ?>" alt="Artwork for Wolska 40 EP"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">SZUM003</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Wolska 40 EP</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Szum Nagrania, 2026. 12" and digital</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover","className":"is-style-stacked","lightbox":{"enabled":true}} -->
+<figure class="wp-block-image size-large is-style-stacked"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/mixer.jpg' ) ); ?>" alt="Artwork for Tramwaj, with Kaja Ptak"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">NSD017</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Tramwaj, with Kaja Ptak</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Nowy Świat Dźwięku, 2025. 12" and digital</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover","className":"is-style-stacked","lightbox":{"enabled":true}} -->
+<figure class="wp-block-image size-large is-style-stacked"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cables.jpg' ) ); ?>" alt="Artwork for Niskie Częstotliwości"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">SZUM002</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Niskie Częstotliwości</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Szum Nagrania, 2024. Cassette and digital</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover","className":"is-style-stacked","lightbox":{"enabled":true}} -->
+<figure class="wp-block-image size-large is-style-stacked"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/synth.jpg' ) ); ?>" alt="Artwork for Pierwsza EP"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
+<p class="has-muted-color has-text-color has-x-small-font-size">SZUM001</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Pierwsza EP</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Szum Nagrania, 2022. Digital only</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->

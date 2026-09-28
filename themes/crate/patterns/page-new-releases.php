@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:paragraph -->
-<p>New pressings from labels we trust, and what is due in. Reissues are listed with the label that did them.</p>
+<p class="">New pressings from labels we trust, and what is due in. Reissues are listed with the label that did them.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"crate/pre-orders"} /-->

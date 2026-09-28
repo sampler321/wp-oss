@@ -469,10 +469,9 @@
 					"style": "solid",
 					"color": "var:preset|color|contrast"
 				},
-				"color": {
-					"background": "var:preset|color|accent"
-				},
-				"css": "& img{filter:grayscale(1) contrast(1.15) brightness(1.1);mix-blend-mode:screen}"
+				"filter": {
+					"duotone": "var:preset|duotone|red-print"
+				}
 			},
 			"core/separator": {
 				"color": {

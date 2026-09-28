@@ -1,0 +1,62 @@
+{
+  "fontFamilies": [
+    {
+      "fontFamily": "\"Rowdies\", sans-serif",
+      "name": "Rowdies",
+      "slug": "display",
+      "fontFace": [
+        {
+          "fontFamily": "Rowdies",
+          "fontStyle": "normal",
+          "fontWeight": "300",
+          "src": [
+            "file:./assets/fonts/rowdies-normal-300.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Rowdies",
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "src": [
+            "file:./assets/fonts/rowdies-normal-400.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Rowdies",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "src": [
+            "file:./assets/fonts/rowdies-normal-700.woff2"
+          ]
+        }
+      ]
+    },
+    {
+      "fontFamily": "\"Figtree\", sans-serif",
+      "name": "Figtree",
+      "slug": "body",
+      "fontFace": [
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "italic",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/figtree-italic-400_700.woff2"
+          ]
+        },
+        {
+          "fontFamily": "Figtree",
+          "fontStyle": "normal",
+          "fontWeight": "400 700",
+          "src": [
+            "file:./assets/fonts/figtree-normal-400_700.woff2"
+          ]
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Rowdies (Google Fonts), https://github.com/google/fonts/tree/main/ofl/rowdies",
+    "Figtree (Google Fonts), https://github.com/google/fonts/tree/main/ofl/figtree"
+  ]
+}

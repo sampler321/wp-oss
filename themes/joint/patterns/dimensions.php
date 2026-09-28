@@ -1,8 +1,9 @@
 <?php
 /**
- * Title: Dimensions in mm and inches
+ * Title: Spec sheet table (mm and inches)
  * Slug: joint/dimensions
- * Categories: shop
+ * Categories: object
+ * Description: A plain table for when a spec sheet is all you need, for example on a trade price list.
  */
 ?>
 <!-- wp:table -->

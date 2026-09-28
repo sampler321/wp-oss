@@ -2,7 +2,7 @@
 /**
  * Title: Where the ingredients come from
  * Slug: scoop/suppliers
- * Categories: scoop,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -10,7 +10,53 @@
 <h4 class="wp-block-heading">Where it comes from</h4>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>What</th><th>Who</th><th>Distance</th></tr></thead><tbody><tr><td>Whole milk and cream</td><td>Mansfield's dairy, East Lothian</td><td>18 miles</td></tr><tr><td>Pistachios</td><td>Bronte, Sicily, via Valvona and Crolla</td><td>by road</td></tr><tr><td>Hazelnuts</td><td>Piedmont IGP, same importer</td><td>by road</td></tr><tr><td>Chocolate</td><td>Ecuador, 70%, from a Glasgow wholesaler</td><td></td></tr><tr><td>Fruit</td><td>Whatever is good at the Saturday farmers' market on Castle Terrace</td><td>2 miles</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">Whole milk and cream</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Mansfield's dairy, East Lothian, 18 miles</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">Pistachios</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Bronte, Sicily, via Valvona and Crolla</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">Hazelnuts</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Piedmont IGP, same importer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">Chocolate</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Ecuador, 70%, from a Glasgow wholesaler</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class="">Fruit</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Saturday farmers' market, Castle Terrace</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

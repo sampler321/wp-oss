@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Inside out, 30°C, no tumble dryer. The print will crack a little over the years. That is how it is supposed to look.</p>
+<p class="">Inside out, 30°C, no tumble dryer. The print will crack a little over the years. That is how it is supposed to look.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

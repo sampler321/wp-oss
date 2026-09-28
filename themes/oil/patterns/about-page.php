@@ -2,7 +2,7 @@
 /**
  * Title: Page: about and CV
  * Slug: oil/about-page
- * Categories: about
+ * Categories: oil-pages,about
  * Block Types: core/post-content
  */
 ?>
@@ -29,3 +29,9 @@
 <!-- /wp:columns -->
 
 <!-- wp:pattern {"slug":"oil/reviews"} /-->
+
+<!-- wp:pattern {"slug":"oil/series-intro"} /-->
+
+<!-- wp:pattern {"slug":"oil/materials"} /-->
+
+<!-- wp:pattern {"slug":"oil/studio-photo"} /-->

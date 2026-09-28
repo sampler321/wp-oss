@@ -1,0 +1,234 @@
+{
+ "site": {
+  "title": "Edie Achterberg",
+  "tagline": "Goldsmith, Magdalen Street, Norwich"
+ },
+ "categories": [
+  {
+   "slug": "commissions",
+   "name": "Commissions"
+  },
+  {
+   "slug": "stones",
+   "name": "Stones"
+  },
+  {
+   "slug": "workshop",
+   "name": "Workshop"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "journal",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "journal",
+   "title": "Journal",
+   "content": ""
+  },
+  {
+   "slug": "bespoke",
+   "title": "Bespoke",
+   "pattern": "karat/page-bespoke"
+  },
+  {
+   "slug": "ring-sizes",
+   "title": "Ring sizes",
+   "pattern": "karat/page-ring-sizes"
+  },
+  {
+   "slug": "care",
+   "title": "Care and materials",
+   "pattern": "karat/page-care"
+  },
+  {
+   "slug": "repairs",
+   "title": "Repairs and valuations",
+   "pattern": "karat/page-repairs"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "karat/page-about"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "karat/page-contact"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Anna's grandmother's garnets, remade",
+   "category": "commissions",
+   "image": "pendant-1.jpg",
+   "excerpt": "A Victorian brooch nobody wore became a drop pendant and three tassels.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Anna brought in a brooch with eleven garnets, two of them loose, and a broken pin. We kept the best stone for a drop pendant and used the gold from the brooch frame for three small tassels.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">It took five weeks. The brooch gold was 15ct, so the new parts are 15ct too, hallmarked in Birmingham with the old mark noted on the certificate.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A seal ring from a biscuit-tin garnet ring",
+   "category": "commissions",
+   "image": "ring-1.jpg",
+   "excerpt": "Eight garnet cells, two missing, one very good carnelian underneath.",
+   "pattern": "karat/story-garnet-seal"
+  },
+  {
+   "title": "A signet with the Norfolk coast on it",
+   "category": "commissions",
+   "image": "hero.jpg",
+   "excerpt": "A fortieth birthday present, engraved by hand at 14 mm.",
+   "pattern": "karat/story-signet"
+  },
+  {
+   "title": "Two wedding bands from one grandmother's ring",
+   "category": "commissions",
+   "image": "earring-1.jpg",
+   "excerpt": "One thin 22ct band, melted and drawn into two.",
+   "pattern": "karat/story-bands"
+  },
+  {
+   "title": "An engagement ring in recycled platinum, from wax to hallmark",
+   "category": "commissions",
+   "image": "bench-2.jpg",
+   "excerpt": "Nine weeks, two waxes and one very patient client.",
+   "pattern": "karat/journal-making-photos"
+  },
+  {
+   "title": "Choosing a sapphire from a tray of rough",
+   "category": "stones",
+   "image": "stone-1.jpg",
+   "excerpt": "Why I buy some stones uncut, and what you can tell before they are polished.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Twice a year a cutter in Ratnapura sends me a tray of rough sapphires. Most are grey and cloudy. A few are the colour of the sea off Cromer in February, which is the colour people ask for.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Buying rough is cheaper and I know where the stone came from. It is also slower: cutting adds four weeks to a commission.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Why most of my diamonds are old",
+   "category": "stones",
+   "image": "ring-2.jpg",
+   "excerpt": "Old cut stones sparkle differently, cost less and are already in the world.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">An old European cut diamond has a small table and a tall crown. Under candlelight it looks like a fire. Under a shop spotlight it looks a bit sleepy, which is why the trade underprices them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">I buy them loose from two dealers in Hatton Garden. For most rings they cost 20 to 40 percent less than a new stone of the same size. That is my opinion and I am sticking to it.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Sizing a ring for a big knuckle",
+   "category": "workshop",
+   "image": "tools-1.jpg",
+   "excerpt": "When the knuckle is two sizes bigger than the finger.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">If a ring fits the knuckle it spins on the finger. If it fits the finger it will not go over the knuckle. The fix is a slightly squared inside, or two small beads of gold at the bottom of the shank.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Either way, measure the knuckle and the base of the finger and send me both numbers.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Workshop open day, Saturday 13 December",
+   "category": "workshop",
+   "image": "bench-3.jpg",
+   "excerpt": "Come and try the tools. Mince pies, no hard sell.",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The workshop is open from 11 to 4 on Saturday 13 December. You can file a bit of silver, look at stones under the microscope and see waxes for rings that are on the bench now.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The stairs are steep and there is no lift, sorry. Brass will be there.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Bespoke",
+   "url": "/bespoke/"
+  },
+  {
+   "label": "Ring sizes",
+   "url": "/ring-sizes/"
+  },
+  {
+   "label": "Journal",
+   "url": "/journal/"
+  },
+  {
+   "label": "Repairs",
+   "url": "/repairs/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Signet ring, engraved oval",
+   "price": "1480",
+   "image": "hero.jpg",
+   "category": "Rings",
+   "sku": "EA-R01",
+   "stock": 2,
+   "short": "18ct yellow gold, hand-engraved face. Made to order in your size in 3 weeks."
+  },
+  {
+   "name": "Carnelian bar ring",
+   "price": "1250",
+   "image": "ring-2.jpg",
+   "category": "Rings",
+   "sku": "EA-R02",
+   "stock": 3,
+   "short": "18ct yellow gold, 2 mm band, carnelian set east to west."
+  },
+  {
+   "name": "Knot bangle and pearl stacker",
+   "price": "310",
+   "image": "ring-4.jpg",
+   "category": "Rings",
+   "sku": "EA-R03",
+   "stock": 6,
+   "short": "Recycled silver. The bangle fits wrists up to 17 cm."
+  },
+  {
+   "name": "Plain hoops, pair",
+   "price": "395",
+   "image": "earring-1.jpg",
+   "category": "Earrings",
+   "sku": "EA-E01",
+   "stock": 8,
+   "short": "9ct yellow gold, 18 mm across, hinged at the back."
+  },
+  {
+   "name": "Garnet drop pendant",
+   "price": "720",
+   "image": "pendant-1.jpg",
+   "category": "Pendants",
+   "sku": "EA-P01",
+   "stock": 1,
+   "short": "18ct yellow gold bezel, on a 45 cm trace chain."
+  },
+  {
+   "name": "Carnelian seal ring",
+   "price": "640",
+   "image": "ring-1.jpg",
+   "category": "One of one",
+   "sku": "EA-O01",
+   "stock": 1,
+   "short": "An old carved carnelian in 18ct, on an oxidised silver shank. Size M."
+  },
+  {
+   "name": "Garnet rosette ring",
+   "price": "880",
+   "image": "ring-3.jpg",
+   "category": "One of one",
+   "sku": "EA-O02",
+   "stock": 1,
+   "short": "Silver-gilt with eight garnet cells. Size P, can be sized by one."
+  },
+  {
+   "name": "Emerald and variscite chain",
+   "price": "1900",
+   "image": "necklace-1.jpg",
+   "category": "One of one",
+   "sku": "EA-O03",
+   "stock": 0,
+   "short": "Sold. Ask about a similar chain."
+  }
+ ]
+}

@@ -12,75 +12,43 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"6rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Basic Channel</p>
+<p class="">Basic Channel<br>BCD-2 (repress), Basic Channel</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>BCD-2 (repress), Basic Channel</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Due 17 October</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£24</p>
+<p class="">17 October<br>£24</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"6rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Mulatu Astatke</p>
+<p class="">Mulatu Astatke<br>Mulatu of Ethiopia, Strut</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Mulatu of Ethiopia, Strut</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Due 24 October</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£27</p>
+<p class="">24 October<br>£27</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"6rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Beverley Glenn-Copeland</p>
+<p class="">Beverley Glenn-Copeland<br>Keyboard Fantasies, Transgressive</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Keyboard Fantasies, Transgressive</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Due 7 November</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£26</p>
+<p class="">7 November<br>£26</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"6rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Various</p>
+<p class="">Various<br>Studio One Women, Soul Jazz</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Studio One Women, Soul Jazz</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Due 14 November</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>£28</p>
+<p class="">14 November<br>£28</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

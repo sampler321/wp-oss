@@ -2,7 +2,7 @@
 /**
  * Title: What's on: photo with an overlapping label
  * Slug: commons/whats-on-still
- * Categories: featured
+ * Categories: whats-on
  * Description: A fixed version of the current show for any page: a wide photo with the label card overlapping its bottom edge.
  */
 ?>

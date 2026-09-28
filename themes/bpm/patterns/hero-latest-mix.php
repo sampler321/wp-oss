@@ -15,10 +15,10 @@
 <div class="wp-block-group is-style-plate"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:post-terms {"term":"category","className":"is-style-tag-boxes"} /-->
 
-<!-- wp:post-date {"format":"j M Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- wp:post-date {"format":"j M Y"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-title {"isLink":true,"fontSize":"xx-large"} /-->
+<!-- wp:post-title {"level":2,"isLink":true,"fontSize":"xx-large"} /-->
 
 <!-- wp:post-terms {"term":"post_tag","className":"is-style-tag-boxes"} /-->
 
@@ -29,7 +29,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing here yet.</p>
+<p class="">Nothing here yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

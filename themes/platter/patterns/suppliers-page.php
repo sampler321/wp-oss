@@ -2,7 +2,7 @@
 /**
  * Title: Page: suppliers and waste
  * Slug: platter/suppliers-page
- * Categories: platter
+ * Categories: pages
  * Block Types: core/post-content
  */
 ?>

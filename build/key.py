@@ -122,6 +122,36 @@ theme = {
     ],
     'customTemplates': [{'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']}],
 }
+
+# ---------------------------------------------------------------- round 2: lightbox, spec rows, pattern categories
+R2_CSS = ('.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}'
+          '.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}'
+          '.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}')
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += R2_CSS
+
+
+def specs(pairs, **attrs):
+    """Label and value rows made from groups, instead of a two-column table."""
+    return group(J(*[row(J(para(k), para(v))) for k, v in pairs]), className='is-style-specs', layout={'type': 'default'}, **attrs)
+
+
+def pattern_categories(cats):
+    lines = ["<?php", "/**", " * Registers this theme's block pattern categories. Nothing else.", " */", "add_action( 'init', function () {"]
+    for slug, label in cats:
+        lines.append("\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', '%s' ) ) );" % (slug, label, THEME['slug']))
+    lines.append('} );')
+    write('functions.php', '\n'.join(lines))
+
+theme['styles']['css'] += ('.is-style-leaders{list-style:none;padding-left:0}.is-style-leaders li{display:flex;align-items:baseline;gap:.4em;padding:.5em 0;border-bottom:1px solid var(--wp--preset--color--muted)}'
+                           '.is-style-leaders li strong{order:2;white-space:nowrap;font-variant-numeric:tabular-nums}'
+                           '.is-style-leaders li::after{content:"";order:1;flex:1 1 1.5rem;border-bottom:2px dotted var(--wp--preset--color--contrast);transform:translateY(-.3em)}')
+
+
+def leaders(items, **attrs):
+    return lst(['%s <strong>%s</strong>' % (a, b) for a, b in items], className='is-style-leaders', **attrs)
+
+
 with open(os.path.join(D, 'theme.json'), 'w') as f:
     json.dump(theme, f, indent='\t', ensure_ascii=False)
 
@@ -220,7 +250,7 @@ SERVICES = [
     ('Lock change between tenants, per door', 'from 220 zł'),
     ('Key cut while you wait (at the workshop)', 'from 15 zł'),
 ]
-pattern('price-table', 'Typical prices', 'services', J(
+pattern('price-table', 'Typical prices (table)', 'prices', J(
     heading('Typical prices', 2),
     table([list(x) for x in SERVICES], head=['Job', 'Price']),
     para('Prices include getting to you anywhere in Wrocław, and VAT. Parts are extra only where it says "from". If someone quotes you "from 49 zł" on the phone, ask what the final bill will be. The Wrocław average for a daytime lockout is about 200 to 250 zł.', fontSize='small')))
@@ -258,7 +288,7 @@ pattern('credentials-row', 'Credentials row', 'about', columns(
 pattern('landlords', 'Landlords and letting agents', 'services', J(
     heading('For landlords and letting agents', 2),
     para('Between tenants I change the cylinders on every door, cut the number of keys you ask for and send you a key record: which key opens what, and how many copies exist. Same week for most flats in Wrocław.'),
-    table([['Cylinder change, per door, class B', '220 zł'], ['Extra keys, per key', '15 zł'], ['Key record and invoice to the agency', 'included']], head=['Job', 'Price']),
+    leaders([('Cylinder change, per door, class B', '220 zł'), ('Extra keys, per key', '15 zł'), ('Key record and invoice to the agency', 'included')]),
     group(J(heading('Evictions', 4), para('I only open a door for an eviction when a bailiff (komornik) is present with the court order. Please don\'t ask me to do it otherwise.')), className='is-style-inset')))
 
 pattern('burglary', 'After a break-in', 'services', J(
@@ -270,10 +300,9 @@ pattern('burglary', 'After a break-in', 'services', J(
 
 pattern('cylinder-advice', 'Cylinder classes, explained', 'text', J(
     heading('Which cylinder do I need?', 2),
-    table([['Class A', 'Cheapest. Easy to pick. Fine for an internal door.'],
-           ['Class B', 'The usual front-door cylinder in Wrocław flats. Most insurers accept it.'],
-           ['Class C', 'Resists picking and drilling for longer. Some insurers ask for it for houses and ground-floor flats.']],
-          head=['Class', 'What it means']),
+    columns((None, J(heading('Class A', 4), para('Cheapest. Easy to pick. Fine for an internal door.'))),
+            (None, J(heading('Class B', 4), para('The usual front-door cylinder in Wrocław flats. Most insurers accept it.'))),
+            (None, J(heading('Class C', 4), para('Resists picking and drilling for longer. Some insurers ask for it for houses and ground-floor flats.'))), className='is-style-credentials'),
     para('A cylinder that sticks out more than 3 mm from the door furniture can be snapped. That is how most break-ins through front doors happen here. I check this for free when I am there for something else.')))
 
 pattern('upvc', 'uPVC doors and windows', 'services', J(
@@ -307,7 +336,7 @@ pattern('no-callout-fee-note', 'Price on the phone note', 'text', group(para(
 
 pattern('workshop-hours', 'Workshop hours (key cutting)', 'text', J(
     heading('Workshop hours', 3),
-    table([['Monday to Friday', '9:00 to 17:00'], ['Saturday', '9:00 to 13:00'], ['Sunday', 'Closed, but I answer the phone for lockouts']]),
+    specs([('Monday to Friday', '9:00 to 17:00'), ('Saturday', '9:00 to 13:00'), ('Sunday', 'Closed, but I answer the phone for lockouts')]),
     para('Key cutting only. Lockouts are day and night, seven days a week.', fontSize='small')))
 
 pattern('what-i-dont-do', 'What I don\'t do', 'text', group(J(
@@ -320,17 +349,96 @@ pattern('door-check', 'Free door check', 'call-to-action', group(J(
     para('On any job I will look at your front door and tell you, in two minutes, whether the cylinder can be snapped and whether the hinges or frame are the weak point. No charge and no hard sell.')),
     className='is-style-warning'))
 
+
+# ---------------------------------------------------------------- round 2 patterns
+pattern('price-list-short', 'Typical prices (short list)', 'prices', J(
+    heading('What it usually costs', 2),
+    leaders([('Door opened without damage, day', '200 zł'), ('Door opened without damage, night', '350 zł'), ('New cylinder, class B, fitted', 'from 180 zł'), ('uPVC mechanism repaired', 'from 250 zł')]),
+    para('Getting to you in Wrocław and VAT included. <a href="/prices/">All prices</a>', fontSize='small')), description='Four prices with dotted leaders. For the home page; the full table lives on the prices page.')
+
+pattern('areas-list', 'Areas and arrival times (list)', 'text', J(
+    heading('How long until I am there', 2),
+    leaders([(a, t) for a, t in AREAS[:4]]),
+    para('<a href="/areas/">Every district and the night times</a>', fontSize='small')))
+
+def job_report(where, happened, did, time, cost):
+    return J(columns((None, J(heading('What happened', 4), para(happened))), (None, J(heading('What I did', 4), para(did))), className='is-style-credentials'),
+             specs([('Where', where), ('Time on site', time), ('Cost', cost)]))
+
+pattern('job-report', 'Job report: what happened, what I did, cost', 'posts', job_report(
+    'Ołbin, third floor, tenement', 'Tenant locked out at 23:40 with the key inside, pan still on the hob.',
+    'Opened the Gerda cylinder with a bypass tool in six minutes. No damage. Turned off the hob first.', '20 minutes', '350 zł, night rate'),
+    description='The layout used for every job write-up in the Jobs category.')
+
+pattern('right-now', 'Locked out right now: the next five minutes', 'text', group(J(
+    heading('Locked out right now?', 2),
+    lst(['Check every door and window you could open without breaking anything. Back doors and balcony doors are often only on the latch.',
+         'If someone else has a key, ringing them is cheaper than ringing me.',
+         'If not, call me. Tell me the address and what the lock looks like.',
+         'Wait somewhere warm. I will ring when I am five minutes away.'], ordered=True)),
+    className='is-style-warning'))
+
+pattern('keys-we-cut', 'Keys I cut', 'services', columns(
+    (None, J(heading('Flat and cylinder keys', 4), para('While you wait, from 15 zł.'))),
+    (None, J(heading('Security keys with a card', 4), para('Bring the card. From 60 zł, two working days.'))),
+    (None, J(heading('Old mortise keys', 4), para('Cut from a blank by hand, from 40 zł. Bring the lock if you have lost every key.'))),
+    align='wide', className='is-style-credentials'))
+
+pattern('night-rates', 'Why nights cost more', 'text', J(
+    heading('Why nights cost more', 3),
+    para('Between 20:00 and 7:00 I am the only one on call, and I get out of bed for it. That is the 150 zł difference. I tell you which rate applies before I set off.')))
+
+pattern('lost-keys', 'Lost your keys?', 'text', J(
+    heading('Lost your keys?', 3),
+    para('If the keys had your address on them, or were in a bag with your ID, change the cylinder the same day. If they were lost somewhere with no clue to where you live, you have more time, but I would still change it within the week.'),
+    para('A class B cylinder, fitted, is from 180 zł.', fontSize='small')))
+
+pattern('testimonials', 'What customers say', 'testimonials', J(
+    quote('Rang at 2am from the stairwell in my socks. He was there in fifteen minutes and told me the price before he picked up the tools.', 'Agnieszka, Nadodrze, March 2026'),
+    quote('We manage 40 flats and Krzysztof has done the changeovers on all of them for six years. The key records alone save us a day a month.', 'Tomasz, letting agency, Krzyki, January 2026')))
+
+pattern('payment', 'How to pay', 'text', specs([
+    ('Card', 'Contactless in the van, any card'), ('BLIK', 'To my phone number'), ('Cash', 'Złoty only'), ('Invoice', 'VAT invoice for every job, emailed the same day')]))
+
+pattern('insurer-note', 'A note for your insurer', 'services', group(J(
+    heading('A note for your insurer', 4),
+    para('After a break-in I write a one-page note: what was damaged, what I fitted, the cylinder class and photos before and after. Insurers in Poland usually ask for exactly this, and it is included in the price.')),
+    className='is-style-inset'))
+
+pattern('commercial', 'Shops and offices', 'services', J(
+    heading('Shops and offices', 2),
+    para('Master key systems for small offices, shutters that stick, and lock changes the evening someone leaves. I have looked after about thirty shops on Świdnicka and in the Rynek since 2012.'),
+    buttons(('Email about a master key system', 'mailto:%s?subject=Master%%20key%%20system' % EMAIL))))
+
+pattern('faq', 'Questions people ask', 'text', J(
+    heading('Questions people ask', 2),
+    details('Will you damage the door?', para('Almost never. I open about nine in ten doors with picks or bypass tools. If I have to drill, it is the cylinder, not the door, and I fit a new one.')),
+    details('Do I need ID?', para('Yes. I need to see that you live there before I open anything. If your ID is inside, I open the door, then you show me.')),
+    details('Can you come to Oleśnica?', para('Yes, with 50 zł for travel. Further than 30 km, ring and ask.')),
+    details('Do you fit smart locks?', para('I fit them if you have bought one, but I would rather sell you a good class C cylinder. Batteries go flat at night too.'))))
+
+pattern('call-strip', 'Call strip (phone and one line)', 'call-to-action', group(J(
+    para('<a href="%s">%s</a>' % (TEL, PHONE), fontFamily='display', fontSize='xx-large', className='phone-big'),
+    para('Day and night. The price on the phone before I set off.')),
+    className='is-style-warning', layout={'type': 'default'}))
+
+pattern('recent-jobs', 'Recent jobs (latest posts)', 'posts,query', J(
+    heading('Recent jobs', 2),
+    query(J(dyn('post-title', isLink=True, level=3, fontSize='medium'), dyn('post-excerpt', moreText='')), per_page=3),
+    para('<a href="/category/jobs/">All job reports</a>', fontSize='small')))
+
 # page patterns
 pattern('lockouts-page', 'Page: lockouts', 'services', J(
+    pattern_ref('right-now'),
     para('I open most front doors in Wrocław without damage in under ten minutes, using picks and bypass tools. If a lock can\'t be opened that way, I drill the cylinder and fit a new one, and you pay for the cylinder.', fontSize='large'),
-    pattern_ref('before-you-call'), pattern_ref('no-callout-fee-note'), pattern_ref('price-table'), pattern_ref('real-locksmith')), block_types='core/post-content')
-pattern('lock-changes-page', 'Page: lock changes', 'services', J(pattern_ref('lock-changes'), pattern_ref('cylinder-advice'), pattern_ref('door-check'), call()), block_types='core/post-content')
+    pattern_ref('before-you-call'), pattern_ref('no-callout-fee-note'), pattern_ref('price-table'), pattern_ref('night-rates'), pattern_ref('real-locksmith'), pattern_ref('faq')), block_types='core/post-content')
+pattern('lock-changes-page', 'Page: lock changes', 'services', J(pattern_ref('lock-changes'), pattern_ref('lost-keys'), pattern_ref('cylinder-advice'), pattern_ref('keys-we-cut'), pattern_ref('door-check'), call()), block_types='core/post-content')
 pattern('upvc-page', 'Page: uPVC repairs', 'services', J(pattern_ref('upvc'), call()), block_types='core/post-content')
-pattern('landlords-page', 'Page: landlords', 'services', J(pattern_ref('landlords'), pattern_ref('credentials-row')), block_types='core/post-content')
-pattern('prices-page', 'Page: prices', 'services', J(pattern_ref('price-table'), pattern_ref('no-callout-fee-note'), pattern_ref('services-list'), pattern_ref('what-i-dont-do')), block_types='core/post-content')
+pattern('landlords-page', 'Page: landlords', 'services', J(pattern_ref('landlords'), pattern_ref('commercial'), pattern_ref('credentials-row'), pattern_ref('testimonials')), block_types='core/post-content')
+pattern('prices-page', 'Page: prices', 'services', J(pattern_ref('price-table'), pattern_ref('no-callout-fee-note'), pattern_ref('night-rates'), pattern_ref('payment'), pattern_ref('services-list'), pattern_ref('what-i-dont-do')), block_types='core/post-content')
 pattern('areas-page', 'Page: areas', 'text', J(pattern_ref('areas-table'), image('wroclaw.jpg', 'A blue Wrocław tram at the Świdnicka stop at night, with street lamps behind', 'Świdnicka at night. After 22:00 I can usually be anywhere in the centre in 15 minutes.')), block_types='core/post-content')
-pattern('burglary-page', 'Page: after a break-in', 'services', J(pattern_ref('burglary'), call()), block_types='core/post-content')
-pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), pattern_ref('workshop-hours'), pattern_ref('real-locksmith'), pattern_ref('credentials-row')), block_types='core/post-content')
+pattern('burglary-page', 'Page: after a break-in', 'services', J(pattern_ref('burglary'), pattern_ref('insurer-note'), pattern_ref('call-strip')), block_types='core/post-content')
+pattern('contact-page', 'Page: contact', 'contact', J(pattern_ref('contact-details'), pattern_ref('workshop-hours'), pattern_ref('payment'), pattern_ref('real-locksmith'), pattern_ref('credentials-row')), block_types='core/post-content')
 print('patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
 # ---------------------------------------------------------------- parts
@@ -362,13 +470,14 @@ M = {'className': 'is-style-page-main'}
 write('templates/front-page.html', page_template(J(
     pattern_ref('big-phone'),
     pattern_ref('before-you-call'),
-    pattern_ref('price-table'),
+    pattern_ref('price-list-short'),
     pattern_ref('real-locksmith'),
     pattern_ref('credentials-row'),
     pattern_ref('services-list'),
-    pattern_ref('areas-table'),
-    pattern_ref('advice-list')), className='is-style-page-main', style={'spacing': {'blockGap': 'var:preset|spacing|60'}}))
-write('templates/home.html', page_template(J(heading('Security advice', 1), para('Short, practical notes. Nothing here is sponsored by a lock maker.'), pattern_ref('post-list')), **M))
+    pattern_ref('areas-list'),
+    pattern_ref('testimonials'),
+    pattern_ref('recent-jobs')), className='is-style-page-main', style={'spacing': {'blockGap': 'var:preset|spacing|60'}}))
+write('templates/home.html', page_template(J(heading('Jobs and advice', 1), para('Write-ups of recent jobs, and short practical notes. Nothing here is sponsored by a lock maker.'), dyn('categories'), pattern_ref('post-list')), **M))
 write('templates/archive.html', page_template(J(dyn('query-title', type='archive', showPrefix=False), dyn('term-description'), pattern_ref('post-list')), **M))
 write('templates/index.html', page_template(J(dyn('query-title', type='archive'), pattern_ref('post-list')), **M))
 write('templates/search.html', page_template(J(dyn('query-title', type='search'), dyn('search', label='Search', showLabel=False, placeholder='Cylinder, uPVC, lockout', buttonText='Search'), pattern_ref('post-list')), **M))
@@ -379,6 +488,7 @@ write('templates/page-wide.html', page_template(J(dyn('post-title', level=1, ali
 write('templates/single.html', page_template(J(
     dyn('post-terms', term='category'), dyn('post-title', level=1), dyn('post-featured-image'), dyn('post-content', layout={'type': 'constrained'}),
     group(J(para('Locked out now? Call <a href="%s">%s</a>.' % (TEL, PHONE), fontSize='large')), className='is-style-rule-top', layout={'type': 'default'})), **M))
+pattern_categories([('prices', 'Prices')])
 print('theme written')
 
 # ---------------------------------------------------------------- demo
@@ -387,6 +497,18 @@ def post(title, cat, img, excerpt, body, date):
 
 
 POSTS = [
+    post('Night lockout in Ołbin, pan on the hob', 'jobs', 'lock.jpg', 'Opened in six minutes at 23:40, no damage. The hob went off first.',
+         J(para('The call came from a neighbour\'s phone: tenant locked out, keys inside, and a pan of potatoes on the hob. Ołbin, third floor, no lift.'),
+           job_report('Ołbin, third floor, tenement', 'Tenant locked out at 23:40 with the key inside and the hob on.', 'Opened the Gerda cylinder with a bypass tool in six minutes. No damage. Hob off, potatoes saved.', '20 minutes', '350 zł, night rate')), '2026-09-24'),
+    post('Cylinder change after a break-in, Krzyki', 'jobs', 'euro.jpg', 'A snapped cylinder, a boarded door overnight and a class C cylinder the next morning.',
+         J(para('The burglars snapped the old cylinder, which stuck out 8 mm from the handle plate. The police were done by midnight and I boarded the door until morning.'),
+           job_report('Krzyki, ground-floor flat', 'Front door forced overnight by snapping a class A cylinder.', 'Boarded up at 00:30. At 8:00 fitted a class C anti-snap cylinder and a new handle set, and wrote the note for the insurer.', '1 hour at night, 40 minutes in the morning', '300 zł boarding, 420 zł cylinder and handles')), '2026-09-02'),
+    post('Twelve flats in a day, Nadodrze', 'jobs', 'keys.jpg', 'A block changing management company. New cylinders, 36 keys, one key record.',
+         J(para('A housing co-operative changed its managing agent and wanted every flat door and the street door on new cylinders the same day.'),
+           job_report('Nadodrze, a 1905 tenement with twelve flats', 'Change of managing agent. Nobody knew how many keys to the old locks were out there.', 'Twelve class B cylinders, a new street-door lock, 36 keys cut and a key record sent to the co-operative.', 'One long day', '3,100 zł including parts')), '2026-08-12'),
+    post('A uPVC balcony door that would not lock, Fabryczna', 'jobs', 'padlock2.jpg', 'A worn gearbox, replaced in an hour. The door had been wedged shut with a chair for a month.',
+         J(para('The handle went down, but the hooks never came out, so the balcony door had been held shut with a kitchen chair since July.'),
+           job_report('Fabryczna, fourth-floor flat', 'Balcony door handle turned but the door would not lock.', 'Replaced the Winkhaus gearbox and adjusted the keeps. The chair went back to the kitchen.', '1 hour', '280 zł including the gearbox')), '2026-07-28'),
     post('Why cheap cylinders get picked', 'advice', 'euro.jpg', 'A 40 zł cylinder and a 200 zł one look the same from outside. Here is the difference.',
          J(para('Most flat doors in Wrocław have a class A or B cylinder that came with the door. Class A ones can be picked in under a minute by anyone who has watched a few videos.'),
            para('A class C cylinder has more pins, anti-drill plates and usually a snap line, so if someone breaks off the outer half, the lock still holds. It costs from 320 zł fitted.'),
@@ -416,7 +538,7 @@ POSTS = [
 
 content = {
     'site': {'title': 'Nowicki, ślusarz', 'tagline': 'Locksmith in Wrocław, day and night'},
-    'categories': [{'slug': 'advice', 'name': 'Advice'}, {'slug': 'areas', 'name': 'Areas'}],
+    'categories': [{'slug': 'jobs', 'name': 'Jobs'}, {'slug': 'advice', 'name': 'Advice'}, {'slug': 'areas', 'name': 'Areas'}],
     'front_page': 'home', 'posts_page': 'advice',
     'pages': [
         {'slug': 'home', 'title': 'Home', 'content': ''},

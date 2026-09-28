@@ -26,6 +26,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Spiritual jazz, hard bop and the odd bit of library music. Ines prices the jazz, so blame her for the Impulse! gatefolds.</p>
+<p class="">Spiritual jazz, hard bop and the odd bit of library music. Ines prices the jazz, so blame her for the Impulse! gatefolds.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Specimen line",
+	"slug": "specimen",
+	"blockTypes": [
+		"core/paragraph",
+		"core/heading"
+	],
+	"styles": {
+		"typography": {
+			"lineHeight": "0.9",
+			"letterSpacing": "-0.03em"
+		},
+		"css": "&{overflow-wrap:anywhere}& a{text-decoration:none;color:inherit}& a:hover{color:var(--wp--preset--color--accent)}"
+	}
+}

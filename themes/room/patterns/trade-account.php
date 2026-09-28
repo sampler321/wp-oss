@@ -2,7 +2,7 @@
 /**
  * Title: Trade account
  * Slug: room/trade-account
- * Categories: shop
+ * Categories: services
  */
 ?>
 <!-- wp:paragraph {"fontSize":"large"} -->
@@ -27,6 +27,64 @@
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>What</th><th>Trade discount</th></tr></thead><tbody><tr><td>Own lamps, fabric, wallpaper</td><td>15% off</td></tr><tr><td>Antiques</td><td>10% off</td></tr><tr><td>Sample cuttings</td><td>Up to ten at a time, free</td></tr><tr><td>Delivery</td><td>Trade rates on request</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What trade accounts get</h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Own lamps, fabric, wallpaper</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>15% off</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Antiques</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>10% off</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Sample cuttings</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Up to ten at a time, free</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Delivery</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Trade rates on request</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Timber chip",
+	"slug": "chip",
+	"blockTypes": [
+		"core/image"
+	],
+	"styles": {
+		"css": "&{margin:0}& img{width:3rem;height:3rem;object-fit:cover;border-radius:50%;outline:1px solid var(--wp--preset--color--contrast)}"
+	}
+}

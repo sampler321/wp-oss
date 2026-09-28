@@ -54,6 +54,18 @@
    "slug": "shipping",
    "title": "Shipping and returns",
    "pattern": "thrift/page-shipping"
+  },
+  {
+   "slug": "services",
+   "title": "Alterations and hire",
+   "pattern": "thrift/page-services",
+   "template": "page-wide"
+  },
+  {
+   "slug": "lookbook",
+   "title": "Lookbook",
+   "pattern": "thrift/page-lookbook",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -61,37 +73,43 @@
    "title": "A van full of French work jackets from Lille",
    "category": "buying-trips",
    "image": "chore-jacket.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aoife drove back from Lille with 60 bleu de travail jackets from a closing uniform supplier. About half are moleskin, the rest cotton drill. They go on the rail in batches of ten, starting this Friday.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Aoife drove back from Lille with 60 bleu de travail jackets from a closing uniform supplier. About half are moleskin, the rest cotton drill. They go on the rail in batches of ten, starting this Friday.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The supplier had kept every size from 40 to 56, so for once we have the same jacket in a run of sizes. Measurements differ a little from jacket to jacket because they shrank differently in the wash.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/fabric-notes\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/lookbook\"} /-->"
   },
   {
    "title": "Mending moth nips in army flannel",
    "category": "on-the-table",
    "image": "shirt-front.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Small moth holes in wool flannel darn well with a single strand of matching wool and a lot of patience. We charge nothing extra for mending, and we note every repair in the listing.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Small moth holes in wool flannel darn well with a single strand of matching wool and a lot of patience. We charge nothing extra for mending, and we note every repair in the listing.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/flaw-notes\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/alterations\"} /-->"
   },
   {
    "title": "Why a 1950s size 14 fits like a modern 10",
    "category": "on-the-table",
    "image": "blouse.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">UK sizing was redrawn several times after the war, and every redraw made the numbers smaller for the same body. That is why we list the label and then ignore it.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">UK sizing was redrawn several times after the war, and every redraw made the numbers smaller for the same body. That is why we list the label and then ignore it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/size-finder\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/compare-tip\"} /-->"
   },
   {
    "title": "The field jacket that came with a letter in the pocket",
    "category": "buying-trips",
    "image": "field-jacket.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">A 1950s M-1943 from a house clearance in Stockport had a folded letter in the inside pocket, dated 1954. We gave the letter back to the family and kept the jacket.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A 1950s M-1943 from a house clearance in Stockport had a folded letter in the inside pocket, dated 1954. We gave the letter back to the family and kept the jacket.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/catalogue-entry\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/dating-guide\"} /-->"
   },
   {
    "title": "Buying day notes: what we took and what we passed on",
    "category": "buying-trips",
    "image": "shop-floor.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty people came up the stairs last Monday. We bought from 23 of them. Most of the no pile was high-street denim from the last ten years, which we cannot sell for more than you paid.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Forty people came up the stairs last Monday. We bought from 23 of them. Most of the no pile was high-street denim from the last ten years, which we cannot sell for more than you paid.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/what-we-buy\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/buying-days\"} /-->"
   },
   {
    "title": "Photographing flaws before anything else",
    "category": "on-the-table",
    "image": "stamp-detail.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every piece gets its flaw photos taken first, before the nice ones. It stops us forgetting, and it means the last pictures in each gallery are the honest ones.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Every piece gets its flaw photos taken first, before the nice ones. It stops us forgetting, and it means the last pictures in each gallery are the honest ones.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/detail-strip\"} /-->\n\n<!-- wp:pattern {\"slug\":\"thrift/one-of-one-note\"} /-->"
+  },
+  {
+   "title": "Costume hire for a BBC period drama",
+   "category": "buying-trips",
+   "image": "jacket-od.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A costume department borrowed thirty army jackets and shirts for six weeks of filming in Salford. Everything came back, two with extra mud.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"thrift/costume-hire\"} /-->"
   }
  ],
  "nav": [
@@ -110,6 +128,14 @@
   {
    "label": "Buying days",
    "url": "/buying-days/"
+  },
+  {
+   "label": "Lookbook",
+   "url": "/lookbook/"
+  },
+  {
+   "label": "Hire",
+   "url": "/services/"
   },
   {
    "label": "Journal",

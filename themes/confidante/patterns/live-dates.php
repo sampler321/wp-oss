@@ -12,7 +12,9 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><strong>Thursday 26 November</strong>, Klondyke Club, Levenshulme. Recording episode 72. £8.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li><strong>Saturday 23 January</strong>, Leeds Library, as part of the book festival. Free, book ahead.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

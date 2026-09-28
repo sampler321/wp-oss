@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Rainbow rows",
+	"slug": "rainbow-rows",
+	"blockTypes": [
+		"core/table"
+	],
+	"styles": {
+		"css": "& tbody tr:nth-child(6n+1) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--coral);padding-left:1.6em!important}& tbody tr:nth-child(6n+2) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--orange);padding-left:1.6em!important}& tbody tr:nth-child(6n+3) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--yellow);padding-left:1.6em!important}& tbody tr:nth-child(6n+4) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--green);padding-left:1.6em!important}& tbody tr:nth-child(6n+5) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--sky);padding-left:1.6em!important}& tbody tr:nth-child(6n+6) td:first-child{box-shadow:inset 12px 0 0 var(--wp--preset--color--pink);padding-left:1.6em!important}& tbody tr.is-pick td, & tbody mark{background:var(--wp--preset--color--yellow);color:var(--wp--preset--color--contrast)}"
+	}
+}

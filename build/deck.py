@@ -27,6 +27,7 @@ def jdump(rel, data):
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    s = s.replace('.', '-')
     s = re.sub(r'[^a-z0-9 _-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     return re.sub(r'-+', '-', s).strip('-')
@@ -114,6 +115,7 @@ theme = {
      {'slug': '80', 'size': 'clamp(5rem, 11vw, 9rem)', 'name': '8'}]},
   'shadow': {'defaultPresets': False, 'presets': [{'slug': 'sticker', 'name': 'Sticker', 'shadow': '4px 4px 0 var(--wp--preset--color--contrast)'}]},
   'border': {'color': True, 'radius': True, 'style': True, 'width': True, 'radiusSizes': [{'slug': 'none', 'size': '0', 'name': 'Square'}]},
+  'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
  },
  'styles': {
   'color': {'background': C('base'), 'text': C('contrast')},
@@ -275,6 +277,23 @@ section('tape', 'Taped note', ['core/group', 'core/paragraph'],
          'spacing': {'padding': {'top': SP('40'), 'bottom': SP('40'), 'left': SP('40'), 'right': SP('40')}},
          'css': '&{transform:rotate(-.8deg);position:relative}&::before{content:"";position:absolute;top:-14px;left:40%;width:110px;height:28px;background:rgba(255,212,0,.75);transform:rotate(-4deg)}'})
 
+section('rows', 'Ruled rows (instead of a table)', ['core/group'],
+        {'css': ('& > .wp-block-group{border-bottom:3px solid var(--wp--preset--color--contrast);padding:.55em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.2rem!important}'
+                 '& > .wp-block-group:first-child{border-top:6px solid var(--wp--preset--color--contrast)}'
+                 '& > .wp-block-group > p{margin:0!important}'
+                 '& > .wp-block-group > p:first-child{font-family:var(--wp--preset--font-family--display);text-transform:uppercase;font-size:var(--wp--preset--font-size--large);line-height:1}')})
+section('rows-inverse', 'Ruled rows on black', ['core/group'],
+        {'css': ('& > .wp-block-group{border-bottom:3px solid var(--wp--preset--color--accent);padding:.55em 0!important;margin:0!important;column-gap:1rem!important}'
+                 '& > .wp-block-group > p{margin:0!important}'
+                 '& > .wp-block-group > p:first-child{font-family:var(--wp--preset--font-family--display);text-transform:uppercase;font-size:var(--wp--preset--font-size--large);color:var(--wp--preset--color--accent-2);line-height:1}')})
+
+
+def rows(items, min_w='8rem', cls='is-style-rows', **kw):
+    n = max(len(r) for r in items)
+    return group(J(*[group(J(*[para(c) for c in r]), layout={'type': 'grid', 'columnCount': n, 'minimumColumnWidth': min_w}) for r in items]),
+                 className=cls, layout={'type': 'default'}, **kw)
+
+
 # ---------------------------------------------------------------- content
 SHOP = {'name': 'Coping', 'addr': '22 Gloucester Road, Brighton BN1 4AD', 'email': 'shop@example.com', 'phone': '01273 496 0552'}
 ALT = {
@@ -343,7 +362,7 @@ pattern('cover', 'Magazine cover (home hero)', 'featured,banner', group(J(
     group(J(
       heading(rn('Free grip on every deck', True), 2, className='is-style-ransom', fontSize='x-large'),
       heading(rn('Which trucks fit your deck', True), 2, className='is-style-ransom', fontSize='x-large'),
-      para('<a href="/team/">Nia Campbell\'s new part is up</a>. <a href="/events/">Bowl jam, Saturday 11 October</a>.', fontSize='large', textColor='accent-2')),
+      para('<a href="/nia-campbell-brighton-part/">Nia Campbell\'s new part is up</a>. <a href="/events/">Bowl jam, Saturday 11 October</a>.', fontSize='large', textColor='accent-2')),
       layout={'type': 'flex', 'orientation': 'vertical', 'justifyContent': 'left'}, style={'spacing': {'blockGap': SP('30')}})),
     layout={'type': 'default'})),
   className='is-style-cover-stack', align='full', layout={'type': 'default'}),
@@ -374,8 +393,8 @@ pattern('truck-size-guide', 'Truck size guide (deck width to truck)', 'shop,feat
      para('Your truck axle should be about the same width as your deck, give or take a quarter inch. Too narrow and it feels twitchy; too wide and the wheels stick out and catch.'),
      para('Not sure? Bring the deck in. We will measure it and hold the trucks against it.', fontSize='small'),
      buttons(('Shop undercarriage kits', '/product-category/undercarriage/')))),
-  (None, table([['7.25 to 7.5in', '114 to 129mm', '50 to 52mm'], ['7.75 to 8.0in', '129 to 139mm', '52 to 54mm'], ['8.0 to 8.25in', '139mm', '53 to 55mm'],
-                ['8.25 to 8.5in', '144 to 149mm', '54 to 56mm'], ['8.5 to 9.0in', '149 to 159mm', '56 to 58mm']], head=['Deck width', 'Truck axle', 'Wheels'])),
+  (None, rows([['7.25 to 7.5in', '114 to 129mm trucks', '50 to 52mm wheels'], ['7.75 to 8.0in', '129 to 139mm trucks', '52 to 54mm wheels'], ['8.0 to 8.25in', '139mm trucks', '53 to 55mm wheels'],
+                ['8.25 to 8.5in', '144 to 149mm trucks', '54 to 56mm wheels'], ['8.5 to 9.0in', '149 to 159mm trucks', '56 to 58mm wheels']])),
   align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}),
   description='The signature: deck width matched to truck axle width and wheel size, linked to the undercarriage kits.')
 
@@ -388,10 +407,10 @@ pattern('undercarriage-kits', 'Undercarriage kits', 'shop', group(J(
 
 pattern('completes-kids', 'Completes and a note on sizes for kids', 'shop', columns(
   (None, J(heading('What size for my kid', 3),
-     table([['Ages 5 to 9, shoe size up to 3', '7.25 to 7.5in'], ['Ages 10 to 13, shoe size 4 to 7', '7.75in'], ['Teenagers and adults', '8.0in and up']], head=['Rider', 'Deck']),
+     rows([['7.25in', 'Ages 5 to 9, shoe size up to 3'], ['7.75in', 'Ages 10 to 13, shoe size 4 to 7'], ['8.0in and up', 'Teenagers and adults']]),
      para('Wider is more stable, narrower is easier to flip. When in doubt, go a size up; they grow.', fontSize='small'))),
   (None, J(image('complete-green.jpg', ALT['complete-green.jpg'], href=purl(P[2]), aspectRatio='4/3', scale='cover'),
-     heading('<a href="%s">Beginner complete, £85</a>' % purl(P[2]), 3), para('Ready to ride out of the door. Helmet and pads on the next rail.'))), align='wide'))
+     heading('<a href="%s">Beginner complete, £85</a>' % purl(P[2]), 3), para('Ready to ride out of the door. Helmets and pads are on the <a href="/completes/">completes page</a>.'))), align='wide'))
 
 TEAM = [('Nia Campbell', 'Regular', 'Street, the Level and anything with a ledge', 'kickflip.jpg'),
         ('Jonny Kerr', 'Goofy', 'Bowl, rides for the shop since 2016', 'venice-grind.jpg'),
@@ -412,17 +431,18 @@ pattern('setup-note', 'We set it up for you', 'shop', group(J(
   className='is-style-tape', layout={'type': 'default'}))
 
 pattern('video-archive', 'Video archive (latest posts)', 'posts,query,featured', group(J(
-  row(J(heading(rn('Shop videos'), 2, className='is-style-ransom'), para('<a href="/videos/">Every video</a>', fontSize='large')), justify='space-between', align='wide'),
+  row(J(heading(rn('Shop videos'), 2, className='is-style-ransom'), para('<a href="/category/videos/">Every video</a>', fontSize='large')), justify='space-between', align='wide'),
   query(J(dyn('post-featured-image', isLink=True, aspectRatio='16/9', scale='cover', className='is-style-halftone'), dyn('post-date'), dyn('post-title', isLink=True, level=3, fontSize='large')),
         per_page=3, layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '15rem'}, align='wide')),
   align='full', className='is-style-red deck-torn', layout={'type': 'constrained'}))
 
 pattern('events', 'Events and contests', 'text', J(
   heading(rn('Next up'), 2, className='is-style-ransom'),
-  table([['Sat 11 Oct', 'Bowl jam', 'Hove Lagoon bowl, 1pm. Under-16s at 1, open at 3. Free.'],
-         ['Thu 23 Oct', 'Video night', 'The shop, 7pm. New team part and three old ones. Bring a chair.'],
-         ['Sun 2 Nov', 'Learn to skate', 'The Level, 10am. Ages 7 to 12, boards and pads lent. £12.'],
-         ['Sat 29 Nov', 'Best trick, flat bar', 'Outside the shop, 2pm. Prize is a deck and a setup.']], head=['When', 'What', 'Where and who'])))
+  rows([['Sat 11 Oct', '<strong>Bowl jam</strong>', 'Hove Lagoon bowl, 1pm. Under-16s at 1, open at 3. Free.'],
+         ['Thu 23 Oct', '<strong>Video night</strong>', 'The shop, 7pm. New team part and three old ones. Bring a chair.'],
+         ['Sun 2 Nov', '<strong>Learn to skate</strong>', 'The Level, 10am. Ages 7 to 12, boards and pads lent. £12.'],
+         ['Sat 29 Nov', '<strong>Best trick, flat bar</strong>', 'Outside the shop, 2pm. Prize is a deck and a setup.']], min_w='9rem'),
+  para('<a href="/events/">Contests, results and the learn-to-skate dates</a>', fontSize='large')))
 
 pattern('notice-contest', 'Notice: contest day', 'banner', group(para('Bowl jam this Saturday, Hove Lagoon, 1pm. Shop closes at 12 so we can all go. Take this bar out on Sunday.', fontSize='large'),
   className='is-style-red', align='full', layout={'type': 'constrained'}, style={'spacing': {'padding': {'top': SP('30'), 'bottom': SP('30')}}}),
@@ -432,7 +452,7 @@ pattern('visit', 'Visit the shop', 'contact', columns(
   (None, image('deck-wall.jpg', ALT['deck-wall.jpg'], aspectRatio='4/3', scale='cover')),
   (None, J(heading(rn('Come by the shop'), 2, className='is-style-ransom'),
      para('%s. Two minutes from the Level, five from the station. There is a flat bar outside that the council keeps asking about.' % SHOP['addr']),
-     table([['Mon', 'Closed'], ['Tue, Wed, Fri', '11am to 6pm'], ['Thu', '11am to 7pm'], ['Sat', '10am to 6pm'], ['Sun', '11am to 4pm']], head=['Day', 'Open']),
+     rows([['Mon', 'Closed'], ['Tue, Wed, Fri', '11am to 6pm'], ['Thu', '11am to 7pm'], ['Sat', '10am to 6pm'], ['Sun', '11am to 4pm']]),
      para('<a href="tel:012734960552">%s</a>, <a href="mailto:%s">%s</a>' % (SHOP['phone'], SHOP['email'], SHOP['email'])))), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}))
 
 pattern('about', 'About the shop', 'about', group(J(
@@ -473,6 +493,198 @@ pattern('surf-rental', 'Surf rental prices', 'shop', J(
   table([['Soft-top board, 2 hours', '£15'], ['Board and wetsuit, 2 hours', '£25'], ['Full day, board and wetsuit', '£45']], head=['What', 'Price']),
   para('From the hut by the West Pier, April to October. Book by phone the day before if the forecast looks good.', fontSize='small')))
 
+
+# ---------------------------------------------------------------- round 2: riders
+RIDERS = [
+ ('nia-campbell', 'Nia Campbell', 'Regular', 'kickflip.jpg', '8.25 shop deck, 144 trucks, 53mm 101a wheels', 'Street. The Level ledges, the seafront rails and anything the council has not skate-stopped yet.', 'Started on a supermarket board in 2015, rode for the shop from 2019. Works Saturdays on the counter.'),
+ ('jonny-kerr', 'Jonny Kerr', 'Goofy', 'venice-grind.jpg', '8.5 shop deck, 149 trucks, 56mm 95a wheels', 'Bowl and anything with coping. Hove Lagoon most evenings.', 'Rides for the shop since 2016. Films and edits most of our videos on a camera older than some of the team.'),
+ ('sol-rivera', 'Sol Rivera', 'Regular', 'surf.jpg', '8.0 shop deck, 139 trucks, 54mm 99a wheels; 7ft 2in mid-length when it is on', 'Transition in summer, surf in winter. Pushes long distances for fun.', 'Teaches the Sunday learn-to-skate sessions at the Level and runs our surf rental hut.'),
+ ('aisha-brown', 'Aisha Brown', 'Goofy', 'couch-ollie.jpg', '8.0 shop deck, 139 trucks, 52mm 101a wheels', 'Flat ground, manuals, and a lot of tricks in small rooms.', 'Joined the team in 2022 after learning to ollie the kerb outside the shop. Filmed her last part entirely indoors.'),
+]
+
+
+def rider_profile(r):
+    slug, name, stance, img, setup, skates, bio = r
+    return columns(
+      ('45%', image(img, 'Team rider %s skating, black and white' % name, aspectRatio='3/4', scale='cover', className='is-style-halftone')),
+      (None, J(heading(rn(name + ' rides ' + stance.lower()), 2, className='is-style-ransom'),
+         para(bio, fontSize='large'),
+         rows([['Stance', stance], ['Skates', skates], ['Setup', setup]], min_w='7rem'),
+         buttons(('See %s\'s setup in the shop' % name.split()[0], '/product-category/decks/')))),
+      align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}})
+
+
+for _r in RIDERS:
+    pattern('rider-profile-' + _r[0].split('-')[0], 'Rider profile: ' + _r[1], 'team', rider_profile(_r),
+            description='One team rider: halftone photo, stance, what they skate and their board setup.')
+pattern('rider-setup', 'Rider setup, part by part', 'team', group(J(
+  heading(rn('What Jonny rides'), 3, className='is-style-ransom'),
+  rows([['Deck', 'Coping shop deck, 8.5in, medium concave'], ['Trucks', '149mm, tightened a quarter turn past loose'], ['Wheels', '56mm, 95a, for rough concrete'],
+        ['Bearings', 'Swiss-style, cleaned when they squeak'], ['Grip', 'Black, cut with a razor at the counter']])),
+  className='is-style-blackout', layout={'type': 'default'}), description='A rider\'s board setup listed part by part.')
+pattern('rider-quote', 'Rider quote', 'team', group(quote('Hove Lagoon at 7am before the scooters wake up. That is the whole secret.', 'Jonny Kerr, team rider since 2016'),
+  className='is-style-red', layout={'type': 'constrained'}))
+pattern('team-grid-query', 'Team riders (latest posts in Team)', 'team,query', group(J(
+  heading(rn('Meet the team'), 2, className='is-style-ransom'),
+  query(J(dyn('post-featured-image', isLink=True, aspectRatio='3/4', scale='cover', className='is-style-halftone'), dyn('post-title', isLink=True, level=3, fontSize='large'), dyn('post-excerpt', excerptLength=14, fontSize='small')),
+        per_page=4, category=None, layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '11rem'}, align='wide')),
+  align='wide', layout={'type': 'default'}), inserter=True)
+pattern('tour-dates', 'Team trips and tour dates', 'team,events', group(J(
+  heading(rn('On the road'), 2, className='is-style-ransom'),
+  rows([['18 to 20 Oct', '<strong>Bristol</strong>', 'Team trip. Filming at Lloyds and the Mound, demo at Skate and Ride on Saturday afternoon.'],
+        ['8 Nov', '<strong>London</strong>', 'Southbank session with the Hackney shops. Meet at 11 by the undercroft.'],
+        ['22 Nov', '<strong>Portsmouth</strong>', 'Bowl jam at the Southsea skatepark. Train from Brighton at 9.08, group ticket if you tell us by Thursday.']], min_w='9rem')),
+  className='is-style-blackout', align='full', layout={'type': 'constrained'}), description='Team trips and demos with dates and where to meet.')
+
+# ---------------------------------------------------------------- round 2: videos
+pattern('video-hero', 'Video part hero (still and credits)', 'videos,banner', group(J(
+  image('stairs.jpg', 'Still from a video part: a skater flips down a set of stairs under trees', aspectRatio='16/9', scale='cover', className='is-style-halftone', align='wide'),
+  row(J(heading(rn('Nia Campbell, Brighton part'), 2, className='is-style-ransom'), para('4 min 12 s', className='is-style-sticker')), justify='space-between', align='wide')),
+  align='wide', layout={'type': 'default'}), description='The opening of a video post: a still, the title and the running time.')
+pattern('video-credits', 'Video credits', 'videos', rows([['Filmed', 'Jonny Kerr, on a VX1000 and a phone'], ['Edited', 'Jonny Kerr, over four evenings'],
+  ['Music', 'Two tracks from Brighton bands, used with permission'], ['Spots', 'The Level, the Madeira Drive rails, Hove Lagoon, a car park we will not name'], ['Premiere', 'Coping, Thursday 23 October, 7pm']]),
+  description='Who filmed, edited and scored a part, and where it was filmed.')
+pattern('video-stills', 'Video stills (lightbox gallery)', 'videos,gallery', gallery([
+  ('kickflip.jpg', 'Still: kickflip on a pavement in front of railings', 'Madeira Drive'), ('rail.jpg', 'Still: the flat rail at the Level', 'The Level'),
+  ('bowl.jpg', 'Still: the graffiti-covered bowl', 'Hove Lagoon'), ('stairs.jpg', 'Still: a flip down stairs under trees', 'Preston Park steps')], columns=4, align='wide', className='is-style-halftone'),
+  description='Four stills from a part. Click any to open it large.')
+pattern('video-tracklist', 'Video part tracklist and clips', 'videos', group(J(
+  heading(rn('In this part'), 3, className='is-style-ransom'),
+  lst(['Opening line down Madeira Drive, three rails in one push', 'The Level ledge, switch crooked to fakie', 'Hove Lagoon, frontside air over the hip', 'Ender: the Preston Park steps, second try after the first went through a hedge'], ordered=True)),
+  className='is-style-tape', layout={'type': 'default'}))
+pattern('video-night', 'Video night call-out', 'videos,events', columns(
+  (None, J(heading(rn('Video night at the shop'), 2, className='is-style-ransom'), para('Thursday 23 October, 7pm. The new part on the wall, three old ones from the tape box, crisps from the corner shop. Free, but bring a chair.', fontSize='large'),
+     buttons(('See all events', '/events/')))),
+  (None, image('couch-ollie.jpg', ALT['couch-ollie.jpg'], aspectRatio='4/3', scale='cover', className='is-style-halftone')), align='full', className='is-style-red'))
+
+# ---------------------------------------------------------------- round 2: completes and products
+COMPLETES = [
+ ('Beginner complete, 7.75in', 'complete-green.jpg', '£85', ['7.75in maple deck', '129mm trucks', '52mm, 99a wheels', 'Standard bearings', 'Free black grip'], P[2]),
+ ('Street complete, 8.0in', 'complete-black.jpg', '£110', ['8.0in shop deck', '139mm trucks', '53mm, 101a wheels', 'Swiss-style bearings', '7/8in hardware'], P[3]),
+ ('Kids complete, 7.25in', 'complete-green.jpg', '£65', ['7.25in deck, 28in long', '114mm trucks', '50mm, 95a wheels', 'For ages 5 to 9'], P[4]),
+ ('Cruiser, 36in', 'cruiser-wall.jpg', '£120', ['36in deck', '180mm reverse kingpin trucks', '65mm, 78a soft wheels', 'For the seafront'], P[7]),
+]
+pattern('shop-built-completes', 'Shop-built completes (with parts lists)', 'shop', group(J(
+  heading(rn('Built at the counter'), 2, className='is-style-ransom'),
+  para('Every complete is put together by one of us, checked, and ridden round the shop floor before it goes out.', fontSize='large'),
+  group(J(*[group(J(image(img, name + ' complete skateboard', href=purl(pp), aspectRatio='4/3', scale='cover'),
+                    row(J(heading('<a href="%s">%s</a>' % (purl(pp), name), 3), para(price, className='is-style-sticker')), justify='space-between'),
+                    lst(parts, fontSize='small')), layout={'type': 'default'}) for name, img, price, parts, pp in COMPLETES]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '13rem'}, style={'spacing': {'blockGap': SP('40')}})),
+  align='wide', layout={'type': 'default'}), description='Completes with the parts list for each, built in the shop.')
+pattern('build-steps', 'How we build your board', 'shop', group(J(
+  heading(rn('How we build it'), 2, className='is-style-ransom'),
+  lst(['Grip goes on first, cut with a fresh blade and filed at the edge.', 'Holes punched from underneath with a screwdriver, so the grip does not tear.', 'Trucks on with the kingpins facing in, bolts tightened in a cross.', 'Bearings pressed in with the truck axle, spacers in, nuts a quarter turn back.', 'Ridden across the shop floor. If it pulls to one side, we start again.'], ordered=True, fontSize='large')),
+  className='is-style-grip', align='full', layout={'type': 'constrained'}))
+pattern('sale-rack', 'Sale rack (was and now)', 'shop,drops', group(J(
+  heading(rn('Sale rack'), 2, className='is-style-ransom'),
+  group(J(*[group(J(image(img, alt, aspectRatio='3/4', scale='cover'), heading(name, 3, fontSize='large'), para(price, className='is-style-sticker')), layout={'type': 'default'}) for img, alt, name, price in [
+     ('carry.jpg', ALT['carry.jpg'], 'Last year\'s cruiser, 34in', 'Was £110, now £75'), ('complete-black.jpg', ALT['complete-black.jpg'], 'Shop-worn street complete', 'Was £110, now £80'),
+     ('surfboards.jpg', ALT['surfboards.jpg'], 'Ex-rental soft-top, 8ft', 'Was £220, now £120'), ('couch-ollie.jpg', ALT['couch-ollie.jpg'], 'Flame tee, misprints', 'Was £25, now £12')]]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '11rem'})),
+  align='wide', layout={'type': 'default'}), description='Reduced stock with the old and new price on a sticker.')
+pattern('drop-announce', 'Drop announcement', 'drops,banner', group(J(
+  heading(rn('New shop decks drop Saturday 10am'), 2, className='is-style-ransom', fontSize='xx-large'),
+  para('Three graphics, 8.0, 8.25 and 8.5. Forty of each. In the shop at 10, online at 12, one per person on the day.', fontSize='large'),
+  buttons(('See the decks', '/product-category/decks/'))),
+  className='is-style-red deck-torn', align='full', layout={'type': 'constrained'}), description='Announce a limited release: what, when, how many and the rules.')
+pattern('drop-rules', 'Drop day rules', 'drops', group(J(
+  heading('Drop day, in plain words', 4),
+  lst(['Queue on Gloucester Road, not across the shop door.', 'One of each graphic per person.', 'Online goes live two hours after the shop opens, so locals get first go.', 'Anything left on Monday goes on the wall at the normal price.'])),
+  className='is-style-tape', layout={'type': 'default'}))
+pattern('gift-card', 'Gift cards', 'shop', columns(
+  (None, J(heading(rn('Gift cards'), 2, className='is-style-ransom'), para('£20, £50 or £100. Spend it on a deck, a setup, a wetsuit rental or a learn-to-skate session. Never runs out.', fontSize='large'))),
+  (None, image('deck-wall.jpg', ALT['deck-wall.jpg'], aspectRatio='16/10', scale='cover')), align='wide', className='is-style-grip'))
+
+# ---------------------------------------------------------------- round 2: spots
+SPOTS = [('The Level', 'Park, ledges and a flat bar. Busy after school, empty at 8am.', 'rail.jpg'),
+         ('Hove Lagoon bowl', 'Concrete bowl by the water, rough surface, bring soft wheels.', 'bowl.jpg'),
+         ('Madeira Drive', 'Seafront rails and long flat runs. Wind from the west makes it hard work.', 'kickflip.jpg'),
+         ('Preston Park steps', 'Nine stairs under the trees. The park keeper is nice if you are.', 'stairs.jpg')]
+pattern('spot-guide', 'Local spot guide', 'spots', group(J(
+  heading(rn('Where to skate in Brighton'), 2, className='is-style-ransom'),
+  group(J(*[group(J(image(img, name + ', a Brighton skate spot', aspectRatio='4/3', scale='cover', className='is-style-halftone'), heading(name, 3), para(note, fontSize='small')), layout={'type': 'default'}) for name, note, img in SPOTS]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'})),
+  align='wide', layout={'type': 'default'}), description='Local spots with a photo and a line of advice each.')
+pattern('spot-map', 'Spot map (numbered list over a map field)', 'spots', columns(
+  ('55%', group(J(*[para('<strong>%s</strong> %s' % (n, where)) for n, where in [('The Level', 'five minutes north of the shop'), ('Hove Lagoon', '25 minutes west along the front'), ('Madeira Drive', 'east of the pier'), ('Preston Park', 'ten minutes up the London Road'), ('Shoreham', 'the long push, 7 miles west')]]),
+               className='is-style-rows deck-map', layout={'type': 'default'})),
+  (None, J(heading(rn('Spot map'), 2, className='is-style-ransom'), para('All within a push or a bus ride of the shop. Ask at the counter for today\'s conditions; we know which ones are wet.', fontSize='large'),
+     para('<a href="https://www.openstreetmap.org/#map=13/50.8300/-0.1400">Open the area in OpenStreetMap</a>'))),
+  align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}), description='A list of spots on a map-grid background, with a link to OpenStreetMap.')
+pattern('spot-etiquette', 'Spot etiquette', 'spots', group(J(
+  heading(rn('Do not get us kicked out'), 3, className='is-style-ransom'),
+  lst(['Take your rubbish with you, including the tape.', 'If someone asks you to move, move. Come back later.', 'No wax on the war memorial, ever.', 'Little kids at the park get the ramps first before 10am.'])),
+  className='is-style-tape', layout={'type': 'default'}))
+
+# ---------------------------------------------------------------- round 2: zine and lookbook
+pattern('zine-cover', 'Zine cover', 'zine,banner', group(J(
+  dyn('site-title', level=0, className='is-style-masthead', isLink=False),
+  heading(rn('Issue 14 out now'), 2, className='is-style-ransom', fontSize='xx-large'),
+  para('Twenty-eight pages, photocopied in the back room. Free with any deck, £2 on its own.', fontSize='large')),
+  className='is-style-red deck-torn', align='full', layout={'type': 'constrained'}), description='The cover of the shop zine: masthead, issue line, price.')
+pattern('zine-spread', 'Zine spread (photo, text, pull quote)', 'zine', columns(
+  ('55%', image('sunset-park.jpg', 'A skater on the coping of a concrete park at sunset, silhouetted', aspectRatio='4/3', scale='cover', className='is-style-halftone')),
+  (None, J(heading(rn('Ten years of the Lagoon bowl'), 2, className='is-style-ransom'),
+     para('The bowl went in with council money and a lot of letters from parents. Jonny was there the day they poured it and still has the concrete splash on his trainers to prove it.'),
+     pullquote('Nobody asked for it to be this rough. It is perfect.', 'Jonny Kerr'))),
+  align='wide', style={'spacing': {'blockGap': {'left': SP('50')}}}), description='An inside spread from the zine.')
+pattern('zine-issues', 'Back issues of the zine', 'zine,shop', group(J(
+  heading(rn('Back issues'), 2, className='is-style-ransom'),
+  group(J(*[group(J(image(img, 'Cover of zine issue %d' % n, aspectRatio='3/4', scale='cover', className='is-style-halftone'), heading('Issue %d' % n, 3), para(t, fontSize='small')), layout={'type': 'default'}) for n, img, t in [
+     (14, 'sunset-park.jpg', 'Ten years of the Lagoon bowl, Nia\'s part in stills'), (13, 'road.jpg', 'Pushing to Shoreham, a map of every kerb'),
+     (12, 'couch-ollie.jpg', 'Indoor tricks, Aisha\'s flat'), (11, 'venice-grind.jpg', 'The Bristol trip, in photocopies')]]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '11rem'})),
+  align='wide', layout={'type': 'default'}), description='A grid of past zine covers.')
+pattern('lookbook', 'Lookbook (big photos, lightbox)', 'gallery,shop', J(
+  heading(rn('Autumn in the shop'), 2, className='is-style-ransom', align='wide'),
+  gallery([('stairs.jpg', 'Flame tee on a skater mid-flip down stairs', 'Flame tee, black'), ('carry.jpg', ALT['carry.jpg'], 'Denim, cruiser, no socks'),
+           ('sunset-park.jpg', 'Silhouette in the park at sunset', 'The last session'), ('cruiser-wall.jpg', 'A cruiser leaning on a white wall', 'Cruiser, 36in')], columns=2, align='wide')),
+  description='Large lookbook photos in pairs. Click to open.')
+pattern('photo-wall', 'Photo wall (halftone gallery)', 'gallery', gallery([
+  ('venice-grind.jpg', ALT['venice-grind.jpg'], ''), ('kickflip.jpg', ALT['kickflip.jpg'], ''), ('bowl.jpg', ALT['bowl.jpg'], ''),
+  ('road.jpg', ALT['road.jpg'], ''), ('stairs.jpg', 'A skater flips down stairs under trees', ''), ('sunset-park.jpg', 'A skater in a concrete park at sunset', '')], columns=3, align='full', className='is-style-halftone'))
+
+# ---------------------------------------------------------------- round 2: contests, stockists, extras
+pattern('contest-results', 'Contest results', 'events', group(J(
+  heading(rn('Best trick results'), 2, className='is-style-ransom'),
+  rows([['First', 'Kai Doherty, 14', 'Kickflip backside lipslide, flat bar. Wins a deck and a setup.'],
+        ['Second', 'Maya Osei, 12', 'Frontside boardslide to fakie. Wins a shop deck.'],
+        ['Third', 'Leo Brandt, 16', 'Tre flip over the bar. Wins a flame tee.']], min_w='8rem')),
+  className='is-style-blackout', align='full', layout={'type': 'constrained'}), description='Placings, names and prizes from a contest.')
+pattern('contest-entry', 'Contest entry details', 'events', columns(
+  (None, J(heading(rn('Enter the best trick'), 2, className='is-style-ransom'), para('Saturday 29 November, 2pm, on the flat bar outside the shop. Sign up at the counter, free. Under-16s and open. Helmets for under-16s.', fontSize='large'))),
+  (None, group(J(heading('Rules', 4), lst(['Three tries each in the first round.', 'Best trick wins, judged by the team.', 'Land it clean or it does not count.', 'Be nice to the neighbours.'])), className='is-style-tape', layout={'type': 'default'})), align='wide'))
+STOCK = [('Brighton', 'Coping, 22 Gloucester Road', 'All widths'), ('Hastings', 'Seafront Surf and Skate, George Street', '8.0 and 8.25'),
+         ('Worthing', 'Board Room, Montague Street', '8.25 and 8.5'), ('Lewes', 'Harvey\'s Yard pop-up, Saturdays', 'Whatever is left')]
+pattern('stockists', 'Stockists of our decks', 'stockists', group(J(
+  heading(rn('Where to find our decks'), 2, className='is-style-ransom'),
+  rows([[t, '<strong>%s</strong>' % w, sz] for t, w, sz in STOCK], min_w='9rem'),
+  para('Want our decks in your shop? Email <a href="mailto:%s?subject=Stocking%%20Coping%%20decks">%s</a>. Minimum order is ten.' % (SHOP['email'], SHOP['email']))),
+  align='wide', layout={'type': 'default'}), description='Other shops that carry the shop\'s own decks.')
+pattern('faq', 'Questions people ask at the counter', 'text', group(J(
+  heading(rn('Asked at the counter'), 2, className='is-style-ransom'),
+  details('Can you re-grip my old deck?', para('Yes, £5, while you wait. Bring it clean.')),
+  details('What size deck for my kid?', para('Look at the size note on the completes page, or bring them in and let them stand on a few.')),
+  details('Do you fix surfboards?', para('Small dings, yes, in about a week. Snapped boards, no.')),
+  details('Can I pay in instalments?', para('Not online. In the shop we can hold a deck for two weeks with a £20 deposit.'))),
+  align='wide', layout={'type': 'constrained', 'justifyContent': 'left'}))
+pattern('reviews', 'Named customer notes', 'testimonials', group(J(
+  heading(rn('Overheard at the till'), 2, className='is-style-ransom'),
+  columns(*[(None, quote(q, c)) for q, c in [('Sol set up my son\'s board and gave him a ten-minute lesson on the pavement outside. He has not stopped since.', 'Rachel, Kemptown, October 2025'),
+     ('Cheapest re-grip in town and they did it while I drank a coffee next door.', 'Dev, Hove, August 2025'),
+     ('Told me not to buy the expensive bearings. Respect.', 'Marta, Moulsecoomb, May 2025')]], align='wide')),
+  align='wide', layout={'type': 'default'}))
+pattern('crew-signup', 'Crew email sign-up', 'call-to-action', group(J(
+  heading(rn('Get the crew email'), 2, className='is-style-ransom'),
+  para('One email a month: drops, contests, new videos. Nothing else.', fontSize='large'),
+  buttons(('Email us to join', 'mailto:%s?subject=Crew%%20email' % SHOP['email']))),
+  className='is-style-grip', align='full', layout={'type': 'constrained'}))
+pattern('hero-red', 'Hero: red cover with a deck', 'banner', columns(
+  (None, J(heading(rn('Fresh shop decks'), 1, className='is-style-ransom', fontSize='xx-large'), para('8.0, 8.25 and 8.5. Free grip. Fitted while you wait.', fontSize='large'), buttons(('See the decks', '/product-category/decks/')))),
+  (None, image('deck-wall.jpg', ALT['deck-wall.jpg'], aspectRatio='4/3', scale='cover')), align='full', className='is-style-red', verticalAlignment='center'),
+  description='An alternative hero for a page or a drop: red field, ransom headline, one photo.')
+
 pattern('post-grid', 'Video grid (inherits query)', 'posts,query', inherit_query(
   J(dyn('post-featured-image', isLink=True, aspectRatio='16/9', scale='cover', className='is-style-halftone'), dyn('post-date'), dyn('post-title', isLink=True, level=2, fontSize='large'), dyn('post-excerpt', excerptLength=20)),
   layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '16rem'}, align='wide'), inserter=False)
@@ -481,8 +693,13 @@ pattern('post-list', 'Results list', 'posts,query', inherit_query(
 
 # pages
 pattern('page-truck-guide', 'Page: truck size guide', 'shop', J(pattern_ref('truck-size-guide'), pattern_ref('undercarriage-kits'), pattern_ref('completes-kids'), pattern_ref('pads-note'), pattern_ref('trade-in'), pattern_ref('setup-note')), block_types='core/post-content')
-pattern('page-team', 'Page: team', 'about', J(pattern_ref('team'), pattern_ref('about')), block_types='core/post-content')
-pattern('page-events', 'Page: events', 'text', J(pattern_ref('events'), pattern_ref('flame-bar')), block_types='core/post-content')
+pattern('page-team', 'Page: team', 'about', J(pattern_ref('team'), pattern_ref('rider-quote'), pattern_ref('tour-dates'), pattern_ref('about')), block_types='core/post-content')
+pattern('page-completes', 'Page: completes', 'shop', J(pattern_ref('shop-built-completes'), pattern_ref('build-steps'), pattern_ref('completes-kids'), pattern_ref('pads-note'), pattern_ref('gift-card')), block_types='core/post-content')
+pattern('page-spots', 'Page: spot guide', 'spots', J(pattern_ref('spot-map'), pattern_ref('spot-guide'), pattern_ref('spot-etiquette'), pattern_ref('photo-wall')), block_types='core/post-content')
+pattern('page-zine', 'Page: zine', 'zine', J(pattern_ref('zine-cover'), pattern_ref('zine-spread'), pattern_ref('zine-issues'), pattern_ref('lookbook')), block_types='core/post-content')
+pattern('page-drops', 'Page: drops and sale', 'drops', J(pattern_ref('drop-announce'), pattern_ref('drop-rules'), pattern_ref('sale-rack'), pattern_ref('crew-signup')), block_types='core/post-content')
+pattern('page-stockists', 'Page: stockists', 'stockists', J(pattern_ref('stockists'), pattern_ref('reviews'), pattern_ref('faq')), block_types='core/post-content')
+pattern('page-events', 'Page: events', 'events', J(pattern_ref('events'), pattern_ref('contest-entry'), pattern_ref('contest-results'), pattern_ref('video-night'), pattern_ref('flame-bar')), block_types='core/post-content')
 pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('workshop-prices'), pattern_ref('surf-corner'), pattern_ref('surf-rental'), pattern_ref('shipping')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- parts
@@ -497,8 +714,8 @@ write('parts/footer.html', group(J(
   dyn('site-title', level=0, className='is-style-masthead', textAlign='center'),
   columns(
     (None, J(heading('Shop', 4), para('%s<br>Tue to Sat from 11, Thu till 7, Sun 11 to 4<br><a href="tel:012734960552">%s</a>' % (SHOP['addr'], SHOP['phone'])))),
-    (None, J(heading('Help', 4), para('<a href="/truck-size-guide/">Truck size guide</a><br><a href="/visit/">Post and returns</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email'])))),
-    (None, J(heading('Watch', 4), para('New team videos on the <a href="/videos/">videos page</a> and on <a href="https://www.youtube.com/">YouTube</a>.'))),
+    (None, J(heading('Help', 4), para('<a href="/truck-size-guide/">Truck size guide</a><br><a href="/completes/">Completes and kids\' sizes</a><br><a href="/visit/">Post and returns</a><br><a href="/stockists/">Stockists</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email'])))),
+    (None, J(heading('Read and watch', 4), para('<a href="/category/videos/">Team videos</a><br><a href="/category/team/">The riders</a><br><a href="/zine/">The zine</a><br><a href="/drops/">Drops and sale</a><br><a href="/news/">Shop news</a>'))),
     align='wide'),
   para('Demo photographs are CC0 and public domain images from Wikimedia Commons and Unsplash, used as stand-ins.', fontSize='x-small', align='wide')),
   tag='footer', align='full', className='is-style-blackout deck-torn-top', layout={'type': 'constrained'},
@@ -514,15 +731,19 @@ def tpl(name, inner):
     write('templates/%s.html' % name, J(template_part('header', 'header'), inner, template_part('footer', 'footer')))
 
 
-tpl('front-page', group(J(pattern_ref('cover'), pattern_ref('deck-wall'), pattern_ref('truck-size-guide'), pattern_ref('team'),
-    pattern_ref('video-archive'), pattern_ref('events'), pattern_ref('visit')), tag='main', layout={'type': 'constrained'},
+tpl('front-page', group(J(pattern_ref('cover'), pattern_ref('deck-wall'), pattern_ref('drop-announce'), pattern_ref('truck-size-guide'), pattern_ref('team'),
+    pattern_ref('video-archive'), pattern_ref('spot-guide'), pattern_ref('events'), pattern_ref('zine-cover'), pattern_ref('visit')), tag='main', layout={'type': 'constrained'},
     style={'spacing': {'blockGap': SP('70'), 'padding': {'bottom': SP('80')}}}))
 tpl('page', main(J(dyn('post-title', level=1, className='is-style-ransom'), dyn('post-content', layout={'type': 'constrained'}))))
 tpl('page-wide', main(J(dyn('post-title', level=1, align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1400px'}))))
 tpl('single', main(J(dyn('post-featured-image', align='wide', aspectRatio='16/9', scale='cover', className='is-style-halftone'), dyn('post-date'), dyn('post-title', level=1),
     dyn('post-content', layout={'type': 'constrained'}), dyn('post-terms', term='category', prefix='Filed under '),
     row(J(dyn('post-navigation-link', type='previous', label='Previous', showTitle=True), dyn('post-navigation-link', label='Next', showTitle=True)), justify='space-between', align='wide'))))
-tpl('home', main(J(heading(rn('Shop videos'), 1, align='wide', className='is-style-ransom'), dyn('categories', className='is-style-ransom'), pattern_ref('post-grid'))))
+tpl('home', main(J(heading(rn('Shop news'), 1, align='wide', className='is-style-ransom'), dyn('categories', className='is-style-ransom'), pattern_ref('post-grid'))))
+tpl('category-videos', main(J(heading(rn('Shop videos'), 1, align='wide', className='is-style-ransom'), para('Parts, raw files and trips, filmed by the team. New ones premiere at the shop first.', fontSize='large', align='wide'), pattern_ref('post-grid'))))
+tpl('category-team', main(J(heading(rn('The team'), 1, align='wide', className='is-style-ransom'), para('Four riders, all regulars at the counter. Click through for their setups and parts.', fontSize='large', align='wide'),
+    inherit_query(J(dyn('post-featured-image', isLink=True, aspectRatio='3/4', scale='cover', className='is-style-halftone'), dyn('post-title', isLink=True, level=2, fontSize='large'), dyn('post-excerpt', excerptLength=16, fontSize='small')),
+                  layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'}, align='wide'))))
 tpl('index', main(J(dyn('query-title', type='archive', align='wide'), pattern_ref('post-grid'))))
 tpl('archive', main(J(dyn('query-title', type='archive', showPrefix=False, align='wide'), dyn('term-description', align='wide'), pattern_ref('post-grid'))))
 tpl('search', main(J(dyn('query-title', type='search', align='wide'), dyn('search', label='Search', showLabel=False, placeholder='8.25, bearings, wax', buttonText='Search'), pattern_ref('post-list'))))
@@ -567,34 +788,58 @@ tpl('single-product', main(J(
 print('deck built:', len(os.listdir(os.path.join(D, 'patterns'))), 'patterns')
 
 # ---------------------------------------------------------------- demo
+VIDEOS = [
+ ('Nia Campbell, Brighton part', 'stairs.jpg', ['Four minutes, filmed over one summer between the Level and the seafront. Nia wanted every trick on a spot you can reach by bus from the shop, and she got close.',
+   'The ender took two sessions. The first try went through a hedge. The second is in the part.'],
+   [['Filmed', 'Jonny Kerr, VX1000 and a phone'], ['Edited', 'Jonny Kerr'], ['Music', 'Two tracks by a Brighton band, with permission'], ['Length', '4 min 12 s'], ['Premiere', 'Coping, Thursday 23 October, 7pm']], True),
+ ('Jonny Kerr at Hove Lagoon, raw files', 'venice-grind.jpg', ['Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete and the odd gull.',
+   'Filmed over three mornings at 7am, before the scooters wake up.'],
+   [['Filmed', 'Sol Rivera, from the deck of the bowl'], ['Edited', 'Not really'], ['Length', '12 min'], ['Spot', 'Hove Lagoon bowl']], False),
+ ('Couch session with Aisha', 'couch-ollie.jpg', ['Aisha filmed a whole part in her flat during the rain in March. Manuals down the hall, ollies over the sofa, a kickflip into the kitchen that her landlord has not seen.',
+   'The couch did not survive. The part did.'],
+   [['Filmed', 'Aisha Brown and her flatmate Remi'], ['Music', 'Remi, on a keyboard from a charity shop'], ['Length', '2 min 40 s'], ['Spot', 'A flat in Moulsecoomb']], True),
+ ('Pushing to Shoreham and back', 'road.jpg', ['Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday and two stops for chips.',
+   'If you want to try it, go west in the morning so the wind is behind you on the way home.'],
+   [['Filmed', 'Jonny Kerr, from a borrowed bike'], ['Board', 'Cruiser, 36in, 65mm 78a wheels'], ['Distance', '14 miles'], ['Length', '6 min']], False),
+]
+RIDER_POSTS = [
+ ('Nia Campbell', 'kickflip.jpg', 'nia', ['Nia is the one behind the counter on Saturdays, fitting grip and arguing about wheel sizes. Her new part premieres on 23 October.']),
+ ('Jonny Kerr', 'venice-grind.jpg', 'jonny', ['Jonny has ridden for the shop since 2016 and films most of what we put out. If you see a man in a bowl with a camera on a stick, say hello.']),
+ ('Sol Rivera', 'surf.jpg', 'sol', ['Sol runs the learn-to-skate sessions at the Level on Sundays and the surf rental hut in summer. Good at explaining things slowly.']),
+ ('Aisha Brown', 'couch-ollie.jpg', 'aisha', ['Aisha learned to ollie on the kerb outside the shop and joined the team two years later. She skates flat ground and small rooms better than anyone we know.']),
+]
+posts = []
+for title, img, paras_, credits, stills in VIDEOS:
+    posts.append({'title': title, 'category': 'videos', 'image': img, 'excerpt': paras_[0][:140].rsplit(' ', 1)[0] + '.', 'content': J(
+        *[para(t) for t in paras_], heading('Credits', 2), rows(credits), pattern_ref('video-stills') if stills else pattern_ref('video-tracklist'), pattern_ref('video-night'))})
+for name, img, key, paras_ in RIDER_POSTS:
+    posts.append({'title': name, 'category': 'team', 'image': img, 'excerpt': paras_[0], 'content': J(*[para(t) for t in paras_], pattern_ref('rider-profile-' + key), pattern_ref('rider-quote') if key == 'jonny' else pattern_ref('tour-dates'))})
+posts += [
+  {'title': 'Our own decks are back from the press', 'category': 'shop-news', 'image': 'deck-wall.jpg', 'content': J(
+     para('Two widths, 8.0 and 8.5, pressed in Portugal from seven-ply maple. Forty of each graphic, free grip, fitted at the counter.'), pattern_ref('drop-rules'), pattern_ref('lookbook'))},
+  {'title': 'Winter surf days, what we rent and when', 'category': 'shop-news', 'image': 'surf.jpg', 'content': J(
+     para('Board rental from the seafront hut runs until the end of October, then by appointment. Winter wetsuits are 5/4, and we have eight to lend.'), pattern_ref('surf-rental'), pattern_ref('surf-corner'))},
+]
 demo = {
  'site': {'title': 'Coping', 'tagline': 'Skate and surf, Gloucester Road, Brighton'},
- 'categories': [{'slug': 'videos', 'name': 'Videos'}, {'slug': 'shop-news', 'name': 'Shop news'}],
- 'front_page': 'home', 'posts_page': 'videos',
+ 'categories': [{'slug': 'videos', 'name': 'Videos', 'description': 'Parts, raw files and trips filmed by the team.'}, {'slug': 'team', 'name': 'Team', 'description': 'The four riders who skate for the shop.'}, {'slug': 'shop-news', 'name': 'Shop news'}],
+ 'front_page': 'home', 'posts_page': 'news',
  'pages': [
-  {'slug': 'home', 'title': 'Home', 'content': ''}, {'slug': 'videos', 'title': 'Videos', 'content': ''},
+  {'slug': 'home', 'title': 'Home', 'content': ''}, {'slug': 'news', 'title': 'News', 'content': ''},
+  {'slug': 'completes', 'title': 'Completes', 'pattern': 'deck/page-completes', 'template': 'page-wide'},
   {'slug': 'truck-size-guide', 'title': 'Truck size guide', 'pattern': 'deck/page-truck-guide', 'template': 'page-wide'},
-  {'slug': 'team', 'title': 'Team', 'pattern': 'deck/page-team', 'template': 'page-wide'},
+  {'slug': 'team', 'title': 'About the team', 'pattern': 'deck/page-team', 'template': 'page-wide'},
   {'slug': 'events', 'title': 'Events', 'pattern': 'deck/page-events', 'template': 'page-wide'},
+  {'slug': 'spots', 'title': 'Spot guide', 'pattern': 'deck/page-spots', 'template': 'page-wide'},
+  {'slug': 'zine', 'title': 'Zine', 'pattern': 'deck/page-zine', 'template': 'page-wide'},
+  {'slug': 'drops', 'title': 'Drops and sale', 'pattern': 'deck/page-drops', 'template': 'page-wide'},
+  {'slug': 'stockists', 'title': 'Stockists', 'pattern': 'deck/page-stockists', 'template': 'page-wide'},
   {'slug': 'visit', 'title': 'Visit', 'pattern': 'deck/page-visit', 'template': 'page-wide'},
  ],
- 'posts': [
-  {'title': 'Nia Campbell, Brighton part', 'category': 'videos', 'image': 'kickflip.jpg', 'content': J(
-     para('Four minutes, filmed over one summer between the Level and the seafront. Filmed and edited by Jonny Kerr. Premiere night at the shop on 23 October.'),
-     para('<a href="https://www.youtube.com/">Watch it on YouTube</a>'))},
-  {'title': 'Jonny Kerr at Hove Lagoon, raw files', 'category': 'videos', 'image': 'venice-grind.jpg', 'content': J(
-     para('Twelve minutes of unedited bowl runs, slams included. No music, just wheels on concrete.'))},
-  {'title': 'Couch session with Aisha', 'category': 'videos', 'image': 'couch-ollie.jpg', 'content': J(
-     para('Aisha filmed a whole part in her flat during the rain in March. The couch did not survive.'))},
-  {'title': 'Our own decks are back from the press', 'category': 'shop-news', 'image': 'deck-wall.jpg', 'content': J(
-     para('Two widths, 8.0 and 8.5, pressed in Portugal from seven-ply maple. Free grip, fitted at the counter.'))},
-  {'title': 'Pushing to Shoreham and back', 'category': 'videos', 'image': 'road.jpg', 'content': J(
-     para('Sol pushed a cruiser along the coast road to Shoreham and back, 14 miles. We filmed from a bike. It took most of a Sunday.'))},
-  {'title': 'Winter surf days, what we rent and when', 'category': 'shop-news', 'image': 'surf.jpg', 'content': J(
-     para('Board rental from the seafront hut runs until the end of October, then by appointment. Winter wetsuits are 5/4, and we have eight to lend.'))},
- ],
- 'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'Decks', 'url': '/product-category/decks/'}, {'label': 'Truck guide', 'url': '/truck-size-guide/'},
-         {'label': 'Team', 'url': '/team/'}, {'label': 'Videos', 'url': '/videos/'}, {'label': 'Events', 'url': '/events/'}, {'label': 'Visit', 'url': '/visit/'}],
+ 'posts': posts,
+ 'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'Completes', 'url': '/completes/'}, {'label': 'Truck guide', 'url': '/truck-size-guide/'},
+         {'label': 'Team', 'url': '/category/team/'}, {'label': 'Videos', 'url': '/category/videos/'}, {'label': 'Events', 'url': '/events/'},
+         {'label': 'Spots', 'url': '/spots/'}, {'label': 'Zine', 'url': '/zine/'}, {'label': 'Drops', 'url': '/drops/'}, {'label': 'Visit', 'url': '/visit/'}],
  'currency': 'GBP',
  'products': [{'name': p[0], 'price': p[3], 'image': p[1], 'category': p[2], 'sku': 'CPG-%d' % (200 + i), 'stock': p[4], 'short': p[5],
                'description': J(para(p[5]), spec(p))} for i, p in enumerate(P)],

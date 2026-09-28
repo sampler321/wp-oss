@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">In our red paper with a black sticker, at the till or on online orders if you tick the box. Takes two minutes. We don't do bows.</p>
+<p>In our red paper with a black sticker, at the till or on online orders if you tick the box. Takes two minutes. We don't do bows.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

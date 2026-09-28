@@ -2,16 +2,16 @@
 /**
  * Title: Gift vouchers
  * Slug: scoop/gift-voucher
- * Categories: scoop,shop
+ * Categories: tubs
  */
 ?>
-<!-- wp:group {"className":"is-style-mist","style":{"spacing":{"padding":{"left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-group is-style-mist" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
+<!-- wp:group {"className":"is-style-mist","style":{"spacing":{"padding":{"left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-mist" style="padding-left:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Gift vouchers</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>£10, £20 or £40, printed on card and posted, or emailed as a PDF. Valid for a year in the shop or on tubs. Email us with the amount and where to send it.</p>
+<p class="">£10, £20 or £40, printed on card and posted, or emailed as a PDF. Valid for a year in the shop or on tubs. Email us with the amount and where to send it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

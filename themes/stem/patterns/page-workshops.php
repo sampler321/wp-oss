@@ -8,4 +8,8 @@
 ?>
 <!-- wp:pattern {"slug":"stem/workshops"} /-->
 
+<!-- wp:pattern {"slug":"stem/workshop-detail"} /-->
+
+<!-- wp:pattern {"slug":"stem/private-workshops"} /-->
+
 <!-- wp:pattern {"slug":"stem/about"} /-->

@@ -7,13 +7,13 @@
  */
 ?>
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","align":"full","className":"crate-hero"} -->
-<figure class="wp-block-image alignfull size-large crate-hero"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A black LP playing on a white turntable, the tone arm in the groove"/></figure>
+<figure class="wp-block-image size-large alignfull crate-hero"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A black LP playing on a white turntable, the tone arm in the groove"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:site-title {"isLink":false,"className":"is-style-wordmark crate-pull"} /-->
+<!-- wp:site-title {"level":1,"className":"is-style-wordmark crate-pull","isLink":false} /-->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"className":"is-style-label"} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"className":"is-style-label"} -->
 <p class="is-style-label">Used and new records, graded by ear</p>
 <!-- /wp:paragraph -->
 

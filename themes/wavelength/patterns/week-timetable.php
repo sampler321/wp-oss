@@ -57,6 +57,6 @@
 <!-- /wp:table --></details>
 <!-- /wp:details -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-small-font-size">The weekday programmes run every weekday. Click a day to open it.</p>
 <!-- /wp:paragraph -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Typical prices
+ * Title: Typical prices (table)
  * Slug: key/price-table
- * Categories: services
+ * Categories: prices
  */
 ?>
 <!-- wp:heading -->

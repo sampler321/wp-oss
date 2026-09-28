@@ -13,21 +13,13 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Cut 2cm off the stems at an angle before they go in water.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Clean vase, cool water, and change it every two days.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Pull off any leaves that sit below the water line.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Keep them away from radiators, sunny windows and the fruit bowl.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Tulips keep growing. Dahlias drink a lot. Peonies open fast in warm rooms.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->

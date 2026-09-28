@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Swatch: coral",
+	"slug": "swatch-coral",
+	"blockTypes": [
+		"core/group",
+		"core/column",
+		"core/columns"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|coral",
+			"text": "var:preset|color|contrast"
+		},
+		"border": {
+			"radius": "28px",
+			"width": "3px",
+			"style": "solid",
+			"color": "var:preset|color|contrast"
+		},
+		"shadow": "var:preset|shadow|sticker",
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|50",
+				"bottom": "var:preset|spacing|50",
+				"left": "var:preset|spacing|50",
+				"right": "var:preset|spacing|50"
+			}
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			}
+		}
+	}
+}

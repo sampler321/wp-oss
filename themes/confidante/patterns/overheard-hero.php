@@ -7,13 +7,13 @@
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-tomato","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|50","margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-tomato" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60);margin-top:0"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
-<p class="has-small-font-size">Ama, episode 63</p>
+<section class="wp-block-group alignfull is-style-tomato" style="margin-top:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"has-small-font-size","style":{"typography":{"fontWeight":"700"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:700">Ama, episode 63</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"display","fontFamily":"display","style":{"typography":{"lineHeight":"0.98"}}} -->
-<p class="has-display-font-size has-display-font-family">“I earn more than my dad ever did, and I still check my balance before I buy a coffee.”</p>
+<!-- wp:paragraph {"className":"has-display-font-size has-display-font-family","style":{"typography":{"lineHeight":"0.98"}},"fontSize":"display"} -->
+<p class="has-display-font-size has-display-font-family" style="line-height:0.98">“I earn more than my dad ever did, and I still check my balance before I buy a coffee.”</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->

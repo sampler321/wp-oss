@@ -61,6 +61,7 @@ theme = {
         {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 8.5rem)', 'name': '8'}]},
     'shadow': {'defaultPresets': False, 'presets': [{'slug': 'hard', 'name': 'Hard offset', 'shadow': '6px 6px 0 0 var(--wp--preset--color--contrast)'}]},
     'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+    'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
   },
   'styles': {
     'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -187,10 +188,21 @@ section('tape', 'Sticky note (yellow, ruled)', ['core/group', 'core/paragraph'],
 section('framed', 'Framed image', ['core/image', 'core/post-featured-image'], {
     'border': {'width': '3px', 'style': 'solid', 'color': 'var:preset|color|contrast', 'radius': '14px'},
     'css': '&{overflow:hidden}& img{display:block}'})
+section('spec-row', 'Spec row (label and values)', ['core/group'], {
+    'border': {'bottom': {'width': '2px', 'style': 'solid', 'color': 'var:preset|color|contrast'}},
+    'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}, 'blockGap': 'var:preset|spacing|30'},
+    'css': '&>*{margin:0!important}&>:first-child{flex:1 1 9rem}&>:last-child{text-align:right}'})
 section('card-list', 'Build doc list', ['core/post-template'], {
     'css': '&>li{border-top:3px solid var(--wp--preset--color--contrast);padding-top:var(--wp--preset--spacing--30)}'})
 
 # ------------------------------------------------------------------ helpers
+def srows(rows, bold_first=True):
+    out = []
+    for r in rows:
+        cells = [para('<strong>%s</strong>' % r[0] if bold_first else r[0])] + [para(c) for c in r[1:]]
+        out.append(group(J(*cells), className='is-style-spec-row', layout={'type': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'space-between'}))
+    return J(*out)
+
 PAD = {'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}
 def sect(inner, **a):
     return group(inner, align='wide', layout={'type': 'default'}, style=PAD, **a)
@@ -278,10 +290,10 @@ write('templates/404.html', page_template(J(
 # ------------------------------------------------------------------ home patterns
 pattern('hero-bench', 'Hero: build it or we build it', 'featured', group(
     columns(('55%', J(
-        heading('Pedals you solder yourself. Or we do it.', 1, fontSize='display'),
-        para('Fuzz, drive, delay and tremolo from a railway arch in Leeds. Every pedal comes assembled, as a full DIY kit, or as a bare board with the parts list.', fontSize='large'),
+        heading('Pedals, kits and bare boards from a Leeds railway arch', 1, fontSize='xx-large'),
+        para('Fuzz, drive, delay and tremolo. Every circuit comes assembled, as a full DIY kit you solder yourself, or as a bare board with the parts list. New this month: the Moor Echo delay.', fontSize='large'),
         buttons(('Shop pedals and kits', '/shop/'), ('Read a build doc', '/build-docs/', {'className': 'is-style-outline'})))),
-            ('45%', image('draw-coal-tit.jpg', 'Drawing of the Coal Tit fuzz: an orange 1590B enclosure with Level and Fuzz knobs, an LED and a footswitch, on a teal ground with dimension lines', lightbox=False)),
+            ('45%', image('draw-coal-tit.jpg', 'Drawing of the Coal Tit fuzz: an orange 1590B enclosure with Level and Fuzz knobs, an LED and a footswitch, on a teal ground with dimension lines')),
             align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
     align='full', className='is-style-flat-teal', layout={'type': 'constrained'},
     style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}}),
@@ -308,7 +320,7 @@ LEGEND_ROWS = [['Power', '9V DC, centre negative, 2.1 mm'], ['Current draw', '18
 
 pattern('spec-legend', 'Docs and power legend', 'patchbay-product', group(J(
     heading('Moor Echo, panel legend', 4),
-    table(LEGEND_ROWS)), className='is-style-legend', layout={'type': 'default'}))
+    srows(LEGEND_ROWS)), className='is-style-legend', layout={'type': 'default'}))
 
 pattern('kit-or-assembled', 'Assembled or DIY kit, with prices', 'patchbay-product', columns(
     (None, group(J(heading('Assembled', 3), para('Built, tested and boxed by Rob. Ships in 3 working days.'), para('<strong>£169</strong>', fontSize='x-large'),
@@ -323,14 +335,15 @@ DOCS = [['Build doc', 'v2.1', 'March 2026', '<a href="/manuals/">PDF, 3.4 MB</a>
         ['Drill template', 'v1.0', 'October 2025', '<a href="/manuals/">PDF, print at 100%</a>']]
 pattern('docs-list', 'Versioned docs list', 'patchbay-product', J(
     heading('Documents', 4),
-    table(DOCS, head=['Document', 'Version', 'Date', 'File'])))
+    srows([[d, '%s, %s' % (v, dt), f] for d, v, dt, f in DOCS])))
 
 pattern('new-release', 'New release: drawing, legend, prices and docs', 'featured,patchbay-product', sect(
-    columns(('46%', J(image('draw-moor-echo.jpg', 'Drawing of the Moor Echo delay: a yellow 1590B enclosure with Time, Repeats and Mix knobs on a red ground', lightbox=False, className='is-style-framed'))),
+    columns(('46%', J(image('draw-moor-echo.jpg', 'Drawing of the Moor Echo delay: a yellow 1590B enclosure with Time, Repeats and Mix knobs on a red ground', className='is-style-framed'))),
             ('54%', J(
                 heading('New this month: Moor Echo', 2),
                 para('A PT2399 delay with 30 to 600 ms of repeats that get darker as they go. The Mix knob goes to fully wet, and yes, it will self-oscillate if you push Repeats past three o\'clock.'),
                 pattern_ref('spec-legend'),
+                pattern_ref('limited-colourway'),
                 pattern_ref('kit-or-assembled'),
                 pattern_ref('docs-list'))),
             align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
@@ -387,10 +400,10 @@ pattern('build-steps', 'Build steps', 'patchbay-kits', J(
 
 pattern('controls-list', 'Controls list', 'patchbay-product', J(
     heading('Controls', 4),
-    table([['Time', '30 ms fully left, 600 ms fully right'], ['Repeats', 'One echo to endless; self-oscillates past three o\'clock'], ['Mix', 'Dry to fully wet']])))
+    srows([['Time', '30 ms fully left, 600 ms fully right'], ['Repeats', 'One echo to endless; self-oscillates past three o\'clock'], ['Mix', 'Dry to fully wet']])))
 
 pattern('demo-video', 'Demo video card', 'patchbay-docs', group(
-    columns(('40%', image('amp.jpg', 'Black Fender Champion II 50 amplifier with its control panel along the top', lightbox=False, className='is-style-framed')),
+    columns(('40%', image('amp.jpg', 'Black Fender Champion II 50 amplifier with its control panel along the top', className='is-style-framed')),
             ('60%', J(heading('Watch the demo', 3), para('Four minutes, a Telecaster into a Champion with no other pedals. Knobs at noon for the first minute, then Rob turns things.'),
                       buttons(('Play the demo on YouTube', 'https://www.youtube.com/'))) ), verticalAlignment='center'),
     className='is-style-enclosure-yellow', layout={'type': 'default'}),
@@ -414,13 +427,12 @@ pattern('kits-compare', 'Assembled, kit or PCB compared', 'patchbay-kits', table
 pattern('kits-page', 'Page: how kits work', 'patchbay-kits', J(
     para('Every Patchbay circuit is sold three ways. The electronics are identical; the difference is who holds the iron.', fontSize='large'),
     pattern_ref('kits-compare'),
-    group(J(heading('Difficulty levels', 2),
-            table([['Beginner', 'Under 30 parts, no off-board wiring', 'Coal Tit, Mill Boost'],
-                   ['Intermediate', '30 to 60 parts, one IC, some wiring', 'Ginnel, Moor Echo'],
-                   ['Involved', 'Optical parts, trimmer set-up, a scope helps', 'Tram Stop, Snicket']],
-                  head=['Level', 'What that means', 'Kits'])), layout={'type': 'default'}, style=PAD),
+    pattern_ref('difficulty-levels'),
     pattern_ref('tools-you-need'),
     pattern_ref('substitution-note'),
+    pattern_ref('build-service'),
+    pattern_ref('soldering-class'),
+    pattern_ref('which-fuzz'),
     group(J(heading('If it does not work', 2),
             para('Write to <a href="mailto:builds@example.com">builds@example.com</a> with photos of both sides of the board. We have never charged for build help. If we cannot find it by email, post it to us and we fix it for £15 plus return postage.')),
           layout={'type': 'default'}, style=PAD)), block_types='core/post-content')
@@ -438,8 +450,7 @@ pattern('manuals-table', 'Manuals and build docs, versioned', 'patchbay-support'
 
 pattern('retired-manuals', 'Retired pedals, docs still online', 'patchbay-support', group(J(
     heading('Retired, still supported', 3),
-    table([['Viaduct reverb', '2021 to 2023', 'Build doc v1.3, 2023-02'], ['Back-to-back fuzz', '2019 to 2022', 'Build doc v2.0, 2022-05'], ['First Ginnel, version 1', '2019 to 2021', 'Build doc v1.1, 2021-01']],
-          head=['Pedal', 'Sold', 'Last document']),
+    srows([['Viaduct reverb', 'sold 2021 to 2023', 'build doc v1.3, February 2023'], ['Back-to-back fuzz', 'sold 2019 to 2022', 'build doc v2.0, May 2022'], ['First Ginnel, version 1', 'sold 2019 to 2021', 'build doc v1.1, January 2021']]),
     para('We keep every manual online. If you bought a retired kit second-hand, it is still covered by build help.')),
     className='is-style-tape', layout={'type': 'default'}))
 
@@ -464,27 +475,27 @@ pattern('rma-steps', 'Repair steps', 'patchbay-support', J(
 
 pattern('warranty-terms', 'Warranty terms by range', 'patchbay-support', group(J(
     heading('Warranty', 3),
-    table([['Assembled pedals', '2 years, parts and labour', 'Extended to 3 years if you register it'], ['DIY kits', '1 year on parts', 'Build help is free for life'], ['PCBs', 'Board faults only', 'Solder mistakes are yours, sorry']],
-          head=['Range', 'Cover', 'Note'])), className='is-style-legend', layout={'type': 'default'}))
+    srows([['Assembled pedals', '2 years, parts and labour', 'Extended to 3 years if you register it'], ['DIY kits', '1 year on parts', 'Build help is free for life'], ['PCBs', 'Board faults only', 'Solder mistakes are yours, sorry']])),
+    className='is-style-legend', layout={'type': 'default'}))
 
 pattern('repairs-page', 'Page: repairs', 'patchbay-support', J(
-    pattern_ref('troubleshooting-table'), pattern_ref('rma-steps'), pattern_ref('warranty-terms')), block_types='core/post-content')
+    pattern_ref('troubleshooting-table'), pattern_ref('rma-steps'), pattern_ref('warranty-terms'), pattern_ref('repair-prices'), pattern_ref('pedal-faq')), block_types='core/post-content')
 
 pattern('dealers-by-country', 'Dealers by country', 'patchbay-support', J(
     heading('United Kingdom', 3),
-    table([['Leeds', 'Northern Tone Supply, Call Lane', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
+    srows([['Leeds', 'Northern Tone Supply, Call Lane', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Manchester', 'Brick Wall Guitars, Oldham Street', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Glasgow', 'Saltmarket Music', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Bristol', 'Stokes Croft Sound', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
-           ['London', 'Denmark Street Pedal Room', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']], head=['City', 'Shop', 'Link']),
+           ['London', 'Denmark Street Pedal Room', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']]),
     heading('Ireland', 3),
-    table([['Dublin', 'Capel Street Pedals', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']], head=['City', 'Shop', 'Link']),
+    srows([['Dublin', 'Capel Street Pedals', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']]),
     heading('Netherlands and Germany', 3),
-    table([['Rotterdam', 'Witte de With Gitaren', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
+    srows([['Rotterdam', 'Witte de With Gitaren', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Utrecht', 'Oudegracht Effects', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Berlin', 'Kreuzberg Tretminen', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
            ['Hamburg', 'Schanze Sound', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>'],
-           ['Cologne', 'Ehrenfeld Pedalwerk', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']], head=['City', 'Shop', 'Link'])))
+           ['Cologne', 'Ehrenfeld Pedalwerk', '<a href="https://example.com/search?q=patchbay">Their Patchbay stock</a>']])))
 
 pattern('dealers-page', 'Page: dealers', 'patchbay-support', J(
     para('Shops that keep Patchbay pedals in stock. Call before you travel; they sell out of Ginnels before anything else.', fontSize='large'),
@@ -504,7 +515,7 @@ pattern('bench-quote', 'Quote from a builder', 'patchbay-about', quote(
     'Built the Ginnel kit with my daughter over two evenings. One transistor in backwards, fixed after one email. It is on my board now and she wants the Moor Echo.',
     'Declan Moss, Sheffield, built in January 2026'))
 
-pattern('about-page', 'Page: about', 'patchbay-about', J(pattern_ref('about-bench'), pattern_ref('bench-quote'), pattern_ref('help-strip')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'patchbay-about', J(pattern_ref('about-bench'), pattern_ref('bench-quote'), pattern_ref('on-their-boards'), pattern_ref('enclosure-colours'), pattern_ref('settings-recipes'), pattern_ref('help-strip')), block_types='core/post-content')
 
 pattern('custom-artwork', 'Custom artwork request panel', 'patchbay-support', group(J(
     heading('Custom graphics and colours', 3),
@@ -516,12 +527,12 @@ pattern('custom-artwork', 'Custom artwork request panel', 'patchbay-support', gr
 
 pattern('contact-details', 'Contact details and hours', 'patchbay-support', columns(
     (None, J(heading('Arch 14', 3), para('Crown Point Road, Leeds LS9 8AQ. Under the railway, between the tyre place and the climbing wall. Ring the bell; the music is loud.'),
-             table([['Monday to Wednesday', 'Closed to visitors, we are building'], ['Thursday and Friday', '12:00 to 18:00'], ['Weekends', 'Closed']]))),
+             srows([['Monday to Wednesday', 'Closed to visitors, we are building'], ['Thursday and Friday', '12:00 to 18:00'], ['Weekends', 'Closed']]))),
     (None, J(heading('Email', 3), para('Orders and questions: <a href="mailto:hello@example.com">hello@example.com</a><br>Build help: <a href="mailto:builds@example.com">builds@example.com</a><br>Trade: <a href="mailto:trade@example.com">trade@example.com</a>'),
              para('We answer within two working days. No phone, sorry; we would never get any soldering done.'))),
     align='wide'))
 
-pattern('contact-page', 'Page: contact', 'patchbay-support', J(pattern_ref('contact-details'), pattern_ref('custom-artwork')), block_types='core/post-content')
+pattern('contact-page', 'Page: contact', 'patchbay-support', J(pattern_ref('contact-details'), pattern_ref('custom-artwork'), pattern_ref('gift-voucher')), block_types='core/post-content')
 
 pattern('restock-notice', 'Restock notice bar', 'banner', group(
     para('Moor Echo kits are back on 10 October. Assembled Ginnels ship in 3 working days. <a href="/shop/">Shop</a>', style={'typography': {'textAlign': 'center'}}),
@@ -530,6 +541,79 @@ pattern('restock-notice', 'Restock notice bar', 'banner', group(
 pattern('shipping-note', 'Postage and returns', 'patchbay-shop', table(
     [['UK', '£4.50 tracked, free over £100', '1 to 2 working days'], ['EU', '£12 tracked, duties paid', '4 to 7 working days'], ['US and Canada', '£18 tracked', '6 to 10 working days']],
     head=['Where', 'Postage', 'Usually takes'], caption='Returns within 30 days on unbuilt kits and unused pedals. Kits you have soldered cannot be returned, but build help is free.'))
+
+
+# ------------------------------------------------------------------ round 2: more of the kit (JHS, Old Blood Noise, Befaco, Aion FX, ZVEX)
+pattern('difficulty-levels', 'Kit difficulty levels', 'patchbay-kits', sect(J(
+    heading('Difficulty levels', 2),
+    columns((None, group(J(heading('Beginner', 3), para('Under 30 parts, no off-board wiring apart from jacks and switch.'), para('<strong>Coal Tit, Mill Boost</strong>')), className='is-style-enclosure-teal', layout={'type': 'default'})),
+            (None, group(J(heading('Intermediate', 3), para('30 to 60 parts, one IC, a few off-board wires.'), para('<strong>Ginnel, Moor Echo</strong>')), className='is-style-enclosure-yellow', layout={'type': 'default'})),
+            (None, group(J(heading('Involved', 3), para('Optical parts or a trimmer to set. A scope helps; a meter is a must.'), para('<strong>Tram Stop, Snicket</strong>')), className='is-style-enclosure-orange', layout={'type': 'default'})),
+            align='wide'))))
+
+pattern('build-service', 'We build your kit', 'patchbay-kits', group(J(
+    heading('Bought a kit and ran out of evenings?', 3),
+    para('Post it to us, bagged parts and all, and Rob builds it for £40 plus return postage. Half-built kits too; we charge £25 to finish one.'),
+    buttons(('Email about a build', 'mailto:builds@example.com?subject=Build%20service'))),
+    className='is-style-tape', layout={'type': 'default'}))
+
+pattern('soldering-class', 'Soldering evening at the arch', 'patchbay-kits', sect(columns(
+    ('55%', J(heading('Build a Coal Tit with us', 2),
+              para('One evening a month, 18:30 to 21:30, six people at the bench. You leave with a working fuzz. £75 including the kit, irons and tea.'),
+              para('Next date: Thursday 22 October. Two places left.'),
+              buttons(('Email to book a place', 'mailto:hello@example.com?subject=Soldering%20evening')))),
+    ('45%', image('breadboard.jpg', 'Two white breadboards side by side with rows of contact holes', 'We start on a breadboard, then move to the real board.', className='is-style-framed')),
+    align='wide', verticalAlignment='center')))
+
+pattern('enclosure-colours', 'Enclosure colours in stock', 'patchbay-product', sect(J(
+    heading('Enclosure colours', 2),
+    para('Rob mixes the paint in batches of forty. When a colour runs out it may not come back.'),
+    grid(J(*[group(J(heading(n, 4), para(note, fontSize='x-small')), backgroundColor=c, textColor='contrast', className='is-style-pedal-link', layout={'type': 'default'})
+             for n, c, note in [('Coal orange', 'orange', 'Coal Tit, standard'), ('Canal teal', 'teal', 'Ginnel, standard'), ('Mustard', 'accent-2', 'Moor Echo, standard'),
+                                ('Bench grey', 'surface', 'Any pedal, on request'), ('Panel white', 'base', 'Tram Stop, limited')]]), min_width='10rem'))))
+
+pattern('settings-recipes', 'Knob settings people ask for', 'patchbay-product', sect(J(
+    heading('Settings to start from', 2),
+    columns((None, group(J(heading('Ginnel, always on', 4), para('Gain 9 o\'clock, Tone noon, Level a little past unity. Makes a clean amp sound like it is working harder.')), className='is-style-legend', layout={'type': 'default'})),
+            (None, group(J(heading('Moor Echo, slapback', 4), para('Time fully left, Repeats one echo, Mix 10 o\'clock. Rockabilly, or a vocal mic at a gig.')), className='is-style-legend', layout={'type': 'default'})),
+            (None, group(J(heading('Coal Tit, into a dirty amp', 4), para('Fuzz 1 o\'clock, Level to taste, guitar volume on 7. Roll the guitar up for the chorus.')), className='is-style-legend', layout={'type': 'default'})),
+            align='wide'))))
+
+pattern('limited-colourway', 'Limited colourway note', 'patchbay-product', para(
+    '<strong>Limited run:</strong> 30 Moor Echos in panel white with red knobs, numbered inside the lid. Same circuit, same price.', className='is-style-tape'))
+
+pattern('on-their-boards', 'On customers\' boards', 'patchbay-about', sect(columns(
+    ('50%', image('rig.jpg', 'A small amp, an electric guitar on a stand and a pedalboard of eight pedals on a wooden floor, seen from above', 'Ana\'s board in Hull, with a Ginnel she built from a kit.', className='is-style-framed')),
+    ('50%', J(heading('On your boards', 2),
+              para('Send us a photo of your board with a Patchbay pedal on it and we will put it here. Tell us what you play and where.'),
+              buttons(('Email a photo of your board', 'mailto:hello@example.com?subject=My%20board')),
+              para('<a href="/category/demos/">Customer boards and demos</a>'))),
+    align='wide', verticalAlignment='center')))
+
+pattern('repair-prices', 'Repair prices out of warranty', 'patchbay-support', sect(J(
+    heading('Out of warranty', 3),
+    srows([['Jack, footswitch or DC socket', '£15 plus parts'], ['Pot replacement', '£12 per pot'], ['Finish a half-built kit', '£25'], ['Full diagnosis if nothing else works', '£20, taken off the repair']]))))
+
+pattern('pedal-faq', 'Questions about pedals and kits', 'patchbay-support', sect(J(
+    heading('Questions people email us', 2),
+    details('Do the pedals take batteries?', para('No. There is no battery clip in any of them. Use a 9V centre-negative supply.')),
+    details('True bypass or buffered?', para('Coal Tit, Ginnel and Tram Stop are true bypass. The Moor Echo is buffered so the repeats can trail off.')),
+    details('Can I buy just the enclosure?', para('Yes, drilled and painted, £18. Email us with the pedal name.')),
+    details('Do you ship outside Europe?', para('Yes, tracked. Postage is shown in the basket before you pay.')),
+    details('Can a beginner build the Tram Stop?', para('Build the Coal Tit first. The Tram Stop needs LDR matching and a meter.')))))
+
+pattern('gift-voucher', 'Gift voucher', 'patchbay-shop', group(J(
+    heading('Gift vouchers', 3),
+    para('£25, £50 or £100, emailed as a code the same day. Good for kits, pedals, the build service and soldering evenings.'),
+    buttons(('Email to buy a voucher', 'mailto:hello@example.com?subject=Gift%20voucher'))),
+    className='is-style-enclosure-yellow', layout={'type': 'default'}))
+
+pattern('which-fuzz', 'Which fuzz: Coal Tit or Snicket', 'patchbay-product', sect(columns(
+    (None, J(image('draw-coal-tit.jpg', 'Drawing of the Coal Tit fuzz in an orange enclosure', className='is-style-framed'), heading('Coal Tit', 3),
+             para('Two knobs, silicon, cleans up with the guitar volume. Beginner kit. From £59.'), para('<a href="/product-category/fuzz/">Fuzz pedals and kits</a>'))),
+    (None, J(image('draw-snicket.jpg', 'Drawing of the Snicket octave fuzz circuit board on an orange ground', className='is-style-framed'), heading('Snicket', 3),
+             para('Octave-up fuzz, loud above the 12th fret. Board only, for people who have built a few. £14.'), para('<a href="/product-category/pcbs-and-parts/">Boards and parts</a>'))),
+    align='wide')))
 
 print('patchbay: patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 

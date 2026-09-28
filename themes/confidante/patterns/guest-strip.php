@@ -12,7 +12,7 @@
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-arch","lightbox":{"enabled":true}} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-arch"} -->
 <figure class="wp-block-image size-large is-style-arch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/guest-2.jpg' ) ); ?>" alt="Folake Adeyemi smiling in a red jumper"/></figure>
 <!-- /wp:image -->
 
@@ -30,7 +30,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-arch","lightbox":{"enabled":true}} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-arch"} -->
 <figure class="wp-block-image size-large is-style-arch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/guest-3.jpg' ) ); ?>" alt="Dr Nadia Rahman lying on a concrete step in a patterned coat, looking at the camera"/></figure>
 <!-- /wp:image -->
 
@@ -48,7 +48,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-arch","lightbox":{"enabled":true}} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-arch"} -->
 <figure class="wp-block-image size-large is-style-arch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/guest-1.jpg' ) ); ?>" alt="Black and white portrait of Hannah with glitter stars on one cheek"/></figure>
 <!-- /wp:image -->
 

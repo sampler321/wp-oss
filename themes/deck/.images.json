@@ -102,5 +102,29 @@
     "source": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Skateboard_upside.jpg",
     "query": "skateboard wheels"
+  },
+  "sunset-park": {
+    "title": "Venice Beach Skatepark (Unsplash).jpg",
+    "creator": "Matteo Paganelli matteopaga",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Venice_Beach_Skatepark_(Unsplash).jpg",
+    "query": "skatepark Unsplash"
+  },
+  "stairs": {
+    "title": "Skateboard Tricks (Unsplash).jpg",
+    "creator": "Hector Bermudez hectorbermudez",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Skateboard_Tricks_(Unsplash).jpg",
+    "query": "skateboarder Unsplash"
+  },
+  "cruiser-wall": {
+    "title": "Skateboard near a wall (Unsplash).jpg",
+    "creator": "Imani Clovis imaniclovis",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Skateboard_near_a_wall_(Unsplash).jpg",
+    "query": "skateboard Unsplash"
   }
 }

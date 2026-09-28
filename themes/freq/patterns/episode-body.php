@@ -2,7 +2,7 @@
 /**
  * Title: Episode body (player, notes, tracklist)
  * Slug: freq/episode-body
- * Categories: featured
+ * Categories: episode
  * Block Types: core/post-content
  * Post Types: post
  */
@@ -17,6 +17,4 @@
 
 <!-- wp:pattern {"slug":"freq/tracklist"} /-->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Presented by</td><td>DJ Yasmina</td></tr><tr><td>Guest</td><td>Mikey Blanco</td></tr><tr><td>Studio</td><td>Deliplein 14, studio 1</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:pattern {"slug":"freq/episode-credits"} /-->

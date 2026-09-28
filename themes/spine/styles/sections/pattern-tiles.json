@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Pattern: lisbon tiles",
+	"slug": "pattern-tiles",
+	"blockTypes": [
+		"core/group",
+		"core/column",
+		"core/cover"
+	],
+	"styles": {
+		"css": "&{position:relative;isolation:isolate}&::before{content:\"\";position:absolute;inset:0;z-index:-1;pointer-events:none;background-color:currentColor;opacity:.3;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"%3E%3Cpath d=\"M12 2 L22 12 L12 22 L2 12Z\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/%3E%3Ccircle cx=\"12\" cy=\"12\" r=\"2.6\"/%3E%3C/svg%3E\") 0 0/26px 26px repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"%3E%3Cpath d=\"M12 2 L22 12 L12 22 L2 12Z\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/%3E%3Ccircle cx=\"12\" cy=\"12\" r=\"2.6\"/%3E%3C/svg%3E\") 0 0/26px 26px repeat}"
+	}
+}

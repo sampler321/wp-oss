@@ -233,6 +233,14 @@
 			"style": true,
 			"width": true
 		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
+		},
 		"custom": {
 			"gingham": "repeating-linear-gradient(0deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px),repeating-linear-gradient(90deg,transparent 0 24px,rgba(196,48,26,.45) 24px 48px)"
 		}

@@ -11,12 +11,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Friends, family and one long-suffering drummer wearing the merch. Click any photo to see it large. Sizes are in the captions.</p>
+<p class="">Friends, family and one long-suffering drummer wearing the merch. Click any photo to see it large. Sizes are in the captions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/look-1.jpg' ) ); ?>" alt="A man in a plain white t-shirt laughing at the camera, black and white"/></figure>
 <!-- /wp:image -->
 
@@ -26,7 +26,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tee.jpg' ) ); ?>" alt="A rail of printed t-shirts on wooden hangers"/></figure>
 <!-- /wp:image -->
 
@@ -36,7 +36,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/look-2.jpg' ) ); ?>" alt="A woman floating on her back in dark water, seen from above"/></figure>
 <!-- /wp:image -->
 
@@ -46,7 +46,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tote.jpg' ) ); ?>" alt="A hand holding up a plain canvas tote bag"/></figure>
 <!-- /wp:image -->
 
@@ -56,7 +56,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A guitarist playing under a single stage light"/></figure>
 <!-- /wp:image -->
 
@@ -66,7 +66,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-polaroid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-polaroid"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group is-style-polaroid"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bass.jpg' ) ); ?>" alt="Two guitarists playing in a small bar with a painted wall behind them"/></figure>
 <!-- /wp:image -->
 

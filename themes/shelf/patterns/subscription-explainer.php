@@ -13,9 +13,13 @@
 <!-- wp:list {"ordered":true,"className":"is-style-steps"} -->
 <ol class="wp-block-list is-style-steps"><!-- wp:list-item -->
 <li>You fill in a short questionnaire: three books you loved, one you gave up on, and anything you've read too much of lately.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>One of us, usually Noor, reads your answers and picks a book. We write why on a yellow card and tuck it inside.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>It's wrapped in our red paper and posted on the first Tuesday of the month. If you already have it, send it back and we'll swap it.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->

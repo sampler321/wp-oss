@@ -5,8 +5,8 @@
  * Categories: about
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"1000px"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">The committee</h3>
 <!-- /wp:heading -->
 
@@ -14,7 +14,89 @@
 <p>Six volunteers, each serving two years. Nobody stands for a third year in a row. That rule is why the programme keeps changing.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Name</th><th>Role</th><th>Term</th></tr></thead><tbody><tr><td>Ife Adeyemi</td><td>Chair</td><td>2025 to 2027</td></tr><tr><td>Tomasz Wrona</td><td>Treasurer and install</td><td>2025 to 2027</td></tr><tr><td>Rhiannon Price</td><td>Programme</td><td>2024 to 2026</td></tr><tr><td>Kofi Mensah-Hart</td><td>Access and building</td><td>2025 to 2027</td></tr><tr><td>Saoirse Duggan</td><td>Membership</td><td>2024 to 2026</td></tr><tr><td>Aiko Tanabe</td><td>Studios and photography</td><td>2026 to 2028</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"15rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Ife Adeyemi</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Chair</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2025 to 2027</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Tomasz Wrona</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Treasurer and install</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2025 to 2027</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Rhiannon Price</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Programme</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2024 to 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Kofi Mensah-Hart</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Access and building</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2025 to 2027</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Saoirse Duggan</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Membership</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2024 to 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-sage","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-sage"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Aiko Tanabe</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Studios and photography</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">2026 to 2028</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -2,7 +2,7 @@
 /**
  * Title: What I do not take on
  * Slug: case/what-i-dont-do
- * Categories: text
+ * Categories: services
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->

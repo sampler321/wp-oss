@@ -2,7 +2,7 @@
 /**
  * Title: Page: fabric
  * Slug: room/fabric-page
- * Categories: shop
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

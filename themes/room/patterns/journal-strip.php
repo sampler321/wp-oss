@@ -2,7 +2,7 @@
 /**
  * Title: From the notebook (latest projects list)
  * Slug: room/journal-strip
- * Categories: posts,query
+ * Categories: project
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->

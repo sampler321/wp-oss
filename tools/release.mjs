@@ -8,7 +8,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const skipTest = process.argv.includes('--skip-test');
 const slugs = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const run = (script, ...args) => {
-  const r = spawnSync('node', [path.join(ROOT, 'tools', script), ...args], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 });
+  const r = spawnSync('node', [path.join(ROOT, 'tools', script), ...args], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26, timeout: 35 * 60 * 1000, killSignal: 'SIGKILL' });
   return { ok: r.status === 0, out: (r.stdout || '') + (r.stderr || '') };
 };
 const setStatus = (slug, status, url = '') => {
@@ -24,10 +24,10 @@ const setStatus = (slug, status, url = '') => {
 for (const slug of slugs) {
   console.log(`\n== ${slug}`);
   if (!skipTest) {
-    const t = run('test-theme.mjs', slug);
+    const t = run('test-theme.mjs', slug, '--quick');
     const summary = t.out.trim().split('\n').pop();
     console.log(summary);
-    if (!t.ok) { console.log(t.out.split('\n').filter(l => l.startsWith('FAIL')).join('\n')); setStatus(slug, 'failed test'); continue; }
+    if (!t.ok) { const fails = t.out.split('\n').filter(l => l.startsWith('FAIL')); console.log(fails.length ? fails.join('\n') : t.out.split('\n').slice(-30).join('\n')); setStatus(slug, 'failed test'); continue; }
   }
   setStatus(slug, 'tested');
   run('make-blueprint.mjs', slug);

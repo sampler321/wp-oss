@@ -11,11 +11,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>If you were on Alexandra Dock or Hedon Road on the night of 10 to 11 March 1994, or you knew Carol Denby in 1987, we would like to hear from you. You can stay anonymous. We will never pass your details on without your permission.</p>
+<p class="">If you were on Alexandra Dock or Hedon Road on the night of 10 to 11 March 1994, or you knew Carol Denby in 1987, we would like to hear from you. You can stay anonymous. We will never pass your details on without your permission.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Email <a href="mailto:tips@lowwater.example">tips@lowwater.example</a>, or use Signal on 07700 900417.</p>
+<p class="">Email <a href="mailto:tips@lowwater.example">tips@lowwater.example</a>, or use Signal on 07700 900417.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

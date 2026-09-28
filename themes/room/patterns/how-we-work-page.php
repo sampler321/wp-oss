@@ -2,11 +2,15 @@
 /**
  * Title: Page: how we work
  * Slug: room/how-we-work-page
- * Categories: about
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>
 <!-- wp:pattern {"slug":"room/about-studio"} /-->
+
+<!-- wp:pattern {"slug":"room/services-cards"} /-->
+
+<!-- wp:pattern {"slug":"room/process-steps"} /-->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
 <div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>

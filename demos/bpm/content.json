@@ -59,6 +59,12 @@
    "title": "Booking",
    "pattern": "bpm/page-booking",
    "template": "page-wide"
+  },
+  {
+   "slug": "explore",
+   "title": "Explore",
+   "pattern": "bpm/page-explore",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -164,6 +170,10 @@
   {
    "label": "Mixes",
    "url": "/mixes/"
+  },
+  {
+   "label": "Explore",
+   "url": "/explore/"
   },
   {
    "label": "Radio",

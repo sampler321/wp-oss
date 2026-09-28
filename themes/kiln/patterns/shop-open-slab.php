@@ -2,15 +2,15 @@
 /**
  * Title: Shop open now
  * Slug: kiln/shop-open-slab
- * Categories: featured,shop
+ * Categories: kiln-shop,featured,shop
  * Description: Swap this in for the closed slab on the day of a shop update.
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-celadon-slab","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-celadon-slab"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"has-large-font-size","style":{"typography":{"fontWeight":"600"}},"fontSize":"large"} -->
-<p class="has-large-font-size" style="font-weight:600">The shop is open</p>
+<!-- wp:group {"className":"is-style-celadon-slab","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-celadon-slab"><!-- wp:columns {"align":"wide","verticalAlignment":"center"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="has-large-font-size">The shop is open</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1} -->
@@ -29,7 +29,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tea-bowl.jpg' ) ); ?>" alt="A wide conical tea bowl in dark brown glaze with rust streaks and a pale foot ring"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>

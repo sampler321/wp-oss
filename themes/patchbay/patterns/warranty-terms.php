@@ -10,7 +10,45 @@
 <h3 class="wp-block-heading">Warranty</h3>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Range</th><th>Cover</th><th>Note</th></tr></thead><tbody><tr><td>Assembled pedals</td><td>2 years, parts and labour</td><td>Extended to 3 years if you register it</td></tr><tr><td>DIY kits</td><td>1 year on parts</td><td>Build help is free for life</td></tr><tr><td>PCBs</td><td>Board faults only</td><td>Solder mistakes are yours, sorry</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>Assembled pedals</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">2 years, parts and labour</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Extended to 3 years if you register it</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>DIY kits</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">1 year on parts</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Build help is free for life</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-spec-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group is-style-spec-row"><!-- wp:paragraph -->
+<p class=""><strong>PCBs</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Board faults only</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Solder mistakes are yours, sorry</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

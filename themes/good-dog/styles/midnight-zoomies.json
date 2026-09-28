@@ -1,0 +1,83 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Midnight zoomies",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#17213A",
+					"name": "Clean towel"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFF7E0",
+					"name": "Navy ink"
+				},
+				{
+					"slug": "accent",
+					"color": "#FFD93D",
+					"name": "Tomato"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#8CC4FF",
+					"name": "Lead blue"
+				},
+				{
+					"slug": "surface",
+					"color": "#223055",
+					"name": "Butter"
+				},
+				{
+					"slug": "line",
+					"color": "#FFF7E0",
+					"name": "Stitch line"
+				},
+				{
+					"slug": "muted",
+					"color": "#C9CFDD",
+					"name": "Slate"
+				},
+				{
+					"slug": "coral",
+					"color": "#FF7A5C",
+					"name": "Coral"
+				},
+				{
+					"slug": "orange",
+					"color": "#FFA531",
+					"name": "Orange"
+				},
+				{
+					"slug": "yellow",
+					"color": "#FFD93D",
+					"name": "Yellow"
+				},
+				{
+					"slug": "green",
+					"color": "#5FCB7D",
+					"name": "Grass"
+				},
+				{
+					"slug": "sky",
+					"color": "#6FB0F5",
+					"name": "Sky"
+				},
+				{
+					"slug": "pink",
+					"color": "#F79BC8",
+					"name": "Bubblegum"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/image": {
+				"css": "& img{border:3px solid var(--wp--preset--color--yellow)}"
+			}
+		}
+	}
+}

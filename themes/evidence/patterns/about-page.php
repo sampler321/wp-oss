@@ -15,3 +15,7 @@
 <!-- wp:pattern {"slug":"evidence/how-we-report"} /-->
 
 <!-- wp:pattern {"slug":"evidence/in-memory"} /-->
+
+<!-- wp:pattern {"slug":"evidence/listener-mail"} /-->
+
+<!-- wp:pattern {"slug":"evidence/reading-list"} /-->

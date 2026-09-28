@@ -6,16 +6,16 @@
  * Description: Full-bleed photo with the week in the headline. Swap the image for this week's best photo.
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-photo-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-group alignfull is-style-photo-hero" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:group {"align":"full","className":"is-style-photo-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":"1280px","wideSize":"1280px"}} -->
+<div class="wp-block-group alignfull is-style-photo-hero" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dynamo.jpg' ) ); ?>" alt="A band on a dark stage under white spotlights, with the crowd in silhouette in front"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"level":1,"textColor":"base","fontSize":"display"} -->
+<!-- wp:heading {"level":1,"fontSize":"display","textColor":"base"} -->
 <h1 class="wp-block-heading has-base-color has-text-color has-display-font-size">What's on in Eindhoven, 28 September to 4 October</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"base","fontSize":"large"} -->
+<!-- wp:paragraph {"fontSize":"large","textColor":"base"} -->
 <p class="has-base-color has-text-color has-large-font-size">Picked by Sanne and Joost, updated every Monday morning. Gigs, markets, openings and one very good soup.</p>
 <!-- /wp:paragraph -->
 

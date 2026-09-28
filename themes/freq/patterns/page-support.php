@@ -2,10 +2,14 @@
 /**
  * Title: Page: support
  * Slug: freq/page-support
- * Categories: call-to-action
+ * Categories: support
  * Block Types: core/post-content
  */
 ?>
 <!-- wp:pattern {"slug":"freq/support-costs"} /-->
 
 <!-- wp:pattern {"slug":"freq/membership-levels"} /-->
+
+<!-- wp:pattern {"slug":"freq/merch"} /-->
+
+<!-- wp:pattern {"slug":"freq/volunteer-roles"} /-->

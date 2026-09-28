@@ -21,10 +21,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>A long counter in a former Philips lab. The flat white is €3.40 and worth it; the cake is fine.</p>
+<p class="">A long counter in a former Philips lab. The flat white is €3.40 and worth it; the cake is fine.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<!-- wp:paragraph {"fontSize":"small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-small-font-size">Torenallee 22<br>Tue to Sun, 8:00 to 17:00<br>Price: €. Last visited September 2026.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -183,6 +183,8 @@ section('paper-box', 'Paper box', ['core/group'],
          'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
 section('arch', 'Arch', ['core/image', 'core/post-featured-image'],
         {'css': '& img{border-radius:999px 999px 22px 22px;aspect-ratio:4/5;object-fit:cover;width:100%}'})
+section('rule-bottom', 'Rule below', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1.5px', 'style': 'solid'}}})
 section('square', 'Square artwork', ['core/image', 'core/post-featured-image'],
         {'css': '& img{aspect-ratio:1;object-fit:cover;width:100%;border-radius:14px}'})
 section('avatar-small', 'Small round portrait', ['core/image'],
@@ -578,9 +580,8 @@ write('parts/header.html', group(row(J(
     dyn('site-title', level=0),
     row(J(dyn('navigation', overlayMenu='mobile', layout={'type': 'flex', 'justifyContent': 'right'}),
           buttons(('Listen', '/subscribe/'))), justify='right', style={'spacing': {'blockGap': 'var:preset|spacing|40'}})),
-    justify='space-between', align='wide'), tag='header', align='full',
-    style={'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}},
-           'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1.5px', 'style': 'solid'}}}))
+    justify='space-between', align='wide'), tag='header', align='full', className='is-style-rule-bottom',
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30'}}}))
 
 write('parts/footer.html', group(J(
     columns(('46%', J(para('Say More', fontSize='xx-large', fontFamily='display', style={'typography': {'lineHeight': '1'}}),

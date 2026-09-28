@@ -2,7 +2,7 @@
 /**
  * Title: Programme archive (inherits the page query)
  * Slug: commons/programme-archive
- * Categories: query
+ * Categories: programme
  * Inserter: no
  */
 ?>

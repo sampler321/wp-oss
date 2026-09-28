@@ -2,7 +2,7 @@
 /**
  * Title: A member on the space
  * Slug: commons/members-quote
- * Categories: testimonials
+ * Categories: membership
  */
 ?>
 <!-- wp:pullquote {"align":"wide"} -->

@@ -14,9 +14,37 @@
 <p>First Monday of every month, 11am to 3pm. Bring up to two bags, washed. We look while you wait and pay cash or 20% more in credit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Next dates</th><th>Times</th></tr></thead><tbody><tr><td>Monday 6 October</td><td>11am to 3pm</td></tr><tr><td>Monday 3 November</td><td>11am to 3pm</td></tr><tr><td>Monday 1 December</td><td>11am to 3pm</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Monday 6 October</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>11am to 3pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Monday 3 November</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>11am to 3pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Monday 1 December</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>11am to 3pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">We need photo ID for every purchase. It is a condition of our dealer licence.</p>

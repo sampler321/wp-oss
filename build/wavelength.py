@@ -11,31 +11,7 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('wavelength')
-# Groups with padding/margin get their inline style (and anchors their id) written out, so the editor sees valid markup.
 import blocks as _B
-_orig_group = _B.group
-def _css_var(v):
-    return v.replace('var:preset|spacing|', 'var(--wp--preset--spacing--') + ')' if v.startswith('var:preset|spacing|') else v
-def _group_inline(inner, tag='div', layout='constrained', **attrs):
-    out = _orig_group(inner, tag=tag, layout=layout, **attrs)
-    sp = (attrs.get('style') or {}).get('spacing') or {}
-    decl = []
-    for prop in ('padding', 'margin'):
-        v = sp.get(prop)
-        if isinstance(v, dict):
-            for side in ('top', 'right', 'bottom', 'left'):
-                if side in v:
-                    decl.append('%s-%s:%s' % (prop, side, _css_var(v[side])))
-    if attrs.get('anchor'):
-        k = out.index('<%s class="' % tag)
-        out = out[:k] + '<%s id="%s" class="' % (tag, attrs['anchor']) + out[k + len('<%s class="' % tag):]
-    if decl:
-        i = out.index(' class="', out.index('<%s ' % tag))
-        j = out.index('>', i)
-        out = out[:j] + ' style="%s"' % ';'.join(decl) + out[j:]
-    return out
-_B.group = _group_inline
-group = _group_inline
 _orig_image = _B.image
 def _image_ratio(filename, alt, caption='', lightbox=True, href=None, **attrs):
     out = _orig_image(filename, alt, caption, lightbox, href, **attrs)
@@ -63,7 +39,7 @@ def cols(*cs, **attrs):
         out.append('<!-- wp:column%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:column -->' % ((' ' + json.dumps(ca, separators=(',', ':'), ensure_ascii=False)) if ca else '', cls, st, inner))
     a = attrs
     va = ('are-vertically-aligned-' + a['verticalAlignment']) if a.get('verticalAlignment') else ''
-    return '<!-- wp:columns%s -->\n<div class="%s">%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), '\n\n'.join(out))
+    return '<!-- wp:columns%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), _B._style(a), '\n\n'.join(out))
 
 # ------------------------------------------------------------------ theme.json
 F = json.load(open(os.path.join(D, '.fonts.json')))['fontFamilies']
@@ -514,3 +490,140 @@ os.makedirs('demos/wavelength', exist_ok=True)
 json.dump(content, open('demos/wavelength/content.json', 'w'), indent=1, ensure_ascii=False)
 open('demos/wavelength/fonts-claim.txt', 'w').write('display: Parkinsans\n')
 print('wavelength built')
+
+# ====================================================================== ROUND 2
+# Owner's review: fewer tables, lightbox on, 40+ patterns, no table on the home page, the demo uses the kit.
+# Sections studied on UK community FM sites (Phoenix FM, Hebden Radio, Radio Scarborough, Resonance FM) and
+# BBC local radio: on now, schedule, hear again, news, what's on, requests, advertising, volunteering, complaints.
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += ('.is-style-defs>.wp-block-group{border-top:1px solid var(--wp--preset--color--line);padding:.6em 0;gap:.25rem 1.5rem;margin:0!important}'
+                           '.is-style-defs>.wp-block-group:last-child{border-bottom:1px solid var(--wp--preset--color--line)}.is-style-defs p{margin:0}'
+                           '.is-style-defs>.wp-block-group>p:first-child{flex:0 0 6.5rem;font-family:var(--wp--preset--font-family--display);font-weight:700}.is-style-defs>.wp-block-group>p:nth-child(2){flex:1 1 12rem}'
+                           '.is-style-defs>.wp-block-group>p:nth-child(3){flex:0 1 14rem;color:var(--wp--preset--color--muted)}.is-style-defs strong{color:var(--wp--preset--color--accent)}'
+                           '@media (max-width:781px){.is-style-defs>.wp-block-group>p:nth-child(3){display:none}}')
+wjson('theme.json', theme)
+
+def defs(data):
+    return group(J(*[row(J(*[para(c) for c in r]), wrap=True) for r in data]), className='is-style-defs', layout={'type': 'default'})
+
+# ---- tables replaced
+pattern('today-timetable', 'Today\'s programmes', 'schedule', J(
+    heading('On today, Thursday', 3),
+    defs([[t, '<strong>%s</strong>' % p if i == 0 else p, w] for i, (t, p, w) in enumerate(TODAY)]),
+    para('The programme in red is on now. News is on the hour from 7am to 6pm, weekdays.', fontSize='small', textColor='muted')))
+pattern('volunteer-roles', 'Volunteer roles and time needed', 'volunteer', J(
+    heading('What you could do', 3),
+    group(J(*[group(J(heading(r, 4), para(w), para(t, fontSize='small', textColor='muted')), className='is-style-paper') for r, w, t in [
+        ('Presenter', 'A weekly or monthly programme.', '2 to 4 hours a week'), ('Newsreader', 'Read the hourly bulletin, one morning a week.', '3 hours a week'),
+        ('Noticeboard', 'Answer the notices phone and type them up.', '2 hours a week, from home'), ('Talking Books', 'Read a local book for Sunday evening.', 'At your own pace'),
+        ('Tech and transmitter', 'Look after the kit on Heptonstall Road.', 'One weekend a month'), ('Fundraising', 'Run the stall at Hebden Bridge market.', 'One Thursday a month')]]),
+          layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '15rem'}),
+    para('We pay travel expenses and there is always tea. Presenters need a DBS check for programmes with children, which we arrange and pay for.', fontSize='small')))
+pattern('training-dates', 'Training and open evenings', 'volunteer', group(J(
+    heading('Open evenings', 4),
+    defs([['7 Oct', 'Tuesday, 7pm to 8.30pm', 'Look round, meet presenters'], ['4 Nov', 'Tuesday, 7pm to 8.30pm', 'Same again'], ['15 Nov', 'Saturday, 10am to 4pm', 'First day of training']]),
+    para('Just turn up. The studio is on the first floor and there is a lift from the market side.', fontSize='small')), className='is-style-paper'))
+pattern('programmes-list', 'Programmes list', 'programmes', J(
+    heading('Programmes', 2),
+    group(J(*[group(J(heading(n, 4), para(w, fontSize='small', textColor='accent'), para(d, fontSize='small')), className='is-style-paper') for n, w, d in [
+        ('The Valley Breakfast', 'Weekdays 7am', 'Local news, roads, weather and chat.'), ('The Morning Table', 'Weekdays 10am', 'One guest from the valley every day.'),
+        ('Town Hall Talk', 'First Tuesday, 7pm', 'Live questions to councillors from Todmorden Town Hall.'), ('Valley Voices', 'Wednesdays 7pm', 'Oral history from the Pennine Heritage archive.'),
+        ('Garden Hour', 'Saturdays 9am', 'The allotment society answers your questions.'), ('Talking Books', 'Sundays 6pm', 'Local books read aloud by volunteers.')]]),
+          layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '15rem'})))
+pattern('funding', 'How the station is paid for', 'about', group(J(
+    heading('How we pay for it', 3),
+    para('It costs about £24,000 a year to keep Calder Valley Radio on air. Nobody is paid. This is where the money came from last year.', className='is-style-answer'),
+    defs([['£11,800', 'Friends of the station, £3 a month'], ['£6,200', 'Local adverts, up to 6 minutes an hour, which is Ofcom\'s limit'],
+          ['£4,500', 'Grants from Calderdale Council and the National Lottery'], ['£1,500', 'Market stall, quiz nights and the duck race']]),
+    buttons(('Become a Friend for £3 a month', 'https://example.com/friends'))), className='is-style-paper'))
+pattern('contact-us', 'Contact, complaints and corrections', 'contact', cols(
+    (None, J(heading('Ring, text or call in', 3),
+             defs([['Studio', '01422 555 104, when we are live'], ['Text', '07700 900 104, read out on air if you like'], ['Email', '<a href="mailto:studio@example.com">studio@example.com</a>'],
+                   ['Post', 'The Old Co-op, 22 Market Street, Hebden Bridge HX7 6AA']]),
+             para('The studio is open to visitors Monday to Friday, 9am to 1pm. First floor, lift from the market side.'))),
+    (None, J(heading('Complaints and corrections', 3),
+             para('If we got something wrong in the news, tell us and we will correct it on air in the next bulletin and on this website. Write to Rachel Sutcliffe, the station manager, at <a href="mailto:manager@example.com">manager@example.com</a>.'),
+             para('If you are not happy with our answer, you can complain to Ofcom. We will tell you how.', fontSize='small'))), align='wide'))
+
+# ---- new patterns
+pattern('news-bulletin', 'The latest bulletin', 'news', group(cols(
+    ('40%', J(para('4pm bulletin, Thursday', className='is-style-answer', textColor='accent'), heading('The news in three minutes', 3),
+              audio('https://stream.example.com/news/latest.mp3', caption='Read by Pat Crossley'))),
+    (None, lst(['Mytholmroyd flood defence drop-in moves to the Institute, Wednesday 2pm to 7pm.', 'Hebden Bridge market drops Wednesdays from November.',
+                'Burnley Road closed at Callis Bridge on Tuesday for gas works.', 'Todmorden library to open at 1pm on Mondays.'])), align='wide', verticalAlignment='center'), className='is-style-paper'))
+pattern('whats-on', 'What\'s on in the valley', 'events', J(heading('What\'s on this week', 3), defs([
+    ['Fri', 'Quiz night for the station, White Lion, Hebden Bridge', '8pm, £2'], ['Sat', 'Todmorden market, and the Garden Hour live from the flower stall', '9am to 4pm'],
+    ['Sat', 'Calder Valley league, Hebden Bridge v Walsden', '2pm, Calder Holmes Park'], ['Sun', 'Jumble sale, St James\' Church hall, Mytholmroyd', '10am, 20p'],
+    ['Tue', 'Town Hall Talk, live from Todmorden Town Hall', '7pm, free']]),
+    para('Send us your event at least a week before: <a href="/noticeboard/#send">how to send a notice</a>.', fontSize='small')))
+pattern('hear-again', 'Hear again', 'programmes', J(heading('Hear again', 3), cols(
+    (None, J(image('townhall.jpg', 'The ballroom of Todmorden Town Hall', aspectRatio='4/3', scale='cover'), heading('<a href="/hear-again-town-hall-talk-on-bins-and-the-walsden-bus/">Town Hall Talk: bins and the Walsden bus</a>', 4), para('58 minutes', fontSize='small', textColor='muted'))),
+    (None, J(image('choir.jpg', 'Black and white photo of a group singing', aspectRatio='4/3', scale='cover'), heading('<a href="/hear-again-valley-voices-the-mill-girls-of-walsden/">Valley Voices: the mill girls of Walsden</a>', 4), para('55 minutes', fontSize='small', textColor='muted'))),
+    (None, J(image('moor.jpg', 'Green fields and dry-stone walls on the moor', aspectRatio='4/3', scale='cover'), heading('<a href="/hear-again-garden-hour-on-slugs-and-wet-summers/">Garden Hour: slugs and wet summers</a>', 4), para('1 hour', fontSize='small', textColor='muted'))),
+    align='wide'), para('Talk programmes stay here for four weeks. Music programmes cannot, because of music licences.', fontSize='small')))
+pattern('presenter-profile', 'One presenter', 'about', cols(
+    ('35%', image('reading.jpg', 'A person reading a newspaper, face hidden behind the pages', aspectRatio='4/5', scale='cover')),
+    (None, J(heading('Mags Heywood', 3), para('The Morning Table, weekdays 10am', className='is-style-answer', textColor='accent'),
+             para('Mags taught geography at Calder High for 31 years and has read every local paper every morning since she retired. She has one guest a day and one rule: they have to live in the valley.'),
+             para('Favourite guest so far: the man who repaired the Stoodley Pike balcony in 2023.', fontSize='small'))), align='wide', verticalAlignment='center'))
+pattern('school-run', 'The School Run (young presenters)', 'programmes', group(cols(
+    (None, J(heading('The School Run', 3), para('Every Thursday at 4pm, pupils from Calder High present an hour of their own radio: news from school, their music, and one interview with someone they chose. Eleven students have taken part this year.'),
+             para('Parents can listen live or hear it again for four weeks. Every presenter has a DBS-checked volunteer in the studio.', fontSize='small'))),
+    ('35%', image('podcast.jpg', 'A young presenter in a white shirt sitting in an armchair with a microphone', aspectRatio='1', scale='cover')), align='wide', verticalAlignment='center'), className='is-style-paper'))
+pattern('sight-loss', 'If you have sight loss', 'listen', group(J(
+    heading('If you have sight loss', 4),
+    para('Talking Books, on Sundays at 6pm, reads local books and the Hebden Bridge Times in full. Calderdale Sight Support can lend you a simple one-button radio tuned to 104.6. Ring them on 01422 555 290 or ring us.', fontSize='small')), className='is-style-paper'))
+pattern('advertise', 'Advertise on the station', 'about', J(heading('Advertising', 3),
+    para('We can take up to six minutes of adverts an hour. Local businesses only, and we make the advert with you in the studio for free.', className='is-style-answer'),
+    defs([['£40', 'A 30-second advert, 10 plays over a week'], ['£120', 'A month of the same, 40 plays'], ['£250', 'Sponsor the weather for a month']]),
+    para('We do not advertise payday loans, betting or political parties. Ring Rachel on 01422 555 104.', fontSize='small')))
+pattern('station-history', 'The station\'s history', 'about', J(heading('How we got here', 3), defs([
+    ['2007', 'A group from the Hebden Bridge flood relief committee starts a weekend internet station.'], ['2011', 'Ofcom gives us a community radio licence and 104.6 FM.'],
+    ['2015', 'The Boxing Day flood. We stay on air for 60 hours from the Old Co-op, reading out where to get sandbags.'], ['2020', 'Studio moves to the first floor of the Old Co-op, with a lift.'],
+    ['2025', 'Licence renewed to 2030. 70 volunteers.']])))
+pattern('requests', 'Requests and dedications', 'listen', group(J(
+    heading('Ask for a song', 4),
+    para('Text 07700 900 104 with your name, where you are and what you would like. Afternoon Music (weekdays 1pm) and Saturday Requests play as many as they can. Birthday dedications go out at 8.15am.', fontSize='small')), className='is-style-noticeboard'))
+pattern('flood-info', 'During a flood', 'news', group(J(
+    heading('If the river comes up', 3),
+    para('When there is a flood warning on the Calder we stay on air all night with local updates every half hour: which roads are shut, where sandbags are, and which halls are open. 104.6 FM works on a battery radio when the power goes.', className='is-style-answer'),
+    para('Flood line: 0345 988 1188 (Environment Agency). Power cuts: 105.', fontSize='small')), className='is-style-red-bar', layout={'type': 'constrained'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50', 'left': 'var:preset|spacing|50', 'right': 'var:preset|spacing|50'}}}))
+pattern('thanks', 'Who helps', 'about', J(heading('Thank you', 4), para(
+    'The Old Co-op lets us have the first floor for a peppercorn rent. Heptonstall Road Garage looks after the mast. The White Lion hosts the quiz. Calder High lends us pupils. And 412 Friends pay £3 a month.')))
+pattern('get-in-touch', 'Get in touch cards', 'contact', cols(
+    (None, group(J(heading('Ring', 4), para('01422 555 104 when we are live')), className='is-style-paper')),
+    (None, group(J(heading('Text', 4), para('07700 900 104, any time')), className='is-style-paper')),
+    (None, group(J(heading('Visit', 4), para('Weekdays 9am to 1pm, 22 Market Street')), className='is-style-paper')), align='wide'))
+pattern('hero-schedule-list', 'Hero: on today, as a list', 'hero', J(
+    heading('On Calder Valley Radio today', 1), pattern_ref('today-timetable')))
+
+# ---- pages that use the kit
+pattern('page-listen', 'Page: how to listen', 'listen', J(pattern_ref('on-now'), pattern_ref('listen-help'), cols((None, pattern_ref('requests')), (None, pattern_ref('sight-loss')), align='wide')), block_types='core/post-content')
+pattern('page-programmes', 'Page: programmes', 'programmes', J(pattern_ref('programmes-list'), pattern_ref('hear-again'), pattern_ref('town-hall-talk'), pattern_ref('school-run'), pattern_ref('presenter-profile'), pattern_ref('presenters')), block_types='core/post-content')
+pattern('page-noticeboard', 'Page: noticeboard', 'news', J(pattern_ref('noticeboard'), pattern_ref('whats-on'), pattern_ref('send-a-notice')), block_types='core/post-content')
+pattern('page-volunteer', 'Page: volunteer', 'volunteer', J(pattern_ref('volunteer-call'), pattern_ref('volunteer-roles'), pattern_ref('training-dates'), pattern_ref('local-music')), block_types='core/post-content')
+pattern('page-contact', 'Page: contact', 'contact', J(pattern_ref('get-in-touch'), pattern_ref('contact-us'), pattern_ref('funding'), pattern_ref('advertise')), block_types='core/post-content')
+pattern('page-about', 'Page: about the station', 'about', J(pattern_ref('station-history'), pattern_ref('flood-info'), pattern_ref('thanks'), pattern_ref('valley-photo')), block_types='core/post-content')
+pattern('page-today', 'Page: today', 'schedule', J(pattern_ref('hero-schedule-list'), pattern_ref('news-bulletin')), block_types='core/post-content')
+
+write('templates/front-page.html', tpl(J(
+    pattern_ref('on-now'),
+    sp(cols((None, pattern_ref('today-timetable')), ('45%', pattern_ref('noticeboard')), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
+    sp(pattern_ref('news-bulletin'), '60'),
+    sp(pattern_ref('news-list')),
+    sp(pattern_ref('hear-again')),
+    group(pattern_ref('volunteer-call'), align='full', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|70'}}}),
+    sp(pattern_ref('whats-on')),
+    sp(pattern_ref('town-hall-talk')),
+    sp(pattern_ref('presenters'))), notice=True))
+
+content['pages'] += [{'slug': 'about', 'title': 'About the station', 'pattern': 'wavelength/page-about', 'template': 'page-wide'},
+                     {'slug': 'today', 'title': 'Today', 'pattern': 'wavelength/page-today'}]
+content['nav'] = [{'label': 'Listen', 'url': '/listen/'}, {'label': 'Schedule', 'url': '/schedule/'}, {'label': 'Programmes', 'url': '/programmes/'},
+                  {'label': 'News', 'url': '/news/'}, {'label': 'Noticeboard', 'url': '/noticeboard/'}, {'label': 'Volunteer', 'url': '/volunteer/'},
+                  {'label': 'About', 'url': '/about/'}, {'label': 'Contact', 'url': '/contact/'}]
+for p in content['posts']:
+    p['content'] = J(p['content'], group(J(heading('Is this story about you?', 5), para('If something here is wrong, ring 01422 555 104 and we will correct it on air.', fontSize='small')), className='is-style-paper'))
+json.dump(content, open('demos/wavelength/content.json', 'w'), indent=1, ensure_ascii=False)
+print('wavelength round 2 built')

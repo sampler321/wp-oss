@@ -2,7 +2,7 @@
 /**
  * Title: Open call callout
  * Slug: commons/opportunity-callout
- * Categories: call-to-action
+ * Categories: opportunities
  */
 ?>
 <!-- wp:group {"className":"is-style-label-card","layout":{"type":"constrained","justifyContent":"left"}} -->

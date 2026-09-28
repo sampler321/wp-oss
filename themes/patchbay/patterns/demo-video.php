@@ -8,8 +8,8 @@
 ?>
 <!-- wp:group {"className":"is-style-enclosure-yellow","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-enclosure-yellow"><!-- wp:columns {"verticalAlignment":"center"} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-framed"} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-framed","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large is-style-framed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/amp.jpg' ) ); ?>" alt="Black Fender Champion II 50 amplifier with its control panel along the top"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -20,7 +20,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Four minutes, a Telecaster into a Champion with no other pedals. Knobs at noon for the first minute, then Rob turns things.</p>
+<p class="">Four minutes, a Telecaster into a Champion with no other pedals. Knobs at noon for the first minute, then Rob turns things.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

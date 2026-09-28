@@ -17,7 +17,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"grid","columnCount":6,"minimumColumnWidth":"9rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/coping-shop-deck-80in-free-grip/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/deck-wall.jpg' ) ); ?>" alt="A stack of brightly painted skateboard decks with cartoon graphics" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -31,7 +31,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/coping-shop-deck-85in-free-grip/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/kickflip.jpg' ) ); ?>" alt="A skater mid-kickflip on a city pavement in front of iron railings" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -45,7 +45,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/beginner-complete-775in-green/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/complete-green.jpg' ) ); ?>" alt="A green and black complete skateboard with silver trucks and white wheels, from above" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -59,7 +59,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/street-complete-80in-black/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/complete-black.jpg' ) ); ?>" alt="A black complete skateboard with yellow wheels on a tiled floor" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -73,7 +73,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/cruiser-longboard-36in/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/carry.jpg' ) ); ?>" alt="A man in a denim jacket carrying a patterned longboard past a white fence" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 
@@ -87,7 +87,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"2/3","scale":"cover"} -->
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"2/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
 <figure class="wp-block-image size-large"><a href="/product/kids-complete-725in/"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/complete-green.jpg' ) ); ?>" alt="A green and black complete skateboard with silver trucks and white wheels, from above" style="aspect-ratio:2/3;object-fit:cover"/></a></figure>
 <!-- /wp:image -->
 

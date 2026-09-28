@@ -9,3 +9,5 @@ dist/
 .claude/
 demos/*/screens/
 dist/
+demos/*/.release-failed
+demos/*/.lock

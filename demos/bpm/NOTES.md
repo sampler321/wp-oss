@@ -7,3 +7,10 @@
 - Nice-to-haves as patterns: numbered series note, Q&A with a guest mix, today's radio schedule with a stated timezone, booking contacts by territory, press pack download, archive index of every mix by date, show-moved notice.
 - Works for a small independent radio too: categories are shows, the on-air strip and schedule patterns carry the station info.
 - Demo Mixcloud URLs are placeholders, so the embeds fall back to links in the demo.
+
+## Round 2
+- Image lightbox on globally.
+- 45 patterns (was 32). New: live strip with station and next show, moods (mixes by genre on image tiles), mixes by series, next broadcasts, hero for the next show, guest profile, ten records this month, filmed set, photos from the booth, home setup, support the station, numbered series index. Studied on NTS (live channels, moods, genre tags), RA Podcast (numbers, Q&A), The Lot Radio (today, archive) and LYL Radio (residents).
+- Tables cut from 8 patterns to 2 (tracklist and the radio timetable, both real tabular data). Dates, compact dates, mix details and booking contacts are ruled rows; releases are sleeve cards; the release feature uses a list.
+- Home page has no table: dates and next broadcasts are rows.
+- New demo page: Explore (next show, moods, series). The mix post for Szum 058 now includes the guest profile.

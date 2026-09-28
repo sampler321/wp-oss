@@ -5,26 +5,50 @@
  * Categories: services
  */
 ?>
-<!-- wp:group {"className":"is-style-rule-top","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-rule-top"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">How a project runs</h3>
 <!-- /wp:heading -->
 
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Two weeks on site.</strong> I watch the service being used and talk to the people who run it.</li>
-<!-- /wp:list-item -->
+<!-- wp:group {"className":"is-style-arrow-row","layout":{"type":"grid","minimumColumnWidth":"12rem"}} -->
+<div class="wp-block-group is-style-arrow-row"><!-- wp:group {"className":"is-style-box","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-box"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Two weeks on site</h5>
+<!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li><strong>One problem statement.</strong> Written down, agreed with you, with the number we are trying to move.</li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">I watch the service being used and talk to the people who run it.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:list-item -->
-<li><strong>Prototypes in the real place.</strong> Paper first, then clickable, tested where people actually use the thing.</li>
-<!-- /wp:list-item -->
+<!-- wp:group {"className":"is-style-box","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-box"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">One problem statement</h5>
+<!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li><strong>Ship, measure, write it up.</strong> You get the case study too, and you can use it internally.</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></div>
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Written down and agreed, with the number we are trying to move.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-box","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-box"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Prototypes in place</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Paper first, then clickable, tested where people use the thing.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-box","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-box"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Ship and write it up</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">You get the case study too, to use inside your organisation.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

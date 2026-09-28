@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Call <a href="tel:02079460319">020 7946 0319</a> before 4pm. If the bike is still out in your direction, we will add you to the round. If not, we will say so straight away.</p>
+<p class="">Call <a href="tel:02079460319">020 7946 0319</a> before 4pm. If the bike is still out in your direction, we will add you to the round. If not, we will say so straight away.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

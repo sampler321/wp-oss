@@ -12,9 +12,21 @@
 <h4 class="wp-block-heading">Case file</h4>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Case</td><td>Wagstaff’s Yard</td></tr><tr><td>Part</td><td>4 of 6</td></tr><tr><td>Released</td><td>Thursday 24 September 2026</td></tr><tr><td>Length</td><td>48 minutes</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:paragraph -->
+<p class=""><strong>Case</strong> Wagstaff’s Yard</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>Part</strong> 4 of 6</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>Released</strong> Thursday 24 September 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>Length</strong> 48 minutes</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:audio -->

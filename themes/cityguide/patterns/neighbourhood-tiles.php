@@ -5,15 +5,15 @@
  * Categories: cityguide-places
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading -->
 <h2 class="wp-block-heading">Six neighbourhoods</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"19rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#strijp"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ontdekfabriek.jpg' ) ); ?>" alt="A long white Philips factory block with rows of windows and arched doors on the ground floor" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#strijp"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ontdekfabriek.jpg' ) ); ?>" alt="A long white Philips factory block with rows of windows and arched doors on the ground floor"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -26,8 +26,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#centrum"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/stratumseind.jpg' ) ); ?>" alt="Three stone statues in pointed brick niches on the front of the Catharinakerk" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#centrum"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/stratumseind.jpg' ) ); ?>" alt="Three stone statues in pointed brick niches on the front of the Catharinakerk"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -40,8 +40,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#stratum"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dommel.jpg' ) ); ?>" alt="A concrete bridge over the Dommel river, photographed in black and white when it was new" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#stratum"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/dommel.jpg' ) ); ?>" alt="A concrete bridge over the Dommel river, photographed in black and white when it was new"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -54,8 +54,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#woensel"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bikeparking.jpg' ) ); ?>" alt="Rows of parked bicycles crammed together in a bike rack" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#woensel"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/bikeparking.jpg' ) ); ?>" alt="Rows of parked bicycles crammed together in a bike rack"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -68,8 +68,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#kruisstraat"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/kruisstraat.jpg' ) ); ?>" alt="An old sandstone house on a corner of a quiet street with red brick paving" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#kruisstraat"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/kruisstraat.jpg' ) ); ?>" alt="An old sandstone house on a corner of a quiet street with red brick paving"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -82,8 +82,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="/neighbourhoods/#tongelre"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/psv.jpg' ) ); ?>" alt="The PSV stadium seen from a passing train, with overhead wires in the foreground" style="aspect-ratio:4/3;object-fit:cover"/></a></figure>
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"custom","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><a href="/neighbourhoods/#tongelre"><img style="aspect-ratio:4/3;object-fit:cover" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/psv.jpg' ) ); ?>" alt="The PSV stadium seen from a passing train, with overhead wires in the foreground"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->

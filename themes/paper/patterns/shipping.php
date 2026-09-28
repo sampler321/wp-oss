@@ -14,7 +14,7 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Orders go out Tuesday to Saturday, wrapped in paper and sealed with paper tape. Ink goes in a sealed bag, just in case.</p>
+<p class="">Orders go out Tuesday to Saturday, wrapped in paper and sealed with paper tape. Ink goes in a sealed bag, just in case.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -22,5 +22,5 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Unused items within 30 days, refunded in full. Opened ink and written-in notebooks cannot come back, so ask us about the paper before you buy.</p>
+<p class="">Unused items within 30 days, refunded in full. Opened ink and written-in notebooks cannot come back, so ask us about the paper before you buy.</p>
 <!-- /wp:paragraph -->

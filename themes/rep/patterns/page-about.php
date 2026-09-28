@@ -10,6 +10,10 @@
 
 <!-- wp:pattern {"slug":"rep/rates-note"} /-->
 
+<!-- wp:pattern {"slug":"rep/licensing-note"} /-->
+
+<!-- wp:pattern {"slug":"rep/art-buyer-letter"} /-->
+
 <!-- wp:pattern {"slug":"rep/news-list"} /-->
 
 <!-- wp:pattern {"slug":"rep/interview"} /-->

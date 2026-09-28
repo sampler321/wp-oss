@@ -13,3 +13,5 @@
 <!-- wp:pattern {"slug":"thrift/buying-days"} /-->
 
 <!-- wp:pattern {"slug":"thrift/what-we-buy"} /-->
+
+<!-- wp:pattern {"slug":"thrift/wanted"} /-->

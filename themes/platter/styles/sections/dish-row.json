@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Label and value row",
+	"slug": "dish-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"border": {
+			"bottom": {
+				"color": "var:preset|color|muted",
+				"width": "2px",
+				"style": "dotted"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|20",
+				"bottom": "var:preset|spacing|20"
+			}
+		},
+		"css": "&{display:flex!important;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}& > *{margin:0!important}& > *:first-child{font-family:var(--wp--preset--font-family--display)}& > *:last-child{font-variant-numeric:tabular-nums}"
+	}
+}

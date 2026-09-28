@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ink swatch",
+	"slug": "swatch",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{aspect-ratio:1;border-radius:50%;box-shadow:inset 0 0 0 5mm rgba(255,255,255,.12)}"
+	}
+}

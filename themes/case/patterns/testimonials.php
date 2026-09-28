@@ -2,7 +2,7 @@
 /**
  * Title: Testimonials (named)
  * Slug: case/testimonials
- * Categories: testimonials
+ * Categories: about
  */
 ?>
 <!-- wp:columns {"align":"wide"} -->

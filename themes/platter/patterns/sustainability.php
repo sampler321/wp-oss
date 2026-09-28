@@ -2,7 +2,7 @@
 /**
  * Title: Waste and packaging
  * Slug: platter/sustainability
- * Categories: platter,about
+ * Categories: about
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

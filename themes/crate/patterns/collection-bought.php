@@ -8,8 +8,8 @@
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/singles-case.jpg' ) ); ?>" alt="An open carry case of 7-inch singles on a wooden floor" style="aspect-ratio:4/5;object-fit:cover"/></figure>
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sleeve-hands.jpg' ) ); ?>" alt="Hands lifting an LP sleeve above a turntable on a white counter" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -19,11 +19,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>1,400 northern soul and funk 45s from a man who played the Wigan all-nighters and never threw a record away. Most are VG or better. They go out in boxes of fifty and on the singles wall from Tuesday.</p>
+<p class="">1,400 northern soul and funk 45s from a man who played the Wigan all-nighters and never threw a record away. Most are VG or better. They go out in boxes of fifty and on the singles wall from Tuesday.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Delroy drove the van. Ines graded every one on the shop deck, which took three weeks.</p>
+<p class="">Delroy drove the van. Ines graded every one on the shop deck, which took three weeks.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

@@ -10,6 +10,8 @@
 
 <!-- wp:pattern {"slug":"key/workshop-hours"} /-->
 
+<!-- wp:pattern {"slug":"key/payment"} /-->
+
 <!-- wp:pattern {"slug":"key/real-locksmith"} /-->
 
 <!-- wp:pattern {"slug":"key/credentials-row"} /-->

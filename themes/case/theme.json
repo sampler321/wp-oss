@@ -146,7 +146,7 @@
 					"size": "6.5rem",
 					"name": "Display",
 					"fluid": {
-						"min": "3.2rem",
+						"min": "2.6rem",
 						"max": "6.5rem"
 					}
 				}
@@ -213,6 +213,14 @@
 			"radius": true,
 			"style": true,
 			"width": true
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {

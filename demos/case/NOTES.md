@@ -7,3 +7,10 @@
 - Signature from research: work-list, a table where published case studies link through and NDA projects show a lime "Under NDA" marker and no link; nda-entry for a single card.
 - Also: capacity note, engagement models with "when this fits", process, what I do not take on, one-page CV, talks, newsletter.
 - Images: CC0 photos of ticket machines, parking meters, self-checkouts and station concourses stand in for project screens; no device mock-ups.
+
+## Round 2
+- Rebuilt as a case-study kit: 29 case-study blocks (category "Case study blocks"), each generated from one data function so every study uses the same markup: overview facts, intro and contents, stage band, problem, hypothesis, constraints, research methods, insights, research quote, field photo, personas, journey map, user flow with arrows, wireframes, options considered, before and after, design system, prototype, usability testing, metrics with sources, client quote, learnings, credits, screens gallery, timeline, annotated screen, NDA note, next case study. 54 patterns in total.
+- Four complete case studies as posts (ticket machines, parking, self-checkout, stop displays), each composed from the kit with its own content; the first uses the pattern references directly. Two writing posts added (6 posts).
+- Screens, wireframes, a journey sketch and a UI kit sheet were drawn for the demo (`build/case_screens.py`, CC0, credited) so studies show real flows instead of stock photos.
+- Home now opens with a name, one line and the latest case study (Query Loop), not a motto. The work list is ruled rows, not a table; only the CV is a table.
+- Image lightbox on globally. Pattern categories registered in functions.php.

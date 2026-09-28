@@ -2,7 +2,7 @@
 /**
  * Title: What things cost
  * Slug: grain/price-guide
- * Categories: services
+ * Categories: prices,services
  */
 ?>
 <!-- wp:heading {"level":3} -->

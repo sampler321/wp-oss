@@ -11,7 +11,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|red-print"}},"className":"is-style-framed","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-framed","style":{"color":{"duotone":"var:preset|duotone|red-print"}}} -->
 <figure class="wp-block-image size-large is-style-framed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/portrait.jpg' ) ); ?>" alt="Woodcut portrait of a bearded man"/></figure>
 <!-- /wp:image -->
 
@@ -23,13 +23,13 @@
 <p class="has-small-font-size">Anna Kruit, hardback</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">€24.95</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">€24.95</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|red-print"}},"className":"is-style-framed","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-framed","style":{"color":{"duotone":"var:preset|duotone|red-print"}}} -->
 <figure class="wp-block-image size-large is-style-framed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/rotterdam.jpg' ) ); ?>" alt="Old map of Rotterdam"/></figure>
 <!-- /wp:image -->
 
@@ -41,13 +41,13 @@
 <p class="has-small-font-size">Joris Pieters, hardback</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">€22.50</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">€22.50</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|red-print"}},"className":"is-style-framed","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-framed","style":{"color":{"duotone":"var:preset|duotone|red-print"}}} -->
 <figure class="wp-block-image size-large is-style-framed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/kraken.jpg' ) ); ?>" alt="Engraving of a giant octopus"/></figure>
 <!-- /wp:image -->
 
@@ -59,8 +59,8 @@
 <p class="has-small-font-size">Lotte van Dijk, hardback</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
-<p class="has-accent-color has-text-color">€16.95</p>
+<!-- wp:paragraph {"className":"has-accent-color has-text-color","style":{"typography":{"fontWeight":"800"}},"textColor":"accent"} -->
+<p class="has-accent-color has-text-color" style="font-weight:800">€16.95</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

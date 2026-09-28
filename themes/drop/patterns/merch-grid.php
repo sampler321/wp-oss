@@ -12,18 +12,18 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/shop/">Everything in the shop</a></p>
+<p class=""><a href="/shop/">Everything in the shop</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"13rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tee.jpg' ) ); ?>" alt="A rail of printed t-shirts on hangers"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">car park tee</p>
+<p class="has-large-font-size has-display-font-family">car park tee</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -32,12 +32,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/look-1.jpg' ) ); ?>" alt="A man in a white t-shirt laughing"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">static bloom longsleeve</p>
+<p class="has-large-font-size has-display-font-family">static bloom longsleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -46,12 +46,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tape.jpg' ) ); ?>" alt="Two cassette tapes"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">songs for the car park</p>
+<p class="has-large-font-size has-display-font-family">songs for the car park</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -64,12 +64,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/zine.jpg' ) ); ?>" alt="Stacks of photocopied zines"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"large","fontFamily":"display"} -->
-<p class="has-display-font-family has-large-font-size">zine, issue three</p>
+<p class="has-large-font-size has-display-font-family">zine, issue three</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

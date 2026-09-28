@@ -2,7 +2,7 @@
 /**
  * Title: Kiln log (latest firing notes)
  * Slug: kiln/firing-log
- * Categories: posts,query
+ * Categories: kiln-log,posts,query
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -12,24 +12,24 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="/kiln-log/">All firings</a></p>
+<p class=""><a href="/kiln-log/">All firings</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
 
-<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+<!-- wp:post-date /-->
 
-<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+<!-- wp:post-title {"isLink":true,"level":3,"fontSize":"large"} /-->
 
 <!-- wp:post-excerpt {"excerptLength":22} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p>Nothing here yet.</p>
+<p class="">Nothing here yet.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

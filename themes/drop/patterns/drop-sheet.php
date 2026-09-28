@@ -6,134 +6,134 @@
  * Description: The signature: this drop typed out with real counts, a batch window for pre-orders, and sold-out items kept on the sheet.
  */
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-scrap-right","layout":{"type":"constrained","contentSize":"980px"}} -->
+<!-- wp:group {"className":"is-style-scrap-right","align":"wide","layout":{"type":"constrained","contentSize":"980px"}} -->
 <div class="wp-block-group alignwide is-style-scrap-right"><!-- wp:heading {"anchor":"sheet"} -->
-<h2 id="sheet" class="wp-block-heading">stock sheet, typed on 12 october</h2>
+<h2 class="wp-block-heading">stock sheet, typed on 12 october</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>What</p>
+<p class="">What</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Details</p>
+<p class="">Details</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Price</p>
+<p class="">Price</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Left</p>
+<p class="">Left</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Car park tee, black</p>
+<p class="">Car park tee, black</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Screen print, one colour, S to XXL</p>
+<p class="">Screen print, one colour, S to XXL</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£22</p>
+<p class="">£22</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>38 left</p>
+<p class="">38 left</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Static bloom longsleeve</p>
+<p class="">Static bloom longsleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Two colours, printed sleeves, S to XL</p>
+<p class="">Two colours, printed sleeves, S to XL</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£30</p>
+<p class="">£30</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>6 left</p>
+<p class="">6 left</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Heavy hoodie, washed black</p>
+<p class="">Heavy hoodie, washed black</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Pre-order, in production</p>
+<p class="">Pre-order, in production</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£45</p>
+<p class="">£45</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>ships 24 to 29 nov</p>
+<p class="">ships 24 to 29 nov</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Songs for the car park, tape</p>
+<p class="">Songs for the car park, tape</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>C40, chrome, 100 dubbed</p>
+<p class="">C40, chrome, 100 dubbed</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£8</p>
+<p class="">£8</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>sold out</p>
+<p class="">sold out</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Soft engine, 12 inch LP</p>
+<p class="">Soft engine, 12 inch LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Black vinyl, printed inner sleeve</p>
+<p class="">Black vinyl, printed inner sleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£24</p>
+<p class="">£24</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>in stock</p>
+<p class="">in stock</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Zine, issue three</p>
+<p class="">Zine, issue three</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>40 pages, photocopied, stapled</p>
+<p class="">40 pages, photocopied, stapled</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£5</p>
+<p class="">£5</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>22 left</p>
+<p class="">22 left</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

@@ -2,15 +2,15 @@
 /**
  * Title: Hero: what are you bringing in?
  * Slug: tick/hero-chooser
- * Categories: featured
+ * Categories: hero,featured
  * Description: The opening screen: a chooser by what the customer is bringing in, with prices, over hairline column guides.
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-guides","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-guides"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"58%"} -->
-<div class="wp-block-column" style="flex-basis:58%"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">Watch and clock repair on Piotrkowska since 1961.</h1>
+<div class="wp-block-column" style="flex-basis:58%"><!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
+<h1 class="wp-block-heading has-xx-large-font-size">Watch and clock repair on Piotrkowska since 1961</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"x-large","fontFamily":"display"} -->

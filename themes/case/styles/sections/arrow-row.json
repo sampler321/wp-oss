@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Flow with arrows",
+	"slug": "arrow-row",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "& > .wp-block-group{position:relative}@media (min-width:782px){& > .wp-block-group:not(:last-child)::after{content:\"\\2192\";position:absolute;right:-1.15em;top:50%;transform:translateY(-50%);font-weight:800;font-size:1.4em;color:var(--wp--preset--color--accent)}}"
+	}
+}

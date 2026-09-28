@@ -2,7 +2,7 @@
 /**
  * Title: Booking terms, short
  * Slug: platter/booking-terms
- * Categories: platter,text
+ * Categories: info
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

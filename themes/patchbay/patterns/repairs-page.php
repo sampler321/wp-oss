@@ -11,3 +11,7 @@
 <!-- wp:pattern {"slug":"patchbay/rma-steps"} /-->
 
 <!-- wp:pattern {"slug":"patchbay/warranty-terms"} /-->
+
+<!-- wp:pattern {"slug":"patchbay/repair-prices"} /-->
+
+<!-- wp:pattern {"slug":"patchbay/pedal-faq"} /-->

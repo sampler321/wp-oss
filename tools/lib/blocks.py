@@ -51,6 +51,32 @@ def _cls(base, attrs):
     return ' '.join(x for x in c if x)
 
 
+
+def _css_val(v):
+    if isinstance(v, str) and v.startswith('var:preset|'):
+        _, kind, slug = v.split('|')
+        return 'var(--wp--preset--%s--%s)' % (kind, slug)
+    return v
+
+
+def _style(attrs):
+    """Inline style WordPress saves for spacing padding/margin and min-height (in attribute order)."""
+    st = attrs.get('style') or {}
+    out = []
+    sp = st.get('spacing') or {}
+    for prop in ('padding', 'margin'):
+        v = sp.get(prop)
+        if isinstance(v, dict):
+            for side in v:
+                out.append('%s-%s:%s' % (prop, side, _css_val(v[side])))
+        elif isinstance(v, str):
+            out.append('%s:%s' % (prop, _css_val(v)))
+    mh = (st.get('dimensions') or {}).get('minHeight')
+    if mh:
+        out.append('min-height:%s' % _css_val(mh))
+    return (' style="%s"' % ';'.join(out)) if out else ''
+
+
 def img_url(filename):
     """PHP expression for a theme image (patterns only)."""
     return "<?php echo esc_url( get_theme_file_uri( 'assets/images/%s' ) ); ?>" % filename
@@ -113,7 +139,10 @@ def separator(**attrs):
 
 
 def spacer(height='var:preset|spacing|50'):
-    return '<!-- wp:spacer {"height":"%s"} -->\n<div style="height:%s" aria-hidden="true" class="wp-block-spacer"></div>\n<!-- /wp:spacer -->' % (height, height)
+    css = height
+    if height.startswith('var:preset|spacing|'):
+        css = 'var(--wp--preset--spacing--%s)' % height.split('|')[-1]
+    return '<!-- wp:spacer {"height":"%s"} -->\n<div style="height:%s" aria-hidden="true" class="wp-block-spacer"></div>\n<!-- /wp:spacer -->' % (height, css)
 
 
 # ---- media ----
@@ -174,7 +203,8 @@ def group(inner, tag='div', layout='constrained', **attrs):
         a = {'tagName': tag, **a}
     if layout:
         a['layout'] = layout if isinstance(layout, dict) else {'type': layout}
-    return '<!-- wp:group%s -->\n<%s class="%s">%s</%s>\n<!-- /wp:group -->' % (_a(a), tag, _cls('wp-block-group', a), inner, tag)
+    anchor = (' id="%s"' % a['anchor']) if a.get('anchor') else ''
+    return '<!-- wp:group%s -->\n<%s%s class="%s"%s>%s</%s>\n<!-- /wp:group -->' % (_a(a), tag, anchor, _cls('wp-block-group', a), _style(a), inner, tag)
 
 
 def row(inner, justify=None, wrap=True, **attrs):
@@ -200,7 +230,7 @@ def columns(*cols, **attrs):
             out.append('<!-- wp:column {"width":"%s"} -->\n<div class="wp-block-column" style="flex-basis:%s">%s</div>\n<!-- /wp:column -->' % (w, w, c))
         else:
             out.append('<!-- wp:column -->\n<div class="wp-block-column">%s</div>\n<!-- /wp:column -->' % c)
-    return '<!-- wp:columns%s -->\n<div class="%s">%s</div>\n<!-- /wp:columns -->' % (_a(attrs), _cls('wp-block-columns', attrs), '\n\n'.join(out))
+    return '<!-- wp:columns%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:columns -->' % (_a(attrs), _cls('wp-block-columns', attrs), _style(attrs), '\n\n'.join(out))
 
 
 def buttons(*btns, **attrs):

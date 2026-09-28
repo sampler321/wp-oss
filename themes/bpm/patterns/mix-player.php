@@ -12,6 +12,6 @@ https://www.mixcloud.com/radiowola/szum-058-w-kaja-ptak/
 </div></figure>
 <!-- /wp:embed -->
 
-<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
+<!-- wp:paragraph {"fontSize":"x-small","textColor":"muted"} -->
 <p class="has-muted-color has-text-color has-x-small-font-size">Also on <a href="https://soundcloud.com/">SoundCloud</a>. Downloads for Bandcamp supporters only.</p>
 <!-- /wp:paragraph -->

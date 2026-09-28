@@ -2,11 +2,11 @@
 /**
  * Title: Page: Studio A
  * Slug: booth/studio-a-page
- * Categories: featured
+ * Categories: rooms
  * Block Types: core/post-content
  */
 ?>
-<!-- wp:image {"aspectRatio":"21/9","scale":"cover","sizeSlug":"large","linkDestination":"none","align":"wide"} -->
+<!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"21/9","scale":"cover","sizeSlug":"large","linkDestination":"none","align":"wide"} -->
 <figure class="wp-block-image alignwide size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/console.jpg' ) ); ?>" alt="Studio A control room with the console, five monitors and acoustic panels" style="aspect-ratio:21/9;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -16,8 +16,10 @@
 
 <!-- wp:pattern {"slug":"booth/studio-numbers"} /-->
 
-<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:pattern {"slug":"booth/gear-story"} /-->
+
+<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/drums.jpg' ) ); ?>" alt="A drum kit in the live room, seen from above"/><figcaption class="wp-element-caption">The house kit, a Ludwig Classic Maple, set up for the Rzeka sessions</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:pattern {"slug":"booth/rates-table"} /-->
+<!-- wp:pattern {"slug":"booth/rate-cards"} /-->

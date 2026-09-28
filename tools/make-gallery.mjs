@@ -5,7 +5,11 @@ import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const REPO = 'sampler321/wp-oss';
-const out = path.join(ROOT, 'dist', '_gallery');
+// Optional: --only=slug1,slug2 --out=_open --title="..." --link=slug:/path/
+const arg = k => (process.argv.find(a => a.startsWith(`--${k}=`)) || '').slice(k.length + 3);
+const only = arg('only') ? arg('only').split(',') : null;
+const links = Object.fromEntries((process.argv.filter(a => a.startsWith('--link=')).map(a => a.slice(7).split(/:(.*)/s))));
+const out = path.join(ROOT, 'dist', arg('out') || '_gallery');
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(path.join(out, 'shots'), { recursive: true });
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -22,7 +26,8 @@ const items = rows.map(c => {
   let shot = '';
   if (fs.existsSync(path.join(dir, 'screenshot.png'))) { fs.copyFileSync(path.join(dir, 'screenshot.png'), path.join(out, 'shots', `${slug}.png`)); shot = `shots/${slug}.png`; }
   return { n: c[1], slug, idea: c[3], brief: c[4], name: h('Theme Name') || slug, desc: h('Description'), url, shot };
-}).filter(i => i.url);
+}).filter(i => i.url && (!only || only.includes(i.slug))).map(i => (links[i.slug] ? { ...i, url: i.url + links[i.slug] } : i));
+if (only) items.sort((a, b) => only.indexOf(a.slug) - only.indexOf(b.slug));
 
 const playground = s => `https://playground.wordpress.net/?blueprint-url=${encodeURIComponent(`https://raw.githubusercontent.com/${REPO}/main/demos/${s}/blueprint.json`)}`;
 const cards = items.map(i => `
@@ -37,7 +42,7 @@ const cards = items.map(i => `
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WP-OSS block themes</title>
+<title>${arg('title') || 'WP-OSS block themes'}</title>
 <meta name="description" content="${items.length} open-source WordPress block themes for independent businesses and creatives. Core blocks only, every style in theme.json.">
 <style>
 :root{--bg:#f2f2ee;--ink:#111;--line:#111;--muted:#55554f;--accent:#1f3bff}
@@ -58,7 +63,7 @@ article p{margin:0 0 8px;font-size:15px}.brief{color:var(--muted);font-style:ita
 footer{max-width:1400px;margin:0 auto;padding:24px 16px 48px;border-top:2px solid var(--line);font-size:14px}
 </style></head><body>
 <header>
-<h1>WP-OSS<br>block themes</h1>
+<h1>${arg('title') ? arg('title').replace(' ', '<br>') : 'WP-OSS<br>block themes'}</h1>
 <p>${items.length} free, open-source WordPress block themes for small businesses, makers and creatives. Every theme uses core blocks only, and every colour, font and size lives in theme.json, so it can all be changed in the Site Editor.</p>
 <p class="meta">GPL-2.0-or-later, WordPress 6.7 or newer, source on <a href="https://github.com/${REPO}">github.com/${REPO}</a></p>
 </header>
@@ -68,4 +73,4 @@ footer{max-width:1400px;margin:0 auto;padding:24px 16px 48px;border-top:2px soli
 </body></html>`;
 fs.writeFileSync(path.join(out, 'index.html'), html);
 fs.writeFileSync(path.join(out, '404.html'), html.replace(/<main>[\s\S]*<\/main>/, '<main><p>That page isn\'t here. The themes are listed on the <a href="/">index</a>.</p></main>'));
-console.log(`gallery: ${items.length} themes -> dist/_gallery`);
+console.log(`gallery: ${items.length} themes -> ${path.relative(ROOT, out)}`);

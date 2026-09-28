@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Glyph grid",
+	"slug": "glyph-grid",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{gap:0!important}& > p{margin:-1px 0 0 -1px!important}@media (max-width:600px){&{grid-template-columns:repeat(4,1fr)!important}}"
+	}
+}

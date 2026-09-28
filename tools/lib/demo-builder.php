@@ -66,6 +66,46 @@ function wposs_content( $item ) {
 	return isset( $item['content'] ) ? $item['content'] : '';
 }
 
+
+/**
+ * Pattern library: an index page plus one child page per pattern category, rendering every theme pattern
+ * with its name, so the demo shows the whole kit.
+ */
+function wposs_pattern_library( $slug ) {
+	$registry = WP_Block_Patterns_Registry::get_instance();
+	$cats     = array();
+	foreach ( $registry->get_all_registered() as $p ) {
+		if ( 0 !== strpos( $p['name'], $slug . '/' ) ) {
+			continue;
+		}
+		$cat = ! empty( $p['categories'] ) ? $p['categories'][0] : 'other';
+		$cats[ $cat ][] = $p;
+	}
+	if ( ! $cats ) {
+		return null;
+	}
+	ksort( $cats );
+	$index_id = wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Pattern library', 'post_name' => 'pattern-library', 'menu_order' => 900, 'post_content' => '' ) );
+	update_post_meta( $index_id, '_wp_page_template', 'page-wide' );
+	$index = '<!-- wp:paragraph --><p>Every block pattern in this theme, grouped by type. Add any of them from the block inserter under Patterns.</p><!-- /wp:paragraph -->';
+	$list  = '';
+	foreach ( $cats as $cat => $items ) {
+		$label = ucwords( str_replace( array( '-', '_' ), ' ', $cat ) );
+		$body  = '';
+		foreach ( $items as $p ) {
+			$body .= '<!-- wp:separator {"className":"is-style-wide"} --><hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/><!-- /wp:separator -->';
+			$body .= '<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size"><strong>' . esc_html( $p['title'] ) . '</strong></p><!-- /wp:paragraph -->';
+			$body .= '<!-- wp:pattern ' . wp_json_encode( array( 'slug' => $p['name'] ), JSON_UNESCAPED_SLASHES ) . ' /-->';
+		}
+		$cid = wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_title' => $label . ' patterns', 'post_name' => sanitize_title( $cat ), 'post_parent' => $index_id, 'post_content' => wp_slash( $body ) ) );
+		update_post_meta( $cid, '_wp_page_template', 'page-wide' );
+		$list .= '<!-- wp:list-item --><li><a href="' . esc_url( get_permalink( $cid ) ) . '">' . esc_html( $label ) . '</a> (' . count( $items ) . ')</li><!-- /wp:list-item -->';
+	}
+	$index .= '<!-- wp:list --><ul class="wp-block-list">' . $list . '</ul><!-- /wp:list -->';
+	wp_update_post( array( 'ID' => $index_id, 'post_content' => wp_slash( $index ) ) );
+	return $index_id;
+}
+
 function wposs_build_demo( $json_path ) {
 	$data = json_decode( file_get_contents( $json_path ), true );
 	if ( ! $data ) {
@@ -76,6 +116,8 @@ function wposs_build_demo( $json_path ) {
 
 	update_option( 'blogname', $data['site']['title'] );
 	update_option( 'blogdescription', isset( $data['site']['tagline'] ) ? $data['site']['tagline'] : '' );
+	global $wp_rewrite;
+	$wp_rewrite->set_permalink_structure( '/%postname%/' );
 	update_option( 'permalink_structure', '/%postname%/' );
 	update_option( 'posts_per_page', 12 );
 	foreach ( ( isset( $data['options'] ) ? $data['options'] : array() ) as $k => $v ) {
@@ -110,7 +152,7 @@ function wposs_build_demo( $json_path ) {
 				'post_status'  => 'publish',
 				'post_title'   => $pg['title'],
 				'post_name'    => $pg['slug'],
-				'post_content' => wposs_content( $pg ),
+				'post_content' => wp_slash( wposs_content( $pg ) ),
 				'menu_order'   => isset( $pg['order'] ) ? $pg['order'] : $i,
 			)
 		);
@@ -147,7 +189,7 @@ function wposs_build_demo( $json_path ) {
 				'post_status'   => 'publish',
 				'post_title'    => $po['title'],
 				'post_name'     => isset( $po['slug'] ) ? $po['slug'] : sanitize_title( $po['title'] ),
-				'post_content'  => wposs_content( $po ),
+				'post_content'  => wp_slash( wposs_content( $po ) ),
 				'post_excerpt'  => isset( $po['excerpt'] ) ? $po['excerpt'] : '',
 				'post_date'     => $date,
 				'post_category' => ! empty( $po['category'] ) ? array_map( function ( $c ) use ( $cats ) { return isset( $cats[ $c ] ) ? $cats[ $c ] : 1; }, (array) $po['category'] ) : array( 1 ),
@@ -162,6 +204,12 @@ function wposs_build_demo( $json_path ) {
 		}
 	}
 
+	// Pattern library (on by default).
+	$library_id = ( ! isset( $data['pattern_library'] ) || $data['pattern_library'] ) ? wposs_pattern_library( get_stylesheet() ) : null;
+	if ( $library_id && ! empty( $data['nav'] ) ) {
+		$data['nav'][] = array( 'label' => 'Patterns', 'url' => '/pattern-library/' );
+	}
+
 	// Navigation.
 	if ( ! empty( $data['nav'] ) ) {
 		$links = '';
@@ -171,7 +219,7 @@ function wposs_build_demo( $json_path ) {
 				'url'   => home_url( $l['url'] ),
 				'kind'  => 'custom',
 			);
-			$links .= '<!-- wp:navigation-link ' . wp_json_encode( $attrs ) . ' /-->';
+			$links .= '<!-- wp:navigation-link ' . wp_json_encode( $attrs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . ' /-->';
 		}
 		foreach ( get_posts( array( 'post_type' => 'wp_navigation', 'numberposts' => -1, 'post_status' => 'any' ) ) as $old ) {
 			wp_delete_post( $old->ID, true );
@@ -181,7 +229,7 @@ function wposs_build_demo( $json_path ) {
 				'post_type'    => 'wp_navigation',
 				'post_status'  => 'publish',
 				'post_title'   => 'Main menu',
-				'post_content' => $links,
+				'post_content' => wp_slash( $links ),
 			)
 		);
 	}
@@ -227,6 +275,8 @@ function wposs_build_demo( $json_path ) {
 		}
 	}
 
-	flush_rewrite_rules();
+	$wp_rewrite->set_permalink_structure( '/%postname%/' );
+	$wp_rewrite->flush_rules( true );
+	delete_option( 'rewrite_rules' );
 	wposs_log( sprintf( 'demo built: %d pages, %d posts, %d products', count( $pages ), $n, isset( $data['products'] ) ? count( $data['products'] ) : 0 ) );
 }

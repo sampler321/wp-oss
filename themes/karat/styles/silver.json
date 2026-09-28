@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Silver",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#EDEFF1",
+					"name": "Bench plate"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1C2026",
+					"name": "Loupe black"
+				},
+				{
+					"slug": "accent",
+					"color": "#4A5560",
+					"name": "Sterling"
+				},
+				{
+					"slug": "surface",
+					"color": "#E0E4E8",
+					"name": "Polish cloth"
+				},
+				{
+					"slug": "line",
+					"color": "#B8BFC6",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#505862",
+					"name": "Pumice"
+				}
+			]
+		}
+	}
+}

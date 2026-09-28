@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Every used record is played on the shop deck before it goes online. We grade the record (media) and the sleeve separately, and we grade down when we are unsure.</p>
+<p class="">Every used record is played on the shop deck before it goes online. We grade the record (media) and the sleeve separately, and we grade down when we are unsure.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-spec-table"} -->

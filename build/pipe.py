@@ -11,6 +11,13 @@ import sys, json, os; sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('pipe')
 S = THEME['slug']
+
+# Round 2: map inserter categories so the pattern library groups well (first category = library page).
+CATMAP = {'featured': 'hero', 'call-to-action': 'quote', 'contact': 'areas', 'testimonials': 'about', 'text': 'info', 'query': 'areas', 'banner': 'notices'}
+_pattern = pattern
+def pattern(slug, title, categories, body, **kw):
+    cats = [CATMAP.get(c.strip(), c.strip()) for c in categories.split(',') if c.strip() and c.strip() != 'pipe'] or ['pages']
+    return _pattern(slug, title, ','.join(dict.fromkeys(cats)), body, **kw)
 D = THEME['dir']
 
 
@@ -66,6 +73,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 8vw, 6rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 11vw, 9rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -119,7 +127,7 @@ theme = {
     },
     'templateParts': [{'area': 'header', 'name': 'header', 'title': 'Header'}, {'area': 'footer', 'name': 'footer', 'title': 'Footer'},
                       {'area': 'uncategorized', 'name': 'emergency-bar', 'title': 'Emergency bar'}],
-    'customTemplates': [{'name': 'page-index', 'title': 'Page with left index column', 'postTypes': ['page']}],
+    'customTemplates': [{'name': 'page-index', 'title': 'Page with left index column', 'postTypes': ['page']}, {'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']}],
 }
 wjson('theme.json', theme)
 
@@ -250,7 +258,7 @@ pattern('hero', 'Hero: name, phone and service index', 'pipe,featured', group(J(
         (None, J(para('Call or text', className='is-style-label'), para(TEL, className='is-style-phone'),
                  para('Niall, Aisha and two engineers, all Gas Safe registered. We cover S1 to S14, S17, S35 and S60. Right now we are booking non-urgent work <strong>3 working days ahead</strong>.'),
                  buttons(('Call now', 'tel:+441144960831', {'className': 'is-style-call-button'}), ('Get a quote', '/quote/', {'className': 'is-style-book-button'})),
-                 img('manifold.jpg', 'A brass underfloor heating manifold with six white and grey thermal actuators on top', 'Manifold with new actuators, Crookes, last week', lightbox=False))),
+                 img('manifold.jpg', 'A brass underfloor heating manifold with six white and grey thermal actuators on top', 'Manifold with new actuators, Crookes, last week'))),
         align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
     align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|50'}}}),
     description='Opener: the trade and the town as the headline, a numbered service index with prices, and the phone number at full size.')
@@ -319,7 +327,7 @@ pattern('while-you-wait', 'What to do while you wait', 'pipe,text', idx('While y
         (None, J(heading('Smell of gas', 5), lst(['Open doors and windows. Don\'t use switches or anything that sparks.',
                                                   'Turn off the gas at the meter: the lever goes across the pipe.',
                                                   'Leave the house and call 0800 111 999. Then call us.'], ordered=True))),
-        (None, img('stopcock.jpg', 'A small cast-iron plate on a red brick wall marked S.V., showing where the stop valve is', 'An S.V. plate marks the outside stop valve', lightbox=False))))))
+        (None, img('stopcock.jpg', 'A small cast-iron plate on a red brick wall marked S.V., showing where the stop valve is', 'An S.V. plate marks the outside stop valve'))))))
 
 pattern('emergency-page', 'Page: emergency', 'pipe', J(pattern_ref('urgency'), pattern_ref('while-you-wait'), pattern_ref('call-out-prices')), block_types='core/post-content')
 
@@ -331,7 +339,7 @@ pattern('servicing-page', 'Page: boiler servicing', 'pipe', J(pattern_ref('servi
 
 pattern('brands', 'Brands we work on', 'pipe,services', idx('Brands', J(
     para('Worcester Bosch, Vaillant, Ideal, Baxi, Viessmann, Glow-worm, Potterton, Alpha, Intergas. Parts for the first four are on the van most days.'),
-    img('boiler.jpg', 'Black and white photo of gas engineers kneeling around a floor-standing boiler during a training session', 'Training day, a long time before any of us', lightbox=False))))
+    img('boiler.jpg', 'Black and white photo of gas engineers kneeling around a floor-standing boiler during a training session', 'Training day, a long time before any of us'))))
 
 pattern('service-reminder', 'Service reminder', 'pipe,call-to-action', idx('Reminders', J(
     para('We text you 11 months after your service. Reply YES and we book you in. Reply STOP and we never text again.'),
@@ -343,13 +351,13 @@ pattern('replacement', 'Boiler replacement', 'pipe,services', idx('New boilers',
         (None, J(para('We survey first, for free, and it takes about 40 minutes. You get a written fixed price with the boiler model, flue, controls and any pipe changes listed line by line.'),
                  para('Most like-for-like combi swaps take a day. Moving the boiler or converting from a system with a tank takes two.'),
                  para('Finance is available through V12 Retail Finance on jobs over £1,000, if you want it.', fontSize='small'))),
-        (None, img('cylinder.jpg', 'A white hot water cylinder mounted on a tiled wall with pipes underneath', 'Cylinder we took out in Broomhill. It had done 22 years.', lightbox=False))))))
+        (None, img('cylinder.jpg', 'A white hot water cylinder mounted on a tiled wall with pipes underneath', 'Cylinder we took out in Broomhill. It had done 22 years.'))))))
 
 pattern('boilers-page', 'Page: boilers', 'pipe', J(pattern_ref('replacement'), pattern_ref('price-guide'), pattern_ref('radiators')), block_types='core/post-content')
 
 pattern('radiators', 'Radiators and controls', 'pipe,services', idx('Radiators', columns(
     (None, J(heading('Radiators and valves', 4), para('New radiator, same size, fitted and bled: £240 including a standard double convector. Thermostatic valves: £45 each fitted, less if we are there anyway.'))),
-    (None, img('radiator.jpg', 'Close-up of a white panel radiator with a thermostatic valve head', lightbox=False)))))
+    (None, img('radiator.jpg', 'Close-up of a white panel radiator with a thermostatic valve head')))))
 
 pattern('landlords', 'Landlords', 'pipe,services', idx('Landlords', J(
     heading('Landlord gas safety', 3),
@@ -369,7 +377,7 @@ pattern('quote-page', 'Page: get a quote', 'pipe', J(pattern_ref('urgency'), pat
 pattern('photo-tip', 'Photo tip', 'pipe,text', idx('Photos help', columns(
     (None, J(para('Send three photos: the whole boiler, the sticker with the model, and the pipes underneath. It saves a visit about half the time.'),
              para('Text them to 07700 900 312 or attach them to your email.', fontSize='small'))),
-    (None, img('solder.jpg', 'Racks of copper pipe fittings in labelled bins at a plumbing merchant', 'The fittings aisle at the merchant on Mowbray Street', lightbox=False)))))
+    (None, img('solder.jpg', 'Racks of copper pipe fittings in labelled bins at a plumbing merchant', 'The fittings aisle at the merchant on Mowbray Street')))))
 
 pattern('faq', 'Questions', 'pipe,text', idx('Questions', J(
     details('Do you charge for quotes?', para('No, for planned work. Emergency call-outs are charged from arrival.')),
@@ -385,7 +393,7 @@ pattern('lead-time', 'Lead time line', 'pipe,banner', group(
     description='A one-line status the owner edits from a phone. Change the number and the date.')
 
 pattern('tools', 'Tools of the trade (illustration)', 'pipe,about', idx('Since 1940', J(
-    img('wrench.jpg', 'A watercolour drawing of an old pipe wrench on cream paper', 'Pipe wrench, drawn for the Index of American Design, 1940', lightbox=False),
+    img('wrench.jpg', 'A watercolour drawing of an old pipe wrench on cream paper', 'Pipe wrench, drawn for the Index of American Design, 1940'),
     para('Some tools have not changed much. We still carry one of these, next to the flue gas analyser that costs more than the van\'s tyres.', fontSize='small'))))
 
 pattern('about-page', 'Page: about', 'pipe', J(pattern_ref('team'), pattern_ref('credentials'), pattern_ref('tools')), block_types='core/post-content')
@@ -397,4 +405,161 @@ pattern('team', 'Who comes to your house', 'pipe,about', idx('People', J(
           head=['Name', 'Does', 'Registered']),
     para('Niall started Brennan Heating in 2013 in a Transit with no shelves. Aisha joined in 2016 and runs the diary. Both still do jobs every day.'))))
 
+
+
+# =====================================================================================
+# Round 2: no tables on the home page (price rows), a name-and-fact opener, fault codes,
+# tenants, winter checklist, job photos, contact, guarantee. Area posts use the kit.
+# =====================================================================================
+section('price-row', 'Index row: job and price', ['core/group'],
+        {'border': {'bottom': {'color': 'var:preset|color|rule-light', 'width': '1px', 'style': 'solid'}},
+         'spacing': {'padding': {'top': 'var:preset|spacing|20', 'bottom': 'var:preset|spacing|20'}},
+         'css': '&{display:flex!important;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}& > *{margin:0!important}& > *:last-child{font-weight:500;font-variant-numeric:tabular-nums}&:nth-child(even){background:var(--wp--preset--color--surface)}'})
+
+def rows(pairs):
+    return J(*[group(J(para(a), para(b)), className='is-style-price-row', layout={'type': 'default'}) for a, b in pairs])
+
+write('templates/page-wide.html', page_template(J(dyn('post-title', level=1, align='wide'), dyn('post-content', align='wide', layout={'type': 'constrained', 'contentSize': '1400px'})), style=MAINPAD))
+
+pattern('hero', 'Opener: name, phone and service index', 'hero', group(J(
+    heading('Brennan Heating, Sheffield', 1, align='wide'),
+    columns(
+        ('50%', J(para('Services and prices', className='is-style-label'), lst(SERVICES, className='is-style-service-index'), para('<a href="/prices/">The full price guide</a>', fontSize='small'))),
+        (None, J(para('Call or text', className='is-style-label'), para(TEL, className='is-style-phone'),
+                 para('Gas Safe register 612884. Niall, Aisha and two engineers covering S1 to S14, S17, S35 and S60. Right now we are booking non-urgent work <strong>3 working days ahead</strong>.'),
+                 buttons(('Call now', 'tel:+441144960831', {'className': 'is-style-call-button'}), ('Get a quote', '/quote/', {'className': 'is-style-book-button'})),
+                 image('manifold.jpg', 'A brass underfloor heating manifold with six white and grey thermal actuators on top', 'Manifold with new actuators, Crookes, last week'))),
+        align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|50'}}}),
+    description='Opener: the name and the town, the Gas Safe number and lead time, a numbered service index with prices, and the phone number at full size.')
+
+PRICES = [('Annual boiler service, gas', '£72'), ('Service and landlord certificate (CP12) together', '£110'), ('Landlord certificate only, up to 3 appliances', '£65'),
+          ('Call-out, weekdays 8am to 6pm, first hour', '£85'), ('Call-out, evenings and weekends, first hour', '£120'), ('Each extra half hour', '£32'),
+          ('Power flush, up to 10 radiators', '£450'), ('New combi boiler, like for like, fitted', 'from £2,350')]
+pattern('price-guide', 'Price guide (rows)', 'services', idx('Price guide', J(
+    heading('What things cost', 2), rows(PRICES),
+    para('Guide prices including VAT. For anything over £200 we confirm the price in writing before we start, and we stick to it. <a href="/prices/">Full price list with times</a>', fontSize='small'))))
+
+pattern('price-list-table', 'Price list with time on site (table)', 'services', idx('Price list', J(
+    table([['Annual boiler service, gas', '45 to 60 minutes', '£72'], ['Service and CP12 together', '1 hour 15', '£110'], ['Landlord certificate only', '45 minutes', '£65'],
+           ['Call-out, weekdays', 'first hour included', '£85'], ['Call-out, evenings and weekends', 'first hour included', '£120'], ['Each extra half hour', '', '£32'],
+           ['Power flush, up to 10 radiators', 'most of a day', '£450'], ['Radiator swap, same size', '2 hours', '£240'], ['New combi boiler, like for like', '1 to 2 days', 'from £2,350']],
+          head=['Job', 'Time on site', 'Price']),
+    para('Prices include VAT and parts listed. Parts not listed are charged at cost, shown on the invoice with the merchant\'s receipt.', fontSize='small'))))
+
+pattern('areas-table', 'Areas and response times', 'areas', idx('Areas', J(
+    heading('Where we go and how fast', 3),
+    rows([('City centre and Kelham, S1 and S3', 'Same day, usually within 2 hours'), ('Crookes, Walkley, Broomhill, S6 and S10', 'Same day'),
+          ('Sharrow, Nether Edge, Ecclesall, S7 and S11', 'Same day'), ('Hillsborough, Stannington, S6 and S35', 'Same or next day'),
+          ('Dronfield and Totley, S17 and S18', 'Next day'), ('Rotherham, S60 and S65', 'Next day')]),
+    para('Postcode not listed? We are probably too far to get there quickly. The <a href="https://www.gassaferegister.co.uk/">Gas Safe Register</a> lists engineers near you. <a href="/areas/">Every area</a>', fontSize='small'))))
+
+pattern('call-out-prices', 'Call-out prices', 'services', idx('Call-out', rows([('Weekdays 8am to 6pm', '£85, includes the first hour'), ('Evenings until 10pm and weekends', '£120, includes the first hour'),
+    ('After 10pm', 'We don\'t go out. Gas: call 0800 111 999. Water: turn off the stopcock.')])))
+
+pattern('landlords', 'Landlords', 'services', idx('Landlords', J(
+    heading('Landlord gas safety', 3),
+    para('A CP12 certificate every 12 months is a legal requirement for any rented home with gas. We check every gas appliance, flue and alarm, and email the certificate the same day.'),
+    rows([('First property', '£65'), ('Each extra property, same visit day', '£50'), ('With a boiler service', '£110 total'), ('Portfolio of 10 or more', 'Ask for a yearly rate')]),
+    para('We arrange access with tenants directly, give them a two-hour window and text you when the certificate is done.', fontSize='small'))))
+
+pattern('team', 'Who comes to your house', 'about', idx('People', J(
+    heading('Who comes to your house', 3),
+    rows([('Niall Brennan, boilers, installs, surveys', 'Gas Safe since 2009'), ('Aisha Siddiqui, repairs, landlords, the difficult ones', 'Gas Safe since 2014'),
+          ('Kacper Wróbel, servicing and radiators', 'Gas Safe since 2021'), ('Dom Hollis, plumbing, leaks, cylinders', 'Plumber, not gas registered')]),
+    para('Niall started Brennan Heating in 2013 in a Transit with no shelves. Aisha joined in 2016 and runs the diary. Both still do jobs every day.'))))
+
+pattern('fault-codes', 'Common boiler fault codes', 'info', idx('Fault codes', J(
+    heading('What the code on your boiler means', 3),
+    rows([('Worcester EA 227', 'No flame detected. Check the gas is on at the meter, then reset once.'), ('Vaillant F.22', 'Low water pressure. Top up to 1.2 bar with the filling loop.'),
+          ('Ideal F1', 'Low water pressure. Same fix as above.'), ('Baxi E133', 'Gas supply or ignition. Check other gas appliances work.'),
+          ('Worcester D5', 'Outside sensor fault. Heating still works, call us in office hours.')]),
+    para('Reset once. If the code comes back, stop and call us. Resetting over and over can lock the boiler out.', fontSize='small'))))
+
+pattern('on-the-day', 'What happens on the day', 'info', idx('On the day', lst([
+    'We text when we are 20 minutes away, with the engineer\'s name and Gas Safe card number.', 'Shoe covers on at the door, dust sheet down under the boiler.',
+    'We tell you what we found before we fix anything that costs more than the quote.', 'We test, show you the readings, and clear up.',
+    'The report and invoice arrive by email the same day.'], ordered=True)))
+
+pattern('guarantee', 'Guarantee', 'about', idx('Guarantee', columns(
+    (None, J(heading('12 months on our work', 4), para('If something we fixed fails within a year, we come back and fix it free.', fontSize='small'))),
+    (None, J(heading('Up to 10 years on new boilers', 4), para('Worcester Bosch and Vaillant guarantees, registered by us on the day we fit.', fontSize='small'))),
+    (None, J(heading('Fixed prices', 4), para('Over £200, the price is agreed in writing before we start.', fontSize='small'))))))
+
+pattern('finance', 'Finance note', 'services', idx('Finance', para('New boilers over £1,000 can be spread over 1 to 5 years through V12 Retail Finance. The survey is free either way, and the fixed price is the same whether you pay now or monthly.')))
+
+pattern('tenants', 'For tenants', 'info', idx('Tenants', J(
+    heading('Renting? Here is what to do', 3),
+    lst(['Tell your landlord or letting agent first. They pay for repairs to the boiler and pipes.', 'If they use us, we contact you to arrange a time. You don\'t pay us.',
+         'No heating or hot water for more than 24 hours? That is urgent. Chase them, then call us if they agree.', 'Your landlord must give you a copy of the gas safety certificate every year.']))))
+
+pattern('tenants-page', 'Page: tenants', 'pages', J(pattern_ref('tenants'), pattern_ref('fault-codes'), pattern_ref('while-you-wait')), block_types='core/post-content')
+
+pattern('winter-checklist', 'Before winter', 'info', idx('Before winter', J(
+    heading('Five things to check in October', 3),
+    lst(['Put the heating on for an hour before you need it. Better to find a fault now.', 'Bleed any radiator that is cold at the top.', 'Check the pressure gauge reads 1 to 1.5 bar when cold.',
+         'Lag the condensate pipe if it runs outside. A frozen one stops the boiler.', 'Book the service before November, when everyone else does.'], ordered=True))))
+
+pattern('job-photos', 'Recent jobs in photos', 'about', idx('Recent jobs', gallery([
+    ('manifold.jpg', 'A brass underfloor manifold with thermal actuators', 'Manifold, Crookes'), ('cylinder.jpg', 'A white hot water cylinder on a tiled wall', 'Old cylinder out, Broomhill'),
+    ('radiator.jpg', 'A white panel radiator with a thermostatic valve', 'New radiator and TRV, Walkley'), ('gauge.jpg', 'An old pressure gauge on a stand', 'Not ours, but we like it')], columns=4)))
+
+pattern('contact-details', 'Contact details', 'areas', idx('Contact', columns(
+    (None, J(heading('Phone', 5), para(TEL + '<br>7am to 10pm every day for no heating or hot water. Office hours 8 to 5 for everything else.', fontSize='small'))),
+    (None, J(heading('Text or WhatsApp', 5), para('07700 900 312. Send a photo of the boiler and the fault code.', fontSize='small'))),
+    (None, J(heading('Email and post', 5), para('<a href="mailto:jobs@example.com">jobs@example.com</a><br>Unit 9, Mowbray Street, Sheffield S3 8EN', fontSize='small'))))))
+
+pattern('co-alarm', 'Carbon monoxide alarm', 'info', idx('CO alarms', para('Every room with a gas appliance should have a carbon monoxide alarm. If yours is missing or over 7 years old, we fit a new one for £28 at any visit. Test it monthly with the button.')))
+
+pattern('power-flush', 'Power flushing', 'services', idx('Power flush', columns(
+    (None, J(heading('When a power flush helps', 4), para('Radiators cold at the bottom, a boiler that bangs, or black water when you bleed a radiator. It takes most of a day and costs £450 for up to 10 radiators.'))),
+    (None, J(heading('When it doesn\'t', 4), para('One cold radiator is usually a valve. A cold radiator upstairs is usually balancing. We check those first, so you don\'t pay for a flush you don\'t need.'))))))
+
+pattern('partners', 'Who we work with', 'about', idx('Partners', rows([('Totley Tiling', 'We do the plumbing, they tile'), ('Hillsborough Electrical', 'For boiler wiring and controls'),
+    ('Mowbray Street merchants', 'Parts, same day'), ('Sheffield letting agents', 'Certificates for four agencies')])))
+
+pattern('contact-page', 'Page: contact', 'pages', J(pattern_ref('contact-details'), pattern_ref('lead-time'), pattern_ref('areas-table')), block_types='core/post-content')
+pattern('prices-page', 'Page: prices', 'pages', J(pattern_ref('price-list-table'), pattern_ref('call-out-prices'), pattern_ref('finance'), pattern_ref('payment'), pattern_ref('guarantee')), block_types='core/post-content')
+pattern('servicing-page', 'Page: boiler servicing', 'pages', J(pattern_ref('service-included'), pattern_ref('on-the-day'), pattern_ref('brands'), pattern_ref('fault-codes'), pattern_ref('winter-checklist'), pattern_ref('service-reminder')), block_types='core/post-content')
+pattern('boilers-page', 'Page: boilers', 'pages', J(pattern_ref('replacement'), pattern_ref('price-guide'), pattern_ref('finance'), pattern_ref('guarantee'), pattern_ref('radiators'), pattern_ref('power-flush')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'pages', J(pattern_ref('team'), pattern_ref('credentials'), pattern_ref('job-photos'), pattern_ref('partners'), pattern_ref('tools'), pattern_ref('reviews')), block_types='core/post-content')
+pattern('emergency-page', 'Page: emergency', 'pages', J(pattern_ref('urgency'), pattern_ref('while-you-wait'), pattern_ref('call-out-prices'), pattern_ref('co-alarm')), block_types='core/post-content')
+pattern('landlords-page', 'Page: landlords', 'pages', J(pattern_ref('landlords'), pattern_ref('credentials'), pattern_ref('tenants')), block_types='core/post-content')
+
+CATS = [('hero', 'Pipe: openers'), ('services', 'Pipe: services and prices'), ('quote', 'Pipe: quotes and urgency'), ('areas', 'Pipe: areas and contact'), ('about', 'Pipe: people and registration'),
+        ('info', 'Pipe: help and advice'), ('notices', 'Pipe: notices'), ('pages', 'Pipe: page layouts')]
+write('functions.php', """<?php
+/**
+ * Pipe: pattern categories only.
+ *
+ * @package pipe
+ */
+
+add_action(
+	'init',
+	function () {
+%s
+	}
+);""" % '\n'.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'pipe' ) ) );" % c for c in CATS))
+
+write('templates/front-page.html', page_template(J(
+    pattern_ref('hero'), pattern_ref('price-guide'), pattern_ref('urgency'), pattern_ref('service-included'), pattern_ref('areas-table'), pattern_ref('credentials'), pattern_ref('job-photos'), pattern_ref('reviews'))))
+
+# ---- demo content: area posts built from index rows ----
+CJ = 'demos/pipe/content.json'
+C = json.load(open(CJ))
+import re as _re
+for po in C['posts']:
+    src = po.setdefault('src', po['content'])
+    paras = _re.findall(r'<p>(.*?)</p>', src)
+    cells = _re.findall(r'<tr><td>(.*?)</td><td>(.*?)</td></tr>', src)
+    po['content'] = J(para(paras[0], fontSize='large'), idx('At a glance', rows(cells)), idx('Recent job', para(paras[-1])),
+                      idx('Book', buttons(('Call 0114 496 0831', 'tel:+441144960831', {'className': 'is-style-call-button'}), ('Get a quote', '/quote/', {'className': 'is-style-book-button'}))))
+pages = {p['slug']: p for p in C['pages']}
+pages['tenants'] = {'slug': 'tenants', 'title': 'Tenants', 'pattern': 'pipe/tenants-page', 'template': 'page-index'}
+pages['contact'] = {'slug': 'contact', 'title': 'Contact', 'pattern': 'pipe/contact-page', 'template': 'page-index'}
+C['pages'] = list(pages.values())
+C['nav'] = [{'label': l, 'url': u} for l, u in [('Emergency', '/emergency/'), ('Servicing', '/servicing/'), ('New boilers', '/boilers/'), ('Landlords', '/landlords/'),
+            ('Tenants', '/tenants/'), ('Prices', '/prices/'), ('Areas', '/areas/'), ('Contact', '/contact/'), ('Get a quote', '/quote/')]]
+json.dump(C, open(CJ, 'w'), indent=1, ensure_ascii=False)
 print('pipe: build done')

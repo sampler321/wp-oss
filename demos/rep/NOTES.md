@@ -6,3 +6,11 @@
 - Also: discipline filter row (Illustration, Animation, Photography as tags), browse-by-style image index, a separate animation roster page, "what we need to quote" checklist, agents with direct email and phone, recent commissions, news, a studio-visit interview and a short About in German, French, Portuguese and Polish.
 - Variations: Salon, Black book, Primary (blue accent).
 - Core-block limits: the demo builder can't create child categories, so disciplines are tags rather than parent categories. The cursor-following preview image on roster names needs JS and was left out; names change colour on hover instead.
+
+## Round 2
+
+- Hero opens with the agency name and one fact, then straight into the credited works grid. The old sentence stays as an alternative hero pattern, without the full stop.
+- Image lightbox on globally.
+- 43 patterns (was 28). New project kit (brief, roughs next to final, work in use, credits and licence, art director quote) and four full project pages built from it: the Baltic ports endpaper, the Kew seed packets, the BBC Four title sequence and a Penguin cover. Also a featured artist, licensing existing work, a monthly email for art buyers, availability and PDF portfolio requests.
+- No tables left. Quote checklist, agents, recent commissions, news and artist facts are ruled rows, and the home page has no table.
+- Handsome Frank and Pentagram reference pages returned 404 to the headless browser, so the research screenshots were used instead.

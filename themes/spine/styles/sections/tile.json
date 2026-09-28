@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Patchwork tile",
+	"slug": "tile",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{min-height:12rem;display:flex!important;flex-direction:column;justify-content:flex-end}& a{text-decoration:none}& a:hover{text-decoration:underline}"
+	}
+}

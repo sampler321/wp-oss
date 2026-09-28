@@ -2,7 +2,7 @@
 /**
  * Title: Membership card
  * Slug: commons/membership-card
- * Categories: call-to-action
+ * Categories: membership
  * Description: A flat yearly fee and the concrete things members get.
  */
 ?>

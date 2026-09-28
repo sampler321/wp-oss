@@ -1,0 +1,235 @@
+{
+ "site": {
+  "title": "Two Drums Press",
+  "tagline": "Riso printing co-op, Ancoats, Manchester"
+ },
+ "categories": [
+  {
+   "slug": "jobs",
+   "name": "Jobs",
+   "description": "Things we printed for other people."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "jobs",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "jobs",
+   "title": "Jobs",
+   "content": ""
+  },
+  {
+   "slug": "print-with-us",
+   "title": "Print with us",
+   "pattern": "drum/print-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "inks",
+   "title": "Inks",
+   "pattern": "drum/inks-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "paper",
+   "title": "Paper",
+   "pattern": "drum/paper-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "workshops",
+   "title": "Workshops",
+   "pattern": "drum/workshops-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "about",
+   "title": "About",
+   "pattern": "drum/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "drum/contact-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "questions",
+   "title": "Questions",
+   "pattern": "drum/faq-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "print-club",
+   "title": "Print club",
+   "pattern": "drum/club-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Salt Water zine, issue 6",
+   "category": "jobs",
+   "tags": [
+    "Zine",
+    "Blue",
+    "Pink"
+   ],
+   "image": "poster-john.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for Salt Water zine collective: 500 copies, 32 pages, A5, in blue and fluorescent pink on Munken Print Cream 90gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Issue 6 of a swimming zine, 32 pages, for sale at two fairs.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Blue for all text and drawings, pink for the sea tints. Stapled and trimmed in a day.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Nothing much. One box got rained on outside Victoria station.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>Salt Water zine collective</td></tr><tr><td>Run</td><td>500 copies, 32 pages, A5</td></tr><tr><td>Inks</td><td>Blue and fluorescent pink</td></tr><tr><td>Paper</td><td>Munken Print Cream 90gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/poster-john.jpg' ) ); ?>\" alt=\"A riso-printed poster of a woman helping a boy read, in red and black\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  },
+  {
+   "title": "Hulme garden centre seed packets",
+   "category": "jobs",
+   "tags": [
+    "Stationery",
+    "Green"
+   ],
+   "image": "prints-table.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for Hulme Community Garden Centre: 2,000 packets, die-cut, in green and black on Cyclus Offset 100gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Seed packets for a garden centre giveaway, 2,000 of them, cut to shape.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Green and black on recycled offset, die-cut by a friend with a platen in Stockport.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The die was 1mm too big. Lewis hand-trimmed 300 of them.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>Hulme Community Garden Centre</td></tr><tr><td>Run</td><td>2,000 packets, die-cut</td></tr><tr><td>Inks</td><td>Green and black</td></tr><tr><td>Paper</td><td>Cyclus Offset 100gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/prints-table.jpg' ) ); ?>\" alt=\"Pink, blue and green prints laid out on a round table\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  },
+  {
+   "title": "Canyon poster reprint for a talk",
+   "category": "jobs",
+   "tags": [
+    "Poster",
+    "Four colours"
+   ],
+   "image": "poster-canyon.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for Levenshulme Walking Group: 150 copies, A2, in blue, pink, yellow and black on Munken Pure 120gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A reprint of an old travel poster for a talk about the canyon.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Four layers separated by hand from a scan: blue, pink, yellow, black.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Yellow under pink went orange. We liked it and kept it.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>Levenshulme Walking Group</td></tr><tr><td>Run</td><td>150 copies, A2</td></tr><tr><td>Inks</td><td>Blue, pink, yellow and black</td></tr><tr><td>Paper</td><td>Munken Pure 120gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/poster-canyon.jpg' ) ); ?>\" alt=\"A four-colour canyon poster in pink, purple and brown\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  },
+  {
+   "title": "Pull-a-print night flyers",
+   "category": "jobs",
+   "tags": [
+    "Flyer",
+    "Pink"
+   ],
+   "image": "screen.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for The Pint Pot, Ancoats: 400 copies, A6, in fluorescent pink and black on Kraft card 280gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Flyers for a monthly print night at a pub round the corner.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Fluorescent pink and black on brown kraft card, so the pink really glows.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Kraft jams if you rush it. We printed at half speed.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>The Pint Pot, Ancoats</td></tr><tr><td>Run</td><td>400 copies, A6</td></tr><tr><td>Inks</td><td>Fluorescent pink and black</td></tr><tr><td>Paper</td><td>Kraft card 280gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/screen.jpg' ) ); ?>\" alt=\"Hands pulling a squeegee across a pink screen at a print night\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  },
+  {
+   "title": "Zine library signage",
+   "category": "jobs",
+   "tags": [
+    "Signage",
+    "Yellow"
+   ],
+   "image": "zine-rack.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for Central Library zine corner: 20 signs, A3, in yellow and blue on Gmund Colors Matt 300gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Signs for the zine corner of the Central Library.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Yellow and blue on thick Gmund, big letters, readable from the door.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">The first proof was too pale in yellow. Second pass on a heavier tint fixed it.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>Central Library zine corner</td></tr><tr><td>Run</td><td>20 signs, A3</td></tr><tr><td>Inks</td><td>Yellow and blue</td></tr><tr><td>Paper</td><td>Gmund Colors Matt 300gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/zine-rack.jpg' ) ); ?>\" alt=\"A wall rack of colourful zines under a paper zines banner\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  },
+  {
+   "title": "Lino club edition",
+   "category": "jobs",
+   "tags": [
+    "Art edition",
+    "Red"
+   ],
+   "image": "inks-bench.jpg",
+   "template": "single-job",
+   "content": "<!-- wp:paragraph {\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Printed for Tuesday lino club: 60 sheets, numbered, in bright red and blue on Munken Pure 120gsm.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ruled\"} -->\n<div class=\"wp-block-columns is-style-ruled\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">The brief</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">A numbered edition for the Tuesday lino club, cut on lino and re-drawn for riso.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What we did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Bright red and blue, numbered in pencil, 60 sheets.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What went wrong</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Two sheets misfed on the blue pass. The club took them as seconds.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:table -->\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Client</td><td>Tuesday lino club</td></tr><tr><td>Run</td><td>60 sheets, numbered</td></tr><tr><td>Inks</td><td>Bright red and blue</td></tr><tr><td>Paper</td><td>Munken Pure 120gsm</td></tr></tbody></table></figure>\n<!-- /wp:table -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"lightbox\":{\"enabled\":true}} -->\n<figure class=\"wp-block-image size-large\"><img src=\"<?php echo esc_url( get_theme_file_uri( 'assets/images/inks-bench.jpg' ) ); ?>\" alt=\"A bench with red and blue ink tubes and fresh prints\"/><figcaption class=\"wp-element-caption\">The finished job</figcaption></figure>\n<!-- /wp:image -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Print with us",
+   "url": "/print-with-us/"
+  },
+  {
+   "label": "Inks",
+   "url": "/inks/"
+  },
+  {
+   "label": "Paper",
+   "url": "/paper/"
+  },
+  {
+   "label": "Workshops",
+   "url": "/workshops/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Jobs",
+   "url": "/jobs/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Ink swatch card",
+   "price": "12",
+   "image": "inks-bench.jpg",
+   "category": "Swatches and paper",
+   "sku": "TD-SW1",
+   "stock": 40,
+   "short": "Every ink at four tints and every pair overprinted. A5, posted flat."
+  },
+  {
+   "name": "Paper sample pack",
+   "price": "6",
+   "image": "prints-table.jpg",
+   "category": "Swatches and paper",
+   "sku": "TD-PP1",
+   "stock": 25,
+   "short": "One sheet of each paper we stock, A5."
+  },
+  {
+   "name": "Dot grid notebook, blue",
+   "price": "9",
+   "image": "duplicator.jpg",
+   "category": "Stationery",
+   "sku": "TD-NB1",
+   "stock": 60,
+   "short": "A5, 64 pages, riso-printed cover in blue on kraft."
+  },
+  {
+   "name": "Postcard set, two inks",
+   "price": "8",
+   "image": "screen.jpg",
+   "category": "Stationery",
+   "sku": "TD-PC1",
+   "stock": 30,
+   "short": "Six postcards in pink and blue, 300gsm."
+  },
+  {
+   "name": "Salt Water zine, issue 6",
+   "price": "6",
+   "image": "poster-john.jpg",
+   "category": "Zines",
+   "sku": "TD-Z06",
+   "stock": 0,
+   "short": "Sold out. Issue 7 is at the printer (us)."
+  },
+  {
+   "name": "Print club, three months",
+   "price": "30",
+   "image": "zine-rack.jpg",
+   "category": "Print club",
+   "sku": "TD-CL3",
+   "stock": 50,
+   "short": "One riso print a month for three months, posted, plus 15% off the shop."
+  }
+ ]
+}

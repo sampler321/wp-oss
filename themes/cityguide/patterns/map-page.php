@@ -14,6 +14,10 @@
 
 <!-- wp:pattern {"slug":"cityguide/map-list"} /-->
 
+<!-- wp:pattern {"slug":"cityguide/new-openings"} /-->
+
 <!-- wp:pattern {"slug":"cityguide/place-closed"} /-->
 
 <!-- wp:pattern {"slug":"cityguide/price-band-key"} /-->
+
+<!-- wp:pattern {"slug":"cityguide/printed-guide-shop"} /-->

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Chips",
+	"slug": "chips",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|display",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:.5rem}& li{padding:.3rem .8rem;border:2px solid var(--wp--preset--color--line);border-radius:999px}& li:nth-child(4n+1){background:var(--wp--preset--color--accent);color:var(--wp--preset--color--on-accent);border-color:transparent}& li:nth-child(4n+3){background:var(--wp--preset--color--accent-2);color:var(--wp--preset--color--base);border-color:transparent}"
+	}
+}

@@ -13,14 +13,24 @@ from blocks import _a
 import blocks as _b
 
 
-def group(inner, tag='div', layout='constrained', **attrs):
-    # The normaliser drops `layout` from a plain div group that also carries `style`; a section tag keeps it.
-    if tag == 'div' and attrs.get('style') and layout and layout != {'type': 'default'}:
-        tag = 'section'
-    return _b.group(inner, tag=tag, layout=layout, **attrs)
+group = _b.group
+
+
+def columns(*cols, **attrs):
+    """core/columns with the classes WordPress saves for verticalAlignment and isStackedOnMobile."""
+    extra = []
+    if attrs.get('verticalAlignment'):
+        extra.append('are-vertically-aligned-' + attrs['verticalAlignment'])
+    if attrs.get('isStackedOnMobile') is False:
+        extra.append('is-not-stacked-on-mobile')
+    out = _b.columns(*cols, **attrs)
+    return out.replace('class="wp-block-columns', 'class="wp-block-columns ' + ' '.join(extra), 1) if extra else out
 set_theme('commons')
 S = THEME['slug']
 D = THEME['dir']
+import shutil
+for _d in ('patterns', 'templates', 'parts', 'styles'):
+    shutil.rmtree(os.path.join(D, _d), ignore_errors=True)  # rebuilt below; drops stale files
 
 # ---------------------------------------------------------------- tokens
 PAL = [
@@ -85,6 +95,7 @@ theme = {
             ],
         },
         'shadow': {'defaultPresets': False, 'presets': []},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True,
                    'radiusSizes': [{'slug': 'image', 'size': '14px', 'name': 'Image'}, {'slug': 'card', 'size': '18px', 'name': 'Card'}, {'slug': 'button', 'size': '6px', 'name': 'Button'}]},
     },
@@ -243,6 +254,29 @@ section('notice', 'Notice bar', ['core/group'], {
     'typography': {'fontSize': 'var:preset|font-size|small'},
     'elements': {'link': {'color': {'text': 'var:preset|color|contrast'}}}})
 
+
+CATS = [('whats-on', "What's on"), ('programme', 'Programme'), ('show', 'Show pages'), ('membership', 'Membership'), ('opportunities', 'Opportunities'),
+        ('about', 'About and committee'), ('visit', 'Visit and access'), ('page', 'Page layouts')]
+CATMAP = {
+    'whats-on-hero': 'whats-on', 'whats-on-still': 'whats-on', 'whats-on-band': 'whats-on', 'coming-up': 'whats-on', 'coming-up-list': 'whats-on', 'notice-closed-for-install': 'whats-on',
+    'event-row': 'whats-on', 'opening-night': 'whats-on', 'events-past': 'whats-on',
+    'programme-grid': 'programme', 'programme-archive': 'programme', 'programme-filters': 'programme', 'programme-table': 'programme', 'post-list': 'programme',
+    'exhibition-text': 'show', 'installation-views': 'show', 'show-credits': 'show', 'funders-line': 'show', 'installation-mosaic': 'show', 'artist-bio': 'show', 'room-sheet': 'show',
+    'membership-card': 'membership', 'membership-band': 'membership', 'membership-how': 'membership', 'membership-faq': 'membership', 'donate': 'membership', 'members-quote': 'membership', 'mailing-list': 'membership',
+    'opportunities-list': 'opportunities', 'opportunity-callout': 'opportunities', 'volunteer-call': 'opportunities', 'residency-info': 'opportunities', 'hire-the-space': 'opportunities',
+    'studios-list': 'about', 'studio-holders': 'about', 'committee-list': 'about', 'past-committee': 'about', 'about-history': 'about', 'publications-list': 'about', 'writing-commission': 'about',
+    'access-info': 'visit', 'find-us': 'visit',
+}
+_pattern = pattern
+
+
+def pattern(slug, title, categories, body, **kw):
+    return _pattern(slug, title, CATMAP.get(slug, 'page' if slug.endswith('-page') or kw.get('block_types') else categories), body, **kw)
+
+
+write('functions.php', "<?php\n/**\n * Commons: registers the pattern categories used by the theme's patterns.\n *\n * @package commons\n */\n\nadd_action(\n\t'init',\n\tfunction () {\n"
+      + ''.join("\t\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', 'commons' ) ) );\n" % (a, b.replace("'", "\\'")) for a, b in CATS) + "\t}\n);\n")
+
 # ---------------------------------------------------------------- parts
 write('parts/header.html', group(
     row(J(dyn('site-title', level=0), dyn('navigation', layout={'type': 'flex', 'justifyContent': 'right'}, overlayMenu='mobile')),
@@ -386,10 +420,14 @@ pattern('installation-views', 'Installation views (large, then two-up)', 'galler
     gallery([('show-1.jpg', IMG['show-1'], 'Hana Mirza, Bedframe weavings 1 to 3, 2026'),
              ('event.jpg', IMG['event'], 'The back room, with the plinth left over from show 183')], columns=2, align='wide')))
 
-pattern('show-credits', 'Show credits and funders', 'text', group(J(
-    table([['Artists', 'Hana Mirza, Ciarán Doyle'], ['Curated by', 'Rhiannon Price for the committee'], ['Install', 'Tomasz Wrona, Kofi Mensah-Hart and six members'],
-           ['Photography', 'Aiko Tanabe'], ['Funded by', 'Leeds Inspired small grant (£1,800) and members’ fees']]),
-    para('Copy this table into the grant report. It already has what they ask for.', fontSize='x-small', textColor='muted')), className='is-style-ruled'))
+def ruled(pairs):
+    return group(J(*[columns(('32%', para(a, fontSize='small', textColor='muted')), (None, para(b)), className='is-style-ruled', isStackedOnMobile=False) for a, b in pairs]), layout={'type': 'default'})
+
+
+pattern('show-credits', 'Show credits and funders', 'text', J(
+    ruled([('Artists', 'Hana Mirza, Ciarán Doyle'), ('Curated by', 'Rhiannon Price for the committee'), ('Install', 'Tomasz Wrona, Kofi Mensah-Hart and six members'),
+           ('Photography', 'Aiko Tanabe'), ('Funded by', 'Leeds Inspired small grant (£1,800) and members\u2019 fees')]),
+    para('Copy these lines into the grant report. They already have what funders ask for.', fontSize='x-small', textColor='muted')))
 
 pattern('funders-line', 'Funders line', 'text', para('This show was made with a Leeds Inspired small grant, members’ fees and 40 hours of volunteer install time.', fontSize='small'))
 
@@ -462,9 +500,10 @@ pattern('studios-list', 'Studios and who is in them', 'about', group(J(
 pattern('committee-list', 'Committee with roles and terms', 'about', group(J(
     heading('The committee', 3),
     para('Six volunteers, each serving two years. Nobody stands for a third year in a row. That rule is why the programme keeps changing.'),
-    table([['Ife Adeyemi', 'Chair', '2025 to 2027'], ['Tomasz Wrona', 'Treasurer and install', '2025 to 2027'], ['Rhiannon Price', 'Programme', '2024 to 2026'],
-           ['Kofi Mensah-Hart', 'Access and building', '2025 to 2027'], ['Saoirse Duggan', 'Membership', '2024 to 2026'], ['Aiko Tanabe', 'Studios and photography', '2026 to 2028']],
-          head=['Name', 'Role', 'Term']))))
+    grid(J(*[group(J(heading(n, 4), para(r), para(t, fontSize='small', textColor='muted')), className='is-style-sage') for n, r, t in [
+        ('Ife Adeyemi', 'Chair', '2025 to 2027'), ('Tomasz Wrona', 'Treasurer and install', '2025 to 2027'), ('Rhiannon Price', 'Programme', '2024 to 2026'),
+        ('Kofi Mensah-Hart', 'Access and building', '2025 to 2027'), ('Saoirse Duggan', 'Membership', '2024 to 2026'), ('Aiko Tanabe', 'Studios and photography', '2026 to 2028')]]),
+         min_width='15rem')), align='wide', layout={'type': 'constrained', 'contentSize': '1000px'}))
 
 pattern('past-committee', 'Everyone who served before', 'about', group(J(
     heading('Committee members since 2011', 4),
@@ -493,11 +532,11 @@ pattern('access-info', 'Access information', 'text', J(
     para('Questions about access go to Kofi: <a href="mailto:access@example.com">access@example.com</a> or 0113 496 0582.')))
 
 pattern('find-us', 'Find us and opening hours', 'contact', columns(
-    (None, J(heading('Find us', 3), para('41 Mabgate, Leeds LS9 7DR. Ten minutes’ walk from Leeds bus station, past the Hope Inn. The 19 and 19A stop at Mabgate Green.'),
+    (None, J(heading('Find us', 3), para('41 Mabgate, Leeds LS9 7DR. Ten minutes\u2019 walk from Leeds bus station, past the Hope Inn. The 19 and 19A stop at Mabgate Green.'),
              para('Bike racks outside. No car park, but there is on-street parking after 6pm.', fontSize='small'))),
     (None, J(heading('Opening hours', 3),
-             table([['Thursday to Sunday', '12 to 6pm'], ['Monday to Wednesday', 'Closed, studios only'], ['Opening nights', 'Friday, 6 to 9pm'], ['Between shows', 'Closed for install']]))),
-    align='wide'))
+             ruled([('Thursday to Sunday', '12 to 6pm'), ('Monday to Wednesday', 'Closed, studios only'), ('Opening nights', 'Friday, 6 to 9pm'), ('Between shows', 'Closed for install')]))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}))
 
 pattern('visit-page', 'Page: visit', 'contact', J(
     image('show-6.jpg', IMG['show-6'], 'The long room, looking towards the back studio', align='wide', lightbox=False),
@@ -532,6 +571,74 @@ pattern('event-row', 'Events and talks (photo and text)', 'featured', media_text
     para('Bring a drawing, leave with 30 copies in two colours. Paper and ink included. Twelve places, £12, or free for members on a low income.'),
     para('Saturday 1 November, 1 to 5pm', fontSize='x-small'),
     buttons(('Book a place by email', 'mailto:post@example.com?subject=Riso%20afternoon'))), right=True, width=45, align='wide'))
+
+pattern('opening-night', 'Opening night', 'featured', media_text('event.jpg', IMG['event'], J(
+    para('Friday 7 November, 6 to 9pm', fontSize='small'),
+    heading('Opening: Weft, the members\u2019 show', 3),
+    para('Sixty-odd works, one bar run by the committee, and a short speech from whoever loses the coin toss. Free, everyone welcome, children too until 8pm.'),
+    buttons(('Add it to your calendar', '/programme/'))), width=50, align='wide', className='is-style-sage'))
+
+pattern('events-past', 'Events that happened (list)', 'text', group(J(
+    heading('Recent events', 4),
+    *[group(columns(('14%', para(n, className='is-style-running-number')), (None, J(heading(t, 5), para(d, fontSize='small')))), className='is-style-ruled')
+      for n, t, d in [('E.60', 'Artists\u2019 talk: Dele Okafor', 'Saturday 16 August 2026, 45 people'), ('E.59', 'Zine fair in the long room', 'Sunday 13 July 2026, 22 tables'),
+                      ('E.58', 'Life drawing, summer term', 'Six Tuesdays, June and July 2026')]]), layout={'type': 'constrained'}))
+
+pattern('installation-mosaic', 'Installation views, mosaic of five', 'gallery', group(J(
+    columns(('62%', image('show-3.jpg', IMG['show-3'], 'Radical threads, the red wall')),
+            (None, J(image('show-1.jpg', IMG['show-1'], 'The Prince\u2019s Seat'), image('show-7.jpg', IMG['show-7'], 'Flower piece for a long table'))), align='wide'),
+    columns((None, image('show-6.jpg', IMG['show-6'], 'Late landscapes')), (None, image('event.jpg', IMG['event'], 'A figure by the window')), align='wide')),
+    align='wide', layout={'type': 'default'}), description='Five installation views in two rows. Every image opens large.')
+
+pattern('artist-bio', 'Artist in the show', 'text', columns(
+    ('30%', image('residency.jpg', IMG['residency'])),
+    (None, J(heading('Oyelaran Bello', 4),
+             para('Oyelaran Bello (b. 1994, Lagos) paints large figure groups in black and white. He studied at Leeds Arts University and was our winter resident in 2026. He lives in Chapeltown.'),
+             para('<a href="/winter-residency-oyelaran-bello/">His residency show, No. 180</a>', fontSize='small'))), verticalAlignment='center'))
+
+pattern('room-sheet', 'Room sheet: list of works', 'text', group(J(
+    heading('In the room', 4),
+    lst(['Hana Mirza, <em>Bedframe weaving 1</em>, 2026. Wool and nylon on a bed frame loom.',
+         'Hana Mirza, <em>Bedframe weaving 2</em>, 2026. Wool, jute and fishing line.',
+         'Ciarán Doyle, <em>Where the Aire stops</em>, 2025. Video, 14 minutes, looped.',
+         'Hana Mirza and Ciarán Doyle, <em>Curtain</em>, 2026. Monofilament, 9 m.'], ordered=True),
+    para('Large-print copies are by the door.', fontSize='small')), className='is-style-sage'))
+
+pattern('studio-holders', 'Studio holders', 'about', group(J(
+    heading('Who is upstairs', 3),
+    grid(J(*[stack(J(image(f, IMG[f[:-4]]), heading(n, 5), para(d, fontSize='small'))) for f, n, d in [
+        ('residency.jpg', 'Oyelaran Bello, studio 9', 'Painting'), ('studio.jpg', 'Maeve Kilbride, studio 13', 'Painting and bronze'),
+        ('zine.jpg', 'Plumb Press, studio 4', 'Risograph and letterpress'), ('publication.jpg', 'Agnieszka Kurek, studio 7', 'Ceramics and tiles')]]), min_width='13rem')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('hire-the-space', 'Hire the long room', 'call-to-action', group(J(
+    heading('Hire the long room', 3),
+    para('The gallery is free to hire on Mondays to Wednesdays for crits, rehearsals, reading groups and small launches. £40 a day for members, £90 for everyone else. Up to 60 people standing.'),
+    buttons(('Ask about a date', 'mailto:post@example.com?subject=Hire'))), className='is-style-label-card', layout={'type': 'constrained', 'justifyContent': 'left'}))
+
+pattern('volunteer-call', 'Volunteer with us', 'call-to-action', group(J(
+    heading('Help us install', 4),
+    para('We need six people for four days before each show: painting walls, filling holes, carrying plinths. Lunch is on us and you learn how to hang a show. No experience needed.'),
+    para('<a href="mailto:post@example.com?subject=Install%20crew">Join the install list</a>')), className='is-style-ruled'))
+
+pattern('residency-info', 'Winter residency', 'text', columns(
+    (None, image('residency.jpg', IMG['residency'], 'Oyelaran Bello in the back studio, 2026')),
+    (None, J(heading('The winter residency', 3),
+             para('Twelve weeks in the back studio every January to March, with a £1,200 fee, £300 for materials and a show at the end. Open to artists living in Yorkshire, chosen by the committee from an open call.'),
+             para('<a href="/opportunities/">This year\u2019s call closes 12 October</a>'))), align='wide', verticalAlignment='center'))
+
+pattern('writing-commission', 'Commissioned writing (excerpt)', 'text', group(J(
+    heading('On Soft borders', 4),
+    para('\u201cYou hear the curtain before you see it: a dry sound, like rain on a tent. By the time you find the gap, you are already on the other side.\u201d', fontSize='large'),
+    para('Nell Achterberg, from the room sheet essay, September 2026. Paid at £150 through our writing commissions.', fontSize='small', textColor='muted')),
+    className='is-style-ruled'))
+
+pattern('exhibition-page', 'Page: one exhibition', 'featured', J(
+    pattern_ref('whats-on-still'), pattern_ref('exhibition-text'), pattern_ref('room-sheet'), pattern_ref('writing-commission'), pattern_ref('installation-mosaic'), pattern_ref('show-credits')),
+    block_types='core/post-content')
+
+pattern('studios-page', 'Page: studios', 'about', J(
+    pattern_ref('studio-holders'), spacer('var:preset|spacing|60'), pattern_ref('studios-list'), pattern_ref('hire-the-space'), pattern_ref('volunteer-call')), block_types='core/post-content')
 
 pattern('page-home-extra', 'Page: whole front page (for a page, not the template)', 'featured', J(
     pattern_ref('whats-on-hero'), pattern_ref('coming-up'), pattern_ref('programme-grid'), pattern_ref('membership-band'), pattern_ref('mailing-list')),

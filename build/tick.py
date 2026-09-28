@@ -105,7 +105,8 @@ theme = {
             'core/image': {'border': {'radius': '0'}},
             'core/quote': {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|large', 'fontStyle': 'italic'},
                            'border': {'left': {'color': 'var:preset|color|accent', 'width': '2px', 'style': 'solid'}},
-                           'spacing': {'padding': {'left': 'var:preset|spacing|40'}}},
+                           'spacing': {'padding': {'left': 'var:preset|spacing|40'}},
+                           'elements': {'cite': {'typography': {'fontFamily': 'var:preset|font-family|body', 'fontSize': 'var:preset|font-size|x-small', 'fontStyle': 'normal'}, 'color': {'text': 'var:preset|color|muted'}}}},
             'core/table': {'typography': {'fontSize': 'var:preset|font-size|small'},
                            'css': '&{font-variant-numeric:tabular-nums lining-nums}& th{text-align:left;font-weight:600;border-width:0 0 1px 0!important;border-color:var(--wp--preset--color--contrast)}& td{border-width:0 0 1px 0!important;border-color:var(--wp--preset--color--line);padding:.55em .4em .55em 0}'},
             'core/details': {'border': {'bottom': {'color': 'var:preset|color|line', 'width': '1px', 'style': 'solid'}},
@@ -131,6 +132,28 @@ theme = {
         {'name': 'page-wide', 'title': 'Page, wide', 'postTypes': ['page']},
     ],
 }
+
+# ---------------------------------------------------------------- round 2: lightbox, spec rows, pattern categories
+R2_CSS = ('.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}'
+          '.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}'
+          '.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}')
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += R2_CSS + '.slip-lines > .wp-block-group > :last-child{border-bottom:1px dotted var(--wp--preset--color--contrast);min-height:2.2em}.slip-lines > .wp-block-group{border-bottom:0!important}'
+
+
+def specs(pairs, className='is-style-specs', **attrs):
+    """Label and value rows made from groups, instead of a two-column table."""
+    return group(J(*[row(J(para(k), para(v))) for k, v in pairs]), className=className, layout={'type': 'default'}, **attrs)
+
+
+def pattern_categories(cats):
+    lines = ["<?php", "/**", " * Registers this theme's block pattern categories. Nothing else.", " */", "add_action( 'init', function () {"]
+    for slug, label in cats:
+        lines.append("\tregister_block_pattern_category( '%s', array( 'label' => __( '%s', '%s' ) ) );" % (slug, label, THEME['slug']))
+    lines.append('} );')
+    write('functions.php', '\n'.join(lines))
+
+
 with open(os.path.join(D, 'theme.json'), 'w') as f:
     json.dump(theme, f, indent='\t', ensure_ascii=False)
 
@@ -201,6 +224,7 @@ section('dial-sold', 'Dial status, sold', ['core/paragraph'], {
 section('timepiece-grid', 'Timepiece grid', ['core/post-template'], {
     'css': '& .wp-block-post-featured-image{background:var(--wp--preset--color--surface)}& .wp-block-post-featured-image img{object-fit:contain!important}',
 })
+section('bench-story', 'Bench story columns', ['core/columns'], {'border': {'top': {'color': 'var:preset|color|accent', 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30'}}})
 section('rule-top', 'Rule above', ['core/group'], {'border': {'top': {'color': 'var:preset|color|contrast', 'width': '1px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|30'}}})
 
 PHONE = '+48 42 630 18 61'
@@ -215,9 +239,9 @@ def leaders(items, **attrs):
 
 
 # ---------------------------------------------------------------- front page
-pattern('hero-chooser', 'Hero: what are you bringing in?', 'featured', group(J(
+pattern('hero-chooser', 'Hero: what are you bringing in?', 'hero,featured', group(J(
     columns(
-        ('58%', J(heading('Watch and clock repair on Piotrkowska since 1961.', 1),
+        ('58%', J(heading('Watch and clock repair on Piotrkowska since 1961', 1, fontSize='xx-large'),
                   para('What are you bringing in?', fontFamily='display', fontSize='x-large'),
                   leaders([('A wristwatch, battery while you wait', 'from 35 zł'),
                            ('A mechanical watch, full service', 'from 450 zł'),
@@ -233,7 +257,7 @@ pattern('hero-chooser', 'Hero: what are you bringing in?', 'featured', group(J(
 
 pattern('hours', 'Opening hours', 'text', group(J(
     heading('Opening hours', 6),
-    table([['Monday to Friday', '10:00 to 18:00'], ['Saturday', '10:00 to 14:00, every other week, ring first'], ['Sunday', 'Closed']]),
+    specs([('Monday to Friday', '10:00 to 18:00'), ('Saturday', '10:00 to 14:00, every other week, ring first'), ('Sunday', 'Closed')]),
     para('Batteries and straps are done while you wait during opening hours.', fontSize='x-small')),
     layout={'type': 'default'}))
 
@@ -260,8 +284,8 @@ pattern('post-list', 'Post list', 'posts,query', inherit_query(
 
 pattern('timepiece-card', 'Timepiece for sale (facts and status)', 'portfolio', J(
     para('Available', className='is-style-dial'),
-    table([['Maker', 'Unsigned, London'], ['Case', 'Burr walnut veneer on oak'], ['Date', 'About 1720'], ['Height', '218 cm'],
-           ['Movement', '8-day, anchor escapement, brass dial with date'], ['Strike', 'Hours, on a bell'], ['Price', '18,500 zł, including delivery and setting up within 100 km']]),
+    specs([('Maker', 'Unsigned, London'), ('Case', 'Burr walnut veneer on oak'), ('Date', 'About 1720'), ('Height', '218 cm'),
+           ('Movement', '8-day, anchor escapement, brass dial with date'), ('Strike', 'Hours, on a bell'), ('Price', '18,500 zł, including delivery and setting up within 100 km')]),
     para(WARRANTY, fontSize='x-small')), description='Facts in the order people ask, with a dial status marker above. Use the "Dial status, sold" style when it goes.')
 
 # ---------------------------------------------------------------- watches
@@ -290,7 +314,7 @@ pattern('clock-page', 'Page: clock repairs', 'services', J(
     pattern_ref('clock-prices'),
     columns((None, image('carriage.jpg', 'A brass carriage clock with a white enamel dial and a handle on top, photographed in black and white', 'Carriage clock, French, about 1890.')),
             (None, image('gears.jpg', 'Engraved technical drawing of a clock movement showing gear trains and a pendulum from two sides', 'The same idea, drawn in 1771.'))),
-    pattern_ref('estimate-statement')), block_types='core/post-content')
+    pattern_ref('estimate-statement'), pattern_ref('movement-drawing'), pattern_ref('service-intervals'), pattern_ref('collection-note')), block_types='core/post-content')
 
 pattern('estimate-statement', 'Free estimate statement', 'text', group(J(
     heading('Free estimate, your decision', 4),
@@ -315,7 +339,7 @@ pattern('house-call-questions', 'Before we visit (questionnaire)', 'text', J(
          'Which floor it is on, and whether there is a lift.'], ordered=True),
     para('A photo of the dial and one of the inside of the trunk, with the door open, saves a second trip.', fontSize='small')))
 
-pattern('house-calls-page', 'Page: house calls', 'services', J(pattern_ref('house-calls'), pattern_ref('house-call-questions')), block_types='core/post-content')
+pattern('house-calls-page', 'Page: house calls', 'services', J(pattern_ref('house-calls'), pattern_ref('house-call-area'), pattern_ref('house-call-questions'), pattern_ref('care-tips')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- send in (signature)
 STEPS = {
@@ -332,7 +356,7 @@ pattern('packing-steps', 'Packing steps by what you are sending', 'text', J(
 
 pattern('send-in-slip', 'Send-in slip (print and put in the box)', 'text', group(J(
     row(J(para('Wróblewski, zegarmistrz', fontFamily='display', fontSize='large'), para('Send-in slip', fontSize='small')), justify='space-between'),
-    table([['Your name', ''], ['Address for return', ''], ['Phone', ''], ['Email', ''], ['What it is (maker, if known)', ''], ['What is wrong with it', ''], ['Its value, roughly', '']]),
+    specs([(k, '&nbsp;') for k in ['Your name', 'Address for return', 'Phone', 'Email', 'What it is (maker, if known)', 'What is wrong with it', 'Its value, roughly']], className='is-style-specs slip-lines'),
     para('Send to: ' + ADDR + '. We ring you with a free estimate before any work is done. If you decline, we return it and you pay only the return postage.', fontSize='x-small')),
     className='is-style-slip'), description='A printable slip. Customers print the page and fill it in by hand; header and footer are hidden in print.')
 
@@ -376,7 +400,7 @@ pattern('directions-page', 'Page: directions', 'contact', J(pattern_ref('directi
 pattern('guild-line', 'Trade membership line', 'about', para(
     'Members of the Cech Rzemiosł Różnych w Łodzi, the Łódź guild of craftsmen. Master\'s certificate in watchmaking, 1984.', fontSize='x-small'))
 
-pattern('about-page', 'Page: about', 'about', J(pattern_ref('about-history'), pattern_ref('family-strip'), pattern_ref('guild-line')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'about', J(pattern_ref('about-history'), pattern_ref('then-and-now'), pattern_ref('family-strip'), pattern_ref('we-repair-we-sell'), pattern_ref('parts-note'), pattern_ref('testimonials'), pattern_ref('valuations-note'), pattern_ref('guild-line')), block_types='core/post-content')
 
 pattern('warranty-line', 'Warranty line', 'text', para(WARRANTY + ' Keep the ticket; it has the date on it.', fontSize='x-small'), description='One line to put under any service list.')
 
@@ -384,6 +408,95 @@ pattern('while-you-wait', 'Batteries while you wait', 'banner', group(J(
     heading('Batteries and straps while you wait', 4),
     para('About ten minutes, any time we are open. On the Saturdays we open, ring first: if Magda is alone at the bench, she may ask you to come back after lunch.', fontSize='small')),
     className='is-style-plate'))
+# ---------------------------------------------------------------- round 2 patterns
+def bench_story(came, found, did):
+    return columns((None, J(heading('What came in', 4), para(came))), (None, J(heading('What we found', 4), para(found))), (None, J(heading('What we did', 4), para(did))), align='wide', className='is-style-bench-story')
+
+pattern('restoration-story', 'Restoration story: came in, found, did', 'portfolio', J(
+    bench_story('A Vienna regulator that stopped every Sunday evening, always within an hour of the same time.',
+                'A worn tooth on the centre wheel, catching once a week when the weight reached the same height.',
+                'Cut a new tooth, soldered and filed in place, then a full strip-down. It has not stopped since March.'),
+    para(WARRANTY, fontSize='x-small')), description='Three columns for a repair write-up. Used on every From the bench post.')
+
+pattern('we-repair-we-sell', 'We repair, we sell', 'services', columns(
+    (None, J(heading('We repair', 3), lst(['Wristwatches, mechanical and quartz', 'Pocket watches', 'Longcase and wall clocks', 'Mantel, bracket and carriage clocks', 'Barometers, if they are clockwork', 'Music boxes, sometimes']))),
+    (None, J(heading('We sell', 3), lst(['Restored clocks, from the workshop wall', 'Serviced second-hand watches', 'Batteries, straps and bracelets', 'Clock keys and winding cranks', 'Watch boxes and winders, to order']))),
+    align='wide'))
+
+pattern('clock-change-notice', 'Notice: clocks go back', 'banner', group(
+    para('Clocks go back one hour on Sunday 25 October. On a striking clock, move the minute hand forward eleven hours instead, stopping at each hour for the strike. Or bring it in and we do it for nothing.'),
+    className='is-style-notice', layout={'type': 'default'}), description='A seasonal notice for the week the clocks change. Edit the date each spring and autumn.')
+
+pattern('step-inside', 'Step inside the workshop (gallery)', 'gallery', J(
+    heading('Step inside', 3),
+    gallery([('pocket.jpg', 'A gold pocket watch with its case open on a grey background', 'On the bench this week'),
+             ('carriage.jpg', 'A brass carriage clock with a white dial', 'On the test stand'),
+             ('longcase.jpg', 'A walnut longcase clock', 'By the door, waiting for its owner'),
+             ('gears.jpg', 'An engraved drawing of a clock movement', 'On the wall, since 1968')], columns=4, align='wide'),
+    para('Click any photo to see it large.', fontSize='x-small')))
+
+pattern('movement-drawing', 'Inside a clock (drawing with notes)', 'text', columns(
+    ('45%', image('gears.jpg', 'Engraved drawing of a clock movement with its gear train and pendulum shown from two sides', 'From a French encyclopaedia plate, 1771.')),
+    (None, J(heading('What is inside a clock', 3),
+             lst(['The mainspring or weight stores the power.', 'The gear train turns it into slow, even movement.', 'The escapement lets one tooth past at a time. That is the tick.',
+                  'The pendulum or balance sets the pace.', 'The motion work turns the hands.'], ordered=True),
+             para('Most repairs are to the first three: a tired spring, worn pivot holes, or a bent escapement.', fontSize='small'))),
+    align='wide', verticalAlignment='center'))
+
+pattern('care-tips', 'Looking after a clock at home', 'text', J(
+    heading('Looking after a clock at home', 3),
+    lst(['Wind it on the same day each week. Eight-day clocks run eight days so you have one day of grace.',
+         'Never turn the hands backwards on a striking clock.',
+         'Keep it level. A clock that stops after a house move is usually just out of beat.',
+         'Don\'t oil it yourself. Household oil turns to glue within a year.',
+         'Service every eight to ten years for clocks, five to seven for mechanical watches.'])))
+
+pattern('service-intervals', 'How often to service', 'text', specs([
+    ('Mechanical watch', 'every 5 to 7 years'), ('Quartz watch', 'a new battery every 2 to 3 years; seals when you change it'),
+    ('Mantel or wall clock', 'every 8 to 10 years'), ('Longcase clock', 'every 10 years, with a house call in between')]))
+
+pattern('valuations-note', 'We don\'t do valuations', 'text', group(J(
+    heading('We don\'t do valuations', 4),
+    para('For insurance or probate, ask a valuer from the auction houses in Warsaw or Kraków. We can tell you what a repair will cost and whether a piece is worth repairing, which is a different question.')),
+    className='is-style-plate'))
+
+pattern('parts-note', 'Making parts by hand', 'services', media_text('workshop.jpg', 'A French rotating-band urn clock in white marble with gilt bronze and a black cherub',
+    J(heading('When there is no part to order', 3),
+      para('For anything older than about 1950, spare parts don\'t exist. Tadeusz cuts wheels and pinions on a 1950s Lorch lathe and a wheel-cutting engine Józef bought in 1972. A new wheel costs from 400 zł, and we always quote before we cut.')),
+    width=40, align='wide'))
+
+pattern('testimonials', 'What customers say', 'testimonials', columns(
+    (None, quote('My grandfather\'s pocket watch had been in a drawer since 1994. Magda had it running in two weeks and rang me to listen to it tick.', 'Ewa, Łódź, August 2026')),
+    (None, quote('Tadeusz came to set up our longcase after the move and stayed to explain the strike to our son. It has not lost a minute.', 'Piotr and Kasia, Zgierz, May 2026')),
+    align='wide'))
+
+pattern('collection-note', 'Collecting a repair', 'text', group(J(
+    heading('Collecting your repair', 4),
+    para('We ring when it is ready. Please collect within 90 days; after that we charge 20 zł a month for storage, because the shelves are small and the clocks are not.')),
+    className='is-style-plate'))
+
+pattern('call-to-view', 'Call to view a clock', 'call-to-action', group(J(
+    heading('Come and hear it tick', 3),
+    para('Most clocks for sale hang on the workshop wall. Ring first and we will have the one you want wound and running when you arrive.'),
+    buttons(('Ring to arrange a viewing', TEL))),
+    className='is-style-ruled-strip', layout={'type': 'default'}))
+
+pattern('timepiece-types', 'Browse by type', 'portfolio', group(J(
+    heading('Browse by type', 4),
+    row(J(*[para('<a href="/category/%s/">%s</a>' % (slug, name), fontFamily='display', fontSize='large') for slug, name in
+            [('longcase', 'Longcase'), ('mantel-and-carriage', 'Mantel and carriage'), ('watches', 'Watches'), ('from-the-bench', 'From the bench')]]),
+        style={'spacing': {'blockGap': 'var:preset|spacing|50'}})),
+    layout={'type': 'default'}))
+
+pattern('then-and-now', 'Then and now', 'about', columns(
+    (None, image('shopfront.jpg', 'Black and white photo of a street watchmaker working at a folding table with a loupe on his forehead', '1961: a folding table on Bałuty market (stand-in photo).')),
+    (None, image('tenement.jpg', 'The stairwell of an old Łódź tenement with a brown door and stone steps', 'Now: first floor, Piotrkowska 118.')),
+    align='wide'))
+
+pattern('house-call-area', 'Where we make house calls', 'text', J(
+    heading('Where we make house calls', 3),
+    para('Łódź, Zgierz, Pabianice, Konstantynów Łódzki, Aleksandrów Łódzki and Ozorków, and anywhere else within 50 km if you don\'t mind the travel charge. Further than that, we collect the movement and leave the case with you.')))
+
 
 print('patterns written:', len(os.listdir(os.path.join(D, 'patterns'))))
 
@@ -410,18 +523,20 @@ write('parts/footer.html', group(J(
 M = {'className': 'is-style-page-main'}
 write('templates/front-page.html', page_template(J(
     pattern_ref('hero-chooser'),
-    pattern_ref('intake-notice'),
+    group(J(pattern_ref('intake-notice'), pattern_ref('clock-change-notice')), align='wide', layout={'type': 'default'}),
     group(pattern_ref('for-sale-grid'), align='wide', layout={'type': 'default'}, className='is-style-pad-lg'),
     pattern_ref('family-strip'),
+    group(J(pattern_ref('step-inside'), pattern_ref('we-repair-we-sell')), align='wide', layout={'type': 'default'}),
     group(columns((None, J(pattern_ref('watch-prices'))), (None, J(pattern_ref('clock-prices'))), align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}),
           align='full', layout={'type': 'constrained'}, className='is-style-pad-lg'),
-    group(pattern_ref('house-calls'), align='full', backgroundColor='surface', className='is-style-pad-lg', layout={'type': 'constrained'})),
+    group(pattern_ref('house-calls'), align='full', backgroundColor='surface', className='is-style-pad-lg', layout={'type': 'constrained'}),
+    group(J(pattern_ref('testimonials'), pattern_ref('call-to-view')), align='wide', layout={'type': 'default'}, className='is-style-pad-lg')),
     layout={'type': 'constrained'}, style={'spacing': {'blockGap': 'var:preset|spacing|50'}}))
 
 write('templates/home.html', page_template(J(
     heading('For sale', 1, align='wide', fontSize='xx-large'),
     para('Everything here has been through the workshop and carries our 12-month warranty. Call to see a clock before you buy; most hang on the workshop wall.', align='wide'),
-    dyn('categories', align='wide'),
+    pattern_ref('timepiece-types'),
     pattern_ref('timepiece-archive')), **M))
 write('templates/archive.html', page_template(J(
     dyn('query-title', type='archive', showPrefix=False, align='wide', fontSize='xx-large'), dyn('term-description', align='wide'),
@@ -440,39 +555,63 @@ write('templates/single.html', page_template(J(
             (None, J(dyn('post-terms', term='category'), dyn('post-title', level=1, fontSize='xx-large'), dyn('post-content', layout={'type': 'default'}))), align='wide'),
     group(J(dyn('post-navigation-link', type='previous', label='Previous', showTitle=True), dyn('post-navigation-link', label='Next', showTitle=True)),
           align='wide', layout={'type': 'flex', 'justifyContent': 'space-between'}, className='is-style-rule-top')), **M))
+pattern_categories([('hero', 'Hero')])
 print('theme written')
 
 # ---------------------------------------------------------------- demo
-def piece(title, cat, img, excerpt, status, facts, story, date):
-    body = J(para(status, className='is-style-dial-sold' if status == 'Sold' else 'is-style-dial'), para(story), table(facts), para(WARRANTY, fontSize='x-small'))
-    return {'title': title, 'category': cat, 'image': img, 'excerpt': excerpt, 'date': date, 'content': body}
+def piece(title, cat, img, excerpt, status, facts, story, date, came=None, found=None, did=None):
+    parts = [para(status, className='is-style-dial-sold' if status == 'Sold' else 'is-style-dial'), para(story, fontSize='large')]
+    if came:
+        parts.append(bench_story(came, found, did))
+    parts += [heading('Details', 4), specs(facts), para(WARRANTY, fontSize='x-small')]
+    if status in ('Available', 'Reserved'):
+        parts.append(buttons(('Ring to arrange a viewing', TEL)))
+    return {'title': title, 'category': cat, 'image': img, 'excerpt': excerpt, 'date': date, 'content': J(*parts)}
 
 
 POSTS = [
     piece('Longcase clock, walnut, London, about 1720', 'longcase', 'longcase.jpg', '8-day, brass dial with date. 218 cm. 18,500 zł.', 'Available',
-          [['Maker', 'Unsigned, London'], ['Case', 'Burr walnut veneer on oak'], ['Height', '218 cm'], ['Movement', '8-day, anchor escapement, strikes the hours on a bell'], ['Price', '18,500 zł, delivered and set up within 100 km']],
-          'Came to us from a house in Zgierz with a cracked seatboard and one weight missing. New seatboard in oak, a replacement weight cast to match, full strip-down, twelve bushes.', '2026-09-12'),
+          [('Maker', 'Unsigned, London'), ('Case', 'Burr walnut veneer on oak'), ('Height', '218 cm'), ('Movement', '8-day, anchor escapement, strikes the hours on a bell'), ('Price', '18,500 zł, delivered and set up within 100 km')],
+          'Bought from a house in Zgierz, restored over the winter.', '2026-09-12',
+          'A longcase that had not run since 1990, with a cracked seatboard and one weight missing.',
+          'Twelve worn pivot holes, a broken gut line and a seatboard split along the grain.',
+          'New oak seatboard, a replacement weight cast to match, twelve bushes, new lines, and six weeks on the test stand.'),
     piece('Carriage clock, France, about 1890', 'mantel-and-carriage', 'carriage.jpg', 'Brass case, enamel dial, 8-day. 3,200 zł.', 'Reserved',
-          [['Case', 'Brass, bevelled glass on five sides'], ['Height', '16 cm with handle up'], ['Movement', '8-day, platform lever escapement'], ['Price', '3,200 zł']],
+          [('Case', 'Brass, bevelled glass on five sides'), ('Height', '16 cm with handle up'), ('Movement', '8-day, platform lever escapement'), ('Price', '3,200 zł')],
           'A plain one, which is why it is affordable. Keeps time to about a minute a week.', '2026-08-30'),
     piece('Gold pocket watch, Switzerland, about 1880', 'watches', 'pocket.jpg', 'Open face, key-wound. 4,800 zł.', 'Available',
-          [['Case', '14 ct gold, open face, hinged dust cover'], ['Movement', 'Key-wound cylinder movement'], ['Size', '42 mm'], ['Price', '4,800 zł, key included']],
-          'Serviced, new mainspring and a new crystal. The key is original.', '2026-08-14'),
+          [('Case', '14 ct gold, open face, hinged dust cover'), ('Movement', 'Key-wound cylinder movement'), ('Size', '42 mm'), ('Price', '4,800 zł, key included')],
+          'Serviced, with a new mainspring and a new crystal. The key is original.', '2026-08-14'),
     piece('Mantel clock with Orpheus, Paris, about 1810', 'mantel-and-carriage', 'mantel.jpg', 'Gilt bronze, dial signed Le Roy. Sold.', 'Sold',
-          [['Case', 'Gilt bronze figure of Orpheus with a lyre'], ['Dial', 'White enamel, signed Le Roy, Paris'], ['Movement', '8-day, silk suspension converted to spring']],
+          [('Case', 'Gilt bronze figure of Orpheus with a lyre'), ('Dial', 'White enamel, signed Le Roy, Paris'), ('Movement', '8-day, silk suspension converted to spring')],
           'Sold to a collector in Poznań in July. We have a second, smaller one coming in the autumn.', '2026-07-22'),
     piece('Urn clock with rotating hours, France, about 1790', 'from-the-bench', 'workshop.jpg', 'Serviced for a private collector. Not for sale.', 'Not for sale',
-          [['Type', 'Rotating-band clock: the hours turn past a fixed pointer'], ['Work', 'Strip-down, two new pivots, band re-tensioned'], ['Time on the bench', '3 weeks']],
-          'The owner lives in Warsaw and drove it down on the back seat of a Škoda wrapped in a duvet. It survived.', '2026-06-30'),
+          [('Type', 'Rotating-band clock: the hours turn past a fixed pointer'), ('Time on the bench', '3 weeks'), ('Cost', '2,900 zł')],
+          'The owner lives in Warsaw and drove it down on the back seat of a Škoda wrapped in a duvet. It survived.', '2026-06-30',
+          'A marble urn clock whose hour band had slipped, so it showed ten past six at half past nine.',
+          'Two broken pivots on the centre wheel and a band tensioning spring that had lost its temper.',
+          'Two new pivots turned on the lathe, a new spring, the band re-tensioned and the movement cleaned. It now tells the right time, turning.'),
     piece('Steel dress watch, serviced', 'watches', 'wristwatch.jpg', 'Automatic, 40 mm, leather strap. 2,400 zł.', 'Available',
-          [['Case', 'Steel, 40 mm'], ['Movement', 'Automatic, with date'], ['Work', 'Full service, new crown seal, strap'], ['Price', '2,400 zł']],
+          [('Case', 'Steel, 40 mm'), ('Movement', 'Automatic, with date'), ('Work', 'Full service, new crown seal, strap'), ('Price', '2,400 zł')],
           'Traded in by a customer who wanted something smaller. Service done by Magda in May.', '2026-06-02'),
     piece('An automatic, open on the bench', 'from-the-bench', 'movement.jpg', 'What a full service of an automatic watch involves, in order.', 'Not for sale',
-          [['Parts', 'About 130 in an automatic with date'], ['Time', 'Five to six hours of bench work, spread over a week'], ['Price', 'from 550 zł']],
-          'Taken apart, every part cleaned in three baths, the mainspring checked, jewels oiled with four different oils, reassembled, then timed in six positions over five days.', '2026-05-10'),
+          [('Parts', 'About 130 in an automatic with date'), ('Time', 'Five to six hours of bench work, spread over a week'), ('Price', 'from 550 zł')],
+          'Every automatic watch we service goes through the same steps.', '2026-05-10',
+          'A steel automatic losing four minutes a day, with the date changing at lunchtime.',
+          'Old oil gone to varnish on the pallet stones, and a date wheel set twelve hours out after a battery-style "fix" elsewhere.',
+          'Taken apart, cleaned in three baths, oiled with four different oils, the date reset and the watch timed in six positions over five days. Now within five seconds a day.'),
+    piece('A Vienna regulator that stopped on Sundays', 'from-the-bench', 'gears.jpg', 'A worn tooth, found by listening. Repaired in March.', 'Not for sale',
+          [('Clock', 'Vienna regulator, one weight, about 1880'), ('Time on the bench', '4 weeks'), ('Cost', '1,150 zł including the new tooth')],
+          'The owner kept a notebook of every stop. It was the notebook that solved it.', '2026-03-20',
+          'A wall regulator that stopped every Sunday evening, always within an hour of the same time.',
+          'A worn tooth on the centre wheel, catching once a week when the weight reached the same height.',
+          'Cut a new tooth, soldered and filed in place, then a full strip-down and a new suspension spring. It has not stopped since.'),
     piece('Where Józef started', 'from-the-bench', 'shopfront.jpg', 'A folding table, a loupe and a tin of parts. Bałuty market, 1961.', 'Not for sale',
-          [['1961', 'Bałuty market, a folding table'], ['1968', 'Piotrkowska 118, the courtyard workshop'], ['1984', 'Tadeusz\'s master\'s certificate'], ['2012', 'Magda qualifies']],
-          'This is not Józef in the photo, but it could be. He worked outdoors for seven years, winter included, with fingerless gloves.', '2026-03-01'),
+          [('1961', 'Bałuty market, a folding table'), ('1968', 'Piotrkowska 118, the courtyard workshop'), ('1984', 'Tadeusz\'s master\'s certificate'), ('2012', 'Magda qualifies')],
+          'This is not Józef in the photo, but it could be. He worked outdoors for seven years, winter included, with fingerless gloves.', '2026-03-01',
+          'Józef\'s first customer, in 1961: a railwayman with a pocket watch that had been dropped on the tracks.',
+          'A broken balance staff, the most common injury a dropped watch gets.',
+          'A new staff turned by hand, by a man with one lathe and no shop. The railwayman came back every year until 1990.'),
 ]
 
 content = {

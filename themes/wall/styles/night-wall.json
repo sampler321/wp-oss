@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Night wall",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#111111",
+					"name": "Night"
+				},
+				{
+					"slug": "contrast",
+					"color": "#F5F5F0",
+					"name": "Chalk"
+				},
+				{
+					"slug": "accent",
+					"color": "#F2B705",
+					"name": "Tape yellow"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#F2B705",
+					"name": "Tape yellow"
+				},
+				{
+					"slug": "surface",
+					"color": "#1E1E1E",
+					"name": "Tarmac"
+				},
+				{
+					"slug": "line",
+					"color": "#F5F5F0",
+					"name": "Chalk line"
+				},
+				{
+					"slug": "muted",
+					"color": "#B5B5B0",
+					"name": "Grey"
+				}
+			]
+		}
+	}
+}

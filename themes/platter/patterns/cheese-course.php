@@ -2,7 +2,7 @@
 /**
  * Title: Cheese board add-on
  * Slug: platter/cheese-course
- * Categories: platter,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"align":"wide","className":"is-style-mustard","layout":{"type":"constrained"}} -->
@@ -18,7 +18,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cheese.jpg' ) ); ?>" alt="A wooden board with blue cheese, a hard cheese, crackers, grapes, bread and two pots of chutney"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>

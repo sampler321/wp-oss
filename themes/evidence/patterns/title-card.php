@@ -7,9 +7,9 @@
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"has-x-small-font-size has-display-font-family","style":{"typography":{"fontWeight":"700"}},"fontSize":"x-small"} -->
-<p class="has-x-small-font-size has-display-font-family" style="font-weight:700">Low Water, season 2, part 4 out now</p>
+<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);margin-top:0"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"fontSize":"x-small","fontFamily":"display","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-x-small-font-size has-display-font-family">Low Water, season 2, part 4 out now</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"fontSize":"display"} -->
@@ -17,9 +17,9 @@
 <!-- /wp:heading -->
 
 <!-- wp:columns {"verticalAlignment":"bottom"} -->
-<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"62%"} -->
-<div class="wp-block-column" style="flex-basis:62%"><!-- wp:paragraph {"className":"has-large-font-size","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-large-font-size" style="line-height:1.4">On 11 March 1994 a timber yard on the Hull docks burned down and Arthur Kell, the night watchman, died. Lee Pryce served fourteen years for it. He says he wasn’t there. We spent a year with the paperwork.</p>
+<div class="wp-block-columns"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:paragraph {"fontSize":"large","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-large-font-size">On 11 March 1994 a timber yard on the Hull docks burned down and Arthur Kell, the night watchman, died. Lee Pryce served fourteen years for it. He says he wasn’t there. We spent a year with the paperwork.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -37,7 +37,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"aspectRatio":"21/9","scale":"cover","sizeSlug":"large","linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/docks.jpg' ) ); ?>" alt="Sepia photograph of a dock basin with sailing ships and a tall brick tower" style="aspect-ratio:21/9;object-fit:cover"/><figcaption class="wp-element-caption">Alexandra Dock area, early 1900s. Archive photograph, public domain.</figcaption></figure>
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","align":"wide","aspectRatio":"21/9","scale":"cover"} -->
+<figure class="wp-block-image size-large alignwide"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/docks.jpg' ) ); ?>" alt="Sepia photograph of a dock basin with sailing ships and a tall brick tower"/><figcaption class="wp-element-caption">Alexandra Dock area, early 1900s. Archive photograph, public domain.</figcaption></figure>
 <!-- /wp:image --></section>
 <!-- /wp:group -->

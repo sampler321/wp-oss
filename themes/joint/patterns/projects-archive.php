@@ -2,7 +2,7 @@
 /**
  * Title: Projects archive (inherits the page query)
  * Slug: joint/projects-archive
- * Categories: query
+ * Categories: projects
  * Inserter: no
  */
 ?>

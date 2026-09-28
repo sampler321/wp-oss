@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Orange and black spines, Van Gelder in the run-out, gatefolds that open like a book. We keep a whole divider for them and price the originals on condition, not hype.</p>
+<p class="">Orange and black spines, Van Gelder in the run-out, gatefolds that open like a book. We keep a whole divider for them and price the originals on condition, not hype.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-label"} -->
@@ -23,11 +23,11 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:gallery {"columns":2,"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-2 is-cropped"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/spinning.jpg' ) ); ?>" alt="A black LP with a teal label turning on a dark turntable, seen from above"/><figcaption class="wp-element-caption">Alice Coltrane</figcaption></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/stack.jpg' ) ); ?>" alt="A tall stack of LPs on their sides, spines showing catalogue numbers"/><figcaption class="wp-element-caption">The Impulse! divider</figcaption></figure>
 <!-- /wp:image --></figure>
 <!-- /wp:gallery --></div>

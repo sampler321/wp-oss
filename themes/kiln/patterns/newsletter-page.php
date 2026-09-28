@@ -2,7 +2,7 @@
 /**
  * Title: Page: newsletter
  * Slug: kiln/newsletter-page
- * Categories: call-to-action
+ * Categories: kiln-pages,call-to-action
  * Block Types: core/post-content
  */
 ?>

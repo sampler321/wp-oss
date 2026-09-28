@@ -1,0 +1,263 @@
+{
+ "site": {
+  "title": "Good Dog",
+  "tagline": "Beds, collars and leads, sewn in Margate in six loud colours"
+ },
+ "categories": [
+  {
+   "slug": "beds",
+   "name": "In beds",
+   "description": "Dogs in (or near) our beds and crate mats."
+  },
+  {
+   "slug": "collars-and-leads",
+   "name": "In collars and leads",
+   "description": "Dogs wearing our collars, leads and name tags."
+  },
+  {
+   "slug": "blankets",
+   "name": "On blankets",
+   "description": "Dogs on blankets, some of them ours."
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "dog-wall",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "dog-wall",
+   "title": "Dog wall",
+   "content": ""
+  },
+  {
+   "slug": "size-guide",
+   "title": "Size guide",
+   "pattern": "good-dog/size-guide-page",
+   "template": "page-guide"
+  },
+  {
+   "slug": "reviews",
+   "title": "Reviews",
+   "pattern": "good-dog/reviews-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "care",
+   "title": "Care and washing",
+   "pattern": "good-dog/care-page",
+   "template": "page-guide"
+  },
+  {
+   "slug": "about",
+   "title": "About us",
+   "pattern": "good-dog/about-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "delivery",
+   "title": "Delivery and returns",
+   "pattern": "good-dog/delivery-page"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "pattern": "good-dog/contact-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "gifts",
+   "title": "Gifts",
+   "pattern": "good-dog/gifts-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "stockists",
+   "title": "Stockists",
+   "pattern": "good-dog/stockists-page"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Mabel, dachshund, small bed in Custard",
+   "category": "beds",
+   "image": "dachshund.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Mabel measured 52 cm nose to tail, so she got a small. She spends most of the day on it and the rest of the day guarding it from the cat.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Mabel measured 52 cm nose to tail, so she got a small."
+  },
+  {
+   "title": "Kevin, pug, brass name tag",
+   "category": "collars-and-leads",
+   "image": "pug.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Kevin's tag says KEVIN on the front, which Kevin's owner says is mainly for the benefit of other dogs. Photo taken by the river in Faversham, after a swim he did not plan.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Kevin's tag says KEVIN, mainly for the benefit of other dogs."
+  },
+  {
+   "title": "Doris, whippet, stole a lettuce blanket",
+   "category": "blankets",
+   "image": "blanket.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>This is not one of our blankets. Doris's owner sent it anyway, because she wanted us to know about the competition. We have put it on the wall as a warning to ourselves.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Not our blanket. Posted as a warning to ourselves."
+  },
+  {
+   "title": "Otis, Shih Tzu, collar in Pool",
+   "category": "collars-and-leads",
+   "image": "ball.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Otis wears an XS collar in Pool and has never given back a tennis ball in his life. Sent in by Rukhsana from Whitstable.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "XS collar in Pool. Has never given back a tennis ball."
+  },
+  {
+   "title": "Bramble, lurcher cross, crate mat",
+   "category": "beds",
+   "image": "crate.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Bramble's crate is an Ellie-Bo 36 inch, so she has the 91 × 58 cm mat in Tennis ball green. She sleeps in the crate with the door open, by choice.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Ellie-Bo 36 inch crate, 91 × 58 cm mat in green."
+  },
+  {
+   "title": "Nell, border collie, orange lead",
+   "category": "collars-and-leads",
+   "image": "collie.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Nell has the 1.8 m lead in Marmalade and a medium collar to match. Her owner, Callum, says the lead is the only one he has not lost on Dartmoor.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "1.8 m lead in Marmalade. Not yet lost on Dartmoor."
+  },
+  {
+   "title": "Biscuit, rescue, medium bed, never uses it",
+   "category": "beds",
+   "image": "hero.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Biscuit came from the Thanet rescue in March. We sent a medium bed in Bubblegum. Her owner sent us this photo of where she actually sleeps.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "We sent a medium bed. This is where she actually sleeps."
+  },
+  {
+   "title": "Moose, whippet, sighthound collar",
+   "category": "collars-and-leads",
+   "image": "whippet.jpg",
+   "content": "<!-- wp:paragraph -->\n<p>Moose had backed out of three collars before this one. The martingale loop means it tightens a little when he pulls back, so he stays put. His owner says the park is a calmer place now.</p>\n<!-- /wp:paragraph -->",
+   "excerpt": "Backed out of three collars before this one."
+  }
+ ],
+ "nav": [
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Size guide",
+   "url": "/size-guide/"
+  },
+  {
+   "label": "Dog wall",
+   "url": "/dog-wall/"
+  },
+  {
+   "label": "Gifts",
+   "url": "/gifts/"
+  },
+  {
+   "label": "Reviews",
+   "url": "/reviews/"
+  },
+  {
+   "label": "Care",
+   "url": "/care/"
+  },
+  {
+   "label": "About",
+   "url": "/about/"
+  },
+  {
+   "label": "Delivery",
+   "url": "/delivery/"
+  },
+  {
+   "label": "Stockists",
+   "url": "/stockists/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Stripe bed, small, Custard",
+   "price": "78",
+   "image": "dachshund.jpg",
+   "category": "Beds",
+   "sku": "GD-B-S-CU",
+   "stock": 6,
+   "short": "70 × 55 cm inside. For dogs 41 to 56 cm nose to tail. Cover washes at 40°C. Made to order, posts in 6 working days."
+  },
+  {
+   "name": "Stripe bed, medium, Bubblegum",
+   "price": "96",
+   "image": "hero.jpg",
+   "category": "Beds",
+   "sku": "GD-B-M-BU",
+   "stock": 4,
+   "short": "90 × 70 cm inside. For dogs 57 to 72 cm nose to tail. Made to order."
+  },
+  {
+   "name": "Stripe bed, extra large, Pool",
+   "price": "142",
+   "image": "crate.jpg",
+   "category": "Beds",
+   "sku": "GD-B-XL-PO",
+   "stock": 2,
+   "short": "130 × 100 cm inside. Greyhounds, lurchers and dogs who sprawl. Made to order."
+  },
+  {
+   "name": "Webbing collar, Tennis ball",
+   "price": "22",
+   "image": "collie.jpg",
+   "category": "Collars and leads",
+   "sku": "GD-C-TB",
+   "stock": 30,
+   "short": "25 mm cotton webbing, solid brass buckle and D-ring. Five sizes, neck 24 to 62 cm."
+  },
+  {
+   "name": "Sighthound collar, Bubblegum",
+   "price": "28",
+   "image": "whippet.jpg",
+   "category": "Collars and leads",
+   "sku": "GD-SC-BU",
+   "stock": 12,
+   "short": "50 mm at the front, 25 mm at the buckle, martingale loop. Measure over the ears first."
+  },
+  {
+   "name": "Lead, 1.8 m, Marmalade",
+   "price": "26",
+   "image": "lead.jpg",
+   "category": "Collars and leads",
+   "sku": "GD-L-18-MA",
+   "stock": 18,
+   "short": "Padded handle, brass trigger clip. Also comes in 1.2 m for town."
+  },
+  {
+   "name": "Crate mat, Ellie-Bo 36 inch",
+   "price": "52",
+   "image": "crate.jpg",
+   "category": "Crate bedding",
+   "sku": "GD-CM-EB36",
+   "stock": 0,
+   "short": "Sold out until the next cutting day on the 14th. 91 × 58 cm, sits flat in the corners."
+  },
+  {
+   "name": "Two-sided blanket, Coral",
+   "price": "34",
+   "image": "blanket.jpg",
+   "category": "Blankets",
+   "sku": "GD-BL-CO",
+   "stock": 9,
+   "short": "100 × 70 cm. Fleece one side, cotton canvas the other. Washes at 40°C."
+  },
+  {
+   "name": "Brass name tag",
+   "price": "12",
+   "image": "pug.jpg",
+   "category": "Name tags",
+   "sku": "GD-TAG",
+   "stock": 50,
+   "short": "32 mm solid brass. Name on the front, two lines of 14 letters on the back. Made in 5 working days."
+  }
+ ]
+}

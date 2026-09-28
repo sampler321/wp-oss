@@ -2,7 +2,7 @@
 /**
  * Title: Event types and what is included
  * Slug: platter/event-types
- * Categories: platter,services
+ * Categories: services
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
@@ -13,7 +13,7 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cake.jpg' ) ); ?>" alt="A couple cutting a two-tier wedding cake covered in strawberries, mango and kiwi"/></figure>
 <!-- /wp:image -->
 
@@ -33,7 +33,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tacos.jpg' ) ); ?>" alt="Four loaded tacos in paper boats lined with red and white checked paper, with three small sauce pots"/></figure>
 <!-- /wp:image -->
 
@@ -53,7 +53,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sandwiches.jpg' ) ); ?>" alt="Heart-shaped seeded rolls filled with ham and salad on a silver tray"/></figure>
 <!-- /wp:image -->
 
@@ -73,7 +73,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/roast.jpg' ) ); ?>" alt="A plate of roast chicken with roast potatoes, lettuce and carrots on a table outside"/></figure>
 <!-- /wp:image -->
 

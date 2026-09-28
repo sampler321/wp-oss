@@ -5,6 +5,10 @@
  },
  "categories": [
   {
+   "slug": "jobs",
+   "name": "Jobs"
+  },
+  {
    "slug": "advice",
    "name": "Advice"
   },
@@ -68,6 +72,38 @@
   }
  ],
  "posts": [
+  {
+   "title": "Night lockout in Ołbin, pan on the hob",
+   "category": "jobs",
+   "image": "lock.jpg",
+   "excerpt": "Opened in six minutes at 23:40, no damage. The hob went off first.",
+   "date": "2026-09-24",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The call came from a neighbour's phone: tenant locked out, keys inside, and a pan of potatoes on the hob. Ołbin, third floor, no lift.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-credentials\"} -->\n<div class=\"wp-block-columns is-style-credentials\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What happened</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Tenant locked out at 23:40 with the key inside and the hob on.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What I did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Opened the Gerda cylinder with a bypass tool in six minutes. No damage. Hob off, potatoes saved.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:group {\"className\":\"is-style-specs\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-specs\"><!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Ołbin, third floor, tenement</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Time on site</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">20 minutes</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Cost</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">350 zł, night rate</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Cylinder change after a break-in, Krzyki",
+   "category": "jobs",
+   "image": "euro.jpg",
+   "excerpt": "A snapped cylinder, a boarded door overnight and a class C cylinder the next morning.",
+   "date": "2026-09-02",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The burglars snapped the old cylinder, which stuck out 8 mm from the handle plate. The police were done by midnight and I boarded the door until morning.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-credentials\"} -->\n<div class=\"wp-block-columns is-style-credentials\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What happened</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Front door forced overnight by snapping a class A cylinder.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What I did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Boarded up at 00:30. At 8:00 fitted a class C anti-snap cylinder and a new handle set, and wrote the note for the insurer.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:group {\"className\":\"is-style-specs\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-specs\"><!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Krzyki, ground-floor flat</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Time on site</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">1 hour at night, 40 minutes in the morning</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Cost</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">300 zł boarding, 420 zł cylinder and handles</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "Twelve flats in a day, Nadodrze",
+   "category": "jobs",
+   "image": "keys.jpg",
+   "excerpt": "A block changing management company. New cylinders, 36 keys, one key record.",
+   "date": "2026-08-12",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A housing co-operative changed its managing agent and wanted every flat door and the street door on new cylinders the same day.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-credentials\"} -->\n<div class=\"wp-block-columns is-style-credentials\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What happened</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Change of managing agent. Nobody knew how many keys to the old locks were out there.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What I did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Twelve class B cylinders, a new street-door lock, 36 keys cut and a key record sent to the co-operative.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:group {\"className\":\"is-style-specs\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-specs\"><!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Nadodrze, a 1905 tenement with twelve flats</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Time on site</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">One long day</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Cost</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">3,100 zł including parts</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
+  {
+   "title": "A uPVC balcony door that would not lock, Fabryczna",
+   "category": "jobs",
+   "image": "padlock2.jpg",
+   "excerpt": "A worn gearbox, replaced in an hour. The door had been wedged shut with a chair for a month.",
+   "date": "2026-07-28",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">The handle went down, but the hooks never came out, so the balcony door had been held shut with a kitchen chair since July.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-credentials\"} -->\n<div class=\"wp-block-columns is-style-credentials\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What happened</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Balcony door handle turned but the door would not lock.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":4} -->\n<h4 class=\"wp-block-heading\">What I did</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Replaced the Winkhaus gearbox and adjusted the keeps. The chair went back to the kitchen.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:group {\"className\":\"is-style-specs\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group is-style-specs\"><!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Where</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">Fabryczna, fourth-floor flat</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Time on site</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">1 hour</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"wrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p class=\"\">Cost</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"\">280 zł including the gearbox</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->"
+  },
   {
    "title": "Why cheap cylinders get picked",
    "category": "advice",

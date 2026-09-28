@@ -2,7 +2,7 @@
 /**
  * Title: Three small scoops
  * Slug: scoop/tasting
- * Categories: scoop,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -15,7 +15,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Three small scoops in a cup, any flavours, £5.20. The best way to try the specials without committing. We will also give you a taste on a spoon first, as many as you like within reason.</p>
+<p class="">Three small scoops in a cup, any flavours, £5.20. The best way to try the specials without committing. We will also give you a taste on a spoon first, as many as you like within reason.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-spec"} -->

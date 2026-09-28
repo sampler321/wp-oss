@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Material source book (timber swatch library)
+ * Title: Material source book (timber swatches)
  * Slug: joint/source-book
- * Categories: featured
+ * Categories: making
  * Description: The signature swatch library: each timber as a square sample with its source and one line on how it behaves.
  */
 ?>
@@ -19,7 +19,7 @@
 
 <!-- wp:group {"align":"wide","className":"is-style-two-up-mobile","layout":{"type":"grid","minimumColumnWidth":"15rem"}} -->
 <div class="wp-block-group alignwide is-style-two-up-mobile"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/oak.jpg' ) ); ?>" alt="Square sample of planed english oak, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -37,7 +37,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/ash.jpg' ) ); ?>" alt="Square sample of planed ash, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -55,7 +55,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/cherry.jpg' ) ); ?>" alt="Square sample of planed cherry, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -73,7 +73,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/elm.jpg' ) ); ?>" alt="Square sample of planed elm, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -91,7 +91,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sycamore.jpg' ) ); ?>" alt="Square sample of planed sycamore, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -109,7 +109,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/beech.jpg' ) ); ?>" alt="Square sample of planed beech, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -127,7 +127,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/larch.jpg' ) ); ?>" alt="Square sample of planed larch, showing its grain"/></figure>
 <!-- /wp:image -->
 
@@ -145,7 +145,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","className":"is-style-swatch"} -->
 <figure class="wp-block-image size-large is-style-swatch"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/chestnut.jpg' ) ); ?>" alt="Square sample of planed sweet chestnut, showing its grain"/></figure>
 <!-- /wp:image -->
 

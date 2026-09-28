@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:group {"className":"is-style-rule-top","style":{"spacing":{"blockGap":"var:preset|spacing|10","margin":{"top":"0"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-rule-top"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group is-style-rule-top" style="margin-top:0"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
 <p class="has-muted-color has-text-color has-small-font-size">Artist</p>
 <!-- /wp:paragraph -->

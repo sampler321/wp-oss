@@ -6,7 +6,7 @@
  */
 ?>
 <!-- wp:group {"align":"wide","className":"is-style-toner","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide is-style-toner"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-group alignwide is-style-toner"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A guitarist playing under a single stage light"/><figcaption class="wp-element-caption">still from the car park session, filmed on a camcorder</figcaption></figure>
 <!-- /wp:image -->
 

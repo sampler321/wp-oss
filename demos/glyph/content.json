@@ -1,0 +1,208 @@
+{
+ "site": {
+  "title": "Sawtooth Type",
+  "tagline": "Independent type foundry, Margate"
+ },
+ "categories": [
+  {
+   "slug": "in-use",
+   "name": "In use"
+  }
+ ],
+ "front_page": "home",
+ "posts_page": "in-use",
+ "pages": [
+  {
+   "slug": "home",
+   "title": "Home",
+   "content": ""
+  },
+  {
+   "slug": "in-use",
+   "title": "In use",
+   "content": ""
+  },
+  {
+   "slug": "typefaces",
+   "title": "Typefaces",
+   "template": "page-wide",
+   "content": "<!-- wp:pattern {\"slug\":\"glyph/typefaces-list\"} /-->\n\n<!-- wp:pattern {\"slug\":\"glyph/typeface-cards\"} /-->"
+  },
+  {
+   "slug": "margo-grotesk",
+   "title": "Margo Grotesk",
+   "pattern": "glyph/typeface-page",
+   "template": "page-typeface",
+   "parent": "typefaces"
+  },
+  {
+   "slug": "harbour-serif",
+   "title": "Harbour Serif",
+   "pattern": "glyph/typeface-page-serif",
+   "template": "page-typeface",
+   "parent": "typefaces"
+  },
+  {
+   "slug": "trials",
+   "title": "Trials",
+   "pattern": "glyph/trials-page"
+  },
+  {
+   "slug": "licensing",
+   "title": "Licensing",
+   "pattern": "glyph/licensing-page",
+   "template": "page-wide"
+  },
+  {
+   "slug": "info",
+   "title": "Info",
+   "pattern": "glyph/info-page",
+   "template": "page-wide"
+  }
+ ],
+ "posts": [
+  {
+   "title": "Wards the Florist, York",
+   "category": "in-use",
+   "tags": [
+    "Margo Grotesk",
+    "Signage"
+   ],
+   "image": "shopfront.jpg",
+   "date": "2025-08-14",
+   "content": "<!-- wp:paragraph -->\n<p>Fascia and window lettering in Margo Bold, cut from brass by a sign maker in Leeds. The florist wanted the name to read from the other side of Clifford Street.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Village name signs, Nottinghamshire",
+   "category": "in-use",
+   "tags": [
+    "Margo Grotesk",
+    "Wayfinding"
+   ],
+   "image": "enamel.jpg",
+   "date": "2025-05-02",
+   "content": "<!-- wp:paragraph -->\n<p>Replacement enamel signs for 40 villages, set in a condensed Margo drawn for the council. The distances use the tabular figures.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Hotel menus, Folkestone",
+   "category": "in-use",
+   "tags": [
+    "Harbour Serif",
+    "Print"
+   ],
+   "image": "menu.jpg",
+   "date": "2025-03-21",
+   "content": "<!-- wp:paragraph -->\n<p>Menus and wine lists set in Harbour Serif Regular and Semibold, letterpress printed on cotton board.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "A short run of books for a Kent press",
+   "category": "in-use",
+   "tags": [
+    "Harbour Serif",
+    "Books"
+   ],
+   "image": "books.jpg",
+   "date": "2024-11-10",
+   "content": "<!-- wp:paragraph -->\n<p>Six poetry titles with covers stamped in gold. Text in Harbour Serif Light at 10.5 on 14 point.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Newsletter for a printing museum",
+   "category": "in-use",
+   "tags": [
+    "Margo Grotesk",
+    "Print"
+   ],
+   "image": "print.jpg",
+   "date": "2024-07-30",
+   "content": "<!-- wp:paragraph -->\n<p>The Old Threshers museum newsletter, set in Margo Medium for headings and Harbour for text.</p>\n<!-- /wp:paragraph -->"
+  },
+  {
+   "title": "Wood type set, for a letterpress workshop",
+   "category": "in-use",
+   "tags": [
+    "Margo Grotesk",
+    "Wood type"
+   ],
+   "image": "wood-type.jpg",
+   "date": "2024-03-12",
+   "content": "<!-- wp:paragraph -->\n<p>Margo Bold capitals cut in end-grain maple at 12 line, for a letterpress studio that runs workshops in Margate.</p>\n<!-- /wp:paragraph -->"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Typefaces",
+   "url": "/typefaces/"
+  },
+  {
+   "label": "Trials",
+   "url": "/trials/"
+  },
+  {
+   "label": "Licensing",
+   "url": "/licensing/"
+  },
+  {
+   "label": "In use",
+   "url": "/in-use/"
+  },
+  {
+   "label": "Shop",
+   "url": "/shop/"
+  },
+  {
+   "label": "Info",
+   "url": "/info/"
+  }
+ ],
+ "currency": "GBP",
+ "products": [
+  {
+   "name": "Margo Grotesk, full family, desktop licence",
+   "price": "280",
+   "image": "type.jpg",
+   "category": "Margo Grotesk",
+   "sku": "ST-MG-FAM-D",
+   "short": "Six styles, OTF and TTF, for up to 10 people at a company of up to 10. Includes trial-to-final file swap."
+  },
+  {
+   "name": "Margo Grotesk Bold, desktop licence",
+   "price": "60",
+   "image": "enamel.jpg",
+   "category": "Margo Grotesk",
+   "sku": "ST-MG-B-D",
+   "short": "One style, OTF and TTF, one desktop user."
+  },
+  {
+   "name": "Margo Grotesk, full family, web licence",
+   "price": "280",
+   "image": "shopfront.jpg",
+   "category": "Margo Grotesk",
+   "sku": "ST-MG-FAM-W",
+   "short": "WOFF2 files for one domain, up to 50,000 page views a month."
+  },
+  {
+   "name": "Harbour Serif, full family, desktop licence",
+   "price": "340",
+   "image": "books.jpg",
+   "category": "Harbour Serif",
+   "sku": "ST-HS-FAM-D",
+   "short": "Eighteen styles plus the variable font, for up to 10 people."
+  },
+  {
+   "name": "Harbour Serif Variable, web licence",
+   "price": "180",
+   "image": "menu.jpg",
+   "category": "Harbour Serif",
+   "sku": "ST-HS-VAR-W",
+   "short": "One variable WOFF2 covering 100 to 900 with italics, one domain, 50,000 views a month."
+  },
+  {
+   "name": "Logo licence, any one style",
+   "price": "450",
+   "image": "wood-type.jpg",
+   "category": "Licences",
+   "sku": "ST-LOGO",
+   "short": "Use one style as the basis of a logo or wordmark. Includes a desktop licence for that style."
+  }
+ ]
+}

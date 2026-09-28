@@ -41,6 +41,7 @@ def jdump(rel, data):
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    s = s.replace('.', '-')
     s = re.sub(r'[^a-z0-9 _-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     return re.sub(r'-+', '-', s).strip('-')
@@ -82,6 +83,7 @@ theme = {
   'shadow': {'defaultPresets': False, 'presets': []},
   'border': {'color': True, 'radius': True, 'style': True, 'width': True,
              'radiusSizes': [{'slug': 'none', 'size': '0', 'name': 'Square'}, {'slug': 'pill', 'size': '999px', 'name': 'Pill'}, {'slug': 'arch', 'size': '50% 50% 0 0 / 30% 30% 0 0', 'name': 'Arch'}]},
+  'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
  },
  'styles': {
   'color': {'background': C('base'), 'text': C('contrast')},
@@ -233,6 +235,18 @@ section('care-card', 'Care card (printable)', ['core/group'],
         {'color': {'background': C('cream'), 'text': C('contrast')}, 'border': {'width': '2px', 'style': 'dashed', 'color': C('contrast')},
          'spacing': {'padding': {'top': SP('50'), 'bottom': SP('50'), 'left': SP('50'), 'right': SP('50')}}})
 
+section('rows', 'Rows (instead of a table)', ['core/group'],
+        {'css': ('& > .wp-block-group{border-bottom:2px solid currentColor;padding:.6em 0!important;margin:0!important;column-gap:1rem!important;row-gap:.15rem!important}'
+                 '& > .wp-block-group > p{margin:0!important}& > .wp-block-group > p:first-child{font-weight:800}'
+                 '& > .wp-block-group > p:last-child:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}')})
+
+
+def rows(items, head=None, min_w='8rem', cls='is-style-rows', **kw):
+    n = max(len(r) for r in items)
+    return group(J(*[group(J(*[para(c) for c in r]), layout={'type': 'grid', 'columnCount': n, 'minimumColumnWidth': min_w}) for r in items]),
+                 className=cls, layout={'type': 'default'}, **kw)
+
+
 # ---------------------------------------------------------------- content
 SHOP = {'name': 'Hollyhock', 'addr': '3 Chatsworth Road, London E5 0LH', 'email': 'flowers@example.com', 'phone': '020 7946 0319'}
 CUTOFF = 'Order by 2pm for same-day delivery in E5, E8, E9, N16 and N4. Next day everywhere else in the UK.'
@@ -277,7 +291,8 @@ def purl(p):
 
 # ---------------------------------------------------------------- patterns
 pattern('hero-cutoff', 'Hero: the cut-off as the headline', 'featured,banner', columns(
-  ('52%', J(heading('Order by 2pm, on the table by 6.', 1, fontSize='xx-large'),
+  ('52%', J(heading('This week: dahlias, rosehips and the last garden roses', 1, fontSize='xx-large'),
+     para('Order by 2pm, on the table by 6. Same day across Hackney by cargo bike.', fontSize='large'),
      para('Hand-tied bouquets from a small shop on Chatsworth Road, delivered by cargo bike across Hackney the same day. Next day everywhere else.', fontSize='large'),
      buttons(('Choose a bouquet', '/product-category/bouquets/'), ('Delivery areas', '/delivery/', {'className': 'is-style-outline'})),
      para('Missed it? Call <a href="tel:02079460319">%s</a> and we will see what the bike can do.' % SHOP['phone'], fontSize='small')), {'className': 'is-style-poppy', 'verticalAlignment': 'center'}),
@@ -327,7 +342,7 @@ pattern('seasonal', 'Seasonal stems (four across)', 'shop', group(J(
 
 pattern('delivery-zones', 'Delivery zones and charges', 'shop,featured', group(J(
   heading('Where we deliver', 2),
-  table([['E5, E8, E9, N16, N4', 'Same day if ordered by 2pm', '£7'], ['Rest of east and north London', 'Same day if ordered by 12pm', '£12'],
+  rows([['E5, E8, E9, N16, N4', 'Same day if ordered by 2pm', '£7'], ['Rest of east and north London', 'Same day if ordered by 12pm', '£12'],
          ['Anywhere in London', 'Next day, 9am to 6pm', '£12'], ['Rest of the UK', 'Next day by courier, in a water box', '£14'],
          ['Collect from the shop', 'From 11am the same day', 'Free']], head=['Area', 'When', 'Cost']),
   para('No deliveries on Sundays or Mondays. We cannot promise a time, but we can promise a morning or an afternoon.'),
@@ -345,7 +360,7 @@ pattern('gift-message', 'Gift message note', 'shop', group(J(
 pattern('subscriptions', 'Flower subscriptions', 'shop,featured', columns(
   ('45%', image('bouquet-sandals.jpg', ALT['bouquet-sandals.jpg'], aspectRatio='4/5', scale='cover', className='is-style-arch')),
   (None, J(heading('A bouquet every week, or every month', 2),
-     table([['Weekly, rolling', '£60 a week', 'Cancel any time'], ['Weekly, 4 weeks prepaid', '£216', 'Saves £24'], ['Monthly, rolling', '£60 a month', 'Cancel any time'],
+     rows([['Weekly, rolling', '£60 a week', 'Cancel any time'], ['Weekly, 4 weeks prepaid', '£216', 'Saves £24'], ['Monthly, rolling', '£60 a month', 'Cancel any time'],
             ['Monthly, 6 months prepaid', '£330', 'Saves £30']], head=['Plan', 'Price', '']),
      para('Every subscription is a medium florist\'s choice, delivered on the day you pick. Pause for holidays by emailing us before Monday.'),
      buttons(('Start a subscription', purl(P[9])))), {'className': 'is-style-marigold', 'verticalAlignment': 'center'}),
@@ -367,13 +382,13 @@ pattern('real-weddings', 'Real weddings (latest posts)', 'posts,query', group(J(
         per_page=3, layout={'type': 'grid', 'columnCount': 3, 'minimumColumnWidth': '15rem'}, align='wide')),
   align='wide', layout={'type': 'default'}))
 
-pattern('wedding-flowers-used', 'Flowers used (wedding caption)', 'text', table([
+pattern('wedding-flowers-used', 'Flowers used (wedding caption)', 'text', rows([
   ['Bouquet', 'Garden roses, sweet peas, astrantia, jasmine trails'], ['Tables', 'Dahlias, scabious and cosmos in jam jars'], ['Venue', 'Round Chapel, Clapton'], ['Photographs', 'Ama Boateng']], head=['', 'Flowers']))
 
 pattern('workshops', 'Workshops calendar', 'services', group(J(
   heading('Workshops', 2),
   para('Evening classes in the shop, eight people at most. Wine, flowers and a jar to take home are included.'),
-  table([['Thu 9 Oct', 'Autumn hand-tied bouquet', '3 places left', '£95'], ['Thu 23 Oct', 'Dried flower wreath', '5 places left', '£85'],
+  rows([['Thu 9 Oct', 'Autumn hand-tied bouquet', '3 places left', '£95'], ['Thu 23 Oct', 'Dried flower wreath', '5 places left', '£85'],
          ['Thu 27 Nov', 'Christmas door wreath', 'Full, waiting list open', '£95'], ['Thu 4 Dec', 'Christmas door wreath', '6 places left', '£95'],
          ['Thu 11 Dec', 'Table centrepiece', '8 places left', '£85']], head=['Date', 'Workshop', 'Places', 'Price']),
   buttons(('Buy a workshop voucher', purl(P[10])))),
@@ -395,7 +410,7 @@ pattern('care-card', 'Flower care card (printable)', 'text', group(J(
 pattern('visit', 'Visit the shop', 'contact', columns(
   (None, J(heading('Come and choose', 2),
      para('%s. On the corner by the cheese shop; the 242 stops at the end of the road. Buckets out front from 9am.' % SHOP['addr']),
-     table([['Mon', 'Closed'], ['Tue to Fri', '9am to 6pm'], ['Sat', '9am to 5pm'], ['Sun', '10am to 2pm']], head=['Day', 'Open']),
+     rows([['Mon', 'Closed'], ['Tue to Fri', '9am to 6pm'], ['Sat', '9am to 5pm'], ['Sun', '10am to 2pm']], head=['Day', 'Open']),
      para('<a href="tel:02079460319">%s</a>, <a href="mailto:%s">%s</a>' % (SHOP['phone'], SHOP['email'], SHOP['email'])))),
   (None, image('market.jpg', ALT['market.jpg'], aspectRatio='4/3', scale='cover')), align='wide', className='is-style-marigold'))
 
@@ -411,7 +426,7 @@ pattern('quote', 'A customer note', 'testimonials', group(quote('The bike turned
 
 pattern('sizes', 'Bouquet sizes explained', 'shop', group(J(
   heading('Which size', 3),
-  table([['Small, £40', 'About 15 stems', 'A jam jar or a bedside'], ['Medium, £60', 'About 25 stems', 'A big jug, the one most people send'],
+  rows([['Small, £40', 'About 15 stems', 'A jam jar or a bedside'], ['Medium, £60', 'About 25 stems', 'A big jug, the one most people send'],
          ['Large, £85', 'About 35 stems and branches', 'A tall vase on the floor or a hall table'], ['Showy, £120', 'Two armfuls', 'Delivered in a water box, no vase needed']],
         head=['Size', 'Stems', 'Fits'])), className='is-style-marigold', layout={'type': 'default'}))
 
@@ -432,11 +447,92 @@ pattern('post-grid', 'Weddings grid (inherits query)', 'posts,query', inherit_qu
 pattern('post-list', 'Results list', 'posts,query', inherit_query(
   group(J(dyn('post-title', isLink=True, level=2, fontSize='large'), dyn('post-date')), layout={'type': 'default'}, style={'border': {'bottom': {'color': C('line'), 'width': '2px', 'style': 'solid'}}}), align='wide'), inserter=False)
 
+
+# ---------------------------------------------------------------- round 2
+OCC = [('Birthdays', 'roses-held.jpg', 'Loud colour, a big jug\'s worth.', 'accent'), ('Thank you', 'posy.jpg', 'A small posy that fits on a desk.', 'surface'),
+       ('New baby', 'gerbera-mint.jpg', 'Soft colours, nothing that sheds pollen.', 'mint'), ('Sympathy', 'dahlia.jpg', 'White and green, hand-tied, delivered quietly.', 'leaf')]
+pattern('occasions', 'Flowers by occasion', 'shop,featured', group(J(
+  heading('For the occasion', 2),
+  group(J(*[group(J(image(img, ALT[img], href='/product-category/bouquets/', aspectRatio='4/5', scale='cover'), heading('<a href="/product-category/bouquets/">%s</a>' % n, 3), para(d, fontSize='small')),
+                  className='is-style-still-life', backgroundColor=bg, textColor='cream' if bg in ('accent', 'leaf') else 'contrast', layout={'type': 'default'}) for n, img, d, bg in OCC]),
+        align='wide', layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'}, style={'spacing': {'blockGap': SP('30')}})),
+  align='wide', layout={'type': 'default'}), description='Four occasions, each on its own colour field.')
+pattern('sympathy', 'Sympathy flowers', 'shop', columns(
+  (None, image('dahlia.jpg', ALT['dahlia.jpg'], aspectRatio='4/5', scale='cover')),
+  (None, J(heading('Sympathy flowers', 2), para('White, cream and green, hand-tied or in a low arrangement for a home. We deliver to funeral directors in Hackney and Walthamstow the day before a service if we have the address by noon.'),
+     para('We do not make lettered tributes. Ferns on Well Street does them beautifully.', fontSize='small'),
+     buttons(('Call Rosa to talk it through', 'tel:02079460319')))), align='wide', className='is-style-leaf-field', verticalAlignment='center'))
+pattern('office-flowers', 'Weekly flowers for offices and restaurants', 'services', group(J(
+  heading('Flowers for a front desk or a restaurant', 2),
+  para('A weekly or fortnightly arrangement, delivered Monday morning, old ones taken away. We keep your vases.'),
+  rows([['Reception arrangement', 'from £75 a week'], ['Restaurant bud vases, 10 tables', 'from £60 a week'], ['Fortnightly', 'same prices, every other Monday']]),
+  buttons(('Email about office flowers', 'mailto:%s?subject=Office%%20flowers' % SHOP['email']))),
+  className='is-style-cobalt', align='full', layout={'type': 'constrained', 'contentSize': '900px'}), description='Weekly arrangements for businesses, with prices.')
+pattern('events-installations', 'Events and installations', 'services', columns(
+  ('60%', gallery([('peonies.jpg', ALT['peonies.jpg'], 'Carnation wall, gallery opening'), ('tulips.jpg', ALT['tulips.jpg'], 'Tulip tables, supper club'), ('market.jpg', ALT['market.jpg'], 'Market stall, summer fair')], columns=3)),
+  (None, J(heading('Parties, launches and long tables', 2), para('We make one-off installations for events in east London: tables, doorways, hanging clouds of dried flowers. From £600, quoted after a site visit.'),
+     buttons(('Email about an event', 'mailto:%s?subject=Event' % SHOP['email'])))), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}),
+  description='Event work with three photos you can open large.')
+MONTHS = [('January', 'Tulips, anemones, hellebores'), ('March', 'Ranunculus, narcissi, blossom branches'), ('May', 'Peonies, lilac, alliums'), ('July', 'Sweet peas, cornflowers, garden roses'),
+          ('September', 'Dahlias, rosehips, crocosmia'), ('November', 'Dried flowers, eucalyptus, winter berries')]
+pattern('seasonal-calendar', 'What is in season, month by month', 'text', group(J(
+  heading('The year in flowers', 2),
+  rows([list(m) for m in MONTHS], min_w='9rem')),
+  className='is-style-marigold', align='full', layout={'type': 'constrained', 'contentSize': '900px'}), description='Every other month and what we are buying.')
+pattern('colour-lean', 'Choose a colour lean', 'shop', group(J(
+  heading('Tell us a colour and we will lean that way', 3),
+  row(J(*[para(n, className='is-style-pill', backgroundColor=bg, textColor=fg) for n, bg, fg in [('Hot pink and red', 'accent', 'cream'), ('Sunshine', 'surface', 'contrast'), ('Blue and white', 'accent-2', 'base'), ('Green and white', 'mint', 'contrast'), ('Dark and moody', 'contrast', 'base')]]), style={'spacing': {'blockGap': SP('20')}}),
+  para('Add it in the order note. Florist\'s choice still applies, but we will follow the colour.', fontSize='small')),
+  layout={'type': 'default'}), description='Colour choices as pills, for the order note.')
+pattern('add-ons', 'Add-ons', 'shop', columns(
+  (None, J(heading('A vase, £18', 4), para('Recycled glass, the right size for a medium bouquet.'))),
+  (None, J(heading('A handwritten card, free', 4), para('Up to 40 words, in Rosa\'s handwriting.'))),
+  (None, J(heading('A water box, included', 4), para('Every courier delivery travels upright in water.'))), align='wide', className='is-style-mint-field'), description='Extras at checkout, none ticked by default.')
+pattern('wedding-process', 'How a wedding works with us', 'services', group(J(
+  heading('How a wedding works', 2),
+  lst(['Email Bea with the date, the venue and a rough budget.', 'A 45-minute chat at the shop, with flowers on the table so you can see colours.', 'A written quote with a flower list. A 30% deposit books the date.', 'Final numbers six weeks before. We buy at the market that week and set up on the day.'], ordered=True, fontSize='large')),
+  className='is-style-poppy', align='full', layout={'type': 'constrained', 'contentSize': '900px'}))
+pattern('wedding-gallery', 'Wedding gallery', 'gallery', gallery([
+  ('wedding.jpg', ALT['wedding.jpg'], 'Round Chapel, June'), ('bridal.jpg', ALT['bridal.jpg'], 'Walthamstow, July'), ('roses-held.jpg', ALT['roses-held.jpg'], 'Clapton, September'), ('bouquet-sandals.jpg', ALT['bouquet-sandals.jpg'], 'Epping, August')], columns=4, align='wide'),
+  description='Four wedding photos. Click to open.')
+pattern('bouquet-styles', 'Bridal bouquet styles', 'services', columns(
+  (None, J(heading('Garden', 4), para('Loose, a bit wild, with trailing stems. Our favourite.'))), (None, J(heading('Posy', 4), para('Round and small. Good for a registry office.'))),
+  (None, J(heading('Single variety', 4), para('All peonies, or all sweet peas. Seasonal and striking.'))), align='wide', className='is-style-marigold'))
+pattern('private-workshops', 'Private workshops', 'services', columns(
+  (None, J(heading('Private workshops', 2), para('Hen parties, team evenings and birthdays, for six to twelve people, in the shop after hours. Everyone goes home with a bouquet.'), rows([['Six people', '£540'], ['Each extra person', '£85']]))),
+  (None, image('market.jpg', ALT['market.jpg'], aspectRatio='4/3', scale='cover')), align='wide', style={'spacing': {'blockGap': {'left': SP('60')}}}))
+pattern('workshop-detail', 'What you make at a workshop', 'services', group(J(
+  heading('What you will make', 3),
+  lst(['A hand-tied spiral bouquet of about 25 stems', 'Wrapping it in paper and ribbon so it survives the bus home', 'How to condition flowers so they last a week longer']),
+  para('Two hours, wine and snacks included. All flowers and tools provided.', fontSize='small')), className='is-style-mint-field', layout={'type': 'default'}))
+pattern('team', 'Who we are', 'about', columns(
+  (None, J(heading('Rosa Mendes', 3), para('Owner. Goes to the market at 4am on Tuesdays and Fridays. Grows the dahlias.'))),
+  (None, J(heading('Bea Oyelaran', 3), para('Weddings and events. Will talk you out of a flower wall.'))),
+  (None, J(heading('Tunde Bakare', 3), para('Rides the cargo bike. Knows every buzzer in E5.'))), align='wide', className='is-style-cobalt'))
+pattern('delivery-bike', 'Delivered by bike', 'shop', columns(
+  (None, J(heading('On a bike by 3, at the door by 6', 2), para('Tunde leaves the shop at 3pm with the day\'s orders in a cargo bike with a water tray. If nobody is in, he tries a neighbour, then texts you a photo of where he left them.'))),
+  (None, image('hero-man.jpg', ALT['hero-man.jpg'], aspectRatio='4/3', scale='cover')), align='wide', className='is-style-poppy', verticalAlignment='center'))
+pattern('faq', 'Questions people ask', 'text', group(J(
+  heading('Questions', 2),
+  details('Can I choose a delivery time?', para('Morning or afternoon, not an exact time.')),
+  details('What if nobody is in?', para('We try a neighbour, then a safe place, and text you a photo.')),
+  details('Do you deliver on Sundays?', para('No. Order by Saturday 2pm for Saturday delivery.')),
+  details('Are your flowers British?', para('From May to October mostly, yes. The rest comes from the Dutch auctions.'))),
+  layout={'type': 'constrained', 'justifyContent': 'left'}))
+pattern('hero-bouquets', 'Hero: today\'s bouquets', 'featured,banner', group(J(
+  heading('Today\'s bouquets', 1, fontSize='xx-large'),
+  gallery([('posy.jpg', ALT['posy.jpg'], 'Small, £40'), ('roses-held.jpg', ALT['roses-held.jpg'], 'Medium, £60'), ('gerbera-mint.jpg', ALT['gerbera-mint.jpg'], 'Large, £85')], columns=3, align='wide'),
+  para(CUTOFF, className='is-style-cutoff')), className='is-style-marigold', align='full', layout={'type': 'constrained', 'contentSize': '1360px'}),
+  description='An alternative opening: today\'s three sizes with the cut-off.')
+pattern('photo-strip', 'Photo strip', 'gallery', gallery([('tulips.jpg', ALT['tulips.jpg'], ''), ('peony-vase.jpg', ALT['peony-vase.jpg'], ''), ('dahlia.jpg', ALT['dahlia.jpg'], ''), ('dried.jpg', ALT['dried.jpg'], ''), ('peonies.jpg', ALT['peonies.jpg'], '')], columns=5, align='full'))
+
 # pages
 pattern('page-delivery', 'Page: delivery', 'shop', J(pattern_ref('delivery-zones'), pattern_ref('late-order'), pattern_ref('sizes'), pattern_ref('gift-message'), pattern_ref('substitution-note'), pattern_ref('care-card')), block_types='core/post-content')
 pattern('page-subscriptions', 'Page: subscriptions', 'shop', J(pattern_ref('subscriptions'), pattern_ref('this-week'), pattern_ref('dried-corner'), pattern_ref('quote')), block_types='core/post-content')
-pattern('page-workshops', 'Page: workshops', 'services', J(pattern_ref('workshops'), pattern_ref('about')), block_types='core/post-content')
-pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('about'), pattern_ref('weddings-intro')), block_types='core/post-content')
+pattern('page-workshops', 'Page: workshops', 'services', J(pattern_ref('workshops'), pattern_ref('workshop-detail'), pattern_ref('private-workshops'), pattern_ref('about')), block_types='core/post-content')
+pattern('page-weddings-events', 'Page: weddings and events', 'services', J(pattern_ref('weddings-intro'), pattern_ref('wedding-process'), pattern_ref('bouquet-styles'), pattern_ref('wedding-gallery'), pattern_ref('events-installations'), pattern_ref('office-flowers')), block_types='core/post-content')
+pattern('page-occasions', 'Page: occasions', 'shop', J(pattern_ref('occasions'), pattern_ref('colour-lean'), pattern_ref('add-ons'), pattern_ref('sympathy'), pattern_ref('seasonal-calendar')), block_types='core/post-content')
+pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('visit'), pattern_ref('team'), pattern_ref('delivery-bike'), pattern_ref('faq'), pattern_ref('photo-strip')), block_types='core/post-content')
 
 # ---------------------------------------------------------------- parts
 write('parts/header.html', group(
@@ -446,11 +542,11 @@ write('parts/header.html', group(
   style={'spacing': {'padding': {'top': SP('30'), 'bottom': SP('30')}}, 'elements': {'link': {'color': {'text': C('base')}}}}))
 write('parts/notice.html', pattern_ref('occasion-cutoff'))
 write('parts/footer.html', group(J(
-  heading('Order by 2pm, on the table by 6.', 2, fontSize='xx-large', align='wide'),
+  heading('Order by 2pm, on the table by 6', 2, fontSize='xx-large', align='wide'),
   columns(
     (None, J(heading('Hollyhock', 4), para('%s<br>Tue to Fri 9 to 6, Sat 9 to 5, Sun 10 to 2<br><a href="tel:02079460319">%s</a>' % (SHOP['addr'], SHOP['phone'])))),
     (None, J(heading('Ordering', 4), para('<a href="/delivery/">Delivery areas and charges</a><br><a href="/subscriptions/">Subscriptions</a><br><a href="mailto:%s">%s</a>' % (SHOP['email'], SHOP['email'])))),
-    (None, J(heading('Weddings and workshops', 4), para('<a href="/weddings/">Real weddings</a><br><a href="/workshops/">Evening workshops</a>'))),
+    (None, J(heading('Weddings and workshops', 4), para('<a href="/weddings/">Real weddings</a><br><a href="/weddings-and-events/">Weddings and events</a><br><a href="/workshops/">Evening workshops</a><br><a href="/occasions/">Occasions</a>'))),
     align='wide'),
   para('Demo photographs are CC0 and public domain images from Wikimedia Commons and Unsplash, used as stand-ins.', fontSize='x-small', align='wide')),
   tag='footer', align='full', className='is-style-aubergine', layout={'type': 'constrained'}, style={'spacing': {'padding': {'top': SP('70'), 'bottom': SP('50')}}}))
@@ -465,7 +561,7 @@ def tpl(name, inner):
     write('templates/%s.html' % name, J(template_part('header', 'header'), inner, template_part('footer', 'footer')))
 
 
-tpl('front-page', group(J(pattern_ref('hero-cutoff'), pattern_ref('this-week'), pattern_ref('bouquets'), pattern_ref('delivery-zones'),
+tpl('front-page', group(J(pattern_ref('hero-cutoff'), pattern_ref('bouquets'), pattern_ref('occasions'), pattern_ref('delivery-bike'), pattern_ref('this-week'),
     pattern_ref('seasonal'), pattern_ref('subscriptions'), pattern_ref('real-weddings'), pattern_ref('workshops'), pattern_ref('visit')),
     tag='main', layout={'type': 'constrained'}, style={'spacing': {'blockGap': SP('70'), 'padding': {'bottom': SP('70')}}}))
 tpl('page', main(J(dyn('post-title', level=1, fontSize='xx-large'), dyn('post-content', layout={'type': 'constrained'}))))
@@ -532,24 +628,28 @@ demo = {
   {'slug': 'subscriptions', 'title': 'Subscriptions', 'pattern': 'stem/page-subscriptions', 'template': 'page-wide'},
   {'slug': 'workshops', 'title': 'Workshops', 'pattern': 'stem/page-workshops', 'template': 'page-wide'},
   {'slug': 'visit', 'title': 'Visit', 'pattern': 'stem/page-visit', 'template': 'page-wide'},
+  {'slug': 'weddings-and-events', 'title': 'Weddings and events', 'pattern': 'stem/page-weddings-events', 'template': 'page-wide'},
+  {'slug': 'occasions', 'title': 'Occasions', 'pattern': 'stem/page-occasions', 'template': 'page-wide'},
  ],
  'posts': [
   {'title': 'Nkechi and Tom, Round Chapel, June', 'category': 'weddings', 'image': 'wedding.jpg', 'content': J(
      para('A pink and silver bouquet with garden roses, freesias and brunia, and jam jars of sweet peas down two long tables. Photographs by Ama Boateng.'),
-     pattern_ref('wedding-flowers-used'))},
+     pattern_ref('wedding-flowers-used'), pattern_ref('wedding-gallery'), pattern_ref('bouquet-styles'))},
   {'title': 'Priya and Joe, a pub garden in Walthamstow', 'category': 'weddings', 'image': 'bridal.jpg', 'content': J(
-     para('Forty guests, one very old apple tree and a bouquet of lisianthus, astrantia and roses. Photographs by Marek Zielinski.'))},
+     para('Forty guests, one very old apple tree and a bouquet of lisianthus, astrantia and roses. Photographs by Marek Zielinski.'), pattern_ref('wedding-process'), pattern_ref('wedding-gallery'))},
   {'title': 'Carnations are back and we are not sorry', 'category': 'shop', 'image': 'peonies.jpg', 'content': J(
-     para('They last two weeks, they come in colours nobody else sells, and they cost less than a coffee a stem. We have 300 in the shop this week.'))},
+     para('They last two weeks, they come in colours nobody else sells, and they cost less than a coffee a stem. We have 300 in the shop this week.'), pattern_ref('seasonal'), pattern_ref('colour-lean'))},
   {'title': 'Ellie and Sam, Clapton, September', 'category': 'weddings', 'image': 'roses-held.jpg', 'content': J(
-     para('Orange and cream roses with rosehips and dahlias from Rosa\'s allotment. Photographs by Ama Boateng.'))},
+     para('Orange and cream roses with rosehips and dahlias from Rosa\'s allotment. Photographs by Ama Boateng.'), pattern_ref('wedding-flowers-used'), pattern_ref('photo-strip'))},
   {'title': 'Why we stopped using floral foam', 'category': 'shop', 'image': 'gerbera-mint.jpg', 'content': J(
-     para('Foam is a plastic that breaks into dust and never goes away. Everything we make now sits in water, moss or scrunched chicken wire. It takes longer. It is worth it.'))},
+     para('Foam is a plastic that breaks into dust and never goes away. Everything we make now sits in water, moss or scrunched chicken wire. It takes longer. It is worth it.'), pattern_ref('care-card'), pattern_ref('events-installations'))},
   {'title': 'Dahlias from the allotment, August to October', 'category': 'shop', 'image': 'dahlia.jpg', 'content': J(
-     para('Rosa grows about 60 dahlia plants on a plot in Walthamstow. They go into bouquets from August until the first frost.'))},
+     para('Rosa grows about 60 dahlia plants on a plot in Walthamstow. They go into bouquets from August until the first frost.'), pattern_ref('seasonal-calendar'), pattern_ref('this-week'))},
+  {'title': 'Maya and Chidi, Hackney Town Hall, October', 'category': 'weddings', 'image': 'bouquet-sandals.jpg', 'content': J(
+     para('A registry-office wedding with a posy of dahlias and rosehips and six buttonholes. Lunch after at a Turkish place on Mare Street. Photographs by Marek Zielinski.'), pattern_ref('bouquet-styles'), pattern_ref('wedding-flowers-used'))},
  ],
  'nav': [{'label': 'Shop', 'url': '/shop/'}, {'label': 'Delivery', 'url': '/delivery/'}, {'label': 'Subscriptions', 'url': '/subscriptions/'},
-         {'label': 'Weddings', 'url': '/weddings/'}, {'label': 'Workshops', 'url': '/workshops/'}, {'label': 'Visit', 'url': '/visit/'}],
+         {'label': 'Occasions', 'url': '/occasions/'}, {'label': 'Weddings', 'url': '/weddings-and-events/'}, {'label': 'Real weddings', 'url': '/weddings/'}, {'label': 'Workshops', 'url': '/workshops/'}, {'label': 'Visit', 'url': '/visit/'}],
  'currency': 'GBP',
  'products': [{'name': p[0], 'price': p[3], 'image': p[1], 'category': p[2], 'sku': 'HLH-%d' % (300 + i), 'stock': p[4], 'short': p[5],
                'description': J(para(p[6]), para(CUTOFF), para(SUBS))} for i, p in enumerate(P)],

@@ -23,3 +23,9 @@
 <!-- /wp:columns -->
 
 <!-- wp:pattern {"slug":"tick/estimate-statement"} /-->
+
+<!-- wp:pattern {"slug":"tick/movement-drawing"} /-->
+
+<!-- wp:pattern {"slug":"tick/service-intervals"} /-->
+
+<!-- wp:pattern {"slug":"tick/collection-note"} /-->

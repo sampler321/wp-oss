@@ -2,11 +2,11 @@
 /**
  * Title: Price on request
  * Slug: oil/price-on-request
- * Categories: portfolio
+ * Categories: oil-work-page,portfolio
  */
 ?>
 <!-- wp:paragraph -->
-<p>Price on request. Large works are shown at Fairlie Gallery before they are offered from the studio.</p>
+<p class="">Price on request. Large works are shown at Fairlie Gallery before they are offered from the studio.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

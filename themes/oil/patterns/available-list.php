@@ -2,7 +2,7 @@
 /**
  * Title: Available works (list with prices)
  * Slug: oil/available-list
- * Categories: portfolio,shop
+ * Categories: oil-catalogue,portfolio,shop
  */
 ?>
 <!-- wp:heading {"fontSize":"x-large"} -->

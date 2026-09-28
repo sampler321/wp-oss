@@ -1,6 +1,6 @@
 {
   "slug": "grain",
-  "date": "2026-09-27T15:16:20.553Z",
+  "date": "2026-09-27T21:10:26.787Z",
   "passed": true,
   "results": [
     {
@@ -54,6 +54,11 @@
       "detail": "x-small,small,medium,large,x-large,xx-large,display"
     },
     {
+      "name": "image lightbox enabled in theme.json (round 2)",
+      "ok": true,
+      "detail": "{\"enabled\":true,\"allowEditing\":true}"
+    },
+    {
       "name": "spacing presets",
       "ok": true,
       "detail": ""
@@ -79,9 +84,19 @@
       "detail": ""
     },
     {
-      "name": "25+ patterns",
+      "name": "functions.php has no enqueues or CPTs",
       "ok": true,
-      "detail": "27"
+      "detail": ""
+    },
+    {
+      "name": "40+ patterns (round 2)",
+      "ok": true,
+      "detail": "42"
+    },
+    {
+      "name": "tables in at most 20% of patterns (round 2)",
+      "ok": true,
+      "detail": "2 of 42"
     },
     {
       "name": "pattern headers (Title, Slug prefix)",
@@ -129,7 +144,27 @@
       "detail": ""
     },
     {
-      "name": "front end: 16 pages 200, no PHP notices",
+      "name": "home page shows no table (round 2)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home h1 is not a motto ending in a full stop (round 2)",
+      "ok": true,
+      "detail": "Brink   Oduya, furniture makers in Zutphen"
+    },
+    {
+      "name": "demo has 6+ posts (round 2)",
+      "ok": true,
+      "detail": "8"
+    },
+    {
+      "name": "no dead internal links (33 checked, round 2)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "front end: 30 pages 200, no PHP notices",
       "ok": true,
       "detail": ""
     },
@@ -141,12 +176,17 @@
     {
       "name": "editor: demo pages readable",
       "ok": true,
-      "detail": "7"
+      "detail": "21"
     },
     {
       "name": "editor: demo page content valid",
       "ok": true,
       "detail": ""
+    },
+    {
+      "name": "every pattern appears in the demo (round 2)",
+      "ok": true,
+      "detail": "0 missing: "
     },
     {
       "name": "mobile 390px: no horizontal overflow",

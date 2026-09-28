@@ -2,7 +2,7 @@
 /**
  * Title: Radiators and controls
  * Slug: pipe/radiators
- * Categories: pipe,services
+ * Categories: services
  */
 ?>
 <!-- wp:columns {"align":"wide","className":"is-style-index-row"} -->
@@ -20,12 +20,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>New radiator, same size, fitted and bled: £240 including a standard double convector. Thermostatic valves: £45 each fitted, less if we are there anyway.</p>
+<p class="">New radiator, same size, fitted and bled: £240 including a standard double convector. Thermostatic valves: £45 each fitted, less if we are there anyway.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/radiator.jpg' ) ); ?>" alt="Close-up of a white panel radiator with a thermostatic valve head"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>

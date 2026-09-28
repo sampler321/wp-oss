@@ -2,11 +2,11 @@
 /**
  * Title: Donate
  * Slug: commons/donate
- * Categories: call-to-action
+ * Categories: membership
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"is-style-sage","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<section class="wp-block-group is-style-sage" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"is-style-sage","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group is-style-sage" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Give the space a hand</h3>
 <!-- /wp:heading -->
 
@@ -22,5 +22,5 @@
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/visit/">Leave something in the tin</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></section>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->

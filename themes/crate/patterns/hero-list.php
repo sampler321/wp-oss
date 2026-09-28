@@ -8,7 +8,7 @@
 ?>
 <!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns alignfull"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"4/5","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sleeve-hands.jpg' ) ); ?>" alt="Hands lifting an LP sleeve above a turntable on a white counter" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -18,148 +18,148 @@
 <h1 class="wp-block-heading has-x-large-font-size">In the racks this Friday</h1>
 <!-- /wp:heading -->
 
-<!-- wp:group {"align":"wide","className":"is-style-rows","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"is-style-rows","align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Alice Coltrane</p>
+<p class="">Alice Coltrane</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Journey in Satchidananda, Impulse! AS-9203</p>
+<p class="">Journey in Satchidananda, Impulse! AS-9203</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, VG / VG+</p>
+<p class="">LP, VG / VG+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£48</p>
+<p class="">£48</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Grace Jones</p>
+<p class="">Grace Jones</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Nightclubbing, Island ILPS 9624</p>
+<p class="">Nightclubbing, Island ILPS 9624</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, NM / VG+</p>
+<p class="">LP, NM / VG+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£32</p>
+<p class="">£32</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Talking Heads</p>
+<p class="">Talking Heads</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Remain in Light, Sire SRK 6095</p>
+<p class="">Remain in Light, Sire SRK 6095</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, VG+ / VG</p>
+<p class="">LP, VG+ / VG</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£22</p>
+<p class="">£22</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Commodores</p>
+<p class="">Commodores</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Nightshift, Motown TMG 1371</p>
+<p class="">Nightshift, Motown TMG 1371</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>7", VG+ / VG</p>
+<p class="">7", VG+ / VG</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£6</p>
+<p class="">£6</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Nina Simone</p>
+<p class="">Nina Simone</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Wild Is the Wind, Philips BL 7738</p>
+<p class="">Wild Is the Wind, Philips BL 7738</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, G+ / VG</p>
+<p class="">LP, G+ / VG</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£40</p>
+<p class="">£40</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Arthur Russell</p>
+<p class="">Arthur Russell</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>World of Echo, Audika AU-1004-1</p>
+<p class="">World of Echo, Audika AU-1004-1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, New</p>
+<p class="">LP, New</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£27</p>
+<p class="">£27</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Kate Bush</p>
+<p class="">Kate Bush</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Hounds of Love, EMI TC-KAB 1</p>
+<p class="">Hounds of Love, EMI TC-KAB 1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cass, VG / VG</p>
+<p class="">Cass, VG / VG</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£9</p>
+<p class="">£9</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"8rem"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Sade</p>
+<p class="">Sade</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Diamond Life, Epic EPC 26044</p>
+<p class="">Diamond Life, Epic EPC 26044</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, VG / VG</p>
+<p class="">LP, VG / VG</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£14</p>
+<p class="">£14</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

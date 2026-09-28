@@ -2,7 +2,7 @@
 /**
  * Title: Access information
  * Slug: commons/access-info
- * Categories: text
+ * Categories: visit
  */
 ?>
 <!-- wp:heading {"level":3} -->

@@ -8,6 +8,10 @@
 ?>
 <!-- wp:pattern {"slug":"spine/book-group-guide"} /-->
 
+<!-- wp:pattern {"slug":"spine/excerpt"} /-->
+
+<!-- wp:pattern {"slug":"spine/book-group-faq"} /-->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Guides for the other books</h3>
 <!-- /wp:heading -->

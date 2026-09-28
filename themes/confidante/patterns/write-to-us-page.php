@@ -19,9 +19,13 @@
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Email <a href="mailto:dear@saymore.example">dear@saymore.example</a>. A paragraph is plenty.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Tell us your first name and your town, or ask us to change them. We always change details that could identify someone else.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
 <li>Voice notes are welcome, up to two minutes. We only play them on air if you say yes in writing.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
@@ -31,7 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">We won’t answer medical or legal questions on air, and we won’t read out letters about someone who could recognise themselves without their say-so.</p>
+<p>We won’t answer medical or legal questions on air, and we won’t read out letters about someone who could recognise themselves without their say-so.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:pattern {"slug":"confidante/dear-say-more-quotes"} /-->

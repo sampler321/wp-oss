@@ -2,7 +2,7 @@
 /**
  * Title: Page: opportunities
  * Slug: commons/opportunities-page
- * Categories: text
+ * Categories: page
  * Block Types: core/post-content
  */
 ?>

@@ -8,4 +8,8 @@
 ?>
 <!-- wp:pattern {"slug":"key/landlords"} /-->
 
+<!-- wp:pattern {"slug":"key/commercial"} /-->
+
 <!-- wp:pattern {"slug":"key/credentials-row"} /-->
+
+<!-- wp:pattern {"slug":"key/testimonials"} /-->

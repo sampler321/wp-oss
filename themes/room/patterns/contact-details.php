@@ -5,7 +5,7 @@
  * Categories: contact
  */
 ?>
-<!-- wp:columns {"align":"wide"} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">The studio and shop</h3>
@@ -15,9 +15,49 @@
 <p>14 Hamilton Place, Stockbridge, Edinburgh EH3 5AU. The shop is on the ground floor, the studio is up the stairs behind it. The 24 and 29 buses stop on Raeburn Place, two minutes away.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>Wednesday to Friday</td><td>10am to 5pm</td></tr><tr><td>Saturday</td><td>10am to 4pm</td></tr><tr><td>Sunday to Tuesday</td><td>Closed, or by appointment</td></tr></tbody></table></figure>
-<!-- /wp:table --></div>
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Wednesday to Friday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>10am to 5pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Saturday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>10am to 4pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"className":"is-style-rule-top"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-rule-top"><!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"><!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Sunday to Tuesday</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Closed, or by appointment</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->

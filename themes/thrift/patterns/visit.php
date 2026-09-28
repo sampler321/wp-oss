@@ -21,9 +21,37 @@
 <p>61 Oldham Street, second floor, Manchester M1 1JR. Buzz 2 at the green door next to the barber. Two flights of stairs and no lift, sorry. If you cannot manage the stairs, call and we will bring rails down on a Wednesday morning.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Day</th><th>Open</th></tr></thead><tbody><tr><td>Mon and Tue</td><td>Closed</td></tr><tr><td>Wed to Sat</td><td>11am to 6pm</td></tr><tr><td>Sun</td><td>12pm to 5pm</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-rows","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-rows"><!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Mon and Tue</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Closed</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Wed to Sat</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>11am to 6pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"7rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Sun</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>12pm to 5pm</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
 <p><a href="tel:01614960733">0161 496 0733</a>, <a href="mailto:rail@example.com">rail@example.com</a></p>

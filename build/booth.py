@@ -9,31 +9,7 @@ import sys, json, os
 sys.path.insert(0, 'tools/lib')
 from blocks import *
 set_theme('booth')
-# Groups with padding/margin get their inline style written out, so the editor sees valid markup.
 import blocks as _B
-_orig_group = _B.group
-def _css_var(v):
-    return v.replace('var:preset|spacing|', 'var(--wp--preset--spacing--') + ')' if v.startswith('var:preset|spacing|') else v
-def _group_inline(inner, tag='div', layout='constrained', **attrs):
-    out = _orig_group(inner, tag=tag, layout=layout, **attrs)
-    sp = (attrs.get('style') or {}).get('spacing') or {}
-    decl = []
-    for prop in ('padding', 'margin'):
-        v = sp.get(prop)
-        if isinstance(v, dict):
-            for side in ('top', 'right', 'bottom', 'left'):
-                if side in v:
-                    decl.append('%s-%s:%s' % (prop, side, _css_var(v[side])))
-    if attrs.get('anchor'):
-        k = out.index('<%s class="' % tag)
-        out = out[:k] + '<%s id="%s" class="' % (tag, attrs['anchor']) + out[k + len('<%s class="' % tag):]
-    if decl:
-        i = out.index(' class="', out.index('<%s ' % tag))
-        j = out.index('>', i)
-        out = out[:j] + ' style="%s"' % ';'.join(decl) + out[j:]
-    return out
-_B.group = _group_inline
-group = _group_inline
 _orig_image = _B.image
 def _image_ratio(filename, alt, caption='', lightbox=True, href=None, **attrs):
     out = _orig_image(filename, alt, caption, lightbox, href, **attrs)
@@ -57,12 +33,12 @@ def cols(*cs, **attrs):
         ca = dict(c[2]) if len(c) > 2 else {}
         if w:
             ca = {'width': w, **ca}
-        cls = 'wp-block-column' + ((' ' + ca['className']) if ca.get('className') else '')
+        cls = 'wp-block-column' + ((' is-vertically-aligned-' + ca['verticalAlignment']) if ca.get('verticalAlignment') else '') + ((' ' + ca['className']) if ca.get('className') else '')
         st = (' style="flex-basis:%s"' % w) if w else ''
         out.append('<!-- wp:column%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:column -->' % ((' ' + json.dumps(ca, separators=(',', ':'), ensure_ascii=False)) if ca else '', cls, st, inner))
     a = attrs
     va = ('are-vertically-aligned-' + a['verticalAlignment']) if a.get('verticalAlignment') else ''
-    return '<!-- wp:columns%s -->\n<div class="%s">%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), '\n\n'.join(out))
+    return '<!-- wp:columns%s -->\n<div class="%s"%s>%s</div>\n<!-- /wp:columns -->' % ((' ' + json.dumps(a, separators=(',', ':'))) if a else '', ' '.join(filter(None, ['wp-block-columns', 'align' + a['align'] if a.get('align') else '', va, a.get('className', '')])), _B._style(a), '\n\n'.join(out))
 
 # ------------------------------------------------------------------ theme.json
 fonts = json.load(open(os.path.join(D, '.fonts.json')))['fontFamilies']
@@ -516,3 +492,164 @@ os.makedirs('demos/booth', exist_ok=True)
 json.dump(content, open('demos/booth/content.json', 'w'), indent=1, ensure_ascii=False)
 open('demos/booth/fonts-claim.txt', 'w').write('display: Figtree\n')
 print('booth built')
+
+# ====================================================================== ROUND 2
+# Owner's review: fewer tables, lightbox on, 40+ patterns, no table on the home page, the demo uses the kit.
+# Sections studied on studionagrywarka.pl (big headline, room pages, services), Electrical Audio (rates, policies,
+# gear, text list), The Bunker (room gear), Tarbox Road (discography) and Abbey Road (packages, FAQ, getting here).
+theme['settings']['blocks'] = {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}}
+theme['styles']['css'] += ('.is-style-defs>.wp-block-group{border-top:1px solid color-mix(in srgb,currentColor 35%,transparent);padding:.65em 0;gap:.3rem 1.5rem;margin:0!important}'
+                           '.is-style-defs>.wp-block-group:last-child{border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}.is-style-defs p{margin:0}'
+                           '.is-style-defs>.wp-block-group>p:first-child{flex:0 0 10rem;font-weight:700}.is-style-defs>.wp-block-group>p:nth-child(2){flex:1 1 14rem}'
+                           '.is-style-price-card{display:flex;flex-direction:column;gap:.5rem}.is-style-price-card .is-style-big-price{font-family:var(--wp--preset--font-family--display);font-weight:900;font-size:var(--wp--preset--font-size--xx-large);letter-spacing:-.03em;line-height:1;margin:0}')
+wjson('theme.json', theme)
+
+def defs(data):
+    return group(J(*[row(J(*[para(c) for c in r]), wrap=True) for r in data]), className='is-style-defs', layout={'type': 'default'})
+
+room_block = lambda img, alt, name, size, desc, rows_, link: J(
+    image(img, alt, aspectRatio='4/3', scale='cover'),
+    heading(name, 3), para(size, className='is-style-room-tag'), para(desc), defs(rows_), buttons(('Look inside ' + name, link)))
+pattern('rooms-signal', 'Rooms on a record-light block', 'featured', group(J(
+    heading('Two rooms and a rehearsal space', 2, align='wide'),
+    cols(
+        (None, room_block('hero.jpg', 'Studio A control room with a wooden ceiling, leather chairs and the console in front of a window into the live room', 'Studio A', '64 m² live room, 7 m ceiling',
+                          'Tracking room with three isolation booths and a Yamaha C7 grand. The control room looks into all of it.',
+                          [['Console', 'Neve-style 32-channel, rebuilt 2021'], ['Tape', 'Studer A827 24-track, 2 inch'], ['Day, engineer', '2,400 zł']], '/rooms/studio-a/')),
+        (None, room_block('band.jpg', 'Studio B: two monitors, a keyboard and outboard gear against a wall of black acoustic foam', 'Studio B', '22 m² mix room',
+                          'Mixing, overdubs and vocals. Treated for mixing first, so it is quiet and a bit dead to sing in, on purpose.',
+                          [['Desk', 'SSL XLogic X-Desk, 16 channels'], ['Monitors', 'ATC SCM25A, Yamaha NS-10M'], ['Day, engineer', '1,100 zł']], '/rooms/studio-b/')),
+        align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}})),
+    className='is-style-signal', align='full', layout={'type': 'constrained'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|70'}}}))
+pattern('studio-numbers', 'Room specs', 'rooms', defs([
+    ['Live room', '64 m², 7 m ceiling, three isolation booths (6, 8 and 9 m²)'], ['Control room A', '28 m², window into the live room and booths'],
+    ['Studio B', '22 m², treated for mixing'], ['Rehearsal room', '30 m², separate entrance from the yard'], ['Power', 'Isolated technical earth, 3-phase for touring rigs']]))
+pattern('load-in', 'Load-in, parking and getting here', 'contact', cols(
+    ('45%', image('shipyard.jpg', 'View over the old Gdańsk shipyard with cranes along the water and brick halls', 'Hala 3 is the long brick hall on the right, by the blue crane')),
+    (None, J(heading('Getting here and loading in', 3),
+             defs([['Address', 'Hala 3, ul. Narzędziowców 9, 80-863 Gdańsk'], ['Tram', '8 or 10 to Stocznia SKM, then 6 minutes on foot'],
+                   ['Parking', 'Two spaces for vans at the loading door, free. Cars park on ul. Popiełuszki, 4 zł an hour'],
+                   ['Load-in', 'Ground floor, double doors 2.4 m wide, no steps. The trolley is by the door'],
+                   ['Hardware', 'Castorama on ul. Kartuska, 12 minutes by car, open till 21:00'], ['Food', 'Pierogarnia Stary Młyn delivers to the hall. Menu on the fridge']]),
+             para('The hall is cold in winter until the heating catches up. Bring a jumper for the first hour.', fontSize='small', className='has-muted-color'))),
+    align='wide', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}}}))
+pattern('studio-b-page', 'Page: Studio B', 'rooms', J(
+    image('band.jpg', 'Studio B with two monitors, a keyboard and outboard gear on a wall of acoustic foam', align='wide', aspectRatio='21/9', scale='cover'),
+    para('Studio B is where records get mixed. It is small and quiet, with a 16-channel summing desk and a sofa at the back that is exactly the right distance from the speakers.', className='is-style-lead'),
+    defs([['Desk', 'SSL XLogic X-Desk'], ['Monitors', 'ATC SCM25A, Yamaha NS-10M, one Auratone'], ['Vocal booth', '4 m², window to the desk']]),
+    pattern_ref('rate-cards')), block_types='core/post-content')
+CREDITS = [('Rzeka', 'Ujście', 'LP, 2026', 'drums.jpg'), ('Gdańsk Chamber Choir', 'Kolędy z Oliwy', 'CD, 2025', 'vocal.jpg'),
+           ('Mała Orkiestra Portowa', 'Doki', 'LP, 2025', 'band.jpg'), ('Teatr Wybrzeże', 'Burza, stage music', '2024', 'piano.jpg'),
+           ('Hania Sokół', 'Wolska 40, mastering', '12", 2026', 'engineer.jpg'), ('Ola Kruk', 'Solo drums', 'Cassette, 2024', 'tape.jpg')]
+pattern('credits-list', 'Recorded here: cover grid', 'portfolio', J(
+    heading('Recorded here recently', 3),
+    group(J(*[group(J(image(img, 'Photo from the %s session' % a, aspectRatio='1', scale='cover'), heading(t, 5), para('%s. %s' % (a, f), fontSize='small', className='has-muted-color')),
+                    layout={'type': 'flex', 'orientation': 'vertical'}, style={'spacing': {'blockGap': 'var:preset|spacing|10'}}) for a, t, f, img in CREDITS]),
+          layout={'type': 'grid', 'columnCount': 6, 'minimumColumnWidth': '10rem'})))
+
+# ---- new patterns
+def price_card(name, price, note, link, cls='is-style-panel'):
+    return group(J(heading(name, 4), para(price, className='is-style-big-price'), para(note, fontSize='small'), buttons(('Book ' + name, link))), className=cls + ' is-style-price-card', layout={'type': 'default'})
+pattern('rate-cards', 'Rates as cards', 'pricing', cols(
+    (None, price_card('Studio A', '2,400 zł', 'A 10-hour day with an engineer. 1,600 zł without. Half day 1,300 zł.', '/rates/#booking')),
+    (None, price_card('Studio B', '1,100 zł', 'A 10-hour day with an engineer. 700 zł without. Half day 600 zł.', '/rates/#booking')),
+    (None, price_card('Rehearsal', '60 zł', 'An hour, no engineer. Three hours minimum at weekends.', '/visit/')),
+    align='wide'))
+PACKS = [('One song in a day', '2,900 zł', 'Studio A for ten hours, tracked live, mixed in Studio B the next morning. For a single or a session video.'),
+         ('EP weekend', '6,200 zł', 'Saturday and Sunday in Studio A, one day of mixing, four songs. Tape is extra.'),
+         ('Album fortnight', 'From 21,000 zł', 'Ten days tracking, four days mixing, a room to sleep in upstairs if you are from out of town.')]
+pattern('packages', 'Session packages', 'pricing', J(heading('Packages', 2),
+    cols(*[(None, group(J(heading(n, 4), para(p, className='is-style-big-price'), para(d, fontSize='small')), className='is-style-panel is-style-price-card', layout={'type': 'default'})) for n, p, d in PACKS], align='wide'),
+    para('Every package includes the piano, the house kit and our engineers. Prices include VAT.', fontSize='small')))
+SERV = [('Recording', 'Bands tracked live in Studio A, overdubs in B. Tape or Pro Tools, usually both.'), ('Mixing', 'In Studio B, on the X-Desk, with recalls free for a month.'),
+        ('Mastering', 'Thursdays with Iga. 250 zł a track, 1,800 zł an album, one round of changes.'), ('Live session videos', 'Four cameras, multitrack audio, edited in a week. From 3,500 zł.'),
+        ('Rehearsal', 'By the hour, with a house kit and a PA. Book by text.')]
+pattern('services', 'Services list', 'services', J(heading('What we do', 2),
+    group(J(*[row(J(heading(n, 3, fontSize='large'), para(d)), wrap=True) for n, d in SERV]), className='is-style-defs', layout={'type': 'default'})))
+pattern('live-session', 'Live session video', 'media', cols(
+    ('62%', embed('https://www.youtube.com/watch?v=dzwig-session-rzeka', provider='youtube', type_='video')),
+    (None, J(heading('Dźwig sessions', 3), para('One band, one take, four cameras in the live room. Rzeka played Ujście for us the day after they finished the album.'),
+             para('<a href="/sessions/">All sessions</a>'))), align='wide', verticalAlignment='center'))
+pattern('booking-faq', 'Booking questions', 'services', J(heading('Questions bands ask', 2),
+    details('Can we use our own engineer?', para('Yes. Book a day without an engineer and one of us stays in the building to help with the patchbay and the tape machine.')),
+    details('Can we leave gear overnight?', para('Yes, in the live room, on a booking that runs over several days. The hall is alarmed and insured.')),
+    details('Do you have somewhere to sleep?', para('One room upstairs with four beds, 120 zł a night for the room. Otherwise the Hotel Stocznia is a five-minute walk.')),
+    details('How do we pay?', para('A 30% deposit by bank transfer, the rest on the last day, by card or transfer.'))))
+pattern('what-to-bring', 'What to bring', 'services', group(J(heading('What to bring', 4), lst([
+    'New strings, fitted two days before, not the morning of', 'Drum heads if yours are older than the last tour', 'Your own sticks, picks and cables you trust',
+    'Lyrics printed out, for the singer and for us', 'A hard drive if you want to take the multitracks home']), para('We have tea, coffee and a kettle. Bring your own milk if you are fussy.', fontSize='small')), className='is-style-panel'))
+pattern('gear-story', 'One piece of gear, told properly', 'rooms', cols(
+    (None, image('console.jpg', 'The control room console with speakers and acoustic panels', 'The console in 2021, the week it came back from Szczecin')),
+    (None, J(heading('The console from Polish Radio', 3),
+             para('It was built in 1979 for studio S1 at Polish Radio Szczecin and ran live broadcasts until 2009. We bought it for the price of scrap, then Tonmeister Szczecin spent eight months rebuilding every channel.'),
+             para('It has 32 channels of 1084-style EQ, and a talkback microphone that still says "Radio Szczecin" on the switch.', className='is-style-lead'))), align='wide', verticalAlignment='center'))
+pattern('room-gallery', 'Room photos', 'gallery', gallery([
+    ('console.jpg', 'The Studio A control room with a large console and speakers', 'Studio A control room'), ('drums.jpg', 'A drum kit seen from above', 'The house kit in the live room'),
+    ('vocal.jpg', 'A large-diaphragm microphone with a pop filter', 'Booth 2'), ('tape.jpg', 'A reel-to-reel tape deck in the dark', 'The Otari'),
+    ('engineer.jpg', 'A small mixing desk with lit buttons', 'Studio B desk'), ('amp.jpg', 'A Fender guitar amp close up', 'Rehearsal room')], columns=3, align='wide'))
+pattern('quote-big', 'One big client quote', 'testimonials', pullquote('The room sounds like a room. That is harder to find than it should be.', 'Paweł Sowa, conductor, Gdańsk Chamber Choir'))
+pattern('opening-hours', 'Office hours and contact card', 'contact', group(J(heading('The office', 4), defs([
+    ['Phone', '+48 58 555 01 90'], ['Hours', 'Monday to Friday, 10:00 to 18:00'], ['Email', '<a href="mailto:studio@example.com">studio@example.com</a>'],
+    ['Sessions', 'Any day, 10:00 to 20:00, longer by arrangement']])), className='is-style-panel'))
+pattern('travel-options', 'Getting here by train, tram or van', 'contact', cols(
+    (None, J(heading('By train', 4), para('Gdańsk Główny is 15 minutes on foot, or two stops to Stocznia on the SKM.'))),
+    (None, J(heading('By tram', 4), para('Lines 8 and 10 to Stocznia SKM, then 6 minutes towards the cranes.'))),
+    (None, J(heading('By van', 4), para('From the S7, exit Gdańsk Centrum, then follow ul. Popiełuszki to the red gate. Two spaces at the loading door.'))), align='wide'))
+pattern('stay-nearby', 'Staying nearby', 'contact', group(J(heading('If you are from out of town', 4),
+    para('We have one room upstairs with four beds, 120 zł a night for the room, and a kitchen. Hotel Stocznia on ul. Jana z Kolna is a five-minute walk and gives bands 15% off if you say Dźwig.', fontSize='small')), className='is-style-panel'))
+pattern('mastering', 'Mastering', 'services', cols(
+    ('40%', image('engineer.jpg', 'Close-up of a small mixing desk with rows of faders and lit buttons', aspectRatio='4/5', scale='cover')),
+    (None, J(heading('Mastering on Thursdays', 3), para('Iga masters in Studio B every Thursday. Send us your mixes as 24-bit WAVs and a reference track you like. We send the masters back within a week.'),
+             defs([['Single', '250 zł a track'], ['EP', '900 zł, up to five tracks'], ['Album', '1,800 zł, with a vinyl master']]),
+             buttons(('Send mixes to Iga', 'mailto:iga@example.com?subject=Mastering')))), align='wide', verticalAlignment='center'))
+pattern('hero-room', 'Hero: a room and one fact', 'hero', group(J(
+    image('hero.jpg', 'Studio A control room with a wooden ceiling and the console facing the live room window', align='wide', aspectRatio='21/9', scale='cover'),
+    row(J(heading('Studio A', 1), para('64 m², 7 metre ceiling, three booths, one grand piano', className='is-style-lead')), justify='space-between', align='wide')),
+    align='wide', layout={'type': 'default'}))
+
+# ---- pages that use the kit
+pattern('page-rooms', 'Page: rooms', 'rooms', J(pattern_ref('rooms-signal'), pattern_ref('room-gallery'), pattern_ref('gear-story'), pattern_ref('rehearsal-room'), pattern_ref('studio-numbers')), block_types='core/post-content')
+pattern('page-rates', 'Page: rates and booking', 'pricing', J(cols((None, pattern_ref('rates-table')), ('38%', pattern_ref('deposit-terms')), align='wide'), pattern_ref('packages'), pattern_ref('booking-faq'), pattern_ref('booking-enquiry')), block_types='core/post-content')
+pattern('page-services', 'Page: services', 'services', J(pattern_ref('services'), pattern_ref('mastering'), pattern_ref('live-session'), pattern_ref('what-to-bring')), block_types='core/post-content')
+pattern('page-engineers', 'Page: engineers', 'about', J(pattern_ref('engineers'), pattern_ref('credits-list'), pattern_ref('quote-big'), pattern_ref('client-quotes')), block_types='core/post-content')
+pattern('page-visit', 'Page: visit', 'contact', J(pattern_ref('load-in'), pattern_ref('travel-options'), cols((None, pattern_ref('opening-hours')), (None, pattern_ref('stay-nearby')), align='wide'), pattern_ref('rehearsal-room')), block_types='core/post-content')
+pattern('studio-a-page', 'Page: Studio A', 'rooms', J(
+    image('console.jpg', 'Studio A control room with the console, five monitors and acoustic panels', align='wide', aspectRatio='21/9', scale='cover'),
+    para('The live room was a shipyard tool store until 2016. We kept the brick and the height, built three booths along one wall, and hung clouds from the roof beams. Bands set up in a circle and can see each other and the control room.', className='is-style-lead'),
+    pattern_ref('studio-numbers'), pattern_ref('gear-story'),
+    image('drums.jpg', 'A drum kit in the live room, seen from above', 'The house kit, a Ludwig Classic Maple, set up for the Rzeka sessions'),
+    pattern_ref('rate-cards')), block_types='core/post-content')
+pattern('page-studio-a-hero', 'Page: room with a big photo opening', 'rooms', J(pattern_ref('hero-room'), pattern_ref('studio-numbers'), pattern_ref('room-gallery')), block_types='core/post-content')
+
+write('templates/front-page.html', J(template_part('header', 'header'), group(J(
+    pattern_ref('hero-collage'),
+    gap(pattern_ref('intro-lead'), sz='70'),
+    group(pattern_ref('rooms-signal'), align='full', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|80'}}}),
+    template_part('next-dates'),
+    gap(pattern_ref('gear-categories'), sz='70'),
+    gap(J(heading('Rates', 2), pattern_ref('rate-cards')), sz='70'),
+    gap(pattern_ref('credits-list')),
+    gap(pattern_ref('engineers')),
+    gap(pattern_ref('sessions-grid')),
+    gap(pattern_ref('quote-big'), sz='70'),
+    group(pattern_ref('booking-enquiry'), align='full', layout={'type': 'default'}, style={'spacing': {'margin': {'top': 'var:preset|spacing|80'}}})),
+    tag='main', style={'spacing': {'padding': {'top': 'var:preset|spacing|40'}}}), template_part('footer', 'footer')))
+
+for p in content['posts']:
+    if p['category'] == 'sessions':
+        p['content'] = J(p['content'], gallery([(p['image'], 'Photo from the session: %s' % p['title'], 'On the day'), ('console.jpg', 'The Studio A control room', 'In the control room')], columns=2),
+                         quote('We booked four days and finished in three. We used the fourth to play pool.', 'From the band, afterwards'))
+content['posts'].append({'title': 'Ola Kruk, a solo drum record in one day', 'category': 'sessions', 'image': 'tape.jpg',
+    'excerpt': 'Twelve improvisations on the house kit, straight to half-inch tape, no edits.',
+    'content': J(para('Ola booked the "one song in a day" package and recorded twelve instead. Everything went straight to the Otari at 15 ips, no edits and no overdubs.'),
+                 defs([['Room', 'Studio A'], ['Days', '1'], ['Engineer', 'Bartek Szulc'], ['Tape', 'One reel of half-inch']]),
+                 gallery([('tape.jpg', 'A reel-to-reel tape deck in the dark', 'The Otari'), ('drums.jpg', 'A drum kit from above', 'The house kit')], columns=2))})
+content['pages'].append({'slug': 'services', 'title': 'Services', 'pattern': 'booth/page-services', 'template': 'page-wide'})
+content['nav'] = [{'label': 'Rooms', 'url': '/rooms/'}, {'label': 'Services', 'url': '/services/'}, {'label': 'Gear', 'url': '/gear/'}, {'label': 'Rates', 'url': '/rates/'},
+                  {'label': 'Engineers', 'url': '/engineers/'}, {'label': 'Sessions', 'url': '/sessions/'}, {'label': 'Visit', 'url': '/visit/'}]
+json.dump(content, open('demos/booth/content.json', 'w'), indent=1, ensure_ascii=False)
+theme['styles']['blocks']['core/pullquote']['elements'] = {'cite': {'typography': {'fontFamily': 'var:preset|font-family|body', 'fontSize': 'var:preset|font-size|small', 'fontStyle': 'normal', 'fontWeight': '400', 'letterSpacing': '0', 'textTransform': 'none'}}}
+theme['styles']['css'] += '.wp-block-pullquote{text-align:left;padding-left:0;padding-right:0}.wp-block-pullquote blockquote{margin:0}'
+wjson('theme.json', theme)
+print('booth round 2 built')

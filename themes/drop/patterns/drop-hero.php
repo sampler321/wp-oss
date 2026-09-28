@@ -13,7 +13,7 @@
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"58%"} -->
-<div class="wp-block-column" style="flex-basis:58%"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:58%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero.jpg' ) ); ?>" alt="A guitarist with pale hair playing under a single stage light, photographed in black and white"/><figcaption class="wp-element-caption">Leeds Brudenell, back room, September</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
@@ -21,7 +21,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"is-style-scrap","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-scrap"><!-- wp:paragraph -->
-<p>Six things, printed and dubbed by us, on sale until Sunday 2 November. Tees and tapes are limited and the numbers below are real. The hoodie is a pre-order: we print it once the drop closes, so you get it in the last week of November.</p>
+<p class="">Six things, printed and dubbed by us, on sale until Sunday 2 November. Tees and tapes are limited and the numbers below are real. The hoodie is a pre-order: we print it once the drop closes, so you get it in the last week of November.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

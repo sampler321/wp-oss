@@ -13,7 +13,7 @@
 
 <!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"11rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","className":"is-style-halftone","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/kickflip.jpg' ) ); ?>" alt="Team rider Nia Campbell skating" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -27,7 +27,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","className":"is-style-halftone","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/venice-grind.jpg' ) ); ?>" alt="Team rider Jonny Kerr skating" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -41,7 +41,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","className":"is-style-halftone","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/surf.jpg' ) ); ?>" alt="Team rider Sol Rivera skating" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -55,7 +55,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","className":"is-style-halftone","lightbox":{"enabled":true}} -->
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","className":"is-style-halftone"} -->
 <figure class="wp-block-image size-large is-style-halftone"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/couch-ollie.jpg' ) ); ?>" alt="Team rider Aisha Brown skating" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 

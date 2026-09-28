@@ -2,7 +2,7 @@
 /**
  * Title: On air now and up next
  * Slug: freq/now-next
- * Categories: featured
+ * Categories: hero
  */
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
@@ -35,9 +35,57 @@
 <h4 class="wp-block-heading">Today, Thursday</h4>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>08:00</td><td>Ochtend op de Kade</td></tr><tr><td>17:00</td><td>Guest mix: Lotte Ploeg</td></tr><tr><td>20:00</td><td><strong>Kapsalon</strong>, live now</td></tr><tr><td>22:00</td><td>Klankkast</td></tr><tr><td>00:00</td><td>Non-stop from the archive</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-defs","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-defs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>08:00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ochtend op de Kade</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>17:00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Guest mix: Lotte Ploeg</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>20:00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Kapsalon</strong>, live now</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>22:00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Klankkast</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>00:00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non-stop from the archive</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><a href="/schedule/">The whole week</a></p>

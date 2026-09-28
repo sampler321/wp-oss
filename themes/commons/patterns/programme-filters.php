@@ -2,7 +2,7 @@
 /**
  * Title: Programme filters: by type and by year
  * Slug: commons/programme-filters
- * Categories: query
+ * Categories: programme
  * Description: Category and year filters for the programme archive.
  */
 ?>

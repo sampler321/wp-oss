@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bench story columns",
+	"slug": "bench-story",
+	"blockTypes": [
+		"core/columns"
+	],
+	"styles": {
+		"border": {
+			"top": {
+				"color": "var:preset|color|accent",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|30"
+			}
+		}
+	}
+}

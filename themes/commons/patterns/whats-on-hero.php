@@ -2,7 +2,7 @@
 /**
  * Title: What's on: newest show over a full-bleed photo
  * Slug: commons/whats-on-hero
- * Categories: featured,query
+ * Categories: whats-on
  * Description: The newest show in the programme, as a full-width installation photo with a label card: number, title, artists and dates, opening hours.
  */
 ?>

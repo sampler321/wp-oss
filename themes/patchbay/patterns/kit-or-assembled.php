@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Built, tested and boxed by Rob. Ships in 3 working days.</p>
+<p class="">Built, tested and boxed by Rob. Ships in 3 working days.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"x-large"} -->
@@ -35,7 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Board, every part, drilled and painted enclosure, knobs and a printed build doc.</p>
+<p class="">Board, every part, drilled and painted enclosure, knobs and a printed build doc.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"x-large"} -->

@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "Gold ring, with stone missing from bezel MET DP279014.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Gold_ring,_with_stone_missing_from_bezel_MET_DP279014.jpg",
+    "query": "gold ring MET museum"
+  },
+  "ring-1": {
+    "title": "Carnelian ring stone with gold band set in a silver ring MET DP142796.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Carnelian_ring_stone_with_gold_band_set_in_a_silver_ring_MET_DP142796.jpg",
+    "query": "gold ring with gemstone MET"
+  },
+  "ring-2": {
+    "title": "Gold ring with carnelian ring stone MET DP135918.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Gold_ring_with_carnelian_ring_stone_MET_DP135918.jpg",
+    "query": "Roman gold ring"
+  },
+  "earring-1": {
+    "title": "Pair of gold earrings MET DP136019.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Pair_of_gold_earrings_MET_DP136019.jpg",
+    "query": "gold earrings MET"
+  },
+  "pendant-1": {
+    "title": "Gold pendant with garnet and three gold tassels MET DP122059.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Gold_pendant_with_garnet_and_three_gold_tassels_MET_DP122059.jpg",
+    "query": "gold pendant MET"
+  },
+  "bench-2": {
+    "title": "Jeweler's Workbench.jpg",
+    "creator": "Thomas Farley",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Jeweler%27s_Workbench.jpg",
+    "query": "jeweler at work bench"
+  },
+  "tools-1": {
+    "title": "Ring-Mandrel - DPLA - 5952663b8130ed91c08a6326db406cf8 (page 1).jpg",
+    "creator": "Hinson, James",
+    "license": "Public domain",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Ring-Mandrel_-_DPLA_-_5952663b8130ed91c08a6326db406cf8_(page_1).jpg",
+    "query": "ring mandrel"
+  },
+  "ring-3": {
+    "title": "Finger Ring MET dp30547.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Finger_Ring_MET_dp30547.jpg",
+    "query": "gold finger ring MET"
+  },
+  "ring-4": {
+    "title": "Silver ring MET sf061083.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Silver_ring_MET_sf061083.jpg",
+    "query": "silver ring MET"
+  },
+  "necklace-1": {
+    "title": "Gold necklace with emerald and variscite beads MET DP208005.jpg",
+    "creator": "unknown",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Gold_necklace_with_emerald_and_variscite_beads_MET_DP208005.jpg",
+    "query": "gold necklace MET"
+  },
+  "stone-1": {
+    "title": "Sapphire (GeoDIL number - 1432).jpg",
+    "creator": "Nessa Eull",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sapphire_(GeoDIL_number_-_1432).jpg",
+    "query": "sapphire crystal mineral"
+  },
+  "bench-3": {
+    "title": "Tools of a traditional goldsmith, Goa, India.jpg",
+    "creator": "SerChevalerie",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Tools_of_a_traditional_goldsmith,_Goa,_India.jpg",
+    "query": "goldsmith tools"
+  },
+  "sketch-1": {
+    "title": "Design Drawing MET DP133090.jpg",
+    "creator": "Tiffany &amp; Co.",
+    "license": "CC0",
+    "source": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Design_Drawing_MET_DP133090.jpg",
+    "query": "jewellery design drawing"
+  }
+}

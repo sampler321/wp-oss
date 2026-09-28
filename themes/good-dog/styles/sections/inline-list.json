@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Inline list",
+	"slug": "inline-list",
+	"blockTypes": [
+		"core/categories"
+	],
+	"styles": {
+		"typography": {
+			"fontWeight": "800",
+			"fontSize": "var:preset|font-size|small"
+		},
+		"css": "&{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}& li a{display:inline-block;padding:.35em 1em;border:3px solid var(--wp--preset--color--contrast);border-radius:999px;text-decoration:none;color:var(--wp--preset--color--contrast)}& li:nth-child(6n+1) a{background:var(--wp--preset--color--coral)}& li:nth-child(6n+2) a{background:var(--wp--preset--color--orange)}& li:nth-child(6n+3) a{background:var(--wp--preset--color--yellow)}& li:nth-child(6n+4) a{background:var(--wp--preset--color--green)}& li:nth-child(6n+5) a{background:var(--wp--preset--color--sky)}& li:nth-child(6n) a{background:var(--wp--preset--color--pink)}"
+	}
+}

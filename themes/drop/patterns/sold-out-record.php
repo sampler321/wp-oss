@@ -12,91 +12,91 @@
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>Drop</p>
+<p class="">Drop</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Made</p>
+<p class="">Made</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Price</p>
+<p class="">Price</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>What happened</p>
+<p class="">What happened</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Drop six: flood tee</p>
+<p class="">Drop six: flood tee</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>150 made, white</p>
+<p class="">150 made, white</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£20</p>
+<p class="">£20</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>gone in 9 days</p>
+<p class="">gone in 9 days</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Drop five: tour tote</p>
+<p class="">Drop five: tour tote</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>80 made, canvas</p>
+<p class="">80 made, canvas</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£12</p>
+<p class="">£12</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>gone at glasgow</p>
+<p class="">gone at glasgow</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Drop four: lighthouse longsleeve</p>
+<p class="">Drop four: lighthouse longsleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>60 made</p>
+<p class="">60 made</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£28</p>
+<p class="">£28</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>gone</p>
+<p class="">gone</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Drop three: demo tape</p>
+<p class="">Drop three: demo tape</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>50 made, C30</p>
+<p class="">50 made, C30</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>£6</p>
+<p class="">£6</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>gone, mostly to mums</p>
+<p class="">gone, mostly to mums</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

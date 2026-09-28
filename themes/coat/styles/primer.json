@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Primer",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Primer white"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1B1A1F",
+					"name": "Railings"
+				},
+				{
+					"slug": "accent",
+					"color": "#1D4FB8",
+					"name": "Bamboozle red"
+				},
+				{
+					"slug": "surface",
+					"color": "#EDEBE7",
+					"name": "Primrose"
+				},
+				{
+					"slug": "line",
+					"color": "#8C8990",
+					"name": "Cutting-in line"
+				},
+				{
+					"slug": "muted",
+					"color": "#56525C",
+					"name": "Undercoat grey"
+				},
+				{
+					"slug": "hague",
+					"color": "#2E3B4E",
+					"name": "Hague blue"
+				},
+				{
+					"slug": "locks",
+					"color": "#D9612E",
+					"name": "Charlotte's locks"
+				},
+				{
+					"slug": "babouche",
+					"color": "#EDC65A",
+					"name": "Babouche"
+				},
+				{
+					"slug": "arsenic",
+					"color": "#6FA396",
+					"name": "Arsenic"
+				},
+				{
+					"slug": "sulking",
+					"color": "#D8A7A0",
+					"name": "Sulking pink"
+				},
+				{
+					"slug": "calke",
+					"color": "#4E6A45",
+					"name": "Calke green"
+				},
+				{
+					"slug": "stiffkey",
+					"color": "#3E5468",
+					"name": "Stiffkey blue"
+				},
+				{
+					"slug": "plaster",
+					"color": "#EBCBB8",
+					"name": "Setting plaster"
+				},
+				{
+					"slug": "yellowcake",
+					"color": "#F5DA62",
+					"name": "Yellowcake"
+				},
+				{
+					"slug": "mint",
+					"color": "#BFE6D1",
+					"name": "Mint"
+				},
+				{
+					"slug": "door-blue",
+					"color": "#1D4FB8",
+					"name": "Door blue"
+				}
+			]
+		}
+	}
+}

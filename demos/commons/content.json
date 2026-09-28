@@ -61,6 +61,12 @@
    "template": "page-wide"
   },
   {
+   "slug": "studios",
+   "title": "Studios",
+   "pattern": "commons/studios-page",
+   "template": "page-wide"
+  },
+  {
    "slug": "about",
    "title": "About",
    "pattern": "commons/about-page",
@@ -78,7 +84,7 @@
    "image": "hero.jpg",
    "date": "2026-09-12",
    "excerpt": "Hana Mirza and Ciarán Doyle. 12 September to 25 October 2026.",
-   "pattern": "commons/exhibition-text"
+   "pattern": "commons/exhibition-page"
   },
   {
    "title": "The Prince's Seat",
@@ -176,6 +182,10 @@
   {
    "label": "Opportunities",
    "url": "/opportunities/"
+  },
+  {
+   "label": "Studios",
+   "url": "/studios/"
   },
   {
    "label": "Visit",

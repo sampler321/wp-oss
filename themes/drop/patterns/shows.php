@@ -12,91 +12,91 @@
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>Date</p>
+<p class="">Date</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Where</p>
+<p class="">Where</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>On the table</p>
+<p class="">On the table</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tickets</p>
+<p class="">Tickets</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Thu 30 Oct</p>
+<p class="">Thu 30 Oct</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Hyde Park Book Club, Leeds</p>
+<p class="">Hyde Park Book Club, Leeds</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Full table, collection point</p>
+<p class="">Full table, collection point</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>on sale</p>
+<p class="">on sale</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Sat 8 Nov</p>
+<p class="">Sat 8 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The Hug and Pint, Glasgow</p>
+<p class="">The Hug and Pint, Glasgow</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tees, tapes, zine</p>
+<p class="">Tees, tapes, zine</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>on sale</p>
+<p class="">on sale</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Fri 14 Nov</p>
+<p class="">Fri 14 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Moth Club, London</p>
+<p class="">Moth Club, London</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Card only, tour tee debut</p>
+<p class="">Card only, tour tee debut</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>few tickets</p>
+<p class="">few tickets</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-sold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-sold"><!-- wp:paragraph -->
-<p>Sat 22 Nov</p>
+<p class="">Sat 22 Nov</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Gullivers, Manchester</p>
+<p class="">Gullivers, Manchester</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Last show of the year</p>
+<p class="">Last show of the year</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>sold out</p>
+<p class="">sold out</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

@@ -11,96 +11,96 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>If enough names go down, a sold-out thing gets a second batch. These are the counts this morning.</p>
+<p class="">If enough names go down, a sold-out thing gets a second batch. These are the counts this morning.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>Item</p>
+<p class="">Item</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>What it would be</p>
+<p class="">What it would be</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Names</p>
+<p class="">Names</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Needed</p>
+<p class="">Needed</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Car park tape</p>
+<p class="">Car park tape</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Batch two of 100</p>
+<p class="">Batch two of 100</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>31</p>
+<p class="">31</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>needs 50</p>
+<p class="">needs 50</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Flood tee</p>
+<p class="">Flood tee</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>White, same print</p>
+<p class="">White, same print</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>64</p>
+<p class="">64</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>needs 80</p>
+<p class="">needs 80</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Lighthouse longsleeve</p>
+<p class="">Lighthouse longsleeve</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Never again, sorry</p>
+<p class="">Never again, sorry</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>22</p>
+<p class="">22</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>no</p>
+<p class="">no</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Tour tote</p>
+<p class="">Tour tote</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>New colour, same size</p>
+<p class="">New colour, same size</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>12</p>
+<p class="">12</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>needs 40</p>
+<p class="">needs 40</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

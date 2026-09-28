@@ -2,13 +2,13 @@
 /**
  * Title: Pudding trays
  * Slug: platter/pudding
- * Categories: platter,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/pastries.jpg' ) ); ?>" alt="A berry and cinnamon swirl bread cut into slices on a glass tray, with a handwritten label"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

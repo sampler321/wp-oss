@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mint",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1A1A1A",
+					"name": "Black"
+				},
+				{
+					"slug": "accent",
+					"color": "#006A66",
+					"name": "Teal"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#82D8D5",
+					"name": "Mint"
+				},
+				{
+					"slug": "surface",
+					"color": "#E6F7F6",
+					"name": "Mint tint"
+				},
+				{
+					"slug": "line",
+					"color": "#1A1A1A",
+					"name": "Rule"
+				},
+				{
+					"slug": "muted",
+					"color": "#4D4D4D",
+					"name": "Grey"
+				},
+				{
+					"slug": "ink-yellow",
+					"color": "#FFE800",
+					"name": "Yellow"
+				},
+				{
+					"slug": "ink-green",
+					"color": "#00A95C",
+					"name": "Green"
+				},
+				{
+					"slug": "ink-orange",
+					"color": "#FF6C2F",
+					"name": "Orange"
+				},
+				{
+					"slug": "ink-purple",
+					"color": "#765BA7",
+					"name": "Purple"
+				},
+				{
+					"slug": "ink-mint",
+					"color": "#82D8D5",
+					"name": "Mint"
+				},
+				{
+					"slug": "ink-red",
+					"color": "#FF665E",
+					"name": "Bright red"
+				}
+			]
+		}
+	}
+}

@@ -2,7 +2,7 @@
 /**
  * Title: Search results list
  * Slug: room/post-list
- * Categories: query
+ * Categories: project
  * Inserter: no
  */
 ?>

@@ -7,3 +7,5 @@
  */
 ?>
 <!-- wp:pattern {"slug":"grain/care"} /-->
+
+<!-- wp:pattern {"slug":"grain/makers-mark"} /-->

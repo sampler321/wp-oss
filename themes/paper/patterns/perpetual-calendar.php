@@ -11,7 +11,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A wooden block calendar with tiles for day, date and month. Change the tiles each morning; it works for any year.</p>
+<p class="">A wooden block calendar with tiles for day, date and month. Change the tiles each morning; it works for any year.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-spec"} -->

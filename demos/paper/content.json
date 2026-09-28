@@ -54,6 +54,24 @@
    "title": "Visit",
    "pattern": "paper/page-visit",
    "template": "page-wide"
+  },
+  {
+   "slug": "classes",
+   "title": "Classes and repairs",
+   "pattern": "paper/page-classes",
+   "template": "page-wide"
+  },
+  {
+   "slug": "guides",
+   "title": "Paper guides",
+   "pattern": "paper/page-guides",
+   "template": "page-wide"
+  },
+  {
+   "slug": "gifts",
+   "title": "Gifts",
+   "pattern": "paper/page-gifts",
+   "template": "page-wide"
   }
  ],
  "posts": [
@@ -61,37 +79,43 @@
    "title": "Nine inks on our 100gsm cream, side by side",
    "category": "paper-tests",
    "image": "ink.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">We wrote the same sentence in nine inks with a medium steel nib and left the page for a day. Two showed through, none bled. The gall ink darkened most.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We wrote the same sentence in nine inks with a medium steel nib and left the page for a day. Two showed through, none bled. The gall ink darkened most.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/ink-swatches\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/fountain-pen-friendly\"} /-->"
   },
   {
    "title": "Why the dot grid is 5mm and not 4mm",
    "category": "paper-tests",
    "image": "dot-grid.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">At 4mm most people write two dots per line and the page looks crowded. At 5mm it lines up with a relaxed hand and still works for small drawings.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">At 4mm most people write two dots per line and the page looks crowded. At 5mm it lines up with a relaxed hand and still works for small drawings.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/ruling-selector\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/sample-pack\"} /-->"
   },
   {
    "title": "The 2026 diaries are in",
    "category": "shop-notes",
    "image": "journal-pen.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Week to view, day to a page and month to view, all starting 29 December. We printed the same number as last year, which ran out in November.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Week to view, day to a page and month to view, all starting 29 December. We printed the same number as last year, which ran out in November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/diaries-page-intro\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/perpetual-calendar\"} /-->"
   },
   {
    "title": "Sewing a batch of 200 notebooks",
    "category": "shop-notes",
    "image": "black-notebook.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">Callum sews on Mondays when the shop is closed. A batch of 200 takes three Mondays, and the thread colour depends on what the supplier has that month.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">Callum sews on Mondays when the shop is closed. A batch of 200 takes three Mondays, and the thread colour depends on what the supplier has that month.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/sewing-process\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/handmade-note\"} /-->"
   },
   {
    "title": "Exercise books and why we still sell them",
    "category": "shop-notes",
    "image": "graph-books.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">They feather under a fountain pen and the paper is thin. They are also £3.50 each and perfect for maths homework, so they stay.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">They feather under a fountain pen and the paper is thin. They are also £3.50 each and perfect for maths homework, so they stay.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/school-list\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/gsm-guide\"} /-->"
   },
   {
    "title": "Testing envelopes in the rain",
    "category": "paper-tests",
    "image": "envelopes.jpg",
-   "content": "<!-- wp:paragraph -->\n<p class=\"\">We posted ten laid envelopes to ourselves during a wet week. The addresses in gall ink arrived sharp; the ones in a dye ink had run on two.</p>\n<!-- /wp:paragraph -->"
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">We posted ten laid envelopes to ourselves during a wet week. The addresses in gall ink arrived sharp; the ones in a dye ink had run on two.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/letter-box\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/paper-spec\"} /-->"
+  },
+  {
+   "title": "Fixing a 1950s lever-fill pen",
+   "category": "shop-notes",
+   "image": "nib-steel.jpg",
+   "content": "<!-- wp:paragraph -->\n<p class=\"\">A customer brought in her grandfather's lever filler with a perished sac. Mei replaced the sac, cleaned the feed and smoothed the nib. It writes a wet fine line again.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:pattern {\"slug\":\"paper/pen-repair\"} /-->\n\n<!-- wp:pattern {\"slug\":\"paper/classes\"} /-->"
   }
  ],
  "nav": [
@@ -112,8 +136,16 @@
    "url": "/diaries/"
   },
   {
-   "label": "Wholesale",
-   "url": "/wholesale/"
+   "label": "Gifts",
+   "url": "/gifts/"
+  },
+  {
+   "label": "Guides",
+   "url": "/guides/"
+  },
+  {
+   "label": "Classes",
+   "url": "/classes/"
   },
   {
    "label": "Notes",

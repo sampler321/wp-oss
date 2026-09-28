@@ -11,6 +11,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Gatefold, Van Gelder stamp in the run-out. Some crackle in the lead-in of side one, quiet after that. Play-graded on the shop deck by Delroy on 12 September.</p>
+<p class="">Gatefold, Van Gelder stamp in the run-out. Some crackle in the lead-in of side one, quiet after that. Play-graded on the shop deck by Delroy on 12 September.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

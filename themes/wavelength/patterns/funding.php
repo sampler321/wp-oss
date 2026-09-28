@@ -2,7 +2,7 @@
 /**
  * Title: How the station is paid for
  * Slug: wavelength/funding
- * Categories: text
+ * Categories: about
  */
 ?>
 <!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
@@ -11,12 +11,50 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-answer"} -->
-<p class="is-style-answer">It costs about £24,000 a year to keep Calder Valley Radio on air. Nobody is paid. This is where the money comes from.</p>
+<p class="is-style-answer">It costs about £24,000 a year to keep Calder Valley Radio on air. Nobody is paid. This is where the money came from last year.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Where it comes from</th><th>Last year</th></tr></thead><tbody><tr><td>Friends of the station, £3 a month</td><td>£11,800</td></tr><tr><td>Local adverts (up to 6 minutes an hour, Ofcom's limit)</td><td>£6,200</td></tr><tr><td>Grants from Calderdale Council and the National Lottery</td><td>£4,500</td></tr><tr><td>Market stall, quiz nights and the duck race</td><td>£1,500</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"is-style-defs","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-defs"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">£11,800</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Friends of the station, £3 a month</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">£6,200</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Local adverts, up to 6 minutes an hour, which is Ofcom's limit</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">£4,500</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Grants from Calderdale Council and the National Lottery</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p class="">£1,500</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Market stall, quiz nights and the duck race</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->

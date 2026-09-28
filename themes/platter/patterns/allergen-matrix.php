@@ -2,7 +2,7 @@
 /**
  * Title: Allergen matrix
  * Slug: platter/allergen-matrix
- * Categories: platter,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

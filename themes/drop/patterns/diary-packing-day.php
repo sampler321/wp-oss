@@ -11,10 +11,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Two hundred and eleven parcels. The spare room floor is now a postal sorting office and the cat has claimed the stack of large bags. Tom does addresses because his handwriting is the only readable one. Mags does the zine inserts. Priya counts twice.</p>
+<p class="">Two hundred and eleven parcels. The spare room floor is now a postal sorting office and the cat has claimed the stack of large bags. Tom does addresses because his handwriting is the only readable one. Mags does the zine inserts. Priya counts twice.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/tee.jpg' ) ); ?>" alt="A rail of printed t-shirts on hangers"/><figcaption class="wp-element-caption">the rail before we started folding</figcaption></figure>
 <!-- /wp:image -->
 

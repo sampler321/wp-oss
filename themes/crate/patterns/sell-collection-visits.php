@@ -10,5 +10,5 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>For more than 500 records we come to you, anywhere within about an hour of Leeds. Send a few phone photos of the shelves and some spines to <a href="mailto:shop@example.com">shop@example.com</a>. Delroy replies within three working days.</p>
+<p class="">For more than 500 records we come to you, anywhere within about an hour of Leeds. Send a few phone photos of the shelves and some spines to <a href="mailto:shop@example.com">shop@example.com</a>. Delroy replies within three working days.</p>
 <!-- /wp:paragraph -->

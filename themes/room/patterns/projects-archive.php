@@ -2,7 +2,7 @@
 /**
  * Title: Interiors archive (inherits the page query)
  * Slug: room/projects-archive
- * Categories: query
+ * Categories: project
  * Inserter: no
  */
 ?>

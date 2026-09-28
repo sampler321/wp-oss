@@ -2,7 +2,7 @@
 /**
  * Title: Gallery representation line
  * Slug: oil/representation
- * Categories: about
+ * Categories: oil-exhibitions,about
  */
 ?>
 <!-- wp:paragraph {"fontSize":"large"} -->

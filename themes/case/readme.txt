@@ -31,7 +31,6 @@ Case is distributed under the terms of the GNU GPL v2 or later.
 
 * Font: Hubot Sans (Google Fonts), https://github.com/google/fonts/tree/main/ofl/hubotsans
 * Font: Atkinson Hyperlegible Next (Google Fonts), https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext
-* Image phone.jpg: "It is my LIFE (Unsplash).jpg" by Igor Miske igorm, CC0, https://commons.wikimedia.org/wiki/File:It_is_my_LIFE_(Unsplash).jpg
 * Image map.jpg: "1055Queues at bus stops during the COVID-19 pandemic in the Philippines 24.jpg" by Judgefloro, CC0, https://commons.wikimedia.org/wiki/File:1055Queues_at_bus_stops_during_the_COVID-19_pandemic_in_the_Philippines_24.jpg
 * Image kiosk.jpg: "西宮北口駅券売機の画面.png" by 小田急4000系ファン, CC0, https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%AE%AE%E5%8C%97%E5%8F%A3%E9%A7%85%E5%88%B8%E5%A3%B2%E6%A9%9F%E3%81%AE%E7%94%BB%E9%9D%A2.png
 * Image kiosk-2.jpg: "Higashi-Narita station ticket-vending machine.jpg" by 特急東海, CC0, https://commons.wikimedia.org/wiki/File:Higashi-Narita_station_ticket-vending_machine.jpg
@@ -42,3 +41,14 @@ Case is distributed under the terms of the GNU GPL v2 or later.
 * Image selfcheckout.jpg: "Self-checkout at UNIQLO in Tokyo.jpg" by Syced, CC0, https://commons.wikimedia.org/wiki/File:Self-checkout_at_UNIQLO_in_Tokyo.jpg
 * Image parking.jpg: "Parking meter 2.jpg" by Kurt Kaiser, CC0, https://commons.wikimedia.org/wiki/File:Parking_meter_2.jpg
 * Image phone-2.jpg: "Smartphone use at railway station.jpg" by Rawpixel.com, CC0, https://commons.wikimedia.org/wiki/File:Smartphone_use_at_railway_station.jpg
+* Image ui-kiosk-before.jpg: "Ticket machine, fare grid first (before)" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-kiosk-after.jpg: "Ticket machine, destination first (after)" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-kiosk-price.jpg: "Ticket machine, price with railcard saving beside it" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image wf-kiosk.jpg: "Wireframes, ticket machine flow" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image wf-parking.jpg: "Wireframes, parking by street name" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image wf-checkout.jpg: "Wireframes, self-checkout with tag step first" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-parking.jpg: "Parking app, three screens: street, time, confirmation" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-checkout.jpg: "Self-checkout screen with the tag step before payment" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-departures.jpg: "Bus stop display showing the next four buses with live times" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image sk-journey.jpg: "Pencil sketch of the ticket buying journey with the low point at the price screen" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py
+* Image ui-kit.jpg: "Design system sheet for the ticket machines: colours, type sizes, buttons and the search field" by WP-OSS, drawn for the Case theme demo, CC0, https://github.com/sampler321/wp-oss/tree/main/build/case_screens.py

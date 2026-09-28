@@ -12,91 +12,91 @@
 
 <!-- wp:group {"className":"is-style-sheet-row is-head","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row is-head"><!-- wp:paragraph -->
-<p>Shop</p>
+<p class="">Shop</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Where</p>
+<p class="">Where</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Has</p>
+<p class="">Has</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Status</p>
+<p class="">Status</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Jumbo Records</p>
+<p class="">Jumbo Records</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Leeds, St Johns Centre</p>
+<p class="">Leeds, St Johns Centre</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, tape</p>
+<p class="">LP, tape</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>in stock</p>
+<p class="">in stock</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Monorail Music</p>
+<p class="">Monorail Music</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Glasgow, King's Court</p>
+<p class="">Glasgow, King's Court</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP</p>
+<p class="">LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>in stock</p>
+<p class="">in stock</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Rough Trade East</p>
+<p class="">Rough Trade East</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>London, Brick Lane</p>
+<p class="">London, Brick Lane</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP</p>
+<p class="">LP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>ask at the counter</p>
+<p class="">ask at the counter</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-sheet-row","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-sheet-row"><!-- wp:paragraph -->
-<p>Piccadilly Records</p>
+<p class="">Piccadilly Records</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Manchester, Oldham Street</p>
+<p class="">Manchester, Oldham Street</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>LP, zine</p>
+<p class="">LP, zine</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>zine gone</p>
+<p class="">zine gone</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

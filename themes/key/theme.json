@@ -71,18 +71,18 @@
 							"fontStyle": "normal",
 							"fontWeight": "400 900",
 							"src": [
-								"file:./assets/fonts/ruda-normal-400_900.woff2"
+								"file:./assets/fonts/ruda-normal-400_900-latin-ext.woff2"
 							],
-							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
 						},
 						{
 							"fontFamily": "Ruda",
 							"fontStyle": "normal",
 							"fontWeight": "400 900",
 							"src": [
-								"file:./assets/fonts/ruda-normal-400_900-latin-ext.woff2"
+								"file:./assets/fonts/ruda-normal-400_900.woff2"
 							],
-							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
 						}
 					]
 				},
@@ -91,6 +91,15 @@
 					"name": "Atkinson Hyperlegible Next",
 					"slug": "body",
 					"fontFace": [
+						{
+							"fontFamily": "Atkinson Hyperlegible Next",
+							"fontStyle": "italic",
+							"fontWeight": "200 800",
+							"src": [
+								"file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
 						{
 							"fontFamily": "Atkinson Hyperlegible Next",
 							"fontStyle": "italic",
@@ -105,16 +114,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "200 800",
 							"src": [
-								"file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800.woff2"
-							],
-							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-						},
-						{
-							"fontFamily": "Atkinson Hyperlegible Next",
-							"fontStyle": "italic",
-							"fontWeight": "200 800",
-							"src": [
-								"file:./assets/fonts/atkinson-hyperlegible-next-italic-200_800-latin-ext.woff2"
+								"file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800-latin-ext.woff2"
 							],
 							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
 						},
@@ -123,9 +123,9 @@
 							"fontStyle": "normal",
 							"fontWeight": "200 800",
 							"src": [
-								"file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800-latin-ext.woff2"
+								"file:./assets/fonts/atkinson-hyperlegible-next-normal-200_800.woff2"
 							],
-							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
 						}
 					]
 				}
@@ -264,6 +264,14 @@
 		},
 		"custom": {
 			"measure": "70ch"
+		},
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"enabled": true,
+					"allowEditing": true
+				}
+			}
 		}
 	},
 	"styles": {
@@ -484,7 +492,7 @@
 				}
 			}
 		},
-		"css": ".wp-block-post-content > * + :is(h2,h3,.wp-block-columns,.wp-block-group,.wp-block-image,.wp-block-table){margin-block-start:var(--wp--preset--spacing--60)}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none}a:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible,.wp-element-button:focus-visible{outline:3px solid transparent;background-color:var(--wp--preset--color--signal)!important;color:var(--wp--preset--color--contrast)!important;box-shadow:0 -2px var(--wp--preset--color--signal),0 4px var(--wp--preset--color--contrast);text-decoration:none}@media (max-width:781px){.call-bar-part{position:sticky;top:0;z-index:20}}.phone-big{font-weight:800;line-height:1}.phone-big a{color:var(--wp--preset--color--contrast);text-decoration:none;font-variant-numeric:tabular-nums}.phone-big a:hover{text-decoration:underline}"
+		"css": ".wp-block-post-content > * + :is(h2,h3,.wp-block-columns,.wp-block-group,.wp-block-image,.wp-block-table){margin-block-start:var(--wp--preset--spacing--60)}:where(h1,h2,h3){text-wrap:balance}:where(p,li){text-wrap:pretty}body{font-synthesis:none}a:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible,.wp-element-button:focus-visible{outline:3px solid transparent;background-color:var(--wp--preset--color--signal)!important;color:var(--wp--preset--color--contrast)!important;box-shadow:0 -2px var(--wp--preset--color--signal),0 4px var(--wp--preset--color--contrast);text-decoration:none}@media (max-width:781px){.call-bar-part{position:sticky;top:0;z-index:20}}.phone-big{font-weight:800;line-height:1}.phone-big a{color:var(--wp--preset--color--contrast);text-decoration:none;font-variant-numeric:tabular-nums}.phone-big a:hover{text-decoration:underline}.is-style-specs > .wp-block-group{padding-block:.55em;border-bottom:1px solid var(--wp--preset--color--line);gap:.2rem 1.25rem!important;margin:0!important}.is-style-specs > .wp-block-group > :first-child{flex:0 0 min(36%,12rem);font-weight:600;margin:0}.is-style-specs > .wp-block-group > :last-child{flex:1 1 14rem;margin:0}.is-style-leaders{list-style:none;padding-left:0}.is-style-leaders li{display:flex;align-items:baseline;gap:.4em;padding:.5em 0;border-bottom:1px solid var(--wp--preset--color--muted)}.is-style-leaders li strong{order:2;white-space:nowrap;font-variant-numeric:tabular-nums}.is-style-leaders li::after{content:\"\";order:1;flex:1 1 1.5rem;border-bottom:2px dotted var(--wp--preset--color--contrast);transform:translateY(-.3em)}"
 	},
 	"templateParts": [
 		{

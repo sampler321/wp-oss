@@ -71,6 +71,7 @@ theme = {
             {'slug': '70', 'size': 'clamp(3rem, 7vw, 5rem)', 'name': '7'}, {'slug': '80', 'size': 'clamp(4rem, 10vw, 7rem)', 'name': '8'}]},
         'shadow': {'defaultPresets': False, 'presets': []},
         'border': {'color': True, 'radius': True, 'style': True, 'width': True},
+        'blocks': {'core/image': {'lightbox': {'enabled': True, 'allowEditing': True}}},
     },
     'styles': {
         'color': {'background': 'var:preset|color|base', 'text': 'var:preset|color|contrast'},
@@ -178,6 +179,9 @@ section('colophon', 'Colophon line', ['core/paragraph'],
         {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|x-small'}})
 section('rule-top', 'Rule above', ['core/group', 'core/columns'],
         {'border': {'top': {'color': 'var:preset|color|line', 'width': '2px', 'style': 'solid'}}, 'spacing': {'padding': {'top': 'var:preset|spacing|40'}}})
+section('chips', 'Chips', ['core/list'],
+        {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|small'},
+         'css': '&{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:.5rem}& li{padding:.3rem .8rem;border:2px solid var(--wp--preset--color--line);border-radius:999px}& li:nth-child(4n+1){background:var(--wp--preset--color--accent);color:var(--wp--preset--color--on-accent);border-color:transparent}& li:nth-child(4n+3){background:var(--wp--preset--color--accent-2);color:var(--wp--preset--color--base);border-color:transparent}'})
 section('shelf', 'Shelf', ['core/group'],
         {'css': '&{row-gap:var(--wp--preset--spacing--50)!important}'})
 
@@ -203,6 +207,144 @@ def paperback(slug, title, genre, series='', size='medium'):
 
 SERIES = {'low-country': 'Fenland 1', 'a-drowned-parish': 'Fenland 2', 'the-wash-in-winter': 'Fenland 3'}
 
+# ---------------------------------------------------------------- round 2: patterns, collage and play
+import urllib.parse as _up
+def _svg(body, w=24, h=24):
+    return "url(\"data:image/svg+xml," + _up.quote('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">%s</svg>' % (w, h, w, h, body), safe=' =:/"') + "\")"
+MOTIFS = {
+    'waves': (_svg('<path d="M0 12 Q6 5 12 12 T24 12" fill="none" stroke="black" stroke-width="2.4"/>'), '24px 14px', 'Fen water'),
+    'dots': (_svg('<circle cx="6" cy="6" r="3.2"/><circle cx="18" cy="18" r="3.2"/>'), '22px 22px', 'Half-drop dots'),
+    'scales': (_svg('<path d="M0 12 A12 12 0 0 1 24 12 M-12 24 A12 12 0 0 1 12 24 M12 24 A12 12 0 0 1 36 24" fill="none" stroke="black" stroke-width="2"/>', 24, 24), '26px 26px', 'Boat scales'),
+    'tiles': (_svg('<path d="M12 2 L22 12 L12 22 L2 12Z" fill="none" stroke="black" stroke-width="2"/><circle cx="12" cy="12" r="2.6"/>'), '26px 26px', 'Lisbon tiles'),
+    'reeds': (_svg('<path d="M12 23 C11 15 8 9 12 1 C16 9 13 15 12 23Z"/><path d="M0 23 C0 18 -2 14 0 9 C2 14 0 18 0 23Z M24 23 C24 18 22 14 24 9 C26 14 24 18 24 23Z"/>'), '18px 24px', 'Reeds'),
+    'stripes': (_svg('<path d="M-2 26 L26 -2 M-14 14 L14 -14 M10 38 L38 10" stroke="black" stroke-width="3"/>'), '16px 16px', 'Diagonal stripes'),
+}
+GENRE_MOTIF = {'crime': 'waves', 'fiction': 'dots', 'memoir': 'scales', 'travel': 'tiles'}
+for k, (url, size, title) in MOTIFS.items():
+    section('pattern-' + k, 'Pattern: %s' % title.lower(), ['core/group', 'core/column', 'core/cover'],
+            {'css': '&{position:relative;isolation:isolate}&::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-color:currentColor;opacity:.3;'
+                    '-webkit-mask:%s 0 0/%s repeat;mask:%s 0 0/%s repeat}' % (url, size, url, size)})
+section('label-plate', 'Label plate', ['core/group'],
+        {'color': {'background': 'var:preset|color|surface', 'text': 'var:preset|color|contrast'},
+         'border': {'width': '2px', 'style': 'solid', 'color': 'var:preset|color|contrast'},
+         'spacing': {'padding': {'top': 'var:preset|spacing|30', 'bottom': 'var:preset|spacing|30', 'left': 'var:preset|spacing|30', 'right': 'var:preset|spacing|30'}},
+         'css': '&{text-align:center;width:78%;margin-inline:auto!important}& h2,& h3,& p{text-align:center}& .wp-block-separator{width:40%;margin:.5rem auto!important;border-top-width:1px}'})
+section('clothbound', 'Clothbound cover', ['core/group'],
+        {'css': '&{aspect-ratio:2/3;display:flex!important;flex-direction:column;justify-content:center;overflow:hidden}'})
+section('collage', 'Collage shapes', ['core/group', 'core/columns'],
+        {'css': '&{position:relative;isolation:isolate}&::before{content:"";position:absolute;z-index:-1;width:min(34vw,420px);aspect-ratio:1;border-radius:50%;background:var(--wp--preset--color--travel);top:-2rem;left:-3rem;opacity:.9}'
+                '&::after{content:"";position:absolute;z-index:-1;width:min(26vw,300px);aspect-ratio:1;background:var(--wp--preset--color--accent);clip-path:polygon(0 0,100% 30%,70% 100%);bottom:-2.5rem;left:24%;opacity:.95}'})
+section('tile', 'Patchwork tile', ['core/group'],
+        {'css': '&{min-height:12rem;display:flex!important;flex-direction:column;justify-content:flex-end}& a{text-decoration:none}& a:hover{text-decoration:underline}'})
+section('tilt-left', 'Tilted left', ['core/group'], {'css': '&{transform:rotate(-2deg)}'})
+section('tilt-right', 'Tilted right', ['core/group'], {'css': '&{transform:rotate(1.6deg)}'})
+
+def clothbound(slug, title, genre, series='', size='large'):
+    return group(group(J(para(GENRES[genre][1] + (', ' + series if series else ''), fontFamily='display', fontSize='x-small', style={'typography': {'fontWeight': '600'}}),
+                         heading('<a href="/%s/">%s</a>' % (slug, title), 3, fontSize=size), separator(), para('Tamsin Rourke', fontFamily='display', fontSize='small')),
+                       className='is-style-label-plate', layout={'type': 'default'}),
+                 className='is-style-band-%s is-style-pattern-%s is-style-clothbound' % (genre, GENRE_MOTIF[genre]), layout={'type': 'default'})
+
+pattern('clothbound-cover', 'Patterned cover (clothbound style)', 'featured,gallery', clothbound('the-wash-in-winter', 'The Wash in Winter', 'crime', 'Fenland 3', 'x-large'),
+        description='A cover with a repeating motif and a label plate. The motif follows the genre: waves for crime, dots for fiction, scales for memoir, tiles for travel.')
+
+pattern('collage-hero', 'New book, collage opener', 'featured', group(columns(
+    ('42%', group(clothbound('the-wash-in-winter', 'The Wash in Winter', 'crime', 'Fenland 3', 'x-large'), className='is-style-tilt-left', layout={'type': 'default'})),
+    ('58%', J(para('New in hardback, 8 October 2026', fontFamily='display', style={'typography': {'fontWeight': '600'}}),
+              heading('The Wash in Winter', 1, fontSize='display'),
+              para('A man is found in the Hundred Foot pumping station three days before the sluice gates are opened for the winter. DS Ruth Ambler knew him at school. So did half of Wisbech. The third Fenland novel.', fontSize='large'),
+              buttons(('Buy the book', '/buy/'), ('Read the first page', '/book-groups/', {'className': 'is-style-outline'})))),
+    align='wide', verticalAlignment='center', style={'spacing': {'blockGap': {'left': 'var:preset|spacing|70'}}}),
+    align='wide', className='is-style-collage', layout={'type': 'default'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|70'}}}),
+    description='The new book, tilted like a cover on a table, over cut-paper shapes in the genre colours.')
+
+def tile(genre, motif, label, sub, href):
+    return group(J(para('<a href="%s">%s</a>' % (href, label), fontFamily='display', fontSize='x-large', style={'typography': {'fontWeight': '700', 'lineHeight': '1'}}), para(sub, fontSize='small')),
+                 className='is-style-band-%s is-style-pattern-%s is-style-tile' % (genre, motif), layout={'type': 'default'},
+                 style={'spacing': {'padding': {'top': 'var:preset|spacing|40', 'bottom': 'var:preset|spacing|40', 'left': 'var:preset|spacing|40', 'right': 'var:preset|spacing|40'}}})
+
+pattern('series-patchwork', 'Series patchwork (colour-coded)', 'featured', group(J(
+    heading('Pick a shelf', 2),
+    grid(J(tile('crime', 'waves', 'Fenland crime', 'Three novels with DS Ruth Ambler. Read in order.', '/category/crime/'),
+           tile('fiction', 'dots', 'Fiction', 'Two stand-alone novels about the coast.', '/category/fiction/'),
+           tile('memoir', 'scales', 'Memoir', 'My father and the seven boats he lost.', '/category/memoir/'),
+           tile('travel', 'tiles', 'Travel', 'A winter of Lisbon trams.', '/category/travel/'),
+           tile('crime', 'reeds', 'Book groups', 'Questions, maps and a video visit.', '/book-groups/'),
+           tile('fiction', 'stripes', 'Events', 'Launch in King’s Lynn on 8 October.', '/events/')), min_width='15rem')),
+    align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}),
+    description='A patchwork of colour-coded tiles, one per shelf, each with its own motif.')
+
+for k in ('waves', 'dots', 'scales', 'tiles'):
+    g = {v: kk for kk, v in GENRE_MOTIF.items()}[k]
+    pattern('band-' + k, 'Pattern band: %s' % MOTIFS[k][2].lower(), 'design', group(para('&nbsp;', fontSize='x-small'), align='full', className='is-style-band-%s is-style-pattern-%s' % (g, k),
+                                                                              style={'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50'}, 'margin': {'top': '0', 'bottom': '0'}}}),
+            description='A full-width band of %s, for breaks between sections.' % MOTIFS[k][2].lower())
+
+pattern('great-ideas-quote', 'A line from the book, on a pattern', 'testimonials', group(group(J(
+    para('“The Fens keep everything and forgive nothing.”', fontFamily='display', fontSize='x-large', style={'typography': {'fontWeight': '700', 'lineHeight': '1.15'}}),
+    para('The Wash in Winter, page 41', fontSize='small')), className='is-style-label-plate', layout={'type': 'default'}),
+    className='is-style-band-memoir is-style-pattern-reeds', align='wide', layout={'type': 'default'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|70', 'bottom': 'var:preset|spacing|70'}}}))
+
+pattern('reading-order', 'The Fenland novels, in order', 'featured', group(J(
+    heading('The Fenland novels, in order', 2),
+    grid(J(clothbound('low-country', 'Low Country', 'crime', 'Fenland 1', 'medium'), clothbound('a-drowned-parish', 'A Drowned Parish', 'crime', 'Fenland 2', 'medium'),
+           clothbound('the-wash-in-winter', 'The Wash in Winter', 'crime', 'Fenland 3', 'medium')), min_width='10rem'),
+    para('Each one works alone, but Ruth’s father’s case runs through all three and is only closed in the last one.', fontSize='small')),
+    align='wide', layout={'type': 'default'}))
+
+pattern('events-rows', 'Events (ruled rows)', 'text', J(
+    heading('Events', 2),
+    *[group(columns(('30%', para(d, fontFamily='display', style={'typography': {'fontWeight': '700'}})), ('70%', para(t)), isStackedOnMobile=False,
+                    style={'spacing': {'blockGap': {'left': 'var:preset|spacing|30'}}}), className='is-style-rule-top', layout={'type': 'default'})
+      for d, t in [('Thu 8 Oct', 'Launch of The Wash in Winter, Old Custom House Books, King’s Lynn. Free, <a href="https://example.com/tickets">book a place</a>.'),
+                   ('Sat 17 Oct', 'In conversation with Martin Hale, Norwich Arts Centre. <a href="https://example.com/tickets">£10</a>.'),
+                   ('Wed 4 Nov', 'Fenland crime evening, Wisbech Library. Free, no booking.'),
+                   ('Sun 15 Nov', 'Signing at Riverside Books, Ely, 11am to 1pm.')]],
+    para('I can’t do school visits this year, sorry.', fontSize='small')))
+
+pattern('audiobook-sample', 'Audiobook sample', 'media,audio', J(
+    heading('Hear the first chapter', 3),
+    audio('https://upload.wikimedia.org/wikipedia/commons/a/a7/Trialofsusanbanthony_18_anonymous_128kb.ogg', 'Stand-in audio: a CC0 LibriVox reading from Wikimedia Commons. Replace with your audiobook sample.'),
+    para('The full audiobook is read by Joanne Pell, 11 hours 40 minutes, from Libro.fm and every other audiobook shop.', fontSize='small')))
+
+pattern('places', 'Where the books happen', 'gallery,media', J(
+    heading('Where the books happen', 2),
+    gallery([('fens.jpg', 'A painting of drainage windmills on flat fenland under a stormy sky', 'Low Country: the drains'),
+             ('saltroad.jpg', 'A tidal creek winding across a salt marsh at low water', 'The Salt Road: Stiffkey marsh'),
+             ('harbour.jpg', 'A floodlit harbour fort reflected in black water at night', 'Harbour Lights: the quay at night'),
+             ('lisbon.jpg', 'A yellow tram turning a corner beside scaffolded buildings in Lisbon', 'Seven Trams in Lisbon: the 28')], columns=4, align='wide'),
+    para('Photographs from Wikimedia Commons, public domain or CC0. Click one to see it large.', fontSize='x-small', textColor='muted')))
+
+pattern('author-note', 'A note from the author', 'about', group(group(J(
+    heading('A note on the covers', 3),
+    para('I asked for covers that look like the books I bought second-hand as a teenager: a colour for the shelf, a pattern you could pick out across a room, the title on a plate. Crime is green with water, because everything in the Fens comes back to the drains. Fiction is orange and dotted. My dad’s book has fish scales.'),
+    para('Tamsin', fontFamily='display', style={'typography': {'fontWeight': '700'}})), className='is-style-label-plate', layout={'type': 'default'}),
+    className='is-style-band-fiction is-style-pattern-dots', align='wide', layout={'type': 'default'},
+    style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}))
+
+pattern('translations', 'Translations (chips)', 'text', J(
+    heading('In other languages', 3),
+    lst(['Dutch, Uitgeverij Kade', 'German, Nordlicht Verlag', 'Danish, Forlaget Hav', 'Polish, Wydawnictwo Mokradła', 'Italian, Edizioni Laguna',
+         'Czech, Nakladatelství Rákos', 'Swedish, Bokförlaget Kärr', 'French, Éditions Marais', 'Portuguese, Elétrico Editora'], className='is-style-chips')))
+
+pattern('short-stories', 'Short stories and essays', 'text', J(
+    heading('Short pieces', 3),
+    lst(['“The Sluice Keeper”, a short story, Fenland Quarterly, spring 2025. <a href="/newsletter/">Sent to newsletter readers</a>.',
+         '“My Father’s Radio”, an essay, The Northern Review, 2023.',
+         '“Night Bus to Hessle”, a story written for a charity anthology, 2021.'])))
+
+pattern('prizes', 'Prizes and shortlists', 'text', J(
+    heading('Prizes', 3),
+    lst(['Low Country: shortlisted, East Anglian Crime Writing Prize, 2019.', 'My Father’s Boats: longlisted, Norfolk Nonfiction Award, 2024.', 'The Salt Road: winner, Lynn Literary Festival debut prize, 2016.'])))
+
+pattern('book-group-faq', 'Questions from book groups', 'text', J(
+    heading('Questions groups ask', 3),
+    details('Will you join our meeting?', para('By video, for 30 minutes, about twice a month. Email my publicist with two dates.')),
+    details('Is Wisbech really like that?', para('Partly. The pumping station is real. The murders are not.')),
+    details('Can we have more copies at a discount?', para('Old Custom House Books does 10% off for groups ordering six or more.'))))
+
 def buy_list(title, signed=True):
     items = []
     if signed:
@@ -226,7 +368,7 @@ pattern('new-book-hero', 'New book with cover and one buy button', 'featured', c
 
 pattern('shelf', 'Books in order (shelf of covers)', 'featured,gallery', group(J(
     row(J(heading('Books, in the order they came out', 2), para('<a href="/books/">Which one to read first</a>', fontSize='small')), justify='space-between'),
-    grid(J(*[paperback(s, t, g, SERIES.get(s, '')) for s, t, g, *_ in ORDER]), min_width='9.5rem', className='is-style-shelf')),
+    grid(J(*[(clothbound(s, t, g, SERIES.get(s, ''), 'medium') if i % 2 else paperback(s, t, g, SERIES.get(s, ''))) for i, (s, t, g, *_) in enumerate(ORDER)]), min_width='9.5rem', className='is-style-shelf')),
     align='wide', layout={'type': 'default'}, style={'spacing': {'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|60'}}}),
     description='A strict shelf of flat covers. Colour tells the genre: orange fiction, green crime, blue memoir, cerise travel.')
 
@@ -329,7 +471,7 @@ pattern('isbn-line', 'Book details line', 'text', table([['Hardback', '384 pages
 
 pattern('buy-page', 'Page: buy (every book, every edition)', 'call-to-action', J(
     para('Every book, every format. Independent shops are listed first on purpose.', fontSize='large'),
-    pattern_ref('buy-block'), pattern_ref('signed-copies'), pattern_ref('editions'),
+    pattern_ref('buy-block'), pattern_ref('signed-copies'), pattern_ref('audiobook-sample'), pattern_ref('editions'), pattern_ref('translations'),
     heading('The other books', 2),
     table([['<a href="/my-fathers-boats/">My Father’s Boats</a>', 'Paperback £10.99', '<a href="https://uk.bookshop.org/">Bookshop.org</a>, <a href="https://www.waterstones.com/">Waterstones</a>'],
            ['<a href="/harbour-lights/">Harbour Lights</a>', 'Paperback £9.99', '<a href="https://uk.bookshop.org/">Bookshop.org</a>, <a href="https://www.waterstones.com/">Waterstones</a>'],
@@ -339,28 +481,29 @@ pattern('buy-page', 'Page: buy (every book, every edition)', 'call-to-action', J
            ['<a href="/the-salt-road/">The Salt Road</a>', 'Paperback £8.99', '<a href="https://uk.bookshop.org/">Bookshop.org</a>']],
           head=['Book', 'Format', 'Where'])), block_types='core/post-content')
 
-pattern('book-groups-page', 'Page: book groups', 'text', J(pattern_ref('book-group-guide'),
+pattern('book-groups-page', 'Page: book groups', 'text', J(pattern_ref('book-group-guide'), pattern_ref('excerpt'), pattern_ref('book-group-faq'),
     heading('Guides for the other books', 3),
     lst(['<a href="/my-fathers-boats/">My Father’s Boats</a>: eight questions, and photographs of the boats', '<a href="/harbour-lights/">Harbour Lights</a>: ten questions', '<a href="/low-country/">Low Country</a>: eight questions and a map of Wisbech'])),
     block_types='core/post-content')
-pattern('events-page', 'Page: events', 'text', J(pattern_ref('events'), pattern_ref('signed-copies')), block_types='core/post-content')
-pattern('newsletter-page', 'Page: newsletter and archive', 'call-to-action', J(pattern_ref('newsletter-signup'),
+pattern('events-page', 'Page: events', 'text', J(pattern_ref('events-rows'), pattern_ref('band-tiles'), pattern_ref('signed-copies')), block_types='core/post-content')
+pattern('newsletter-page', 'Page: newsletter and archive', 'call-to-action', J(pattern_ref('newsletter-signup'), pattern_ref('band-dots'),
     heading('All letters', 3),
     table([['Sep 2026', 'Proofs, a heron and the launch date'], ['Jul 2026', 'Why the third book took three years'], ['May 2026', 'The cover, and the argument about the cover'],
            ['Mar 2026', 'Wisbech in the rain, and the first draft is done'], ['Jan 2026', 'What I read in 2025 (41 books, 9 abandoned)']], head=['Sent', 'Letter'])),
     block_types='core/post-content')
-pattern('about-page', 'Page: about', 'about', J(pattern_ref('bio'), pattern_ref('praise')), block_types='core/post-content')
+pattern('about-page', 'Page: about', 'about', J(pattern_ref('bio'), pattern_ref('author-note'), pattern_ref('places'), pattern_ref('prizes'), pattern_ref('short-stories'), pattern_ref('praise')), block_types='core/post-content')
 pattern('contact-page', 'Page: contact', 'contact', J(
     para('Please use the right person below. I don’t publish my own email because of the post it attracts, but letters to the agency reach me every month.', fontSize='large'),
     pattern_ref('contacts')), block_types='core/post-content')
-pattern('books-page', 'Page: books in order', 'text', J(pattern_ref('shelf'), pattern_ref('books-in-order')), block_types='core/post-content')
+pattern('books-page', 'Page: books in order', 'text', J(pattern_ref('shelf'), pattern_ref('reading-order'), pattern_ref('band-scales'), pattern_ref('books-in-order'), pattern_ref('clothbound-cover')), block_types='core/post-content')
 
-pattern('front-page-layout', 'Home: new book, shelf, buy, events', 'featured', J(
-    pattern_ref('new-book-hero'), pattern_ref('shelf'),
-    columns(('55%', pattern_ref('buy-block')), ('45%', J(pattern_ref('events'))), align='wide', className='is-style-rule-top',
+pattern('front-page-layout', 'Home: collage opener, patchwork, shelf, buy, events', 'featured', J(
+    pattern_ref('collage-hero'), pattern_ref('band-waves'), pattern_ref('series-patchwork'), pattern_ref('shelf'),
+    columns(('55%', pattern_ref('buy-block')), ('45%', J(pattern_ref('events-rows'))), align='wide', className='is-style-rule-top',
             style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}, 'padding': {'bottom': 'var:preset|spacing|60'}}}),
+    pattern_ref('great-ideas-quote'),
     columns(('55%', pattern_ref('newsletter-signup')), ('45%', pattern_ref('praise-single')), align='wide',
-            style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}, 'padding': {'bottom': 'var:preset|spacing|70'}}})), inserter=False)
+            style={'spacing': {'blockGap': {'left': 'var:preset|spacing|60'}, 'padding': {'top': 'var:preset|spacing|60', 'bottom': 'var:preset|spacing|70'}}})), inserter=False)
 pattern('praise-single', 'One praise quote', 'testimonials', J(
     quote('The best sense of place in British crime writing since the early Ruth Rendell.', 'Hannah Okoro, Fenland Quarterly, on Low Country, 2018'),
     quote('I read it in one sitting on a train and missed my stop at Ely.', 'Nadia Karim, bookseller, Riverside Books, Ely')))
@@ -398,7 +541,7 @@ BOOK_ITEM = group(J(dyn('post-featured-image', isLink=True, aspectRatio='2/3', s
 pattern('book-grid-archive', 'Books (inherits the page query)', 'posts,query', inherit_query(BOOK_ITEM, layout={'type': 'grid', 'columnCount': 4, 'minimumColumnWidth': '12rem'}, align='wide'), inserter=False)
 write('templates/home.html', page_template(J(
     heading('Books', 1, fontSize='display', align='wide'),
-    pattern_ref('shelf'), pattern_ref('books-in-order')), style=PAD))
+    pattern_ref('shelf'), pattern_ref('reading-order'), pattern_ref('books-in-order')), style=PAD))
 write('templates/index.html', page_template(J(dyn('query-title', type='archive', align='wide'), pattern_ref('book-grid-archive')), style=PAD))
 
 def cat_tpl(g):

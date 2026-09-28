@@ -2,7 +2,7 @@
 /**
  * Title: Quote: how urgent is it?
  * Slug: pipe/urgency
- * Categories: pipe,call-to-action
+ * Categories: quote
  * Description: The signature: the quote section asks how urgent the job is in the customer's own words and what property it is.
  */
 ?>
@@ -19,7 +19,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Pick the line that sounds like you. It tells us whether to ring you back in ten minutes or book you in next week.</p>
+<p class="">Pick the line that sounds like you. It tells us whether to ring you back in ten minutes or book you in next week.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns -->
@@ -85,17 +85,11 @@
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>What kind of property: flat, terrace, semi, detached or a shop</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>The boiler make and model, from the sticker on the front or underneath</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Any fault code on the display</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
+<!-- /wp:list-item --><!-- wp:list-item -->
 <li>Whether you are a tenant or the owner (landlords pay, not tenants)</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>

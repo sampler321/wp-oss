@@ -2,7 +2,7 @@
 /**
  * Title: Printable flavour board
  * Slug: scoop/print-board
- * Categories: scoop,menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"className":"is-style-hairline-top","layout":{"type":"constrained"}} -->

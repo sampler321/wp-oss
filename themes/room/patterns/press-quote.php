@@ -2,7 +2,7 @@
 /**
  * Title: Press quote with publication and date
  * Slug: room/press-quote
- * Categories: testimonials
+ * Categories: about
  */
 ?>
 <!-- wp:pullquote -->
