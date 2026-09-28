@@ -11,3 +11,6 @@ demos/*/screens/
 dist/
 demos/*/.release-failed
 demos/*/.lock
+
+# Markdown docs stay local
+*.md

@@ -1,3 +1,0 @@
-Taproom is for small breweries with their own bar: a tap list that changes, cans and merch to sell, events, a kitchen residency and a beer club. It expects WooCommerce for the shop. Beers are posts in the Beers category shown with the "Beer (paper label)" template; events and news are posts in their own categories. The taproom, booking, beer club, trade and about pages are built from page-layout patterns.
-
-The signature pattern is the tap list: one beer per line with style, hops, ABV and prices, under a red stamp with the date and time it was last updated. Edit the rows from the block editor on a phone. The page prints cleanly on A4 for the bar wall. There is no age pop-up; the age rule is written out in the footer and next to the shop.

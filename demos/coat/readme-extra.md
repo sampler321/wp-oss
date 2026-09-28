@@ -1,3 +1,0 @@
-Coat is built around a paint chart. The front page opens with a run of tall colour chips, each one a paint from a real job with its maker's number and the street it went on. Every job post starts with its own colour card, so customers can see the exact colours and finishes before they ring.
-
-Jobs are ordinary posts in the categories Interiors, Kitchens, Heritage, Outside and Colour notes. To add a job, write a post, set a featured image, insert the "Colour card" pattern and change each chip's background colour and text to the paints you used. Page patterns cover prices, how you work, kitchens, heritage, outside work, areas, contact and a one-page brief for architects.

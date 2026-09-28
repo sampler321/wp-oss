@@ -1,3 +1,0 @@
-Catalog is laid out like the paper insert in a cassette case. Each release is a post in the Releases category, with its catalogue number as a tag (for example "HISS 041") and the artist and format in the excerpt. The front page shows the newest release as an unfolded J-card, with a spine, a square front panel and a flap, followed by the catalogue as a table and a grid of sleeves with the number above each one.
-
-Assign the "Release (J-card)" template to release posts. Tapes and records are sold with WooCommerce, which the theme styles through theme.json. Patterns cover tracklists by side, formats with edition sizes and sold-out states, a note for EU customers, an A to Z artist index, a press kit page, a demo policy and postage tables.

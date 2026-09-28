@@ -1,3 +1,0 @@
-Bind is for one- or two-person binderies: conservation and repair, custom bindings, boxes, thesis binding and a few workshops a year. Case studies are ordinary posts in the categories Conservation, Bindings, Boxes and Theses, each with a before and after pair at the same crop and a short specification table. Pages for services, the price guide, workshops, cloth swatches and visiting are built from page-layout patterns, so "Add page" offers them.
-
-The cloth swatches are colours in the theme palette, so a bindery can rename them and change their values in Styles to match its own stock. No plugins are needed.

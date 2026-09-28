@@ -1,3 +1,0 @@
-Lingua sets important text twice, source and target side by side, with a hairline between the columns and the second language in italic. Use the "Parallel text" style on any Columns block to get the same look.
-
-Published translations are posts in the categories Books, Academic, Exhibitions and Notes. The posts page lists them as a bibliography with a small cover image, so set a featured image and write the author, publisher and year in the excerpt. Page patterns cover services and rates, examples, credentials, questions, contact and a page in the second language.

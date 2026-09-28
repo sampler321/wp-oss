@@ -1,3 +1,0 @@
-Booth is for recording, mixing and rehearsal studios. The front page opens with one very large headline over a loose collage of room photos, then puts the rooms on a full-width record-light block. Rooms are pages (with the "Room" template), sessions and news are posts.
-
-The gear page is an inventory grouped by category, with a sticky index on wide screens. Every item says whether it stays in one room or is shared, and the theme ships a text-only gear list (assets/gear-list.txt) for engineers planning a session. Patterns cover day and half-day rates with and without an engineer, deposit and cancellation terms, a weekly "next free dates" bar, engineers with credits, load-in and parking notes, a rehearsal room and a booking call-out.
