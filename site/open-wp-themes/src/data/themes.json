@@ -2,7 +2,7 @@
   {
     "slug": "oil",
     "name": "Oil",
-    "description": "A catalogue of a painter's whole output, with every work's size, medium, year and availability, for painters who sell from the studio and through galleries.",
+    "description": "A painter's catalogue of works, sizes and availability.",
     "kind": "Painter, studio and available works",
     "brief": "",
     "demo": "https://wposs-oil.b-j-kapica.workers.dev/",
@@ -13,7 +13,7 @@
   {
     "slug": "karat",
     "name": "Karat",
-    "description": "A shop and commission site for independent jewellers and goldsmiths who sell a small collection and make bespoke rings.",
+    "description": "Shop and commissions for independent jewellers.",
     "kind": "Jewelry maker",
     "brief": "",
     "demo": "https://wposs-karat.b-j-kapica.workers.dev/",
@@ -24,7 +24,7 @@
   {
     "slug": "rep",
     "name": "Rep",
-    "description": "A roster and portfolio site for small agencies that represent illustrators, animators and photographers and pitch them to publishers and brands.",
+    "description": "Roster and portfolios for an artist agency.",
     "kind": "Illustration / artist representation agency",
     "brief": "",
     "demo": "https://wposs-rep.b-j-kapica.workers.dev/",
@@ -35,7 +35,7 @@
   {
     "slug": "reel",
     "name": "Reel",
-    "description": "A festival-style site for independent filmmakers and small producers, with a film programme, screenings lists, a press page and host-a-screening details.",
+    "description": "Festival-style site for independent filmmakers.",
     "kind": "Independent filmmaker / film site",
     "brief": "heavily inspired by International Film Festival Rotterdam",
     "demo": "https://wposs-reel.b-j-kapica.workers.dev/de-oude-visser/",
@@ -46,7 +46,7 @@
   {
     "slug": "amp",
     "name": "Amp",
-    "description": "A two-colour duotone site for independent bands and solo musicians, built around a live dates page, releases and a small merch shop.",
+    "description": "Two-colour site for bands: dates, releases, merch.",
     "kind": "Band / solo musician",
     "brief": "duotone",
     "demo": "https://wposs-amp.b-j-kapica.workers.dev/",
@@ -57,9 +57,9 @@
   {
     "slug": "bpm",
     "name": "BPM",
-    "description": "A dark, tabular theme for DJs, producers and small radio shows that publish numbered mixes with timestamped tracklists, dates and booking contacts.",
+    "description": "Numbered mixes and tracklists for DJs and radio.",
     "kind": "DJ / producer, also works for independent radio",
-    "brief": "NTS-inspired, could be inspired by Radio Kapitał Warsaw",
+    "brief": "NTS-inspired, could be inspired by Radio Kapita\u0142 Warsaw",
     "demo": "https://wposs-bpm.b-j-kapica.workers.dev/",
     "playground": "https://playground.wordpress.net/?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fsampler321%2Fwp-oss%2Fmain%2Fdemos%2Fbpm%2Fblueprint.json",
     "source": "https://github.com/sampler321/wp-oss/tree/main/themes/bpm",
@@ -68,7 +68,7 @@
   {
     "slug": "patchnotes",
     "name": "Patchnotes",
-    "description": "A podcast theme for technology and developer shows, with episodes laid out as release notes, a guest list and show notes sorted into added, changed, fixed and removed.",
+    "description": "Tech podcast with episodes as release notes.",
     "kind": "Podcast: tech",
     "brief": "podcast variant: tech",
     "demo": "https://wposs-patchnotes.b-j-kapica.workers.dev/",
@@ -79,7 +79,7 @@
   {
     "slug": "evidence",
     "name": "Evidence",
-    "description": "A podcast theme for investigative and true-crime series, with case archives, episode file cards, sources, a dated corrections log and content warnings.",
+    "description": "True-crime podcast with case files and sources.",
     "kind": "Podcast: true crime",
     "brief": "podcast variant: true crime",
     "demo": "https://wposs-evidence.b-j-kapica.workers.dev/",
@@ -90,7 +90,7 @@
   {
     "slug": "thrift",
     "name": "Thrift",
-    "description": "A catalogue-style shop theme for vintage clothing sellers who list one-off pieces by decade, label size and flat measurements.",
+    "description": "One-off vintage clothing, sorted by decade.",
     "kind": "Vintage clothing",
     "brief": "",
     "demo": "https://wposs-thrift.b-j-kapica.workers.dev/",
@@ -101,7 +101,7 @@
   {
     "slug": "deck",
     "name": "Deck",
-    "description": "A loud, magazine-cover shop theme for independent skate and surf shops with a team, a video channel and a counter to set up boards on.",
+    "description": "Loud magazine-cover shop for skate and surf.",
     "kind": "Skate / surf shop",
     "brief": "more edgy, Thrasher-like",
     "demo": "https://wposs-deck.b-j-kapica.workers.dev/",
@@ -112,7 +112,7 @@
   {
     "slug": "drop",
     "name": "Drop",
-    "description": "A photocopied-zine merch shop for bands, podcasters and streamers who sell limited runs and pre-orders, with real stock counts and batch ship dates.",
+    "description": "Zine-style merch drops with real stock counts.",
     "kind": "Creator merch drop store",
     "brief": "Nirvana-style grunge, Julie (band) for reference",
     "demo": "https://wposs-drop.b-j-kapica.workers.dev/",
@@ -123,7 +123,7 @@
   {
     "slug": "patchbay",
     "name": "Patchbay",
-    "description": "A loud, flat-coloured shop theme for small guitar pedal makers who sell assembled pedals, DIY kits and PCBs, with build docs and demos.",
+    "description": "Pedals, DIY kits and build docs for pedal makers.",
     "kind": "DIY guitar pedals",
     "brief": "inspired by jhspedals.info",
     "demo": "https://wposs-patchbay.b-j-kapica.workers.dev/",

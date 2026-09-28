@@ -27,7 +27,7 @@ const ThemesGrid = ({ themes }: { themes: Theme[] }) => {
                     src={theme.shot}
                     alt={`Home page of the ${theme.name} theme`}
                     loading='lazy'
-                    className='aspect-[4/3] w-full rounded-t-xl object-cover object-top'
+                    className='aspect-[4/3] w-full object-cover object-top'
                   />
                 </a>
               </CardContent>

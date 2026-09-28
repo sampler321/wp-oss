@@ -86,6 +86,8 @@ try {
     const before = s;
     s = s.replace(new RegExp(esc.replace(/\\\//g, '\\\\?\\/'), 'g'), '').replace(new RegExp(esc, 'g'), '');
     s = s.replace(/(\.(?:css|js|mjs))%3F[^"'\s)<>]*/g, '$1');
+    // wget's link conversion turns duotone filter refs url(#wp-duotone-x) into url(index.html); restore them.
+    s = s.replace(/(--wp--preset--duotone--([\w-]+):\s*)url\([^)]*\)/g, '$1url(#wp-duotone-$2)');
     if (f.endsWith('.html')) s = s.replace(/<body([^>]*)>/, `<body$1>${bar}`);
     if (s !== before) { fs.writeFileSync(p, s); n++; }
   } } };

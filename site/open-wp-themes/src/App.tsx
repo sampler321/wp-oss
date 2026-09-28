@@ -1,6 +1,5 @@
 import ThemesGrid, { type Theme } from '@/components/site/themes-grid'
 import SiteFooter from '@/components/site/site-footer'
-import { Separator } from '@/components/ui/separator'
 import themes from '@/data/themes.json'
 
 const App = () => {
@@ -8,13 +7,10 @@ const App = () => {
     <div className='bg-background text-foreground min-h-screen'>
       <header className='mx-auto max-w-7xl px-4 pt-12 pb-8 sm:px-6 lg:px-8'>
         <h1 className='text-5xl font-bold leading-none tracking-tight sm:text-7xl'>
-          Open WP
-          <br />
-          themes
+          Open WP themes
         </h1>
         <p className='text-muted-foreground mt-6 text-sm'>GPL-2.0 / WordPress 6.7+</p>
       </header>
-      <Separator className='mx-auto mb-10 max-w-7xl' />
       <ThemesGrid themes={themes as Theme[]} />
       <SiteFooter />
     </div>
