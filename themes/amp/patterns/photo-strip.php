@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Photo strip (duotone live photos)
+ * Title: Photo strip (live photos)
  * Slug: amp/photo-strip
  * Categories: gallery
  */

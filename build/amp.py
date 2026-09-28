@@ -125,9 +125,9 @@ theme = {
             'caption': {'typography': {'fontSize': 'var:preset|font-size|x-small', 'lineHeight': '1.4'}, 'color': {'text': C('contrast')}},
         },
         'blocks': {
-            'core/image': {'filter': {'duotone': DUOTONE}, 'border': {'radius': '0'}},
-            'core/cover': {'filter': {'duotone': DUOTONE}},
-            'core/post-featured-image': {'filter': {'duotone': DUOTONE}, 'border': {'radius': '0'}},
+            'core/image': {'border': {'radius': '0'}},
+            'core/cover': {},
+            'core/post-featured-image': {'border': {'radius': '0'}},
             'core/site-title': {'typography': {'fontFamily': 'var:preset|font-family|display', 'fontSize': 'var:preset|font-size|x-large', 'lineHeight': '0.9'},
                                 'elements': {'link': {'typography': {'textDecoration': 'none'}, 'color': {'text': C('contrast')}}}},
             'core/navigation': {'typography': {'fontSize': 'var:preset|font-size|medium', 'fontWeight': '700'},

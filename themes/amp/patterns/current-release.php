@@ -7,7 +7,7 @@
 ?>
 <!-- wp:columns {"verticalAlignment":"bottom","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-bottom" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|band"}}} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/sleeve-3.jpg' ) ); ?>" alt="A tall square lighthouse against a blue sky with white clouds" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->

@@ -40,11 +40,7 @@
 			}
 		},
 		"blocks": {
-			"core/image": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--band-reverse)"
-				}
-			},
+			"core/image": {},
 			"core/table": {
 				"css": "& td{border-color:var(--wp--preset--color--base)!important}"
 			}
