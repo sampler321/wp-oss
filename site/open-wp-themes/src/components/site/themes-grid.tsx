@@ -38,7 +38,6 @@ const ThemesGrid = ({ themes }: { themes: Theme[] }) => {
                     <a href={theme.demo}>{theme.name}</a>
                   </CardTitle>
                   <CardDescription className='text-base'>{theme.description}</CardDescription>
-                  {theme.brief && <p className='text-muted-foreground text-sm italic'>Brief: {theme.brief}</p>}
                 </div>
                 <div className='flex flex-wrap gap-2'>
                   <Button size='lg' render={<a href={theme.demo} />} nativeButton={false}>

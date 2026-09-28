@@ -11,17 +11,7 @@ const SiteFooter = () => {
           <a href='https://github.com/sampler321/wp-oss' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
             GitHub
           </a>
-          <a href='https://wposs-themes.b-j-kapica.workers.dev' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
-            All 50 themes
-          </a>
         </div>
-      </div>
-      <Separator />
-      <div className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
-        <p className='text-muted-foreground text-sm text-balance'>
-          Demo sites are static snapshots. Try in Playground boots the real theme with its demo content in your
-          browser, editor included. Demo images are CC0 or public domain, credited in each theme's readme.
-        </p>
       </div>
     </footer>
   )
